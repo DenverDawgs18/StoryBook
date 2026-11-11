@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import io
+import os
 import json
 import queue
 import re
@@ -27,7 +28,7 @@ from storybook.voices import VOICE_CATALOG, Character, speak
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
-DATA = ROOT / "data"
+DATA = Path(os.environ.get("STORYBOOK_DATA", ROOT / "data"))
 JOBS_DIR = DATA / "jobs"
 SAMPLES = DATA / "voice_samples"
 JOBS_DIR.mkdir(parents=True, exist_ok=True)

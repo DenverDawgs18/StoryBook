@@ -1,0 +1,30 @@
+# StoryBook on Fly.io
+#   fly apps create <name>        (then set `app` below)
+#   fly deploy --ha=false         (one machine: Studio jobs live in that machine's memory)
+app = "storybook-audio"
+primary_region = "iad"
+
+[build]
+
+[env]
+  STORYBOOK_DATA = "/data"
+  STORYBOOK_CACHE = "/data/tts-cache"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"   # sleeps when nobody is listening; wakes on the next request
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [[http_service.checks]]
+    grace_period = "20s"
+    interval = "30s"
+    method = "GET"
+    path = "/api/voices"
+    timeout = "5s"
+
+# Neural TTS + synthesis is CPU-bound: 4 shared vCPUs render roughly in real time.
+[[vm]]
+  size = "shared-cpu-4x"
+  memory = "4gb"

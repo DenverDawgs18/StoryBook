@@ -97,3 +97,16 @@ Texts: [Project Gutenberg](https://www.gutenberg.org) (public domain). Voices:
 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (Apache-2.0) via
 [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx). Fonts: IM Fell (Igino Marini),
 Spectral, Caveat (SIL OFL).
+
+## Deploying to Fly.io
+
+The repo ships a `Dockerfile` (voice model baked in, so cold starts are quick) and a `fly.toml`.
+
+```bash
+fly apps create storybook-audio      # or any free name; match `app` in fly.toml
+fly deploy --ha=false                # keep to ONE machine: Studio jobs live in its memory
+```
+
+The VM is `shared-cpu-4x` with 4 GB, which renders Studio audio at roughly real time.
+It stops when idle and wakes on the next request. A finished Studio recording lives on the
+machine's disk until the machine is replaced. For permanent storage, mount a volume at `/data`.

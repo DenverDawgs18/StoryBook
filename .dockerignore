@@ -1,0 +1,8 @@
+.venv
+.git
+.cache
+data
+models
+**/__pycache__
+*.wav
+tools
