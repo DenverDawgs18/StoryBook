@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listen — StoryBook</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+</svg>
+<header class="masthead">
+  <a class="wordmark" href="./">StoryBook</a>
+  <nav class="nav" aria-label="Main">
+    <a href="./">Listen</a><a href="./#library" aria-current="page">Library</a><a href="studio.html">Studio</a><a href="./#craft">How it's made</a>
+  </nav>
+</header>
+<section class="section">
+  <div class="featured" id="root">
+    <figure class="art"><img class="paint eye" id="art" src="assets/paint/blob2.png" alt=""><figcaption id="cap"></figcaption></figure>
+    <div>
+      <p class="eyebrow" id="mood">from the library</p>
+      <h2 id="title">…</h2>
+      <p class="byline" id="byline"></p>
+      <p class="blurb" id="blurb"></p>
+      <div id="player"></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div><a class="wordmark" href="./">StoryBook</a><p>Texts from <a href="https://www.gutenberg.org">Project Gutenberg</a>. Voices by Kokoro-82M. Every sound is synthesised.</p></div>
+</footer>
+<script type="module">
+import { mountPlayer, loadCatalog } from "./js/player.js";
+const slug = new URLSearchParams(location.search).get("ep");
+const cat = await loadCatalog();
+const ep = cat.episodes.find((e) => e.slug === slug) || cat.episodes[0];
+document.title = `${ep.title} — StoryBook`;
+for (const [id, v] of [["title", ep.title], ["byline", `${ep.author}${ep.year ? " · " + ep.year : ""}`], ["blurb", ep.blurb || ""], ["mood", ep.mood || ""], ["cap", ep.caption || ""]])
+  document.getElementById(id).textContent = v;
+document.getElementById("art").src = `assets/paint/${ep.art || "blob2"}.png`;
+const root = document.getElementById("root");
+mountPlayer(document.getElementById("player"), ep, { onplay: () => root.classList.add("playing"), onpause: () => root.classList.remove("playing") });
+</script>
+</body>
+</html>

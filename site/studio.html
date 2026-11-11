@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio — StoryBook</title>
+<meta name="description" content="Paste or upload a manuscript; StoryBook casts the voices, paints the soundscape and renders your audiobook.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+</svg>
+
+<header class="masthead">
+  <a class="wordmark" href="./">StoryBook</a>
+  <nav class="nav" aria-label="Main">
+    <a href="./">Listen</a><a href="./#library">Library</a><a href="studio.html" aria-current="page">Studio</a><a href="./#craft">How it's made</a>
+  </nav>
+</header>
+
+<section class="hero" style="min-height:auto;padding-bottom:2rem">
+  <div class="wash" aria-hidden="true" style="opacity:.6"></div>
+  <div>
+    <p class="eyebrow">the studio</p>
+    <h1 style="font-size:clamp(2.4rem,6vw,4.8rem);max-width:14ch">Turn your pages into <em>a performance.</em></h1>
+    <p class="lede">Paste a story or upload a manuscript. StoryBook finds the speakers and gives each one a voice. It chooses weather and music to suit the mood, and writes a sound effect wherever the prose names one. You get a mastered MP3.</p>
+  </div>
+</section>
+
+<main class="section studio" style="padding-top:1rem">
+  <p id="offline" class="panel note hidden">The Studio needs the StoryBook server, which isn't reachable from this page. Run <code>python -m storybook serve</code> and open <code>http://127.0.0.1:8000/studio.html</code>.</p>
+
+  <!-- 1 ─────────────────────────── manuscript -->
+  <form class="panel" id="step1">
+    <span class="num">one</span>
+    <h2>Bring your manuscript</h2>
+    <div class="grid2">
+      <div><label class="field" for="title">Title</label><input type="text" id="title" placeholder="The Signal-Man" maxlength="120"></div>
+      <div><label class="field" for="author">Author</label><input type="text" id="author" placeholder="Charles Dickens" maxlength="120"></div>
+    </div>
+    <label class="drop" id="drop">
+      <input type="file" id="file" accept=".txt,.md,.docx,.epub,.story,text/plain">
+      <strong>Drop a file here, or choose one</strong>
+      <span class="note">.txt · .md · .docx · .epub · up to ~25,000 words</span>
+      <span class="marginalia" id="fname"></span>
+    </label>
+    <p class="or">~ or paste it ~</p>
+    <label class="field" for="text">Manuscript</label>
+    <textarea id="text" placeholder="“Halloa! Below there!” When he heard a voice thus calling to him, he was standing at the door of his box…"></textarea>
+    <p class="note">Put dialogue in quotation marks and the director will find who is speaking. Chapter headings such as <em>CHAPTER I</em> become chapter markers.</p>
+    <div class="actions"><button class="btn" type="submit" id="analyze">Read it through</button><span class="status" id="s1"></span></div>
+  </form>
+
+  <!-- 2 ─────────────────────────── casting -->
+  <form class="panel hidden" id="step2">
+    <span class="num">two</span>
+    <h2>Meet your cast</h2>
+    <div class="stats" id="stats"></div>
+    <div style="margin-top:1.6rem">
+      <label class="field" for="narrator">Narrator</label>
+      <ul class="cast"><li style="border:0">
+        <span class="name">The narrator<small>reads everything outside quotation marks</small></span>
+        <select id="narrator"></select>
+        <button type="button" class="preview" data-for="narrator" aria-label="Preview narrator voice"></button>
+      </li></ul>
+    </div>
+    <div id="charsBox">
+      <label class="field" style="margin-top:1.4rem">Characters the director found</label>
+      <ul class="cast" id="cast"></ul>
+    </div>
+    <label class="field" style="margin-top:2rem">The weather of the piece</label>
+    <div class="moods" id="moods"></div>
+    <div class="grid2" style="margin-top:1.6rem">
+      <div>
+        <label class="field" for="speed">Pace <span id="speedv" class="note"></span></label>
+        <input type="range" id="speed" min="0.8" max="1.15" step="0.01" value="0.95" style="width:100%;accent-color:var(--viridian)">
+      </div>
+      <div style="display:flex;align-items:end;gap:.6rem">
+        <input type="checkbox" id="fx" checked style="accent-color:var(--viridian);width:1.2rem;height:1.2rem">
+        <label for="fx">Sound effects where the prose names a sound: knocks, bells, thunder, footsteps…</label>
+      </div>
+    </div>
+    <div class="actions" style="margin-top:2rem"><button class="btn" type="submit" id="go">Record it</button><button type="button" class="linkish" id="back1">edit the text</button></div>
+  </form>
+
+  <!-- 3 ─────────────────────────── recording -->
+  <section class="panel hidden" id="step3" aria-live="polite">
+    <span class="num">three</span>
+    <h2 id="recTitle">In the studio</h2>
+    <div class="progress"><div class="bar"><div class="ground paint"></div><div class="fill paint" id="pfill"></div></div></div>
+    <p class="status" id="s3">Setting out the brushes…</p>
+    <p class="note" id="eta"></p>
+    <div id="result" class="hidden">
+      <div id="resPlayer"></div>
+      <p class="note"><a id="dlScript" href="#">Download the production script</a> to fine-tune every cue and render it yourself with <code>python -m storybook render</code>.</p>
+      <div class="actions"><button class="btn ghost" type="button" id="again">Record another</button></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><a class="wordmark" href="./">StoryBook</a><p>Your text is used only to make your recording.</p></div>
+  <p class="marginalia">“Hearken! and observe…”</p>
+</footer>
+
+<script type="module" src="js/studio.js"></script>
+</body>
+</html>

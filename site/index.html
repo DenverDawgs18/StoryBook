@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoryBook — old stories, read aloud in the dark</title>
+<meta name="description" content="Full-cast, soundscaped audiobooks of public-domain classics, painted in watercolour. And a studio to turn your own manuscript into one.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+</svg>
+
+<header class="masthead">
+  <a class="wordmark" href="./">StoryBook</a>
+  <nav class="nav" aria-label="Main">
+    <a href="./" aria-current="page">Listen</a>
+    <a href="#library">Library</a>
+    <a href="studio.html">Studio</a>
+    <a href="#craft">How it's made</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wash" aria-hidden="true"></div>
+  <div>
+    <p class="eyebrow">public-domain classics, performed</p>
+    <h1>Old stories, read aloud <em>in the dark.</em></h1>
+    <p class="lede">A cast of voices and a soundscape built from scratch for each story: wind in the chimney, the tick of a clock, a heart beating under the floor. Put the lights out and listen.</p>
+    <div class="actions">
+      <a class="btn" href="#featured">Hear tonight's story</a>
+      <a class="btn ghost" href="studio.html">Bring your own manuscript</a>
+    </div>
+  </div>
+  <span class="marginalia" aria-hidden="true">best with headphones,<br>and the door shut ~</span>
+</section>
+
+<section class="section" id="featured">
+  <div class="featured" id="feature-root">
+    <figure class="art">
+      <img class="paint eye" src="assets/paint/eye.png" alt="A watercolour of a pale, filmed eye in shades of green">
+      <img class="paint stain" src="assets/paint/blob3.png" alt="">
+      <figcaption>“a pale blue eye, with a film over it”</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">the featured story</p>
+      <h2 id="f-title">The Tell-Tale Heart</h2>
+      <p class="byline" id="f-byline">Edgar Allan Poe · 1843</p>
+      <p class="blurb" id="f-blurb">A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.</p>
+      <ul class="facts" id="f-facts"></ul>
+      <div id="f-player"><p class="note">The recording is being prepared.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="deckle" aria-hidden="true"></div>
+
+<section class="section" id="library">
+  <p class="eyebrow">the library</p>
+  <h2>More from the shelf</h2>
+  <p class="note" style="max-width:38rem">Every recording is made by the same machinery: neural voices cast per character, and a score and soundscape synthesised for that story alone.</p>
+  <div class="shelf" id="shelf"></div>
+</section>
+
+<section class="section" id="craft">
+  <p class="eyebrow">how it's made</p>
+  <h2>Voices, weather &amp; music</h2>
+  <div class="steps">
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob1.png" alt="">
+      <span class="num">i.</span>
+      <h3>A cast, not a reader</h3>
+      <p>Every story is scripted like a radio play. The narrator, the old man, the ghost and the clerk each get their own voice, some of them blends of two. Pace, pitch and the room they speak in are directed line by line.</p>
+    </div>
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob2.png" alt="">
+      <span class="num">ii.</span>
+      <h3>Weather from noise</h3>
+      <p>No sound is sampled. Wind, rain, embers, bells, chains and heartbeats are synthesised from filtered noise and oscillators, then placed in rooms with convolution reverb, so each world sounds like itself.</p>
+    </div>
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob6.png" alt="">
+      <span class="num">iii.</span>
+      <h3>A score that listens</h3>
+      <p>Choir pads, cello drones, music boxes and a spectral waltz swell between scenes and duck under the voice whenever someone speaks. The finished mix is mastered to broadcast loudness.</p>
+    </div>
+  </div>
+  <p style="margin-top:2.6rem"><a class="btn" href="studio.html">Try the Studio with your own pages</a></p>
+</section>
+
+<footer>
+  <div><a class="wordmark" href="./">StoryBook</a><p>Texts from <a href="https://www.gutenberg.org">Project Gutenberg</a>. Voices by Kokoro-82M (Apache-2.0).<br>Every sound and every note is synthesised.</p></div>
+  <p class="marginalia">“Hearken! and observe…”</p>
+</footer>
+
+<script type="module">
+import { mountPlayer, loadCatalog, fmt, esc } from "./js/player.js";
+
+const paint = (n) => new URL(`assets/paint/${n}.png`, location.href).href;
+const WASHES = ["blob1", "blob2", "blob3", "blob4", "blob5", "blob6"];
+try {
+  const cat = await loadCatalog();
+  const feat = cat.episodes.find((e) => e.featured) || cat.episodes[0];
+  if (feat) {
+    document.getElementById("f-title").textContent = feat.title;
+    document.getElementById("f-byline").textContent = `${feat.author}${feat.year ? " · " + feat.year : ""}`;
+    if (feat.blurb) document.getElementById("f-blurb").textContent = feat.blurb;
+    document.getElementById("f-facts").innerHTML =
+      `<li>${fmt(feat.duration)} long</li><li>${esc(feat.mood || "")}</li><li>${feat.voices} voices</li>`;
+    const root = document.getElementById("feature-root");
+    mountPlayer(document.getElementById("f-player"), feat, {
+      onplay: () => root.classList.add("playing"), onpause: () => root.classList.remove("playing"),
+    });
+  }
+  const shelf = document.getElementById("shelf");
+  const rest = cat.episodes.filter((e) => e !== feat);
+  shelf.innerHTML = rest.map((e, i) => `
+    <a class="card" style="--wash:url('${paint(WASHES[i % WASHES.length])}')" href="listen.html?ep=${encodeURIComponent(e.slug)}">
+      <span class="mood">${esc(e.mood || "")}</span>
+      <h3>${esc(e.title)}</h3>
+      <div class="meta">${esc(e.author)}${e.year ? " · " + e.year : ""} · ${fmt(e.duration)}</div>
+      <p>${esc(e.blurb || "")}</p>
+    </a>`).join("") + `
+    <a class="card soon" style="--wash:url('${paint("blob5")}')" href="studio.html">
+      <span class="mood">your pages here</span><h3>Your manuscript</h3>
+      <div class="meta">the Studio</div><p>Paste a story or upload a file, then cast its voices, choose its weather and listen.</p>
+    </a>`;
+} catch (err) {
+  document.getElementById("f-player").innerHTML = '<p class="note">Recordings will appear here once they are rendered (<code>python -m storybook render scripts/*.story</code>).</p>';
+}
+</script>
+</body>
+</html>
