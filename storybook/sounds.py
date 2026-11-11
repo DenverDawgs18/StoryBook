@@ -915,3 +915,61 @@ def splash(rng, size=0.5, room="chamber"):
         dsp.place(drops, d, samples(at), rng.uniform(0.05, 0.3))
     y = (plop + spray + drops).astype(np.float32)
     return dsp.reverb(dsp.normalize_peak(y, -4), room, 0.45)
+
+
+@sfx("huff")
+def huff(rng, puffs=2, strength=1.0, room="room"):
+    """A big bad wolf drawing breath and blowing: an inhale, then a roaring gust per puff."""
+    puffs, strength = int(puffs), float(strength)
+    seg = []
+    for i in range(puffs):
+        n_in = samples(0.55)
+        t = np.arange(n_in) / SR
+        inhale = dsp.bandpass(dsp.white(n_in, rng), 900, 4500) * (t / t[-1]) ** 2 * 0.25
+        n_out = samples(1.1 + 0.4 * strength)
+        t2 = np.arange(n_out) / SR
+        env = np.minimum(t2 / 0.06, 1) * np.exp(-t2 / (0.35 + 0.25 * strength))
+        blow = dsp.lowpass(dsp.colored(n_out, rng, 1.0), 2600) * env
+        blow += dsp.bandpass(dsp.white(n_out, rng), 300, 1200) * env * 0.6
+        seg += [inhale.astype(np.float32), blow.astype(np.float32) * strength, np.zeros(samples(0.15), np.float32)]
+    y = np.concatenate(seg)
+    return dsp.normalize_peak(dsp.reverb(dsp.to_stereo(y), room, 0.25), -3)
+
+
+@sfx("collapse")
+def collapse(rng, material="straw", room="room"):
+    """A flimsy house coming down: a rush of straw, or a clatter of sticks."""
+    n = samples(2.6)
+    y = np.zeros(n, np.float32)
+    if material == "straw":
+        t = np.arange(n) / SR
+        y += dsp.bandpass(dsp.white(n, rng), 1500, 9000) * np.exp(-t / 0.7) * dsp.smooth_random(n, rng, 18, 0.3, 1.0)
+        y += dsp.lowpass(dsp.white(n, rng), 300) * np.exp(-t / 0.25) * 0.6
+    else:
+        for _ in range(40):
+            at = rng.exponential(0.35)
+            if at > 2.2:
+                continue
+            f = rng.uniform(500, 1400)
+            k = dsp.damped_sines([(f, 1, 0.03), (f * 2.3, 0.5, 0.015), (rng.uniform(120, 200), 0.6, 0.06)], 0.25, rng)
+            dsp.place(y, k, samples(at), rng.uniform(0.3, 1.0) * np.exp(-at))
+        nn = samples(0.4)
+        dsp.place(y, dsp.lowpass(dsp.white(nn, rng), 250) * np.exp(-np.arange(nn) / SR / 0.1) * 1.2, 0)
+    return dsp.normalize_peak(dsp.reverb(dsp.to_stereo(y.astype(np.float32)), room, 0.3), -3)
+
+
+@sfx("roll")
+def roll(rng, length=4.0, room="hall"):
+    """A wooden barrel (or a butter-churn with a pig inside) bumping away down a hill."""
+    length = float(length)
+    n = samples(length)
+    t = np.arange(n) / SR
+    rumble = dsp.lowpass(dsp.colored(n, rng, 1.5), 180) * (0.6 + 0.4 * np.sin(2 * np.pi * (2 + 3 * t / length) * t) ** 2)
+    y = rumble.astype(np.float32)
+    at = 0.0
+    while at < length - 0.2:
+        k = dsp.damped_sines([(rng.uniform(90, 140), 1, 0.08), (rng.uniform(300, 500), 0.4, 0.03)], 0.3, rng)
+        dsp.place(y, k, samples(at), rng.uniform(0.5, 1.0))
+        at += rng.uniform(0.25, 0.6) * (1 - 0.4 * at / length)
+    y *= np.clip(1.4 - t / length, 0, 1)  # dwindling away downhill
+    return dsp.normalize_peak(dsp.reverb(dsp.pan(y, 0.0), room, 0.3), -3)

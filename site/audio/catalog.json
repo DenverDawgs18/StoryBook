@@ -1,6 +1,40 @@
 {
  "episodes": [
   {
+   "slug": "the_three_little_pigs",
+   "title": "The Three Little Pigs",
+   "author": "Joseph Jacobs",
+   "year": 1890,
+   "blurb": "Three little pigs go out to seek their fortune and build three houses: one of straw, one of furze, one of brick. Then a wolf comes knocking, and he is very good at blowing.",
+   "mood": "Huffing, puffing, and a pot on the fire",
+   "caption": "“he built his house with them”",
+   "art": "land_pigs",
+   "featured": true,
+   "order": 0,
+   "shelf": "fairy",
+   "duration": 426.22,
+   "audio": "audio/the_three_little_pigs.mp3",
+   "timings": "audio/the_three_little_pigs.json",
+   "voices": 6,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "pig1": {
+     "label": "the first little pig"
+    },
+    "pig2": {
+     "label": "the second little pig"
+    },
+    "pig3": {
+     "label": "the third little pig"
+    },
+    "wolf": {
+     "label": "the wolf"
+    }
+   }
+  },
+  {
    "slug": "elves_and_the_shoemaker",
    "title": "The Elves and the Shoemaker",
    "author": "The Brothers Grimm",
@@ -9,7 +43,7 @@
    "mood": "Firelight, midnight, small busy hands",
    "caption": "“and away over the green”",
    "art": "land_cottage",
-   "featured": true,
+   "featured": false,
    "order": 1,
    "shelf": "fairy",
    "duration": 301.93,

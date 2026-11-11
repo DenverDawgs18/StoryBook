@@ -464,7 +464,33 @@ def rome():
     p.save("land_rome")
 
 
-PLATES = {"hero": hero, "cottage": cottage_night, "wood": wood, "forest": forest, "hills": hills_night,
+def pigs():
+    """The Three Little Pigs: a sunny down, three houses of straw, furze and brick, an apple tree."""
+    p = Plate(1500, 1000, 131)
+    p.sky("celadon", "straw", 0.4)
+    r1 = p.ridge(0.42, 0.05, "mist", 0.5, base=2)
+    p.round_trees(r1, "sage", 10, (0.02, 0.04), 0.5)
+    r2 = p.ridge(0.66, 0.025, "moss", 0.65, base=2)
+    y = lambda x: float(r2[int(x * p.w)]) + 0.02
+    cottage(p, 0.2, y(0.2), 0.1, color="straw", roof="ochre", lit=False)
+    sticks = cottage(p, 0.45, y(0.45), 0.11, color="umber", roof="olive", lit=False)
+    cottage(p, 0.72, y(0.72), 0.14, color="madder", roof="slate", lit=True)
+    # courses of brick: thin lifted lines across the brick house's walls
+    w = 0.14 * p.h / p.w * 0.62
+    walls = p.rect(0.72 - w, y(0.72) - 0.14 * 0.75, 0.72 + w, y(0.72))
+    p.lift(walls * (np.sin(p.v * p.h / 3.2) > 0.82), 0.35)
+    p.path([(0.6, 1.02), (0.68, 0.84), (0.72, y(0.72) + 0.005)], 0.05, 0.01)
+    r3 = p.ridge(0.9, 0.02, "sap", 0.7)
+    p.round_trees(r3, "forest", 1, (0.16, 0.2), 0.85, (0.92, 0.93))
+    apples = np.zeros((p.h, p.w), np.float32)
+    for _ in range(18):
+        apples = np.maximum(apples, p.disc(p.rng.normal(0.925, 0.03), p.rng.normal(0.62, 0.05), 0.007, 1))
+    p.lift(apples, 0.9)
+    p.add(apples, "madder", 0.85, blur=0.8)
+    p.save("land_pigs")
+
+
+PLATES = {"pigs": pigs, "hero": hero, "cottage": cottage_night, "wood": wood, "forest": forest, "hills": hills_night,
           "spring": spring, "town": town_day, "castle": castle_storm, "snow": snow_street,
           "abbey": abbey, "rome": rome}
 

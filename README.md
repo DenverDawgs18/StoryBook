@@ -5,8 +5,8 @@ made in the spirit of *Fall of Civilizations*: a narrator who draws you in, a se
 for every character, and weather, rooms and music built for that story alone.
 
 The website is laid out like an old illustrated book bound in green cloth. It has a title page
-with a watercolour frontispiece, a table of contents, and a **featured tale** (the Grimms'
-*The Elves and the Shoemaker*) set as a two-page spread with its plate on the left and a
+with a watercolour frontispiece, a table of contents, and a **featured tale** (Joseph Jacobs's
+*The Three Little Pigs*) set as a two-page spread with its plate on the left and a
 read-along transcript that follows the voice on the right. Then come two chapters of
 **plates**, *The Fairy Tales* and *Tales for After Dark*, and a **Studio** where anyone can
 paste or upload a manuscript and get a finished, mastered audiobook back.
@@ -21,7 +21,8 @@ python -m storybook serve      # → http://127.0.0.1:8000
 
 | Episode | Source | What to listen for |
 | --- | --- | --- |
-| **The Elves and the Shoemaker** *(featured)* | Grimm, 1812 | A fire, a clock striking midnight, a music box playing Brahms's lullaby, and tiny hammers |
+| **The Three Little Pigs** *(featured)* | Jacobs, 1890 | Three knocks, the wolf's huffing and puffing, straw and sticks collapsing, a butter-churn rolling downhill |
+| **The Elves and the Shoemaker** | Grimm, 1812 | A fire, a clock striking midnight, a music box playing Brahms's lullaby, and tiny hammers |
 | **Little Red-Cap** | Grimm, 1812 | Birdsong and a path through the wood. The music darkens when the wolf says good day |
 | **Hansel and Gretel** | Grimm, 1812 | Crickets at night, a gingerbread house, the oven door, a river and a white duck |
 | **Rumpelstiltskin** | Grimm, 1812 | The spinning wheel that turns straw into gold, a fire in the hills, the court jeering |
@@ -82,7 +83,8 @@ Beds: `wind rain fire clock watch heartbeat roomtone crowd river crickets battle
 birds spinning` plus music `dread elegy hearth waltz music_box carol_voice title_theme fairytale`
 (`music_box tune=lullaby` plays Brahms's *Wiegenlied*; `fairytale key=F|G|D|Am` is harp over strings).
 Effects: `knock door creak footsteps bell chime house_bells chains wail boom swell sting
-thunder horn war_drums clash bolt quill lantern heartbeat_once tapping sparkle splash`.
+thunder horn war_drums clash bolt quill lantern heartbeat_once tapping sparkle splash
+huff collapse roll`.
 
 Front matter can also set `shelf: fairy` (which chapter of the library the tale goes in), `art`
 (a plate: `land_*` for a landscape, otherwise a wash from `assets/paint`) and `featured: true`.

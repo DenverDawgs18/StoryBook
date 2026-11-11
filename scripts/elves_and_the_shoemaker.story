@@ -7,7 +7,7 @@ blurb: >
   A poor shoemaker cuts out his last scrap of leather and goes to bed. In the morning
   the shoes are finished, every stitch perfect. Someone is working in the night.
 mood: Firelight, midnight, small busy hands
-featured: true
+featured: false
 art: land_cottage
 caption: “and away over the green”
 order: 1
