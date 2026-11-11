@@ -14,11 +14,11 @@ labels: {host: the host, father: the father, mother: the stepmother, hansel: Han
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bm_george", speed: 0.93, room: room, wet: 0.07}
-  father:   {voice: "bm_daniel", speed: 0.88, pitch: -1, room: room, wet: 0.1}
-  mother:   {voice: "bf_emma", speed: 0.98, tone: thin, room: room, wet: 0.1}
-  hansel:   {voice: "am_puck", speed: 1.0, pitch: 3, room: booth, wet: 0.1}
-  gretel:   {voice: "bf_alice", speed: 1.0, pitch: 3, room: booth, wet: 0.1}
-  witch:    {voice: "af_nicole*0.6+bf_lily*0.4", speed: 0.86, pitch: -1.5, tone: thin, room: chamber, wet: 0.18}
+  father:   {voice: "bm_fable", speed: 0.9, room: room, wet: 0.1}
+  mother:   {voice: "bf_emma", speed: 1.0, room: room, wet: 0.1}
+  hansel:   {voice: "am_puck", speed: 1.05, room: booth, wet: 0.1}
+  gretel:   {voice: "af_heart", speed: 1.02, room: booth, wet: 0.1}
+  witch:    {voice: "af_nicole", speed: 0.9, room: chamber, wet: 0.18}
 ---
 [bed amb wind intensity=0.25 howl=0.15 vol=-14 fade=6]
 [bed music fairytale key=Am tempo=58 vol=-12 fade=6]

@@ -14,8 +14,8 @@ labels: {host: the host, queen: the old queen, princess: the princess}
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_emma", speed: 0.92, room: room, wet: 0.07}
-  queen:    {voice: "bf_isabella", speed: 0.88, pitch: -1.5, room: hall, wet: 0.18}
-  princess: {voice: "bf_alice", speed: 0.95, pitch: 1, room: room, wet: 0.1}
+  queen:    {voice: "af_bella", speed: 0.9, room: hall, wet: 0.18}
+  princess: {voice: "af_heart", speed: 0.97, room: room, wet: 0.1}
 ---
 [bed rain rain intensity=0.5 roof=0.1 vol=-16 fade=5]
 [bed music fairytale key=F tempo=64 vol=-12 fade=6]

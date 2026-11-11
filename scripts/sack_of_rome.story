@@ -14,8 +14,8 @@ labels: {host: the host, jerome: Jerome, at Bethlehem, virgin: an aged virgin}
 cast:
   host:     {voice: "bm_lewis", speed: 0.87, room: chamber, wet: 0.06}
   narrator: {voice: "bm_george*0.7+bm_lewis*0.3", speed: 0.92, room: room, wet: 0.07}
-  jerome:   {voice: "bm_daniel", speed: 0.86, pitch: -1, tone: distant, room: cathedral, wet: 0.22}
-  virgin:   {voice: "bf_isabella*0.7+bf_emma*0.3", speed: 0.86, pitch: -1.5, room: chamber, wet: 0.2}
+  jerome:   {voice: "bm_fable", speed: 0.88, room: cathedral, wet: 0.22, tone: distant}
+  virgin:   {voice: "af_bella", speed: 0.88, room: chamber, wet: 0.2}
 ---
 [bed amb wind intensity=0.3 howl=0.15 vol=-13 fade=8]
 [bed music elegy vol=-9 fade=10]

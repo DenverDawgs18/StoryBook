@@ -14,11 +14,11 @@ labels: {host: the host, king: the king, daughter: the miller's daughter, rumpel
 cast:
   host:      {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator:  {voice: "bf_isabella", speed: 0.92, room: room, wet: 0.07}
-  king:      {voice: "am_fenrir*0.6+bm_daniel*0.4", speed: 0.92, pitch: -1, room: hall, wet: 0.2}
-  daughter:  {voice: "bf_lily", speed: 0.95, room: chamber, wet: 0.12}
-  rumpel:    {voice: "am_puck", speed: 1.05, pitch: 4, tone: thin, room: chamber, wet: 0.14}
+  king:      {voice: "am_fenrir", speed: 0.92, room: hall, wet: 0.2}
+  daughter:  {voice: "af_heart", speed: 0.97, room: chamber, wet: 0.12}
+  rumpel:    {voice: "am_puck", speed: 1.1, room: chamber, wet: 0.14}
   messenger: {voice: "bm_fable", speed: 1.0, room: hall, wet: 0.15}
-  court:     {voice: "am_michael*0.5+af_heart*0.5", speed: 1.0, room: hall, wet: 0.3}
+  court:     {voice: "am_michael", speed: 1.0, room: hall, wet: 0.3}
 ---
 [bed amb roomtone creaks=0.2 vol=-6 fade=5]
 [bed music fairytale key=Am tempo=62 vol=-12 fade=6]

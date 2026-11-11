@@ -13,7 +13,7 @@ labels: {host: the host, prospero: Prince Prospero}
 cast:
   host:     {voice: "bm_lewis", speed: 0.88, room: chamber, wet: 0.07}
   narrator: {voice: "bm_george", speed: 0.92, room: room, wet: 0.08}
-  prospero: {voice: "am_fenrir*0.55+bm_daniel*0.45", speed: 0.95, pitch: -1, room: hall, wet: 0.3, gain: 1}
+  prospero: {voice: "am_fenrir", speed: 0.95, room: hall, wet: 0.3}
 ---
 [bed amb wind intensity=0.35 howl=0.3 vol=-12 fade=6]
 [bed music dread root=E2 vol=-10 fade=8]

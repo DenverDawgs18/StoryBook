@@ -6,17 +6,18 @@
   "source": "https://www.gutenberg.org/ebooks/2591",
   "blurb": "A poor shoemaker cuts out his last scrap of leather and goes to bed. In the morning the shoes are finished, every stitch perfect. Someone is working in the night.\n",
   "mood": "Firelight, midnight, small busy hands",
-  "featured": true,
+  "featured": false,
   "art": "land_cottage",
   "caption": "“and away over the green”",
   "order": 1,
+  "shelf": "fairy",
   "labels": {
    "host": "the host",
    "shoemaker": "the shoemaker",
    "wife": "his wife"
   }
  },
- "duration": 301.93,
+ "duration": 300.34,
  "chapters": [
   {
    "title": "The Elves and the Shoemaker.",
@@ -272,222 +273,222 @@
      "speaker": "shoemaker",
      "text": "I should like to sit up and watch tonight, that we may see who it is that comes and does my work for me.",
      "start": 141.9,
-     "end": 148.13,
+     "end": 148.37,
      "phrases": [
       [
        "I should like to sit up and watch tonight, that we may see who it is that comes and does my work for me.",
        141.9,
-       148.13
+       148.37
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "The wife liked the thought; so they left a light burning, and hid themselves in a corner of the room, behind a curtain that was hung up there, and watched what would happen.",
-     "start": 148.35,
-     "end": 158.13,
+     "start": 148.59,
+     "end": 158.36,
      "phrases": [
       [
        "The wife liked the thought;",
-       148.35,
-       150.08
+       148.59,
+       150.31
       ],
       [
        "so they left a light burning, and hid themselves in a corner of the room, behind a curtain that was hung up there, and watched what would happen.",
-       150.39,
-       158.13
+       150.62,
+       158.36
       ]
      ]
     }
    ],
-   "end": 158.13
+   "end": 158.36
   },
   {
-   "start": 176.94,
+   "start": 177.17,
    "segments": [
     {
      "speaker": "narrator",
      "text": "As soon as it was midnight, there came in two little naked dwarfs; and they sat themselves upon the shoemaker’s bench, took up all the work that was cut out, and began to ply with their little fingers, stitching and rapping and tapping away at such a rate, that the shoemaker was all wonder, and could not take his eyes off them. And on they went, till the job was quite done, and the shoes stood ready for use upon the table. This was long before daybreak; and then they bustled away as quick as lightning.",
-     "start": 176.94,
-     "end": 206.72,
+     "start": 177.17,
+     "end": 206.96,
      "phrases": [
       [
        "As soon as it was midnight, there came in two little naked dwarfs;",
-       176.94,
-       180.7
+       177.17,
+       180.93
       ],
       [
        "and they sat themselves upon the shoemaker's bench, took up all the work that was cut out, and began to ply with their little fingers, stitching and rapping and tapping away at such a rate, that the shoemaker was all wonder, and could not take his eyes off them.",
-       181.01,
-       195.2
+       181.24,
+       195.44
       ],
       [
        "And on they went, till the job was quite done, and the shoes stood ready for use upon the table.",
-       195.67,
-       201.06
+       195.9,
+       201.29
       ],
       [
        "This was long before daybreak;",
-       201.52,
-       203.66
+       201.76,
+       203.89
       ],
       [
        "and then they bustled away as quick as lightning.",
-       203.97,
-       206.72
+       204.2,
+       206.96
       ]
      ]
     }
    ],
-   "end": 206.72
+   "end": 206.96
   },
   {
-   "start": 210.7,
+   "start": 210.93,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The next day the wife said to the shoemaker.",
-     "start": 210.7,
-     "end": 213.19,
+     "start": 210.93,
+     "end": 213.42,
      "phrases": [
       [
        "The next day the wife said to the shoemaker.",
-       210.7,
-       213.19
+       210.93,
+       213.42
       ]
      ]
     },
     {
      "speaker": "wife",
      "text": "These little wights have made us rich, and we ought to be thankful to them, and do them a good turn if we can. I am quite sorry to see them run about as they do; and indeed it is not very decent, for they have nothing upon their backs to keep off the cold. I’ll tell you what, I will make each of them a shirt, and a coat and waistcoat, and a pair of pantaloons into the bargain; and do you make each of them a little pair of shoes.",
-     "start": 213.41,
-     "end": 238.75,
+     "start": 213.64,
+     "end": 237.17,
      "phrases": [
       [
        "These little wights have made us rich, and we ought to be thankful to them, and do them a good turn if we can.",
-       213.41,
-       219.2
+       213.64,
+       219.08
       ],
       [
        "I am quite sorry to see them run about as they do;",
-       219.65,
-       222.68
+       219.52,
+       222.15
       ],
       [
        "and indeed it is not very decent, for they have nothing upon their backs to keep off the cold.",
-       222.98,
-       228.3
+       222.45,
+       227.44
       ],
       [
        "I'll tell you what, I will make each of them a shirt, and a coat and waistcoat, and a pair of pantaloons into the bargain;",
-       228.74,
-       235.37
+       227.87,
+       234.29
       ],
       [
        "and do you make each of them a little pair of shoes.",
-       235.67,
-       238.75
+       234.58,
+       237.17
       ]
      ]
     }
    ],
-   "end": 238.75
+   "end": 237.17
   },
   {
-   "start": 239.6,
+   "start": 238.02,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The thought pleased the good cobbler very much; and one evening, when all the things were ready, they laid them on the table, instead of the work that they used to cut out, and then went and hid themselves, to watch what the little elves would do.",
-     "start": 239.6,
-     "end": 252.88,
+     "start": 238.02,
+     "end": 251.3,
      "phrases": [
       [
        "The thought pleased the good cobbler very much;",
-       239.6,
-       242.23
+       238.02,
+       240.64
       ],
       [
        "and one evening, when all the things were ready, they laid them on the table, instead of the work that they used to cut out, and then went and hid themselves, to watch what the little elves would do.",
-       242.54,
-       252.88
+       240.95,
+       251.3
       ]
      ]
     }
    ],
-   "end": 252.88
+   "end": 251.3
   },
   {
-   "start": 253.73,
+   "start": 252.15,
    "segments": [
     {
      "speaker": "narrator",
      "text": "About midnight in they came, dancing and skipping, hopped round the room, and then went to sit down to their work as usual; but when they saw the clothes lying for them, they laughed and chuckled, and seemed mightily delighted.",
-     "start": 253.73,
-     "end": 266.27,
+     "start": 252.15,
+     "end": 264.69,
      "phrases": [
       [
        "About midnight in they came, dancing and skipping, hopped round the room, and then went to sit down to their work as usual;",
-       253.73,
-       260.63
+       252.15,
+       259.05
       ],
       [
        "but when they saw the clothes lying for them, they laughed and chuckled, and seemed mightily delighted.",
-       260.94,
-       266.27
+       259.36,
+       264.69
       ]
      ]
     }
    ],
-   "end": 266.27
+   "end": 264.69
   },
   {
-   "start": 267.12,
+   "start": 265.54,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Then they dressed themselves in the twinkling of an eye, and danced and capered and sprang about, as merry as could be; till at last they danced out at the door, and away over the green.",
-     "start": 267.12,
-     "end": 277.32,
+     "start": 265.54,
+     "end": 275.74,
      "phrases": [
       [
        "Then they dressed themselves in the twinkling of an eye, and danced and capered and sprang about, as merry as could be;",
-       267.12,
-       273.44
+       265.54,
+       271.86
       ],
       [
        "till at last they danced out at the door, and away over the green.",
-       273.75,
-       277.32
+       272.17,
+       275.74
       ]
      ]
     }
    ],
-   "end": 277.32
+   "end": 275.74
   },
   {
-   "start": 279.42,
+   "start": 277.84,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The good couple saw them no more; but everything went well with them from that time forward, as long as they lived.",
-     "start": 279.42,
-     "end": 286.08,
+     "start": 277.84,
+     "end": 284.49,
      "phrases": [
       [
        "The good couple saw them no more;",
-       279.42,
-       281.42
+       277.84,
+       279.84
       ],
       [
        "but everything went well with them from that time forward, as long as they lived.",
-       281.73,
-       286.08
+       280.15,
+       284.49
       ]
      ]
     }
    ],
-   "end": 286.08
+   "end": 284.49
   }
  ],
  "cast": {
@@ -498,10 +499,10 @@
    "voice": "bf_isabella"
   },
   "shoemaker": {
-   "voice": "bm_george*0.7+bm_daniel*0.3"
+   "voice": "bm_george"
   },
   "wife": {
-   "voice": "bf_lily"
+   "voice": "bf_emma"
   }
  }
 }

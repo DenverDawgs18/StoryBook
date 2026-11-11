@@ -8,13 +8,14 @@
   "mood": "Snow, a match flame, a falling star",
   "art": "land_snow",
   "order": 8,
+  "shelf": "fairy",
   "labels": {
    "host": "the host",
    "girl": "the little girl",
    "passers": "the people"
   }
  },
- "duration": 410.96,
+ "duration": 408.79,
  "chapters": [
   {
    "title": "The Little Match Girl. By Hans Christian Andersen.",
@@ -504,212 +505,212 @@
      "speaker": "girl",
      "text": "Someone is just dead!",
      "start": 292.63,
-     "end": 294.48,
+     "end": 293.91,
      "phrases": [
       [
        "Someone is just dead!",
        292.63,
-       294.48
+       293.91
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the little girl; for her old grandmother, the only person who had loved her, and who was now no more, had told her, that when a star falls, a soul ascends to God.",
-     "start": 294.7,
-     "end": 305.01,
+     "start": 294.13,
+     "end": 304.44,
      "phrases": [
       [
        "said the little girl;",
-       294.7,
-       296.22
+       294.13,
+       295.65
       ],
       [
        "for her old grandmother, the only person who had loved her, and who was now no more, had told her, that when a star falls, a soul ascends to God.",
-       296.54,
-       305.01
+       295.97,
+       304.44
       ]
      ]
     }
    ],
-   "end": 305.01
+   "end": 304.44
   },
   {
-   "start": 305.86,
+   "start": 305.29,
    "segments": [
     {
      "speaker": "narrator",
      "text": "She drew another match against the wall: it was again light, and in the lustre there stood the old grandmother, so bright and radiant, so mild, and with such an expression of love.",
-     "start": 305.86,
-     "end": 316.66,
+     "start": 305.29,
+     "end": 316.09,
      "phrases": [
       [
        "She drew another match against the wall:",
-       305.86,
-       308.16
+       305.29,
+       307.58
       ],
       [
        "it was again light, and in the lustre there stood the old grandmother, so bright and radiant, so mild, and with such an expression of love.",
-       308.47,
-       316.66
+       307.9,
+       316.09
       ]
      ]
     }
    ],
-   "end": 316.66
+   "end": 316.09
   },
   {
-   "start": 317.51,
+   "start": 316.94,
    "segments": [
     {
      "speaker": "girl",
      "text": "Grandmother!",
-     "start": 317.51,
-     "end": 318.75,
+     "start": 316.94,
+     "end": 317.75,
      "phrases": [
       [
        "Grandmother!",
-       317.51,
-       318.75
+       316.94,
+       317.75
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "cried the little one.",
-     "start": 318.97,
-     "end": 320.43,
+     "start": 317.97,
+     "end": 319.43,
      "phrases": [
       [
        "cried the little one.",
-       318.97,
-       320.43
+       317.97,
+       319.43
       ]
      ]
     },
     {
      "speaker": "girl",
      "text": "Oh, take me with you! You go away when the match burns out; you vanish like the warm stove, like the delicious roast goose, and like the magnificent Christmas tree!",
-     "start": 320.65,
-     "end": 331.84,
+     "start": 319.65,
+     "end": 329.57,
      "phrases": [
       [
        "Oh, take me with you!",
-       320.65,
-       322.45
+       319.65,
+       320.98
       ],
       [
        "You go away when the match burns out;",
-       322.9,
-       325.37
+       321.42,
+       323.28
       ],
       [
        "you vanish like the warm stove, like the delicious roast goose, and like the magnificent Christmas tree!",
-       325.68,
-       331.84
+       323.57,
+       329.57
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "And she rubbed the whole bundle of matches quickly against the wall, for she wanted to be quite sure of keeping her grandmother near her. And the matches gave such a brilliant light that it was brighter than at noon-day: never formerly had the grandmother been so beautiful and so tall. She took the little maiden, on her arm, and both flew in brightness and in joy so high, so very high, and then above was neither cold, nor hunger, nor anxiety—they were with God.",
-     "start": 332.06,
-     "end": 360.26,
+     "start": 329.79,
+     "end": 357.99,
      "phrases": [
       [
        "And she rubbed the whole bundle of matches quickly against the wall, for she wanted to be quite sure of keeping her grandmother near her.",
-       332.06,
-       338.98
+       329.79,
+       336.71
       ],
       [
        "And the matches gave such a brilliant light that it was brighter than at noon-day:",
-       339.46,
-       344.12
+       337.19,
+       341.85
       ],
       [
        "never formerly had the grandmother been so beautiful and so tall.",
-       344.44,
-       348.28
+       342.17,
+       346.01
       ],
       [
        "She took the little maiden, on her arm, and both flew in brightness and in joy so high, so very high, and then above was neither cold, nor hunger, nor anxiety",
-       348.76,
-       358.66
+       346.49,
+       356.39
       ],
       [
        "they were with God.",
-       358.91,
-       360.26
+       356.64,
+       357.99
       ]
      ]
     }
    ],
-   "end": 360.26
+   "end": 357.99
   },
   {
-   "start": 363.11,
+   "start": 360.84,
    "segments": [
     {
      "speaker": "narrator",
      "text": "But in the corner, at the cold hour of dawn, sat the poor girl, with rosy cheeks and with a smiling mouth, leaning against the wall—frozen to death on the last evening of the old year. Stiff and stark sat the child there with her matches, of which one bundle had been burnt.",
-     "start": 363.11,
-     "end": 379.62,
+     "start": 360.84,
+     "end": 377.35,
      "phrases": [
       [
        "But in the corner, at the cold hour of dawn, sat the poor girl, with rosy cheeks and with a smiling mouth, leaning against the wall",
-       363.11,
-       370.69
+       360.84,
+       368.42
       ],
       [
        "frozen to death on the last evening of the old year.",
-       370.94,
-       374.06
+       368.67,
+       371.79
       ],
       [
        "Stiff and stark sat the child there with her matches, of which one bundle had been burnt.",
-       374.54,
-       379.62
+       372.27,
+       377.35
       ]
      ]
     },
     {
      "speaker": "passers",
      "text": "She wanted to warm herself,",
-     "start": 379.84,
-     "end": 381.59,
+     "start": 377.57,
+     "end": 379.41,
      "phrases": [
       [
        "She wanted to warm herself,",
-       379.84,
-       381.59
+       377.57,
+       379.41
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "people said. No one had the slightest suspicion of what beautiful things she had seen; no one even dreamed of the splendor in which, with her grandmother she had entered on the joys of a new year.",
-     "start": 381.81,
-     "end": 394.11,
+     "start": 379.63,
+     "end": 391.94,
      "phrases": [
       [
        "people said.",
-       381.81,
-       382.99
+       379.63,
+       380.82
       ],
       [
        "No one had the slightest suspicion of what beautiful things she had seen;",
-       383.47,
-       387.63
+       381.3,
+       385.45
       ],
       [
        "no one even dreamed of the splendor in which, with her grandmother she had entered on the joys of a new year.",
-       387.94,
-       394.11
+       385.77,
+       391.94
       ]
      ]
     }
    ],
-   "end": 394.11
+   "end": 391.94
   }
  ],
  "cast": {
@@ -720,10 +721,10 @@
    "voice": "bf_isabella"
   },
   "girl": {
-   "voice": "bf_lily"
+   "voice": "af_heart"
   },
   "passers": {
-   "voice": "am_michael*0.5+bf_emma*0.5"
+   "voice": "am_michael"
   }
  }
 }

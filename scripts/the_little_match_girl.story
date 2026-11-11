@@ -14,8 +14,8 @@ labels: {host: the host, girl: the little girl, passers: the people}
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_isabella", speed: 0.88, room: room, wet: 0.08}
-  girl:     {voice: "bf_lily", speed: 0.92, pitch: 3, room: booth, wet: 0.12}
-  passers:  {voice: "am_michael*0.5+bf_emma*0.5", speed: 0.92, room: hall, wet: 0.25}
+  girl:     {voice: "af_heart", speed: 0.95, room: booth, wet: 0.12}
+  passers:  {voice: "am_michael", speed: 0.92, room: hall, wet: 0.25}
 ---
 [bed amb wind intensity=0.5 howl=0.45 vol=-13 fade=6]
 [bed music elegy chords="E3 B3 G4 | C3 G3 E4 | A2 E3 C4 | B2 F#3 D#4" vol=-13 fade=8]

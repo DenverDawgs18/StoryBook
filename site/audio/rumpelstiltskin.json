@@ -8,6 +8,7 @@
   "mood": "A spinning wheel, a fire in the hills",
   "art": "land_hills",
   "order": 4,
+  "shelf": "fairy",
   "labels": {
    "host": "the host",
    "king": "the king",
@@ -17,7 +18,7 @@
    "court": "the court"
   }
  },
- "duration": 407.44,
+ "duration": 401.64,
  "chapters": [
   {
    "title": "Rumpelstiltskin. By the Brothers Grimm.",
@@ -147,983 +148,983 @@
      "speaker": "king",
      "text": "All this must be spun into gold before morning, as you love your life.",
      "start": 71.19,
-     "end": 75.3,
+     "end": 75.45,
      "phrases": [
       [
        "All this must be spun into gold before morning, as you love your life.",
        71.19,
-       75.3
+       75.45
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "It was in vain that the poor maiden said that it was only a silly boast of her father, for that she could do no such thing as spin straw into gold: the chamber door was locked, and she was left alone.",
-     "start": 75.52,
-     "end": 86.42,
+     "start": 75.67,
+     "end": 86.57,
      "phrases": [
       [
        "It was in vain that the poor maiden said that it was only a silly boast of her father, for that she could do no such thing as spin straw into gold:",
-       75.52,
-       83.22
+       75.67,
+       83.37
       ],
       [
        "the chamber door was locked, and she was left alone.",
-       83.53,
-       86.42
+       83.67,
+       86.57
       ]
      ]
     }
    ],
-   "end": 86.42
+   "end": 86.57
   },
   {
-   "start": 89.43,
+   "start": 89.58,
    "segments": [
     {
      "speaker": "narrator",
      "text": "She sat down in one corner of the room, and began to bewail her hard fate; when on a sudden the door opened, and a droll-looking little man hobbled in, and said",
-     "start": 89.43,
-     "end": 99.01,
+     "start": 89.58,
+     "end": 99.16,
      "phrases": [
       [
        "She sat down in one corner of the room, and began to bewail her hard fate;",
-       89.43,
-       93.94
+       89.58,
+       94.08
       ],
       [
        "when on a sudden the door opened, and a droll-looking little man hobbled in, and said",
-       94.24,
-       99.01
+       94.39,
+       99.16
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Good morrow to you, my good lass; what are you weeping for?",
-     "start": 99.23,
-     "end": 102.08,
+     "start": 99.38,
+     "end": 102.16,
      "phrases": [
       [
        "Good morrow to you, my good lass;",
-       99.23,
-       100.71
+       99.38,
+       100.8
       ],
       [
        "what are you weeping for?",
-       100.97,
-       102.08
+       101.06,
+       102.16
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Alas!",
-     "start": 102.3,
-     "end": 103.31,
+     "start": 102.38,
+     "end": 103.04,
      "phrases": [
       [
        "Alas!",
-       102.3,
-       103.31
+       102.38,
+       103.04
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said she",
-     "start": 103.53,
-     "end": 104.6,
+     "start": 103.26,
+     "end": 104.32,
      "phrases": [
       [
        "said she",
-       103.53,
-       104.6
+       103.26,
+       104.32
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "I must spin this straw into gold, and I know not how.",
-     "start": 104.82,
-     "end": 108.1,
+     "start": 104.54,
+     "end": 107.46,
      "phrases": [
       [
        "I must spin this straw into gold, and I know not how.",
-       104.82,
-       108.1
+       104.54,
+       107.46
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "What will you give me,",
-     "start": 108.32,
-     "end": 109.32,
+     "start": 107.68,
+     "end": 108.68,
      "phrases": [
       [
        "What will you give me,",
-       108.32,
-       109.32
+       107.68,
+       108.68
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the hobgoblin",
-     "start": 109.54,
-     "end": 110.85,
+     "start": 108.9,
+     "end": 110.21,
      "phrases": [
       [
        "said the hobgoblin",
-       109.54,
-       110.85
+       108.9,
+       110.21
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "to do it for you?",
-     "start": 111.07,
-     "end": 112.01,
+     "start": 110.43,
+     "end": 111.33,
      "phrases": [
       [
        "to do it for you?",
-       111.07,
-       112.01
+       110.43,
+       111.33
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "My necklace,",
-     "start": 112.23,
-     "end": 113.55,
+     "start": 111.55,
+     "end": 112.42,
      "phrases": [
       [
        "My necklace,",
-       112.23,
-       113.55
+       111.55,
+       112.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "replied the maiden. He took her at her word, and sat himself down to the wheel, and whistled and sang:",
-     "start": 113.77,
-     "end": 120.11,
+     "start": 112.64,
+     "end": 118.98,
      "phrases": [
       [
        "replied the maiden.",
-       113.77,
-       115.26
+       112.64,
+       114.13
       ],
       [
        "He took her at her word, and sat himself down to the wheel, and whistled and sang:",
-       115.71,
-       120.11
+       114.59,
+       118.98
       ]
      ]
     }
    ],
-   "end": 120.11
+   "end": 118.98
   },
   {
-   "start": 120.96,
+   "start": 119.83,
    "segments": [
     {
      "speaker": "rumpel",
      "text": "Round about, round about, Lo and behold! Reel away, reel away, Straw into gold!",
-     "start": 120.96,
-     "end": 125.4,
+     "start": 119.83,
+     "end": 124.13,
      "phrases": [
       [
        "Round about, round about, Lo and behold!",
-       120.96,
-       122.93
+       119.83,
+       121.73
       ],
       [
        "Reel away, reel away, Straw into gold!",
-       123.33,
-       125.4
+       122.11,
+       124.13
       ]
      ]
     }
    ],
-   "end": 125.4
+   "end": 124.13
   },
   {
-   "start": 126.25,
+   "start": 124.98,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And round about the wheel went merrily; the work was quickly done, and the straw was all spun into gold.",
-     "start": 126.25,
-     "end": 132.24,
+     "start": 124.98,
+     "end": 130.97,
      "phrases": [
       [
        "And round about the wheel went merrily;",
-       126.25,
-       128.35
+       124.98,
+       127.08
       ],
       [
        "the work was quickly done, and the straw was all spun into gold.",
-       128.65,
-       132.24
+       127.38,
+       130.97
       ]
      ]
     }
    ],
-   "end": 132.24
+   "end": 130.97
   },
   {
-   "start": 135.22,
+   "start": 133.95,
    "segments": [
     {
      "speaker": "narrator",
      "text": "When the king came and saw this, he was greatly astonished and pleased; but his heart grew still more greedy of gain, and he shut up the poor miller’s daughter again with a fresh task. Then she knew not what to do, and sat down once more to weep; but the dwarf soon opened the door, and said",
-     "start": 135.22,
-     "end": 151.55,
+     "start": 133.95,
+     "end": 150.28,
      "phrases": [
       [
        "When the king came and saw this, he was greatly astonished and pleased;",
-       135.22,
-       139.01
+       133.95,
+       137.74
       ],
       [
        "but his heart grew still more greedy of gain, and he shut up the poor miller's daughter again with a fresh task.",
-       139.32,
-       144.98
+       138.05,
+       143.71
       ],
       [
        "Then she knew not what to do, and sat down once more to weep;",
-       145.43,
-       148.77
+       144.16,
+       147.5
       ],
       [
        "but the dwarf soon opened the door, and said",
-       149.07,
-       151.55
+       147.81,
+       150.28
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "What will you give me to do your task?",
-     "start": 151.77,
-     "end": 153.37,
+     "start": 150.5,
+     "end": 151.98,
      "phrases": [
       [
        "What will you give me to do your task?",
-       151.77,
-       153.37
+       150.5,
+       151.98
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "The ring on my finger,",
-     "start": 153.59,
-     "end": 155.49,
+     "start": 152.2,
+     "end": 153.42,
      "phrases": [
       [
        "The ring on my finger,",
-       153.59,
-       155.49
+       152.2,
+       153.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said she. So her little friend took the ring, and began to work at the wheel again, and whistled and sang:",
-     "start": 155.71,
-     "end": 162.2,
+     "start": 153.64,
+     "end": 160.12,
      "phrases": [
       [
        "said she.",
-       155.71,
-       156.71
+       153.64,
+       154.64
       ],
       [
        "So her little friend took the ring, and began to work at the wheel again, and whistled and sang:",
-       157.17,
-       162.2
+       155.1,
+       160.12
       ]
      ]
     }
    ],
-   "end": 162.2
+   "end": 160.12
   },
   {
-   "start": 163.05,
+   "start": 160.97,
    "segments": [
     {
      "speaker": "rumpel",
      "text": "Round about, round about, Lo and behold! Reel away, reel away, Straw into gold!",
-     "start": 163.05,
-     "end": 167.49,
+     "start": 160.97,
+     "end": 165.27,
      "phrases": [
       [
        "Round about, round about, Lo and behold!",
-       163.05,
-       165.02
+       160.97,
+       162.87
       ],
       [
        "Reel away, reel away, Straw into gold!",
-       165.42,
-       167.49
+       163.25,
+       165.27
       ]
      ]
     }
    ],
-   "end": 167.49
+   "end": 165.27
   },
   {
-   "start": 168.34,
+   "start": 166.12,
    "segments": [
     {
      "speaker": "narrator",
      "text": "till, long before morning, all was done again.",
-     "start": 168.34,
-     "end": 171.0,
+     "start": 166.12,
+     "end": 168.78,
      "phrases": [
       [
        "till, long before morning, all was done again.",
-       168.34,
-       171.0
+       166.12,
+       168.78
       ]
      ]
     }
    ],
-   "end": 171.0
+   "end": 168.78
   },
   {
-   "start": 171.85,
+   "start": 169.63,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The king was greatly delighted to see all this glittering treasure; but still he had not enough: so he took the miller’s daughter to a yet larger heap, and said",
-     "start": 171.85,
-     "end": 181.77,
+     "start": 169.63,
+     "end": 179.55,
      "phrases": [
       [
        "The king was greatly delighted to see all this glittering treasure;",
-       171.85,
-       175.55
+       169.63,
+       173.33
       ],
       [
        "but still he had not enough:",
-       175.86,
-       177.74
+       173.64,
+       175.53
       ],
       [
        "so he took the miller's daughter to a yet larger heap, and said",
-       178.05,
-       181.77
+       175.83,
+       179.55
       ]
      ]
     },
     {
      "speaker": "king",
      "text": "All this must be spun tonight; and if it is, you shall be my queen.",
-     "start": 181.99,
-     "end": 186.0,
+     "start": 179.77,
+     "end": 183.45,
      "phrases": [
       [
        "All this must be spun tonight;",
-       181.99,
-       183.69
+       179.77,
+       181.35
       ],
       [
        "and if it is, you shall be my queen.",
-       184.0,
-       186.0
+       181.66,
+       183.45
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "As soon as she was alone that dwarf came in, and said",
-     "start": 186.22,
-     "end": 189.49,
+     "start": 183.67,
+     "end": 186.94,
      "phrases": [
       [
        "As soon as she was alone that dwarf came in, and said",
-       186.22,
-       189.49
+       183.67,
+       186.94
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "What will you give me to spin gold for you this third time?",
-     "start": 189.71,
-     "end": 192.53,
+     "start": 187.16,
+     "end": 189.91,
      "phrases": [
       [
        "What will you give me to spin gold for you this third time?",
-       189.71,
-       192.53
+       187.16,
+       189.91
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "I have nothing left,",
-     "start": 192.75,
-     "end": 194.44,
+     "start": 190.13,
+     "end": 191.3,
      "phrases": [
       [
        "I have nothing left,",
-       192.75,
-       194.44
+       190.13,
+       191.3
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said she.",
-     "start": 194.66,
-     "end": 195.66,
+     "start": 191.52,
+     "end": 192.53,
      "phrases": [
       [
        "said she.",
-       194.66,
-       195.66
+       191.52,
+       192.53
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Then say you will give me,",
-     "start": 195.88,
-     "end": 197.09,
+     "start": 192.75,
+     "end": 193.94,
      "phrases": [
       [
        "Then say you will give me,",
-       195.88,
-       197.09
+       192.75,
+       193.94
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the little man",
-     "start": 197.31,
-     "end": 198.47,
+     "start": 194.16,
+     "end": 195.32,
      "phrases": [
       [
        "said the little man",
-       197.31,
-       198.47
+       194.16,
+       195.32
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "the first little child that you may have when you are queen.",
-     "start": 198.69,
-     "end": 201.35,
+     "start": 195.54,
+     "end": 198.15,
      "phrases": [
       [
        "the first little child that you may have when you are queen.",
-       198.69,
-       201.35
+       195.54,
+       198.15
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "That may never be,",
-     "start": 201.57,
-     "end": 203.29,
+     "start": 198.37,
+     "end": 199.46,
      "phrases": [
       [
        "That may never be,",
-       201.57,
-       203.29
+       198.37,
+       199.46
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "thought the miller’s daughter: and as she knew no other way to get her task done, she said she would do what he asked. Round went the wheel again to the old song, and the manikin once more spun the heap into gold. The king came in the morning, and, finding all he wanted, was forced to keep his word; so he married the miller’s daughter, and she really became queen.",
-     "start": 203.51,
-     "end": 224.68,
+     "start": 199.68,
+     "end": 220.86,
      "phrases": [
       [
        "thought the miller's daughter:",
-       203.51,
-       205.27
+       199.68,
+       201.44
       ],
       [
        "and as she knew no other way to get her task done, she said she would do what he asked.",
-       205.57,
-       210.14
+       201.75,
+       206.31
       ],
       [
        "Round went the wheel again to the old song, and the manikin once more spun the heap into gold.",
-       210.6,
-       215.84
+       206.77,
+       212.01
       ],
       [
        "The king came in the morning, and, finding all he wanted, was forced to keep his word;",
-       216.29,
-       220.92
+       212.46,
+       217.1
       ],
       [
        "so he married the miller's daughter, and she really became queen.",
-       221.23,
-       224.68
+       217.4,
+       220.86
       ]
      ]
     }
    ],
-   "end": 224.68
+   "end": 220.86
   },
   {
-   "start": 226.53,
+   "start": 222.71,
    "segments": [
     {
      "speaker": "narrator",
      "text": "At the birth of her first little child she was very glad, and forgot the dwarf, and what she had said. But one day he came into her room, where she was sitting playing with her baby, and put her in mind of it. Then she grieved sorely at her misfortune, and said she would give him all the wealth of the kingdom if he would let her off, but in vain; till at last her tears softened him, and he said",
-     "start": 226.53,
-     "end": 248.64,
+     "start": 222.71,
+     "end": 244.81,
      "phrases": [
       [
        "At the birth of her first little child she was very glad, and forgot the dwarf, and what she had said.",
-       226.53,
-       232.08
+       222.71,
+       228.25
       ],
       [
        "But one day he came into her room, where she was sitting playing with her baby, and put her in mind of it.",
-       232.53,
-       238.22
+       228.7,
+       234.39
       ],
       [
        "Then she grieved sorely at her misfortune, and said she would give him all the wealth of the kingdom if he would let her off, but in vain;",
-       238.68,
-       245.51
+       234.85,
+       241.68
       ],
       [
        "till at last her tears softened him, and he said",
-       245.81,
-       248.64
+       241.98,
+       244.81
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "I will give you three days’ grace, and if during that time you tell me my name, you shall keep your child.",
-     "start": 248.86,
-     "end": 253.78,
+     "start": 245.03,
+     "end": 250.15,
      "phrases": [
       [
        "I will give you three days' grace, and if during that time you tell me my name, you shall keep your child.",
-       248.86,
-       253.78
+       245.03,
+       250.15
       ]
      ]
     }
    ],
-   "end": 253.78
+   "end": 250.15
   },
   {
-   "start": 254.63,
+   "start": 251.0,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Now the queen lay awake all night, thinking of all the odd names that she had ever heard; and she sent messengers all over the land to find out new ones. The next day the little man came, and she began with TIMOTHY, ICHABOD, BENJAMIN, JEREMIAH, and all the names she could remember; but to all and each of them he said",
-     "start": 254.63,
-     "end": 273.42,
+     "start": 251.0,
+     "end": 269.79,
      "phrases": [
       [
        "Now the queen lay awake all night, thinking of all the odd names that she had ever heard;",
-       254.63,
-       259.28
+       251.0,
+       255.65
       ],
       [
        "and she sent messengers all over the land to find out new ones.",
-       259.58,
-       263.22
+       255.95,
+       259.59
       ],
       [
        "The next day the little man came, and she began with TIMOTHY, ICHABOD, BENJAMIN, JEREMIAH, and all the names she could remember;",
-       263.68,
-       270.81
+       260.05,
+       267.18
       ],
       [
        "but to all and each of them he said",
-       271.11,
-       273.42
+       267.48,
+       269.79
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Madam, that is not my name.",
-     "start": 273.64,
-     "end": 275.07,
+     "start": 270.01,
+     "end": 271.37,
      "phrases": [
       [
        "Madam, that is not my name.",
-       273.64,
-       275.07
+       270.01,
+       271.37
       ]
      ]
     }
    ],
-   "end": 275.07
+   "end": 271.37
   },
   {
-   "start": 275.92,
+   "start": 272.22,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The second day she began with all the comical names she could hear of, BANDY-LEGS, HUNCHBACK, CROOK-SHANKS, and so on; but the little gentleman still said to every one of them",
-     "start": 275.92,
-     "end": 285.75,
+     "start": 272.22,
+     "end": 282.05,
      "phrases": [
       [
        "The second day she began with all the comical names she could hear of, BANDY-LEGS, HUNCHBACK, CROOK-SHANKS, and so on;",
-       275.92,
-       282.43
+       272.22,
+       278.73
       ],
       [
        "but the little gentleman still said to every one of them",
-       282.73,
-       285.75
+       279.04,
+       282.05
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Madam, that is not my name.",
-     "start": 285.97,
-     "end": 287.4,
+     "start": 282.27,
+     "end": 283.64,
      "phrases": [
       [
        "Madam, that is not my name.",
-       285.97,
-       287.4
+       282.27,
+       283.64
       ]
      ]
     }
    ],
-   "end": 287.4
+   "end": 283.64
   },
   {
-   "start": 292.8,
+   "start": 289.04,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The third day one of the messengers came back, and said",
-     "start": 292.8,
-     "end": 296.14,
+     "start": 289.04,
+     "end": 292.38,
      "phrases": [
       [
        "The third day one of the messengers came back, and said",
-       292.8,
-       296.14
+       289.04,
+       292.38
       ]
      ]
     },
     {
      "speaker": "messenger",
      "text": "I have travelled two days without hearing of any other names; but yesterday, as I was climbing a high hill, among the trees of the forest where the fox and the hare bid each other good night, I saw a little hut; and before the hut burnt a fire; and round about the fire a funny little dwarf was dancing upon one leg, and singing:",
-     "start": 296.36,
-     "end": 316.3,
+     "start": 292.6,
+     "end": 312.54,
      "phrases": [
       [
        "I have travelled two days without hearing of any other names;",
-       296.36,
-       300.0
+       292.6,
+       296.24
       ],
       [
        "but yesterday, as I was climbing a high hill, among the trees of the forest where the fox and the hare bid each other good night, I saw a little hut;",
-       300.28,
-       308.07
+       296.52,
+       304.31
       ],
       [
        "and before the hut burnt a fire;",
-       308.35,
-       310.87
+       304.59,
+       307.11
       ],
       [
        "and round about the fire a funny little dwarf was dancing upon one leg, and singing:",
-       311.15,
-       316.3
+       307.39,
+       312.54
       ]
      ]
     }
    ],
-   "end": 316.3
+   "end": 312.54
   },
   {
-   "start": 317.15,
+   "start": 313.39,
    "segments": [
     {
      "speaker": "rumpel",
      "text": "Merrily the feast I’ll make. Today I’ll brew, tomorrow bake; Merrily I’ll dance and sing, For next day will a stranger bring. Little does my lady dream Rumpelstiltskin is my name!",
-     "start": 317.15,
-     "end": 327.25,
+     "start": 313.39,
+     "end": 323.27,
      "phrases": [
       [
        "Merrily the feast I'll make.",
-       317.15,
-       318.53
+       313.39,
+       314.75
       ],
       [
        "Today I'll brew, tomorrow bake;",
-       318.93,
-       320.5
+       315.14,
+       316.71
       ],
       [
        "Merrily I'll dance and sing, For next day will a stranger bring.",
-       320.77,
-       323.94
+       316.96,
+       320.1
       ],
       [
        "Little does my lady dream Rumpelstiltskin is my name!",
-       324.34,
-       327.25
+       320.48,
+       323.27
       ]
      ]
     }
    ],
-   "end": 327.25
+   "end": 323.27
   },
   {
-   "start": 328.1,
+   "start": 324.12,
    "segments": [
     {
      "speaker": "narrator",
      "text": "When the queen heard this she jumped for joy, and as soon as her little friend came she sat down upon her throne, and called all her court round to enjoy the fun; and the nurse stood by her side with the baby in her arms, as if it was quite ready to be given up. Then the little man began to chuckle at the thought of having the poor child, to take home with him to his hut in the woods; and he cried out",
-     "start": 328.1,
-     "end": 350.85,
+     "start": 324.12,
+     "end": 346.87,
      "phrases": [
       [
        "When the queen heard this she jumped for joy, and as soon as her little friend came she sat down upon her throne, and called all her court round to enjoy the fun;",
-       328.1,
-       336.75
+       324.12,
+       332.78
       ],
       [
        "and the nurse stood by her side with the baby in her arms, as if it was quite ready to be given up.",
-       337.06,
-       342.33
+       333.08,
+       338.36
       ],
       [
        "Then the little man began to chuckle at the thought of having the poor child, to take home with him to his hut in the woods;",
-       342.79,
-       349.1
+       338.82,
+       345.12
       ],
       [
        "and he cried out",
-       349.4,
-       350.85
+       345.43,
+       346.87
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Now, lady, what is my name?",
-     "start": 351.07,
-     "end": 352.48,
+     "start": 347.09,
+     "end": 348.41,
      "phrases": [
       [
        "Now, lady, what is my name?",
-       351.07,
-       352.48
+       347.09,
+       348.41
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Is it John?",
-     "start": 352.7,
-     "end": 353.96,
+     "start": 348.63,
+     "end": 349.52,
      "phrases": [
       [
        "Is it John?",
-       352.7,
-       353.96
+       348.63,
+       349.52
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "asked she.",
-     "start": 354.18,
-     "end": 355.31,
+     "start": 349.74,
+     "end": 350.87,
      "phrases": [
       [
        "asked she.",
-       354.18,
-       355.31
+       349.74,
+       350.87
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "No, madam!",
-     "start": 355.53,
-     "end": 356.35,
+     "start": 351.09,
+     "end": 351.86,
      "phrases": [
       [
        "No, madam!",
-       355.53,
-       356.35
+       351.09,
+       351.86
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Is it Tom?",
-     "start": 356.57,
-     "end": 357.77,
+     "start": 352.08,
+     "end": 352.92,
      "phrases": [
       [
        "Is it Tom?",
-       356.57,
-       357.77
+       352.08,
+       352.92
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "No, madam!",
-     "start": 357.99,
-     "end": 358.81,
+     "start": 353.14,
+     "end": 353.92,
      "phrases": [
       [
        "No, madam!",
-       357.99,
-       358.81
+       353.14,
+       353.92
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Is it Jemmy?",
-     "start": 359.03,
-     "end": 360.37,
+     "start": 354.14,
+     "end": 355.0,
      "phrases": [
       [
        "Is it Jemmy?",
-       359.03,
-       360.37
+       354.14,
+       355.0
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "It is not.",
-     "start": 360.59,
-     "end": 361.39,
+     "start": 355.22,
+     "end": 356.0,
      "phrases": [
       [
        "It is not.",
-       360.59,
-       361.39
+       355.22,
+       356.0
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Can your name be Rumpelstiltskin?",
-     "start": 361.61,
-     "end": 364.1,
+     "start": 356.22,
+     "end": 357.95,
      "phrases": [
       [
        "Can your name be Rumpelstiltskin?",
-       361.61,
-       364.1
+       356.22,
+       357.95
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the lady slyly.",
-     "start": 364.32,
-     "end": 365.94,
+     "start": 358.17,
+     "end": 359.78,
      "phrases": [
       [
        "said the lady slyly.",
-       364.32,
-       365.94
+       358.17,
+       359.78
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Some witch told you that!—some witch told you that!",
-     "start": 366.16,
-     "end": 368.62,
+     "start": 360.0,
+     "end": 362.42,
      "phrases": [
       [
        "Some witch told you that!",
-       366.16,
-       367.29
+       360.0,
+       361.11
       ],
       [
        "some witch told you that!",
-       367.5,
-       368.62
+       361.31,
+       362.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "cried the little man, and dashed his right foot in a rage so deep into the floor, that he was forced to lay hold of it with both hands to pull it out.",
-     "start": 368.84,
-     "end": 376.96,
+     "start": 362.64,
+     "end": 370.77,
      "phrases": [
       [
        "cried the little man, and dashed his right foot in a rage so deep into the floor, that he was forced to lay hold of it with both hands to pull it out.",
-       368.84,
-       376.96
+       362.64,
+       370.77
       ]
      ]
     }
    ],
-   "end": 376.96
+   "end": 370.77
   },
   {
-   "start": 377.81,
+   "start": 371.62,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Then he made the best of his way off, while the nurse laughed and the baby crowed; and all the court jeered at him for having had so much trouble for nothing, and said",
-     "start": 377.81,
-     "end": 387.11,
+     "start": 371.62,
+     "end": 380.91,
      "phrases": [
       [
        "Then he made the best of his way off, while the nurse laughed and the baby crowed;",
-       377.81,
-       382.15
+       371.62,
+       375.95
       ],
       [
        "and all the court jeered at him for having had so much trouble for nothing, and said",
-       382.45,
-       387.11
+       376.26,
+       380.91
       ]
      ]
     },
     {
      "speaker": "court",
      "text": "We wish you a very good morning, and a merry feast, Mister Rumpelstiltskin!",
-     "start": 387.33,
-     "end": 391.59,
+     "start": 381.13,
+     "end": 385.79,
      "phrases": [
       [
        "We wish you a very good morning, and a merry feast, Mister Rumpelstiltskin!",
-       387.33,
-       391.59
+       381.13,
+       385.79
       ]
      ]
     }
    ],
-   "end": 391.59
+   "end": 385.79
   }
  ],
  "cast": {
@@ -1134,10 +1135,10 @@
    "voice": "bf_isabella"
   },
   "king": {
-   "voice": "am_fenrir*0.6+bm_daniel*0.4"
+   "voice": "am_fenrir"
   },
   "daughter": {
-   "voice": "bf_lily"
+   "voice": "af_heart"
   },
   "rumpel": {
    "voice": "am_puck"
@@ -1146,7 +1147,7 @@
    "voice": "bm_fable"
   },
   "court": {
-   "voice": "am_michael*0.5+af_heart*0.5"
+   "voice": "am_michael"
   }
  }
 }

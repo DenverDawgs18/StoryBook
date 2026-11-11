@@ -16,10 +16,10 @@ labels: {host: the host, pig1: the first little pig, pig2: the second little pig
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_isabella", speed: 0.93, room: room, wet: 0.07}
-  pig1:     {voice: "am_puck", speed: 1.05, pitch: 4, room: booth, wet: 0.1}
-  pig2:     {voice: "bf_alice", speed: 1.05, pitch: 3, room: booth, wet: 0.1}
-  pig3:     {voice: "bm_fable", speed: 1.0, pitch: 2, room: booth, wet: 0.1}
-  wolf:     {voice: "am_onyx*0.7+am_fenrir*0.3", speed: 0.86, pitch: -2.5, room: room, wet: 0.14}
+  pig1:     {voice: "am_puck", speed: 1.08, room: booth, wet: 0.1}
+  pig2:     {voice: "af_kore", speed: 1.06, room: booth, wet: 0.1}
+  pig3:     {voice: "af_heart", speed: 1.0, room: booth, wet: 0.1}
+  wolf:     {voice: "am_fenrir", speed: 0.9, room: room, wet: 0.14}
 ---
 [bed amb birds density=0.5 vol=-12 fade=5]
 [bed music fairytale key=G tempo=76 vol=-12 fade=6]
@@ -58,7 +58,7 @@ Which the man did, and the little pig built a house with it. Presently came alon
 
 To which the pig answered:
 
-@pig1: “No, no, by the hair of my chiny chin chin.”
+@pig1: “No, no, by the hair of my chinny chin chin.”
 
 The wolf then answered to that:
 
@@ -87,7 +87,7 @@ Which the man did, and the pig built his house. Then along came the wolf, and sa
 
 @wolf: “Little pig, little pig, let me come in.”
 
-@pig2: “No, no, by the hair of my chiny chin chin.”
+@pig2: “No, no, by the hair of my chinny chin chin.”
 
 @wolf: “Then I'll puff, and I'll huff, and I'll blow your house in.”
 
@@ -114,7 +114,7 @@ So the man gave him the bricks, and he built his house with them. So the wolf ca
 
 @wolf: “Little pig, little pig, let me come in.”
 
-@pig3: “No, no, by the hair of my chiny chin chin.”
+@pig3: “No, no, by the hair of my chinny chin chin.”
 
 @wolf: “Then I'll huff, and I'll puff, and I'll blow your house in.”
 

@@ -16,8 +16,8 @@ labels: {host: the host, shoemaker: the shoemaker, wife: his wife}
 cast:
   host:      {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator:  {voice: "bf_isabella", speed: 0.9, room: room, wet: 0.07}
-  shoemaker: {voice: "bm_george*0.7+bm_daniel*0.3", speed: 0.9, pitch: -1, room: room, wet: 0.1}
-  wife:      {voice: "bf_lily", speed: 0.94, room: room, wet: 0.1}
+  shoemaker: {voice: "bm_george", speed: 0.92, room: room, wet: 0.1}
+  wife:      {voice: "bf_emma", speed: 0.96, room: room, wet: 0.1}
 ---
 [bed amb fire size=0.35 vol=-12 fade=5]
 [bed music fairytale key=F tempo=60 vol=-12 fade=6]

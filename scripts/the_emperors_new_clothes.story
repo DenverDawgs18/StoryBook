@@ -14,15 +14,15 @@ labels: {host: the host, emperor: the Emperor, minister: the old minister, weave
 cast:
   host:        {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator:    {voice: "bm_george", speed: 0.94, room: room, wet: 0.07}
-  emperor:     {voice: "bm_daniel*0.6+am_fenrir*0.4", speed: 0.9, pitch: -1, room: hall, wet: 0.18}
-  minister:    {voice: "am_onyx", speed: 0.86, pitch: 1, tone: thin, room: hall, wet: 0.15}
+  emperor:     {voice: "am_fenrir", speed: 0.9, room: hall, wet: 0.18}
+  minister:    {voice: "bm_fable", speed: 0.88, room: hall, wet: 0.15}
   weaver:      {voice: "am_puck", speed: 1.05, room: room, wet: 0.1}
-  officer:     {voice: "bm_fable", speed: 1.0, room: hall, wet: 0.15}
-  courtiers:   {voice: "af_heart*0.5+am_michael*0.5", speed: 1.0, room: hall, wet: 0.3}
-  chamberlain: {voice: "am_michael", speed: 0.95, room: hall, wet: 0.25}
-  crowd:       {voice: "af_bella*0.5+am_michael*0.5", speed: 1.0, room: hall, wet: 0.35}
-  child:       {voice: "bf_alice", speed: 1.02, pitch: 4, room: booth, wet: 0.1}
-  father:      {voice: "am_michael", speed: 0.95, pitch: -1, room: room, wet: 0.1}
+  officer:     {voice: "am_michael", speed: 1.0, room: hall, wet: 0.15}
+  courtiers:   {voice: "af_bella", speed: 1.0, room: hall, wet: 0.3}
+  chamberlain: {voice: "am_michael", speed: 0.92, room: hall, wet: 0.25}
+  crowd:       {voice: "af_kore", speed: 1.02, room: hall, wet: 0.35}
+  child:       {voice: "af_heart", speed: 1.05, room: booth, wet: 0.1}
+  father:      {voice: "am_michael", speed: 0.95, room: room, wet: 0.1}
 ---
 [bed amb crowd voices=8 distance=0.85 vol=-18 fade=5]
 [bed music fairytale key=D tempo=72 vol=-12 fade=6]

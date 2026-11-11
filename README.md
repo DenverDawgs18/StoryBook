@@ -98,6 +98,15 @@ he/she), casts distinct voices and guesses a mood from the vocabulary. It also c
 effects where the prose names a sound. In the browser you can recast any part, preview
 voices, choose the weather and pace, and download the generated script to fine-tune it.
 
+### Casting
+
+Character voices sound most like actors when they are left alone. Kokoro grades its own voices
+(see its `VOICES.md`): `af_heart` A, `af_bella` A-, `bf_emma` and `af_nicole` B-, then `am_fenrir`,
+`am_michael`, `am_puck`, `af_kore`, `af_sarah` at C+. The episodes cast characters from those at their
+natural pitch, and tell them apart by voice and pace. Formant-preserving `pitch:` shifts, `tone: thin`
+and `a*0.6+b*0.4` blends still work, but they make speech sound processed, so the scripts no longer
+use them on characters. The Studio's auto-director casts from the same pools, best voices first.
+
 ## Running it
 
 ```bash

@@ -14,11 +14,11 @@ labels: {host: the host, redcap: Little Red-Cap, mother: her mother, wolf: the w
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_emma", speed: 0.92, room: room, wet: 0.07}
-  redcap:   {voice: "bf_alice", speed: 0.98, pitch: 2, room: booth, wet: 0.1}
-  mother:   {voice: "bf_isabella", speed: 0.94, room: room, wet: 0.1}
-  wolf:     {voice: "am_onyx*0.7+bm_daniel*0.3", speed: 0.88, pitch: -2, room: room, wet: 0.12}
-  granny:   {voice: "bf_lily", speed: 0.85, pitch: -1.5, tone: thin, room: room, wet: 0.15}
-  hunter:   {voice: "am_michael", speed: 0.95, room: room, wet: 0.1}
+  redcap:   {voice: "af_heart", speed: 1.0, room: booth, wet: 0.1}
+  mother:   {voice: "af_sarah", speed: 0.95, room: room, wet: 0.1}
+  wolf:     {voice: "am_fenrir", speed: 0.9, room: room, wet: 0.12}
+  granny:   {voice: "af_nicole", speed: 0.9, room: room, wet: 0.15}
+  hunter:   {voice: "am_michael", speed: 0.96, room: room, wet: 0.1}
 ---
 [bed amb birds density=0.4 vol=-12 fade=5]
 [bed music fairytale key=G tempo=64 vol=-12 fade=6]

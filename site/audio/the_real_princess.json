@@ -8,13 +8,14 @@
   "mood": "A stormy night, twenty mattresses",
   "art": "land_castle",
   "order": 7,
+  "shelf": "fairy",
   "labels": {
    "host": "the host",
    "queen": "the old queen",
    "princess": "the princess"
   }
  },
- "duration": 188.09,
+ "duration": 186.22,
  "chapters": [
   {
    "title": "The Real Princess. By Hans Christian Andersen.",
@@ -203,209 +204,209 @@
      "speaker": "queen",
      "text": "Ah! we shall soon see that!",
      "start": 98.88,
-     "end": 102.06,
+     "end": 101.18,
      "phrases": [
       [
        "Ah!",
        98.88,
-       99.89
+       99.41
       ],
       [
        "we shall soon see that!",
-       100.36,
-       102.06
+       99.88,
+       101.18
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "thought the old Queen-mother; however, she said not a word of what she was going to do; but went quietly into the bedroom, took all the bed-clothes off the bed, and put three little peas on the bedstead. She then laid twenty mattresses one upon another over the three peas, and put twenty feather beds over the mattresses.",
-     "start": 102.28,
-     "end": 120.2,
+     "start": 101.4,
+     "end": 119.33,
      "phrases": [
       [
        "thought the old Queen-mother;",
-       102.28,
-       103.94
+       101.4,
+       103.06
       ],
       [
        "however, she said not a word of what she was going to do;",
-       104.24,
-       107.18
+       103.36,
+       106.3
       ],
       [
        "but went quietly into the bedroom, took all the bed-clothes off the bed, and put three little peas on the bedstead.",
-       107.48,
-       113.49
+       106.6,
+       112.61
       ],
       [
        "She then laid twenty mattresses one upon another over the three peas, and put twenty feather beds over the mattresses.",
-       113.95,
-       120.2
+       113.07,
+       119.33
       ]
      ]
     }
    ],
-   "end": 120.2
+   "end": 119.33
   },
   {
-   "start": 121.05,
+   "start": 120.18,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Upon this bed the Princess was to pass the night.",
-     "start": 121.05,
-     "end": 123.89,
+     "start": 120.18,
+     "end": 123.01,
      "phrases": [
       [
        "Upon this bed the Princess was to pass the night.",
-       121.05,
-       123.89
+       120.18,
+       123.01
       ]
      ]
     }
    ],
-   "end": 123.89
+   "end": 123.01
   },
   {
-   "start": 124.74,
+   "start": 123.86,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The next morning she was asked how she had slept.",
-     "start": 124.74,
-     "end": 127.22,
+     "start": 123.86,
+     "end": 126.35,
      "phrases": [
       [
        "The next morning she was asked how she had slept.",
-       124.74,
-       127.22
+       123.86,
+       126.35
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "Oh, very badly indeed!",
-     "start": 127.44,
-     "end": 129.41,
+     "start": 126.57,
+     "end": 128.16,
      "phrases": [
       [
        "Oh, very badly indeed!",
-       127.44,
-       129.41
+       126.57,
+       128.16
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "she replied.",
-     "start": 129.63,
-     "end": 130.76,
+     "start": 128.38,
+     "end": 129.51,
      "phrases": [
       [
        "she replied.",
-       129.63,
-       130.76
+       128.38,
+       129.51
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "I have scarcely closed my eyes the whole night through. I do not know what was in my bed, but I had something hard under me, and am all over black and blue. It has hurt me so much!",
-     "start": 130.98,
-     "end": 142.11,
+     "start": 129.73,
+     "end": 140.24,
      "phrases": [
       [
        "I have scarcely closed my eyes the whole night through.",
-       130.98,
-       133.96
+       129.73,
+       132.31
       ],
       [
        "I do not know what was in my bed, but I had something hard under me, and am all over black and blue.",
-       134.4,
-       139.99
+       132.74,
+       138.47
       ],
       [
        "It has hurt me so much!",
-       140.44,
-       142.11
+       138.9,
+       140.24
       ]
      ]
     }
    ],
-   "end": 142.11
+   "end": 140.24
   },
   {
-   "start": 142.96,
+   "start": 141.09,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Now it was plain that the lady must be a real Princess, since she had been able to feel the three little peas through the twenty mattresses and twenty feather beds. None but a real Princess could have had such a delicate sense of feeling.",
-     "start": 142.96,
-     "end": 155.24,
+     "start": 141.09,
+     "end": 153.37,
      "phrases": [
       [
        "Now it was plain that the lady must be a real Princess, since she had been able to feel the three little peas through the twenty mattresses and twenty feather beds.",
-       142.96,
-       151.15
+       141.09,
+       149.28
       ],
       [
        "None but a real Princess could have had such a delicate sense of feeling.",
-       151.61,
-       155.24
+       149.74,
+       153.37
       ]
      ]
     }
    ],
-   "end": 155.24
+   "end": 153.37
   },
   {
-   "start": 156.09,
+   "start": 154.22,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Prince accordingly made her his wife; being now convinced that he had found a real Princess. The three peas were however put into the cabinet of curiosities, where they are still to be seen, provided they are not lost.",
-     "start": 156.09,
-     "end": 169.02,
+     "start": 154.22,
+     "end": 167.15,
      "phrases": [
       [
        "The Prince accordingly made her his wife;",
-       156.09,
-       158.38
+       154.22,
+       156.51
       ],
       [
        "being now convinced that he had found a real Princess.",
-       158.68,
-       161.68
+       156.81,
+       159.81
       ],
       [
        "The three peas were however put into the cabinet of curiosities, where they are still to be seen, provided they are not lost.",
-       162.14,
-       169.02
+       160.27,
+       167.15
       ]
      ]
     }
    ],
-   "end": 169.02
+   "end": 167.15
   },
   {
-   "start": 169.87,
+   "start": 168.0,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Wasn't this a lady of real delicacy?",
-     "start": 169.87,
-     "end": 172.24,
+     "start": 168.0,
+     "end": 170.37,
      "phrases": [
       [
        "Wasn't this a lady of real delicacy?",
-       169.87,
-       172.24
+       168.0,
+       170.37
       ]
      ]
     }
    ],
-   "end": 172.24
+   "end": 170.37
   }
  ],
  "cast": {
@@ -416,10 +417,10 @@
    "voice": "bf_emma"
   },
   "queen": {
-   "voice": "bf_isabella"
+   "voice": "af_bella"
   },
   "princess": {
-   "voice": "bf_alice"
+   "voice": "af_heart"
   }
  }
 }
