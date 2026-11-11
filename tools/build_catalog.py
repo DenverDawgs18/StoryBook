@@ -32,6 +32,7 @@ def main():
             "art": meta.get("art", "blob2"),
             "featured": bool(meta.get("featured")),
             "order": meta.get("order", 50),
+            "shelf": meta.get("shelf", "dark"),
             "duration": t["duration"],
             "audio": f"audio/{slug}.mp3",
             "timings": f"audio/{slug}.json",

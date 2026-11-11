@@ -1,0 +1,141 @@
+---
+title: Hansel and Gretel
+author: The Brothers Grimm
+year: 1812
+source: https://www.gutenberg.org/ebooks/2591
+blurb: >
+  A famine, a cruel plan, a trail of pebbles in the moonlight and a trail of crumbs the
+  birds eat up. Deep in the forest, a little house made of bread and cake.
+mood: Deep woods, a gingerbread house, an oven
+art: land_forest
+order: 3
+shelf: fairy
+labels: {host: the host, father: the father, mother: the stepmother, hansel: Hansel, gretel: Gretel, witch: the old woman}
+cast:
+  host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
+  narrator: {voice: "bm_george", speed: 0.93, room: room, wet: 0.07}
+  father:   {voice: "bm_daniel", speed: 0.88, pitch: -1, room: room, wet: 0.1}
+  mother:   {voice: "bf_emma", speed: 0.98, tone: thin, room: room, wet: 0.1}
+  hansel:   {voice: "am_puck", speed: 1.0, pitch: 3, room: booth, wet: 0.1}
+  gretel:   {voice: "bf_alice", speed: 1.0, pitch: 3, room: booth, wet: 0.1}
+  witch:    {voice: "af_nicole*0.6+bf_lily*0.4", speed: 0.86, pitch: -1.5, tone: thin, room: chamber, wet: 0.18}
+---
+[bed amb wind intensity=0.25 howl=0.15 vol=-14 fade=6]
+[bed music fairytale key=Am tempo=58 vol=-12 fade=6]
+[pause 4]
+
+@@host: In the hungry years, a story like this one was not only a story. Famine came to the German lands again and again, and the forests that pressed close round every village were dark, and full of wolves.
+
+@@host: The Grimms' first edition, in eighteen-twelve, gave the children their real mother. By the fourth edition, she had become a stepmother. Some things, it seems, were too terrible to tell children even in a fairy tale.
+
+[pause 1]
+[sfx sparkle length=2.5 vol=-15]
+[pause 2]
+
+# Hansel and Gretel. By the Brothers Grimm.
+
+[stop music fade=6]
+[bed amb fire size=0.25 vol=-16 fade=4]
+[pause 1.5]
+
+@father,mother,mother,father,father,mother,mother,father: Hard by a great forest dwelt a poor wood-cutter with his wife and his two children. The boy was called Hansel and the girl Gretel. He had little to bite and to break, and once when great dearth fell on the land, he could no longer procure even daily bread. Now when he thought over this by night in his bed, and tossed about in his anxiety, he groaned and said to his wife: “What is to become of us? How are we to feed our poor children, when we no longer have anything even for ourselves?” “I’ll tell you what, husband,” answered the woman, “early tomorrow morning we will take the children out into the forest to where it is the thickest; there we will light a fire for them, and give each of them one more piece of bread, and then we will go to our work and leave them alone. They will not find the way home again, and we shall be rid of them.” “No, wife,” said the man, “I will not do that; how can I bear to leave my children alone in the forest?—the wild animals would soon come and tear them to pieces.” “O, you fool!” said she, “then we must all four die of hunger, you may as well plane the planks for our coffins,” and she left him no peace until he consented. “But I feel very sorry for the poor children, all the same,” said the man.
+
+[sfx door kind=open room=room vol=-18]
+[stop amb fade=3]
+[bed amb crickets density=0.4 vol=-10 fade=3]
+
+@gretel,hansel,hansel,hansel,mother,mother,father,hansel,hansel,mother: The two children had also not been able to sleep for hunger, and had heard what their stepmother had said to their father. Gretel wept bitter tears, and said to Hansel: “Now all is over with us.” “Be quiet, Gretel,” said Hansel, “do not distress yourself, I will soon find a way to help us.” And when the old folks had fallen asleep, he got up, put on his little coat, opened the door below, and crept outside. The moon shone brightly, and the white pebbles which lay in front of the house glittered like real silver pennies. Hansel stooped and stuffed the little pocket of his coat with as many as he could get in. Then he went back and said to Gretel: “Be comforted, dear little sister, and sleep in peace, God will not forsake us,” and he lay down again in his bed. When day dawned, but before the sun had risen, the woman came and awoke the two children, saying: “Get up, you sluggards! we are going into the forest to fetch wood.” She gave each a little piece of bread, and said: “There is something for your dinner, but do not eat it up before then, for you will get nothing else.” Gretel took the bread under her apron, as Hansel had the pebbles in his pocket. Then they all set out together on the way to the forest. When they had walked a short time, Hansel stood still and peeped back at the house, and did so again and again. His father said: “Hansel, what are you looking at there and staying behind for? Pay attention, and do not forget how to use your legs.” “Ah, father,” said Hansel, “I am looking at my little white cat, which is sitting up on the roof, and wants to say goodbye to me.” The wife said: “Fool, that is not your little cat, that is the morning sun which is shining on the chimneys.” Hansel, however, had not been looking back at the cat, but had been constantly throwing one of the white pebble-stones out of his pocket on the road.
+
+[stop amb fade=4]
+[bed amb birds density=0.3 vol=-12 fade=4]
+[sfx footsteps count=8 pace=0.6 surface=wood vol=-20]
+
+@father,mother: When they had reached the middle of the forest, the father said: “Now, children, pile up some wood, and I will light a fire that you may not be cold.” Hansel and Gretel gathered brushwood together, as high as a little hill. The brushwood was lighted, and when the flames were burning very high, the woman said: “Now, children, lay yourselves down by the fire and rest, we will go into the forest and cut some wood. When we have done, we will come back and fetch you away.”
+
+[bed amb fire size=0.6 vol=-12 fade=4]
+[pause 1]
+[stop amb fade=8]
+[bed amb crickets density=0.6 vol=-9 fade=6]
+[bed music fairytale key=Am tempo=56 vol=-17 fade=6 duck=8]
+
+@gretel,hansel: Hansel and Gretel sat by the fire, and when noon came, each ate a little piece of bread, and as they heard the strokes of the wood-axe they believed that their father was near. It was not the axe, however, but a branch which he had fastened to a withered tree which the wind was blowing backwards and forwards. And as they had been sitting such a long time, their eyes closed with fatigue, and they fell fast asleep. When at last they awoke, it was already dark night. Gretel began to cry and said: “How are we to get out of the forest now?” But Hansel comforted her and said: “Just wait a little, until the moon has risen, and then we will soon find the way.” And when the full moon had risen, Hansel took his little sister by the hand, and followed the pebbles which shone like newly-coined silver pieces, and showed them the way.
+
+[stop music fade=4]
+[sfx knock count=2 room=room vol=-14 wait=1]
+
+@mother: They walked the whole night long, and by break of day came once more to their father’s house. They knocked at the door, and when the woman opened it and saw that it was Hansel and Gretel, she said: “You naughty children, why have you slept so long in the forest?—we thought you were never coming back at all!” The father, however, rejoiced, for it had cut him to the heart to leave them behind alone.
+
+[bed amb roomtone creaks=0.2 vol=-6 fade=4]
+
+@mother,father: Not long afterwards, there was once more great dearth throughout the land, and the children heard their mother saying at night to their father: “Everything is eaten again, we have one half loaf left, and that is the end. The children must go, we will take them farther into the wood, so that they will not find their way out again; there is no other means of saving ourselves!” The man’s heart was heavy, and he thought: “It would be better for you to share the last mouthful with your children.” The woman, however, would listen to nothing that he had to say, but scolded and reproached him. He who says A must say B, likewise, and as he had yielded the first time, he had to do so a second time also.
+
+@hansel: The children, however, were still awake and had heard the conversation. When the old folks were asleep, Hansel again got up, and wanted to go out and pick up pebbles as he had done before, but the woman had locked the door, and Hansel could not get out. Nevertheless he comforted his little sister, and said: “Do not cry, Gretel, go to sleep quietly, the good God will help us.”
+
+[bed amb birds density=0.25 vol=-12 fade=4]
+
+@father,father,hansel,mother,mother: Early in the morning came the woman, and took the children out of their beds. Their piece of bread was given to them, but it was still smaller than the time before. On the way into the forest Hansel crumbled his in his pocket, and often stood still and threw a morsel on the ground. “Hansel, why do you stop and look round?” said the father, “go on.” “I am looking back at my little pigeon which is sitting on the roof, and wants to say goodbye to me,” answered Hansel. “Fool!” said the woman, “that is not your little pigeon, that is the morning sun that is shining on the chimney.” Hansel, however little by little, threw all the crumbs on the path.
+
+[bed amb fire size=0.5 vol=-13 fade=4]
+[pause 1]
+[stop amb fade=6]
+[bed amb crickets density=0.5 vol=-10 fade=5]
+
+@mother,hansel,hansel: The woman led the children still deeper into the forest, where they had never in their lives been before. Then a great fire was again made, and the mother said: “Just sit there, you children, and when you are tired you may sleep a little; we are going into the forest to cut wood, and in the evening when we are done, we will come and fetch you away.” When it was noon, Gretel shared her piece of bread with Hansel, who had scattered his by the way. Then they fell asleep and evening passed, but no one came to the poor children. They did not awake until it was dark night, and Hansel comforted his little sister and said: “Just wait, Gretel, until the moon rises, and then we shall see the crumbs of bread which I have strewn about, they will show us our way home again.” When the moon came they set out, but they found no crumbs, for the many thousands of birds which fly about in the woods and fields had picked them all up. Hansel said to Gretel: “We shall soon find the way,” but they did not find it. They walked the whole night and all the next day too from morning till evening, but they did not get out of the forest, and were very hungry, for they had nothing to eat but two or three berries, which grew on the ground. And as they were so weary that their legs would carry them no longer, they lay down beneath a tree and fell asleep.
+
+[bed amb birds density=0.8 leaves=0.7 vol=-10 fade=5]
+[bed music fairytale key=F tempo=70 vol=-15 fade=5 duck=8]
+
+@hansel: It was now three mornings since they had left their father’s house. They began to walk again, but they always came deeper into the forest, and if help did not come soon, they must die of hunger and weariness. When it was mid-day, they saw a beautiful snow-white bird sitting on a bough, which sang so delightfully that they stood still and listened to it. And when its song was over, it spread its wings and flew away before them, and they followed it until they reached a little house, on the roof of which it alighted; and when they approached the little house they saw that it was built of bread and covered with cakes, but that the windows were of clear sugar. “We will set to work on that,” said Hansel, “and have a good meal. I will eat a bit of the roof, and you Gretel, can eat some of the window, it will taste sweet.” Hansel reached up above, and broke off a little of the roof to try how it tasted, and Gretel leant against the window and nibbled at the panes. Then a soft voice cried from the parlour:
+
+[stop music fade=1.5]
+[bed music dread root=F2 vol=-16 fade=4 duck=8]
+[pause 0.6]
+
+@@witch: Nibble, nibble, gnaw, Who is nibbling at my little house?
+
+The children answered:
+
+@@gretel: The wind, the wind, The heaven-born wind,
+
+[stop amb fade=5]
+[bed amb roomtone creaks=0.5 vol=-4 fade=4]
+
+@witch: and went on eating without disturbing themselves. Hansel, who liked the taste of the roof, tore down a great piece of it, and Gretel pushed out the whole of one round window-pane, sat down, and enjoyed herself with it. Suddenly the door opened, and a woman as old as the hills, who supported herself on crutches, came creeping out. Hansel and Gretel were so terribly frightened that they let fall what they had in their hands. The old woman, however, nodded her head, and said: “Oh, you dear children, who has brought you here? do come in, and stay with me. No harm shall happen to you.” She took them both by the hand, and led them into her little house. Then good food was set before them, milk and pancakes, with sugar, apples, and nuts. Afterwards two pretty little beds were covered with clean white linen, and Hansel and Gretel lay down in them, and thought they were in heaven.
+
+@witch: The old woman had only pretended to be so kind; she was in reality a wicked witch, who lay in wait for children, and had only built the little house of bread in order to entice them there. When a child fell into her power, she killed it, cooked and ate it, and that was a feast day with her. Witches have red eyes, and cannot see far, but they have a keen scent like the beasts, and are aware when human beings draw near. When Hansel and Gretel came into her neighbourhood, she laughed with malice, and said mockingly: “I have them, they shall not escape me again!” Early in the morning before the children were awake, she was already up, and when she saw both of them sleeping and looking so pretty, with their plump and rosy cheeks she muttered to herself: “That will be a dainty mouthful!” Then she seized Hansel with her shrivelled hand, carried him into a little stable, and locked him in behind a grated door. Scream as he might, it would not help him. Then she went to Gretel, shook her till she awoke, and cried: “Get up, lazy thing, fetch some water, and cook something good for your brother, he is in the stable outside, and is to be made fat. When he is fat, I will eat him.” Gretel began to weep bitterly, but it was all in vain, for she was forced to do what the wicked witch commanded.
+
+[sfx chains length=2 drag=0.3 room=cellar vol=-18]
+
+@witch,witch,witch,gretel,gretel,witch,witch: And now the best food was cooked for poor Hansel, but Gretel got nothing but crab-shells. Every morning the woman crept to the little stable, and cried: “Hansel, stretch out your finger that I may feel if you will soon be fat.” Hansel, however, stretched out a little bone to her, and the old woman, who had dim eyes, could not see it, and thought it was Hansel’s finger, and was astonished that there was no way of fattening him. When four weeks had gone by, and Hansel still remained thin, she was seized with impatience and would not wait any longer. “Now, then, Gretel,” she cried to the girl, “stir yourself, and bring some water. Let Hansel be fat or lean, tomorrow I will kill him, and cook him.” Ah, how the poor little sister did lament when she had to fetch the water, and how her tears did flow down her cheeks! “Dear God, do help us,” she cried. “If the wild beasts in the forest had but devoured us, we should at any rate have died together.” “Just keep your noise to yourself,” said the old woman, “it won’t help you at all.”
+
+[bed amb fire size=0.9 vol=-9 fade=6]
+
+@witch,witch,witch,witch,gretel,witch,witch: Early in the morning, Gretel had to go out and hang up the cauldron with the water, and light the fire. “We will bake first,” said the old woman, “I have already heated the oven, and kneaded the dough.” She pushed poor Gretel out to the oven, from which flames of fire were already darting. “Creep in,” said the witch, “and see if it is properly heated, so that we can put the bread in.” And once Gretel was inside, she intended to shut the oven and let her bake in it, and then she would eat her, too. But Gretel saw what she had in mind, and said: “I do not know how I am to do it; how do I get in?” “Silly goose,” said the old woman. “The door is big enough; just look, I can get in myself!” and she crept up and thrust her head into the oven. Then Gretel gave her a push that drove her far into it, and shut the iron door, and fastened the bolt. Oh! then she began to howl quite horribly, but Gretel ran away and the godless witch was miserably burnt to death.
+
+[stop music fade=1]
+[sfx boom pitch=36 length=4 vol=-12]
+[pause 1.5]
+[stop amb fade=6]
+[bed music fairytale key=G tempo=70 vol=-14 fade=5 duck=8]
+[sfx door kind=open room=room vol=-14]
+
+@gretel,hansel,gretel,hansel,hansel: Gretel, however, ran like lightning to Hansel, opened his little stable, and cried: “Hansel, we are saved! The old witch is dead!” Then Hansel sprang like a bird from its cage when the door is opened. How they did rejoice and embrace each other, and dance about and kiss each other! And as they had no longer any need to fear her, they went into the witch’s house, and in every corner there stood chests full of pearls and jewels. “These are far better than pebbles!” said Hansel, and thrust into his pockets whatever could be got in, and Gretel said: “I, too, will take something home with me,” and filled her pinafore full. “But now we must be off,” said Hansel, “that we may get out of the witch’s forest.”
+
+[bed amb birds density=0.5 vol=-12 fade=4]
+[bed river river flow=0.5 vol=-14 fade=6]
+
+@hansel,hansel,gretel,gretel: When they had walked for two hours, they came to a great stretch of water. “We cannot cross,” said Hansel, “I see no foot-plank, and no bridge.” “And there is also no ferry,” answered Gretel, “but a white duck is swimming there: if I ask her, she will help us over.” Then she cried:
+
+@@gretel: Little duck, little duck, dost thou see, Hansel and Gretel are waiting for thee? There’s never a plank, or bridge in sight, Take us across on thy back so white.
+
+[sfx splash size=0.3 room=hall vol=-16]
+
+@gretel,gretel: The duck came to them, and Hansel seated himself on its back, and told his sister to sit by him. “No,” replied Gretel, “that will be too heavy for the little duck; she shall take us across, one after the other.” The good little duck did so, and when they were once safely across and had walked for a short time, the forest seemed to be more and more familiar to them, and at length they saw from afar their father’s house. Then they began to run, rushed into the parlour, and threw themselves round their father’s neck. The man had not known one happy hour since he had left the children in the forest; the woman, however, was dead. Gretel emptied her pinafore until pearls and precious stones ran about the room, and Hansel threw one handful after another out of his pocket to add to them. Then all anxiety was at an end, and they lived together in perfect happiness. My tale is done, there runs a mouse; whosoever catches it, may make himself a big fur cap out of it.
+
+
+[pause 3]
+[sfx sparkle length=3 rising=0 vol=-16]
+[pause 3]
+[stop river fade=5]
+[stop amb fade=6]
+[stop music fade=8]

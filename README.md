@@ -4,10 +4,12 @@ Full-cast audiobooks of public-domain classics. Each one has its own soundscape 
 made in the spirit of *Fall of Civilizations*: a narrator who draws you in, a separate voice
 for every character, and weather, rooms and music built for that story alone.
 
-The website is painted in watercolour, in greens. It has a **featured story**
-(Poe's *The Tell-Tale Heart*) with a read-along transcript that follows the voice, a
-**library** of further episodes, and a **Studio** where anyone can paste or upload a
-manuscript and get a finished, mastered audiobook back.
+The website is laid out like an old illustrated book bound in green cloth. It has a title page
+with a watercolour frontispiece, a table of contents, and a **featured tale** (the Grimms'
+*The Elves and the Shoemaker*) set as a two-page spread with its plate on the left and a
+read-along transcript that follows the voice on the right. Then come two chapters of
+**plates**, *The Fairy Tales* and *Tales for After Dark*, and a **Studio** where anyone can
+paste or upload a manuscript and get a finished, mastered audiobook back.
 
 ```
 python -m storybook serve      # → http://127.0.0.1:8000
@@ -15,9 +17,24 @@ python -m storybook serve      # → http://127.0.0.1:8000
 
 ## What's in the box
 
+### The Fairy Tales
+
 | Episode | Source | What to listen for |
 | --- | --- | --- |
-| **The Tell-Tale Heart** *(featured)* | Poe, 1843 | A heartbeat that gets faster and louder until it fills the mix; the narrator speeds up with it |
+| **The Elves and the Shoemaker** *(featured)* | Grimm, 1812 | A fire, a clock striking midnight, a music box playing Brahms's lullaby, and tiny hammers |
+| **Little Red-Cap** | Grimm, 1812 | Birdsong and a path through the wood. The music darkens when the wolf says good day |
+| **Hansel and Gretel** | Grimm, 1812 | Crickets at night, a gingerbread house, the oven door, a river and a white duck |
+| **Rumpelstiltskin** | Grimm, 1812 | The spinning wheel that turns straw into gold, a fire in the hills, the court jeering |
+| **The Frog-Prince** | Grimm, 1812 | The golden ball dropping into the spring, a wet knock at the door, the spell breaking |
+| **The Emperor's New Clothes** | Andersen, 1837 | Empty looms clattering, a procession with horns and drums, one small voice in the crowd |
+| **The Real Princess** | Andersen, 1835 | Thunder and rain at the city gate, then twenty feather beds and a pea |
+| **The Little Match Girl** | Andersen, 1845 | Snow wind, a match flaring, a carol on the music box, bells at New Year |
+
+### Tales for After Dark
+
+| Episode | Source | What to listen for |
+| --- | --- | --- |
+| **The Tell-Tale Heart** | Poe, 1843 | A heartbeat that gets faster and louder until it fills the mix; the narrator speeds up with it |
 | **The Masque of the Red Death** | Poe, 1842 | A slightly detuned waltz behind iron gates, and an ebony clock that silences the revel |
 | **The Sack of Rome** | Gibbon, *Decline and Fall*, ch. XXXI | A documentary-style frame, Gothic war horns, a burning city, Alaric's river grave |
 
@@ -61,10 +78,14 @@ Plain paragraphs are narration.
 @@host: A whole paragraph in one voice.
 ```
 
-Beds: `wind rain fire clock watch heartbeat roomtone crowd river crickets battle tinnitus`
-plus music `dread elegy hearth waltz music_box carol_voice title_theme`.
+Beds: `wind rain fire clock watch heartbeat roomtone crowd river crickets battle tinnitus
+birds spinning` plus music `dread elegy hearth waltz music_box carol_voice title_theme fairytale`
+(`music_box tune=lullaby` plays Brahms's *Wiegenlied*; `fairytale key=F|G|D|Am` is harp over strings).
 Effects: `knock door creak footsteps bell chime house_bells chains wail boom swell sting
-thunder horn war_drums clash bolt quill lantern heartbeat_once`.
+thunder horn war_drums clash bolt quill lantern heartbeat_once tapping sparkle splash`.
+
+Front matter can also set `shelf: fairy` (which chapter of the library the tale goes in), `art`
+(a plate: `land_*` for a landscape, otherwise a wash from `assets/paint`) and `featured: true`.
 
 ### The Studio's auto-director
 
@@ -86,7 +107,10 @@ python -m storybook serve
 ```
 
 `python tools/paint.py` regenerates the watercolour textures: layered glazes, pigment pooling
-at the edges, granulation and back-run blooms, all from numpy.
+at the edges, granulation and back-run blooms, all from numpy. `python tools/landscape.py`
+paints the landscape plates in `site/assets/land/` with the same glazes, back to front: a
+wet-in-wet sky, ridges of hills that get greener as they come nearer, fir and beech tree lines,
+cottages, castles and towns, with lit windows, moons and snow lifted out to the white of the paper.
 
 The site in `site/` also works as plain static files (for example on GitHub Pages) for listening.
 The Studio needs the Python server.

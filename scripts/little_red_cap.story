@@ -1,0 +1,141 @@
+---
+title: Little Red-Cap
+author: The Brothers Grimm
+year: 1812
+source: https://www.gutenberg.org/ebooks/2591
+blurb: >
+  Take the cake and wine to grandmother, says her mother, and don't stray from the path.
+  But the wood is full of flowers, and someone friendly asks where she is going.
+mood: Birdsong, a path, a wolf
+art: land_wood
+order: 2
+shelf: fairy
+labels: {host: the host, redcap: Little Red-Cap, mother: her mother, wolf: the wolf, granny: grandmother, hunter: the huntsman}
+cast:
+  host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
+  narrator: {voice: "bf_emma", speed: 0.92, room: room, wet: 0.07}
+  redcap:   {voice: "bf_alice", speed: 0.98, pitch: 2, room: booth, wet: 0.1}
+  mother:   {voice: "bf_isabella", speed: 0.94, room: room, wet: 0.1}
+  wolf:     {voice: "am_onyx*0.7+bm_daniel*0.3", speed: 0.88, pitch: -2, room: room, wet: 0.12}
+  granny:   {voice: "bf_lily", speed: 0.85, pitch: -1.5, tone: thin, room: room, wet: 0.15}
+  hunter:   {voice: "am_michael", speed: 0.95, room: room, wet: 0.1}
+---
+[bed amb birds density=0.4 vol=-12 fade=5]
+[bed music fairytale key=G tempo=64 vol=-12 fade=6]
+[pause 4]
+
+@@host: A girl, a basket, a wood, and a wolf. Perhaps the most retold story in the world.
+
+@@host: Charles Perrault wrote it down in France in sixteen ninety-seven, and his version ends with the wolf's dinner. When the Brothers Grimm heard it in Hesse, a hundred years later, the tellers had given it a huntsman, and a second chance.
+
+[pause 1]
+[sfx sparkle length=2.5 vol=-15]
+[pause 2]
+
+# Little Red-Cap. By the Brothers Grimm.
+
+[stop music fade=6]
+[pause 1.5]
+
+Once upon a time there was a dear little girl who was loved by everyone who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child. Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else; so she was always called “Little Red-Cap.”
+
+@mother: One day her mother said to her: “Come, Little Red-Cap, here is a piece of cake and a bottle of wine; take them to your grandmother, she is ill and weak, and they will do her good. Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing; and when you go into her room, don’t forget to say, “Good morning”, and don’t peep into every corner before you do it.”
+
+@redcap: “I will take great care,” said Little Red-Cap to her mother, and gave her hand on it.
+
+[bed amb birds density=0.7 leaves=0.6 vol=-11 fade=4]
+[sfx footsteps count=6 pace=0.6 surface=wood room=hall vol=-20]
+
+The grandmother lived out in the wood, half a league from the village, and just as Little Red-Cap entered the wood, a wolf met her. Red-Cap did not know what a wicked creature he was, and was not at all afraid of him.
+
+[bed music dread root=G2 vol=-18 fade=6 duck=8]
+
+@wolf: “Good day, Little Red-Cap,” said he.
+
+@redcap: “Thank you kindly, wolf.”
+
+@wolf: “Whither away so early, Little Red-Cap?”
+
+@redcap: “To my grandmother’s.”
+
+@wolf: “What have you got in your apron?”
+
+@redcap: “Cake and wine; yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger.”
+
+@wolf: “Where does your grandmother live, Little Red-Cap?”
+
+@redcap: “A good quarter of a league farther on in the wood; her house stands under the three large oak-trees, the nut-trees are just below; you surely must know it,” replied Little Red-Cap.
+
+@wolf: The wolf thought to himself: “What a tender young creature! what a nice plump mouthful—she will be better to eat than the old woman. I must act craftily, so as to catch both.” So he walked for a short time by the side of Little Red-Cap, and then he said: “See, Little Red-Cap, how pretty the flowers are about here—why do you not look round? I believe, too, that you do not hear how sweetly the little birds are singing; you walk gravely along as if you were going to school, while everything else out here in the wood is merry.”
+
+[stop music fade=6]
+[bed music fairytale key=D tempo=70 vol=-15 fade=5 duck=8]
+
+@redcap: Little Red-Cap raised her eyes, and when she saw the sunbeams dancing here and there through the trees, and pretty flowers growing everywhere, she thought: “Suppose I take grandmother a fresh nosegay; that would please her too. It is so early in the day that I shall still get there in good time”; and so she ran from the path into the wood to look for flowers. And whenever she had picked one, she fancied that she saw a still prettier one farther on, and ran after it, and so got deeper and deeper into the wood.
+
+[stop music fade=3]
+[bed music dread root=E2 vol=-15 fade=4 duck=8]
+[sfx knock count=3 room=room vol=-12 wait=1]
+
+Meanwhile the wolf ran straight to the grandmother’s house and knocked at the door.
+
+@granny: “Who is there?”
+
+@wolf: “Little Red-Cap,” replied the wolf. “She is bringing cake and wine; open the door.”
+
+@granny: “Lift the latch,” called out the grandmother, “I am too weak, and cannot get up.”
+
+[sfx door kind=open room=room vol=-12 wait=1]
+
+The wolf lifted the latch, the door sprang open, and without saying a word he went straight to the grandmother’s bed, and devoured her. Then he put on her clothes, dressed himself in her cap laid himself in bed and drew the curtains.
+
+[stop amb fade=5]
+[bed amb roomtone creaks=0.3 vol=-4 fade=4]
+
+Little Red-Cap, however, had been running about picking flowers, and when she had gathered so many that she could carry no more, she remembered her grandmother, and set out on the way to her.
+
+@redcap: She was surprised to find the cottage-door standing open, and when she went into the room, she had such a strange feeling that she said to herself: “Oh dear! how uneasy I feel today, and at other times I like being with grandmother so much.” She called out: “Good morning,” but received no answer; so she went to the bed and drew back the curtains. There lay her grandmother with her cap pulled far over her face, and looking very strange.
+
+@redcap: “Oh! grandmother,” she said, “what big ears you have!”
+
+@wolf: “The better to hear you with, my child,” was the reply.
+
+@redcap: “But, grandmother, what big eyes you have!” she said.
+
+@wolf: “The better to see you with, my dear.”
+
+@redcap: “But, grandmother, what large hands you have!”
+
+@wolf: “The better to hug you with.”
+
+@redcap: “Oh! but, grandmother, what a terrible big mouth you have!”
+
+[pause 0.6]
+
+@wolf: “The better to eat you with!”
+
+[sfx boom pitch=40 length=3 vol=-12]
+[stop music fade=0.5]
+
+And scarcely had the wolf said this, than with one bound he was out of bed and swallowed up Red-Cap.
+
+[pause 2]
+[bed amb birds density=0.3 vol=-14 fade=4]
+[sfx footsteps count=5 pace=0.5 surface=wood room=room vol=-16]
+
+@hunter,hunter,hunter,redcap: When the wolf had appeased his appetite, he lay down again in the bed, fell asleep and began to snore very loud. The huntsman was just passing the house, and thought to himself: “How the old woman is snoring! I must just see if she wants anything.” So he went into the room, and when he came to the bed, he saw that the wolf was lying in it. “Do I find you here, you old sinner!” said he. “I have long sought you!” Then just as he was going to fire at him, it occurred to him that the wolf might have devoured the grandmother, and that she might still be saved, so he did not fire, but took a pair of scissors, and began to cut open the stomach of the sleeping wolf. When he had made two snips, he saw the little Red-Cap shining, and then he made two snips more, and the little girl sprang out, crying: “Ah, how frightened I have been! How dark it was inside the wolf”; and after that the aged grandmother came out alive also, but scarcely able to breathe. Red-Cap, however, quickly fetched great stones with which they filled the wolf’s belly, and when he awoke, he wanted to run away, but the stones were so heavy that he collapsed at once, and fell dead.
+
+[bed music fairytale key=G tempo=64 vol=-15 fade=5 duck=8]
+
+@redcap: Then all three were delighted. The huntsman drew off the wolf’s skin and went home with it; the grandmother ate the cake and drank the wine which Red-Cap had brought, and revived, but Red-Cap thought to herself: “As long as I live, I will never by myself leave the path, to run into the wood, when my mother has forbidden me to do so.”
+
+[sfx splash size=0.8 room=chamber vol=-14 at=0]
+
+@redcap,granny,granny,wolf,granny: It also related that once when Red-Cap was again taking cakes to the old grandmother, another wolf spoke to her, and tried to entice her from the path. Red-Cap, however, was on her guard, and went straight forward on her way, and told her grandmother that she had met the wolf, and that he had said “good morning” to her, but with such a wicked look in his eyes, that if they had not been on the public road she was certain he would have eaten her up. “Well,” said the grandmother, “we will shut the door, that he may not come in.” Soon afterwards the wolf knocked, and cried: “Open the door, grandmother, I am Little Red-Cap, and am bringing you some cakes.” But they did not speak, or open the door, so the grey-beard stole twice or thrice round the house, and at last jumped on the roof, intending to wait until Red-Cap went home in the evening, and then to steal after her and devour her in the darkness. But the grandmother saw what was in his thoughts. In front of the house was a great stone trough, so she said to the child: “Take the pail, Red-Cap; I made some sausages yesterday, so carry the water in which I boiled them to the trough.” Red-Cap carried until the great trough was quite full. Then the smell of the sausages reached the wolf, and he sniffed and peeped down, and at last stretched out his neck so far that he could no longer keep his footing and began to slip, and slipped down from the roof straight into the great trough, and was drowned. But Red-Cap went joyously home, and no one ever did anything to harm her again.
+
+
+[pause 3]
+[sfx sparkle length=3 rising=0 vol=-16]
+[pause 3]
+[stop amb fade=6]
+[stop music fade=8]

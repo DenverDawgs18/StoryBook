@@ -1,0 +1,425 @@
+{
+ "meta": {
+  "title": "The Real Princess",
+  "author": "Hans Christian Andersen",
+  "year": 1835,
+  "source": "https://www.gutenberg.org/ebooks/1597",
+  "blurb": "A prince searches the world for a real princess and can't find one. Then on a night of thunder and rain, someone knocks at the city gate, soaked to the skin.\n",
+  "mood": "A stormy night, twenty mattresses",
+  "art": "land_castle",
+  "order": 7,
+  "labels": {
+   "host": "the host",
+   "queen": "the old queen",
+   "princess": "the princess"
+  }
+ },
+ "duration": 188.09,
+ "chapters": [
+  {
+   "title": "The Real Princess. By Hans Christian Andersen.",
+   "start": 27.3
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Hans Christian Andersen's first book of tales for children, Copenhagen, eighteen thirty-five. The critics said fairy tales were a waste of his talent.",
+     "start": 5.0,
+     "end": 15.86,
+     "phrases": [
+      [
+       "Hans Christian Andersen's first book of tales for children, Copenhagen, eighteen thirty-five.",
+       5.0,
+       11.91
+      ],
+      [
+       "The critics said fairy tales were a waste of his talent.",
+       12.37,
+       15.86
+      ]
+     ]
+    }
+   ],
+   "end": 15.86
+  },
+  {
+   "start": 16.71,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "He went on writing them for forty years. This is one of the very first, and one of the shortest.",
+     "start": 16.71,
+     "end": 23.45,
+     "phrases": [
+      [
+       "He went on writing them for forty years.",
+       16.71,
+       19.44
+      ],
+      [
+       "This is one of the very first, and one of the shortest.",
+       19.91,
+       23.45
+      ]
+     ]
+    }
+   ],
+   "end": 23.45
+  },
+  {
+   "start": 27.3,
+   "end": 31.06,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Real Princess. By Hans Christian Andersen.",
+     "start": 27.3,
+     "end": 31.06,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 34.16,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "There was once a Prince who wished to marry a Princess; but then she must be a real Princess. He travelled all over the world in hopes of finding such a lady; but there was always something wrong. Princesses he found in plenty; but whether they were real Princesses it was impossible for him to decide, for now one thing, now another, seemed to him not quite right about the ladies. At last he returned to his palace quite cast down, because he wished so much to have a real Princess for his wife.",
+     "start": 34.16,
+     "end": 63.55,
+     "phrases": [
+      [
+       "There was once a Prince who wished to marry a Princess;",
+       34.16,
+       36.81
+      ],
+      [
+       "but then she must be a real Princess.",
+       37.11,
+       39.23
+      ],
+      [
+       "He travelled all over the world in hopes of finding such a lady;",
+       39.69,
+       43.2
+      ],
+      [
+       "but there was always something wrong.",
+       43.51,
+       45.41
+      ],
+      [
+       "Princesses he found in plenty;",
+       45.86,
+       47.91
+      ],
+      [
+       "but whether they were real Princesses it was impossible for him to decide, for now one thing, now another, seemed to him not quite right about the ladies.",
+       48.22,
+       56.78
+      ],
+      [
+       "At last he returned to his palace quite cast down, because he wished so much to have a real Princess for his wife.",
+       57.24,
+       63.55
+      ]
+     ]
+    }
+   ],
+   "end": 63.55
+  },
+  {
+   "start": 67.95,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "One evening a fearful tempest arose, it thundered and lightened, and the rain poured down from the sky in torrents: besides, it was as dark as pitch. All at once there was heard a violent knocking at the door, and the old King, the Prince's father, went out himself to open it.",
+     "start": 67.95,
+     "end": 84.2,
+     "phrases": [
+      [
+       "One evening a fearful tempest arose, it thundered and lightened, and the rain poured down from the sky in torrents:",
+       67.95,
+       74.53
+      ],
+      [
+       "besides, it was as dark as pitch.",
+       74.83,
+       76.94
+      ],
+      [
+       "All at once there was heard a violent knocking at the door, and the old King, the Prince's father, went out himself to open it.",
+       77.4,
+       84.2
+      ]
+     ]
+    }
+   ],
+   "end": 84.2
+  },
+  {
+   "start": 85.05,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was a Princess who was standing outside the door. What with the rain and the wind, she was in a sad condition; the water trickled down from her hair, and her clothes clung to her body. She said she was a real Princess.",
+     "start": 85.05,
+     "end": 98.03,
+     "phrases": [
+      [
+       "It was a Princess who was standing outside the door.",
+       85.05,
+       87.83
+      ],
+      [
+       "What with the rain and the wind, she was in a sad condition;",
+       88.29,
+       91.38
+      ],
+      [
+       "the water trickled down from her hair, and her clothes clung to her body.",
+       91.68,
+       95.6
+      ],
+      [
+       "She said she was a real Princess.",
+       96.06,
+       98.03
+      ]
+     ]
+    }
+   ],
+   "end": 98.03
+  },
+  {
+   "start": 98.88,
+   "segments": [
+    {
+     "speaker": "queen",
+     "text": "Ah! we shall soon see that!",
+     "start": 98.88,
+     "end": 102.06,
+     "phrases": [
+      [
+       "Ah!",
+       98.88,
+       99.89
+      ],
+      [
+       "we shall soon see that!",
+       100.36,
+       102.06
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "thought the old Queen-mother; however, she said not a word of what she was going to do; but went quietly into the bedroom, took all the bed-clothes off the bed, and put three little peas on the bedstead. She then laid twenty mattresses one upon another over the three peas, and put twenty feather beds over the mattresses.",
+     "start": 102.28,
+     "end": 120.2,
+     "phrases": [
+      [
+       "thought the old Queen-mother;",
+       102.28,
+       103.94
+      ],
+      [
+       "however, she said not a word of what she was going to do;",
+       104.24,
+       107.18
+      ],
+      [
+       "but went quietly into the bedroom, took all the bed-clothes off the bed, and put three little peas on the bedstead.",
+       107.48,
+       113.49
+      ],
+      [
+       "She then laid twenty mattresses one upon another over the three peas, and put twenty feather beds over the mattresses.",
+       113.95,
+       120.2
+      ]
+     ]
+    }
+   ],
+   "end": 120.2
+  },
+  {
+   "start": 121.05,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Upon this bed the Princess was to pass the night.",
+     "start": 121.05,
+     "end": 123.89,
+     "phrases": [
+      [
+       "Upon this bed the Princess was to pass the night.",
+       121.05,
+       123.89
+      ]
+     ]
+    }
+   ],
+   "end": 123.89
+  },
+  {
+   "start": 124.74,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The next morning she was asked how she had slept.",
+     "start": 124.74,
+     "end": 127.22,
+     "phrases": [
+      [
+       "The next morning she was asked how she had slept.",
+       124.74,
+       127.22
+      ]
+     ]
+    },
+    {
+     "speaker": "princess",
+     "text": "Oh, very badly indeed!",
+     "start": 127.44,
+     "end": 129.41,
+     "phrases": [
+      [
+       "Oh, very badly indeed!",
+       127.44,
+       129.41
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "she replied.",
+     "start": 129.63,
+     "end": 130.76,
+     "phrases": [
+      [
+       "she replied.",
+       129.63,
+       130.76
+      ]
+     ]
+    },
+    {
+     "speaker": "princess",
+     "text": "I have scarcely closed my eyes the whole night through. I do not know what was in my bed, but I had something hard under me, and am all over black and blue. It has hurt me so much!",
+     "start": 130.98,
+     "end": 142.11,
+     "phrases": [
+      [
+       "I have scarcely closed my eyes the whole night through.",
+       130.98,
+       133.96
+      ],
+      [
+       "I do not know what was in my bed, but I had something hard under me, and am all over black and blue.",
+       134.4,
+       139.99
+      ],
+      [
+       "It has hurt me so much!",
+       140.44,
+       142.11
+      ]
+     ]
+    }
+   ],
+   "end": 142.11
+  },
+  {
+   "start": 142.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Now it was plain that the lady must be a real Princess, since she had been able to feel the three little peas through the twenty mattresses and twenty feather beds. None but a real Princess could have had such a delicate sense of feeling.",
+     "start": 142.96,
+     "end": 155.24,
+     "phrases": [
+      [
+       "Now it was plain that the lady must be a real Princess, since she had been able to feel the three little peas through the twenty mattresses and twenty feather beds.",
+       142.96,
+       151.15
+      ],
+      [
+       "None but a real Princess could have had such a delicate sense of feeling.",
+       151.61,
+       155.24
+      ]
+     ]
+    }
+   ],
+   "end": 155.24
+  },
+  {
+   "start": 156.09,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Prince accordingly made her his wife; being now convinced that he had found a real Princess. The three peas were however put into the cabinet of curiosities, where they are still to be seen, provided they are not lost.",
+     "start": 156.09,
+     "end": 169.02,
+     "phrases": [
+      [
+       "The Prince accordingly made her his wife;",
+       156.09,
+       158.38
+      ],
+      [
+       "being now convinced that he had found a real Princess.",
+       158.68,
+       161.68
+      ],
+      [
+       "The three peas were however put into the cabinet of curiosities, where they are still to be seen, provided they are not lost.",
+       162.14,
+       169.02
+      ]
+     ]
+    }
+   ],
+   "end": 169.02
+  },
+  {
+   "start": 169.87,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Wasn't this a lady of real delicacy?",
+     "start": 169.87,
+     "end": 172.24,
+     "phrases": [
+      [
+       "Wasn't this a lady of real delicacy?",
+       169.87,
+       172.24
+      ]
+     ]
+    }
+   ],
+   "end": 172.24
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bf_emma"
+  },
+  "queen": {
+   "voice": "bf_isabella"
+  },
+  "princess": {
+   "voice": "bf_alice"
+  }
+ }
+}

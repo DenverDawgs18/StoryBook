@@ -7,7 +7,7 @@ blurb: >
   A plague walks the land, so Prince Prospero seals a thousand friends inside his abbey
   and throws a masked ball. In the black chamber, a great ebony clock counts the hours.
 mood: A waltz behind iron gates
-art: blob3
+art: land_abbey
 order: 10
 labels: {host: the host, prospero: Prince Prospero}
 cast:

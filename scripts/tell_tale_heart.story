@@ -7,7 +7,7 @@ blurb: >
   A man insists he is not mad. He will prove it, calmly, by telling you how he
   murdered the old man with the vulture eye — and what he heard beneath the floor.
 mood: Night, dread, a heart that will not stop
-featured: true
+featured: false
 art: eye
 caption: “a pale blue eye, with a film over it”
 labels: {host: the host, oldman: the old man}

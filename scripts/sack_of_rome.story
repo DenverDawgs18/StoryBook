@@ -8,7 +8,7 @@ blurb: >
   first time in eight hundred years an enemy army is in the city. Gibbon's account of that night,
   with a documentary frame.
 mood: History, told in the dark
-art: blob6
+art: land_rome
 order: 20
 labels: {host: the host, jerome: Jerome, at Bethlehem, virgin: an aged virgin}
 cast:

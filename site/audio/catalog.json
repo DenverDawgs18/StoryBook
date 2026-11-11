@@ -1,26 +1,280 @@
 {
  "episodes": [
   {
-   "slug": "tell_tale_heart",
-   "title": "The Tell-Tale Heart",
-   "author": "Edgar Allan Poe",
-   "year": 1843,
-   "blurb": "A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.",
-   "mood": "Night, dread, a heart that will not stop",
-   "caption": "“a pale blue eye, with a film over it”",
-   "art": "eye",
+   "slug": "elves_and_the_shoemaker",
+   "title": "The Elves and the Shoemaker",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "A poor shoemaker cuts out his last scrap of leather and goes to bed. In the morning the shoes are finished, every stitch perfect. Someone is working in the night.",
+   "mood": "Firelight, midnight, small busy hands",
+   "caption": "“and away over the green”",
+   "art": "land_cottage",
    "featured": true,
-   "order": 50,
-   "duration": 1009.31,
-   "audio": "audio/tell_tale_heart.mp3",
-   "timings": "audio/tell_tale_heart.json",
-   "voices": 3,
+   "order": 1,
+   "shelf": "fairy",
+   "duration": 301.93,
+   "audio": "audio/elves_and_the_shoemaker.mp3",
+   "timings": "audio/elves_and_the_shoemaker.json",
+   "voices": 4,
    "castLabels": {
     "host": {
      "label": "the host"
     },
-    "oldman": {
-     "label": "the old man"
+    "shoemaker": {
+     "label": "the shoemaker"
+    },
+    "wife": {
+     "label": "his wife"
+    }
+   }
+  },
+  {
+   "slug": "little_red_cap",
+   "title": "Little Red-Cap",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "Take the cake and wine to grandmother, says her mother, and don't stray from the path. But the wood is full of flowers, and someone friendly asks where she is going.",
+   "mood": "Birdsong, a path, a wolf",
+   "caption": "",
+   "art": "land_wood",
+   "featured": false,
+   "order": 2,
+   "shelf": "fairy",
+   "duration": 520.27,
+   "audio": "audio/little_red_cap.mp3",
+   "timings": "audio/little_red_cap.json",
+   "voices": 7,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "redcap": {
+     "label": "Little Red-Cap"
+    },
+    "mother": {
+     "label": "her mother"
+    },
+    "wolf": {
+     "label": "the wolf"
+    },
+    "granny": {
+     "label": "grandmother"
+    },
+    "hunter": {
+     "label": "the huntsman"
+    }
+   }
+  },
+  {
+   "slug": "hansel_and_gretel",
+   "title": "Hansel and Gretel",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "A famine, a cruel plan, a trail of pebbles in the moonlight and a trail of crumbs the birds eat up. Deep in the forest, a little house made of bread and cake.",
+   "mood": "Deep woods, a gingerbread house, an oven",
+   "caption": "",
+   "art": "land_forest",
+   "featured": false,
+   "order": 3,
+   "shelf": "fairy",
+   "duration": 1090.29,
+   "audio": "audio/hansel_and_gretel.mp3",
+   "timings": "audio/hansel_and_gretel.json",
+   "voices": 7,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "father": {
+     "label": "the father"
+    },
+    "mother": {
+     "label": "the stepmother"
+    },
+    "hansel": {
+     "label": "Hansel"
+    },
+    "gretel": {
+     "label": "Gretel"
+    },
+    "witch": {
+     "label": "the old woman"
+    }
+   }
+  },
+  {
+   "slug": "rumpelstiltskin",
+   "title": "Rumpelstiltskin",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "A miller boasts that his daughter can spin straw into gold, and the king locks her in with the straw. A little man appears. He can do it, for a price, and the price keeps rising.",
+   "mood": "A spinning wheel, a fire in the hills",
+   "caption": "",
+   "art": "land_hills",
+   "featured": false,
+   "order": 4,
+   "shelf": "fairy",
+   "duration": 407.44,
+   "audio": "audio/rumpelstiltskin.mp3",
+   "timings": "audio/rumpelstiltskin.json",
+   "voices": 7,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "king": {
+     "label": "the king"
+    },
+    "daughter": {
+     "label": "the miller's daughter"
+    },
+    "rumpel": {
+     "label": "the little man"
+    },
+    "messenger": {
+     "label": "the messenger"
+    },
+    "court": {
+     "label": "the court"
+    }
+   }
+  },
+  {
+   "slug": "the_frog_prince",
+   "title": "The Frog-Prince",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "A princess drops her golden ball into a deep spring, and a frog offers to fetch it back. She promises him anything. She doesn't mean it. The frog does.",
+   "mood": "A cool spring in the greenwood",
+   "caption": "",
+   "art": "land_spring",
+   "featured": false,
+   "order": 5,
+   "shelf": "fairy",
+   "duration": 449.6,
+   "audio": "audio/the_frog_prince.mp3",
+   "timings": "audio/the_frog_prince.json",
+   "voices": 6,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "princess": {
+     "label": "the princess"
+    },
+    "frog": {
+     "label": "the frog"
+    },
+    "king": {
+     "label": "the king"
+    },
+    "prince": {
+     "label": "the prince"
+    }
+   }
+  },
+  {
+   "slug": "the_emperors_new_clothes",
+   "title": "The Emperor's New Clothes",
+   "author": "Hans Christian Andersen",
+   "year": 1837,
+   "blurb": "Two swindlers promise an emperor cloth so fine that it is invisible to anyone stupid or unfit for office. Nobody wants to be either, so nobody says what they see.",
+   "mood": "A court that cannot say what it sees",
+   "caption": "",
+   "art": "land_town",
+   "featured": false,
+   "order": 6,
+   "shelf": "fairy",
+   "duration": 783.69,
+   "audio": "audio/the_emperors_new_clothes.mp3",
+   "timings": "audio/the_emperors_new_clothes.json",
+   "voices": 10,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "emperor": {
+     "label": "the Emperor"
+    },
+    "minister": {
+     "label": "the old minister"
+    },
+    "weaver": {
+     "label": "the weavers"
+    },
+    "officer": {
+     "label": "the officer"
+    },
+    "courtiers": {
+     "label": "the court"
+    },
+    "chamberlain": {
+     "label": "the master of ceremonies"
+    },
+    "crowd": {
+     "label": "the crowd"
+    },
+    "child": {
+     "label": "a little child"
+    },
+    "father": {
+     "label": "her father"
+    }
+   }
+  },
+  {
+   "slug": "the_real_princess",
+   "title": "The Real Princess",
+   "author": "Hans Christian Andersen",
+   "year": 1835,
+   "blurb": "A prince searches the world for a real princess and can't find one. Then on a night of thunder and rain, someone knocks at the city gate, soaked to the skin.",
+   "mood": "A stormy night, twenty mattresses",
+   "caption": "",
+   "art": "land_castle",
+   "featured": false,
+   "order": 7,
+   "shelf": "fairy",
+   "duration": 188.09,
+   "audio": "audio/the_real_princess.mp3",
+   "timings": "audio/the_real_princess.json",
+   "voices": 4,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "queen": {
+     "label": "the old queen"
+    },
+    "princess": {
+     "label": "the princess"
+    }
+   }
+  },
+  {
+   "slug": "the_little_match_girl",
+   "title": "The Little Match Girl",
+   "author": "Hans Christian Andersen",
+   "year": 1845,
+   "blurb": "New Year's Eve, and snow. A barefoot girl who has sold no matches all day dares not go home. In a corner between two houses, she strikes one to warm her fingers.",
+   "mood": "Snow, a match flame, a falling star",
+   "caption": "",
+   "art": "land_snow",
+   "featured": false,
+   "order": 8,
+   "shelf": "fairy",
+   "duration": 410.96,
+   "audio": "audio/the_little_match_girl.mp3",
+   "timings": "audio/the_little_match_girl.json",
+   "voices": 4,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "girl": {
+     "label": "the little girl"
+    },
+    "passers": {
+     "label": "the people"
     }
    }
   },
@@ -32,9 +286,10 @@
    "blurb": "A plague walks the land, so Prince Prospero seals a thousand friends inside his abbey and throws a masked ball. In the black chamber, a great ebony clock counts the hours.",
    "mood": "A waltz behind iron gates",
    "caption": "",
-   "art": "blob3",
+   "art": "land_abbey",
    "featured": false,
    "order": 10,
+   "shelf": "dark",
    "duration": 1107.05,
    "audio": "audio/masque_of_the_red_death.mp3",
    "timings": "audio/masque_of_the_red_death.json",
@@ -56,9 +311,10 @@
    "blurb": "August, 410. At midnight a gate in the walls of Rome opens from the inside, and for the first time in eight hundred years an enemy army is in the city. Gibbon's account of that night, with a documentary frame.",
    "mood": "History, told in the dark",
    "caption": "",
-   "art": "blob6",
+   "art": "land_rome",
    "featured": false,
    "order": 20,
+   "shelf": "dark",
    "duration": 885.34,
    "audio": "audio/sack_of_rome.mp3",
    "timings": "audio/sack_of_rome.json",
@@ -75,6 +331,31 @@
     },
     "virgin": {
      "label": "an aged virgin"
+    }
+   }
+  },
+  {
+   "slug": "tell_tale_heart",
+   "title": "The Tell-Tale Heart",
+   "author": "Edgar Allan Poe",
+   "year": 1843,
+   "blurb": "A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.",
+   "mood": "Night, dread, a heart that will not stop",
+   "caption": "“a pale blue eye, with a film over it”",
+   "art": "eye",
+   "featured": false,
+   "order": 50,
+   "shelf": "dark",
+   "duration": 1009.31,
+   "audio": "audio/tell_tale_heart.mp3",
+   "timings": "audio/tell_tale_heart.json",
+   "voices": 3,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "oldman": {
+     "label": "the old man"
     }
    }
   }

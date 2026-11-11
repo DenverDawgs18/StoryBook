@@ -165,4 +165,6 @@ export async function loadCatalog() {
   if (!r.ok) throw new Error("catalog");
   return r.json();
 }
-export { fmt, esc };
+// plates: painted landscapes live in assets/land (webp); older washes in assets/paint (png)
+const artUrl = (art) => (art || "").startsWith("land_") ? `assets/land/${art}.webp` : `assets/paint/${art || "blob2"}.png`;
+export { fmt, esc, artUrl };
