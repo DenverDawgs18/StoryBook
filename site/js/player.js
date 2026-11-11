@@ -125,11 +125,11 @@ export function mountPlayer(root, ep, opts = {}) {
       drawChapters();
       const cast = ep.castLabels || {};
       ra.innerHTML = "";
+      let lastSpk = null;
       tj.paragraphs.forEach((p) => {
         const el = document.createElement("p");
         if (p.heading) el.className = "heading";
         let html = "";
-        let lastSpk = null;
         p.segments.forEach((s) => {
           const who = s.speaker !== "narrator" && s.speaker !== lastSpk ? whoLabel(s.speaker, cast) : "";
           if (who) html += `<span class="who">${esc(who)}</span>`;

@@ -1,0 +1,2089 @@
+{
+ "meta": {
+  "title": "The Tell-Tale Heart",
+  "author": "Edgar Allan Poe",
+  "year": 1843,
+  "source": "https://www.gutenberg.org/ebooks/2148",
+  "blurb": "A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.\n",
+  "mood": "Night, dread, a heart that will not stop",
+  "featured": true,
+  "art": "eye",
+  "caption": "“a pale blue eye, with a film over it”",
+  "labels": {
+   "host": "the host",
+   "oldman": "the old man"
+  }
+ },
+ "duration": 1009.31,
+ "chapters": [
+  {
+   "title": "The Tell-Tale Heart. By Edgar Allan Poe.",
+   "start": 63.55
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 6.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Philadelphia. The winter of eighteen forty-two.",
+     "start": 6.0,
+     "end": 10.12,
+     "phrases": [
+      [
+       "Philadelphia.",
+       6.0,
+       7.16
+      ],
+      [
+       "The winter of eighteen forty-two.",
+       7.64,
+       10.13
+      ]
+     ]
+    }
+   ],
+   "end": 10.12
+  },
+  {
+   "start": 10.97,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "In a small rented house, while his young wife lies coughing blood in the next room, a man sits by lamplight and writes. He is thirty-three years old. He is poor, and proud, and very often drunk. His name is Edgar Allan Poe.",
+     "start": 10.97,
+     "end": 28.1,
+     "phrases": [
+      [
+       "In a small rented house, while his young wife lies coughing blood in the next room, a man sits by lamplight and writes.",
+       10.97,
+       19.05
+      ],
+      [
+       "He is thirty-three years old.",
+       19.53,
+       21.5
+      ],
+      [
+       "He is poor, and proud, and very often drunk.",
+       21.97,
+       25.29
+      ],
+      [
+       "His name is Edgar Allan Poe.",
+       25.77,
+       28.1
+      ]
+     ]
+    }
+   ],
+   "end": 28.1
+  },
+  {
+   "start": 28.95,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "The story he writes that winter is barely two thousand words long. It has no names, no town, no date. Only a voice, speaking to us in the dark. A voice that wants, more than anything, to convince us that it is sane.",
+     "start": 28.95,
+     "end": 45.44,
+     "phrases": [
+      [
+       "The story he writes that winter is barely two thousand words long.",
+       28.95,
+       33.6
+      ],
+      [
+       "It has no names, no town, no date.",
+       34.08,
+       37.01
+      ],
+      [
+       "Only a voice, speaking to us in the dark.",
+       37.49,
+       40.35
+      ],
+      [
+       "A voice that wants, more than anything, to convince us that it is sane.",
+       40.83,
+       45.44
+      ]
+     ]
+    }
+   ],
+   "end": 45.44
+  },
+  {
+   "start": 46.29,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "It will be published the following January, in a small magazine called The Pioneer, for the sum of ten dollars.",
+     "start": 46.29,
+     "end": 53.5,
+     "phrases": [
+      [
+       "It will be published the following January, in a small magazine called The Pioneer, for the sum of ten dollars.",
+       46.29,
+       53.5
+      ]
+     ]
+    }
+   ],
+   "end": 53.5
+  },
+  {
+   "start": 54.35,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Listen closely. He says his hearing is very, very good.",
+     "start": 54.35,
+     "end": 59.0,
+     "phrases": [
+      [
+       "Listen closely.",
+       54.35,
+       55.79
+      ],
+      [
+       "He says his hearing is very, very good.",
+       56.26,
+       59.0
+      ]
+     ]
+    }
+   ],
+   "end": 59.0
+  },
+  {
+   "start": 63.55,
+   "end": 67.57,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Tell-Tale Heart. By Edgar Allan Poe.",
+     "start": 63.55,
+     "end": 67.57,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 71.17,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "True!—nervous—very, very dreadfully nervous I had been and am; but why will you say that I am mad? The disease had sharpened my senses—not destroyed—not dulled them. Above all was the sense of hearing acute. I heard all things in the heaven and in the earth. I heard many things in hell. How, then, am I mad? Hearken! and observe how healthily—how calmly I can tell you the whole story.",
+     "start": 71.17,
+     "end": 104.6,
+     "phrases": [
+      [
+       "True!",
+       71.17,
+       72.1
+      ],
+      [
+       "nervous",
+       72.34,
+       73.26
+      ],
+      [
+       "very, very dreadfully nervous I had been and am;",
+       73.5,
+       76.9
+      ],
+      [
+       "but why will you say that I am mad?",
+       77.2,
+       79.62
+      ],
+      [
+       "The disease had sharpened my senses",
+       80.08,
+       82.72
+      ],
+      [
+       "not destroyed",
+       82.96,
+       84.44
+      ],
+      [
+       "not dulled them.",
+       84.68,
+       86.13
+      ],
+      [
+       "Above all was the sense of hearing acute.",
+       86.59,
+       89.41
+      ],
+      [
+       "I heard all things in the heaven and in the earth.",
+       89.86,
+       92.95
+      ],
+      [
+       "I heard many things in hell.",
+       93.4,
+       95.34
+      ],
+      [
+       "How, then, am I mad?",
+       95.79,
+       97.76
+      ],
+      [
+       "Hearken!",
+       98.21,
+       99.29
+      ],
+      [
+       "and observe how healthily",
+       99.74,
+       101.61
+      ],
+      [
+       "how calmly I can tell you the whole story.",
+       101.85,
+       104.6
+      ]
+     ]
+    }
+   ],
+   "end": 104.6
+  },
+  {
+   "start": 105.45,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It is impossible to say how first the idea entered my brain; but once conceived, it haunted me day and night. Object there was none. Passion there was none. I loved the old man. He had never wronged me. He had never given me insult. For his gold I had no desire. I think it was his eye! yes, it was this! He had the eye of a vulture—a pale blue eye, with a film over it. Whenever it fell upon me, my blood ran cold; and so by degrees—very gradually—I made up my mind to take the life of the old man, and thus rid myself of the eye forever.",
+     "start": 105.45,
+     "end": 151.18,
+     "phrases": [
+      [
+       "It is impossible to say how first the idea entered my brain;",
+       105.45,
+       109.46
+      ],
+      [
+       "but once conceived, it haunted me day and night.",
+       109.76,
+       112.83
+      ],
+      [
+       "Object there was none.",
+       113.28,
+       115.07
+      ],
+      [
+       "Passion there was none.",
+       115.52,
+       117.05
+      ],
+      [
+       "I loved the old man.",
+       117.5,
+       119.4
+      ],
+      [
+       "He had never wronged me.",
+       119.86,
+       121.67
+      ],
+      [
+       "He had never given me insult.",
+       122.13,
+       124.37
+      ],
+      [
+       "For his gold I had no desire.",
+       124.83,
+       127.19
+      ],
+      [
+       "I think it was his eye!",
+       127.64,
+       129.49
+      ],
+      [
+       "yes, it was this!",
+       129.95,
+       131.64
+      ],
+      [
+       "He had the eye of a vulture",
+       132.09,
+       134.32
+      ],
+      [
+       "a pale blue eye, with a film over it.",
+       134.56,
+       137.27
+      ],
+      [
+       "Whenever it fell upon me, my blood ran cold;",
+       137.72,
+       140.92
+      ],
+      [
+       "and so by degrees",
+       141.22,
+       142.98
+      ],
+      [
+       "very gradually",
+       143.22,
+       144.83
+      ],
+      [
+       "I made up my mind to take the life of the old man, and thus rid myself of the eye forever.",
+       145.07,
+       151.18
+      ]
+     ]
+    }
+   ],
+   "end": 151.18
+  },
+  {
+   "start": 152.03,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Now this is the point. You fancy me mad. Madmen know nothing. But you should have seen me. You should have seen how wisely I proceeded—with what caution—with what foresight—with what dissimulation I went to work! I was never kinder to the old man than during the whole week before I killed him. And every night, about midnight, I turned the latch of his door and opened it—oh, so gently!",
+     "start": 152.03,
+     "end": 182.48,
+     "phrases": [
+      [
+       "Now this is the point.",
+       152.03,
+       153.97
+      ],
+      [
+       "You fancy me mad.",
+       154.42,
+       156.08
+      ],
+      [
+       "Madmen know nothing.",
+       156.53,
+       158.19
+      ],
+      [
+       "But you should have seen me.",
+       158.64,
+       160.21
+      ],
+      [
+       "You should have seen how wisely I proceeded",
+       160.66,
+       163.58
+      ],
+      [
+       "with what caution",
+       163.81,
+       165.21
+      ],
+      [
+       "with what foresight",
+       165.45,
+       167.08
+      ],
+      [
+       "with what dissimulation I went to work!",
+       167.31,
+       170.18
+      ],
+      [
+       "I was never kinder to the old man than during the whole week before I killed him.",
+       170.63,
+       175.49
+      ],
+      [
+       "And every night, about midnight, I turned the latch of his door and opened it",
+       175.94,
+       180.5
+      ],
+      [
+       "oh, so gently!",
+       180.74,
+       182.48
+      ]
+     ]
+    }
+   ],
+   "end": 182.48
+  },
+  {
+   "start": 184.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And then, when I had made an opening sufficient for my head, I put in a dark lantern, all closed, closed, that no light shone out, and then I thrust in my head. Oh, you would have laughed to see how cunningly I thrust it in! I moved it slowly—very, very slowly, so that I might not disturb the old man's sleep. It took me an hour to place my whole head within the opening so far that I could see him as he lay upon his bed. Ha!—would a madman have been so wise as this?",
+     "start": 184.96,
+     "end": 217.08,
+     "phrases": [
+      [
+       "And then, when I had made an opening sufficient for my head, I put in a dark lantern, all closed, closed, that no light shone out, and then I thrust in my head.",
+       184.96,
+       194.95
+      ],
+      [
+       "Oh, you would have laughed to see how cunningly I thrust it in!",
+       195.4,
+       198.89
+      ],
+      [
+       "I moved it slowly",
+       199.35,
+       201.03
+      ],
+      [
+       "very, very slowly, so that I might not disturb the old man's sleep.",
+       201.27,
+       205.7
+      ],
+      [
+       "It took me an hour to place my whole head within the opening so far that I could see him as he lay upon his bed.",
+       206.15,
+       212.84
+      ],
+      [
+       "Ha!",
+       213.29,
+       214.18
+      ],
+      [
+       "would a madman have been so wise as this?",
+       214.41,
+       217.08
+      ]
+     ]
+    }
+   ],
+   "end": 217.08
+  },
+  {
+   "start": 217.93,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And then, when my head was well in the room, I undid the lantern cautiously—oh, so cautiously—cautiously (for the hinges creaked)—",
+     "start": 217.93,
+     "end": 227.19,
+     "phrases": [
+      [
+       "And then, when my head was well in the room, I undid the lantern cautiously",
+       217.93,
+       222.66
+      ],
+      [
+       "oh, so cautiously",
+       222.9,
+       224.66
+      ],
+      [
+       "cautiously (for the hinges creaked)",
+       224.89,
+       227.19
+      ]
+     ]
+    }
+   ],
+   "end": 227.19
+  },
+  {
+   "start": 228.64,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I undid it just so much that a single thin ray fell upon the vulture eye. And this I did for seven long nights—every night just at midnight—but I found the eye always closed; and so it was impossible to do the work; for it was not the old man who vexed me, but his Evil Eye. And every morning, when the day broke, I went boldly into the chamber, and spoke courageously to him, calling him by name in a hearty tone, and inquiring how he has passed the night. So you see he would have been a very profound old man, indeed, to suspect that every night, just at twelve, I looked in upon him while he slept.",
+     "start": 228.64,
+     "end": 268.61,
+     "phrases": [
+      [
+       "I undid it just so much that a single thin ray fell upon the vulture eye.",
+       228.64,
+       233.46
+      ],
+      [
+       "And this I did for seven long nights",
+       233.91,
+       236.52
+      ],
+      [
+       "every night just at midnight",
+       236.76,
+       238.92
+      ],
+      [
+       "but I found the eye always closed;",
+       239.15,
+       241.46
+      ],
+      [
+       "and so it was impossible to do the work;",
+       241.76,
+       244.29
+      ],
+      [
+       "for it was not the old man who vexed me, but his Evil Eye.",
+       244.59,
+       248.19
+      ],
+      [
+       "And every morning, when the day broke, I went boldly into the chamber, and spoke courageously to him, calling him by name in a hearty tone, and inquiring how he has passed the night.",
+       248.64,
+       259.72
+      ],
+      [
+       "So you see he would have been a very profound old man, indeed, to suspect that every night, just at twelve, I looked in upon him while he slept.",
+       260.17,
+       268.61
+      ]
+     ]
+    }
+   ],
+   "end": 268.61
+  },
+  {
+   "start": 270.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Upon the eighth night I was more than usually cautious in opening the door. A watch's minute hand moves more quickly than did mine. Never before that night had I felt the extent of my own powers—of my sagacity. I could scarcely contain my feelings of triumph. To think that there I was, opening the door, little by little, and he not even to dream of my secret deeds or thoughts. I fairly chuckled at the idea; and perhaps he heard me; for he moved on the bed suddenly, as if startled.",
+     "start": 270.96,
+     "end": 306.23,
+     "phrases": [
+      [
+       "Upon the eighth night I was more than usually cautious in opening the door.",
+       270.96,
+       275.59
+      ],
+      [
+       "A watch's minute hand moves more quickly than did mine.",
+       276.05,
+       279.72
+      ],
+      [
+       "Never before that night had I felt the extent of my own powers",
+       280.17,
+       284.22
+      ],
+      [
+       "of my sagacity.",
+       284.46,
+       286.3
+      ],
+      [
+       "I could scarcely contain my feelings of triumph.",
+       286.75,
+       289.88
+      ],
+      [
+       "To think that there I was, opening the door, little by little, and he not even to dream of my secret deeds or thoughts.",
+       290.33,
+       297.9
+      ],
+      [
+       "I fairly chuckled at the idea;",
+       298.35,
+       300.63
+      ],
+      [
+       "and perhaps he heard me;",
+       300.93,
+       302.86
+      ],
+      [
+       "for he moved on the bed suddenly, as if startled.",
+       303.17,
+       306.23
+      ]
+     ]
+    }
+   ],
+   "end": 306.23
+  },
+  {
+   "start": 307.08,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Now you may think that I drew back—but no. His room was as black as pitch with the thick darkness, (for the shutters were close fastened, through fear of robbers,) and so I knew that he could not see the opening of the door, and I kept pushing it on steadily, steadily.",
+     "start": 307.08,
+     "end": 323.89,
+     "phrases": [
+      [
+       "Now you may think that I drew back",
+       307.08,
+       309.37
+      ],
+      [
+       "but no.",
+       309.61,
+       310.72
+      ],
+      [
+       "His room was as black as pitch with the thick darkness, (for the shutters were close fastened, through fear of robbers,) and so I knew that he could not see the opening of the door, and I kept pushing it on steadily, steadily.",
+       311.17,
+       323.89
+      ]
+     ]
+    }
+   ],
+   "end": 323.89
+  },
+  {
+   "start": 324.74,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I had my head in, and was about to open the lantern, when my thumb slipped upon the tin fastening",
+     "start": 324.74,
+     "end": 330.7,
+     "phrases": [
+      [
+       "I had my head in, and was about to open the lantern, when my thumb slipped upon the tin fastening",
+       324.74,
+       330.7
+      ]
+     ]
+    }
+   ],
+   "end": 330.7
+  },
+  {
+   "start": 331.55,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "and the old man sprang up in bed, crying out—",
+     "start": 331.55,
+     "end": 334.58,
+     "phrases": [
+      [
+       "and the old man sprang up in bed, crying out",
+       331.55,
+       334.58
+      ]
+     ]
+    }
+   ],
+   "end": 334.58
+  },
+  {
+   "start": 335.43,
+   "segments": [
+    {
+     "speaker": "oldman",
+     "text": "Who's there?",
+     "start": 335.43,
+     "end": 336.64,
+     "phrases": [
+      [
+       "Who's there?",
+       335.43,
+       336.64
+      ]
+     ]
+    }
+   ],
+   "end": 336.64
+  },
+  {
+   "start": 339.99,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I kept quite still and said nothing. For a whole hour I did not move a muscle, and in the meantime I did not hear him lie down. He was still sitting up in the bed listening;—just as I have done, night after night, hearkening to the death watches in the wall.",
+     "start": 339.99,
+     "end": 356.77,
+     "phrases": [
+      [
+       "I kept quite still and said nothing.",
+       339.99,
+       342.5
+      ],
+      [
+       "For a whole hour I did not move a muscle, and in the meantime I did not hear him lie down.",
+       342.95,
+       348.31
+      ],
+      [
+       "He was still sitting up in the bed listening;",
+       348.76,
+       351.59
+      ],
+      [
+       "just as I have done, night after night, hearkening to the death watches in the wall.",
+       351.82,
+       356.77
+      ]
+     ]
+    }
+   ],
+   "end": 356.77
+  },
+  {
+   "start": 360.62,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Presently I heard a slight groan, and I knew it was the groan of mortal terror. It was not a groan of pain or of grief—oh, no!—it was the low stifled sound that arises from the bottom of the soul when overcharged with awe. I knew the sound well. Many a night, just at midnight, when all the world slept, it has welled up from my own bosom, deepening, with its dreadful echo, the terrors that distracted me. I say I knew it well. I knew what the old man felt, and pitied him, although I chuckled at heart. I knew that he had been lying awake ever since the first slight noise, when he had turned in the bed. His fears had been ever since growing upon him. He had been trying to fancy them causeless, but could not. He had been saying to himself—",
+     "start": 360.62,
+     "end": 411.3,
+     "phrases": [
+      [
+       "Presently I heard a slight groan, and I knew it was the groan of mortal terror.",
+       360.62,
+       365.29
+      ],
+      [
+       "It was not a groan of pain or of grief",
+       365.74,
+       368.43
+      ],
+      [
+       "oh, no!",
+       368.66,
+       369.86
+      ],
+      [
+       "it was the low stifled sound that arises from the bottom of the soul when overcharged with awe.",
+       370.09,
+       376.21
+      ],
+      [
+       "I knew the sound well.",
+       376.66,
+       378.36
+      ],
+      [
+       "Many a night, just at midnight, when all the world slept, it has welled up from my own bosom, deepening, with its dreadful echo, the terrors that distracted me.",
+       378.81,
+       388.26
+      ],
+      [
+       "I say I knew it well.",
+       388.71,
+       390.54
+      ],
+      [
+       "I knew what the old man felt, and pitied him, although I chuckled at heart.",
+       390.99,
+       395.57
+      ],
+      [
+       "I knew that he had been lying awake ever since the first slight noise, when he had turned in the bed.",
+       396.02,
+       401.56
+      ],
+      [
+       "His fears had been ever since growing upon him.",
+       402.01,
+       405.05
+      ],
+      [
+       "He had been trying to fancy them causeless, but could not.",
+       405.5,
+       408.74
+      ],
+      [
+       "He had been saying to himself",
+       409.19,
+       411.3
+      ]
+     ]
+    }
+   ],
+   "end": 411.3
+  },
+  {
+   "start": 412.15,
+   "segments": [
+    {
+     "speaker": "oldman",
+     "text": "It is nothing but the wind in the chimney—it is only a mouse crossing the floor,",
+     "start": 412.15,
+     "end": 417.67,
+     "phrases": [
+      [
+       "It is nothing but the wind in the chimney",
+       412.15,
+       414.83
+      ],
+      [
+       "it is only a mouse crossing the floor,",
+       415.09,
+       417.67
+      ]
+     ]
+    }
+   ],
+   "end": 417.67
+  },
+  {
+   "start": 418.52,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "or",
+     "start": 418.52,
+     "end": 419.06,
+     "phrases": [
+      [
+       "or",
+       418.52,
+       419.06
+      ]
+     ]
+    }
+   ],
+   "end": 419.06
+  },
+  {
+   "start": 419.91,
+   "segments": [
+    {
+     "speaker": "oldman",
+     "text": "It is merely a cricket which has made a single chirp.",
+     "start": 419.91,
+     "end": 423.15,
+     "phrases": [
+      [
+       "It is merely a cricket which has made a single chirp.",
+       419.91,
+       423.15
+      ]
+     ]
+    }
+   ],
+   "end": 423.15
+  },
+  {
+   "start": 424.0,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Yes, he had been trying to comfort himself with these suppositions: but he had found all in vain. All in vain; because Death, in approaching him had stalked with his black shadow before him, and enveloped the victim. And it was the mournful influence of the unperceived shadow that caused him to feel—although he neither saw nor heard—to feel the presence of my head within the room.",
+     "start": 424.0,
+     "end": 449.53,
+     "phrases": [
+      [
+       "Yes, he had been trying to comfort himself with these suppositions:",
+       424.0,
+       427.76
+      ],
+      [
+       "but he had found all in vain.",
+       428.06,
+       429.99
+      ],
+      [
+       "All in vain;",
+       430.44,
+       431.84
+      ],
+      [
+       "because Death, in approaching him had stalked with his black shadow before him, and enveloped the victim.",
+       432.14,
+       438.13
+      ],
+      [
+       "And it was the mournful influence of the unperceived shadow that caused him to feel",
+       438.58,
+       443.43
+      ],
+      [
+       "although he neither saw nor heard",
+       443.66,
+       446.27
+      ],
+      [
+       "to feel the presence of my head within the room.",
+       446.51,
+       449.53
+      ]
+     ]
+    }
+   ],
+   "end": 449.53
+  },
+  {
+   "start": 450.38,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "When I had waited a long time, very patiently, without hearing him lie down, I resolved to open a little—a very, very little crevice in the lantern. So I opened it—you cannot imagine how stealthily, stealthily—until, at length a single dim ray, like the thread of the spider, shot from out the crevice and fell full upon the vulture eye.",
+     "start": 450.38,
+     "end": 473.31,
+     "phrases": [
+      [
+       "When I had waited a long time, very patiently, without hearing him lie down, I resolved to open a little",
+       450.38,
+       456.92
+      ],
+      [
+       "a very, very little crevice in the lantern.",
+       457.16,
+       460.19
+      ],
+      [
+       "So I opened it",
+       460.64,
+       462.17
+      ],
+      [
+       "you cannot imagine how stealthily, stealthily",
+       462.4,
+       465.41
+      ],
+      [
+       "until, at length a single dim ray, like the thread of the spider, shot from out the crevice and fell full upon the vulture eye.",
+       465.64,
+       473.31
+      ]
+     ]
+    }
+   ],
+   "end": 473.31
+  },
+  {
+   "start": 477.16,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was open—wide, wide open—and I grew furious as I gazed upon it. I saw it with perfect distinctness—all a dull blue, with a hideous veil over it that chilled the very marrow in my bones; but I could see nothing else of the old man's face or person: for I had directed the ray as if by instinct, precisely upon the damned spot.",
+     "start": 477.16,
+     "end": 501.44,
+     "phrases": [
+      [
+       "It was open",
+       477.16,
+       478.44
+      ],
+      [
+       "wide, wide open",
+       478.68,
+       480.42
+      ],
+      [
+       "and I grew furious as I gazed upon it.",
+       480.65,
+       483.38
+      ],
+      [
+       "I saw it with perfect distinctness",
+       483.83,
+       486.35
+      ],
+      [
+       "all a dull blue, with a hideous veil over it that chilled the very marrow in my bones;",
+       486.58,
+       491.77
+      ],
+      [
+       "but I could see nothing else of the old man's face or person:",
+       492.07,
+       496.05
+      ],
+      [
+       "for I had directed the ray as if by instinct, precisely upon the damned spot.",
+       496.35,
+       501.44
+      ]
+     ]
+    }
+   ],
+   "end": 501.44
+  },
+  {
+   "start": 502.29,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And have I not told you that what you mistake for madness is but over-acuteness of the sense?—now, I say, there came to my ears a low, dull, quick sound, such as a watch makes when enveloped in cotton.",
+     "start": 502.29,
+     "end": 515.25,
+     "phrases": [
+      [
+       "And have I not told you that what you mistake for madness is but over-acuteness of the sense?",
+       502.29,
+       508.1
+      ],
+      [
+       "now, I say, there came to my ears a low, dull, quick sound, such as a watch makes when enveloped in cotton.",
+       508.33,
+       515.25
+      ]
+     ]
+    }
+   ],
+   "end": 515.25
+  },
+  {
+   "start": 519.1,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I knew that sound well, too. It was the beating of the old man's heart. It increased my fury, as the beating of a drum stimulates the soldier into courage.",
+     "start": 519.1,
+     "end": 530.31,
+     "phrases": [
+      [
+       "I knew that sound well, too.",
+       519.1,
+       521.21
+      ],
+      [
+       "It was the beating of the old man's heart.",
+       521.66,
+       524.44
+      ],
+      [
+       "It increased my fury, as the beating of a drum stimulates the soldier into courage.",
+       524.89,
+       530.31
+      ]
+     ]
+    }
+   ],
+   "end": 530.31
+  },
+  {
+   "start": 531.16,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But even yet I refrained and kept still. I scarcely breathed. I held the lantern motionless. I tried how steadily I could maintain the ray upon the eye. Meantime the hellish tattoo of the heart increased. It grew quicker and quicker, and louder and louder every instant. The old man's terror must have been extreme! It grew louder, I say, louder every moment!—do you mark me well? I have told you that I am nervous: so I am. And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror.",
+     "start": 531.16,
+     "end": 572.74,
+     "phrases": [
+      [
+       "But even yet I refrained and kept still.",
+       531.16,
+       533.92
+      ],
+      [
+       "I scarcely breathed.",
+       534.35,
+       536.06
+      ],
+      [
+       "I held the lantern motionless.",
+       536.5,
+       538.53
+      ],
+      [
+       "I tried how steadily I could maintain the ray upon the eye.",
+       538.97,
+       542.69
+      ],
+      [
+       "Meantime the hellish tattoo of the heart increased.",
+       543.12,
+       546.3
+      ],
+      [
+       "It grew quicker and quicker, and louder and louder every instant.",
+       546.74,
+       550.62
+      ],
+      [
+       "The old man's terror must have been extreme!",
+       551.05,
+       553.78
+      ],
+      [
+       "It grew louder, I say, louder every moment!",
+       554.22,
+       557.18
+      ],
+      [
+       "do you mark me well?",
+       557.41,
+       558.87
+      ],
+      [
+       "I have told you that I am nervous:",
+       559.31,
+       561.47
+      ],
+      [
+       "so I am.",
+       561.75,
+       562.99
+      ],
+      [
+       "And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror.",
+       563.42,
+       572.74
+      ]
+     ]
+    }
+   ],
+   "end": 572.74
+  },
+  {
+   "start": 573.59,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Yet, for some minutes longer I refrained and stood still. But the beating grew louder, louder! I thought the heart must burst. And now a new anxiety seized me—the sound would be heard by a neighbour! The old man's hour had come! With a loud yell, I threw open the lantern and leaped into the room.",
+     "start": 573.59,
+     "end": 593.72,
+     "phrases": [
+      [
+       "Yet, for some minutes longer I refrained and stood still.",
+       573.59,
+       576.93
+      ],
+      [
+       "But the beating grew louder, louder!",
+       577.34,
+       579.53
+      ],
+      [
+       "I thought the heart must burst.",
+       579.94,
+       582.0
+      ],
+      [
+       "And now a new anxiety seized me",
+       582.41,
+       584.74
+      ],
+      [
+       "the sound would be heard by a neighbour!",
+       584.95,
+       587.03
+      ],
+      [
+       "The old man's hour had come!",
+       587.44,
+       589.45
+      ],
+      [
+       "With a loud yell, I threw open the lantern and leaped into the room.",
+       589.86,
+       593.72
+      ]
+     ]
+    }
+   ],
+   "end": 593.72
+  },
+  {
+   "start": 595.77,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "He shrieked once—once only. In an instant I dragged him to the floor, and pulled the heavy bed over him. I then smiled gaily, to find the deed so far done. But, for many minutes, the heart beat on with a muffled sound. This, however, did not vex me; it would not be heard through the wall.",
+     "start": 595.77,
+     "end": 618.12,
+     "phrases": [
+      [
+       "He shrieked once",
+       595.77,
+       597.28
+      ],
+      [
+       "once only.",
+       597.53,
+       598.95
+      ],
+      [
+       "In an instant I dragged him to the floor, and pulled the heavy bed over him.",
+       599.42,
+       604.18
+      ],
+      [
+       "I then smiled gaily, to find the deed so far done.",
+       604.65,
+       608.38
+      ],
+      [
+       "But, for many minutes, the heart beat on with a muffled sound.",
+       608.84,
+       612.53
+      ],
+      [
+       "This, however, did not vex me;",
+       613.0,
+       615.36
+      ],
+      [
+       "it would not be heard through the wall.",
+       615.67,
+       618.12
+      ]
+     ]
+    }
+   ],
+   "end": 618.12
+  },
+  {
+   "start": 627.97,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "At length it ceased. The old man was dead. I removed the bed and examined the corpse. Yes, he was stone, stone dead. I placed my hand upon the heart and held it there many minutes. There was no pulsation. He was stone dead. His eye would trouble me no more.",
+     "start": 627.97,
+     "end": 650.02,
+     "phrases": [
+      [
+       "At length it ceased.",
+       627.97,
+       629.65
+      ],
+      [
+       "The old man was dead.",
+       630.11,
+       632.09
+      ],
+      [
+       "I removed the bed and examined the corpse.",
+       632.55,
+       635.38
+      ],
+      [
+       "Yes, he was stone, stone dead.",
+       635.85,
+       638.33
+      ],
+      [
+       "I placed my hand upon the heart and held it there many minutes.",
+       638.8,
+       642.67
+      ],
+      [
+       "There was no pulsation.",
+       643.14,
+       645.22
+      ],
+      [
+       "He was stone dead.",
+       645.68,
+       647.36
+      ],
+      [
+       "His eye would trouble me no more.",
+       647.83,
+       650.02
+      ]
+     ]
+    }
+   ],
+   "end": 650.02
+  },
+  {
+   "start": 652.37,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "If still you think me mad, you will think so no longer when I describe the wise precautions I took for the concealment of the body. The night waned, and I worked hastily, but in silence. First of all I dismembered the corpse. I cut off the head and the arms and the legs.",
+     "start": 652.37,
+     "end": 670.6,
+     "phrases": [
+      [
+       "If still you think me mad, you will think so no longer when I describe the wise precautions I took for the concealment of the body.",
+       652.37,
+       660.12
+      ],
+      [
+       "The night waned, and I worked hastily, but in silence.",
+       660.57,
+       664.07
+      ],
+      [
+       "First of all I dismembered the corpse.",
+       664.52,
+       667.15
+      ],
+      [
+       "I cut off the head and the arms and the legs.",
+       667.6,
+       670.6
+      ]
+     ]
+    }
+   ],
+   "end": 670.6
+  },
+  {
+   "start": 675.45,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I then took up three planks from the flooring of the chamber, and deposited all between the scantlings. I then replaced the boards so cleverly, so cunningly, that no human eye—not even his—could have detected any thing wrong. There was nothing to wash out—no stain of any kind—no blood-spot whatever. I had been too wary for that. A tub had caught all—ha! ha!",
+     "start": 675.45,
+     "end": 704.12,
+     "phrases": [
+      [
+       "I then took up three planks from the flooring of the chamber, and deposited all between the scantlings.",
+       675.45,
+       681.22
+      ],
+      [
+       "I then replaced the boards so cleverly, so cunningly, that no human eye",
+       681.67,
+       686.46
+      ],
+      [
+       "not even his",
+       686.69,
+       687.6
+      ],
+      [
+       "could have detected any thing wrong.",
+       687.84,
+       690.18
+      ],
+      [
+       "There was nothing to wash out",
+       690.63,
+       692.58
+      ],
+      [
+       "no stain of any kind",
+       692.82,
+       694.7
+      ],
+      [
+       "no blood-spot whatever.",
+       694.94,
+       697.12
+      ],
+      [
+       "I had been too wary for that.",
+       697.57,
+       699.51
+      ],
+      [
+       "A tub had caught all",
+       699.96,
+       701.67
+      ],
+      [
+       "ha!",
+       701.9,
+       702.79
+      ],
+      [
+       "ha!",
+       703.24,
+       704.12
+      ]
+     ]
+    }
+   ],
+   "end": 704.12
+  },
+  {
+   "start": 706.97,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "When I had made an end of these labors, it was four o'clock—still dark as midnight. As the bell sounded the hour",
+     "start": 706.97,
+     "end": 715.15,
+     "phrases": [
+      [
+       "When I had made an end of these labors, it was four o'clock",
+       706.97,
+       710.33
+      ],
+      [
+       "still dark as midnight.",
+       710.56,
+       712.56
+      ],
+      [
+       "As the bell sounded the hour",
+       713.01,
+       715.15
+      ]
+     ]
+    }
+   ],
+   "end": 715.15
+  },
+  {
+   "start": 722.0,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "there came a knocking at the street door.",
+     "start": 722.0,
+     "end": 724.34,
+     "phrases": [
+      [
+       "there came a knocking at the street door.",
+       722.0,
+       724.34
+      ]
+     ]
+    }
+   ],
+   "end": 724.34
+  },
+  {
+   "start": 726.79,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I went down to open it with a light heart,—for what had I now to fear?",
+     "start": 726.79,
+     "end": 731.6,
+     "phrases": [
+      [
+       "I went down to open it with a light heart,",
+       726.79,
+       729.37
+      ],
+      [
+       "for what had I now to fear?",
+       729.6,
+       731.6
+      ]
+     ]
+    }
+   ],
+   "end": 731.6
+  },
+  {
+   "start": 734.85,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "There entered three men, who introduced themselves, with perfect suavity, as officers of the police. A shriek had been heard by a neighbour during the night; suspicion of foul play had been aroused; information had been lodged at the police office, and they (the officers) had been deputed to search the premises.",
+     "start": 734.85,
+     "end": 755.03,
+     "phrases": [
+      [
+       "There entered three men, who introduced themselves, with perfect suavity, as officers of the police.",
+       734.85,
+       741.19
+      ],
+      [
+       "A shriek had been heard by a neighbour during the night;",
+       741.64,
+       744.73
+      ],
+      [
+       "suspicion of foul play had been aroused;",
+       745.03,
+       747.85
+      ],
+      [
+       "information had been lodged at the police office, and they (the officers) had been deputed to search the premises.",
+       748.15,
+       755.03
+      ]
+     ]
+    }
+   ],
+   "end": 755.03
+  },
+  {
+   "start": 755.88,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I smiled,—for what had I to fear? I bade the gentlemen welcome. The shriek, I said, was my own in a dream. The old man, I mentioned, was absent in the country. I took my visitors all over the house. I bade them search—search well. I led them, at length, to his chamber. I showed them his treasures, secure, undisturbed. In the enthusiasm of my confidence, I brought chairs into the room, and desired them here to rest from their fatigues, while I myself, in the wild audacity of my perfect triumph, placed my own seat upon the very spot beneath which reposed the corpse of the victim.",
+     "start": 755.88,
+     "end": 800.02,
+     "phrases": [
+      [
+       "I smiled,",
+       755.88,
+       757.21
+      ],
+      [
+       "for what had I to fear?",
+       757.45,
+       759.42
+      ],
+      [
+       "I bade the gentlemen welcome.",
+       759.88,
+       762.07
+      ],
+      [
+       "The shriek, I said, was my own in a dream.",
+       762.52,
+       765.58
+      ],
+      [
+       "The old man, I mentioned, was absent in the country.",
+       766.03,
+       769.6
+      ],
+      [
+       "I took my visitors all over the house.",
+       770.05,
+       772.72
+      ],
+      [
+       "I bade them search",
+       773.18,
+       774.84
+      ],
+      [
+       "search well.",
+       775.07,
+       776.3
+      ],
+      [
+       "I led them, at length, to his chamber.",
+       776.75,
+       779.39
+      ],
+      [
+       "I showed them his treasures, secure, undisturbed.",
+       779.84,
+       783.19
+      ],
+      [
+       "In the enthusiasm of my confidence, I brought chairs into the room, and desired them here to rest from their fatigues, while I myself, in the wild audacity of my perfect triumph, placed my own seat upon the very spot beneath which reposed the corpse of the victim.",
+       783.64,
+       800.02
+      ]
+     ]
+    }
+   ],
+   "end": 800.02
+  },
+  {
+   "start": 800.87,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The officers were satisfied. My manner had convinced them. I was singularly at ease. They sat, and while I answered cheerily, they chatted of familiar things. But, ere long, I felt myself getting pale and wished them gone. My head ached, and I fancied a ringing in my ears: but still they sat and still chatted.",
+     "start": 800.87,
+     "end": 824.56,
+     "phrases": [
+      [
+       "The officers were satisfied.",
+       800.87,
+       803.23
+      ],
+      [
+       "My manner had convinced them.",
+       803.68,
+       805.87
+      ],
+      [
+       "I was singularly at ease.",
+       806.32,
+       808.36
+      ],
+      [
+       "They sat, and while I answered cheerily, they chatted of familiar things.",
+       808.81,
+       813.36
+      ],
+      [
+       "But, ere long, I felt myself getting pale and wished them gone.",
+       813.81,
+       817.82
+      ],
+      [
+       "My head ached, and I fancied a ringing in my ears:",
+       818.27,
+       821.49
+      ],
+      [
+       "but still they sat and still chatted.",
+       821.79,
+       824.56
+      ]
+     ]
+    }
+   ],
+   "end": 824.56
+  },
+  {
+   "start": 825.41,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The ringing became more distinct:—it continued and became more distinct: I talked more freely to get rid of the feeling: but it continued and gained definiteness—until, at length, I found that the noise was not within my ears.",
+     "start": 825.41,
+     "end": 841.17,
+     "phrases": [
+      [
+       "The ringing became more distinct:",
+       825.41,
+       827.53
+      ],
+      [
+       "it continued and became more distinct:",
+       827.77,
+       830.43
+      ],
+      [
+       "I talked more freely to get rid of the feeling:",
+       830.73,
+       833.67
+      ],
+      [
+       "but it continued and gained definiteness",
+       833.97,
+       836.72
+      ],
+      [
+       "until, at length, I found that the noise was not within my ears.",
+       836.95,
+       841.17
+      ]
+     ]
+    }
+   ],
+   "end": 841.17
+  },
+  {
+   "start": 842.02,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "No doubt I now grew very pale;—but I talked more fluently, and with a heightened voice. Yet the sound increased—and what could I do? It was a low, dull, quick sound—much such a sound as a watch makes when enveloped in cotton. I gasped for breath—and yet the officers heard it not.",
+     "start": 842.02,
+     "end": 863.43,
+     "phrases": [
+      [
+       "No doubt I now grew very pale;",
+       842.02,
+       844.44
+      ],
+      [
+       "but I talked more fluently, and with a heightened voice.",
+       844.66,
+       847.86
+      ],
+      [
+       "Yet the sound increased",
+       848.29,
+       850.2
+      ],
+      [
+       "and what could I do?",
+       850.42,
+       852.03
+      ],
+      [
+       "It was a low, dull, quick sound",
+       852.46,
+       854.88
+      ],
+      [
+       "much such a sound as a watch makes when enveloped in cotton.",
+       855.11,
+       859.08
+      ],
+      [
+       "I gasped for breath",
+       859.51,
+       861.01
+      ],
+      [
+       "and yet the officers heard it not.",
+       861.24,
+       863.43
+      ]
+     ]
+    }
+   ],
+   "end": 863.43
+  },
+  {
+   "start": 864.28,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I talked more quickly—more vehemently; but the noise steadily increased. I arose and argued about trifles, in a high key and with violent gesticulations; but the noise steadily increased. Why would they not be gone? I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men—but the noise steadily increased. Oh God! what could I do?",
+     "start": 864.28,
+     "end": 892.94,
+     "phrases": [
+      [
+       "I talked more quickly",
+       864.28,
+       865.83
+      ],
+      [
+       "more vehemently;",
+       866.05,
+       867.4
+      ],
+      [
+       "but the noise steadily increased.",
+       867.67,
+       870.04
+      ],
+      [
+       "I arose and argued about trifles, in a high key and with violent gesticulations;",
+       870.45,
+       875.79
+      ],
+      [
+       "but the noise steadily increased.",
+       876.06,
+       878.43
+      ],
+      [
+       "Why would they not be gone?",
+       878.84,
+       880.6
+      ],
+      [
+       "I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men",
+       881.01,
+       887.17
+      ],
+      [
+       "but the noise steadily increased.",
+       887.38,
+       889.75
+      ],
+      [
+       "Oh God!",
+       890.16,
+       891.15
+      ],
+      [
+       "what could I do?",
+       891.56,
+       892.94
+      ]
+     ]
+    }
+   ],
+   "end": 892.94
+  },
+  {
+   "start": 893.79,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "I foamed—I raved—I swore! I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased.",
+     "start": 893.79,
+     "end": 905.16,
+     "phrases": [
+      [
+       "I foamed",
+       893.79,
+       894.89
+      ],
+      [
+       "I raved",
+       895.09,
+       896.06
+      ],
+      [
+       "I swore!",
+       896.26,
+       897.28
+      ],
+      [
+       "I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased.",
+       897.67,
+       905.16
+      ]
+     ]
+    }
+   ],
+   "end": 905.16
+  },
+  {
+   "start": 906.01,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It grew louder—louder—louder! And still the men chatted pleasantly, and smiled. Was it possible they heard not? Almighty God!—no, no! They heard!—they suspected!—they knew!—they were making a mockery of my horror!—this I thought, and this I think.",
+     "start": 906.01,
+     "end": 927.0,
+     "phrases": [
+      [
+       "It grew louder",
+       906.01,
+       907.25
+      ],
+      [
+       "louder",
+       907.45,
+       908.22
+      ],
+      [
+       "louder!",
+       908.42,
+       909.29
+      ],
+      [
+       "And still the men chatted pleasantly, and smiled.",
+       909.68,
+       912.6
+      ],
+      [
+       "Was it possible they heard not?",
+       912.99,
+       914.97
+      ],
+      [
+       "Almighty God!",
+       915.36,
+       916.71
+      ],
+      [
+       "no, no!",
+       916.92,
+       918.01
+      ],
+      [
+       "They heard!",
+       918.4,
+       919.43
+      ],
+      [
+       "they suspected!",
+       919.63,
+       920.97
+      ],
+      [
+       "they knew!",
+       921.18,
+       922.14
+      ],
+      [
+       "they were making a mockery of my horror!",
+       922.34,
+       924.68
+      ],
+      [
+       "this I thought, and this I think.",
+       924.88,
+       927.0
+      ]
+     ]
+    }
+   ],
+   "end": 927.0
+  },
+  {
+   "start": 927.85,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But anything was better than this agony! Anything was more tolerable than this derision! I could bear those hypocritical smiles no longer! I felt that I must scream or die! and now—again!—hark! louder! louder! louder! louder!",
+     "start": 927.85,
+     "end": 946.78,
+     "phrases": [
+      [
+       "But anything was better than this agony!",
+       927.85,
+       930.19
+      ],
+      [
+       "Anything was more tolerable than this derision!",
+       930.56,
+       933.14
+      ],
+      [
+       "I could bear those hypocritical smiles no longer!",
+       933.51,
+       936.58
+      ],
+      [
+       "I felt that I must scream or die!",
+       936.96,
+       938.94
+      ],
+      [
+       "and now",
+       939.32,
+       940.11
+      ],
+      [
+       "again!",
+       940.3,
+       941.15
+      ],
+      [
+       "hark!",
+       941.35,
+       942.06
+      ],
+      [
+       "louder!",
+       942.44,
+       943.24
+      ],
+      [
+       "louder!",
+       943.62,
+       944.42
+      ],
+      [
+       "louder!",
+       944.8,
+       945.6
+      ],
+      [
+       "louder!",
+       945.98,
+       946.78
+      ]
+     ]
+    }
+   ],
+   "end": 946.78
+  },
+  {
+   "start": 947.63,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Villains!",
+     "start": 947.63,
+     "end": 948.56,
+     "phrases": [
+      [
+       "Villains!",
+       947.63,
+       948.56
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "I shrieked",
+     "start": 948.78,
+     "end": 949.81,
+     "phrases": [
+      [
+       "I shrieked",
+       948.78,
+       949.81
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "dissemble no more! I admit the deed!—tear up the planks!—here, here!—It is the beating of his hideous heart!",
+     "start": 950.03,
+     "end": 959.03,
+     "phrases": [
+      [
+       "dissemble no more!",
+       950.03,
+       951.61
+      ],
+      [
+       "I admit the deed!",
+       952.01,
+       953.45
+      ],
+      [
+       "tear up the planks!",
+       953.66,
+       955.09
+      ],
+      [
+       "here, here!",
+       955.3,
+       956.52
+      ],
+      [
+       "It is the beating of his hideous heart!",
+       956.73,
+       959.03
+      ]
+     ]
+    }
+   ],
+   "end": 959.03
+  },
+  {
+   "start": 969.88,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "The Tell-Tale Heart, by Edgar Allan Poe.",
+     "start": 969.88,
+     "end": 972.72,
+     "phrases": [
+      [
+       "The Tell-Tale Heart, by Edgar Allan Poe.",
+       969.88,
+       972.72
+      ]
+     ]
+    }
+   ],
+   "end": 972.72
+  },
+  {
+   "start": 973.57,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Poe would be dead within seven years, found delirious on the streets of Baltimore, wearing clothes that were not his own. The cause has never been settled.",
+     "start": 973.57,
+     "end": 984.23,
+     "phrases": [
+      [
+       "Poe would be dead within seven years, found delirious on the streets of Baltimore, wearing clothes that were not his own.",
+       973.57,
+       981.46
+      ],
+      [
+       "The cause has never been settled.",
+       981.94,
+       984.23
+      ]
+     ]
+    }
+   ],
+   "end": 984.23
+  },
+  {
+   "start": 985.08,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "But the voice he wrote that winter has never stopped talking. And somewhere beneath the boards, so it insists, something has never stopped beating.",
+     "start": 985.08,
+     "end": 994.46,
+     "phrases": [
+      [
+       "But the voice he wrote that winter has never stopped talking.",
+       985.08,
+       988.7
+      ],
+      [
+       "And somewhere beneath the boards, so it insists, something has never stopped beating.",
+       989.18,
+       994.46
+      ]
+     ]
+    }
+   ],
+   "end": 994.46
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bm_george*0.6+bm_fable*0.4"
+  },
+  "oldman": {
+   "voice": "bm_daniel*0.7+am_onyx*0.3"
+  }
+ }
+}

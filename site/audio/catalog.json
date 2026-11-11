@@ -1,0 +1,82 @@
+{
+ "episodes": [
+  {
+   "slug": "tell_tale_heart",
+   "title": "The Tell-Tale Heart",
+   "author": "Edgar Allan Poe",
+   "year": 1843,
+   "blurb": "A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.",
+   "mood": "Night, dread, a heart that will not stop",
+   "caption": "“a pale blue eye, with a film over it”",
+   "art": "eye",
+   "featured": true,
+   "order": 50,
+   "duration": 1009.31,
+   "audio": "audio/tell_tale_heart.mp3",
+   "timings": "audio/tell_tale_heart.json",
+   "voices": 3,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "oldman": {
+     "label": "the old man"
+    }
+   }
+  },
+  {
+   "slug": "masque_of_the_red_death",
+   "title": "The Masque of the Red Death",
+   "author": "Edgar Allan Poe",
+   "year": 1842,
+   "blurb": "A plague walks the land, so Prince Prospero seals a thousand friends inside his abbey and throws a masked ball. In the black chamber, a great ebony clock counts the hours.",
+   "mood": "A waltz behind iron gates",
+   "caption": "",
+   "art": "blob3",
+   "featured": false,
+   "order": 10,
+   "duration": 1107.05,
+   "audio": "audio/masque_of_the_red_death.mp3",
+   "timings": "audio/masque_of_the_red_death.json",
+   "voices": 3,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "prospero": {
+     "label": "Prince Prospero"
+    }
+   }
+  },
+  {
+   "slug": "sack_of_rome",
+   "title": "The Sack of Rome",
+   "author": "Edward Gibbon",
+   "year": 1781,
+   "blurb": "August, 410. At midnight a gate in the walls of Rome opens from the inside, and for the first time in eight hundred years an enemy army is in the city. Gibbon's account of that night, with a documentary frame.",
+   "mood": "History, told in the dark",
+   "caption": "",
+   "art": "blob6",
+   "featured": false,
+   "order": 20,
+   "duration": 885.34,
+   "audio": "audio/sack_of_rome.mp3",
+   "timings": "audio/sack_of_rome.json",
+   "voices": 4,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "jerome": {
+     "label": "Jerome"
+    },
+    "at Bethlehem": {
+     "label": null
+    },
+    "virgin": {
+     "label": "an aged virgin"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1177 @@
+{
+ "meta": {
+  "title": "The Masque of the Red Death",
+  "author": "Edgar Allan Poe",
+  "year": 1842,
+  "source": "https://www.gutenberg.org/ebooks/2148",
+  "blurb": "A plague walks the land, so Prince Prospero seals a thousand friends inside his abbey and throws a masked ball. In the black chamber, a great ebony clock counts the hours.\n",
+  "mood": "A waltz behind iron gates",
+  "art": "blob3",
+  "order": 10,
+  "labels": {
+   "host": "the host",
+   "prospero": "Prince Prospero"
+  }
+ },
+ "duration": 1107.05,
+ "chapters": [
+  {
+   "title": "The Masque of the Red Death. By Edgar Allan Poe.",
+   "start": 43.75
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 6.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Philadelphia. The spring of eighteen forty-two.",
+     "start": 6.0,
+     "end": 9.84,
+     "phrases": [
+      [
+       "Philadelphia.",
+       6.0,
+       7.16
+      ],
+      [
+       "The spring of eighteen forty-two.",
+       7.64,
+       9.84
+      ]
+     ]
+    }
+   ],
+   "end": 9.84
+  },
+  {
+   "start": 10.69,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "A few months earlier, Edgar Allan Poe had listened to his young wife, Virginia, singing at the piano, until she stopped, and blood came from her mouth. The doctors called it consumption. In those years it was the commonest killer in America's cities, and there was no cure, and no wall high enough to keep it out.",
+     "start": 10.69,
+     "end": 31.91,
+     "phrases": [
+      [
+       "A few months earlier, Edgar Allan Poe had listened to his young wife, Virginia, singing at the piano, until she stopped, and blood came from her mouth.",
+       10.69,
+       20.73
+      ],
+      [
+       "The doctors called it consumption.",
+       21.21,
+       23.42
+      ],
+      [
+       "In those years it was the commonest killer in America's cities, and there was no cure, and no wall high enough to keep it out.",
+       23.9,
+       31.91
+      ]
+     ]
+    }
+   ],
+   "end": 31.91
+  },
+  {
+   "start": 32.76,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "That May, in Graham's Magazine, he published a short fantasy about a prince who believed there was.",
+     "start": 32.76,
+     "end": 39.4,
+     "phrases": [
+      [
+       "That May, in Graham's Magazine, he published a short fantasy about a prince who believed there was.",
+       32.76,
+       39.4
+      ]
+     ]
+    }
+   ],
+   "end": 39.4
+  },
+  {
+   "start": 43.75,
+   "end": 48.22,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Masque of the Red Death. By Edgar Allan Poe.",
+     "start": 43.75,
+     "end": 48.22,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 50.82,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The",
+     "start": 50.82,
+     "end": 51.25,
+     "phrases": [
+      [
+       "The",
+       50.82,
+       51.25
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "Red Death",
+     "start": 51.47,
+     "end": 52.61,
+     "phrases": [
+      [
+       "Red Death",
+       51.47,
+       52.61
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "had long devastated the country. No pestilence had ever been so fatal, or so hideous. Blood was its Avatar and its seal—the redness and the horror of blood. There were sharp pains, and sudden dizziness, and then profuse bleeding at the pores, with dissolution. The scarlet stains upon the body and especially upon the face of the victim, were the pest ban which shut him out from the aid and from the sympathy of his fellow-men. And the whole seizure, progress and termination of the disease, were the incidents of half an hour.",
+     "start": 52.83,
+     "end": 90.39,
+     "phrases": [
+      [
+       "had long devastated the country.",
+       52.83,
+       55.29
+      ],
+      [
+       "No pestilence had ever been so fatal, or so hideous.",
+       55.74,
+       59.82
+      ],
+      [
+       "Blood was its Avatar and its seal",
+       60.27,
+       62.93
+      ],
+      [
+       "the redness and the horror of blood.",
+       63.17,
+       65.7
+      ],
+      [
+       "There were sharp pains, and sudden dizziness, and then profuse bleeding at the pores, with dissolution.",
+       66.16,
+       72.71
+      ],
+      [
+       "The scarlet stains upon the body and especially upon the face of the victim, were the pest ban which shut him out from the aid and from the sympathy of his fellow-men.",
+       73.17,
+       83.62
+      ],
+      [
+       "And the whole seizure, progress and termination of the disease, were the incidents of half an hour.",
+       84.08,
+       90.39
+      ]
+     ]
+    }
+   ],
+   "end": 90.39
+  },
+  {
+   "start": 91.24,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But the Prince Prospero was happy and dauntless and sagacious. When his dominions were half depopulated, he summoned to his presence a thousand hale and light-hearted friends from among the knights and dames of his court, and with these retired to the deep seclusion of one of his castellated abbeys. This was an extensive and magnificent structure, the creation of the prince's own eccentric yet august taste. A strong and lofty wall girdled it in. This wall had gates of iron. The courtiers, having entered, brought furnaces and massy hammers and welded the bolts. They resolved to leave means neither of ingress or egress to the sudden impulses of despair or of frenzy from within. The abbey was amply provisioned. With such precautions the courtiers might bid defiance to contagion. The external world could take care of itself. In the meantime it was folly to grieve, or to think. The prince had provided all the appliances of pleasure. There were buffoons, there were improvisatori, there were ballet-dancers, there were musicians, there was Beauty, there was wine. All these and security were within. Without was the",
+     "start": 91.24,
+     "end": 175.42,
+     "phrases": [
+      [
+       "But the Prince Prospero was happy and dauntless and sagacious.",
+       91.24,
+       95.44
+      ],
+      [
+       "When his dominions were half depopulated, he summoned to his presence a thousand hale and light-hearted friends from among the knights and dames of his court, and with these retired to the deep seclusion of one of his castellated abbeys.",
+       95.89,
+       111.33
+      ],
+      [
+       "This was an extensive and magnificent structure, the creation of the prince's own eccentric yet august taste.",
+       111.79,
+       119.9
+      ],
+      [
+       "A strong and lofty wall girdled it in.",
+       120.35,
+       123.41
+      ],
+      [
+       "This wall had gates of iron.",
+       123.87,
+       126.22
+      ],
+      [
+       "The courtiers, having entered, brought furnaces and massy hammers and welded the bolts.",
+       126.67,
+       132.57
+      ],
+      [
+       "They resolved to leave means neither of ingress or egress to the sudden impulses of despair or of frenzy from within.",
+       133.03,
+       141.62
+      ],
+      [
+       "The abbey was amply provisioned.",
+       142.07,
+       144.55
+      ],
+      [
+       "With such precautions the courtiers might bid defiance to contagion.",
+       145.01,
+       149.92
+      ],
+      [
+       "The external world could take care of itself.",
+       150.38,
+       153.6
+      ],
+      [
+       "In the meantime it was folly to grieve, or to think.",
+       154.06,
+       157.61
+      ],
+      [
+       "The prince had provided all the appliances of pleasure.",
+       158.07,
+       161.91
+      ],
+      [
+       "There were buffoons, there were improvisatori, there were ballet-dancers, there were musicians, there was Beauty, there was wine.",
+       162.36,
+       170.19
+      ],
+      [
+       "All these and security were within.",
+       170.65,
+       173.48
+      ],
+      [
+       "Without was the",
+       173.94,
+       175.42
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "Red Death.",
+     "start": 175.64,
+     "end": 176.79,
+     "phrases": [
+      [
+       "Red Death.",
+       175.64,
+       176.79
+      ]
+     ]
+    }
+   ],
+   "end": 176.79
+  },
+  {
+   "start": 180.64,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was toward the close of the fifth or sixth month of his seclusion, and while the pestilence raged most furiously abroad, that the Prince Prospero entertained his thousand friends at a masked ball of the most unusual magnificence.",
+     "start": 180.64,
+     "end": 196.56,
+     "phrases": [
+      [
+       "It was toward the close of the fifth or sixth month of his seclusion, and while the pestilence raged most furiously abroad, that the Prince Prospero entertained his thousand friends at a masked ball of the most unusual magnificence.",
+       180.64,
+       196.56
+      ]
+     ]
+    }
+   ],
+   "end": 196.56
+  },
+  {
+   "start": 200.41,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was a voluptuous scene, that masquerade. But first let me tell of the rooms in which it was held. There were seven—an imperial suite. In many palaces, however, such suites form a long and straight vista, while the folding doors slide back nearly to the walls on either hand, so that the view of the whole extent is scarcely impeded. Here the case was very different; as might have been expected from the duke's love of the bizarre. The apartments were so irregularly disposed that the vision embraced but little more than one at a time. There was a sharp turn at every twenty or thirty yards, and at each turn a novel effect. To the right and left, in the middle of each wall, a tall and narrow Gothic window looked out upon a closed corridor which pursued the windings of the suite. These windows were of stained glass whose color varied in accordance with the prevailing hue of the decorations of the chamber into which it opened. That at the eastern extremity was hung, for example, in blue—and vividly blue were its windows. The second chamber was purple in its ornaments and tapestries, and here the panes were purple. The third was green throughout, and so were the casements. The fourth was furnished and lighted with orange—the fifth with white—the sixth with violet. The seventh apartment was closely shrouded in black velvet tapestries that hung all over the ceiling and down the walls, falling in heavy folds upon a carpet of the same material and hue. But in this chamber only, the color of the windows failed to correspond with the decorations. The panes here were scarlet—a deep blood color. Now in no one of the seven apartments was there any lamp or candelabrum, amid the profusion of golden ornaments that lay scattered to and fro or depended from the roof. There was no light of any kind emanating from lamp or candle within the suite of chambers. But in the corridors that followed the suite, there stood, opposite to each window, a heavy tripod, bearing a brazier of fire that projected its rays through the tinted glass and so glaringly illumined the room. And thus were produced a multitude of gaudy and fantastic appearances. But in the western or black chamber the effect of the fire-light that streamed upon the dark hangings through the blood-tinted panes, was ghastly in the extreme, and produced so wild a look upon the countenances of those who entered, that there were few of the company bold enough to set foot within its precincts at all.",
+     "start": 200.41,
+     "end": 378.52,
+     "phrases": [
+      [
+       "It was a voluptuous scene, that masquerade.",
+       200.41,
+       203.46
+      ],
+      [
+       "But first let me tell of the rooms in which it was held.",
+       203.91,
+       207.34
+      ],
+      [
+       "There were seven",
+       207.8,
+       209.1
+      ],
+      [
+       "an imperial suite.",
+       209.34,
+       210.92
+      ],
+      [
+       "In many palaces, however, such suites form a long and straight vista, while the folding doors slide back nearly to the walls on either hand, so that the view of the whole extent is scarcely impeded.",
+       211.38,
+       224.36
+      ],
+      [
+       "Here the case was very different;",
+       224.82,
+       227.31
+      ],
+      [
+       "as might have been expected from the duke's love of the bizarre.",
+       227.62,
+       231.43
+      ],
+      [
+       "The apartments were so irregularly disposed that the vision embraced but little more than one at a time.",
+       231.89,
+       239.07
+      ],
+      [
+       "There was a sharp turn at every twenty or thirty yards, and at each turn a novel effect.",
+       239.53,
+       245.62
+      ],
+      [
+       "To the right and left, in the middle of each wall, a tall and narrow Gothic window looked out upon a closed corridor which pursued the windings of the suite.",
+       246.08,
+       256.14
+      ],
+      [
+       "These windows were of stained glass whose color varied in accordance with the prevailing hue of the decorations of the chamber into which it opened.",
+       256.6,
+       266.62
+      ],
+      [
+       "That at the eastern extremity was hung, for example, in blue",
+       267.07,
+       271.18
+      ],
+      [
+       "and vividly blue were its windows.",
+       271.42,
+       274.07
+      ],
+      [
+       "The second chamber was purple in its ornaments and tapestries, and here the panes were purple.",
+       274.53,
+       280.73
+      ],
+      [
+       "The third was green throughout, and so were the casements.",
+       281.18,
+       285.03
+      ],
+      [
+       "The fourth was furnished and lighted with orange",
+       285.49,
+       288.74
+      ],
+      [
+       "the fifth with white",
+       288.98,
+       290.58
+      ],
+      [
+       "the sixth with violet.",
+       290.82,
+       292.63
+      ],
+      [
+       "The seventh apartment was closely shrouded in black velvet tapestries that hung all over the ceiling and down the walls, falling in heavy folds upon a carpet of the same material and hue.",
+       293.08,
+       306.52
+      ],
+      [
+       "But in this chamber only, the color of the windows failed to correspond with the decorations.",
+       306.98,
+       313.24
+      ],
+      [
+       "The panes here were scarlet",
+       313.69,
+       315.95
+      ],
+      [
+       "a deep blood color.",
+       316.19,
+       317.77
+      ],
+      [
+       "Now in no one of the seven apartments was there any lamp or candelabrum, amid the profusion of golden ornaments that lay scattered to and fro or depended from the roof.",
+       318.23,
+       330.06
+      ],
+      [
+       "There was no light of any kind emanating from lamp or candle within the suite of chambers.",
+       330.52,
+       336.71
+      ],
+      [
+       "But in the corridors that followed the suite, there stood, opposite to each window, a heavy tripod, bearing a brazier of fire that projected its rays through the tinted glass and so glaringly illumined the room.",
+       337.16,
+       351.48
+      ],
+      [
+       "And thus were produced a multitude of gaudy and fantastic appearances.",
+       351.93,
+       357.26
+      ],
+      [
+       "But in the western or black chamber the effect of the fire-light that streamed upon the dark hangings through the blood-tinted panes, was ghastly in the extreme, and produced so wild a look upon the countenances of those who entered,",
+       357.71,
+       372.9
+      ],
+      [
+       "that there were few of the company bold enough to set foot within its precincts at all.",
+       373.03,
+       378.52
+      ]
+     ]
+    }
+   ],
+   "end": 378.52
+  },
+  {
+   "start": 379.37,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was in this apartment, also, that there stood against the western wall, a gigantic clock of ebony. Its pendulum swung to and fro with a dull, heavy, monotonous clang; and when the minute-hand made the circuit of the face, and the hour was to be stricken, there came from the brazen lungs of the clock a sound which was clear and loud and deep and exceedingly musical, but of so peculiar a note and emphasis that, at each lapse of an hour, the musicians of the orchestra were constrained to pause, momentarily, in their performance, to hearken to the sound; and thus the waltzers perforce ceased their evolutions; and there was a brief disconcert of the whole gay company; and, while the chimes of the clock yet rang, it was observed that the giddiest grew pale, and the more aged and sedate passed their hands over their brows as if in confused reverie or meditation. But when the echoes had fully ceased, a light laughter at once pervaded the assembly; the musicians looked at each other and smiled as if at their own nervousness and folly, and made whispering vows, each to the other, that the next chiming of the clock should produce in them no similar emotion; and then, after the lapse of sixty minutes (which embrace three thousand and six hundred seconds of the Time that flies), there came yet another chiming of the clock, and then were the same disconcert and tremulousness and meditation as before.",
+     "start": 379.37,
+     "end": 475.39,
+     "phrases": [
+      [
+       "It was in this apartment, also, that there stood against the western wall, a gigantic clock of ebony.",
+       379.37,
+       386.45
+      ],
+      [
+       "Its pendulum swung to and fro with a dull, heavy, monotonous clang;",
+       386.91,
+       391.85
+      ],
+      [
+       "and when the minute-hand made the circuit of the face, and the hour was to be stricken, there came from the brazen lungs of the clock a sound which was clear and loud and deep and exceedingly musical, but of so peculiar a note and emphasis that, at each lapse of an hour,",
+       392.16,
+       409.87
+      ],
+      [
+       "the musicians of the orchestra were constrained to pause, momentarily, in their performance, to hearken to the sound;",
+       410.0,
+       417.85
+      ],
+      [
+       "and thus the waltzers perforce ceased their evolutions;",
+       418.15,
+       421.57
+      ],
+      [
+       "and there was a brief disconcert of the whole gay company;",
+       421.87,
+       425.71
+      ],
+      [
+       "and, while the chimes of the clock yet rang, it was observed that the giddiest grew pale, and the more aged and sedate passed their hands over their brows as if in confused reverie or meditation.",
+       426.01,
+       439.36
+      ],
+      [
+       "But when the echoes had fully ceased, a light laughter at once pervaded the assembly;",
+       439.82,
+       445.26
+      ],
+      [
+       "the musicians looked at each other and smiled as if at their own nervousness and folly, and made whispering vows, each to the other, that the next chiming of the clock should produce in them no similar emotion;",
+       445.57,
+       458.98
+      ],
+      [
+       "and then, after the lapse of sixty minutes (which embrace three thousand and six hundred seconds of the Time that flies), there came yet another chiming of the clock, and then were the same disconcert and tremulousness and meditation as before.",
+       459.29,
+       475.39
+      ]
+     ]
+    }
+   ],
+   "end": 475.39
+  },
+  {
+   "start": 484.84,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But, in spite of these things, it was a gay and magnificent revel. The tastes of the duke were peculiar. He had a fine eye for colors and effects. He disregarded the decora of mere fashion. His plans were bold and fiery, and his conceptions glowed with barbaric lustre. There are some who would have thought him mad. His followers felt that he was not. It was necessary to hear and see and touch him to be sure that he was not.",
+     "start": 484.84,
+     "end": 517.03,
+     "phrases": [
+      [
+       "But, in spite of these things, it was a gay and magnificent revel.",
+       484.84,
+       489.33
+      ],
+      [
+       "The tastes of the duke were peculiar.",
+       489.79,
+       492.46
+      ],
+      [
+       "He had a fine eye for colors and effects.",
+       492.92,
+       495.73
+      ],
+      [
+       "He disregarded the decora of mere fashion.",
+       496.19,
+       499.52
+      ],
+      [
+       "His plans were bold and fiery, and his conceptions glowed with barbaric lustre.",
+       499.97,
+       505.57
+      ],
+      [
+       "There are some who would have thought him mad.",
+       506.03,
+       508.74
+      ],
+      [
+       "His followers felt that he was not.",
+       509.2,
+       511.74
+      ],
+      [
+       "It was necessary to hear and see and touch him to be sure that he was not.",
+       512.2,
+       517.03
+      ]
+     ]
+    }
+   ],
+   "end": 517.03
+  },
+  {
+   "start": 517.88,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "He had directed, in great part, the moveable embellishments of the seven chambers, upon occasion of this great fête; and it was his own guiding taste which had given character to the masqueraders. Be sure they were grotesque. There were much glare and glitter and piquancy and phantasm—much of what has been since seen in",
+     "start": 517.88,
+     "end": 541.21,
+     "phrases": [
+      [
+       "He had directed, in great part, the moveable embellishments of the seven chambers, upon occasion of this great fête;",
+       517.88,
+       525.86
+      ],
+      [
+       "and it was his own guiding taste which had given character to the masqueraders.",
+       526.17,
+       531.35
+      ],
+      [
+       "Be sure they were grotesque.",
+       531.8,
+       533.84
+      ],
+      [
+       "There were much glare and glitter and piquancy and phantasm",
+       534.3,
+       538.49
+      ],
+      [
+       "much of what has been since seen in",
+       538.73,
+       541.21
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "Hernani.",
+     "start": 541.43,
+     "end": 542.4,
+     "phrases": [
+      [
+       "Hernani.",
+       541.43,
+       542.4
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "There were arabesque figures with unsuited limbs and appointments. There were delirious fancies such as the madman fashions. There was much of the beautiful, much of the wanton, much of the bizarre, something of the terrible, and not a little of that which might have excited disgust. To and fro in the seven chambers there stalked, in fact, a multitude of dreams. And these—the dreams—writhed in and about, taking hue from the rooms, and causing the wild music of the orchestra to seem as the echo of their steps. And, anon, there strikes the ebony clock which stands in the hall of the velvet. And then, for a moment, all is still, and all is silent save the voice of the clock. The dreams are stiff-frozen as they stand. But the echoes of the chime die away—they have endured but an instant—and a light, half-subdued laughter floats after them as they depart. And now again the music swells, and the dreams live, and writhe to and fro more merrily than ever, taking hue from the many-tinted windows through which stream the rays from the tripods. But to the chamber which lies most westwardly of the seven, there are now none of the maskers who venture; for the night is waning away; and there flows a ruddier light through the blood-colored panes; and the blackness of the sable drapery appals; and to him whose foot falls upon the sable carpet, there comes from the near clock of ebony a muffled peal more solemnly emphatic than any which reaches their ears who indulge in the more remote gaieties of the other apartments.",
+     "start": 542.62,
+     "end": 652.1,
+     "phrases": [
+      [
+       "There were arabesque figures with unsuited limbs and appointments.",
+       542.62,
+       546.93
+      ],
+      [
+       "There were delirious fancies such as the madman fashions.",
+       547.39,
+       551.25
+      ],
+      [
+       "There was much of the beautiful, much of the wanton, much of the bizarre, something of the terrible, and not a little of that which might have excited disgust.",
+       551.71,
+       561.72
+      ],
+      [
+       "To and fro in the seven chambers there stalked, in fact, a multitude of dreams.",
+       562.18,
+       567.93
+      ],
+      [
+       "And these",
+       568.39,
+       569.47
+      ],
+      [
+       "the dreams",
+       569.71,
+       570.88
+      ],
+      [
+       "writhed in and about, taking hue from the rooms, and causing the wild music of the orchestra to seem as the echo of their steps.",
+       571.12,
+       579.93
+      ],
+      [
+       "And, anon, there strikes the ebony clock which stands in the hall of the velvet.",
+       580.38,
+       585.51
+      ],
+      [
+       "And then, for a moment, all is still, and all is silent save the voice of the clock.",
+       585.97,
+       591.58
+      ],
+      [
+       "The dreams are stiff-frozen as they stand.",
+       592.04,
+       595.21
+      ],
+      [
+       "But the echoes of the chime die away",
+       595.67,
+       598.37
+      ],
+      [
+       "they have endured but an instant",
+       598.61,
+       601.06
+      ],
+      [
+       "and a light, half-subdued laughter floats after them as they depart.",
+       601.3,
+       606.05
+      ],
+      [
+       "And now again the music swells, and the dreams live, and writhe to and fro more merrily than ever, taking hue from the many-tinted windows through which stream the rays from the tripods.",
+       606.51,
+       618.86
+      ],
+      [
+       "But to the chamber which lies most westwardly of the seven, there are now none of the maskers who venture;",
+       619.32,
+       626.17
+      ],
+      [
+       "for the night is waning away;",
+       626.48,
+       628.69
+      ],
+      [
+       "and there flows a ruddier light through the blood-colored panes;",
+       629.0,
+       632.78
+      ],
+      [
+       "and the blackness of the sable drapery appals;",
+       633.08,
+       636.32
+      ],
+      [
+       "and to him whose foot falls upon the sable carpet, there comes from the near clock of ebony a muffled peal more solemnly emphatic than any which reaches their ears who indulge in the more remote gaieties of the other apartments.",
+       636.63,
+       652.1
+      ]
+     ]
+    }
+   ],
+   "end": 652.1
+  },
+  {
+   "start": 652.95,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But these other apartments were densely crowded, and in them beat feverishly the heart of life. And the revel went whirlingly on, until at length there commenced the sounding of midnight upon the clock. And then the music ceased, as I have told; and the evolutions of the waltzers were quieted; and there was an uneasy cessation of all things as before. But now there were twelve strokes to be sounded by the bell of the clock; and thus it happened, perhaps, that more of thought crept, with more of time, into the meditations of the thoughtful among those who revelled. And thus, too, it happened, perhaps, that before the last echoes of the last chime had utterly sunk into silence, there were many individuals in the crowd who had found leisure to become aware of the presence of a masked figure which had arrested the attention of no single individual before. And the rumor of this new presence having spread itself whisperingly around, there arose at length from the whole company a buzz, or murmur, expressive of disapprobation and surprise—then, finally, of terror, of horror, and of disgust.",
+     "start": 652.95,
+     "end": 727.1,
+     "phrases": [
+      [
+       "But these other apartments were densely crowded, and in them beat feverishly the heart of life.",
+       652.95,
+       659.43
+      ],
+      [
+       "And the revel went whirlingly on, until at length there commenced the sounding of midnight upon the clock.",
+       659.89,
+       666.55
+      ],
+      [
+       "And then the music ceased, as I have told;",
+       667.0,
+       669.72
+      ],
+      [
+       "and the evolutions of the waltzers were quieted;",
+       670.03,
+       673.27
+      ],
+      [
+       "and there was an uneasy cessation of all things as before.",
+       673.57,
+       677.61
+      ],
+      [
+       "But now there were twelve strokes to be sounded by the bell of the clock;",
+       678.07,
+       682.43
+      ],
+      [
+       "and thus it happened, perhaps, that more of thought crept, with more of time, into the meditations of the thoughtful among those who revelled.",
+       682.74,
+       691.06
+      ],
+      [
+       "And thus, too, it happened, perhaps, that before the last echoes of the last chime had utterly sunk into silence,",
+       691.51,
+       699.02
+      ],
+      [
+       "there were many individuals in the crowd who had found leisure to become aware of the presence of a masked figure which had arrested the attention of no single individual before.",
+       699.15,
+       710.84
+      ],
+      [
+       "And the rumor of this new presence having spread itself whisperingly around, there arose at length from the whole company a buzz, or murmur, expressive of disapprobation and surprise",
+       711.3,
+       723.17
+      ],
+      [
+       "then, finally, of terror, of horror, and of disgust.",
+       723.41,
+       727.1
+      ]
+     ]
+    }
+   ],
+   "end": 727.1
+  },
+  {
+   "start": 740.95,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "In an assembly of phantasms such as I have painted, it may well be supposed that no ordinary appearance could have excited such sensation. In truth the masquerade license of the night was nearly unlimited; but the figure in question had out-Heroded Herod, and gone beyond the bounds of even the prince's indefinite decorum. There are chords in the hearts of the most reckless which cannot be touched without emotion. Even with the utterly lost, to whom life and death are equally jests, there are matters of which no jest can be made. The whole company, indeed, seemed now deeply to feel that in the costume and bearing of the stranger neither wit nor propriety existed. The figure was tall and gaunt, and shrouded from head to foot in the habiliments of the grave. The mask which concealed the visage was made so nearly to resemble the countenance of a stiffened corpse that the closest scrutiny must have had difficulty in detecting the cheat. And yet all this might have been endured, if not approved, by the mad revellers around. But the mummer had gone so far as to assume the type of the Red Death. His vesture was dabbled in blood—and his broad brow, with all the features of the face, was besprinkled with the scarlet horror.",
+     "start": 740.95,
+     "end": 829.44,
+     "phrases": [
+      [
+       "In an assembly of phantasms such as I have painted, it may well be supposed that no ordinary appearance could have excited such sensation.",
+       740.95,
+       750.82
+      ],
+      [
+       "In truth the masquerade license of the night was nearly unlimited;",
+       751.28,
+       756.15
+      ],
+      [
+       "but the figure in question had out-Heroded Herod, and gone beyond the bounds of even the prince's indefinite decorum.",
+       756.46,
+       764.36
+      ],
+      [
+       "There are chords in the hearts of the most reckless which cannot be touched without emotion.",
+       764.82,
+       770.68
+      ],
+      [
+       "Even with the utterly lost, to whom life and death are equally jests, there are matters of which no jest can be made.",
+       771.14,
+       778.93
+      ],
+      [
+       "The whole company, indeed, seemed now deeply to feel that in the costume and bearing of the stranger neither wit nor propriety existed.",
+       779.39,
+       789.2
+      ],
+      [
+       "The figure was tall and gaunt, and shrouded from head to foot in the habiliments of the grave.",
+       789.66,
+       795.82
+      ],
+      [
+       "The mask which concealed the visage was made so nearly to resemble the countenance of a stiffened corpse that the closest scrutiny must have had difficulty in detecting the cheat.",
+       796.27,
+       808.69
+      ],
+      [
+       "And yet all this might have been endured, if not approved, by the mad revellers around.",
+       809.14,
+       814.83
+      ],
+      [
+       "But the mummer had gone so far as to assume the type of the Red Death.",
+       815.28,
+       820.1
+      ],
+      [
+       "His vesture was dabbled in blood",
+       820.55,
+       823.29
+      ],
+      [
+       "and his broad brow, with all the features of the face, was besprinkled with the scarlet horror.",
+       823.53,
+       829.44
+      ]
+     ]
+    }
+   ],
+   "end": 829.44
+  },
+  {
+   "start": 830.29,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "When the eyes of Prince Prospero fell upon this spectral image (which with a slow and solemn movement, as if more fully to sustain its role, stalked to and fro among the waltzers) he was seen to be convulsed, in the first moment with a strong shudder either of terror or distaste; but, in the next, his brow reddened with rage.",
+     "start": 830.29,
+     "end": 852.08,
+     "phrases": [
+      [
+       "When the eyes of Prince Prospero fell upon this spectral image (which with a slow and solemn movement, as if more fully to sustain its role, stalked to and fro among the waltzers) he was seen to be convulsed, in the first moment with a strong shudder either of terror or distaste;",
+       830.29,
+       848.55
+      ],
+      [
+       "but, in the next, his brow reddened with rage.",
+       848.85,
+       852.08
+      ]
+     ]
+    }
+   ],
+   "end": 852.08
+  },
+  {
+   "start": 854.93,
+   "segments": [
+    {
+     "speaker": "prospero",
+     "text": "Who dares?",
+     "start": 854.93,
+     "end": 855.79,
+     "phrases": [
+      [
+       "Who dares?",
+       854.93,
+       855.79
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "he demanded hoarsely of the courtiers who stood near him—",
+     "start": 856.01,
+     "end": 859.78,
+     "phrases": [
+      [
+       "he demanded hoarsely of the courtiers who stood near him",
+       856.01,
+       859.78
+      ]
+     ]
+    },
+    {
+     "speaker": "prospero",
+     "text": "who dares insult us with this blasphemous mockery? Seize him and unmask him—that we may know whom we have to hang at sunrise, from the battlements!",
+     "start": 860.0,
+     "end": 868.87,
+     "phrases": [
+      [
+       "who dares insult us with this blasphemous mockery?",
+       860.0,
+       863.01
+      ],
+      [
+       "Seize him and unmask him",
+       863.45,
+       864.94
+      ],
+      [
+       "that we may know whom we have to hang at sunrise, from the battlements!",
+       865.17,
+       868.87
+      ]
+     ]
+    }
+   ],
+   "end": 868.87
+  },
+  {
+   "start": 870.72,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was in the eastern or blue chamber in which stood the Prince Prospero as he uttered these words. They rang throughout the seven rooms loudly and clearly—for the prince was a bold and robust man, and the music had become hushed at the waving of his hand.",
+     "start": 870.72,
+     "end": 888.22,
+     "phrases": [
+      [
+       "It was in the eastern or blue chamber in which stood the Prince Prospero as he uttered these words.",
+       870.72,
+       876.88
+      ],
+      [
+       "They rang throughout the seven rooms loudly and clearly",
+       877.34,
+       881.02
+      ],
+      [
+       "for the prince was a bold and robust man, and the music had become hushed at the waving of his hand.",
+       881.26,
+       888.22
+      ]
+     ]
+    }
+   ],
+   "end": 888.22
+  },
+  {
+   "start": 890.07,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "It was in the blue room where stood the prince, with a group of pale courtiers by his side. At first, as he spoke, there was a slight rushing movement of this group in the direction of the intruder, who at the moment was also near at hand, and now, with deliberate and stately step, made closer approach to the speaker. But from a certain nameless awe with which the mad assumptions of the mummer had inspired the whole party, there were found none who put forth hand to seize him; so that, unimpeded, he passed within a yard of the prince's person; and, while the vast assembly, as if with one impulse, shrank from the centres of the rooms to the walls, he made his way uninterruptedly, but with the same solemn and measured step which had distinguished him from the first, through the blue chamber to the purple—through the purple to the green—through the green to the orange—through this again to the white—and even thence to the violet, ere a decided movement had been made to arrest him. It was then, however, that the Prince Prospero, maddening with rage and the shame of his own momentary cowardice, rushed hurriedly through the six chambers, while none followed him on account of a deadly terror that had seized upon all. He bore aloft a drawn dagger, and had approached, in rapid impetuosity, to within three or four feet of the retreating figure, when the latter, having attained the extremity of the velvet apartment, turned suddenly and confronted his pursuer. There was a sharp cry—and the dagger dropped gleaming upon the sable carpet, upon which, instantly afterwards, fell prostrate in death the Prince Prospero. Then, summoning the wild courage of despair, a throng of the revellers at once threw themselves into the black apartment, and, seizing the mummer, whose tall figure stood erect and motionless within the shadow of the ebony clock, gasped in unutterable horror at finding the grave-cerements and corpse-like mask which they handled with so violent a rudeness, untenanted by any tangible form.",
+     "start": 890.07,
+     "end": 1026.89,
+     "phrases": [
+      [
+       "It was in the blue room where stood the prince, with a group of pale courtiers by his side.",
+       890.07,
+       895.77
+      ],
+      [
+       "At first, as he spoke, there was a slight rushing movement of this group in the direction of the intruder, who at the moment was also near at hand, and now, with deliberate and stately step, made closer approach to the speaker.",
+       896.23,
+       911.01
+      ],
+      [
+       "But from a certain nameless awe with which the mad assumptions of the mummer had inspired the whole party, there were found none who put forth hand to seize him;",
+       911.47,
+       921.63
+      ],
+      [
+       "so that, unimpeded, he passed within a yard of the prince's person;",
+       921.94,
+       926.73
+      ],
+      [
+       "and, while the vast assembly, as if with one impulse, shrank from the centres of the rooms to the walls, he made his way uninterruptedly, but with the same solemn and measured step which had distinguished him from the first, through the blue chamber to the purple",
+       927.03,
+       943.28
+      ],
+      [
+       "through the purple to the green",
+       943.52,
+       945.87
+      ],
+      [
+       "through the green to the orange",
+       946.11,
+       948.34
+      ],
+      [
+       "through this again to the white",
+       948.58,
+       950.86
+      ],
+      [
+       "and even thence to the violet, ere a decided movement had been made to arrest him.",
+       951.09,
+       956.57
+      ],
+      [
+       "It was then, however, that the Prince Prospero, maddening with rage and the shame of his own momentary cowardice, rushed hurriedly through the six chambers, while none followed him on account of a deadly terror that had seized upon all.",
+       957.02,
+       972.2
+      ],
+      [
+       "He bore aloft a drawn dagger, and had approached, in rapid impetuosity, to within three or four feet of the retreating figure, when the latter, having attained the extremity of the velvet apartment, turned suddenly and confronted his pursuer.",
+       972.66,
+       988.82
+      ],
+      [
+       "There was a sharp cry",
+       989.28,
+       990.85
+      ],
+      [
+       "and the dagger dropped gleaming upon the sable carpet, upon which, instantly afterwards, fell prostrate in death the Prince Prospero.",
+       991.09,
+       999.93
+      ],
+      [
+       "Then, summoning the wild courage of despair, a throng of the revellers at once threw themselves into the black apartment, and, seizing the mummer, whose tall figure stood erect and motionless within the shadow of the ebony clock,",
+       1000.38,
+       1015.09
+      ],
+      [
+       "gasped in unutterable horror at finding the grave-cerements and corpse-like mask which they handled with so violent a rudeness, untenanted by any tangible form.",
+       1015.22,
+       1026.89
+      ]
+     ]
+    }
+   ],
+   "end": 1026.89
+  },
+  {
+   "start": 1034.74,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And now was acknowledged the presence of the Red Death. He had come like a thief in the night. And one by one dropped the revellers in the blood-bedewed halls of their revel, and died each in the despairing posture of his fall. And the life of the ebony clock went out with that of the last of the gay. And the flames of the tripods expired. And Darkness and Decay and the Red Death held illimitable dominion over all.",
+     "start": 1034.74,
+     "end": 1066.41,
+     "phrases": [
+      [
+       "And now was acknowledged the presence of the Red Death.",
+       1034.74,
+       1038.57
+      ],
+      [
+       "He had come like a thief in the night.",
+       1039.03,
+       1041.64
+      ],
+      [
+       "And one by one dropped the revellers in the blood-bedewed halls of their revel, and died each in the despairing posture of his fall.",
+       1042.1,
+       1051.06
+      ],
+      [
+       "And the life of the ebony clock went out with that of the last of the gay.",
+       1051.52,
+       1056.59
+      ],
+      [
+       "And the flames of the tripods expired.",
+       1057.04,
+       1060.11
+      ],
+      [
+       "And Darkness and Decay and the Red Death held illimitable dominion over all.",
+       1060.57,
+       1066.41
+      ]
+     ]
+    }
+   ],
+   "end": 1066.41
+  },
+  {
+   "start": 1076.26,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "The Masque of the Red Death, by Edgar Allan Poe.",
+     "start": 1076.26,
+     "end": 1079.53,
+     "phrases": [
+      [
+       "The Masque of the Red Death, by Edgar Allan Poe.",
+       1076.26,
+       1079.53
+      ]
+     ]
+    }
+   ],
+   "end": 1079.53
+  },
+  {
+   "start": 1080.38,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Virginia Poe lived for almost five more years. She died in a cottage at Fordham, in January eighteen forty-seven. She was twenty-four years old.",
+     "start": 1080.38,
+     "end": 1091.2,
+     "phrases": [
+      [
+       "Virginia Poe lived for almost five more years.",
+       1080.38,
+       1083.56
+      ],
+      [
+       "She died in a cottage at Fordham, in January eighteen forty-seven.",
+       1084.04,
+       1088.78
+      ],
+      [
+       "She was twenty-four years old.",
+       1089.26,
+       1091.2
+      ]
+     ]
+    }
+   ],
+   "end": 1091.2
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bm_george"
+  },
+  "prospero": {
+   "voice": "am_fenrir*0.55+bm_daniel*0.45"
+  }
+ }
+}

@@ -223,11 +223,11 @@ h3 { font-family: var(--display); font-weight: 400; font-size: 1.7rem; margin: 0
 .shelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: clamp(1.6rem, 3vw, 3rem); margin-top: 2.4rem; }
 .card { position: relative; isolation: isolate; padding: 2.2rem 1.8rem 1.8rem; text-decoration: none; color: var(--ink); display: block; }
 .card::before {
-  content: ""; position: absolute; inset: 0; z-index: -1;
-  background: var(--wash) center / 100% 100% no-repeat; mix-blend-mode: multiply; opacity: .5;
+  content: ""; position: absolute; inset: -14% -16%; z-index: -1;
+  background: var(--wash) center / 100% 100% no-repeat; mix-blend-mode: multiply; opacity: .4;
   transition: opacity .5s, transform .7s cubic-bezier(.2,.8,.2,1);
 }
-.card:hover::before { opacity: .72; transform: scale(1.03) rotate(.6deg); }
+.card:hover::before { opacity: .6; transform: scale(1.03) rotate(.6deg); }
 .card .meta { font-size: .92rem; color: var(--ink-soft); }
 .card .mood { font-family: var(--hand); font-size: 1.25rem; color: var(--viridian); }
 .card p { margin: .5rem 0 0; font-size: 1rem; }
