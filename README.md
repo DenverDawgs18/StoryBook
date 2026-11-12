@@ -126,6 +126,14 @@ cottages, castles and towns, with lit windows, moons and snow lifted out to the 
 The site in `site/` also works as plain static files (for example on GitHub Pages) for listening.
 The Studio needs the Python server.
 
+
+### A promo video
+
+`python tools/tiktok.py` cuts a 38-second vertical video (1080×1920, for TikTok, Reels or Shorts) into
+`dist/`. It plays the wolf at the straw house with a word-by-word read-along caption, swaps in a
+second painting of the blown-down house (`python tools/landscape.py pigs_fallen`) as it collapses,
+then shows a montage of the plates and a title-page end card. The fonts download into `.cache/` on first run.
+
 ## Credits
 
 Texts: [Project Gutenberg](https://www.gutenberg.org) (public domain). Voices:

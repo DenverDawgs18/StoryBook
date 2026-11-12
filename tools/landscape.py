@@ -464,15 +464,25 @@ def rome():
     p.save("land_rome")
 
 
-def pigs():
-    """The Three Little Pigs: a sunny down, three houses of straw, furze and brick, an apple tree."""
+def pigs(fallen=False):
+    """The Three Little Pigs: a sunny down, three houses of straw, furze and brick, an apple tree.
+
+    fallen=True paints the same scene after the wolf has blown the straw house in: every
+    random draw is the same, the straw house is painted with an empty brush, and a heap of
+    straw lies where it stood.
+    """
     p = Plate(1500, 1000, 131)
     p.sky("celadon", "straw", 0.4)
     r1 = p.ridge(0.42, 0.05, "mist", 0.5, base=2)
     p.round_trees(r1, "sage", 10, (0.02, 0.04), 0.5)
     r2 = p.ridge(0.66, 0.025, "moss", 0.65, base=2)
     y = lambda x: float(r2[int(x * p.w)]) + 0.02
+    if fallen:
+        real_add = p.add
+        p.add = lambda mask, *a, **k: real_add(mask * 0, *a, **{**k, "occlude": 0})
     cottage(p, 0.2, y(0.2), 0.1, color="straw", roof="ochre", lit=False)
+    if fallen:
+        p.add = real_add
     sticks = cottage(p, 0.45, y(0.45), 0.11, color="umber", roof="olive", lit=False)
     cottage(p, 0.72, y(0.72), 0.14, color="madder", roof="slate", lit=True)
     # courses of brick: thin lifted lines across the brick house's walls
@@ -487,10 +497,25 @@ def pigs():
         apples = np.maximum(apples, p.disc(p.rng.normal(0.925, 0.03), p.rng.normal(0.62, 0.05), 0.007, 1))
     p.lift(apples, 0.9)
     p.add(apples, "madder", 0.85, blur=0.8)
+    if fallen:
+        yb = y(0.2)
+        heap = np.clip((1 - np.sqrt(((p.u - 0.2) * p.w / p.h / 0.11) ** 2 + ((p.v - yb) / 0.035) ** 2)) * 6, 0, 1) * (p.v < yb + 0.004)
+        heap = np.clip(heap + (fbm(p.h, p.w, p.rng, 4, 30) - 0.5) * heap * 1.2, 0, 1)
+        p.add(heap, "straw", 0.9, blur=1.2, occlude=0.9)
+        p.add(heap * np.clip((fbm(p.h, p.w * 6, p.rng, 3, 60)[:, ::6] - 0.5) * 3, 0, 1), "ochre", 0.7, blur=0.6)
+        straws = np.zeros((p.h, p.w), np.float32)
+        for _ in range(40):  # loose straws blown across the grass
+            x0, y0 = p.rng.uniform(0.08, 0.45), p.rng.uniform(yb - 0.02, yb + 0.08)
+            ang, L = p.rng.uniform(-0.4, 0.4), p.rng.uniform(0.01, 0.025)
+            for t in np.linspace(0, 1, 12):
+                straws = np.maximum(straws, p.disc(x0 + t * L * np.cos(ang), y0 + t * L * np.sin(ang), 0.0015, 1))
+        p.add(straws, "ochre", 0.8, blur=0.5)
+        p.save("land_pigs_fallen")
+        return
     p.save("land_pigs")
 
 
-PLATES = {"pigs": pigs, "hero": hero, "cottage": cottage_night, "wood": wood, "forest": forest, "hills": hills_night,
+PLATES = {"pigs": pigs, "pigs_fallen": lambda: pigs(fallen=True), "hero": hero, "cottage": cottage_night, "wood": wood, "forest": forest, "hills": hills_night,
           "spring": spring, "town": town_day, "castle": castle_storm, "snow": snow_street,
           "abbey": abbey, "rome": rome}
 
