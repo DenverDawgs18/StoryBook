@@ -381,6 +381,47 @@ textarea {
 .stats b { font-family: var(--display); font-weight: 400; font-size: 1.5rem; color: var(--ink); display: block; line-height: 1; }
 
 
+/* ------------------------------------------------------------ a story for your child */
+.tabs { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin: 0 0 1.2rem; border-bottom: 1px solid var(--rule); }
+.tab {
+  background: none; border: 0; padding: .4rem 0; font: inherit; font-family: var(--pica); font-style: italic;
+  font-size: 1.05rem; color: var(--ink-soft); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--viridian); }
+.tab:focus-visible { outline: 2px dashed var(--viridian); outline-offset: 4px; }
+.personal-form { max-width: 52rem; margin: 0 auto; }
+.choice-row { display: flex; flex-wrap: wrap; gap: .5rem; padding-top: .35rem; }
+.choice-row label { position: relative; cursor: pointer; }
+.choice-row input { position: absolute; opacity: 0; }
+.choice-row span {
+  display: inline-block; padding: .35rem 1rem; border: 1.5px solid var(--rule); border-radius: 999px;
+  font-family: var(--pica); font-style: italic; color: var(--ink-soft); transition: background .25s, color .25s, border-color .25s;
+}
+.choice-row input:checked + span { background: var(--viridian); border-color: var(--viridian); color: var(--paper); }
+.choice-row input:focus-visible + span { outline: 2px dashed var(--viridian); outline-offset: 3px; }
+.tale-choice { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.6rem; margin-top: .6rem; }
+.tale-choice .card { position: relative; cursor: pointer; padding: .8rem; border-radius: 6px; border: 2px solid transparent; transition: border-color .3s, background .3s; }
+.tale-choice .card input { position: absolute; opacity: 0; }
+.tale-choice .card:has(input:checked) { border-color: var(--sage); background: rgba(181, 203, 176, .18); }
+.tale-choice .card:has(input:focus-visible) { outline: 2px dashed var(--viridian); outline-offset: 4px; }
+.tale-choice .card h3 { margin-top: .8rem; font-size: 1.4rem; }
+.tale-choice .card p { font-size: .98rem; }
+.sayas { margin-top: 1.4rem; }
+.sayas summary { cursor: pointer; font-family: var(--pica); font-style: italic; color: var(--viridian); }
+.reserve { max-width: 52rem; margin: 0 auto; text-align: center; }
+.reserve .blurb { margin-left: auto; margin-right: auto; }
+.reserve form { max-width: 34rem; margin: 1.2rem auto 0; text-align: left; }
+.price { font-family: var(--pica); font-style: italic; color: var(--moss); font-size: 1.1rem; }
+.email-row { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.email-row input { flex: 1; min-width: 12rem; }
+input[type=email] {
+  font: inherit; font-size: 1.05rem; color: var(--ink); background: rgba(255,255,255,.45);
+  border: 0; border-bottom: 1.5px solid var(--sage); padding: .55rem .2rem; border-radius: 2px;
+}
+input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); background: rgba(255,255,255,.7); }
+.callout { text-align: center; max-width: 44rem; margin: 0 auto; }
+.callout .plate { max-width: 22rem; margin: 0 auto 1.4rem; }
+
 /* ------------------------------------------------------------ responsive */
 @media (max-width: 860px) {
   .spread { grid-template-columns: 1fr; background: none; }

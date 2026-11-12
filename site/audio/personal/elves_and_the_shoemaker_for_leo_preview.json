@@ -1,0 +1,237 @@
+{
+ "meta": {
+  "title": "The Elves and the Shoemaker, for Leo",
+  "author": "The Brothers Grimm",
+  "year": 1812,
+  "source": "https://www.gutenberg.org/ebooks/2591",
+  "mood": "Firelight, midnight, small busy hands",
+  "featured": false,
+  "art": "land_cottage",
+  "labels": {
+   "host": "the host",
+   "shoemaker": "the shoemaker",
+   "wife": "his wife",
+   "child": "Leo"
+  }
+ },
+ "duration": 124.33,
+ "chapters": [
+  {
+   "title": "The Elves and the Shoemaker. A story for Leo.",
+   "start": 13.3
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "This story is for Leo.",
+     "start": 5.0,
+     "end": 6.67,
+     "phrases": [
+      [
+       "This story is for Leo.",
+       5.0,
+       6.67
+      ]
+     ]
+    }
+   ],
+   "end": 6.67
+  },
+  {
+   "start": 7.52,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "With love, from Mum and Dad.",
+     "start": 7.52,
+     "end": 9.45,
+     "phrases": [
+      [
+       "With love, from Mum and Dad.",
+       7.52,
+       9.45
+      ]
+     ]
+    }
+   ],
+   "end": 9.45
+  },
+  {
+   "start": 13.3,
+   "end": 17.08,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Elves and the Shoemaker. A story for Leo.",
+     "start": 13.3,
+     "end": 17.08,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 20.18,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The shoemaker and his wife had one child, whose name was Leo. Leo swept the shop, and sorted the nails, and loved to sit by the bench and watch the leather being cut.",
+     "start": 20.18,
+     "end": 29.97,
+     "phrases": [
+      [
+       "The shoemaker and his wife had one child, whose name was Leo.",
+       20.18,
+       23.85
+      ],
+      [
+       "Leo swept the shop, and sorted the nails, and loved to sit by the bench and watch the leather being cut.",
+       24.32,
+       29.97
+      ]
+     ]
+    }
+   ],
+   "end": 29.97
+  },
+  {
+   "start": 30.82,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "One evening, about Christmas-time, as he and his wife were sitting over the fire chatting together, he said to her",
+     "start": 30.82,
+     "end": 37.3,
+     "phrases": [
+      [
+       "One evening, about Christmas-time, as he and his wife were sitting over the fire chatting together, he said to her",
+       30.82,
+       37.3
+      ]
+     ]
+    },
+    {
+     "speaker": "shoemaker",
+     "text": "I should like to sit up and watch tonight, that we may see who it is that comes and does my work for me.",
+     "start": 37.52,
+     "end": 43.98,
+     "phrases": [
+      [
+       "I should like to sit up and watch tonight, that we may see who it is that comes and does my work for me.",
+       37.52,
+       43.98
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "The wife liked the thought, and Leo begged to stay up too; so they left a light burning, and all three of them hid themselves in a corner of the room, behind a curtain that was hung up there, and watched what would happen.",
+     "start": 44.2,
+     "end": 56.56,
+     "phrases": [
+      [
+       "The wife liked the thought, and Leo begged to stay up too;",
+       44.2,
+       47.48
+      ],
+      [
+       "so they left a light burning, and all three of them hid themselves in a corner of the room, behind a curtain that was hung up there, and watched what would happen.",
+       47.79,
+       56.56
+      ]
+     ]
+    }
+   ],
+   "end": 56.56
+  },
+  {
+   "start": 75.36,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "As soon as it was midnight, there came in two little naked dwarfs; and they sat themselves upon the shoemaker’s bench, took up all the work that was cut out, and began to ply with their little fingers, stitching and rapping and tapping away at such a rate, that the shoemaker was all wonder, and could not take his eyes off them; and Leo had to hold his breath so as not to laugh out loud. And on they went, till the job was quite done, and the shoes stood ready for use upon the table. This was long before daybreak; and then they bustled away as quick as lightning.",
+     "start": 75.36,
+     "end": 108.79,
+     "phrases": [
+      [
+       "As soon as it was midnight, there came in two little naked dwarfs;",
+       75.36,
+       79.12
+      ],
+      [
+       "and they sat themselves upon the shoemaker's bench, took up all the work that was cut out, and began to ply with their little fingers, stitching and rapping and tapping away at such a rate, that the shoemaker was all wonder, and could not take his eyes off them;",
+       79.43,
+       93.54
+      ],
+      [
+       "and Leo had to hold his breath so as not to laugh out loud.",
+       93.85,
+       97.26
+      ],
+      [
+       "And on they went, till the job was quite done, and the shoes stood ready for use upon the table.",
+       97.73,
+       103.12
+      ],
+      [
+       "This was long before daybreak;",
+       103.59,
+       105.72
+      ],
+      [
+       "and then they bustled away as quick as lightning.",
+       106.03,
+       108.79
+      ]
+     ]
+    }
+   ],
+   "end": 108.79
+  },
+  {
+   "start": 110.84,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "And what happens next? That's in Leo's story.",
+     "start": 110.84,
+     "end": 114.48,
+     "phrases": [
+      [
+       "And what happens next?",
+       110.84,
+       112.51
+      ],
+      [
+       "That's in Leo's story.",
+       112.98,
+       114.48
+      ]
+     ]
+    }
+   ],
+   "end": 114.48
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bf_isabella"
+  },
+  "shoemaker": {
+   "voice": "bm_george"
+  },
+  "wife": {
+   "voice": "bf_emma"
+  },
+  "child": {
+   "voice": "am_puck"
+  }
+ }
+}

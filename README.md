@@ -145,12 +145,38 @@ Texts: [Project Gutenberg](https://www.gutenberg.org) (public domain). Voices:
 [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx). Fonts: IM Fell (Igino Marini),
 Spectral, Caveat (SIL OFL).
 
+## A story for your child
+
+`site/personal.html` lets a parent put their child into a tale as its hero. They give the child's
+first name, pronouns (she, he or they), the child's voice, an optional dedication ("with love, from
+Grandma") and, if the name is often misread, a spelling for the voice. The child becomes the clever
+third little pig, or the shoemaker's child who sees the elves. The story opens with a dedication and
+ends with "Goodnight, Mia." A free preview of about a minute renders on the server in under a minute,
+and the parent can then reserve the full story with their email.
+
+* `storybook/personalize.py` holds each tale's direction sheet. It lists the exact passages rewritten
+  around the child, and every one must match, so an edit to a script fails loudly instead of losing
+  the child. It also says which passages make the preview. Add a tale by adding an entry.
+* `POST /api/personal/preview` renders a preview (6 per visitor per hour, at most 8 waiting).
+  `POST /api/personal/signup` appends to `/data/signups.jsonl`.
+* `GET /api/admin/signups` downloads the sign-ups as CSV (`?format=json` for JSON). It needs the
+  `STORYBOOK_ADMIN_TOKEN` secret as `Authorization: Bearer <token>` and returns 404 without it.
+* To fulfil a sign-up, render the full story and email it:
+
+```bash
+python -m storybook personal --tale the_three_little_pigs --name Mia --pronouns she --from "Grandma"
+```
+
+The planned price shown on the page is one constant at the top of `site/js/personal.js`.
+
 ## Deploying to Fly.io
 
 The repo ships a `Dockerfile` (voice model baked in, so cold starts are quick) and a `fly.toml`.
 
 ```bash
 fly apps create storybook-audio      # or any free name; match `app` in fly.toml
+fly volumes create storybook_data --region iad --size 1   # sign-ups and recordings live here
+fly secrets set STORYBOOK_ADMIN_TOKEN=$(openssl rand -base64 24)
 fly deploy --ha=false                # keep to ONE machine: Studio jobs live in its memory
 ```
 
