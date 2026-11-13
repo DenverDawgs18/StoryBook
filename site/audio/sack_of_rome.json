@@ -6,7 +6,7 @@
   "source": "https://www.gutenberg.org/ebooks/25717",
   "blurb": "August, 410. At midnight a gate in the walls of Rome opens from the inside, and for the first time in eight hundred years an enemy army is in the city. Gibbon's account of that night, with a documentary frame.\n",
   "mood": "History, told in the dark",
-  "art": "blob6",
+  "art": "land_rome",
   "order": 20,
   "labels": {
    "host": "the host",
@@ -15,11 +15,11 @@
    "virgin": "an aged virgin"
   }
  },
- "duration": 885.34,
+ "duration": 885.96,
  "chapters": [
   {
    "title": "The Sack of Rome. From The History of the Decline and Fall of the Roman Empire, by Edward Gibbon.",
-   "start": 94.31
+   "start": 95.88
   }
  ],
  "paragraphs": [
@@ -102,702 +102,702 @@
      "speaker": "jerome",
      "text": "My voice sticks in my throat; and as I dictate, sobs choke my utterance. The city which had taken the whole world, was itself taken.",
      "start": 54.93,
-     "end": 64.62,
+     "end": 66.19,
      "phrases": [
       [
        "My voice sticks in my throat;",
        54.93,
-       57.14
+       57.59
       ],
       [
        "and as I dictate, sobs choke my utterance.",
-       57.46,
-       60.35
+       57.91,
+       61.47
       ],
       [
        "The city which had taken the whole world, was itself taken.",
-       60.84,
-       64.62
+       61.95,
+       66.19
       ]
      ]
     }
    ],
-   "end": 64.62
+   "end": 66.19
   },
   {
-   "start": 67.47,
+   "start": 69.04,
    "segments": [
     {
      "speaker": "host",
      "text": "Thirteen and a half centuries later, an Englishman named Edward Gibbon set out to explain how it had come to this. His History of the Decline and Fall of the Roman Empire would fill six volumes, published over twelve years. This is his account of that night.",
-     "start": 67.47,
-     "end": 85.96,
+     "start": 69.04,
+     "end": 87.53,
      "phrases": [
       [
        "Thirteen and a half centuries later, an Englishman named Edward Gibbon set out to explain how it had come to this.",
-       67.47,
-       75.1
+       69.04,
+       76.67
       ],
       [
        "His History of the Decline and Fall of the Roman Empire would fill six volumes, published over twelve years.",
-       75.58,
-       83.08
+       77.15,
+       84.65
       ],
       [
        "This is his account of that night.",
-       83.56,
-       85.96
+       85.13,
+       87.53
       ]
      ]
     }
    ],
-   "end": 85.96
+   "end": 87.53
   },
   {
-   "start": 94.31,
-   "end": 101.45,
+   "start": 95.88,
+   "end": 103.03,
    "heading": true,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Sack of Rome. From The History of the Decline and Fall of the Roman Empire, by Edward Gibbon.",
-     "start": 94.31,
-     "end": 101.45,
+     "start": 95.88,
+     "end": 103.03,
      "phrases": []
     }
    ]
   },
   {
-   "start": 104.55,
+   "start": 106.13,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The degradation of Attalus removed the only real obstacle to the conclusion of the peace; and Alaric advanced within three miles of Ravenna, to press the irresolution of the Imperial ministers, whose insolence soon returned with the return of fortune. His indignation was kindled by the report, that a rival chieftain, that Sarus, the personal enemy of Adolphus, and the hereditary foe of the house of Balti, had been received into the palace. At the head of three hundred followers, that fearless Barbarian immediately sallied from the gates of Ravenna; surprised, and cut in pieces, a considerable body of Goths; reentered the city in triumph; and was permitted to insult his adversary, by the voice of a herald, who publicly declared that the guilt of Alaric had forever excluded him from the friendship and alliance of the emperor. The crime and folly of the court of Ravenna was expiated, a third time, by the calamities of Rome. The king of the Goths, who no longer dissembled his appetite for plunder and revenge, appeared in arms under the walls of the capital; and the trembling senate, without any hopes of relief, prepared, by a desperate resistance, to defray the ruin of their country. But they were unable to guard against the secret conspiracy of their slaves and domestics; who, either from birth or interest, were attached to the cause of the enemy. At the hour of midnight, the Salarian gate was silently opened, and the inhabitants were awakened by the tremendous sound of the Gothic trumpet.",
-     "start": 104.55,
-     "end": 209.66,
+     "start": 106.13,
+     "end": 211.23,
      "phrases": [
       [
        "The degradation of Attalus removed the only real obstacle to the conclusion of the peace;",
-       104.55,
-       110.73
+       106.13,
+       112.31
       ],
       [
        "and Alaric advanced within three miles of Ravenna, to press the irresolution of the Imperial ministers, whose insolence soon returned with the return of fortune.",
-       111.04,
-       122.17
+       112.61,
+       123.74
       ],
       [
        "His indignation was kindled by the report, that a rival chieftain, that Sarus, the personal enemy of Adolphus, and the hereditary foe of the house of Balti, had been received into the palace.",
-       122.63,
-       135.68
+       124.2,
+       137.25
       ],
       [
        "At the head of three hundred followers, that fearless Barbarian immediately sallied from the gates of Ravenna;",
-       136.13,
-       142.91
+       137.71,
+       144.48
       ],
       [
        "surprised, and cut in pieces, a considerable body of Goths;",
-       143.21,
-       147.63
+       144.78,
+       149.2
       ],
       [
        "reentered the city in triumph;",
-       147.94,
-       150.35
+       149.51,
+       151.92
       ],
       [
        "and was permitted to insult his adversary, by the voice of a herald, who publicly declared that the guilt of Alaric had forever excluded him from the friendship and alliance of the emperor.",
-       150.65,
-       162.98
+       152.22,
+       164.55
       ],
       [
        "The crime and folly of the court of Ravenna was expiated, a third time, by the calamities of Rome.",
-       163.44,
-       170.5
+       165.01,
+       172.07
       ],
       [
        "The king of the Goths, who no longer dissembled his appetite for plunder and revenge, appeared in arms under the walls of the capital;",
-       170.95,
-       179.46
+       172.53,
+       181.03
       ],
       [
        "and the trembling senate, without any hopes of relief, prepared, by a desperate resistance, to defray the ruin of their country.",
-       179.77,
-       188.03
+       181.34,
+       189.6
       ],
       [
        "But they were unable to guard against the secret conspiracy of their slaves and domestics;",
-       188.49,
-       194.57
+       190.06,
+       196.15
       ],
       [
        "who, either from birth or interest, were attached to the cause of the enemy.",
-       194.88,
-       199.76
+       196.45,
+       201.34
       ],
       [
        "At the hour of midnight, the Salarian gate was silently opened, and the inhabitants were awakened by the tremendous sound of the Gothic trumpet.",
-       200.22,
-       209.66
+       201.79,
+       211.23
       ]
      ]
     }
    ],
-   "end": 209.66
+   "end": 211.23
   },
   {
-   "start": 218.51,
+   "start": 220.08,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Eleven hundred and sixty-three years after the foundation of Rome, the Imperial city, which had subdued and civilized so considerable a part of mankind, was delivered to the licentious fury of the tribes of Germany and Scythia.",
-     "start": 218.51,
-     "end": 234.67,
+     "start": 220.08,
+     "end": 236.24,
      "phrases": [
       [
        "Eleven hundred and sixty-three years after the foundation of Rome, the Imperial city, which had subdued and civilized so considerable a part of mankind, was delivered to the licentious fury of the tribes of Germany and Scythia.",
-       218.51,
-       234.67
+       220.08,
+       236.24
       ]
      ]
     }
    ],
-   "end": 234.67
+   "end": 236.24
   },
   {
-   "start": 238.02,
+   "start": 239.59,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The proclamation of Alaric, when he forced his entrance into a vanquished city, discovered, however, some regard for the laws of humanity and religion. He encouraged his troops boldly to seize the rewards of valor, and to enrich themselves with the spoils of a wealthy and effeminate people: but he exhorted them, at the same time, to spare the lives of the unresisting citizens, and to respect the churches of the apostles, St. Peter and St. Paul, as holy and inviolable sanctuaries. Amidst the horrors of a nocturnal tumult, several of the Christian Goths displayed the fervor of a recent conversion; and some instances of their uncommon piety and moderation are related, and perhaps adorned, by the zeal of ecclesiastical writers. While the Barbarians roamed through the city in quest of prey, the humble dwelling of an aged virgin, who had devoted her life to the service of the altar, was forced open by one of the powerful Goths. He immediately demanded, though in civil language, all the gold and silver in her possession; and was astonished at the readiness with which she conducted him to a splendid hoard of massy plate, of the richest materials, and the most curious workmanship. The Barbarian viewed with wonder and delight this valuable acquisition, till he was interrupted by a serious admonition, addressed to him in the following words:",
-     "start": 238.02,
-     "end": 332.44,
+     "start": 239.59,
+     "end": 334.01,
      "phrases": [
       [
        "The proclamation of Alaric, when he forced his entrance into a vanquished city, discovered, however, some regard for the laws of humanity and religion.",
-       238.02,
-       248.18
+       239.59,
+       249.76
       ],
       [
        "He encouraged his troops boldly to seize the rewards of valor, and to enrich themselves with the spoils of a wealthy and effeminate people:",
-       248.64,
-       257.91
+       250.21,
+       259.48
       ],
       [
        "but he exhorted them, at the same time, to spare the lives of the unresisting citizens, and to respect the churches of the apostles, St.",
-       258.21,
-       267.58
+       259.79,
+       269.15
       ],
       [
        "Peter and St.",
-       268.03,
-       269.52
+       269.61,
+       271.1
       ],
       [
        "Paul, as holy and inviolable sanctuaries.",
-       269.98,
-       273.14
+       271.55,
+       274.71
       ],
       [
        "Amidst the horrors of a nocturnal tumult, several of the Christian Goths displayed the fervor of a recent conversion;",
-       273.6,
-       281.5
+       275.17,
+       283.08
       ],
       [
        "and some instances of their uncommon piety and moderation are related, and perhaps adorned, by the zeal of ecclesiastical writers.",
-       281.81,
-       291.35
+       283.38,
+       292.92
       ],
       [
        "While the Barbarians roamed through the city in quest of prey, the humble dwelling of an aged virgin, who had devoted her life to the service of the altar, was forced open by one of the powerful Goths.",
-       291.8,
-       304.68
+       293.37,
+       306.25
       ],
       [
        "He immediately demanded, though in civil language, all the gold and silver in her possession;",
-       305.14,
-       311.05
+       306.71,
+       312.62
       ],
       [
        "and was astonished at the readiness with which she conducted him to a splendid hoard of massy plate, of the richest materials, and the most curious workmanship.",
-       311.35,
-       321.62
+       312.93,
+       323.19
       ],
       [
        "The Barbarian viewed with wonder and delight this valuable acquisition, till he was interrupted by a serious admonition, addressed to him in the following words:",
-       322.07,
-       332.44
+       323.65,
+       334.01
       ]
      ]
     },
     {
      "speaker": "virgin",
      "text": "These,",
-     "start": 332.66,
-     "end": 334.02,
+     "start": 334.23,
+     "end": 334.9,
      "phrases": [
       [
        "These,",
-       332.66,
-       334.02
+       334.23,
+       334.9
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said she",
-     "start": 334.24,
-     "end": 335.07,
+     "start": 335.12,
+     "end": 335.96,
      "phrases": [
       [
        "said she",
-       334.24,
-       335.07
+       335.12,
+       335.96
       ]
      ]
     },
     {
      "speaker": "virgin",
      "text": "are the consecrated vessels belonging to St. Peter: if you presume to touch them, the sacrilegious deed will remain on your conscience. For my part, I dare not keep what I am unable to defend.",
-     "start": 335.29,
-     "end": 348.9,
+     "start": 336.18,
+     "end": 349.52,
      "phrases": [
       [
        "are the consecrated vessels belonging to St.",
-       335.29,
-       338.19
+       336.18,
+       338.94
       ],
       [
        "Peter:",
-       338.68,
-       339.81
+       339.42,
+       340.06
       ],
       [
        "if you presume to touch them, the sacrilegious deed will remain on your conscience.",
-       340.14,
-       344.93
+       340.38,
+       345.23
       ],
       [
        "For my part, I dare not keep what I am unable to defend.",
-       345.42,
-       348.9
+       345.71,
+       349.52
       ]
      ]
     }
    ],
-   "end": 348.9
+   "end": 349.52
   },
   {
-   "start": 349.75,
+   "start": 350.37,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Gothic captain, struck with reverential awe, despatched a messenger to inform the king of the treasure which he had discovered; and received a peremptory order from Alaric, that all the consecrated plate and ornaments should be transported, without damage or delay, to the church of the apostle. From the extremity, perhaps, of the Quirinal hill, to the distant quarter of the Vatican, a numerous detachment of Goths, marching in order of battle through the principal streets, protected, with glittering arms, the long train of their devout companions, who bore aloft, on their heads, the sacred vessels of gold and silver; and the martial shouts of the Barbarians were mingled with the sound of religious psalmody.",
-     "start": 349.75,
-     "end": 396.94,
+     "start": 350.37,
+     "end": 397.55,
      "phrases": [
       [
        "The Gothic captain, struck with reverential awe, despatched a messenger to inform the king of the treasure which he had discovered;",
-       349.75,
-       357.92
+       350.37,
+       358.53
       ],
       [
        "and received a peremptory order from Alaric, that all the consecrated plate and ornaments should be transported, without damage or delay, to the church of the apostle.",
-       358.22,
-       369.02
+       358.84,
+       369.63
       ],
       [
        "From the extremity, perhaps, of the Quirinal hill, to the distant quarter of the Vatican, a numerous detachment of Goths, marching in order of battle through the principal streets, protected, with glittering arms, the long train of their devout companions, who bore aloft,",
-       369.47,
-       386.93
+       370.09,
+       387.54
       ],
       [
        "on their heads, the sacred vessels of gold and silver;",
-       387.06,
-       390.71
+       387.68,
+       391.33
       ],
       [
        "and the martial shouts of the Barbarians were mingled with the sound of religious psalmody.",
-       391.02,
-       396.94
+       391.63,
+       397.55
       ]
      ]
     }
    ],
-   "end": 396.94
+   "end": 397.55
   },
   {
-   "start": 397.79,
+   "start": 398.4,
    "segments": [
     {
      "speaker": "narrator",
      "text": "From all the adjacent houses, a crowd of Christians hastened to join this edifying procession; and a multitude of fugitives, without distinction of age, or rank, or even of sect, had the good fortune to escape to the secure and hospitable sanctuary of the Vatican. The learned work, concerning the City of God, was professedly composed by St. Augustin, to justify the ways of Providence in the destruction of the Roman greatness. He celebrates, with peculiar satisfaction, this memorable triumph of Christ; and insults his adversaries, by challenging them to produce some similar example of a town taken by storm, in which the fabulous gods of antiquity had been able to protect either themselves or their deluded votaries.",
-     "start": 397.79,
-     "end": 450.3,
+     "start": 398.4,
+     "end": 450.91,
      "phrases": [
       [
        "From all the adjacent houses, a crowd of Christians hastened to join this edifying procession;",
-       397.79,
-       404.56
+       398.4,
+       405.18
       ],
       [
        "and a multitude of fugitives, without distinction of age, or rank, or even of sect, had the good fortune to escape to the secure and hospitable sanctuary of the Vatican.",
-       404.86,
-       416.65
+       405.48,
+       417.26
       ],
       [
        "The learned work, concerning the City of God, was professedly composed by St.",
-       417.1,
-       422.56
+       417.72,
+       423.18
       ],
       [
        "Augustin, to justify the ways of Providence in the destruction of the Roman greatness.",
-       423.02,
-       429.08
+       423.63,
+       429.7
       ],
       [
        "He celebrates, with peculiar satisfaction, this memorable triumph of Christ;",
-       429.54,
-       434.94
+       430.16,
+       435.55
       ],
       [
        "and insults his adversaries, by challenging them to produce some similar example of a town taken by storm, in which the fabulous gods of antiquity had been able to protect either themselves or their deluded votaries.",
-       435.24,
-       450.3
+       435.86,
+       450.91
       ]
      ]
     }
    ],
-   "end": 450.3
+   "end": 450.91
   },
   {
-   "start": 452.15,
+   "start": 452.76,
    "segments": [
     {
      "speaker": "narrator",
      "text": "In the sack of Rome, some rare and extraordinary examples of Barbarian virtue have been deservedly applauded. But the holy precincts of the Vatican, and the apostolic churches, could receive a very small proportion of the Roman people; many thousand warriors, more especially of the Huns, who served under the standard of Alaric, were strangers to the name, or at least to the faith, of Christ; and we may suspect, without any breach of charity or candor, that in the hour of savage license, when every passion was inflamed, and every restraint was removed, the precepts of the Gospel seldom influenced the behavior of the Gothic Christians. The writers, the best disposed to exaggerate their clemency, have freely confessed, that a cruel slaughter was made of the Romans; and that the streets of the city were filled with dead bodies, which remained without burial during the general consternation. The despair of the citizens was sometimes converted into fury: and whenever the Barbarians were provoked by opposition, they extended the promiscuous massacre to the feeble, the innocent, and the helpless. The private revenge of forty thousand slaves was exercised without pity or remorse; and the ignominious lashes, which they had formerly received, were washed away in the blood of the guilty, or obnoxious, families.",
-     "start": 452.15,
-     "end": 541.79,
+     "start": 452.76,
+     "end": 542.41,
      "phrases": [
       [
        "In the sack of Rome, some rare and extraordinary examples of Barbarian virtue have been deservedly applauded.",
-       452.15,
-       459.68
+       452.76,
+       460.3
       ],
       [
        "But the holy precincts of the Vatican, and the apostolic churches, could receive a very small proportion of the Roman people;",
-       460.14,
-       468.17
+       460.76,
+       468.78
       ],
       [
        "many thousand warriors, more especially of the Huns, who served under the standard of Alaric, were strangers to the name, or at least to the faith, of Christ;",
-       468.47,
-       478.87
+       469.09,
+       479.48
       ],
       [
        "and we may suspect, without any breach of charity or candor, that in the hour of savage license, when every passion was inflamed, and every restraint was removed, the precepts of the Gospel seldom influenced the behavior of the Gothic Christians.",
-       479.17,
-       495.44
+       479.79,
+       496.05
       ],
       [
        "The writers, the best disposed to exaggerate their clemency, have freely confessed, that a cruel slaughter was made of the Romans;",
-       495.89,
-       504.51
+       496.51,
+       505.12
       ],
       [
        "and that the streets of the city were filled with dead bodies, which remained without burial during the general consternation.",
-       504.81,
-       512.42
+       505.43,
+       513.03
       ],
       [
        "The despair of the citizens was sometimes converted into fury:",
-       512.87,
-       517.25
+       513.49,
+       517.87
       ],
       [
        "and whenever the Barbarians were provoked by opposition, they extended the promiscuous massacre to the feeble, the innocent, and the helpless.",
-       517.56,
-       526.46
+       518.17,
+       527.08
       ],
       [
        "The private revenge of forty thousand slaves was exercised without pity or remorse;",
-       526.92,
-       533.12
+       527.53,
+       533.74
       ],
       [
        "and the ignominious lashes, which they had formerly received, were washed away in the blood of the guilty, or obnoxious, families.",
-       533.42,
-       541.79
+       534.04,
+       542.41
       ]
      ]
     }
    ],
-   "end": 541.79
+   "end": 542.41
   },
   {
-   "start": 542.64,
+   "start": 543.26,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The acquisition of riches served only to stimulate the avarice of the rapacious Barbarians, who proceeded, by threats, by blows, and by tortures, to force from their prisoners the confession of hidden treasure. Visible splendor and expense were alleged as the proof of a plentiful fortune; the appearance of poverty was imputed to a parsimonious disposition; and the obstinacy of some misers, who endured the most cruel torments before they would discover the secret object of their affection, was fatal to many unhappy wretches, who expired under the lash, for refusing to reveal their imaginary treasures. The edifices of Rome, though the damage has been much exaggerated, received some injury from the violence of the Goths. At their entrance through the Salarian gate, they fired the adjacent houses to guide their march, and to distract the attention of the citizens; the flames, which encountered no obstacle in the disorder of the night, consumed many private and public buildings; and the ruins of the palace of Sallust remained, in the age of Justinian, a stately monument of the Gothic conflagration. Yet a contemporary historian has observed, that fire could scarcely consume the enormous beams of solid brass, and that the strength of man was insufficient to subvert the foundations of ancient structures. Some truth may possibly be concealed in his devout assertion, that the wrath of Heaven supplied the imperfections of hostile rage; and that the proud Forum of Rome, decorated with the statues of so many gods and heroes, was levelled in the dust by the stroke of lightning.",
-     "start": 542.64,
-     "end": 653.63,
+     "start": 543.26,
+     "end": 654.24,
      "phrases": [
       [
        "The acquisition of riches served only to stimulate the avarice of the rapacious Barbarians, who proceeded, by threats, by blows, and by tortures, to force from their prisoners the confession of hidden treasure.",
-       542.64,
-       557.03
+       543.26,
+       557.64
       ],
       [
        "Visible splendor and expense were alleged as the proof of a plentiful fortune;",
-       557.48,
-       563.18
+       558.1,
+       563.79
       ],
       [
        "the appearance of poverty was imputed to a parsimonious disposition;",
-       563.48,
-       568.6
+       564.1,
+       569.21
       ],
       [
        "and the obstinacy of some misers, who endured the most cruel torments before they would discover the secret object of their affection, was fatal to many unhappy wretches, who expired under the lash, for refusing to reveal their imaginary treasures.",
-       568.9,
-       585.13
+       569.52,
+       585.74
       ],
       [
        "The edifices of Rome, though the damage has been much exaggerated, received some injury from the violence of the Goths.",
-       585.58,
-       593.55
+       586.2,
+       594.16
       ],
       [
        "At their entrance through the Salarian gate, they fired the adjacent houses to guide their march, and to distract the attention of the citizens;",
-       594.0,
-       603.47
+       594.62,
+       604.08
       ],
       [
        "the flames, which encountered no obstacle in the disorder of the night, consumed many private and public buildings;",
-       603.77,
-       611.45
+       604.39,
+       612.06
       ],
       [
        "and the ruins of the palace of Sallust remained, in the age of Justinian, a stately monument of the Gothic conflagration.",
-       611.75,
-       620.36
+       612.37,
+       620.97
       ],
       [
        "Yet a contemporary historian has observed, that fire could scarcely consume the enormous beams of solid brass, and that the strength of man was insufficient to subvert the foundations of ancient structures.",
-       620.81,
-       634.67
+       621.43,
+       635.29
       ],
       [
        "Some truth may possibly be concealed in his devout assertion, that the wrath of Heaven supplied the imperfections of hostile rage;",
-       635.13,
-       643.93
+       635.74,
+       644.55
       ],
       [
        "and that the proud Forum of Rome, decorated with the statues of so many gods and heroes, was levelled in the dust by the stroke of lightning.",
-       644.24,
-       653.63
+       644.85,
+       654.24
       ]
      ]
     }
    ],
-   "end": 653.63
+   "end": 654.24
   },
   {
-   "start": 665.48,
+   "start": 666.09,
    "segments": [
     {
      "speaker": "host",
      "text": "The Goths remained in the city for three days. Then they marched south, heavy with plunder, down the length of Italy, toward the sea.",
-     "start": 665.48,
-     "end": 674.56,
+     "start": 666.09,
+     "end": 675.17,
      "phrases": [
       [
        "The Goths remained in the city for three days.",
-       665.48,
-       668.6
+       666.09,
+       669.22
       ],
       [
        "Then they marched south, heavy with plunder, down the length of Italy, toward the sea.",
-       669.09,
-       674.56
+       669.7,
+       675.17
       ]
      ]
     }
    ],
-   "end": 674.56
+   "end": 675.17
   },
   {
-   "start": 677.41,
+   "start": 678.02,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Whether fame, or conquest, or riches, were the object of Alaric, he pursued that object with an indefatigable ardor, which could neither be quelled by adversity nor satiated by success. No sooner had he reached the extreme land of Italy, than he was attracted by the neighboring prospect of a fertile and peaceful island. Yet even the possession of Sicily he considered only as an intermediate step to the important expedition, which he already meditated against the continent of Africa. The Straits of Rhegium and Messina are twelve miles in length, and, in the narrowest passage, about one mile and a half broad; and the fabulous monsters of the deep, the rocks of Scylla, and the whirlpool of Charybdis, could terrify none but the most timid and unskilful mariners. Yet as soon as the first division of the Goths had embarked, a sudden tempest arose, which sunk, or scattered, many of the transports; their courage was daunted by the terrors of a new element; and the whole design was defeated by the premature death of Alaric, which fixed, after a short illness, the fatal term of his conquests. The ferocious character of the Barbarians was displayed in the funeral of a hero whose valor and fortune they celebrated with mournful applause. By the labor of a captive multitude, they forcibly diverted the course of the Busentinus, a small river that washes the walls of Consentia. The royal sepulchre, adorned with the splendid spoils and trophies of Rome, was constructed in the vacant bed; the waters were then restored to their natural channel; and the secret spot, where the remains of Alaric had been deposited, was forever concealed by the inhuman massacre of the prisoners, who had been employed to execute the work.",
-     "start": 677.41,
-     "end": 797.47,
+     "start": 678.02,
+     "end": 798.08,
      "phrases": [
       [
        "Whether fame, or conquest, or riches, were the object of Alaric, he pursued that object with an indefatigable ardor, which could neither be quelled by adversity nor satiated by success.",
-       677.41,
-       690.69
+       678.02,
+       691.31
       ],
       [
        "No sooner had he reached the extreme land of Italy, than he was attracted by the neighboring prospect of a fertile and peaceful island.",
-       691.15,
-       699.73
+       691.76,
+       700.34
       ],
       [
        "Yet even the possession of Sicily he considered only as an intermediate step to the important expedition, which he already meditated against the continent of Africa.",
-       700.18,
-       711.4
+       700.8,
+       712.02
       ],
       [
        "The Straits of Rhegium and Messina are twelve miles in length, and, in the narrowest passage, about one mile and a half broad;",
-       711.86,
-       720.05
+       712.48,
+       720.67
       ],
       [
        "and the fabulous monsters of the deep, the rocks of Scylla, and the whirlpool of Charybdis, could terrify none but the most timid and unskilful mariners.",
-       720.35,
-       730.5
+       720.97,
+       731.11
       ],
       [
        "Yet as soon as the first division of the Goths had embarked, a sudden tempest arose, which sunk, or scattered, many of the transports;",
-       730.95,
-       740.02
+       731.57,
+       740.64
       ],
       [
        "their courage was daunted by the terrors of a new element;",
-       740.32,
-       744.37
+       740.94,
+       744.99
       ],
       [
        "and the whole design was defeated by the premature death of Alaric, which fixed, after a short illness, the fatal term of his conquests.",
-       744.68,
-       753.58
+       745.29,
+       754.2
       ],
       [
        "The ferocious character of the Barbarians was displayed in the funeral of a hero whose valor and fortune they celebrated with mournful applause.",
-       754.04,
-       763.93
+       754.65,
+       764.55
       ],
       [
        "By the labor of a captive multitude, they forcibly diverted the course of the Busentinus, a small river that washes the walls of Consentia.",
-       764.39,
-       774.18
+       765.0,
+       774.8
       ],
       [
        "The royal sepulchre, adorned with the splendid spoils and trophies of Rome, was constructed in the vacant bed;",
-       774.64,
-       782.03
+       775.25,
+       782.65
       ],
       [
        "the waters were then restored to their natural channel;",
-       782.34,
-       785.94
+       782.95,
+       786.55
       ],
       [
        "and the secret spot, where the remains of Alaric had been deposited, was forever concealed by the inhuman massacre of the prisoners, who had been employed to execute the work.",
-       786.24,
-       797.47
+       786.86,
+       798.08
       ]
      ]
     }
    ],
-   "end": 797.47
+   "end": 798.08
   },
   {
-   "start": 811.32,
+   "start": 811.93,
    "segments": [
     {
      "speaker": "host",
      "text": "Alaric died before the end of that year, four hundred and ten. He was perhaps forty years old. The river Busento still runs beneath the walls of Cosenza, in Calabria. His grave has never been found.",
-     "start": 811.32,
-     "end": 827.2,
+     "start": 811.93,
+     "end": 827.81,
      "phrases": [
       [
        "Alaric died before the end of that year, four hundred and ten.",
-       811.32,
-       815.57
+       811.93,
+       816.19
       ],
       [
        "He was perhaps forty years old.",
-       816.06,
-       818.17
+       816.67,
+       818.78
       ],
       [
        "The river Busento still runs beneath the walls of Cosenza, in Calabria.",
-       818.65,
-       824.29
+       819.27,
+       824.91
       ],
       [
        "His grave has never been found.",
-       824.77,
-       827.2
+       825.39,
+       827.81
       ]
      ]
     }
    ],
-   "end": 827.2
+   "end": 827.81
   },
   {
-   "start": 828.05,
+   "start": 828.66,
    "segments": [
     {
      "speaker": "host",
      "text": "Sixty-six years later, the last emperor of the West, a boy named Romulus, was quietly deposed, and sent to live out his days in a villa near Naples. Nobody marked the moment as an ending. The city went on. The bells of its churches still ring today.",
-     "start": 828.05,
-     "end": 847.66,
+     "start": 828.66,
+     "end": 848.28,
      "phrases": [
       [
        "Sixty-six years later, the last emperor of the West, a boy named Romulus, was quietly deposed, and sent to live out his days in a villa near Naples.",
-       828.05,
-       839.04
+       828.66,
+       839.66
       ],
       [
        "Nobody marked the moment as an ending.",
-       839.53,
-       842.25
+       840.14,
+       842.86
       ],
       [
        "The city went on.",
-       842.73,
-       844.07
+       843.35,
+       844.68
       ],
       [
        "The bells of its churches still ring today.",
-       844.55,
-       847.66
+       845.16,
+       848.28
       ]
      ]
     }
    ],
-   "end": 847.66
+   "end": 848.28
   },
   {
-   "start": 863.51,
+   "start": 864.13,
    "segments": [
     {
      "speaker": "host",
      "text": "The Sack of Rome. From the History of the Decline and Fall of the Roman Empire, by Edward Gibbon.",
-     "start": 863.51,
-     "end": 870.49,
+     "start": 864.13,
+     "end": 871.11,
      "phrases": [
       [
        "The Sack of Rome.",
-       863.51,
-       864.98
+       864.13,
+       865.6
       ],
       [
        "From the History of the Decline and Fall of the Roman Empire, by Edward Gibbon.",
-       865.47,
-       870.49
+       866.08,
+       871.11
       ]
      ]
     }
    ],
-   "end": 870.49
+   "end": 871.11
   }
  ],
  "cast": {
@@ -808,10 +808,10 @@
    "voice": "bm_george*0.7+bm_lewis*0.3"
   },
   "jerome": {
-   "voice": "bm_daniel"
+   "voice": "bm_fable"
   },
   "virgin": {
-   "voice": "bf_isabella*0.7+bf_emma*0.3"
+   "voice": "af_bella"
   }
  }
 }

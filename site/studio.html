@@ -7,26 +7,31 @@
 <meta name="description" content="Paste or upload a manuscript; StoryBook casts the voices, paints the soundscape and renders your audiobook.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/analytics.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
 </svg>
 
-<header class="masthead">
+<div class="book">
+<header class="running-head">
   <a class="wordmark" href="./">StoryBook</a>
   <nav class="nav" aria-label="Main">
-    <a href="./">Listen</a><a href="./#library">Library</a><a href="studio.html" aria-current="page">Studio</a><a href="./#craft">How it's made</a>
+    <a href="./">Listen</a><a href="./#tales">Library</a><a href="personal.html">For your child</a><a href="studio.html" aria-current="page">Studio</a><a href="./#craft">How it's made</a>
   </nav>
 </header>
 
-<section class="hero" style="min-height:auto;padding-bottom:2rem">
-  <div class="wash" aria-hidden="true" style="opacity:.6"></div>
-  <div>
-    <p class="eyebrow">the studio</p>
-    <h1 style="font-size:clamp(2.4rem,6vw,4.8rem);max-width:14ch">Turn your pages into <em>a performance.</em></h1>
-    <p class="lede">Paste a story or upload a manuscript. StoryBook finds the speakers and gives each one a voice. It chooses weather and music to suit the mood, and writes a sound effect wherever the prose names one. You get a mastered MP3.</p>
-  </div>
+<section class="titlepage" style="padding-bottom:1rem">
+  <figure class="frontispiece">
+    <img src="assets/land/land_town.webp" alt="A watercolour of a walled town in the sun, a road lined with people leading to its gate." style="aspect-ratio:3/1">
+    <figcaption>The road to the studio.</figcaption>
+  </figure>
+  <p class="chapter-no" style="margin-top:2rem">chapter the fourth</p>
+  <h1 style="font-size:clamp(2.4rem,6vw,4.4rem);margin-top:.2rem">The Studio</h1>
+  <p class="alt-title">or, Your Pages, Performed</p>
+  <div class="ornament" aria-hidden="true">❦</div>
+  <p class="lede">Paste a story or upload a manuscript. StoryBook finds the speakers and gives each one a voice. It chooses weather and music to suit the mood, and writes a sound effect wherever the prose names one. You get a mastered MP3.</p>
 </section>
 
 <main class="section studio" style="padding-top:1rem">
@@ -100,10 +105,11 @@
   </section>
 </main>
 
-<footer>
-  <div><a class="wordmark" href="./">StoryBook</a><p>Your text is used only to make your recording.</p></div>
-  <p class="marginalia">“Hearken! and observe…”</p>
+<footer class="colophon">
+  <p class="finis">Finis.</p>
+  <p>Your text is used only to make your recording.</p>
 </footer>
+</div>
 
 <script type="module" src="js/studio.js"></script>
 </body>

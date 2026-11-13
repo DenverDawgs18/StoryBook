@@ -1,0 +1,508 @@
+{
+ "meta": {
+  "title": "The Elves and the Shoemaker",
+  "author": "The Brothers Grimm",
+  "year": 1812,
+  "source": "https://www.gutenberg.org/ebooks/2591",
+  "blurb": "A poor shoemaker cuts out his last scrap of leather and goes to bed. In the morning the shoes are finished, every stitch perfect. Someone is working in the night.\n",
+  "mood": "Firelight, midnight, small busy hands",
+  "featured": false,
+  "art": "land_cottage",
+  "caption": "“and away over the green”",
+  "order": 1,
+  "shelf": "fairy",
+  "labels": {
+   "host": "the host",
+   "shoemaker": "the shoemaker",
+   "wife": "his wife"
+  }
+ },
+ "duration": 300.34,
+ "chapters": [
+  {
+   "title": "The Elves and the Shoemaker.",
+   "start": 32.11
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Kassel, in the kingdom of Westphalia. The winter of eighteen-twelve.",
+     "start": 5.0,
+     "end": 10.2,
+     "phrases": [
+      [
+       "Kassel, in the kingdom of Westphalia.",
+       5.0,
+       7.63
+      ],
+      [
+       "The winter of eighteen-twelve.",
+       8.09,
+       10.2
+      ]
+     ]
+    }
+   ],
+   "end": 10.2
+  },
+  {
+   "start": 11.05,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Two brothers, Jacob and Wilhelm Grimm, are writing down the stories the old women of Hesse tell by the fire: stories that had never been written down at all.",
+     "start": 11.05,
+     "end": 20.99,
+     "phrases": [
+      [
+       "Two brothers, Jacob and Wilhelm Grimm, are writing down the stories the old women of Hesse tell by the fire:",
+       11.05,
+       17.94
+      ],
+      [
+       "stories that had never been written down at all.",
+       18.25,
+       20.99
+      ]
+     ]
+    }
+   ],
+   "end": 20.99
+  },
+  {
+   "start": 21.84,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "This is one of the smallest of them. It is about honest work, and about kindness repaid.",
+     "start": 21.84,
+     "end": 28.26,
+     "phrases": [
+      [
+       "This is one of the smallest of them.",
+       21.84,
+       24.07
+      ],
+      [
+       "It is about honest work, and about kindness repaid.",
+       24.54,
+       28.26
+      ]
+     ]
+    }
+   ],
+   "end": 28.26
+  },
+  {
+   "start": 32.11,
+   "end": 33.98,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Elves and the Shoemaker.",
+     "start": 32.11,
+     "end": 33.98,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 37.08,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "There was once a shoemaker, who worked very hard and was very honest: but still he could not earn enough to live upon; and at last all he had in the world was gone, save just leather enough to make one pair of shoes.",
+     "start": 37.08,
+     "end": 49.64,
+     "phrases": [
+      [
+       "There was once a shoemaker, who worked very hard and was very honest:",
+       37.08,
+       41.0
+      ],
+      [
+       "but still he could not earn enough to live upon;",
+       41.31,
+       43.96
+      ],
+      [
+       "and at last all he had in the world was gone, save just leather enough to make one pair of shoes.",
+       44.27,
+       49.64
+      ]
+     ]
+    }
+   ],
+   "end": 49.64
+  },
+  {
+   "start": 50.49,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then he cut his leather out, all ready to make up the next day, meaning to rise early in the morning to his work. His conscience was clear and his heart light amidst all his troubles; so he went peaceably to bed, left all his cares to Heaven, and soon fell asleep. In the morning after he had said his prayers, he sat himself down to his work; when, to his great wonder, there stood the shoes all ready made, upon the table. The good man knew not what to say or think at such an odd thing happening. He looked at the workmanship; there was not one false stitch in the whole job; all was so neat and true, that it was quite a masterpiece.",
+     "start": 50.49,
+     "end": 89.59,
+     "phrases": [
+      [
+       "Then he cut his leather out, all ready to make up the next day, meaning to rise early in the morning to his work.",
+       50.49,
+       57.04
+      ],
+      [
+       "His conscience was clear and his heart light amidst all his troubles;",
+       57.51,
+       61.57
+      ],
+      [
+       "so he went peaceably to bed, left all his cares to Heaven, and soon fell asleep.",
+       61.88,
+       66.53
+      ],
+      [
+       "In the morning after he had said his prayers, he sat himself down to his work;",
+       66.99,
+       71.35
+      ],
+      [
+       "when, to his great wonder, there stood the shoes all ready made, upon the table.",
+       71.66,
+       76.44
+      ],
+      [
+       "The good man knew not what to say or think at such an odd thing happening.",
+       76.91,
+       80.74
+      ],
+      [
+       "He looked at the workmanship;",
+       81.21,
+       82.93
+      ],
+      [
+       "there was not one false stitch in the whole job;",
+       83.24,
+       85.85
+      ],
+      [
+       "all was so neat and true, that it was quite a masterpiece.",
+       86.16,
+       89.59
+      ]
+     ]
+    }
+   ],
+   "end": 89.59
+  },
+  {
+   "start": 90.44,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The same day a customer came in, and the shoes suited him so well that he willingly paid a price higher than usual for them; and the poor shoemaker, with the money, bought leather enough to make two pairs more. In the evening he cut out the work, and went to bed early, that he might get up and begin betimes next day; but he was saved all the trouble, for when he got up in the morning the work was done ready to his hand. Soon in came buyers, who paid him handsomely for his goods, so that he bought leather enough for four pair more. He cut out the work again overnight and found it done in the morning, as before; and so it went on for some time: what was got ready in the evening was always done by daybreak, and the good man soon became thriving and well off again.",
+     "start": 90.44,
+     "end": 134.35,
+     "phrases": [
+      [
+       "The same day a customer came in, and the shoes suited him so well that he willingly paid a price higher than usual for them;",
+       90.44,
+       97.2
+      ],
+      [
+       "and the poor shoemaker, with the money, bought leather enough to make two pairs more.",
+       97.51,
+       101.69
+      ],
+      [
+       "In the evening he cut out the work, and went to bed early, that he might get up and begin betimes next day;",
+       102.16,
+       108.03
+      ],
+      [
+       "but he was saved all the trouble, for when he got up in the morning the work was done ready to his hand.",
+       108.35,
+       113.65
+      ],
+      [
+       "Soon in came buyers, who paid him handsomely for his goods, so that he bought leather enough for four pair more.",
+       114.11,
+       120.09
+      ],
+      [
+       "He cut out the work again overnight and found it done in the morning, as before;",
+       120.55,
+       124.87
+      ],
+      [
+       "and so it went on for some time:",
+       125.18,
+       127.24
+      ],
+      [
+       "what was got ready in the evening was always done by daybreak, and the good man soon became thriving and well off again.",
+       127.56,
+       134.35
+      ]
+     ]
+    }
+   ],
+   "end": 134.35
+  },
+  {
+   "start": 135.2,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "One evening, about Christmas-time, as he and his wife were sitting over the fire chatting together, he said to her",
+     "start": 135.2,
+     "end": 141.68,
+     "phrases": [
+      [
+       "One evening, about Christmas-time, as he and his wife were sitting over the fire chatting together, he said to her",
+       135.2,
+       141.68
+      ]
+     ]
+    },
+    {
+     "speaker": "shoemaker",
+     "text": "I should like to sit up and watch tonight, that we may see who it is that comes and does my work for me.",
+     "start": 141.9,
+     "end": 148.37,
+     "phrases": [
+      [
+       "I should like to sit up and watch tonight, that we may see who it is that comes and does my work for me.",
+       141.9,
+       148.37
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "The wife liked the thought; so they left a light burning, and hid themselves in a corner of the room, behind a curtain that was hung up there, and watched what would happen.",
+     "start": 148.59,
+     "end": 158.36,
+     "phrases": [
+      [
+       "The wife liked the thought;",
+       148.59,
+       150.31
+      ],
+      [
+       "so they left a light burning, and hid themselves in a corner of the room, behind a curtain that was hung up there, and watched what would happen.",
+       150.62,
+       158.36
+      ]
+     ]
+    }
+   ],
+   "end": 158.36
+  },
+  {
+   "start": 177.17,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "As soon as it was midnight, there came in two little naked dwarfs; and they sat themselves upon the shoemaker’s bench, took up all the work that was cut out, and began to ply with their little fingers, stitching and rapping and tapping away at such a rate, that the shoemaker was all wonder, and could not take his eyes off them. And on they went, till the job was quite done, and the shoes stood ready for use upon the table. This was long before daybreak; and then they bustled away as quick as lightning.",
+     "start": 177.17,
+     "end": 206.96,
+     "phrases": [
+      [
+       "As soon as it was midnight, there came in two little naked dwarfs;",
+       177.17,
+       180.93
+      ],
+      [
+       "and they sat themselves upon the shoemaker's bench, took up all the work that was cut out, and began to ply with their little fingers, stitching and rapping and tapping away at such a rate, that the shoemaker was all wonder, and could not take his eyes off them.",
+       181.24,
+       195.44
+      ],
+      [
+       "And on they went, till the job was quite done, and the shoes stood ready for use upon the table.",
+       195.9,
+       201.29
+      ],
+      [
+       "This was long before daybreak;",
+       201.76,
+       203.89
+      ],
+      [
+       "and then they bustled away as quick as lightning.",
+       204.2,
+       206.96
+      ]
+     ]
+    }
+   ],
+   "end": 206.96
+  },
+  {
+   "start": 210.93,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The next day the wife said to the shoemaker.",
+     "start": 210.93,
+     "end": 213.42,
+     "phrases": [
+      [
+       "The next day the wife said to the shoemaker.",
+       210.93,
+       213.42
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "These little wights have made us rich, and we ought to be thankful to them, and do them a good turn if we can. I am quite sorry to see them run about as they do; and indeed it is not very decent, for they have nothing upon their backs to keep off the cold. I’ll tell you what, I will make each of them a shirt, and a coat and waistcoat, and a pair of pantaloons into the bargain; and do you make each of them a little pair of shoes.",
+     "start": 213.64,
+     "end": 237.17,
+     "phrases": [
+      [
+       "These little wights have made us rich, and we ought to be thankful to them, and do them a good turn if we can.",
+       213.64,
+       219.08
+      ],
+      [
+       "I am quite sorry to see them run about as they do;",
+       219.52,
+       222.15
+      ],
+      [
+       "and indeed it is not very decent, for they have nothing upon their backs to keep off the cold.",
+       222.45,
+       227.44
+      ],
+      [
+       "I'll tell you what, I will make each of them a shirt, and a coat and waistcoat, and a pair of pantaloons into the bargain;",
+       227.87,
+       234.29
+      ],
+      [
+       "and do you make each of them a little pair of shoes.",
+       234.58,
+       237.17
+      ]
+     ]
+    }
+   ],
+   "end": 237.17
+  },
+  {
+   "start": 238.02,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The thought pleased the good cobbler very much; and one evening, when all the things were ready, they laid them on the table, instead of the work that they used to cut out, and then went and hid themselves, to watch what the little elves would do.",
+     "start": 238.02,
+     "end": 251.3,
+     "phrases": [
+      [
+       "The thought pleased the good cobbler very much;",
+       238.02,
+       240.64
+      ],
+      [
+       "and one evening, when all the things were ready, they laid them on the table, instead of the work that they used to cut out, and then went and hid themselves, to watch what the little elves would do.",
+       240.95,
+       251.3
+      ]
+     ]
+    }
+   ],
+   "end": 251.3
+  },
+  {
+   "start": 252.15,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "About midnight in they came, dancing and skipping, hopped round the room, and then went to sit down to their work as usual; but when they saw the clothes lying for them, they laughed and chuckled, and seemed mightily delighted.",
+     "start": 252.15,
+     "end": 264.69,
+     "phrases": [
+      [
+       "About midnight in they came, dancing and skipping, hopped round the room, and then went to sit down to their work as usual;",
+       252.15,
+       259.05
+      ],
+      [
+       "but when they saw the clothes lying for them, they laughed and chuckled, and seemed mightily delighted.",
+       259.36,
+       264.69
+      ]
+     ]
+    }
+   ],
+   "end": 264.69
+  },
+  {
+   "start": 265.54,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then they dressed themselves in the twinkling of an eye, and danced and capered and sprang about, as merry as could be; till at last they danced out at the door, and away over the green.",
+     "start": 265.54,
+     "end": 275.74,
+     "phrases": [
+      [
+       "Then they dressed themselves in the twinkling of an eye, and danced and capered and sprang about, as merry as could be;",
+       265.54,
+       271.86
+      ],
+      [
+       "till at last they danced out at the door, and away over the green.",
+       272.17,
+       275.74
+      ]
+     ]
+    }
+   ],
+   "end": 275.74
+  },
+  {
+   "start": 277.84,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The good couple saw them no more; but everything went well with them from that time forward, as long as they lived.",
+     "start": 277.84,
+     "end": 284.49,
+     "phrases": [
+      [
+       "The good couple saw them no more;",
+       277.84,
+       279.84
+      ],
+      [
+       "but everything went well with them from that time forward, as long as they lived.",
+       280.15,
+       284.49
+      ]
+     ]
+    }
+   ],
+   "end": 284.49
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bf_isabella"
+  },
+  "shoemaker": {
+   "voice": "bm_george"
+  },
+  "wife": {
+   "voice": "bf_emma"
+  }
+ }
+}

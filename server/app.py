@@ -16,12 +16,16 @@ import uuid
 import zipfile
 from pathlib import Path
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
-from fastapi.responses import FileResponse, JSONResponse
+import csv
+import hashlib
+import hmac
+
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from storybook import director
+from storybook import director, personalize
 from storybook.render import render
 from storybook.script import parse
 from storybook.voices import VOICE_CATALOG, Character, speak
@@ -105,6 +109,13 @@ threading.Thread(target=_worker, daemon=True).start()
 
 
 # ------------------------------------------------------------------ API
+@app.get("/api/config")
+def public_config():
+    """Settings the pages need. The PostHog project key is a public client key by design."""
+    return {"posthog_key": os.environ.get("POSTHOG_KEY", ""),
+            "posthog_host": os.environ.get("POSTHOG_HOST", "https://us.i.posthog.com")}
+
+
 @app.get("/api/voices")
 def voices():
     return [{"id": k, "description": v} for k, v in VOICE_CATALOG.items()]
@@ -194,6 +205,118 @@ def job_script(jid: str):
     if not p.exists():
         raise HTTPException(404)
     return FileResponse(p, media_type="text/plain", filename=f"{jid}.story")
+
+
+# ------------------------------------------------------------------ personalised tales
+SIGNUPS = DATA / "signups.jsonl"
+PREVIEW_CACHE: dict[str, str] = {}  # request fingerprint -> job id
+RECENT: dict[str, list[float]] = {}  # visitor -> preview request times
+PREVIEWS_PER_HOUR = 6
+MAX_QUEUED_PREVIEWS = 8
+EMAIL_RX = re.compile(r"^[^@\s]{1,64}@[^@\s]{1,255}\.[^@\s]{2,}$")
+
+
+def _visitor(request: Request) -> str:
+    ip = request.headers.get("fly-client-ip") or (request.client.host if request.client else "?")
+    return hashlib.sha256(ip.encode()).hexdigest()[:16]  # never stored raw
+
+
+def _enqueue(source: str, title: str, kind: str) -> str:
+    jid = uuid.uuid4().hex[:12]
+    (JOBS_DIR / f"{jid}.story").write_text(source)
+    with LOCK:
+        ahead = sum(1 for j in JOBS.values() if j["status"] in ("queued", "running"))
+        JOBS[jid] = {"id": jid, "status": "queued", "progress": 0.0, "message": f"Queued ({ahead} ahead)",
+                     "title": title, "author": "", "kind": kind, "created": time.time(), "_source": source}
+    WORK.put(jid)
+    return jid
+
+
+class PersonalRequest(BaseModel):
+    tale: str
+    name: str
+    pronouns: str = "she"
+    voice: str | None = None
+    gift_from: str = ""
+    say_as: str = ""
+
+
+@app.get("/api/personal/tales")
+def personal_tales():
+    return personalize.tales_for_web()
+
+
+@app.post("/api/personal/preview")
+def personal_preview(req: PersonalRequest, request: Request):
+    try:
+        src = personalize.personalize(req.tale, req.name, req.pronouns, req.voice, req.gift_from, req.say_as, preview=True)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    key = hashlib.sha256(src.encode()).hexdigest()
+    cached = PREVIEW_CACHE.get(key)
+    if cached and JOBS.get(cached, {}).get("status") in ("queued", "running", "done"):
+        return {"id": cached}
+    who, now = _visitor(request), time.time()
+    times = [t for t in RECENT.get(who, []) if now - t < 3600]
+    if len(times) >= PREVIEWS_PER_HOUR:
+        raise HTTPException(429, "That's a lot of previews! Please try again in a little while.")
+    with LOCK:
+        waiting = sum(1 for j in JOBS.values() if j.get("kind") == "preview" and j["status"] in ("queued", "running"))
+    if waiting >= MAX_QUEUED_PREVIEWS:
+        raise HTTPException(503, "The storytellers are busy right now. Please try again in a few minutes.")
+    RECENT[who] = times + [now]
+    jid = _enqueue(src, f"{personalize.TALES[req.tale]['title']}, for {personalize.clean_name(req.name)}", "preview")
+    PREVIEW_CACHE[key] = jid
+    return {"id": jid}
+
+
+class SignupRequest(PersonalRequest):
+    email: str
+    preview_id: str = ""
+    website: str = ""  # honeypot: people never see this field, bots fill it in
+
+
+@app.post("/api/personal/signup")
+def personal_signup(req: SignupRequest, request: Request):
+    if req.website:
+        return {"ok": True}  # quietly drop bots
+    email = req.email.strip()
+    if not EMAIL_RX.match(email) or len(email) > 254:
+        raise HTTPException(400, "Please check the email address.")
+    try:
+        name = personalize.clean_name(req.name)
+        say_as = personalize.clean_name(req.say_as) if req.say_as else ""
+        gift_from = personalize.clean_from(req.gift_from)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    if req.tale not in personalize.TALES or req.pronouns not in personalize.PRONOUNS:
+        raise HTTPException(400, "Please choose a tale and pronouns.")
+    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "email": email, "name": name, "say_as": say_as,
+           "pronouns": req.pronouns, "voice": req.voice or "", "tale": req.tale, "gift_from": gift_from,
+           "preview_id": req.preview_id if re.fullmatch(r"[0-9a-f]{12}", req.preview_id or "") else "",
+           "visitor": _visitor(request)}
+    with LOCK, SIGNUPS.open("a") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return {"ok": True}
+
+
+@app.get("/api/admin/signups")
+def admin_signups(request: Request, format: str = "csv"):
+    """Download sign-ups. Needs STORYBOOK_ADMIN_TOKEN, sent as `Authorization: Bearer <token>` or ?token=."""
+    token = os.environ.get("STORYBOOK_ADMIN_TOKEN", "")
+    given = request.headers.get("authorization", "").removeprefix("Bearer ").strip() or request.query_params.get("token", "")
+    if not token or not hmac.compare_digest(token, given):
+        raise HTTPException(404)
+    rows = [json.loads(l) for l in SIGNUPS.read_text().splitlines() if l.strip()] if SIGNUPS.exists() else []
+    if format == "json":
+        return rows
+    buf = io.StringIO()
+    cols = ["at", "email", "name", "say_as", "pronouns", "voice", "tale", "gift_from", "preview_id", "visitor"]
+    w = csv.DictWriter(buf, cols, extrasaction="ignore")
+    w.writeheader()
+    w.writerows(rows)
+    return PlainTextResponse(buf.getvalue(), media_type="text/csv",
+                             headers={"Content-Disposition": "attachment; filename=storybook-signups.csv"})
 
 
 app.mount("/media/jobs", StaticFiles(directory=JOBS_DIR), name="jobs")
