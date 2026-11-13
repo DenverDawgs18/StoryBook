@@ -134,6 +134,11 @@ The Studio needs the Python server.
 second painting of the blown-down house (`python tools/landscape.py pigs_fallen`) as it collapses,
 then shows a montage of the plates and a title-page end card. The fonts download into `.cache/` on first run.
 
+`python tools/tiktok_personal.py` cuts a second, 43-second video for the personalised stories ("POV: the bedtime
+story knows your kid's name"). The name Mia is typed into the form, then her real preview plays: the dedication,
+the wolf calling her name at the brick house, the huffing, and the teaser. Her name is inked in green in the
+captions every time it's spoken, and the video ends on the offer and "link in bio".
+
 `python tools/avatar.py` paints a matching 1080×1080 profile picture into `dist/`: a watercolour
 landscape rising out of an open book, in a cream roundel on green cloth, kept inside the circle that
 the apps crop avatars to. It also writes a preview sheet at 200, 110 and 56 px.
