@@ -169,6 +169,30 @@ python -m storybook personal --tale the_three_little_pigs --name Mia --pronouns 
 
 The planned price shown on the page is one constant at the top of `site/js/personal.js`.
 
+## Analytics
+
+PostHog is wired in but stays off until the server has a project key:
+
+```bash
+fly secrets set POSTHOG_KEY=phc_your_project_key        # add POSTHOG_HOST=https://eu.i.posthog.com for EU cloud
+```
+
+`site/js/analytics.js` gets the key from `/api/config`, so a static copy of the site sends nothing.
+It uses no cookies or local storage, so no consent banner is needed; the trade-off is that each visit
+counts as a new visitor. Session recording and autocapture are off, and Do Not Track is respected.
+Pages send named events only, and none carry a child's name, a dedication or an email:
+
+| Event | Properties |
+| --- | --- |
+| `$pageview`, `$pageleave` | URL, including any `utm_*` tags (use them on TikTok/Reddit links) |
+| `story_play`, `story_progress` (25/50/75/90), `story_complete` | `story`, `kind` (episode, example, preview, studio) |
+| `library_open`, `cta_click` | `story`, or `cta` (which button) |
+| `example_switch`, `preview_requested`, `preview_ready`, `preview_failed`, `preview_invalid` | `tale`, `pronouns`, `voice`, `has_dedication`, `has_say_as`, `seconds` |
+| `signup_submitted`, `signup_failed` | the same choices, plus `had_preview` |
+| `studio_analyzed`, `studio_record_started`, `studio_record_done`, `studio_record_failed` | words, characters, mood, seconds |
+
+Any element with `data-track="event"` and optional `data-track-*` attributes reports a click.
+
 ## Deploying to Fly.io
 
 The repo ships a `Dockerfile` (voice model baked in, so cold starts are quick) and a `fly.toml`.

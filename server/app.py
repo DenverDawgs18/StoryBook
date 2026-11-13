@@ -109,6 +109,13 @@ threading.Thread(target=_worker, daemon=True).start()
 
 
 # ------------------------------------------------------------------ API
+@app.get("/api/config")
+def public_config():
+    """Settings the pages need. The PostHog project key is a public client key by design."""
+    return {"posthog_key": os.environ.get("POSTHOG_KEY", ""),
+            "posthog_host": os.environ.get("POSTHOG_HOST", "https://us.i.posthog.com")}
+
+
 @app.get("/api/voices")
 def voices():
     return [{"id": k, "description": v} for k, v in VOICE_CATALOG.items()]

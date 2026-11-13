@@ -46,13 +46,20 @@ async function showExample(key) {
   try {
     const ep = await episode(`${ex.base}.mp3`, `${ex.base}.json`);
     exAudio = mountPlayer($("ex-player"), ep, {
+      track: { kind: "example", story: key },
       onplay: () => $("example").classList.add("playing"), onpause: () => $("example").classList.remove("playing"),
     });
   } catch {
     $("ex-player").innerHTML = '<p class="note">The example isn\'t available right now.</p>';
   }
 }
-document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => showExample(b.dataset.ex)));
+document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
+  window.sbTrack?.("example_switch", { example: b.dataset.ex });
+  showExample(b.dataset.ex);
+}));
+// what we send about a request: the choices, never the name, spelling or dedication text
+const choices = (req) => ({ tale: req.tale, pronouns: req.pronouns, voice: req.voice || "auto",
+                            has_dedication: !!req.gift_from, has_say_as: !!req.say_as });
 showExample("pigs");
 
 // ------------------------------------------------------------------ the form
@@ -83,7 +90,9 @@ $("pform").addEventListener("submit", async (e) => {
   const req = request();
   const problem = check(req);
   showError("perror", problem);
-  if (problem) { $("name").focus(); return; }
+  if (problem) { window.sbTrack?.("preview_invalid", { tale: req.tale }); $("name").focus(); return; }
+  window.sbTrack?.("preview_requested", choices(req));
+  const startedAt = Date.now();
   $("go").disabled = true;
   $("presult").classList.add("hidden");
   previewAudio?.pause();
@@ -98,7 +107,8 @@ $("pform").addEventListener("submit", async (e) => {
     previewId = id;
     const ep = await episode(job.audio, job.timings);
     $("presult").classList.remove("hidden");
-    previewAudio = mountPlayer($("presult"), ep);
+    previewAudio = mountPlayer($("presult"), ep, { track: { kind: "preview", story: req.tale } });
+    window.sbTrack?.("preview_ready", { ...choices(req), seconds: Math.round((Date.now() - startedAt) / 1000) });
     $("pstatus").textContent = `Here is ${req.name}'s story ~`;
     $("presult").insertAdjacentHTML("beforeend",
       `<p class="note" style="margin-top:1rem">Like it? <a href="#reserve">Reserve ${esc(req.name)}'s full story</a>.</p>`);
@@ -106,6 +116,7 @@ $("pform").addEventListener("submit", async (e) => {
   } catch (err) {
     const offline = err instanceof TypeError || /\(404\)|\(405\)/.test(err.message);
     showError("perror", offline ? "Previews need the StoryBook server, which this copy of the site isn't connected to." : err.message);
+    window.sbTrack?.("preview_failed", { tale: req.tale, reason: offline ? "offline" : err.message.slice(0, 80) });
     $("pstatus").textContent = "";
   } finally {
     $("go").disabled = false;
@@ -148,6 +159,7 @@ $("rform").addEventListener("submit", async (e) => {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...req, email, preview_id: previewId, website: $("website").value }),
     });
+    window.sbTrack?.("signup_submitted", { ...choices(req), had_preview: !!previewId });
     $("rform").classList.add("hidden");
     $("rdone").classList.remove("hidden");
     const tale = document.querySelector('input[name="tale"]:checked').closest("label").querySelector("h3").textContent;
@@ -155,6 +167,7 @@ $("rform").addEventListener("submit", async (e) => {
   } catch (err) {
     const offline = err instanceof TypeError || /\(404\)|\(405\)/.test(err.message);
     showError("rerror", offline ? "Sign-ups need the StoryBook server, which this copy of the site isn't connected to." : err.message);
+    window.sbTrack?.("signup_failed", { tale: req.tale, reason: offline ? "offline" : err.message.slice(0, 80) });
   } finally {
     $("rgo").disabled = false;
   }

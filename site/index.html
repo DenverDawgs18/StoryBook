@@ -7,6 +7,7 @@
 <meta name="description" content="Full-cast, soundscaped audiobooks of fairy tales and public-domain classics, illustrated in watercolour. And a studio to turn your own manuscript into one.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/analytics.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -35,8 +36,8 @@
   <div class="ornament" aria-hidden="true">❦</div>
   <p class="lede">Fairy tales and old stories performed by a full cast, each with a soundscape made for it alone: birdsong in the wood, rain on the castle roof, a fire in the hills. Pull the covers up and listen.</p>
   <div class="actions">
-    <a class="btn" href="#featured">Hear tonight's tale</a>
-    <a class="btn ghost" href="studio.html">Bring your own manuscript</a>
+    <a class="btn" href="#featured" data-track="cta_click" data-track-cta="hear_tonight">Hear tonight's tale</a>
+    <a class="btn ghost" href="studio.html" data-track="cta_click" data-track-cta="hero_studio">Bring your own manuscript</a>
   </div>
   <p class="imprint">with tales from grimm · jacobs · andersen · poe · gibbon</p>
 </section>
@@ -79,7 +80,7 @@
     <p class="chapter-no">new · a story for your child</p>
     <h2>What if the hero had their name?</h2>
     <p class="blurb" style="margin:0 auto 1.4rem">The clever third little pig, or the shoemaker's child who sees the elves: we write your child into the tale, give them a voice in the cast, and end it with a goodnight. Hear a free preview with their name in it.</p>
-    <a class="btn" href="personal.html">Make one for your child</a>
+    <a class="btn" href="personal.html" data-track="cta_click" data-track-cta="home_personal">Make one for your child</a>
   </div>
 </section>
 
@@ -134,7 +135,7 @@
       <p class="dropcap">Harp and strings, a music box playing Brahms, cello drones and a spectral waltz swell between scenes and duck under the voice whenever someone speaks. The finished mix is mastered to broadcast loudness.</p>
     </div>
   </div>
-  <p class="centre" style="margin-top:2.6rem"><a class="btn" href="studio.html">Try the Studio with your own pages</a></p>
+  <p class="centre" style="margin-top:2.6rem"><a class="btn" href="studio.html" data-track="cta_click" data-track-cta="afterword_studio">Try the Studio with your own pages</a></p>
   <p class="folio">— 53 —</p>
 </section>
 
@@ -155,7 +156,7 @@ const card = (e) => {
   plateNo += 1;
   const eye = e.art && !e.art.startsWith("land_");
   return `
-    <a class="card" href="listen.html?ep=${encodeURIComponent(e.slug)}">
+    <a class="card" href="listen.html?ep=${encodeURIComponent(e.slug)}" data-track="library_open" data-track-story="${esc(e.slug)}">
       <figure class="plate"><div class="sheet${eye ? " eye" : ""}"><img src="${artUrl(e.art)}" alt="" decoding="async"></div></figure>
       <h3>${esc(e.title)}</h3>
       <div class="meta">Plate ${ROMAN[plateNo - 1] || plateNo} · ${esc(e.author)}${e.year ? ", " + e.year : ""} · ${fmt(e.duration)}</div>
