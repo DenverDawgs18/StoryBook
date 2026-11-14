@@ -1,0 +1,20 @@
+{
+  "story": "elves_and_the_shoemaker",
+  "name": "elves",
+  "plate": "land_cottage",
+  "running_head": "the elves and the shoemaker",
+  "hook": ["He went to bed with nothing.", "He woke up to finished shoes."],
+  "hook_seconds": 3.6,
+  "title": "The Elves and the Shoemaker",
+  "byline": "The Brothers Grimm · 1812",
+  "cuts": [[61.8, 66.7], [71.6, 76.6], [141.8, 148.6], [170.0, 181.1], [207.4, 211.0], [264.6, 276.0], [285.0, 291.0]],
+  "labels": {"shoemaker": "the shoemaker"},
+  "highlight": ["dwarfs", "shoes"],
+  "camera": [[61.8, 0.5, 0.5, 1.0], [76.0, 0.4, 0.6, 1.45], [148.0, 0.4, 0.62, 1.85],
+             [172.0, 0.7, 0.32, 1.6], [178.5, 0.4, 0.62, 1.9], [210.5, 0.4, 0.62, 2.1],
+             [268.0, 0.45, 0.6, 1.35], [276.0, 0.5, 0.5, 1.02]],
+  "moments": [[172.8, "midnight…"], [207.6, "tap tap tap"], [267.5, "hop! skip!"]],
+  "shake": [207.6],
+  "end": {"line1": "Old tales,", "line2": "read aloud by a full cast", "sub": "the elves, the wolf, the match girl…", "foot": "free · link in bio"},
+  "end_seconds": 4.2
+}
