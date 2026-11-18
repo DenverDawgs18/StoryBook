@@ -64,7 +64,8 @@ Choose which part of the story to use from `cycle mod 3`:
 - **2:** the climax and ending.
 
 Never reuse a hook or scene listed in section 1 or in the log. If today's natural choice was already
-used, pick another scene from the same story.
+used, pick another scene from the same story. The only exception is in section 6: if today's story truly
+has no unused scene left, reuse its least-recently used scene with a new hook, and say so in the heads-up.
 
 ## 3. Write the clip sheet
 
@@ -121,3 +122,24 @@ The format is documented at the top of `tools/tiktok_story.py`, and
    suggested bio link:
    `https://storybook-audio.fly.dev/?utm_source=tiktok&utm_content=<story>-<YYYY-MM-DD>`. For the
    personal slot, use `/personal.html?utm_source=tiktok&utm_content=personal-<YYYY-MM-DD>` instead.
+
+## 6. Look ahead: warn before the stories run out
+
+Every run, after staging the video, check the next 3 days of the rotation (slots `n+1`, `n+2`, `n+3`).
+
+1. For each of those stories, read its timings JSON. List the scenes that would make a good 30–48 s
+   video: dialogue plus a sound moment, at least 3 phrases, and not the same scene as anything in
+   section 1 or in `dist/tiktok_log.md`.
+2. Also note when the coming days reach `cycle` 3 or higher (`n` ≥ 36, from 2026-12-21). By then every
+   story will have used its famous scene, its build-up and its climax.
+
+Flag a story as **running low** if it has no unused good scene left, or only one. Then end your message
+with a clearly marked heads-up, for example:
+
+> **Heads-up: running low on stories.** In 2 days (Nov 21) Hansel and Gretel has no unused scene left, and
+> The Real Princess (Nov 22) has one. Ask Claude to make more episodes before then.
+
+Name each story, the date it comes up, and how many unused scenes it has left. If nothing is running low,
+say so in one short line ("Stories are fine for the next 3 days."). Don't skip a day or reuse a scene to
+get around running out. If today's own story has no unused scene left, still make today's video from the
+least-recently used scene, and say so in the heads-up.
