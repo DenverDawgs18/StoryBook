@@ -203,18 +203,6 @@ Pages send named events only, and none carry a child's name, a dedication or an 
 
 Any element with `data-track="event"` and optional `data-track-*` attributes reports a click.
 
-## Daily videos
-
-The 8:40 ET scheduled task renders a promo video and uploads it with `POST /api/videos` (multipart: `file`,
-`date`, `story`, `hook`, `caption`, `link`), authorised by the upload-only `STORYBOOK_UPLOAD_TOKEN`.
-Videos are kept on the `/data` volume. Reading them needs the separate, read-only `STORYBOOK_VIDEOS_TOKEN`:
-
-* `GET /api/videos/latest?date=YYYY-MM-DD`: the newest video for a day, with a download `url` (the posting agent uses this)
-* `GET /api/videos`: every video; `GET /api/videos/file/<name>`: one file
-* `GET /videos?token=…`: a private gallery page with players, captions and copy buttons, for posting from a phone
-
-Neither token can read the sign-ups.
-
 ## Deploying to Fly.io
 
 The repo ships a `Dockerfile` (voice model baked in, so cold starts are quick) and a `fly.toml`.
