@@ -319,5 +319,106 @@ def admin_signups(request: Request, format: str = "csv"):
                              headers={"Content-Disposition": "attachment; filename=storybook-signups.csv"})
 
 
+# ------------------------------------------------------------------ the daily promo videos
+# The 8:40 cloud task uploads each day's TikTok here (STORYBOOK_UPLOAD_TOKEN, upload only). The
+# posting agent on the owner's computer and the gallery page read them (STORYBOOK_VIDEOS_TOKEN,
+# read only). Neither token can see sign-ups, and the sign-up admin token isn't needed for either.
+VIDEOS = DATA / "videos"
+VIDEOS.mkdir(parents=True, exist_ok=True)
+VIDEO_LOG = VIDEOS / "videos.jsonl"
+MAX_VIDEO_BYTES = 80 * 1024 * 1024
+
+
+def _token_ok(request: Request, env: str) -> bool:
+    token = os.environ.get(env, "")
+    given = request.headers.get("authorization", "").removeprefix("Bearer ").strip() or request.query_params.get("token", "")
+    return bool(token) and hmac.compare_digest(token, given)
+
+
+def _videos() -> list[dict]:
+    if not VIDEO_LOG.exists():
+        return []
+    rows = [json.loads(l) for l in VIDEO_LOG.read_text().splitlines() if l.strip()]
+    return sorted(rows, key=lambda r: (r["date"], r["uploaded"]), reverse=True)
+
+
+@app.post("/api/videos")
+async def upload_video(request: Request, file: UploadFile = File(...), date: str = Form(...), story: str = Form(""),
+                       hook: str = Form(""), caption: str = Form(""), link: str = Form("")):
+    if not _token_ok(request, "STORYBOOK_UPLOAD_TOKEN"):
+        raise HTTPException(404)
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+        raise HTTPException(400, "date must be YYYY-MM-DD")
+    raw = await file.read(MAX_VIDEO_BYTES + 1)
+    if len(raw) > MAX_VIDEO_BYTES or raw[4:8] != b"ftyp":
+        raise HTTPException(400, "Expected an MP4 under 80 MB.")
+    slug = re.sub(r"[^a-z0-9_]+", "_", story.lower())[:60] or "video"
+    name = f"{date}_{slug}_{uuid.uuid4().hex[:6]}.mp4"
+    (VIDEOS / name).write_bytes(raw)
+    row = {"date": date, "story": story[:80], "hook": hook[:200], "caption": caption[:2200], "link": link[:300],
+           "file": name, "bytes": len(raw), "uploaded": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+    with LOCK, VIDEO_LOG.open("a") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return {"ok": True, "file": name}
+
+
+def _with_urls(row: dict, request: Request) -> dict:
+    tok = request.query_params.get("token", "")
+    base = str(request.base_url).rstrip("/")  # https behind Fly: uvicorn runs with --proxy-headers
+    return {**row, "url": f"{base}/api/videos/file/{row['file']}" + (f"?token={tok}" if tok else "")}
+
+
+@app.get("/api/videos")
+def list_videos(request: Request):
+    if not _token_ok(request, "STORYBOOK_VIDEOS_TOKEN"):
+        raise HTTPException(404)
+    return [_with_urls(r, request) for r in _videos()]
+
+
+@app.get("/api/videos/latest")
+def latest_video(request: Request, date: str = ""):
+    """Today's (or a given date's) newest video, for the posting agent. 404 if there isn't one yet."""
+    if not _token_ok(request, "STORYBOOK_VIDEOS_TOKEN"):
+        raise HTTPException(404)
+    rows = [r for r in _videos() if not date or r["date"] == date]
+    if not rows:
+        raise HTTPException(404, "No video for that date yet.")
+    return _with_urls(rows[0], request)
+
+
+@app.get("/api/videos/file/{name}")
+def video_file(name: str, request: Request):
+    if not _token_ok(request, "STORYBOOK_VIDEOS_TOKEN"):
+        raise HTTPException(404)
+    if not re.fullmatch(r"[\w\-]+\.mp4", name) or not (VIDEOS / name).exists():
+        raise HTTPException(404)
+    return FileResponse(VIDEOS / name, media_type="video/mp4", filename=name)
+
+
+@app.get("/videos")
+def video_gallery(request: Request):
+    """A private page of every day's video with its caption and link, for posting from a phone."""
+    if not _token_ok(request, "STORYBOOK_VIDEOS_TOKEN"):
+        raise HTTPException(404)
+    import html as H
+    cards = []
+    for r in _videos():
+        u = _with_urls(r, request)["url"]
+        cards.append(f"""<article class="v"><p class="d">{H.escape(r['date'])} · {H.escape(r['story'].replace('_', ' '))}</p>
+<h2>{H.escape(r['hook'])}</h2><video src="{H.escape(u)}" controls playsinline preload="metadata"></video>
+<pre>{H.escape(r['caption'])}</pre>
+<p><button onclick="navigator.clipboard.writeText(this.closest('article').querySelector('pre').textContent)">Copy caption</button>
+ <a href="{H.escape(u)}" download>Download video</a></p><p class="l">{H.escape(r['link'])}</p></article>""")
+    body = "\n".join(cards) or "<p>No videos yet. The first one arrives after the next 8:40 run.</p>"
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>StoryBook videos</title><link rel="stylesheet" href="/css/style.css">
+<style>.v{{max-width:34rem;margin:0 auto 3rem;}} .v video{{width:100%;max-height:70vh;background:#000;border-radius:6px}}
+.v pre{{white-space:pre-wrap;font-family:var(--serif);background:rgba(255,255,255,.5);padding:.8rem;border-radius:4px}}
+.v h2{{font-size:1.6rem}} .d{{font-family:var(--caps);color:var(--moss);letter-spacing:.1em}} .l{{font-size:.85rem;word-break:break-all;color:var(--ink-soft)}}
+button{{font:inherit;cursor:pointer}}</style></head><body><div class="book"><header class="running-head"><a class="wordmark" href="/">StoryBook</a>
+<span class="note">the daily videos</span></header><section class="section">{body}</section></div></body></html>"""
+    from fastapi.responses import HTMLResponse
+    return HTMLResponse(page, headers={"Cache-Control": "no-store", "X-Robots-Tag": "noindex"})
+
 app.mount("/media/jobs", StaticFiles(directory=JOBS_DIR), name="jobs")
 app.mount("/", StaticFiles(directory=SITE, html=True), name="site")
