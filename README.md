@@ -217,3 +217,26 @@ fly deploy --ha=false                # keep to ONE machine: Studio jobs live in 
 The VM is `shared-cpu-4x` with 4 GB, which renders Studio audio at roughly real time.
 It stops when idle and wakes on the next request. A finished Studio recording lives on the
 machine's disk until the machine is replaced. For permanent storage, mount a volume at `/data`.
+
+### Automatic deploys
+
+Every push to the default branch (merging a pull request counts) deploys to Fly through
+`.github/workflows/deploy.yml`, and every pull request gets a build check from
+`.github/workflows/ci.yml`: the Docker image must build and the server must answer `/api/voices`.
+
+The deploy needs a Fly token stored as a GitHub secret. Set it up once:
+
+```bash
+fly tokens create deploy -a storybook-audio -x 8760h   # deploy-only token for this app, valid one year
+```
+
+Then in GitHub open **Settings → Secrets and variables → Actions → New repository secret**,
+name it `FLY_API_TOKEN`, and paste the whole token (it starts with `FlyV1`). Or from a terminal:
+
+```bash
+gh secret set FLY_API_TOKEN -R DenverDawgs18/StoryBook   # paste the token when prompted
+```
+
+To redeploy without a new commit, run **Deploy to Fly** from the Actions tab. If the token
+expires or is revoked, the deploy job fails with a message pointing back here; create a new
+token and replace the secret.
