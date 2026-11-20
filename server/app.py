@@ -4,7 +4,10 @@
 """
 from __future__ import annotations
 
+import atexit
+from contextlib import asynccontextmanager
 import io
+import logging
 import os
 import json
 import queue
@@ -19,8 +22,15 @@ from pathlib import Path
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from opentelemetry.exporter.otlp.proto.http._log_exporter import OTLPLogExporter
+from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler
+from opentelemetry.sdk._logs.export import BatchLogRecordProcessor
+from opentelemetry.sdk.resources import Resource
+from posthog import Posthog
+from posthog.integrations.asgi import PosthogASGIMiddleware
 from pydantic import BaseModel
 
+from server.config import get_settings
 from storybook import director
 from storybook.render import render
 from storybook.script import parse
@@ -36,7 +46,80 @@ SAMPLES.mkdir(parents=True, exist_ok=True)
 
 MAX_CHARS = 150_000  # ~ 25k words, ~ 3 hours of audio
 
-app = FastAPI(title="StoryBook")
+logger = logging.getLogger(__name__)
+posthog_log_logger = logging.getLogger("storybook.posthog_logs")
+posthog_log_logger.propagate = False
+settings = get_settings()
+missing_posthog_settings = [
+    name
+    for name, value in (
+        ("POSTHOG_PROJECT_TOKEN", settings.posthog_project_token),
+        ("POSTHOG_HOST", settings.posthog_host),
+    )
+    if not value
+]
+
+posthog_client: Posthog | None = None
+posthog_log_provider: LoggerProvider | None = None
+if missing_posthog_settings:
+    if os.environ.get("ENVIRONMENT") != "production":
+        for name in missing_posthog_settings:
+            logger.warning(
+                "%s variable required by PostHog is missing or un-configured, "
+                "this causes events to be silently missed. This error stops "
+                "appearing once %s is configured",
+                name,
+                name,
+            )
+else:
+    posthog_client = Posthog(
+        settings.posthog_project_token,
+        host=settings.posthog_host,
+        enable_exception_autocapture=True,
+    )
+    atexit.register(posthog_client.shutdown)
+    try:
+        posthog_log_provider = LoggerProvider(
+            resource=Resource.create({"service.name": "storybook"})
+        )
+        posthog_log_provider.add_log_record_processor(
+            BatchLogRecordProcessor(
+                OTLPLogExporter(
+                    endpoint=f"{settings.posthog_host.rstrip('/')}/i/v1/logs",
+                    headers={"Authorization": f"Bearer {settings.posthog_project_token}"},
+                    timeout=3,
+                ),
+                export_timeout_millis=3000,
+            )
+        )
+        posthog_log_logger.addHandler(
+            LoggingHandler(logger_provider=posthog_log_provider)
+        )
+        posthog_log_logger.setLevel(logging.INFO)
+    except Exception:
+        posthog_log_provider = None
+        logger.exception("Unable to configure PostHog log export")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    yield
+    if posthog_client is not None:
+        try:
+            posthog_client.flush()
+        except Exception:
+            logger.exception("Unable to flush PostHog events during shutdown")
+    if posthog_log_provider is not None:
+        try:
+            posthog_log_provider.force_flush(timeout_millis=3000)
+            posthog_log_provider.shutdown()
+        except Exception:
+            logger.exception("Unable to flush PostHog logs during shutdown")
+
+
+app = FastAPI(title="StoryBook", lifespan=lifespan)
+if posthog_client is not None:
+    app.add_middleware(PosthogASGIMiddleware, client=posthog_client)
 
 JOBS: dict[str, dict] = {}
 WORK: "queue.Queue[str]" = queue.Queue()
@@ -93,9 +176,40 @@ def _worker():
             job.update(status="done", progress=1.0, message="Ready",
                        audio=f"/media/jobs/{jid}.mp3", duration=info["duration"],
                        timings=f"/media/jobs/{jid}.json")
+            render_duration_seconds = round(time.time() - job["started"])
+            audio_duration_seconds = round(info["duration"])
+            if posthog_client is not None:
+                posthog_client.capture(
+                    "audiobook_render_completed",
+                    properties={
+                        "render_duration_seconds": render_duration_seconds,
+                        "audio_duration_seconds": audio_duration_seconds,
+                    },
+                )
+            posthog_log_logger.info(
+                "audiobook render completed",
+                extra={
+                    "event": "audiobook_render_completed",
+                    "render_duration_seconds": render_duration_seconds,
+                    "audio_duration_seconds": audio_duration_seconds,
+                },
+            )
         except Exception as e:  # surface the failure to the browser
             traceback.print_exc()
             job.update(status="error", message=str(e)[:300])
+            error_type = type(e).__name__
+            if posthog_client is not None:
+                posthog_client.capture(
+                    "audiobook_render_failed",
+                    properties={"error_type": error_type},
+                )
+            posthog_log_logger.error(
+                "audiobook render failed",
+                extra={
+                    "event": "audiobook_render_failed",
+                    "error_type": error_type,
+                },
+            )
         finally:
             job["finished"] = time.time()
             (JOBS_DIR / f"{jid}.state.json").write_text(json.dumps({k: v for k, v in job.items() if not k.startswith("_")}))
@@ -133,6 +247,23 @@ async def analyze(text: str = Form(""), file: UploadFile | None = File(None)):
     if len(text) > MAX_CHARS:
         raise HTTPException(413, f"That manuscript is {len(text):,} characters; the Studio takes up to {MAX_CHARS:,} at a time.")
     info = director.analyze(text)
+    input_type = "file" if file is not None and file.filename else "pasted_text"
+    if posthog_client is not None:
+        posthog_client.capture(
+            "manuscript_analyzed",
+            properties={
+                "input_type": input_type,
+                "manuscript_character_count": len(text),
+            },
+        )
+    posthog_log_logger.info(
+        "manuscript analysis completed",
+        extra={
+            "event": "manuscript_analyzed",
+            "input_type": input_type,
+            "manuscript_character_count": len(text),
+        },
+    )
     out = _public(info)
     out["text"] = text  # echo back the extracted text so the browser can submit it
     first = next((p for p in info["_paras"] if len(p) > 40), "")
@@ -171,6 +302,18 @@ def create_job(req: JobRequest):
         ahead = sum(1 for j in JOBS.values() if j["status"] in ("queued", "running"))
         JOBS[jid] = {"id": jid, "status": "queued", "progress": 0.0, "message": f"Queued ({ahead} ahead)",
                      "title": req.title, "author": req.author, "created": time.time(), "_source": source}
+    if posthog_client is not None:
+        posthog_client.capture(
+            "audiobook_render_requested",
+            properties={
+                "input_format": "story_script" if req.text.lstrip().startswith("---") and "\ncast:" in req.text[:4000] else "manuscript",
+                "manuscript_character_count": len(req.text),
+                "cast_size": len(req.cast),
+                "mood_selected": req.mood is not None,
+                "sound_effects_enabled": req.effects,
+                "narration_speed": max(0.7, min(req.speed, 1.3)),
+            },
+        )
     WORK.put(jid)
     return {"id": jid}
 
