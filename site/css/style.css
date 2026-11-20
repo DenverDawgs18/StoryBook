@@ -422,9 +422,6 @@ input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); b
 .callout { text-align: center; max-width: 44rem; margin: 0 auto; }
 .callout .plate { max-width: 22rem; margin: 0 auto 1.4rem; }
 
-.keep-posted { margin: 1.6rem 0 .4rem; padding: 1.1rem 1.2rem; border: 1.5px dashed var(--sage); border-radius: 10px; position: relative; }
-.keep-posted .kp-lede { margin: 0 0 .7rem; }
-.keep-posted .marginalia { font-size: 1.25rem; margin-right: .3rem; }
 
 /* ------------------------------------------------------------ responsive */
 @media (max-width: 860px) {
