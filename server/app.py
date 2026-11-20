@@ -30,6 +30,8 @@ from storybook.render import render
 from storybook.script import parse
 from storybook.voices import VOICE_CATALOG, Character, speak
 
+from . import notify
+
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 DATA = Path(os.environ.get("STORYBOOK_DATA", ROOT / "data"))
@@ -297,6 +299,7 @@ def personal_signup(req: SignupRequest, request: Request):
            "visitor": _visitor(request)}
     with LOCK, SIGNUPS.open("a") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    notify.signup(row, _interest(row))
     return {"ok": True}
 
 
@@ -328,6 +331,7 @@ def subscribe(req: SubscribeRequest, request: Request):
            "job_id": req.job_id if re.fullmatch(r"[0-9a-f]{12}", req.job_id or "") else "", "visitor": _visitor(request)}
     with LOCK, SIGNUPS.open("a") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    notify.signup(row, _interest(row))
     return {"ok": True}
 
 
