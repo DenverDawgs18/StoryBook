@@ -54,6 +54,17 @@ export function mountPlayer(root, ep, opts = {}) {
     follow(audio.currentTime);
   };
   btn.addEventListener("click", () => (audio.paused ? audio.play() : audio.pause()));
+  // analytics: what was played, from where, and how far people get (no names, ever)
+  const track = (ev, extra = {}) => window.sbTrack?.(ev, { story: ep.slug || opts.track?.story || "", kind: opts.track?.kind || "episode", ...extra });
+  let played = false, reached = 0;
+  audio.addEventListener("play", () => { if (!played) { played = true; track("story_play"); } });
+  audio.addEventListener("timeupdate", () => {
+    const d = audio.duration || ep.duration;
+    if (!d) return;
+    const pct = (audio.currentTime / d) * 100;
+    for (const m of [25, 50, 75, 90]) if (pct >= m && reached < m) { reached = m; track("story_progress", { percent: m }); }
+  });
+  audio.addEventListener("ended", () => track("story_complete", { seconds: Math.round(audio.duration || 0) }));
   audio.addEventListener("play", () => { btn.innerHTML = ICON_PAUSE; btn.setAttribute("aria-label", "Pause"); opts.onplay?.(); });
   audio.addEventListener("pause", () => { btn.innerHTML = ICON_PLAY; btn.setAttribute("aria-label", "Play"); opts.onpause?.(); });
   audio.addEventListener("timeupdate", setP);
@@ -165,4 +176,6 @@ export async function loadCatalog() {
   if (!r.ok) throw new Error("catalog");
   return r.json();
 }
-export { fmt, esc };
+// plates: painted landscapes live in assets/land (webp); older washes in assets/paint (png)
+const artUrl = (art) => (art || "").startsWith("land_") ? `assets/land/${art}.webp` : `assets/paint/${art || "blob2"}.png`;
+export { fmt, esc, artUrl };

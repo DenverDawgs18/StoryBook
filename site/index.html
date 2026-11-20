@@ -3,129 +3,195 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StoryBook — old stories, read aloud in the dark</title>
-<meta name="description" content="Full-cast, soundscaped audiobooks of public-domain classics, painted in watercolour. And a studio to turn your own manuscript into one.">
+<title>StoryBook — old tales, read aloud</title>
+<meta name="description" content="Full-cast, soundscaped audiobooks of fairy tales and public-domain classics, illustrated in watercolour. And a studio to turn your own manuscript into one.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/analytics.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
 </svg>
 
-<header class="masthead">
+<div class="book">
+<header class="running-head">
   <a class="wordmark" href="./">StoryBook</a>
   <nav class="nav" aria-label="Main">
     <a href="./" aria-current="page">Listen</a>
-    <a href="#library">Library</a>
+    <a href="#tales">Library</a><a href="personal.html">For your child</a>
     <a href="studio.html">Studio</a>
     <a href="#craft">How it's made</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="wash" aria-hidden="true"></div>
-  <div>
-    <p class="eyebrow">public-domain classics, performed</p>
-    <h1>Old stories, read aloud <em>in the dark.</em></h1>
-    <p class="lede">A cast of voices and a soundscape built from scratch for each story: wind in the chimney, the tick of a clock, a heart beating under the floor. Put the lights out and listen.</p>
-    <div class="actions">
-      <a class="btn" href="#featured">Hear tonight's story</a>
-      <a class="btn ghost" href="studio.html">Bring your own manuscript</a>
-    </div>
+<!-- ───────────────────────────── title page -->
+<section class="titlepage">
+  <figure class="frontispiece">
+    <img src="assets/land/hero.webp" alt="A watercolour of a green river valley: a road winds past a small cottage toward blue hills and dark fir woods.">
+    <figcaption>Frontispiece. The road through the greenwood.</figcaption>
+  </figure>
+  <h1>StoryBook</h1>
+  <p class="alt-title">or, Old Tales Read Aloud</p>
+  <div class="ornament" aria-hidden="true">❦</div>
+  <p class="lede">Fairy tales and old stories performed by a full cast, each with a soundscape made for it alone: birdsong in the wood, rain on the castle roof, a fire in the hills. Pull the covers up and listen.</p>
+  <div class="actions">
+    <a class="btn" href="#featured" data-track="cta_click" data-track-cta="hear_tonight">Hear tonight's tale</a>
+    <a class="btn ghost" href="studio.html" data-track="cta_click" data-track-cta="hero_studio">Bring your own manuscript</a>
   </div>
-  <span class="marginalia" aria-hidden="true">best with headphones,<br>and the door shut ~</span>
+  <p class="imprint">with tales from grimm · jacobs · andersen · poe · gibbon</p>
 </section>
 
-<section class="section" id="featured">
-  <div class="featured" id="feature-root">
-    <figure class="art">
-      <img class="paint eye" src="assets/paint/eye.png" alt="A watercolour of a pale, filmed eye in shades of green">
-      <img class="paint stain" src="assets/paint/blob3.png" alt="">
-      <figcaption>“a pale blue eye, with a film over it”</figcaption>
+<!-- ───────────────────────────── contents -->
+<nav class="contents" aria-labelledby="contents-h">
+  <h2 id="contents-h">Contents</h2>
+  <ol class="toc">
+    <li><a href="#featured"><span class="n">I.</span><span class="t">Tonight's Tale<small id="toc-feat"></small></span><span class="dots"></span><span class="p">1</span></a></li>
+    <li><a href="#tales"><span class="n">II.</span><span class="t">The Fairy Tales<small>Grimm, Jacobs &amp; Andersen</small></span><span class="dots"></span><span class="p">5</span></a></li>
+    <li><a href="#afterdark"><span class="n">III.</span><span class="t">Tales for After Dark<small>Poe &amp; Gibbon</small></span><span class="dots"></span><span class="p">31</span></a></li>
+    <li><a href="personal.html"><span class="n">IV.</span><span class="t">A Story for Your Child<small>starring them</small></span><span class="dots"></span><span class="p">45</span></a></li>
+    <li><a href="studio.html"><span class="n">V.</span><span class="t">The Studio<small>your own pages</small></span><span class="dots"></span><span class="p">47</span></a></li>
+    <li><a href="#craft"><span class="n">VI.</span><span class="t">Afterword<small>how it's made</small></span><span class="dots"></span><span class="p">53</span></a></li>
+  </ol>
+</nav>
+
+<!-- ───────────────────────────── I. featured: a two-page spread -->
+<section class="spread featured" id="featured">
+  <div class="page verso">
+    <figure class="plate">
+      <div class="sheet" id="f-sheet"><img id="f-art" src="assets/land/land_pigs.webp" alt=""></div>
+      <figcaption><b>Plate I</b><span id="f-caption">“he built his house with them”</span></figcaption>
     </figure>
-    <div>
-      <p class="eyebrow">the featured story</p>
-      <h2 id="f-title">The Tell-Tale Heart</h2>
-      <p class="byline" id="f-byline">Edgar Allan Poe · 1843</p>
-      <p class="blurb" id="f-blurb">A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.</p>
-      <ul class="facts" id="f-facts"></ul>
-      <div id="f-player"><p class="note">The recording is being prepared.</p></div>
-    </div>
+  </div>
+  <div class="page recto">
+    <p class="running">Chapter the First · Tonight's Tale</p>
+    <h2 id="f-title">The Three Little Pigs</h2>
+    <p class="byline" id="f-byline">Joseph Jacobs · 1890</p>
+    <p class="blurb dropcap" id="f-blurb">Three little pigs go out to seek their fortune and build three houses: one of straw, one of furze, one of brick. Then a wolf comes knocking, and he is very good at blowing.</p>
+    <ul class="facts" id="f-facts"></ul>
+    <div id="f-player"><p class="note">The recording is being prepared.</p></div>
+    <p class="folio">— 1 —</p>
   </div>
 </section>
 
-<div class="deckle" aria-hidden="true"></div>
-
-<section class="section" id="library">
-  <p class="eyebrow">the library</p>
-  <h2>More from the shelf</h2>
-  <p class="note" style="max-width:38rem">Every recording is made by the same machinery: neural voices cast per character, and a score and soundscape synthesised for that story alone.</p>
-  <div class="shelf" id="shelf"></div>
+<!-- ───────────────────────────── a story for your child -->
+<section class="section" id="yours" style="padding-bottom:0">
+  <div class="callout">
+    <p class="chapter-no">new · a story for your child</p>
+    <h2>What if the hero had their name?</h2>
+    <p class="blurb" style="margin:0 auto 1.4rem">The clever third little pig, or the shoemaker's child who sees the elves: we write your child into the tale, give them a voice in the cast, and end it with a goodnight. Hear a free preview with their name in it.</p>
+    <a class="btn" href="personal.html" data-track="cta_click" data-track-cta="home_personal">Make one for your child</a>
+  </div>
 </section>
 
+<!-- ───────────────────────────── II. the fairy tales -->
+<section class="section" id="tales">
+  <div class="chapter-head">
+    <p class="chapter-no">chapter the second</p>
+    <h2>The Fairy Tales</h2>
+    <div class="ornament" aria-hidden="true">❦</div>
+    <p>Told by the firesides of Hesse and written down by the Brothers Grimm, gathered from English nurseries by Joseph Jacobs, or dreamed up in Copenhagen by a cobbler's son named Andersen. Each is cast with its own voices and painted with its own weather.</p>
+  </div>
+  <div class="shelf" id="shelf-fairy"></div>
+  <p class="folio">— 5 —</p>
+</section>
+
+<!-- ───────────────────────────── III. after dark -->
+<section class="section" id="afterdark">
+  <div class="chapter-head">
+    <p class="chapter-no">chapter the third</p>
+    <h2>Tales for After Dark</h2>
+    <div class="ornament" aria-hidden="true">❦</div>
+    <p>For when the children are asleep: Poe's madmen and masked balls, and the night a gate in the walls of Rome opened from the inside.</p>
+  </div>
+  <div class="shelf" id="shelf-dark"></div>
+  <p class="folio">— 31 —</p>
+</section>
+
+<!-- ───────────────────────────── V. afterword -->
 <section class="section" id="craft">
-  <p class="eyebrow">how it's made</p>
-  <h2>Voices, weather &amp; music</h2>
+  <div class="chapter-head">
+    <p class="chapter-no">afterword</p>
+    <h2>Voices, Weather &amp; Music</h2>
+    <div class="ornament" aria-hidden="true">❦</div>
+  </div>
   <div class="steps">
     <div class="step">
       <img class="paint dab" src="assets/paint/blob1.png" alt="">
-      <span class="num">i.</span>
+      <span class="num">the first</span>
       <h3>A cast, not a reader</h3>
-      <p>Every story is scripted like a radio play. The narrator, the old man, the ghost and the clerk each get their own voice, some of them blends of two. Pace, pitch and the room they speak in are directed line by line.</p>
+      <p class="dropcap">Every story is scripted like a radio play. The narrator, the wolf, the witch and the little man by the fire are each cast from the most natural voices available, at their own pitch, never processed into something they aren't. Pace and the room they speak in are directed line by line.</p>
     </div>
     <div class="step">
       <img class="paint dab" src="assets/paint/blob2.png" alt="">
-      <span class="num">ii.</span>
+      <span class="num">the second</span>
       <h3>Weather from noise</h3>
-      <p>No sound is sampled. Wind, rain, embers, bells, chains and heartbeats are synthesised from filtered noise and oscillators, then placed in rooms with convolution reverb, so each world sounds like itself.</p>
+      <p class="dropcap">No sound is sampled. Birdsong, rain, embers, a spinning wheel and a frog's spring are synthesised from filtered noise and oscillators, then placed in rooms with convolution reverb, so each world sounds like itself.</p>
     </div>
     <div class="step">
       <img class="paint dab" src="assets/paint/blob6.png" alt="">
-      <span class="num">iii.</span>
+      <span class="num">the third</span>
       <h3>A score that listens</h3>
-      <p>Choir pads, cello drones, music boxes and a spectral waltz swell between scenes and duck under the voice whenever someone speaks. The finished mix is mastered to broadcast loudness.</p>
+      <p class="dropcap">Harp and strings, a music box playing Brahms, cello drones and a spectral waltz swell between scenes and duck under the voice whenever someone speaks. The finished mix is mastered to broadcast loudness.</p>
     </div>
   </div>
-  <p style="margin-top:2.6rem"><a class="btn" href="studio.html">Try the Studio with your own pages</a></p>
+  <p class="centre" style="margin-top:2.6rem"><a class="btn" href="studio.html" data-track="cta_click" data-track-cta="afterword_studio">Try the Studio with your own pages</a></p>
+  <p class="folio">— 53 —</p>
 </section>
 
-<footer>
-  <div><a class="wordmark" href="./">StoryBook</a><p>Texts from <a href="https://www.gutenberg.org">Project Gutenberg</a>. Voices by Kokoro-82M (Apache-2.0).<br>Every sound and every note is synthesised.</p></div>
-  <p class="marginalia">“Hearken! and observe…”</p>
+<footer class="colophon">
+  <p class="finis">Finis.</p>
+  <p>Texts from <a href="https://www.gutenberg.org">Project Gutenberg</a>. Voices by Kokoro-82M (Apache-2.0). Set in IM Fell, cut by Igino Marini, and Spectral.</p>
+  <p>Every plate is painted by a program, and every sound and every note is synthesised.</p>
+  <div class="landstrip" aria-hidden="true"></div>
 </footer>
+</div>
 
 <script type="module">
-import { mountPlayer, loadCatalog, fmt, esc } from "./js/player.js";
+import { mountPlayer, loadCatalog, fmt, esc, artUrl } from "./js/player.js";
 
-const paint = (n) => new URL(`assets/paint/${n}.png`, location.href).href;
-const WASHES = ["blob1", "blob2", "blob3", "blob4", "blob5", "blob6"];
+const ROMAN = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV"];
+let plateNo = 1;
+const card = (e) => {
+  plateNo += 1;
+  const eye = e.art && !e.art.startsWith("land_");
+  return `
+    <a class="card" href="listen.html?ep=${encodeURIComponent(e.slug)}" data-track="library_open" data-track-story="${esc(e.slug)}">
+      <figure class="plate"><div class="sheet${eye ? " eye" : ""}"><img src="${artUrl(e.art)}" alt="" decoding="async"></div></figure>
+      <h3>${esc(e.title)}</h3>
+      <div class="meta">Plate ${ROMAN[plateNo - 1] || plateNo} · ${esc(e.author)}${e.year ? ", " + e.year : ""} · ${fmt(e.duration)}</div>
+      <span class="mood">${esc(e.mood || "")}</span>
+      <p>${esc(e.blurb || "")}</p>
+    </a>`;
+};
+
 try {
   const cat = await loadCatalog();
   const feat = cat.episodes.find((e) => e.featured) || cat.episodes[0];
   if (feat) {
     document.getElementById("f-title").textContent = feat.title;
     document.getElementById("f-byline").textContent = `${feat.author}${feat.year ? " · " + feat.year : ""}`;
+    document.getElementById("toc-feat").textContent = feat.title;
     if (feat.blurb) document.getElementById("f-blurb").textContent = feat.blurb;
+    if (feat.caption) document.getElementById("f-caption").textContent = feat.caption;
+    const art = document.getElementById("f-art");
+    art.src = artUrl(feat.art);
+    art.alt = `A watercolour plate for ${feat.title}`;
     document.getElementById("f-facts").innerHTML =
       `<li>${fmt(feat.duration)} long</li><li>${esc(feat.mood || "")}</li><li>${feat.voices} voices</li>`;
-    const root = document.getElementById("feature-root");
+    const root = document.getElementById("featured");
     mountPlayer(document.getElementById("f-player"), feat, {
       onplay: () => root.classList.add("playing"), onpause: () => root.classList.remove("playing"),
     });
   }
-  const shelf = document.getElementById("shelf");
   const rest = cat.episodes.filter((e) => e !== feat);
-  shelf.innerHTML = rest.map((e, i) => `
-    <a class="card" style="--wash:url('${paint(WASHES[i % WASHES.length])}')" href="listen.html?ep=${encodeURIComponent(e.slug)}">
-      <span class="mood">${esc(e.mood || "")}</span>
-      <h3>${esc(e.title)}</h3>
-      <div class="meta">${esc(e.author)}${e.year ? " · " + e.year : ""} · ${fmt(e.duration)}</div>
-      <p>${esc(e.blurb || "")}</p>
-    </a>`).join("") + `
-    <a class="card soon" style="--wash:url('${paint("blob5")}')" href="studio.html">
-      <span class="mood">your pages here</span><h3>Your manuscript</h3>
-      <div class="meta">the Studio</div><p>Paste a story or upload a file, then cast its voices, choose its weather and listen.</p>
+  document.getElementById("shelf-fairy").innerHTML = rest.filter((e) => e.shelf === "fairy").map(card).join("");
+  document.getElementById("shelf-dark").innerHTML = rest.filter((e) => e.shelf !== "fairy").map(card).join("") + `
+    <a class="card studio-card" href="studio.html">
+      <figure class="plate"><div class="sheet"><span>this plate is left blank<br>for your own story</span></div></figure>
+      <h3>Your manuscript</h3>
+      <div class="meta">The Studio</div>
+      <p>Paste a story or upload a file, then cast its voices, choose its weather and listen.</p>
     </a>`;
 } catch (err) {
   document.getElementById("f-player").innerHTML = '<p class="note">Recordings will appear here once they are rendered (<code>python -m storybook render scripts/*.story</code>).</p>';

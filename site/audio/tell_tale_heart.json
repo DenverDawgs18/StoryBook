@@ -6,7 +6,7 @@
   "source": "https://www.gutenberg.org/ebooks/2148",
   "blurb": "A man insists he is not mad. He will prove it, calmly, by telling you how he murdered the old man with the vulture eye — and what he heard beneath the floor.\n",
   "mood": "Night, dread, a heart that will not stop",
-  "featured": true,
+  "featured": false,
   "art": "eye",
   "caption": "“a pale blue eye, with a film over it”",
   "labels": {
@@ -14,7 +14,7 @@
    "oldman": "the old man"
   }
  },
- "duration": 1009.31,
+ "duration": 1009.03,
  "chapters": [
   {
    "title": "The Tell-Tale Heart. By Edgar Allan Poe.",
@@ -683,1396 +683,1396 @@
      "speaker": "oldman",
      "text": "Who's there?",
      "start": 335.43,
-     "end": 336.64,
+     "end": 336.41,
      "phrases": [
       [
        "Who's there?",
        335.43,
-       336.64
+       336.41
       ]
      ]
     }
    ],
-   "end": 336.64
+   "end": 336.41
   },
   {
-   "start": 339.99,
+   "start": 339.76,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I kept quite still and said nothing. For a whole hour I did not move a muscle, and in the meantime I did not hear him lie down. He was still sitting up in the bed listening;—just as I have done, night after night, hearkening to the death watches in the wall.",
-     "start": 339.99,
-     "end": 356.77,
+     "start": 339.76,
+     "end": 356.54,
      "phrases": [
       [
        "I kept quite still and said nothing.",
-       339.99,
-       342.5
+       339.76,
+       342.28
       ],
       [
        "For a whole hour I did not move a muscle, and in the meantime I did not hear him lie down.",
-       342.95,
-       348.31
+       342.73,
+       348.08
       ],
       [
        "He was still sitting up in the bed listening;",
-       348.76,
-       351.59
+       348.53,
+       351.36
       ],
       [
        "just as I have done, night after night, hearkening to the death watches in the wall.",
-       351.82,
-       356.77
+       351.6,
+       356.54
       ]
      ]
     }
    ],
-   "end": 356.77
+   "end": 356.54
   },
   {
-   "start": 360.62,
+   "start": 360.39,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Presently I heard a slight groan, and I knew it was the groan of mortal terror. It was not a groan of pain or of grief—oh, no!—it was the low stifled sound that arises from the bottom of the soul when overcharged with awe. I knew the sound well. Many a night, just at midnight, when all the world slept, it has welled up from my own bosom, deepening, with its dreadful echo, the terrors that distracted me. I say I knew it well. I knew what the old man felt, and pitied him, although I chuckled at heart. I knew that he had been lying awake ever since the first slight noise, when he had turned in the bed. His fears had been ever since growing upon him. He had been trying to fancy them causeless, but could not. He had been saying to himself—",
-     "start": 360.62,
-     "end": 411.3,
+     "start": 360.39,
+     "end": 411.07,
      "phrases": [
       [
        "Presently I heard a slight groan, and I knew it was the groan of mortal terror.",
-       360.62,
-       365.29
+       360.39,
+       365.06
       ],
       [
        "It was not a groan of pain or of grief",
-       365.74,
-       368.43
+       365.51,
+       368.2
       ],
       [
        "oh, no!",
-       368.66,
-       369.86
+       368.44,
+       369.63
       ],
       [
        "it was the low stifled sound that arises from the bottom of the soul when overcharged with awe.",
-       370.09,
-       376.21
+       369.87,
+       375.98
       ],
       [
        "I knew the sound well.",
-       376.66,
-       378.36
+       376.44,
+       378.13
       ],
       [
        "Many a night, just at midnight, when all the world slept, it has welled up from my own bosom, deepening, with its dreadful echo, the terrors that distracted me.",
-       378.81,
-       388.26
+       378.58,
+       388.04
       ],
       [
        "I say I knew it well.",
-       388.71,
-       390.54
+       388.49,
+       390.31
       ],
       [
        "I knew what the old man felt, and pitied him, although I chuckled at heart.",
-       390.99,
-       395.57
+       390.76,
+       395.34
       ],
       [
        "I knew that he had been lying awake ever since the first slight noise, when he had turned in the bed.",
-       396.02,
-       401.56
+       395.79,
+       401.34
       ],
       [
        "His fears had been ever since growing upon him.",
-       402.01,
-       405.05
+       401.79,
+       404.83
       ],
       [
        "He had been trying to fancy them causeless, but could not.",
-       405.5,
-       408.74
+       405.28,
+       408.52
       ],
       [
        "He had been saying to himself",
-       409.19,
-       411.3
+       408.97,
+       411.07
       ]
      ]
     }
    ],
-   "end": 411.3
+   "end": 411.07
   },
   {
-   "start": 412.15,
+   "start": 411.92,
    "segments": [
     {
      "speaker": "oldman",
      "text": "It is nothing but the wind in the chimney—it is only a mouse crossing the floor,",
-     "start": 412.15,
-     "end": 417.67,
+     "start": 411.92,
+     "end": 417.12,
      "phrases": [
       [
        "It is nothing but the wind in the chimney",
-       412.15,
-       414.83
+       411.92,
+       414.4
       ],
       [
        "it is only a mouse crossing the floor,",
-       415.09,
-       417.67
+       414.66,
+       417.12
       ]
      ]
     }
    ],
-   "end": 417.67
+   "end": 417.12
   },
   {
-   "start": 418.52,
+   "start": 417.97,
    "segments": [
     {
      "speaker": "narrator",
      "text": "or",
-     "start": 418.52,
-     "end": 419.06,
+     "start": 417.97,
+     "end": 418.51,
      "phrases": [
       [
        "or",
-       418.52,
-       419.06
+       417.97,
+       418.51
       ]
      ]
     }
    ],
-   "end": 419.06
+   "end": 418.51
   },
   {
-   "start": 419.91,
+   "start": 419.36,
    "segments": [
     {
      "speaker": "oldman",
      "text": "It is merely a cricket which has made a single chirp.",
-     "start": 419.91,
-     "end": 423.15,
+     "start": 419.36,
+     "end": 422.86,
      "phrases": [
       [
        "It is merely a cricket which has made a single chirp.",
-       419.91,
-       423.15
+       419.36,
+       422.86
       ]
      ]
     }
    ],
-   "end": 423.15
+   "end": 422.86
   },
   {
-   "start": 424.0,
+   "start": 423.71,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Yes, he had been trying to comfort himself with these suppositions: but he had found all in vain. All in vain; because Death, in approaching him had stalked with his black shadow before him, and enveloped the victim. And it was the mournful influence of the unperceived shadow that caused him to feel—although he neither saw nor heard—to feel the presence of my head within the room.",
-     "start": 424.0,
-     "end": 449.53,
+     "start": 423.71,
+     "end": 449.25,
      "phrases": [
       [
        "Yes, he had been trying to comfort himself with these suppositions:",
-       424.0,
-       427.76
+       423.71,
+       427.48
       ],
       [
        "but he had found all in vain.",
-       428.06,
-       429.99
+       427.78,
+       429.71
       ],
       [
        "All in vain;",
-       430.44,
-       431.84
+       430.16,
+       431.56
       ],
       [
        "because Death, in approaching him had stalked with his black shadow before him, and enveloped the victim.",
-       432.14,
-       438.13
+       431.86,
+       437.85
       ],
       [
        "And it was the mournful influence of the unperceived shadow that caused him to feel",
-       438.58,
-       443.43
+       438.3,
+       443.15
       ],
       [
        "although he neither saw nor heard",
-       443.66,
-       446.27
+       443.38,
+       445.99
       ],
       [
        "to feel the presence of my head within the room.",
-       446.51,
-       449.53
+       446.22,
+       449.25
       ]
      ]
     }
    ],
-   "end": 449.53
+   "end": 449.25
   },
   {
-   "start": 450.38,
+   "start": 450.1,
    "segments": [
     {
      "speaker": "narrator",
      "text": "When I had waited a long time, very patiently, without hearing him lie down, I resolved to open a little—a very, very little crevice in the lantern. So I opened it—you cannot imagine how stealthily, stealthily—until, at length a single dim ray, like the thread of the spider, shot from out the crevice and fell full upon the vulture eye.",
-     "start": 450.38,
-     "end": 473.31,
+     "start": 450.1,
+     "end": 473.03,
      "phrases": [
       [
        "When I had waited a long time, very patiently, without hearing him lie down, I resolved to open a little",
-       450.38,
-       456.92
+       450.1,
+       456.64
       ],
       [
        "a very, very little crevice in the lantern.",
-       457.16,
-       460.19
+       456.87,
+       459.9
       ],
       [
        "So I opened it",
-       460.64,
-       462.17
+       460.36,
+       461.89
       ],
       [
        "you cannot imagine how stealthily, stealthily",
-       462.4,
-       465.41
+       462.12,
+       465.12
       ],
       [
        "until, at length a single dim ray, like the thread of the spider, shot from out the crevice and fell full upon the vulture eye.",
-       465.64,
-       473.31
+       465.36,
+       473.03
       ]
      ]
     }
    ],
-   "end": 473.31
+   "end": 473.03
   },
   {
-   "start": 477.16,
+   "start": 476.88,
    "segments": [
     {
      "speaker": "narrator",
      "text": "It was open—wide, wide open—and I grew furious as I gazed upon it. I saw it with perfect distinctness—all a dull blue, with a hideous veil over it that chilled the very marrow in my bones; but I could see nothing else of the old man's face or person: for I had directed the ray as if by instinct, precisely upon the damned spot.",
-     "start": 477.16,
-     "end": 501.44,
+     "start": 476.88,
+     "end": 501.16,
      "phrases": [
       [
        "It was open",
-       477.16,
-       478.44
+       476.88,
+       478.16
       ],
       [
        "wide, wide open",
-       478.68,
-       480.42
+       478.4,
+       480.14
       ],
       [
        "and I grew furious as I gazed upon it.",
-       480.65,
-       483.38
+       480.37,
+       483.09
       ],
       [
        "I saw it with perfect distinctness",
-       483.83,
-       486.35
+       483.55,
+       486.06
       ],
       [
        "all a dull blue, with a hideous veil over it that chilled the very marrow in my bones;",
-       486.58,
-       491.77
+       486.3,
+       491.49
       ],
       [
        "but I could see nothing else of the old man's face or person:",
-       492.07,
-       496.05
+       491.79,
+       495.77
       ],
       [
        "for I had directed the ray as if by instinct, precisely upon the damned spot.",
-       496.35,
-       501.44
+       496.07,
+       501.16
       ]
      ]
     }
    ],
-   "end": 501.44
+   "end": 501.16
   },
   {
-   "start": 502.29,
+   "start": 502.01,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And have I not told you that what you mistake for madness is but over-acuteness of the sense?—now, I say, there came to my ears a low, dull, quick sound, such as a watch makes when enveloped in cotton.",
-     "start": 502.29,
-     "end": 515.25,
+     "start": 502.01,
+     "end": 514.97,
      "phrases": [
       [
        "And have I not told you that what you mistake for madness is but over-acuteness of the sense?",
-       502.29,
-       508.1
+       502.01,
+       507.81
       ],
       [
        "now, I say, there came to my ears a low, dull, quick sound, such as a watch makes when enveloped in cotton.",
-       508.33,
-       515.25
+       508.05,
+       514.97
       ]
      ]
     }
    ],
-   "end": 515.25
+   "end": 514.97
   },
   {
-   "start": 519.1,
+   "start": 518.82,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I knew that sound well, too. It was the beating of the old man's heart. It increased my fury, as the beating of a drum stimulates the soldier into courage.",
-     "start": 519.1,
-     "end": 530.31,
+     "start": 518.82,
+     "end": 530.03,
      "phrases": [
       [
        "I knew that sound well, too.",
-       519.1,
-       521.21
+       518.82,
+       520.93
       ],
       [
        "It was the beating of the old man's heart.",
-       521.66,
-       524.44
+       521.38,
+       524.16
       ],
       [
        "It increased my fury, as the beating of a drum stimulates the soldier into courage.",
-       524.89,
-       530.31
+       524.61,
+       530.03
       ]
      ]
     }
    ],
-   "end": 530.31
+   "end": 530.03
   },
   {
-   "start": 531.16,
+   "start": 530.88,
    "segments": [
     {
      "speaker": "narrator",
      "text": "But even yet I refrained and kept still. I scarcely breathed. I held the lantern motionless. I tried how steadily I could maintain the ray upon the eye. Meantime the hellish tattoo of the heart increased. It grew quicker and quicker, and louder and louder every instant. The old man's terror must have been extreme! It grew louder, I say, louder every moment!—do you mark me well? I have told you that I am nervous: so I am. And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror.",
-     "start": 531.16,
-     "end": 572.74,
+     "start": 530.88,
+     "end": 572.45,
      "phrases": [
       [
        "But even yet I refrained and kept still.",
-       531.16,
-       533.92
+       530.88,
+       533.64
       ],
       [
        "I scarcely breathed.",
-       534.35,
-       536.06
+       534.07,
+       535.78
       ],
       [
        "I held the lantern motionless.",
-       536.5,
-       538.53
+       536.21,
+       538.25
       ],
       [
        "I tried how steadily I could maintain the ray upon the eye.",
-       538.97,
-       542.69
+       538.69,
+       542.41
       ],
       [
        "Meantime the hellish tattoo of the heart increased.",
-       543.12,
-       546.3
+       542.84,
+       546.02
       ],
       [
        "It grew quicker and quicker, and louder and louder every instant.",
-       546.74,
-       550.62
+       546.45,
+       550.34
       ],
       [
        "The old man's terror must have been extreme!",
-       551.05,
-       553.78
+       550.77,
+       553.5
       ],
       [
        "It grew louder, I say, louder every moment!",
-       554.22,
-       557.18
+       553.94,
+       556.9
       ],
       [
        "do you mark me well?",
-       557.41,
-       558.87
+       557.13,
+       558.59
       ],
       [
        "I have told you that I am nervous:",
-       559.31,
-       561.47
+       559.03,
+       561.18
       ],
       [
        "so I am.",
-       561.75,
-       562.99
+       561.47,
+       562.71
       ],
       [
        "And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror.",
-       563.42,
-       572.74
+       563.14,
+       572.45
       ]
      ]
     }
    ],
-   "end": 572.74
+   "end": 572.45
   },
   {
-   "start": 573.59,
+   "start": 573.3,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Yet, for some minutes longer I refrained and stood still. But the beating grew louder, louder! I thought the heart must burst. And now a new anxiety seized me—the sound would be heard by a neighbour! The old man's hour had come! With a loud yell, I threw open the lantern and leaped into the room.",
-     "start": 573.59,
-     "end": 593.72,
+     "start": 573.3,
+     "end": 593.44,
      "phrases": [
       [
        "Yet, for some minutes longer I refrained and stood still.",
-       573.59,
-       576.93
+       573.3,
+       576.65
       ],
       [
        "But the beating grew louder, louder!",
-       577.34,
-       579.53
+       577.06,
+       579.25
       ],
       [
        "I thought the heart must burst.",
-       579.94,
-       582.0
+       579.66,
+       581.72
       ],
       [
        "And now a new anxiety seized me",
-       582.41,
-       584.74
+       582.13,
+       584.46
       ],
       [
        "the sound would be heard by a neighbour!",
-       584.95,
-       587.03
+       584.67,
+       586.75
       ],
       [
        "The old man's hour had come!",
-       587.44,
-       589.45
+       587.16,
+       589.17
       ],
       [
        "With a loud yell, I threw open the lantern and leaped into the room.",
-       589.86,
-       593.72
+       589.58,
+       593.44
       ]
      ]
     }
    ],
-   "end": 593.72
+   "end": 593.44
   },
   {
-   "start": 595.77,
+   "start": 595.49,
    "segments": [
     {
      "speaker": "narrator",
      "text": "He shrieked once—once only. In an instant I dragged him to the floor, and pulled the heavy bed over him. I then smiled gaily, to find the deed so far done. But, for many minutes, the heart beat on with a muffled sound. This, however, did not vex me; it would not be heard through the wall.",
-     "start": 595.77,
-     "end": 618.12,
+     "start": 595.49,
+     "end": 617.84,
      "phrases": [
       [
        "He shrieked once",
-       595.77,
-       597.28
+       595.49,
+       597.0
       ],
       [
        "once only.",
-       597.53,
-       598.95
+       597.24,
+       598.67
       ],
       [
        "In an instant I dragged him to the floor, and pulled the heavy bed over him.",
-       599.42,
-       604.18
+       599.14,
+       603.9
       ],
       [
        "I then smiled gaily, to find the deed so far done.",
-       604.65,
-       608.38
+       604.37,
+       608.1
       ],
       [
        "But, for many minutes, the heart beat on with a muffled sound.",
-       608.84,
-       612.53
+       608.56,
+       612.25
       ],
       [
        "This, however, did not vex me;",
-       613.0,
-       615.36
+       612.72,
+       615.07
       ],
       [
        "it would not be heard through the wall.",
-       615.67,
-       618.12
+       615.38,
+       617.84
       ]
      ]
     }
    ],
-   "end": 618.12
+   "end": 617.84
   },
   {
-   "start": 627.97,
+   "start": 627.69,
    "segments": [
     {
      "speaker": "narrator",
      "text": "At length it ceased. The old man was dead. I removed the bed and examined the corpse. Yes, he was stone, stone dead. I placed my hand upon the heart and held it there many minutes. There was no pulsation. He was stone dead. His eye would trouble me no more.",
-     "start": 627.97,
-     "end": 650.02,
+     "start": 627.69,
+     "end": 649.74,
      "phrases": [
       [
        "At length it ceased.",
-       627.97,
-       629.65
+       627.69,
+       629.36
       ],
       [
        "The old man was dead.",
-       630.11,
-       632.09
+       629.83,
+       631.81
       ],
       [
        "I removed the bed and examined the corpse.",
-       632.55,
-       635.38
+       632.27,
+       635.1
       ],
       [
        "Yes, he was stone, stone dead.",
-       635.85,
-       638.33
+       635.57,
+       638.05
       ],
       [
        "I placed my hand upon the heart and held it there many minutes.",
-       638.8,
-       642.67
+       638.52,
+       642.39
       ],
       [
        "There was no pulsation.",
-       643.14,
-       645.22
+       642.85,
+       644.94
       ],
       [
        "He was stone dead.",
-       645.68,
-       647.36
+       645.4,
+       647.08
       ],
       [
        "His eye would trouble me no more.",
-       647.83,
-       650.02
+       647.55,
+       649.74
       ]
      ]
     }
    ],
-   "end": 650.02
+   "end": 649.74
   },
   {
-   "start": 652.37,
+   "start": 652.09,
    "segments": [
     {
      "speaker": "narrator",
      "text": "If still you think me mad, you will think so no longer when I describe the wise precautions I took for the concealment of the body. The night waned, and I worked hastily, but in silence. First of all I dismembered the corpse. I cut off the head and the arms and the legs.",
-     "start": 652.37,
-     "end": 670.6,
+     "start": 652.09,
+     "end": 670.32,
      "phrases": [
       [
        "If still you think me mad, you will think so no longer when I describe the wise precautions I took for the concealment of the body.",
-       652.37,
-       660.12
+       652.09,
+       659.84
       ],
       [
        "The night waned, and I worked hastily, but in silence.",
-       660.57,
-       664.07
+       660.29,
+       663.79
       ],
       [
        "First of all I dismembered the corpse.",
-       664.52,
-       667.15
+       664.24,
+       666.87
       ],
       [
        "I cut off the head and the arms and the legs.",
-       667.6,
-       670.6
+       667.32,
+       670.32
       ]
      ]
     }
    ],
-   "end": 670.6
+   "end": 670.32
   },
   {
-   "start": 675.45,
+   "start": 675.17,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I then took up three planks from the flooring of the chamber, and deposited all between the scantlings. I then replaced the boards so cleverly, so cunningly, that no human eye—not even his—could have detected any thing wrong. There was nothing to wash out—no stain of any kind—no blood-spot whatever. I had been too wary for that. A tub had caught all—ha! ha!",
-     "start": 675.45,
-     "end": 704.12,
+     "start": 675.17,
+     "end": 703.84,
      "phrases": [
       [
        "I then took up three planks from the flooring of the chamber, and deposited all between the scantlings.",
-       675.45,
-       681.22
+       675.17,
+       680.94
       ],
       [
        "I then replaced the boards so cleverly, so cunningly, that no human eye",
-       681.67,
-       686.46
+       681.39,
+       686.17
       ],
       [
        "not even his",
-       686.69,
-       687.6
+       686.41,
+       687.32
       ],
       [
        "could have detected any thing wrong.",
-       687.84,
-       690.18
+       687.56,
+       689.9
       ],
       [
        "There was nothing to wash out",
-       690.63,
-       692.58
+       690.35,
+       692.3
       ],
       [
        "no stain of any kind",
-       692.82,
-       694.7
+       692.54,
+       694.42
       ],
       [
        "no blood-spot whatever.",
-       694.94,
-       697.12
+       694.65,
+       696.84
       ],
       [
        "I had been too wary for that.",
-       697.57,
-       699.51
+       697.29,
+       699.22
       ],
       [
        "A tub had caught all",
-       699.96,
-       701.67
+       699.68,
+       701.38
       ],
       [
        "ha!",
-       701.9,
-       702.79
+       701.62,
+       702.51
       ],
       [
        "ha!",
-       703.24,
-       704.12
+       702.96,
+       703.84
       ]
      ]
     }
    ],
-   "end": 704.12
+   "end": 703.84
   },
   {
-   "start": 706.97,
+   "start": 706.69,
    "segments": [
     {
      "speaker": "narrator",
      "text": "When I had made an end of these labors, it was four o'clock—still dark as midnight. As the bell sounded the hour",
-     "start": 706.97,
-     "end": 715.15,
+     "start": 706.69,
+     "end": 714.87,
      "phrases": [
       [
        "When I had made an end of these labors, it was four o'clock",
-       706.97,
-       710.33
+       706.69,
+       710.04
       ],
       [
        "still dark as midnight.",
-       710.56,
-       712.56
+       710.28,
+       712.28
       ],
       [
        "As the bell sounded the hour",
-       713.01,
-       715.15
+       712.73,
+       714.87
       ]
      ]
     }
    ],
-   "end": 715.15
+   "end": 714.87
   },
   {
-   "start": 722.0,
+   "start": 721.72,
    "segments": [
     {
      "speaker": "narrator",
      "text": "there came a knocking at the street door.",
-     "start": 722.0,
-     "end": 724.34,
+     "start": 721.72,
+     "end": 724.06,
      "phrases": [
       [
        "there came a knocking at the street door.",
-       722.0,
-       724.34
+       721.72,
+       724.06
       ]
      ]
     }
    ],
-   "end": 724.34
+   "end": 724.06
   },
   {
-   "start": 726.79,
+   "start": 726.51,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I went down to open it with a light heart,—for what had I now to fear?",
-     "start": 726.79,
-     "end": 731.6,
+     "start": 726.51,
+     "end": 731.32,
      "phrases": [
       [
        "I went down to open it with a light heart,",
-       726.79,
-       729.37
+       726.51,
+       729.09
       ],
       [
        "for what had I now to fear?",
-       729.6,
-       731.6
+       729.32,
+       731.32
       ]
      ]
     }
    ],
-   "end": 731.6
+   "end": 731.32
   },
   {
-   "start": 734.85,
+   "start": 734.57,
    "segments": [
     {
      "speaker": "narrator",
      "text": "There entered three men, who introduced themselves, with perfect suavity, as officers of the police. A shriek had been heard by a neighbour during the night; suspicion of foul play had been aroused; information had been lodged at the police office, and they (the officers) had been deputed to search the premises.",
-     "start": 734.85,
-     "end": 755.03,
+     "start": 734.57,
+     "end": 754.75,
      "phrases": [
       [
        "There entered three men, who introduced themselves, with perfect suavity, as officers of the police.",
-       734.85,
-       741.19
+       734.57,
+       740.9
       ],
       [
        "A shriek had been heard by a neighbour during the night;",
-       741.64,
-       744.73
+       741.36,
+       744.44
       ],
       [
        "suspicion of foul play had been aroused;",
-       745.03,
-       747.85
+       744.75,
+       747.57
       ],
       [
        "information had been lodged at the police office, and they (the officers) had been deputed to search the premises.",
-       748.15,
-       755.03
+       747.87,
+       754.75
       ]
      ]
     }
    ],
-   "end": 755.03
+   "end": 754.75
   },
   {
-   "start": 755.88,
+   "start": 755.6,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I smiled,—for what had I to fear? I bade the gentlemen welcome. The shriek, I said, was my own in a dream. The old man, I mentioned, was absent in the country. I took my visitors all over the house. I bade them search—search well. I led them, at length, to his chamber. I showed them his treasures, secure, undisturbed. In the enthusiasm of my confidence, I brought chairs into the room, and desired them here to rest from their fatigues, while I myself, in the wild audacity of my perfect triumph, placed my own seat upon the very spot beneath which reposed the corpse of the victim.",
-     "start": 755.88,
-     "end": 800.02,
+     "start": 755.6,
+     "end": 799.74,
      "phrases": [
       [
        "I smiled,",
-       755.88,
-       757.21
+       755.6,
+       756.93
       ],
       [
        "for what had I to fear?",
-       757.45,
-       759.42
+       757.17,
+       759.14
       ],
       [
        "I bade the gentlemen welcome.",
-       759.88,
-       762.07
+       759.59,
+       761.79
       ],
       [
        "The shriek, I said, was my own in a dream.",
-       762.52,
-       765.58
+       762.24,
+       765.29
       ],
       [
        "The old man, I mentioned, was absent in the country.",
-       766.03,
-       769.6
+       765.75,
+       769.32
       ],
       [
        "I took my visitors all over the house.",
-       770.05,
-       772.72
+       769.77,
+       772.44
       ],
       [
        "I bade them search",
-       773.18,
-       774.84
+       772.89,
+       774.56
       ],
       [
        "search well.",
-       775.07,
-       776.3
+       774.79,
+       776.02
       ],
       [
        "I led them, at length, to his chamber.",
-       776.75,
-       779.39
+       776.47,
+       779.11
       ],
       [
        "I showed them his treasures, secure, undisturbed.",
-       779.84,
-       783.19
+       779.56,
+       782.9
       ],
       [
        "In the enthusiasm of my confidence, I brought chairs into the room, and desired them here to rest from their fatigues, while I myself, in the wild audacity of my perfect triumph, placed my own seat upon the very spot beneath which reposed the corpse of the victim.",
-       783.64,
-       800.02
+       783.36,
+       799.74
       ]
      ]
     }
    ],
-   "end": 800.02
+   "end": 799.74
   },
   {
-   "start": 800.87,
+   "start": 800.59,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The officers were satisfied. My manner had convinced them. I was singularly at ease. They sat, and while I answered cheerily, they chatted of familiar things. But, ere long, I felt myself getting pale and wished them gone. My head ached, and I fancied a ringing in my ears: but still they sat and still chatted.",
-     "start": 800.87,
-     "end": 824.56,
+     "start": 800.59,
+     "end": 824.28,
      "phrases": [
       [
        "The officers were satisfied.",
-       800.87,
-       803.23
+       800.59,
+       802.95
       ],
       [
        "My manner had convinced them.",
-       803.68,
-       805.87
+       803.4,
+       805.59
       ],
       [
        "I was singularly at ease.",
-       806.32,
-       808.36
+       806.04,
+       808.08
       ],
       [
        "They sat, and while I answered cheerily, they chatted of familiar things.",
-       808.81,
-       813.36
+       808.53,
+       813.08
       ],
       [
        "But, ere long, I felt myself getting pale and wished them gone.",
-       813.81,
-       817.82
+       813.53,
+       817.54
       ],
       [
        "My head ached, and I fancied a ringing in my ears:",
-       818.27,
-       821.49
+       817.99,
+       821.21
       ],
       [
        "but still they sat and still chatted.",
-       821.79,
-       824.56
+       821.51,
+       824.28
       ]
      ]
     }
    ],
-   "end": 824.56
+   "end": 824.28
   },
   {
-   "start": 825.41,
+   "start": 825.13,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The ringing became more distinct:—it continued and became more distinct: I talked more freely to get rid of the feeling: but it continued and gained definiteness—until, at length, I found that the noise was not within my ears.",
-     "start": 825.41,
-     "end": 841.17,
+     "start": 825.13,
+     "end": 840.89,
      "phrases": [
       [
        "The ringing became more distinct:",
-       825.41,
-       827.53
+       825.13,
+       827.25
       ],
       [
        "it continued and became more distinct:",
-       827.77,
-       830.43
+       827.49,
+       830.15
       ],
       [
        "I talked more freely to get rid of the feeling:",
-       830.73,
-       833.67
+       830.45,
+       833.38
       ],
       [
        "but it continued and gained definiteness",
-       833.97,
-       836.72
+       833.68,
+       836.43
       ],
       [
        "until, at length, I found that the noise was not within my ears.",
-       836.95,
-       841.17
+       836.67,
+       840.89
       ]
      ]
     }
    ],
-   "end": 841.17
+   "end": 840.89
   },
   {
-   "start": 842.02,
+   "start": 841.74,
    "segments": [
     {
      "speaker": "narrator",
      "text": "No doubt I now grew very pale;—but I talked more fluently, and with a heightened voice. Yet the sound increased—and what could I do? It was a low, dull, quick sound—much such a sound as a watch makes when enveloped in cotton. I gasped for breath—and yet the officers heard it not.",
-     "start": 842.02,
-     "end": 863.43,
+     "start": 841.74,
+     "end": 863.14,
      "phrases": [
       [
        "No doubt I now grew very pale;",
-       842.02,
-       844.44
+       841.74,
+       844.16
       ],
       [
        "but I talked more fluently, and with a heightened voice.",
-       844.66,
-       847.86
+       844.38,
+       847.57
       ],
       [
        "Yet the sound increased",
-       848.29,
-       850.2
+       848.01,
+       849.91
       ],
       [
        "and what could I do?",
-       850.42,
-       852.03
+       850.14,
+       851.75
       ],
       [
        "It was a low, dull, quick sound",
-       852.46,
-       854.88
+       852.18,
+       854.6
       ],
       [
        "much such a sound as a watch makes when enveloped in cotton.",
-       855.11,
-       859.08
+       854.83,
+       858.8
       ],
       [
        "I gasped for breath",
-       859.51,
-       861.01
+       859.23,
+       860.73
       ],
       [
        "and yet the officers heard it not.",
-       861.24,
-       863.43
+       860.96,
+       863.14
       ]
      ]
     }
    ],
-   "end": 863.43
+   "end": 863.14
   },
   {
-   "start": 864.28,
+   "start": 863.99,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I talked more quickly—more vehemently; but the noise steadily increased. I arose and argued about trifles, in a high key and with violent gesticulations; but the noise steadily increased. Why would they not be gone? I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men—but the noise steadily increased. Oh God! what could I do?",
-     "start": 864.28,
-     "end": 892.94,
+     "start": 863.99,
+     "end": 892.66,
      "phrases": [
       [
        "I talked more quickly",
-       864.28,
-       865.83
+       863.99,
+       865.55
       ],
       [
        "more vehemently;",
-       866.05,
-       867.4
+       865.76,
+       867.12
       ],
       [
        "but the noise steadily increased.",
-       867.67,
-       870.04
+       867.39,
+       869.76
       ],
       [
        "I arose and argued about trifles, in a high key and with violent gesticulations;",
-       870.45,
-       875.79
+       870.17,
+       875.5
       ],
       [
        "but the noise steadily increased.",
-       876.06,
-       878.43
+       875.78,
+       878.15
       ],
       [
        "Why would they not be gone?",
-       878.84,
-       880.6
+       878.55,
+       880.32
       ],
       [
        "I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men",
-       881.01,
-       887.17
+       880.73,
+       886.89
       ],
       [
        "but the noise steadily increased.",
-       887.38,
-       889.75
+       887.1,
+       889.47
       ],
       [
        "Oh God!",
-       890.16,
-       891.15
+       889.88,
+       890.87
       ],
       [
        "what could I do?",
-       891.56,
-       892.94
+       891.27,
+       892.66
       ]
      ]
     }
    ],
-   "end": 892.94
+   "end": 892.66
   },
   {
-   "start": 893.79,
+   "start": 893.51,
    "segments": [
     {
      "speaker": "narrator",
      "text": "I foamed—I raved—I swore! I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased.",
-     "start": 893.79,
-     "end": 905.16,
+     "start": 893.51,
+     "end": 904.88,
      "phrases": [
       [
        "I foamed",
-       893.79,
-       894.89
+       893.51,
+       894.6
       ],
       [
        "I raved",
-       895.09,
-       896.06
+       894.81,
+       895.78
       ],
       [
        "I swore!",
-       896.26,
-       897.28
+       895.98,
+       897.0
       ],
       [
        "I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased.",
-       897.67,
-       905.16
+       897.39,
+       904.88
       ]
      ]
     }
    ],
-   "end": 905.16
+   "end": 904.88
   },
   {
-   "start": 906.01,
+   "start": 905.73,
    "segments": [
     {
      "speaker": "narrator",
      "text": "It grew louder—louder—louder! And still the men chatted pleasantly, and smiled. Was it possible they heard not? Almighty God!—no, no! They heard!—they suspected!—they knew!—they were making a mockery of my horror!—this I thought, and this I think.",
-     "start": 906.01,
-     "end": 927.0,
+     "start": 905.73,
+     "end": 926.72,
      "phrases": [
       [
        "It grew louder",
-       906.01,
-       907.25
+       905.73,
+       906.97
       ],
       [
        "louder",
-       907.45,
-       908.22
+       907.17,
+       907.94
       ],
       [
        "louder!",
-       908.42,
-       909.29
+       908.14,
+       909.01
       ],
       [
        "And still the men chatted pleasantly, and smiled.",
-       909.68,
-       912.6
+       909.39,
+       912.32
       ],
       [
        "Was it possible they heard not?",
-       912.99,
-       914.97
+       912.71,
+       914.69
       ],
       [
        "Almighty God!",
-       915.36,
-       916.71
+       915.08,
+       916.43
       ],
       [
        "no, no!",
-       916.92,
-       918.01
+       916.63,
+       917.73
       ],
       [
        "They heard!",
-       918.4,
-       919.43
+       918.12,
+       919.15
       ],
       [
        "they suspected!",
-       919.63,
-       920.97
+       919.35,
+       920.69
       ],
       [
        "they knew!",
-       921.18,
-       922.14
+       920.9,
+       921.85
       ],
       [
        "they were making a mockery of my horror!",
-       922.34,
-       924.68
+       922.06,
+       924.39
       ],
       [
        "this I thought, and this I think.",
-       924.88,
-       927.0
+       924.6,
+       926.72
       ]
      ]
     }
    ],
-   "end": 927.0
+   "end": 926.72
   },
   {
-   "start": 927.85,
+   "start": 927.57,
    "segments": [
     {
      "speaker": "narrator",
      "text": "But anything was better than this agony! Anything was more tolerable than this derision! I could bear those hypocritical smiles no longer! I felt that I must scream or die! and now—again!—hark! louder! louder! louder! louder!",
-     "start": 927.85,
-     "end": 946.78,
+     "start": 927.57,
+     "end": 946.5,
      "phrases": [
       [
        "But anything was better than this agony!",
-       927.85,
-       930.19
+       927.57,
+       929.9
       ],
       [
        "Anything was more tolerable than this derision!",
-       930.56,
-       933.14
+       930.28,
+       932.85
       ],
       [
        "I could bear those hypocritical smiles no longer!",
-       933.51,
-       936.58
+       933.23,
+       936.3
       ],
       [
        "I felt that I must scream or die!",
-       936.96,
-       938.94
+       936.68,
+       938.66
       ],
       [
        "and now",
-       939.32,
-       940.11
+       939.03,
+       939.83
       ],
       [
        "again!",
-       940.3,
-       941.15
+       940.02,
+       940.87
       ],
       [
        "hark!",
-       941.35,
-       942.06
+       941.06,
+       941.78
       ],
       [
        "louder!",
-       942.44,
-       943.24
+       942.16,
+       942.96
       ],
       [
        "louder!",
-       943.62,
-       944.42
+       943.34,
+       944.14
       ],
       [
        "louder!",
-       944.8,
-       945.6
+       944.52,
+       945.32
       ],
       [
        "louder!",
-       945.98,
-       946.78
+       945.7,
+       946.5
       ]
      ]
     }
    ],
-   "end": 946.78
+   "end": 946.5
   },
   {
-   "start": 947.63,
+   "start": 947.35,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Villains!",
-     "start": 947.63,
-     "end": 948.56,
+     "start": 947.35,
+     "end": 948.28,
      "phrases": [
       [
        "Villains!",
-       947.63,
-       948.56
+       947.35,
+       948.28
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "I shrieked",
-     "start": 948.78,
-     "end": 949.81,
+     "start": 948.5,
+     "end": 949.53,
      "phrases": [
       [
        "I shrieked",
-       948.78,
-       949.81
+       948.5,
+       949.53
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "dissemble no more! I admit the deed!—tear up the planks!—here, here!—It is the beating of his hideous heart!",
-     "start": 950.03,
-     "end": 959.03,
+     "start": 949.75,
+     "end": 958.75,
      "phrases": [
       [
        "dissemble no more!",
-       950.03,
-       951.61
+       949.75,
+       951.32
       ],
       [
        "I admit the deed!",
-       952.01,
-       953.45
+       951.72,
+       953.17
       ],
       [
        "tear up the planks!",
-       953.66,
-       955.09
+       953.38,
+       954.81
       ],
       [
        "here, here!",
-       955.3,
-       956.52
+       955.02,
+       956.23
       ],
       [
        "It is the beating of his hideous heart!",
-       956.73,
-       959.03
+       956.44,
+       958.75
       ]
      ]
     }
    ],
-   "end": 959.03
+   "end": 958.75
   },
   {
-   "start": 969.88,
+   "start": 969.6,
    "segments": [
     {
      "speaker": "host",
      "text": "The Tell-Tale Heart, by Edgar Allan Poe.",
-     "start": 969.88,
-     "end": 972.72,
+     "start": 969.6,
+     "end": 972.44,
      "phrases": [
       [
        "The Tell-Tale Heart, by Edgar Allan Poe.",
-       969.88,
-       972.72
+       969.6,
+       972.44
       ]
      ]
     }
    ],
-   "end": 972.72
+   "end": 972.44
   },
   {
-   "start": 973.57,
+   "start": 973.29,
    "segments": [
     {
      "speaker": "host",
      "text": "Poe would be dead within seven years, found delirious on the streets of Baltimore, wearing clothes that were not his own. The cause has never been settled.",
-     "start": 973.57,
-     "end": 984.23,
+     "start": 973.29,
+     "end": 983.95,
      "phrases": [
       [
        "Poe would be dead within seven years, found delirious on the streets of Baltimore, wearing clothes that were not his own.",
-       973.57,
-       981.46
+       973.29,
+       981.18
       ],
       [
        "The cause has never been settled.",
-       981.94,
-       984.23
+       981.66,
+       983.95
       ]
      ]
     }
    ],
-   "end": 984.23
+   "end": 983.95
   },
   {
-   "start": 985.08,
+   "start": 984.8,
    "segments": [
     {
      "speaker": "host",
      "text": "But the voice he wrote that winter has never stopped talking. And somewhere beneath the boards, so it insists, something has never stopped beating.",
-     "start": 985.08,
-     "end": 994.46,
+     "start": 984.8,
+     "end": 994.18,
      "phrases": [
       [
        "But the voice he wrote that winter has never stopped talking.",
-       985.08,
-       988.7
+       984.8,
+       988.42
       ],
       [
        "And somewhere beneath the boards, so it insists, something has never stopped beating.",
-       989.18,
-       994.46
+       988.9,
+       994.18
       ]
      ]
     }
    ],
-   "end": 994.46
+   "end": 994.18
   }
  ],
  "cast": {
@@ -2083,7 +2083,7 @@
    "voice": "bm_george*0.6+bm_fable*0.4"
   },
   "oldman": {
-   "voice": "bm_daniel*0.7+am_onyx*0.3"
+   "voice": "am_michael"
   }
  }
 }

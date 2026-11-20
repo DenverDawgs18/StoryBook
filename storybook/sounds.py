@@ -476,7 +476,7 @@ def door(rng, kind="open", room="hall"):
 @sfx("knock")
 def knock(rng, count=3, room="hall", heavy=1.0):
     """Knuckles - or a heavy iron knocker - on a wooden door."""
-    count = int(count)
+    count, heavy = int(count), float(heavy)
     gap = 0.32
     n = samples(gap * count + 0.5)
     y = np.zeros(n, dtype=np.float32)
@@ -796,3 +796,180 @@ def tinnitus(duration, rng, freq=3800.0):
 def heartbeat_once(rng, beats=2, bpm=60.0):
     x = heartbeat_track(60.0 / float(bpm) * int(beats) + 0.6, rng, float(bpm), float(bpm), 1, 1)
     return dsp.normalize_peak(dsp.reverb(x, "chamber", 0.3), -3)
+
+
+# =========================================================================
+# Fairy-tale additions: woods, wells, workshops and a little magic
+# =========================================================================
+def _bird_call(rng, kind: int) -> np.ndarray:
+    """One songbird phrase: a few frequency-swept whistles (FM), trilled or plain."""
+    notes = int(rng.integers(2, 7))
+    base = rng.uniform(2600, 4600)
+    parts = []
+    for i in range(notes):
+        d = rng.uniform(0.05, 0.16) if kind else rng.uniform(0.12, 0.3)
+        n = samples(d)
+        t = np.arange(n) / SR
+        f0 = base * rng.uniform(0.8, 1.25)
+        sweep = f0 * (1 + rng.uniform(-0.35, 0.35) * t / d)
+        if kind == 2:  # warble
+            sweep = sweep * (1 + 0.06 * np.sin(2 * np.pi * rng.uniform(30, 60) * t))
+        y = np.sin(2 * np.pi * np.cumsum(sweep) / SR) * np.hanning(n) ** 0.7
+        y += 0.12 * np.sin(2 * np.pi * np.cumsum(sweep * 2) / SR) * np.hanning(n)
+        parts.append(y.astype(np.float32))
+        parts.append(np.zeros(samples(rng.uniform(0.02, 0.09)), np.float32))
+    return np.concatenate(parts)
+
+
+@bed("birds")
+def birds(duration, rng, density=0.5, leaves=0.4):
+    """A wood in daylight: scattered songbirds near and far, leaves moving in a breeze."""
+    n = samples(duration)
+    st = np.zeros((n, 2), dtype=np.float32)
+    density = float(density)
+    for _ in range(int(3 + 5 * density)):  # each bird has its own phrase and habits
+        kind = int(rng.integers(0, 3))
+        phrase_seed = int(rng.integers(2**31))
+        p, dist = rng.uniform(-0.85, 0.85), rng.uniform(0.2, 1.0)
+        voice = np.zeros(n, dtype=np.float32)
+        t = rng.uniform(0, 6)
+        while t < duration:
+            call = _bird_call(np.random.default_rng(phrase_seed + int(rng.integers(0, 3))), kind)
+            dsp.place(voice, call, samples(t), rng.uniform(0.6, 1.0))
+            t += len(call) / SR + rng.exponential(5.0 / (0.4 + density))
+        voice = dsp.lowpass(voice, 9000 - 5000 * dist)
+        st += dsp.pan(voice, p) * (1.0 - 0.75 * dist)
+    st = dsp.reverb(st, "hall", 0.25, tail=False)
+    if float(leaves) > 0:
+        rustle = dsp.bandpass(dsp.colored(n, rng, 1.0), 1200, 7000)
+        rustle *= dsp.smooth_random(n, rng, 0.15, 0.1, 1.0) ** 2
+        st += dsp.to_stereo(rustle.astype(np.float32)) * 0.08 * float(leaves)
+    return dsp.set_rms(st, -27)
+
+
+@bed("spinning")
+def spinning(duration, rng, rate=1.6):
+    """A spinning wheel: the treadle's knock, the wheel's whirr and the hiss of the thread."""
+    n = samples(duration)
+    t = np.arange(n) / SR
+    rate = float(rate)
+    whirr_f = 90 + 8 * np.sin(2 * np.pi * rate * t)
+    whirr = dsp.bandpass(dsp.colored(n, rng, 0.5), 300, 2400) * (0.55 + 0.45 * np.sin(2 * np.pi * np.cumsum(whirr_f) / SR / 6) ** 2)
+    hiss = dsp.highpass(dsp.white(n, rng), 4000) * 0.12 * (0.7 + 0.3 * np.sin(2 * np.pi * rate * t))
+    y = (whirr * 0.5 + hiss).astype(np.float32)
+    k = 0.0
+    while k < duration:
+        thud = dsp.damped_sines([(rng.uniform(110, 130), 1.0, 0.04), (420, 0.3, 0.015)], 0.2, rng) * 0.9
+        dsp.place(y, thud, samples(k + rng.normal(0, 0.01)))
+        k += 1 / rate
+    st = dsp.reverb(dsp.to_stereo(y), "room", 0.3, tail=False)
+    return dsp.set_rms(dsp.fade(st, 1.5, 1.5), -24)
+
+
+@sfx("tapping")
+def tapping(rng, count=10, pace=0.28, room="room"):
+    """A cobbler's hammer on a last: quick small taps, the odd heavier blow."""
+    count = int(count)
+    n = samples(float(pace) * count + 0.5)
+    y = np.zeros(n, dtype=np.float32)
+    for i in range(count):
+        heavy = 1.0 if rng.random() < 0.2 else 0.6
+        f = rng.uniform(1800, 2300)
+        k = dsp.damped_sines([(f, 1, 0.012), (f * 1.7, 0.5, 0.008), (rng.uniform(180, 240), 0.6 * heavy, 0.03)], 0.15, rng)
+        dsp.place(y, k * heavy, samples(i * float(pace) + rng.normal(0, 0.02)))
+    return dsp.reverb(dsp.normalize_peak(y, -4), room, 0.3)
+
+
+@sfx("sparkle")
+def sparkle(rng, length=3.0, rising=1, room="hall"):
+    """Fairy dust: a glittering run of tiny bells, up (or down) a pentatonic scale."""
+    length = float(length)
+    n = samples(length + 2.5)
+    st = np.zeros((n, 2), dtype=np.float32)
+    scale = [0, 2, 4, 7, 9]
+    count = int(14 * length)
+    for i in range(count):
+        step = i if int(rising) else count - 1 - i
+        m = 79 + scale[step % 5] + 12 * ((step // 5) % 3)
+        f = 440.0 * 2 ** ((m - 69) / 12) * rng.uniform(0.997, 1.003)
+        tone = dsp.damped_sines([(f, 1, 0.5), (f * 2.76, 0.3, 0.2), (f * 5.4, 0.12, 0.08)], 1.2, rng)
+        dsp.place(st, dsp.pan(tone, rng.uniform(-0.8, 0.8)), samples(i / count * length + rng.normal(0, 0.01)), rng.uniform(0.3, 0.8))
+    st = dsp.highpass(st, 900)
+    return dsp.normalize_peak(dsp.reverb(st, room, 0.5), -6)
+
+
+@sfx("splash")
+def splash(rng, size=0.5, room="chamber"):
+    """Something dropped into deep water: a plop, a burst of spray, a hollow echo."""
+    size = float(size)
+    n = samples(1.6)
+    t = np.arange(n) / SR
+    plop_f = 900 * (1 - 0.6 * np.minimum(t / 0.08, 1)) / (0.6 + size)
+    plop = np.sin(2 * np.pi * np.cumsum(plop_f) / SR) * np.exp(-t / 0.05)
+    spray = dsp.bandpass(dsp.white(n, rng), 1500, 9000) * np.exp(-t / (0.08 + 0.25 * size)) * (0.4 + size)
+    drops = np.zeros(n, np.float32)
+    for _ in range(int(6 + 20 * size)):
+        at = rng.uniform(0.05, 1.0)
+        f = rng.uniform(1200, 3500)
+        d = dsp.damped_sines([(f, 1, 0.012)], 0.05, rng)
+        dsp.place(drops, d, samples(at), rng.uniform(0.05, 0.3))
+    y = (plop + spray + drops).astype(np.float32)
+    return dsp.reverb(dsp.normalize_peak(y, -4), room, 0.45)
+
+
+@sfx("huff")
+def huff(rng, puffs=2, strength=1.0, room="room"):
+    """A big bad wolf drawing breath and blowing: an inhale, then a roaring gust per puff."""
+    puffs, strength = int(puffs), float(strength)
+    seg = []
+    for i in range(puffs):
+        n_in = samples(0.55)
+        t = np.arange(n_in) / SR
+        inhale = dsp.bandpass(dsp.white(n_in, rng), 900, 4500) * (t / t[-1]) ** 2 * 0.25
+        n_out = samples(1.1 + 0.4 * strength)
+        t2 = np.arange(n_out) / SR
+        env = np.minimum(t2 / 0.06, 1) * np.exp(-t2 / (0.35 + 0.25 * strength))
+        blow = dsp.lowpass(dsp.colored(n_out, rng, 1.0), 2600) * env
+        blow += dsp.bandpass(dsp.white(n_out, rng), 300, 1200) * env * 0.6
+        seg += [inhale.astype(np.float32), blow.astype(np.float32) * strength, np.zeros(samples(0.15), np.float32)]
+    y = np.concatenate(seg)
+    return dsp.normalize_peak(dsp.reverb(dsp.to_stereo(y), room, 0.25), -3)
+
+
+@sfx("collapse")
+def collapse(rng, material="straw", room="room"):
+    """A flimsy house coming down: a rush of straw, or a clatter of sticks."""
+    n = samples(2.6)
+    y = np.zeros(n, np.float32)
+    if material == "straw":
+        t = np.arange(n) / SR
+        y += dsp.bandpass(dsp.white(n, rng), 1500, 9000) * np.exp(-t / 0.7) * dsp.smooth_random(n, rng, 18, 0.3, 1.0)
+        y += dsp.lowpass(dsp.white(n, rng), 300) * np.exp(-t / 0.25) * 0.6
+    else:
+        for _ in range(40):
+            at = rng.exponential(0.35)
+            if at > 2.2:
+                continue
+            f = rng.uniform(500, 1400)
+            k = dsp.damped_sines([(f, 1, 0.03), (f * 2.3, 0.5, 0.015), (rng.uniform(120, 200), 0.6, 0.06)], 0.25, rng)
+            dsp.place(y, k, samples(at), rng.uniform(0.3, 1.0) * np.exp(-at))
+        nn = samples(0.4)
+        dsp.place(y, dsp.lowpass(dsp.white(nn, rng), 250) * np.exp(-np.arange(nn) / SR / 0.1) * 1.2, 0)
+    return dsp.normalize_peak(dsp.reverb(dsp.to_stereo(y.astype(np.float32)), room, 0.3), -3)
+
+
+@sfx("roll")
+def roll(rng, length=4.0, room="hall"):
+    """A wooden barrel (or a butter-churn with a pig inside) bumping away down a hill."""
+    length = float(length)
+    n = samples(length)
+    t = np.arange(n) / SR
+    rumble = dsp.lowpass(dsp.colored(n, rng, 1.5), 180) * (0.6 + 0.4 * np.sin(2 * np.pi * (2 + 3 * t / length) * t) ** 2)
+    y = rumble.astype(np.float32)
+    at = 0.0
+    while at < length - 0.2:
+        k = dsp.damped_sines([(rng.uniform(90, 140), 1, 0.08), (rng.uniform(300, 500), 0.4, 0.03)], 0.3, rng)
+        dsp.place(y, k, samples(at), rng.uniform(0.5, 1.0))
+        at += rng.uniform(0.25, 0.6) * (1 - 0.4 * at / length)
+    y *= np.clip(1.4 - t / length, 0, 1)  # dwindling away downhill
+    return dsp.normalize_peak(dsp.reverb(dsp.pan(y, 0.0), room, 0.3), -3)

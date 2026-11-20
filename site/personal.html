@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Story for Your Child — StoryBook</title>
+<meta name="description" content="A full-cast, soundscaped fairy tale with your child as the hero. Hear a free one-minute preview with their name in it.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/analytics.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+</svg>
+<div class="book">
+<header class="running-head">
+  <a class="wordmark" href="./">StoryBook</a>
+  <nav class="nav" aria-label="Main">
+    <a href="./">Listen</a><a href="./#tales">Library</a><a href="personal.html" aria-current="page">For your child</a><a href="studio.html">Studio</a><a href="./#craft">How it's made</a>
+  </nav>
+</header>
+
+<!-- ───────────────────────────── title -->
+<section class="titlepage" style="padding-bottom:1.4rem">
+  <p class="chapter-no">a story for your child</p>
+  <h1 style="font-size:clamp(2.6rem,7vw,5.2rem);margin-top:.2rem">Starring<br><em style="color:var(--viridian)">someone very small</em></h1>
+  <div class="ornament" aria-hidden="true">❦</div>
+  <p class="lede">An old fairy tale, performed by a full cast with its own soundscape, and with your child written in as the hero. Their name in the story, their own voice in the cast, a dedication from you, and a goodnight at the end.</p>
+  <p class="actions"><a class="btn" href="#make" data-track="cta_click" data-track-cta="personal_top">Hear a free preview</a></p>
+</section>
+
+<!-- ───────────────────────────── an example -->
+<section class="spread featured" id="example">
+  <div class="page verso">
+    <figure class="plate">
+      <div class="sheet"><img id="ex-art" src="assets/land/land_pigs.webp" alt="A watercolour of three little houses of straw, furze and brick on a green hillside, with an apple tree."></div>
+      <figcaption><b>an example</b><span id="ex-cap">Mia is the third little pig</span></figcaption>
+    </figure>
+  </div>
+  <div class="page recto">
+    <p class="running">Hear what it sounds like</p>
+    <div class="tabs" role="tablist" aria-label="Examples">
+      <button type="button" role="tab" class="tab" aria-selected="true" data-ex="pigs">The Three Little Pigs, for Mia</button>
+      <button type="button" role="tab" class="tab" aria-selected="false" data-ex="elves">The Elves and the Shoemaker, for Leo</button>
+    </div>
+    <p class="blurb dropcap" id="ex-blurb">Mia is the clever third little pig. She builds her house of bricks, the wolf knocks on her door, and when he calls out it's her name he calls. The story opens with a dedication from Grandma.</p>
+    <div id="ex-player"><p class="note">Loading the example…</p></div>
+  </div>
+</section>
+
+<!-- ───────────────────────────── make one -->
+<section class="section" id="make">
+  <div class="chapter-head">
+    <p class="chapter-no">now, yours</p>
+    <h2>Who is the story for?</h2>
+    <div class="ornament" aria-hidden="true">❦</div>
+    <p>Tell us their name and choose a tale. In about a minute you'll hear the opening of their story, free.</p>
+  </div>
+
+  <form class="panel personal-form" id="pform" novalidate>
+    <div class="grid2">
+      <div>
+        <label class="field" for="name">Their first name</label>
+        <input type="text" id="name" maxlength="24" autocomplete="off" placeholder="Mia" required>
+      </div>
+      <div>
+        <span class="field" id="pron-l">They are a…</span>
+        <div class="choice-row" role="radiogroup" aria-labelledby="pron-l">
+          <label><input type="radio" name="pronouns" value="she" checked> <span>she</span></label>
+          <label><input type="radio" name="pronouns" value="he"> <span>he</span></label>
+          <label><input type="radio" name="pronouns" value="they"> <span>they</span></label>
+        </div>
+      </div>
+    </div>
+
+    <span class="field" style="margin-top:1.6rem;display:block" id="tale-l">Which tale?</span>
+    <div class="tale-choice" role="radiogroup" aria-labelledby="tale-l">
+      <label class="card">
+        <input type="radio" name="tale" value="the_three_little_pigs" checked>
+        <figure class="plate"><div class="sheet"><img src="assets/land/land_pigs.webp" alt=""></div></figure>
+        <h3>The Three Little Pigs</h3>
+        <p>Your child is the clever third little pig, who builds with bricks and outwits the wolf.</p>
+      </label>
+      <label class="card">
+        <input type="radio" name="tale" value="elves_and_the_shoemaker">
+        <figure class="plate"><div class="sheet"><img src="assets/land/land_cottage.webp" alt=""></div></figure>
+        <h3>The Elves and the Shoemaker</h3>
+        <p>Your child is the shoemaker's child, who stays up to see the elves and thinks of a way to thank them.</p>
+      </label>
+    </div>
+
+    <div class="grid2" style="margin-top:1.6rem">
+      <div>
+        <label class="field" for="from">A dedication from <span class="note">(optional)</span></label>
+        <input type="text" id="from" maxlength="40" placeholder="Grandma">
+      </div>
+      <div>
+        <span class="field" id="voice-l">Their voice in the story</span>
+        <div class="choice-row" role="radiogroup" aria-labelledby="voice-l">
+          <label><input type="radio" name="voice" value="" checked> <span>choose for me</span></label>
+          <label><input type="radio" name="voice" value="lighter"> <span>lighter</span></label>
+          <label><input type="radio" name="voice" value="deeper"> <span>deeper</span></label>
+        </div>
+      </div>
+    </div>
+
+    <details class="sayas">
+      <summary>Is their name often said wrong?</summary>
+      <label class="field" for="sayas" style="margin-top:.8rem">Spell it how it sounds</label>
+      <input type="text" id="sayas" maxlength="24" placeholder="e.g. Neev for Niamh, Shivawn for Siobhan">
+      <p class="note">The storyteller will say it this way. It's only used for the voice.</p>
+    </details>
+
+    <div class="actions" style="margin-top:1.8rem">
+      <button class="btn" type="submit" id="go">Hear their preview</button>
+      <span class="status" id="pstatus" aria-live="polite"></span>
+    </div>
+    <p class="error hidden" id="perror" role="alert"></p>
+    <div class="progress hidden" id="pprog"><div class="bar"><div class="ground paint"></div><div class="fill paint" id="pfill"></div></div></div>
+    <div id="presult" class="hidden"></div>
+  </form>
+</section>
+
+<!-- ───────────────────────────── reserve -->
+<section class="section" id="reserve" style="padding-top:0">
+  <div class="panel reserve">
+    <p class="chapter-no">the whole story</p>
+    <h2 id="r-title">Reserve the full story</h2>
+    <p class="blurb" id="r-blurb">The full tale runs about five to seven minutes, from the dedication to the goodnight, with the whole cast and soundscape. Full stories are opening soon. Leave your email and you'll be among the first to get one.</p>
+    <p class="price" id="price"></p>
+    <form id="rform" novalidate>
+      <label class="field" for="email">Your email</label>
+      <div class="email-row">
+        <input type="email" id="email" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit" id="rgo">Reserve it</button>
+      </div>
+      <!-- a field people never see; bots fill it in -->
+      <div aria-hidden="true" style="position:absolute;left:-9999px"><label>Website <input type="text" id="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="note">We'll use your email only to send this story and tell you when full stories open. We keep the first name and choices above to make it. Reply to any email from us to have it all deleted.</p>
+      <p class="error hidden" id="rerror" role="alert"></p>
+    </form>
+    <div id="rdone" class="hidden" aria-live="polite">
+      <p class="marginalia" style="font-size:1.8rem">You're on the list ~</p>
+      <p id="rdone-text"></p>
+    </div>
+  </div>
+</section>
+
+<footer class="colophon">
+  <p class="finis">Finis.</p>
+  <p>Texts from <a href="https://www.gutenberg.org">Project Gutenberg</a>. Voices by Kokoro-82M. Every sound is synthesised.</p>
+</footer>
+</div>
+<script type="module" src="js/personal.js"></script>
+</body>
+</html>

@@ -10,6 +10,12 @@ primary_region = "iad"
   STORYBOOK_DATA = "/data"
   STORYBOOK_CACHE = "/data/tts-cache"
 
+# Sign-ups and finished Studio/preview recordings live here, so they survive restarts.
+#   fly volumes create storybook_data --region iad --size 1
+[mounts]
+  source = "storybook_data"
+  destination = "/data"
+
 [http_service]
   internal_port = 8080
   force_https = true

@@ -28,8 +28,10 @@ Chapter Book Part Stave Mr Mrs Miss Dr Sir Lady Lord God Heaven Christmas Monday
 Saturday Sunday January February March April May June July August September October November December
 Project Gutenberg Ebook Old Nay Aye Alas Indeed Perhaps Very Do Does Did Is Was Be Let Come Go Ha Hush""".split())
 
-MALE_POOL = ["bm_george", "am_michael", "bm_daniel", "am_onyx", "bm_fable", "am_fenrir", "am_puck", "bm_lewis"]
-FEMALE_POOL = ["bf_emma", "af_bella", "bf_isabella", "af_heart", "bf_alice", "af_nicole", "bf_lily", "af_sky"]
+# Ordered best-first by Kokoro's own quality grades (VOICES.md), so the main characters get
+# the most natural voices; the weakest voices only come in for very large casts.
+MALE_POOL = ["am_fenrir", "am_michael", "am_puck", "bm_george", "bm_fable", "bm_lewis", "bm_daniel", "am_onyx"]
+FEMALE_POOL = ["af_heart", "af_bella", "bf_emma", "af_nicole", "bf_isabella", "af_sky", "bf_alice", "bf_lily"]
 
 # mood -> soundscape layers; the music beds are chosen to sit well under speech
 MOODS = {

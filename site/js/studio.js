@@ -72,12 +72,14 @@ $("step1").addEventListener("submit", async (ev) => {
   $("analyze").disabled = true;
   try {
     analysis = await api("/api/analyze", { method: "POST", body: fd });
+    window.sbTrack?.("studio_analyzed", { source: f ? "file" : "paste", words: analysis.words, characters: analysis.cast?.length || 0, mood: analysis.mood });
     fileText = analysis.text;
     if (f && !$("text").value) $("text").value = analysis.text.slice(0, 20000);
     showCast();
     $("s1").textContent = "";
   } catch (e) {
     $("s1").textContent = e.message;
+    window.sbTrack?.("studio_analyze_failed", { reason: String(e.message).slice(0, 80) });
     $("s1").classList.add("error");
   } finally {
     $("analyze").disabled = false;
@@ -133,6 +135,7 @@ $("step2").addEventListener("submit", async (ev) => {
   $("go").disabled = true;
   try {
     const { id } = await api("/api/jobs", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    window.sbTrack?.("studio_record_started", { mood: body.mood || "", effects: body.effects, speed: body.speed });
     $("step2").classList.add("hidden");
     $("step3").classList.remove("hidden");
     $("recTitle").textContent = body.title;
@@ -169,14 +172,16 @@ async function watch(id, body) {
       $("eta").textContent = "";
       $("result").classList.remove("hidden");
       $("dlScript").href = `/api/jobs/${id}/script`;
+      window.sbTrack?.("studio_record_done", { seconds: Math.round(j.duration || 0) });
       mountPlayer($("resPlayer"), {
         title: j.title, audio: j.audio, timings: j.timings, duration: j.duration,
         castLabels: Object.fromEntries((analysis?.cast || []).map((c) => [c.key, { label: c.name }])),
-      });
+      }, { track: { kind: "studio", story: "studio" } });
       return;
     }
     if (j.status === "error") {
       $("s3").innerHTML = `<span class="error">Something went wrong: ${esc(j.message)}</span>`;
+      window.sbTrack?.("studio_record_failed", { reason: String(j.message).slice(0, 80) });
       return;
     }
     await new Promise((r) => setTimeout(r, 1500));

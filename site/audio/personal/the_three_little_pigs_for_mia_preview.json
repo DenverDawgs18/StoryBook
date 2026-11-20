@@ -1,0 +1,276 @@
+{
+ "meta": {
+  "title": "The Three Little Pigs, for Mia",
+  "author": "Joseph Jacobs",
+  "year": 1890,
+  "source": "https://www.gutenberg.org/ebooks/7439",
+  "mood": "Huffing, puffing, and a pot on the fire",
+  "featured": false,
+  "art": "land_pigs",
+  "labels": {
+   "host": "the host",
+   "pig1": "the first little pig",
+   "pig2": "the second little pig",
+   "pig3": "Mia",
+   "wolf": "the wolf"
+  }
+ },
+ "duration": 86.87,
+ "chapters": [
+  {
+   "title": "The Three Little Pigs. A story for Mia.",
+   "start": 12.96
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "This story is for Mia.",
+     "start": 5.0,
+     "end": 6.56,
+     "phrases": [
+      [
+       "This story is for Mia.",
+       5.0,
+       6.56
+      ]
+     ]
+    }
+   ],
+   "end": 6.56
+  },
+  {
+   "start": 7.41,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "With love, from Grandma.",
+     "start": 7.41,
+     "end": 9.11,
+     "phrases": [
+      [
+       "With love, from Grandma.",
+       7.41,
+       9.11
+      ]
+     ]
+    }
+   ],
+   "end": 9.11
+  },
+  {
+   "start": 12.96,
+   "end": 16.33,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Three Little Pigs. A story for Mia.",
+     "start": 12.96,
+     "end": 16.33,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 20.43,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The third little pig was called Mia, and Mia was the cleverest of the three. She met a man with a load of bricks, and said:",
+     "start": 20.43,
+     "end": 27.49,
+     "phrases": [
+      [
+       "The third little pig was called Mia, and Mia was the cleverest of the three.",
+       20.43,
+       24.56
+      ],
+      [
+       "She met a man with a load of bricks, and said:",
+       25.01,
+       27.49
+      ]
+     ]
+    }
+   ],
+   "end": 27.49
+  },
+  {
+   "start": 28.34,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Please, man, give me those bricks to build a house with.",
+     "start": 28.34,
+     "end": 31.25,
+     "phrases": [
+      [
+       "Please, man, give me those bricks to build a house with.",
+       28.34,
+       31.25
+      ]
+     ]
+    }
+   ],
+   "end": 31.25
+  },
+  {
+   "start": 32.1,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So the man gave her the bricks, and Mia built her house with them, brick by brick. So the wolf came, as he did to the other little pigs, and said:",
+     "start": 32.1,
+     "end": 40.28,
+     "phrases": [
+      [
+       "So the man gave her the bricks, and Mia built her house with them, brick by brick.",
+       32.1,
+       36.28
+      ],
+      [
+       "So the wolf came, as he did to the other little pigs, and said:",
+       36.73,
+       40.28
+      ]
+     ]
+    }
+   ],
+   "end": 40.28
+  },
+  {
+   "start": 42.66,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Mia, Mia, let me come in.",
+     "start": 42.66,
+     "end": 44.07,
+     "phrases": [
+      [
+       "Mia, Mia, let me come in.",
+       42.66,
+       44.07
+      ]
+     ]
+    }
+   ],
+   "end": 44.07
+  },
+  {
+   "start": 44.92,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "No, no, by the hair of my chinny chin chin.",
+     "start": 44.92,
+     "end": 47.38,
+     "phrases": [
+      [
+       "No, no, by the hair of my chinny chin chin.",
+       44.92,
+       47.38
+      ]
+     ]
+    }
+   ],
+   "end": 47.38
+  },
+  {
+   "start": 48.23,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Then I'll huff, and I'll puff, and I'll blow your house in.",
+     "start": 48.23,
+     "end": 51.09,
+     "phrases": [
+      [
+       "Then I'll huff, and I'll puff, and I'll blow your house in.",
+       48.23,
+       51.09
+      ]
+     ]
+    }
+   ],
+   "end": 51.09
+  },
+  {
+   "start": 59.85,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Well, he huffed, and he puffed, and he huffed and he puffed, and he puffed and huffed; but he could not get the house down. When he found that he could not, with all his huffing and puffing, blow the house down, he said:",
+     "start": 59.85,
+     "end": 71.39,
+     "phrases": [
+      [
+       "Well, he huffed, and he puffed, and he huffed and he puffed, and he puffed and huffed;",
+       59.85,
+       64.03
+      ],
+      [
+       "but he could not get the house down.",
+       64.33,
+       66.28
+      ],
+      [
+       "When he found that he could not, with all his huffing and puffing, blow the house down, he said:",
+       66.73,
+       71.39
+      ]
+     ]
+    }
+   ],
+   "end": 71.39
+  },
+  {
+   "start": 73.44,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "And what happens next? That's in Mia's story.",
+     "start": 73.44,
+     "end": 77.02,
+     "phrases": [
+      [
+       "And what happens next?",
+       73.44,
+       75.12
+      ],
+      [
+       "That's in Mia's story.",
+       75.58,
+       77.02
+      ]
+     ]
+    }
+   ],
+   "end": 77.02
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bf_isabella"
+  },
+  "pig1": {
+   "voice": "am_puck"
+  },
+  "pig2": {
+   "voice": "af_kore"
+  },
+  "pig3": {
+   "voice": "af_heart"
+  },
+  "wolf": {
+   "voice": "am_fenrir"
+  }
+ }
+}

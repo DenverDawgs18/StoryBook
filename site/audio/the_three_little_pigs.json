@@ -1,0 +1,1267 @@
+{
+ "meta": {
+  "title": "The Three Little Pigs",
+  "author": "Joseph Jacobs",
+  "year": 1890,
+  "source": "https://www.gutenberg.org/ebooks/7439",
+  "blurb": "Three little pigs go out to seek their fortune and build three houses: one of straw, one of furze, one of brick. Then a wolf comes knocking, and he is very good at blowing.\n",
+  "mood": "Huffing, puffing, and a pot on the fire",
+  "featured": true,
+  "art": "land_pigs",
+  "caption": "“he built his house with them”",
+  "order": 0,
+  "shelf": "fairy",
+  "labels": {
+   "host": "the host",
+   "pig1": "the first little pig",
+   "pig2": "the second little pig",
+   "pig3": "the third little pig",
+   "wolf": "the wolf"
+  }
+ },
+ "duration": 411.82,
+ "chapters": [
+  {
+   "title": "The Three Little Pigs.",
+   "start": 33.27
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "England, eighteen-ninety. A folklorist named Joseph Jacobs gathers up the tales that English children already knew by heart, and prints them for the first time in one book.",
+     "start": 5.0,
+     "end": 17.26,
+     "phrases": [
+      [
+       "England, eighteen-ninety.",
+       5.0,
+       6.72
+      ],
+      [
+       "A folklorist named Joseph Jacobs gathers up the tales that English children already knew by heart, and prints them for the first time in one book.",
+       7.19,
+       17.26
+      ]
+     ]
+    }
+   ],
+   "end": 17.26
+  },
+  {
+   "start": 18.11,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "This one was older than anyone could remember. It has a rhyme to start it, a wolf who will not give up, and a third little pig who is a great deal cleverer than he looks.",
+     "start": 18.11,
+     "end": 29.42,
+     "phrases": [
+      [
+       "This one was older than anyone could remember.",
+       18.11,
+       21.37
+      ],
+      [
+       "It has a rhyme to start it, a wolf who will not give up, and a third little pig who is a great deal cleverer than he looks.",
+       21.83,
+       29.42
+      ]
+     ]
+    }
+   ],
+   "end": 29.42
+  },
+  {
+   "start": 33.27,
+   "end": 34.8,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Three Little Pigs.",
+     "start": 33.27,
+     "end": 34.8,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 37.4,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Once upon a time when pigs spoke rhyme, and monkeys chewed tobacco, and hens took snuff to make them tough, and ducks went quack, quack, quack, O!",
+     "start": 37.4,
+     "end": 45.86,
+     "phrases": [
+      [
+       "Once upon a time when pigs spoke rhyme, and monkeys chewed tobacco, and hens took snuff to make them tough, and ducks went quack, quack, quack, O!",
+       37.4,
+       45.86
+      ]
+     ]
+    }
+   ],
+   "end": 45.86
+  },
+  {
+   "start": 46.71,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "There was an old sow with three little pigs, and as she had not enough to keep them, she sent them out to seek their fortune. The first that went off met a man with a bundle of straw, and said to him:",
+     "start": 46.71,
+     "end": 57.61,
+     "phrases": [
+      [
+       "There was an old sow with three little pigs, and as she had not enough to keep them, she sent them out to seek their fortune.",
+       46.71,
+       53.22
+      ],
+      [
+       "The first that went off met a man with a bundle of straw, and said to him:",
+       53.67,
+       57.61
+      ]
+     ]
+    }
+   ],
+   "end": 57.61
+  },
+  {
+   "start": 58.46,
+   "segments": [
+    {
+     "speaker": "pig1",
+     "text": "Please, man, give me that straw to build me a house.",
+     "start": 58.46,
+     "end": 60.86,
+     "phrases": [
+      [
+       "Please, man, give me that straw to build me a house.",
+       58.46,
+       60.86
+      ]
+     ]
+    }
+   ],
+   "end": 60.86
+  },
+  {
+   "start": 61.71,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Which the man did, and the little pig built a house with it. Presently came along a wolf, and knocked at the door, and said:",
+     "start": 61.71,
+     "end": 68.53,
+     "phrases": [
+      [
+       "Which the man did, and the little pig built a house with it.",
+       61.71,
+       65.07
+      ],
+      [
+       "Presently came along a wolf, and knocked at the door, and said:",
+       65.52,
+       68.53
+      ]
+     ]
+    }
+   ],
+   "end": 68.53
+  },
+  {
+   "start": 70.91,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, little pig, let me come in.",
+     "start": 70.91,
+     "end": 72.91,
+     "phrases": [
+      [
+       "Little pig, little pig, let me come in.",
+       70.91,
+       72.91
+      ]
+     ]
+    }
+   ],
+   "end": 72.91
+  },
+  {
+   "start": 73.76,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "To which the pig answered:",
+     "start": 73.76,
+     "end": 75.37,
+     "phrases": [
+      [
+       "To which the pig answered:",
+       73.76,
+       75.37
+      ]
+     ]
+    }
+   ],
+   "end": 75.37
+  },
+  {
+   "start": 76.22,
+   "segments": [
+    {
+     "speaker": "pig1",
+     "text": "No, no, by the hair of my chinny chin chin.",
+     "start": 76.22,
+     "end": 78.32,
+     "phrases": [
+      [
+       "No, no, by the hair of my chinny chin chin.",
+       76.22,
+       78.32
+      ]
+     ]
+    }
+   ],
+   "end": 78.32
+  },
+  {
+   "start": 79.17,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The wolf then answered to that:",
+     "start": 79.17,
+     "end": 81.18,
+     "phrases": [
+      [
+       "The wolf then answered to that:",
+       79.17,
+       81.18
+      ]
+     ]
+    }
+   ],
+   "end": 81.18
+  },
+  {
+   "start": 82.03,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Then I'll huff, and I'll puff, and I'll blow your house in.",
+     "start": 82.03,
+     "end": 84.89,
+     "phrases": [
+      [
+       "Then I'll huff, and I'll puff, and I'll blow your house in.",
+       82.03,
+       84.89
+      ]
+     ]
+    }
+   ],
+   "end": 84.89
+  },
+  {
+   "start": 91.65,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So he huffed, and he puffed, and he blew his house in, and ate up the little pig.",
+     "start": 91.65,
+     "end": 95.77,
+     "phrases": [
+      [
+       "So he huffed, and he puffed, and he blew his house in, and ate up the little pig.",
+       91.65,
+       95.77
+      ]
+     ]
+    }
+   ],
+   "end": 95.77
+  },
+  {
+   "start": 98.12,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The second little pig met a man with a bundle of furze, and said:",
+     "start": 98.12,
+     "end": 101.68,
+     "phrases": [
+      [
+       "The second little pig met a man with a bundle of furze, and said:",
+       98.12,
+       101.68
+      ]
+     ]
+    }
+   ],
+   "end": 101.68
+  },
+  {
+   "start": 102.53,
+   "segments": [
+    {
+     "speaker": "pig2",
+     "text": "Please, man, give me that furze to build a house.",
+     "start": 102.53,
+     "end": 104.91,
+     "phrases": [
+      [
+       "Please, man, give me that furze to build a house.",
+       102.53,
+       104.91
+      ]
+     ]
+    }
+   ],
+   "end": 104.91
+  },
+  {
+   "start": 105.76,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Which the man did, and the pig built his house. Then along came the wolf, and said:",
+     "start": 105.76,
+     "end": 111.02,
+     "phrases": [
+      [
+       "Which the man did, and the pig built his house.",
+       105.76,
+       108.51
+      ],
+      [
+       "Then along came the wolf, and said:",
+       108.96,
+       111.02
+      ]
+     ]
+    }
+   ],
+   "end": 111.02
+  },
+  {
+   "start": 113.4,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, little pig, let me come in.",
+     "start": 113.4,
+     "end": 115.39,
+     "phrases": [
+      [
+       "Little pig, little pig, let me come in.",
+       113.4,
+       115.39
+      ]
+     ]
+    }
+   ],
+   "end": 115.39
+  },
+  {
+   "start": 116.24,
+   "segments": [
+    {
+     "speaker": "pig2",
+     "text": "No, no, by the hair of my chinny chin chin.",
+     "start": 116.24,
+     "end": 118.41,
+     "phrases": [
+      [
+       "No, no, by the hair of my chinny chin chin.",
+       116.24,
+       118.41
+      ]
+     ]
+    }
+   ],
+   "end": 118.41
+  },
+  {
+   "start": 119.26,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Then I'll puff, and I'll huff, and I'll blow your house in.",
+     "start": 119.26,
+     "end": 122.08,
+     "phrases": [
+      [
+       "Then I'll puff, and I'll huff, and I'll blow your house in.",
+       119.26,
+       122.08
+      ]
+     ]
+    }
+   ],
+   "end": 122.08
+  },
+  {
+   "start": 130.55,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So he huffed, and he puffed, and he puffed, and he huffed, and at last he blew the house down, and he ate up the little pig.",
+     "start": 130.55,
+     "end": 136.68,
+     "phrases": [
+      [
+       "So he huffed, and he puffed, and he puffed, and he huffed, and at last he blew the house down, and he ate up the little pig.",
+       130.55,
+       136.68
+      ]
+     ]
+    }
+   ],
+   "end": 136.68
+  },
+  {
+   "start": 139.03,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The third little pig met a man with a load of bricks, and said:",
+     "start": 139.03,
+     "end": 142.37,
+     "phrases": [
+      [
+       "The third little pig met a man with a load of bricks, and said:",
+       139.03,
+       142.37
+      ]
+     ]
+    }
+   ],
+   "end": 142.37
+  },
+  {
+   "start": 143.22,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Please, man, give me those bricks to build a house with.",
+     "start": 143.22,
+     "end": 146.13,
+     "phrases": [
+      [
+       "Please, man, give me those bricks to build a house with.",
+       143.22,
+       146.13
+      ]
+     ]
+    }
+   ],
+   "end": 146.13
+  },
+  {
+   "start": 146.98,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So the man gave him the bricks, and he built his house with them. So the wolf came, as he did to the other little pigs, and said:",
+     "start": 146.98,
+     "end": 154.12,
+     "phrases": [
+      [
+       "So the man gave him the bricks, and he built his house with them.",
+       146.98,
+       150.12
+      ],
+      [
+       "So the wolf came, as he did to the other little pigs, and said:",
+       150.57,
+       154.12
+      ]
+     ]
+    }
+   ],
+   "end": 154.12
+  },
+  {
+   "start": 156.5,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, little pig, let me come in.",
+     "start": 156.5,
+     "end": 158.49,
+     "phrases": [
+      [
+       "Little pig, little pig, let me come in.",
+       156.5,
+       158.49
+      ]
+     ]
+    }
+   ],
+   "end": 158.49
+  },
+  {
+   "start": 159.34,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "No, no, by the hair of my chinny chin chin.",
+     "start": 159.34,
+     "end": 161.8,
+     "phrases": [
+      [
+       "No, no, by the hair of my chinny chin chin.",
+       159.34,
+       161.8
+      ]
+     ]
+    }
+   ],
+   "end": 161.8
+  },
+  {
+   "start": 162.65,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Then I'll huff, and I'll puff, and I'll blow your house in.",
+     "start": 162.65,
+     "end": 165.51,
+     "phrases": [
+      [
+       "Then I'll huff, and I'll puff, and I'll blow your house in.",
+       162.65,
+       165.51
+      ]
+     ]
+    }
+   ],
+   "end": 165.51
+  },
+  {
+   "start": 174.28,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Well, he huffed, and he puffed, and he huffed and he puffed, and he puffed and huffed; but he could not get the house down. When he found that he could not, with all his huffing and puffing, blow the house down, he said:",
+     "start": 174.28,
+     "end": 185.81,
+     "phrases": [
+      [
+       "Well, he huffed, and he puffed, and he huffed and he puffed, and he puffed and huffed;",
+       174.28,
+       178.46
+      ],
+      [
+       "but he could not get the house down.",
+       178.76,
+       180.7
+      ],
+      [
+       "When he found that he could not, with all his huffing and puffing, blow the house down, he said:",
+       181.15,
+       185.81
+      ]
+     ]
+    }
+   ],
+   "end": 185.81
+  },
+  {
+   "start": 186.66,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, I know where there is a nice field of turnips.",
+     "start": 186.66,
+     "end": 189.87,
+     "phrases": [
+      [
+       "Little pig, I know where there is a nice field of turnips.",
+       186.66,
+       189.87
+      ]
+     ]
+    }
+   ],
+   "end": 189.87
+  },
+  {
+   "start": 190.72,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Where?",
+     "start": 190.72,
+     "end": 191.25,
+     "phrases": [
+      [
+       "Where?",
+       190.72,
+       191.25
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the little pig.",
+     "start": 191.47,
+     "end": 192.89,
+     "phrases": [
+      [
+       "said the little pig.",
+       191.47,
+       192.89
+      ]
+     ]
+    }
+   ],
+   "end": 192.89
+  },
+  {
+   "start": 193.74,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Oh, in Mr. Smith's Home-field, and if you will be ready tomorrow morning I will call for you, and we will go together, and get some for dinner.",
+     "start": 193.74,
+     "end": 202.66,
+     "phrases": [
+      [
+       "Oh, in Mr.",
+       193.74,
+       194.68
+      ],
+      [
+       "Smith's Home-field, and if you will be ready tomorrow morning I will call for you, and we will go together, and get some for dinner.",
+       195.14,
+       202.66
+      ]
+     ]
+    }
+   ],
+   "end": 202.66
+  },
+  {
+   "start": 203.51,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Very well,",
+     "start": 203.51,
+     "end": 204.27,
+     "phrases": [
+      [
+       "Very well,",
+       203.51,
+       204.27
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the little pig",
+     "start": 204.49,
+     "end": 205.7,
+     "phrases": [
+      [
+       "said the little pig",
+       204.49,
+       205.7
+      ]
+     ]
+    },
+    {
+     "speaker": "pig3",
+     "text": "I will be ready. What time do you mean to go?",
+     "start": 205.92,
+     "end": 208.65,
+     "phrases": [
+      [
+       "I will be ready.",
+       205.92,
+       206.87
+      ],
+      [
+       "What time do you mean to go?",
+       207.29,
+       208.65
+      ]
+     ]
+    }
+   ],
+   "end": 208.65
+  },
+  {
+   "start": 209.5,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Oh, at six o'clock.",
+     "start": 209.5,
+     "end": 210.68,
+     "phrases": [
+      [
+       "Oh, at six o'clock.",
+       209.5,
+       210.68
+      ]
+     ]
+    }
+   ],
+   "end": 210.68
+  },
+  {
+   "start": 221.91,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Well, the little pig got up at five, and got the turnips before the wolf came (which he did about six) and who said:",
+     "start": 221.91,
+     "end": 228.19,
+     "phrases": [
+      [
+       "Well, the little pig got up at five, and got the turnips before the wolf came (which he did about six) and who said:",
+       221.91,
+       228.19
+      ]
+     ]
+    }
+   ],
+   "end": 228.19
+  },
+  {
+   "start": 229.04,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little Pig, are you ready?",
+     "start": 229.04,
+     "end": 230.33,
+     "phrases": [
+      [
+       "Little Pig, are you ready?",
+       229.04,
+       230.33
+      ]
+     ]
+    }
+   ],
+   "end": 230.33
+  },
+  {
+   "start": 231.18,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The little pig said:",
+     "start": 231.18,
+     "end": 232.6,
+     "phrases": [
+      [
+       "The little pig said:",
+       231.18,
+       232.6
+      ]
+     ]
+    },
+    {
+     "speaker": "pig3",
+     "text": "Ready! I have been and come back again, and got a nice potful for dinner.",
+     "start": 232.82,
+     "end": 237.36,
+     "phrases": [
+      [
+       "Ready!",
+       232.82,
+       233.43
+      ],
+      [
+       "I have been and come back again, and got a nice potful for dinner.",
+       233.85,
+       237.36
+      ]
+     ]
+    }
+   ],
+   "end": 237.36
+  },
+  {
+   "start": 238.21,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The wolf felt very angry at this, but thought that he would be up to the little pig somehow or other, so he said:",
+     "start": 238.21,
+     "end": 244.27,
+     "phrases": [
+      [
+       "The wolf felt very angry at this, but thought that he would be up to the little pig somehow or other, so he said:",
+       238.21,
+       244.27
+      ]
+     ]
+    }
+   ],
+   "end": 244.27
+  },
+  {
+   "start": 245.12,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, I know where there is a nice apple-tree.",
+     "start": 245.12,
+     "end": 247.96,
+     "phrases": [
+      [
+       "Little pig, I know where there is a nice apple-tree.",
+       245.12,
+       247.96
+      ]
+     ]
+    }
+   ],
+   "end": 247.96
+  },
+  {
+   "start": 248.81,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Where?",
+     "start": 248.81,
+     "end": 249.34,
+     "phrases": [
+      [
+       "Where?",
+       248.81,
+       249.34
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the pig.",
+     "start": 249.56,
+     "end": 250.73,
+     "phrases": [
+      [
+       "said the pig.",
+       249.56,
+       250.73
+      ]
+     ]
+    }
+   ],
+   "end": 250.73
+  },
+  {
+   "start": 251.58,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Down at Merry-garden,",
+     "start": 251.58,
+     "end": 252.79,
+     "phrases": [
+      [
+       "Down at Merry-garden,",
+       251.58,
+       252.79
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "replied the wolf",
+     "start": 253.01,
+     "end": 254.45,
+     "phrases": [
+      [
+       "replied the wolf",
+       253.01,
+       254.45
+      ]
+     ]
+    },
+    {
+     "speaker": "wolf",
+     "text": "and if you will not deceive me I will come for you, at five o'clock tomorrow and get some apples.",
+     "start": 254.67,
+     "end": 260.41,
+     "phrases": [
+      [
+       "and if you will not deceive me I will come for you, at five o'clock tomorrow and get some apples.",
+       254.67,
+       260.41
+      ]
+     ]
+    }
+   ],
+   "end": 260.41
+  },
+  {
+   "start": 270.94,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Well, the little pig bustled up the next morning at four o'clock, and went off for the apples, hoping to get back before the wolf came; but he had further to go, and had to climb the tree, so that just as he was coming down from it, he saw the wolf coming, which, as you may suppose, frightened him very much. When the wolf came up he said:",
+     "start": 270.94,
+     "end": 290.16,
+     "phrases": [
+      [
+       "Well, the little pig bustled up the next morning at four o'clock, and went off for the apples, hoping to get back before the wolf came;",
+       270.94,
+       278.29
+      ],
+      [
+       "but he had further to go, and had to climb the tree, so that just as he was coming down from it, he saw the wolf coming, which, as you may suppose, frightened him very much.",
+       278.59,
+       287.9
+      ],
+      [
+       "When the wolf came up he said:",
+       288.35,
+       290.16
+      ]
+     ]
+    }
+   ],
+   "end": 290.16
+  },
+  {
+   "start": 291.01,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, what! are you here before me? Are they nice apples?",
+     "start": 291.01,
+     "end": 295.35,
+     "phrases": [
+      [
+       "Little pig, what!",
+       291.01,
+       292.02
+      ],
+      [
+       "are you here before me?",
+       292.49,
+       293.69
+      ],
+      [
+       "Are they nice apples?",
+       294.15,
+       295.35
+      ]
+     ]
+    }
+   ],
+   "end": 295.35
+  },
+  {
+   "start": 296.2,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Yes, very,",
+     "start": 296.2,
+     "end": 297.05,
+     "phrases": [
+      [
+       "Yes, very,",
+       296.2,
+       297.05
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the little pig.",
+     "start": 297.27,
+     "end": 298.68,
+     "phrases": [
+      [
+       "said the little pig.",
+       297.27,
+       298.68
+      ]
+     ]
+    },
+    {
+     "speaker": "pig3",
+     "text": "I will throw you down one.",
+     "start": 298.9,
+     "end": 300.21,
+     "phrases": [
+      [
+       "I will throw you down one.",
+       298.9,
+       300.21
+      ]
+     ]
+    }
+   ],
+   "end": 300.21
+  },
+  {
+   "start": 301.06,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And he threw it so far, that, while the wolf was gone to pick it up, the little pig jumped down and ran home. The next day the wolf came again, and said to the little pig:",
+     "start": 301.06,
+     "end": 310.68,
+     "phrases": [
+      [
+       "And he threw it so far, that, while the wolf was gone to pick it up, the little pig jumped down and ran home.",
+       301.06,
+       306.85
+      ],
+      [
+       "The next day the wolf came again, and said to the little pig:",
+       307.3,
+       310.68
+      ]
+     ]
+    }
+   ],
+   "end": 310.68
+  },
+  {
+   "start": 311.53,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "Little pig, there is a fair at Shanklin this afternoon, will you go?",
+     "start": 311.53,
+     "end": 315.22,
+     "phrases": [
+      [
+       "Little pig, there is a fair at Shanklin this afternoon, will you go?",
+       311.53,
+       315.22
+      ]
+     ]
+    }
+   ],
+   "end": 315.22
+  },
+  {
+   "start": 316.07,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Oh yes,",
+     "start": 316.07,
+     "end": 316.78,
+     "phrases": [
+      [
+       "Oh yes,",
+       316.07,
+       316.78
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the pig",
+     "start": 317.0,
+     "end": 317.8,
+     "phrases": [
+      [
+       "said the pig",
+       317.0,
+       317.8
+      ]
+     ]
+    },
+    {
+     "speaker": "pig3",
+     "text": "I will go; what time shall you be ready?",
+     "start": 318.02,
+     "end": 320.47,
+     "phrases": [
+      [
+       "I will go;",
+       318.02,
+       318.76
+      ],
+      [
+       "what time shall you be ready?",
+       319.04,
+       320.47
+      ]
+     ]
+    }
+   ],
+   "end": 320.47
+  },
+  {
+   "start": 321.32,
+   "segments": [
+    {
+     "speaker": "wolf",
+     "text": "At three,",
+     "start": 321.32,
+     "end": 322.11,
+     "phrases": [
+      [
+       "At three,",
+       321.32,
+       322.11
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the wolf. So the little pig went off before the time as usual, and got to the fair, and bought a butter-churn, which he was going home with, when he saw the wolf coming. Then he could not tell what to do. So he got into the churn to hide, and by so doing turned it round, and it rolled down the hill with the pig in it, which frightened the wolf so much, that he ran home without going to the fair.",
+     "start": 322.33,
+     "end": 345.34,
+     "phrases": [
+      [
+       "said the wolf.",
+       322.33,
+       323.52
+      ],
+      [
+       "So the little pig went off before the time as usual, and got to the fair, and bought a butter-churn, which he was going home with, when he saw the wolf coming.",
+       323.97,
+       332.02
+      ],
+      [
+       "Then he could not tell what to do.",
+       332.48,
+       334.43
+      ],
+      [
+       "So he got into the churn to hide, and by so doing turned it round, and it rolled down the hill with the pig in it, which frightened the wolf so much, that he ran home without going to the fair.",
+       334.88,
+       345.34
+      ]
+     ]
+    }
+   ],
+   "end": 345.34
+  },
+  {
+   "start": 351.02,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "He went to the little pig's house, and told him how frightened he had been by a great round thing which came down the hill past him. Then the little pig said:",
+     "start": 351.02,
+     "end": 360.18,
+     "phrases": [
+      [
+       "He went to the little pig's house, and told him how frightened he had been by a great round thing which came down the hill past him.",
+       351.02,
+       358.08
+      ],
+      [
+       "Then the little pig said:",
+       358.53,
+       360.18
+      ]
+     ]
+    }
+   ],
+   "end": 360.18
+  },
+  {
+   "start": 361.03,
+   "segments": [
+    {
+     "speaker": "pig3",
+     "text": "Hah, I frightened you, then. I had been to the fair and bought a butter-churn, and when I saw you, I got into it, and rolled down the hill.",
+     "start": 361.03,
+     "end": 368.58,
+     "phrases": [
+      [
+       "Hah, I frightened you, then.",
+       361.03,
+       362.44
+      ],
+      [
+       "I had been to the fair and bought a butter-churn, and when I saw you, I got into it, and rolled down the hill.",
+       362.86,
+       368.58
+      ]
+     ]
+    }
+   ],
+   "end": 368.58
+  },
+  {
+   "start": 369.43,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then the wolf was very angry indeed, and declared he would eat up the little pig, and that he would get down the chimney after him. When the little pig saw what he was about, he hung on the pot full of water, and made up a blazing fire, and, just as the wolf was coming down, took off the cover, and in fell the wolf;",
+     "start": 369.43,
+     "end": 387.03,
+     "phrases": [
+      [
+       "Then the wolf was very angry indeed, and declared he would eat up the little pig, and that he would get down the chimney after him.",
+       369.43,
+       376.35
+      ],
+      [
+       "When the little pig saw what he was about, he hung on the pot full of water, and made up a blazing fire, and, just as the wolf was coming down, took off the cover, and in fell the wolf;",
+       376.8,
+       387.03
+      ]
+     ]
+    }
+   ],
+   "end": 387.03
+  },
+  {
+   "start": 389.51,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "so the little pig put on the cover again in an instant, boiled him up, and ate him for supper, and lived happy ever afterwards.",
+     "start": 389.51,
+     "end": 396.47,
+     "phrases": [
+      [
+       "so the little pig put on the cover again in an instant, boiled him up, and ate him for supper, and lived happy ever afterwards.",
+       389.51,
+       396.47
+      ]
+     ]
+    }
+   ],
+   "end": 396.47
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis"
+  },
+  "narrator": {
+   "voice": "bf_isabella"
+  },
+  "pig1": {
+   "voice": "am_puck"
+  },
+  "pig2": {
+   "voice": "af_kore"
+  },
+  "pig3": {
+   "voice": "af_heart"
+  },
+  "wolf": {
+   "voice": "am_fenrir"
+  }
+ }
+}

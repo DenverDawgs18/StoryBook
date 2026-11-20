@@ -7,14 +7,14 @@ blurb: >
   A man insists he is not mad. He will prove it, calmly, by telling you how he
   murdered the old man with the vulture eye — and what he heard beneath the floor.
 mood: Night, dread, a heart that will not stop
-featured: true
+featured: false
 art: eye
 caption: “a pale blue eye, with a film over it”
 labels: {host: the host, oldman: the old man}
 cast:
   host:     {voice: "bm_lewis", speed: 0.88, room: chamber, wet: 0.07}
   narrator: {voice: "bm_george*0.6+bm_fable*0.4", speed: 0.93, room: room, wet: 0.08}
-  oldman:   {voice: "bm_daniel*0.7+am_onyx*0.3", speed: 0.86, pitch: -1.5, tone: thin, room: chamber, wet: 0.25, gain: -2}
+  oldman:   {voice: "am_michael", speed: 0.86, room: chamber, wet: 0.25}
 ---
 // ---------------------------------------------------------------- cold open
 [bed amb wind intensity=0.3 howl=0.35 vol=-12 fade=6]

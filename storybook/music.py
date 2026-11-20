@@ -162,10 +162,18 @@ CAROL = [("E4", 1), ("E4", 1), ("B4", 1), ("B4", 1), ("A4", 1), ("G4", 1), ("F#4
          ("E4", 1), ("F#4", 1), ("G4", 1), ("A4", 1), ("B4", 3), ("-", 1)]
 
 
+# Brahms, Wiegenlied Op. 49 No. 4 (1868) - first two phrases, in F
+LULLABY = [("A4", .5), ("A4", .5), ("C5", 2), ("A4", .5), ("A4", .5), ("C5", 2), ("A4", .5), ("C5", .5),
+           ("F5", 1), ("E5", 1.5), ("D5", .5), ("D5", 1), ("C5", 2), ("G4", .5), ("A4", .5), ("Bb4", 1),
+           ("G4", 1), ("G4", .5), ("A4", .5), ("Bb4", 2), ("G4", .5), ("Bb4", .5), ("E5", .5), ("D5", .5),
+           ("C5", 1), ("E5", 1), ("F5", 3), ("-", 1)]
+TUNES = {"carol": CAROL, "lullaby": LULLABY}
+
+
 @bed("music_box")
 def music_box(duration, rng, tempo=84.0, tune="carol", room="hall"):
     beat = 60 / float(tempo)
-    seq = CAROL if tune == "carol" else CAROL
+    seq = TUNES.get(tune, CAROL)
     n = samples(duration)
     out = np.zeros(n + SR * 4, dtype=np.float32)
     t = 0.5
@@ -241,3 +249,34 @@ def waltz(duration, rng, tempo=150.0, room="hall", eerie=0.4):
 def title_theme(duration, rng, chords="D3 A3 F4 | Bb2 F3 D4"):
     """A short swelling opening for episode titles."""
     return _chord_bed(duration, rng, _parse_chords(chords), max(duration / 2.2, 3.0), "aah", "cathedral", 0.75, level=-18)
+
+
+@bed("fairytale")
+def fairytale(duration, rng, key="F", tempo=66.0, room="hall"):
+    """Once upon a time: harp arpeggios rolling over a soft string pad, in a major key."""
+    prog = {
+        "F": "F3 A3 C4 | D3 F3 A3 | Bb2 D3 F3 | C3 E3 G3",
+        "G": "G3 B3 D4 | E3 G3 B3 | C3 E3 G3 | D3 F#3 A3",
+        "D": "D3 F#3 A3 | B2 D3 F#3 | G2 B2 D3 | A2 C#3 E3",
+        "Am": "A2 C3 E3 | F2 A2 C3 | D3 F3 A3 | E3 G#3 B3",
+    }.get(key, key)
+    chords = _parse_chords(prog)
+    beat = 60 / float(tempo)
+    bar = beat * 4
+    n = samples(duration)
+    pad = _chord_bed(duration, rng, chords, bar, "strings", room, 0.5, level=-27)
+    out = np.zeros((n + SR * 4, 2), dtype=np.float32)
+    t, i = 0.0, 0
+    while t < duration:
+        ch = chords[i % len(chords)]
+        tones = [m + 12 for m in ch] + [ch[0] + 24, ch[1] + 24]
+        pattern = tones + tones[-2:0:-1]
+        step = bar / len(pattern)
+        for k, m in enumerate(pattern):
+            s = pluck(m, 2.4, rng, 0.45)
+            dsp.place(out, dsp.pan(s, -0.5 + k / len(pattern)), samples(t + k * step + rng.normal(0, 0.008)), 0.35)
+        t += bar
+        i += 1
+    out = dsp.lowpass(out[:n], 7500)
+    out = dsp.set_rms(dsp.fade(dsp.reverb(out, room, 0.45, tail=False), 2.0, 3.0), -23)
+    return out + pad
