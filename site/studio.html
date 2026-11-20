@@ -97,6 +97,18 @@
     <div class="progress"><div class="bar"><div class="ground paint"></div><div class="fill paint" id="pfill"></div></div></div>
     <p class="status" id="s3">Setting out the brushes…</p>
     <p class="note" id="eta"></p>
+    <form class="keep-posted" id="kp" novalidate>
+      <p class="kp-lede"><span class="marginalia">while you wait ~</span> Want to hear when new stories and Studio features arrive?</p>
+      <div class="email-row">
+        <label class="field" for="kpEmail" style="position:absolute;left:-9999px">Your email</label>
+        <input type="email" id="kpEmail" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn ghost" type="submit" id="kpGo">Keep me posted</button>
+      </div>
+      <div aria-hidden="true" style="position:absolute;left:-9999px"><label>Website <input type="text" id="kpWebsite" tabindex="-1" autocomplete="off"></label></div>
+      <p class="note">Only for StoryBook news, and only now and then. Reply to any email to be removed.</p>
+      <p class="error hidden" id="kpErr" role="alert"></p>
+    </form>
+    <p class="hidden" id="kpDone" aria-live="polite"><span class="marginalia">Thank you! You're on the list ~</span></p>
     <div id="result" class="hidden">
       <div id="resPlayer"></div>
       <p class="note"><a id="dlScript" href="#">Download the production script</a> to fine-tune every cue and render it yourself with <code>python -m storybook render</code>.</p>

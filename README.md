@@ -171,6 +171,11 @@ and the parent can then reserve the full story with their email.
   `POST /api/personal/signup` appends to `/data/signups.jsonl`.
 * `GET /api/admin/signups` downloads the sign-ups as CSV (`?format=json` for JSON). It needs the
   `STORYBOOK_ADMIN_TOKEN` secret as `Authorization: Bearer <token>` and returns 404 without it.
+* `/admin/signups?token=<admin token>` is a private, bookmarkable page of every sign-up, with counts
+  by source and a CSV download link.
+* The Studio asks for an email while a recording renders ("Keep me posted"). These are stored by
+  `POST /api/subscribe` in the same file with `source: studio` and the job ID. Personalised-story
+  reservations are stored with `source: personal`.
 * To fulfil a sign-up, render the full story and email it:
 
 ```bash
@@ -200,6 +205,7 @@ Pages send named events only, and none carry a child's name, a dedication or an 
 | `example_switch`, `preview_requested`, `preview_ready`, `preview_failed`, `preview_invalid` | `tale`, `pronouns`, `voice`, `has_dedication`, `has_say_as`, `seconds` |
 | `signup_submitted`, `signup_failed` | the same choices, plus `had_preview` |
 | `studio_analyzed`, `studio_record_started`, `studio_record_done`, `studio_record_failed` | words, characters, mood, seconds |
+| `subscribe` | `source` (studio) |
 
 Any element with `data-track="event"` and optional `data-track-*` attributes reports a click.
 

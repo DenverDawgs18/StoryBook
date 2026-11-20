@@ -291,13 +291,75 @@ def personal_signup(req: SignupRequest, request: Request):
         raise HTTPException(400, str(e))
     if req.tale not in personalize.TALES or req.pronouns not in personalize.PRONOUNS:
         raise HTTPException(400, "Please choose a tale and pronouns.")
-    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "email": email, "name": name, "say_as": say_as,
+    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "source": "personal", "email": email, "name": name, "say_as": say_as,
            "pronouns": req.pronouns, "voice": req.voice or "", "tale": req.tale, "gift_from": gift_from,
            "preview_id": req.preview_id if re.fullmatch(r"[0-9a-f]{12}", req.preview_id or "") else "",
            "visitor": _visitor(request)}
     with LOCK, SIGNUPS.open("a") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
     return {"ok": True}
+
+
+class SubscribeRequest(BaseModel):
+    email: str
+    source: str = "studio"
+    job_id: str = ""
+    website: str = ""  # honeypot
+
+
+@app.post("/api/subscribe")
+def subscribe(req: SubscribeRequest, request: Request):
+    """Email sign-ups from anywhere other than the personalised-story page (e.g. the Studio)."""
+    if req.website:
+        return {"ok": True}
+    email = req.email.strip()
+    if not EMAIL_RX.match(email) or len(email) > 254:
+        raise HTTPException(400, "Please check the email address.")
+    source = req.source if req.source in ("studio", "home", "listen") else "other"
+    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "source": source, "email": email,
+           "job_id": req.job_id if re.fullmatch(r"[0-9a-f]{12}", req.job_id or "") else "", "visitor": _visitor(request)}
+    with LOCK, SIGNUPS.open("a") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return {"ok": True}
+
+
+def _signup_rows():
+    rows = [json.loads(l) for l in SIGNUPS.read_text().splitlines() if l.strip()] if SIGNUPS.exists() else []
+    for r in rows:
+        r.setdefault("source", "personal")  # rows from before sources were recorded
+    return rows
+
+
+@app.get("/admin/signups")
+def admin_signups_page(request: Request):
+    """A private, bookmarkable page of every sign-up. Same token as the CSV export."""
+    token = os.environ.get("STORYBOOK_ADMIN_TOKEN", "")
+    given = request.query_params.get("token", "")
+    if not token or not hmac.compare_digest(token, given):
+        raise HTTPException(404)
+    import html as H
+    from collections import Counter
+    from fastapi.responses import HTMLResponse
+    rows = sorted(_signup_rows(), key=lambda r: r["at"], reverse=True)
+    by_src = Counter(r["source"] for r in rows)
+    unique = len({r["email"].lower() for r in rows})
+    tr = "".join(
+        f"<tr><td>{H.escape(r['at'][:16].replace('T', ' '))}</td><td>{H.escape(r['source'])}</td>"
+        f"<td><a href=\"mailto:{H.escape(r['email'])}\">{H.escape(r['email'])}</a></td>"
+        f"<td>{H.escape(r.get('name', ''))}</td><td>{H.escape(r.get('tale', '').replace('_', ' '))}</td>"
+        f"<td>{H.escape(r.get('gift_from', ''))}</td></tr>" for r in rows) or '<tr><td colspan="6">No sign-ups yet.</td></tr>'
+    counts = " · ".join(f"{k}: {v}" for k, v in sorted(by_src.items())) or "none yet"
+    tok = H.escape(given)
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Sign-ups · StoryBook</title><link rel="stylesheet" href="/css/style.css">
+<style>table{{width:100%;border-collapse:collapse;font-size:.95rem}} th,td{{text-align:left;padding:.45rem .5rem;border-bottom:1px solid var(--rule);vertical-align:top}}
+th{{font-family:var(--caps);letter-spacing:.06em;color:var(--moss);font-weight:400}} .wrap{{overflow-x:auto}}</style></head>
+<body><div class="book"><header class="running-head"><a class="wordmark" href="/">StoryBook</a><span class="note">sign-ups</span></header>
+<section class="section"><h2>{len(rows)} sign-ups</h2><p class="note">{unique} unique emails · {H.escape(counts)} ·
+<a href="/api/admin/signups?token={tok}">download CSV</a></p>
+<div class="wrap"><table><thead><tr><th>When (UTC)</th><th>From</th><th>Email</th><th>Child</th><th>Tale</th><th>Dedication</th></tr></thead>
+<tbody>{tr}</tbody></table></div></section></div></body></html>"""
+    return HTMLResponse(page, headers={"Cache-Control": "no-store", "X-Robots-Tag": "noindex"})
 
 
 @app.get("/api/admin/signups")
@@ -307,11 +369,11 @@ def admin_signups(request: Request, format: str = "csv"):
     given = request.headers.get("authorization", "").removeprefix("Bearer ").strip() or request.query_params.get("token", "")
     if not token or not hmac.compare_digest(token, given):
         raise HTTPException(404)
-    rows = [json.loads(l) for l in SIGNUPS.read_text().splitlines() if l.strip()] if SIGNUPS.exists() else []
+    rows = _signup_rows()
     if format == "json":
         return rows
     buf = io.StringIO()
-    cols = ["at", "email", "name", "say_as", "pronouns", "voice", "tale", "gift_from", "preview_id", "visitor"]
+    cols = ["at", "source", "email", "name", "say_as", "pronouns", "voice", "tale", "gift_from", "preview_id", "job_id", "visitor"]
     w = csv.DictWriter(buf, cols, extrasaction="ignore")
     w.writeheader()
     w.writerows(rows)

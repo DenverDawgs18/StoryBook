@@ -196,3 +196,31 @@ if (m) {
   $("step3").classList.remove("hidden");
   watch(m[1], {});
 }
+
+
+// ------------------------------------------------------------------ keep me posted (email sign-up)
+{
+  const kp = document.getElementById("kp");
+  kp?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("kpEmail").value.trim();
+    const err = document.getElementById("kpErr");
+    const show = (m) => { err.textContent = m; err.classList.toggle("hidden", !m); };
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) { show("Please check your email address."); return; }
+    show("");
+    document.getElementById("kpGo").disabled = true;
+    try {
+      const jobId = (location.hash.match(/job=([0-9a-f]{12})/) || [])[1] || "";
+      const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, source: "studio", job_id: jobId, website: document.getElementById("kpWebsite").value }) });
+      if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || "Something went wrong. Please try again.");
+      window.sbTrack?.("subscribe", { source: "studio" });
+      kp.classList.add("hidden");
+      document.getElementById("kpDone").classList.remove("hidden");
+    } catch (ex) {
+      show(ex instanceof TypeError ? "Sign-ups need the StoryBook server." : ex.message);
+    } finally {
+      document.getElementById("kpGo").disabled = false;
+    }
+  });
+}
