@@ -79,11 +79,8 @@ function check(req) {
 const showError = (el, msg) => { $(el).textContent = msg; $(el).classList.toggle("hidden", !msg); };
 
 let previewId = "";
+let buying = false; // set once /api/config answers
 let previewAudio = null;
-$("name").addEventListener("input", () => {
-  const n = $("name").value.trim();
-  $("r-title").textContent = n && NAME_RX.test(n) ? `Reserve ${n}'s full story` : "Reserve the full story";
-});
 
 $("pform").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -111,7 +108,7 @@ $("pform").addEventListener("submit", async (e) => {
     window.sbTrack?.("preview_ready", { ...choices(req), seconds: Math.round((Date.now() - startedAt) / 1000) });
     $("pstatus").textContent = `Here is ${req.name}'s story ~`;
     $("presult").insertAdjacentHTML("beforeend",
-      `<p class="note" style="margin-top:1rem">Like it? <a href="#reserve">Reserve ${esc(req.name)}'s full story</a>.</p>`);
+      `<p class="note" style="margin-top:1rem">Like it? <a href="#reserve">${buying ? "Get" : "Reserve"} ${esc(req.name)}'s full story</a>.</p>`);
     previewAudio.play().catch(() => { /* autoplay may be blocked; the play button is there */ });
   } catch (err) {
     const offline = err instanceof TypeError || /\(404\)|\(405\)/.test(err.message);
@@ -139,8 +136,46 @@ async function poll(id, name) {
   }
 }
 
-// ------------------------------------------------------------------ reserve
-if (PRICE) $("price").textContent = PRICE;
+// ------------------------------------------------------------------ buy (when checkout is open) or reserve
+let config = {};
+try { config = await (await fetch("/api/config")).json(); } catch { /* static copy: reserve only */ }
+buying = !!config.payments;
+const fullPrice = config.pricing?.personal?.price || "";
+const reserveTitle = (n) => buying ? (n ? `Get ${n}'s full story` : "Get the full story") : (n ? `Reserve ${n}'s full story` : "Reserve the full story");
+if (buying) {
+  $("rform").classList.add("hidden");
+  $("buy").classList.remove("hidden");
+  $("r-blurb").textContent = "The full tale runs about five to seven minutes, from the dedication to the goodnight, with the whole cast and soundscape, and your child as the hero all the way through.";
+  $("price").textContent = `${fullPrice} a story${config.payments_mode === "test" ? " (test mode: only you can see this)" : ""}`;
+  $("bgo").textContent = `Get the full story · ${fullPrice}`;
+  $("r-title").textContent = reserveTitle("");
+} else if (PRICE) $("price").textContent = PRICE;
+$("name").addEventListener("input", () => {
+  const n = $("name").value.trim();
+  $("r-title").textContent = reserveTitle(n && NAME_RX.test(n) ? n : "");
+});
+
+$("bgo").addEventListener("click", async () => {
+  const req = request();
+  const problem = check(req);
+  if (problem) {
+    showError("berror", "First, tell us who the story is for, above.");
+    $("make").scrollIntoView({ behavior: "smooth" });
+    return;
+  }
+  showError("berror", "");
+  $("bgo").disabled = true;
+  try {
+    const { url } = await api("/api/checkout/personal", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(req),
+    });
+    window.sbTrack?.("checkout_started", { kind: "personal", ...choices(req), had_preview: !!previewId });
+    location.assign(url);
+  } catch (err) {
+    showError("berror", err.message);
+    $("bgo").disabled = false;
+  }
+});
 $("rform").addEventListener("submit", async (e) => {
   e.preventDefault();
   const req = request();
@@ -170,5 +205,28 @@ $("rform").addEventListener("submit", async (e) => {
     window.sbTrack?.("signup_failed", { tale: req.tale, reason: offline ? "offline" : err.message.slice(0, 80) });
   } finally {
     $("rgo").disabled = false;
+  }
+});
+
+// ------------------------------------------------------------------ custom stories: interest list
+$("cform").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = $("cemail").value.trim();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) { showError("cerror", "Please check your email address."); $("cemail").focus(); return; }
+  showError("cerror", "");
+  $("cgo").disabled = true;
+  const age = choice("age");
+  try {
+    await api("/api/subscribe", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, source: "custom_story", age, note: $("cnote").value.trim(), website: $("cwebsite").value }),
+    });
+    window.sbTrack?.("subscribe", { source: "custom_story", age: age || "none", has_note: !!$("cnote").value.trim() });
+    $("cform").classList.add("hidden");
+    $("cdone").classList.remove("hidden");
+  } catch (err) {
+    showError("cerror", err instanceof TypeError ? "Sign-ups need the StoryBook server, which this copy of the site isn't connected to." : err.message);
+  } finally {
+    $("cgo").disabled = false;
   }
 });

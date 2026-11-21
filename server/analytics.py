@@ -45,7 +45,8 @@ COOKIE = "sb_admin"
 COOKIE_DAYS = 30
 # Named events the pages already send (window.sbTrack) that are worth keeping, and the props kept for each.
 EVENTS = {"pageview", "story_play", "story_complete", "library_open", "cta_click",
-          "preview_requested", "preview_ready", "signup_submitted", "subscribe"}
+          "preview_requested", "preview_ready", "signup_submitted", "subscribe",
+          "checkout_started", "purchase_completed", "studio_preview_requested"}
 PROPS = ("story", "kind", "cta", "tale", "source")
 BOT_RX = re.compile(r"bot|crawl|spider|slurp|preview|facebookexternalhit|headless|lighthouse|curl|wget|python|httpx|go-http", re.I)
 MOBILE_RX = re.compile(r"Mobi|Android|iPhone|iPad", re.I)
@@ -53,7 +54,7 @@ SLUG_RX = re.compile(r"[^a-z0-9_.\-]")
 PER_MINUTE = 60
 _RECENT: dict[str, list[float]] = {}
 PAGES = {"/": "Home", "/index.html": "Home", "/listen.html": "Listen", "/personal.html": "Personalised tale",
-         "/studio.html": "Studio waitlist"}
+         "/studio.html": "Studio", "/order.html": "Order page"}
 # Referrer hosts folded into one name, so "m.facebook.com" and "l.facebook.com" count together.
 REF_NAMES = {"tiktok": "TikTok", "instagram": "Instagram", "facebook": "Facebook", "google": "Google", "bing": "Bing",
              "duckduckgo": "DuckDuckGo", "youtube": "YouTube", "reddit": "Reddit", "pinterest": "Pinterest",
@@ -218,6 +219,8 @@ def summarize(start: datetime, end: datetime) -> dict:
         "signups_by_source": dict(Counter(s.get("source", "?") for s in signups)),
         "story_plays": sum(plays.values()), "story_completes": sum(completes.values()),
         "previews_requested": sum(1 for r in evs if r["ev"] == "preview_requested"),
+        "checkouts_started": sum(1 for r in evs if r["ev"] == "checkout_started"),
+        "purchases": sum(1 for r in evs if r["ev"] == "purchase_completed"),
         "mobile_share": round(sum(1 for r in first.values() if r.get("dev") == "mobile") / len(first), 2) if first else 0,
         "pages": Counter(PAGES.get(r["path"], r["path"]) for r in pv).most_common(10),
         "sources": Counter(_source(r) for r in first.values()).most_common(10),
@@ -391,7 +394,7 @@ def dashboard(request: Request, days: int = 7):
         for r in s["recent_signups"]) or '<tr><td colspan="4" class="empty">No sign-ups in this period.</td></tr>'
     by_src = " · ".join(f"{k}: {v}" for k, v in sorted(s["signups_by_source"].items()))
     body = f"""<h2>How the site is doing</h2>
-<p class="range note">{rng} <span style="float:right"><a href="/admin/signups">all sign-ups</a> · <a href="/admin/logout">log out</a></span></p>
+<p class="range note">{rng} <span style="float:right"><a href="/admin/signups">all sign-ups</a> · <a href="/admin/orders">orders</a> · <a href="/admin/logout">log out</a></span></p>
 <div class="kpis">{kpis}</div>
 {_chart(s["daily"])}
 <div class="stats">
@@ -405,5 +408,6 @@ def dashboard(request: Request, days: int = 7):
 <h3>Sign-ups in this period{f" ({H.escape(by_src)})" if by_src else ""}</h3>
 <div class="wrap"><table><thead><tr><th>When (UTC)</th><th>From</th><th>Email</th><th>Interest</th></tr></thead><tbody>{sig_rows}</tbody></table></div>
 <p class="note" style="font-size:.85rem;margin-top:1.4rem">Counted on this server, with no cookies on visitors. A visitor is one browser on one day.
-Visitors with Do Not Track on, and bots, aren't counted. {s["previews_requested"]:,} personalised previews were requested in this period.</p>"""
+Visitors with Do Not Track on, and bots, aren't counted. {s["previews_requested"]:,} personalised previews were requested in this period,
+{s["checkouts_started"]:,} checkouts were opened and {s["purchases"]:,} were paid (see <a href="/admin/orders">orders</a>).</p>"""
     return HTMLResponse(_HEAD.format(title="Analytics", note="analytics") + body + _FOOT, headers=_NOSTORE)

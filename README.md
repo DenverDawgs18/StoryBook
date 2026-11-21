@@ -214,6 +214,34 @@ python -m storybook personal --tale the_three_little_pigs --name Mia --pronouns 
 
 The planned price shown on the page is one constant at the top of `site/js/personal.js`.
 
+## Payments (Stripe Checkout)
+
+`server/payments.py` sells two things, and both keep their free previews:
+
+* **The Studio**, priced by the manuscript's length in tiers. Visitors paste or upload a manuscript, cast it,
+  hear the opening free (`POST /api/studio/preview`, about 220 words), then pay to record it all.
+* **A story for your child**, one fixed price for the full personalised fairy tale.
+
+The buyer pays on Stripe's hosted Checkout page and comes back to `/order.html?o=<order>`, which waits for the
+payment, then for the recording, then plays it with a download button. That link is also in the Stripe receipt.
+Orders are files in `/data/orders/`; a paid order whose render was cut off by a restart is picked up again on boot,
+and while anything renders the server pings itself once a minute so Fly doesn't put the machine to sleep.
+`/admin/orders` lists every order with its buyer, status and the takings.
+
+| Fly secret | |
+| --- | --- |
+| `STRIPE_SECRET_KEY` | `sk_test_...` or `sk_live_...`. Without it, the Studio stays a waitlist and the personal page keeps "Reserve". |
+| `STRIPE_WEBHOOK_SECRET` | `whsec_...` from a webhook endpoint at `https://<site>/api/stripe/webhook` sending `checkout.session.completed` and `checkout.session.async_payment_succeeded`. Recommended: it catches buyers who close the tab before returning. |
+| `PERSONAL_PRICE` | dollars, default `6` |
+| `STUDIO_TIERS` | `max_words:dollars,...`, default `2000:9,7500:19,15000:29,25000:45`. The last tier covers anything up to the Studio's length limit. |
+
+With a **test** key the buy buttons appear only for the owner, logged in at `/admin`, so nobody else can get a
+free recording with Stripe's test card `4242 4242 4242 4242`. Switching to a **live** key opens them to everyone.
+`POST /api/jobs` (render a whole manuscript without paying) is now owner-only.
+
+The personal page also collects emails from parents who want a brand-new story written for their child
+(`source: custom_story`, with an optional age band and note). They show on `/admin/signups` and send no email.
+
 ## Analytics
 
 PostHog is wired in but stays off until the server has a project key:

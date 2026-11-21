@@ -129,6 +129,11 @@
     <h2 id="r-title">Reserve the full story</h2>
     <p class="blurb" id="r-blurb">The full tale runs about five to seven minutes, from the dedication to the goodnight, with the whole cast and soundscape. Full stories are opening soon. Leave your email and you'll be among the first to get one.</p>
     <p class="price" id="price"></p>
+    <div id="buy" class="hidden">
+      <div class="actions" style="justify-content:center"><button class="btn" type="button" id="bgo">Get the full story</button></div>
+      <p class="note">You'll pay on Stripe's secure checkout page, then come straight back here while the story is recorded. It takes a few minutes, and you can download the MP3 to keep.</p>
+      <p class="error hidden" id="berror" role="alert"></p>
+    </div>
     <form id="rform" novalidate>
       <label class="field" for="email">Your email</label>
       <div class="email-row">
@@ -143,6 +148,44 @@
     <div id="rdone" class="hidden" aria-live="polite">
       <p class="marginalia" style="font-size:1.8rem">You're on the list ~</p>
       <p id="rdone-text"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────── custom stories: interest list -->
+<section class="section custom-story" id="custom" style="padding-top:0">
+  <div class="panel reserve">
+    <p class="chapter-no">coming next</p>
+    <h2>A brand-new story, written for your child</h2>
+    <p class="blurb">Not an old tale with their name in it, but a new one: their dog, their best friend, the dragon they're sure lives under the stairs, all performed by the full cast with its own soundscape. Leave your email and we'll tell you when it's ready.</p>
+    <form id="cform" novalidate>
+      <div class="grid2">
+        <div>
+          <span class="field" id="age-l">How old are they? <span class="note">(optional)</span></span>
+          <div class="choice-row" role="radiogroup" aria-labelledby="age-l">
+            <label><input type="radio" name="age" value="0-2"> <span>0–2</span></label>
+            <label><input type="radio" name="age" value="3-5"> <span>3–5</span></label>
+            <label><input type="radio" name="age" value="6-8"> <span>6–8</span></label>
+            <label><input type="radio" name="age" value="9-12"> <span>9–12</span></label>
+          </div>
+        </div>
+        <div>
+          <label class="field" for="cnote">What would their story be about? <span class="note">(optional)</span></label>
+          <input type="text" id="cnote" maxlength="300" placeholder="Space, our cat Biscuit, and being brave at the dentist">
+        </div>
+      </div>
+      <label class="field" for="cemail" style="margin-top:1.2rem">Your email</label>
+      <div class="email-row">
+        <input type="email" id="cemail" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit" id="cgo">Tell me when</button>
+      </div>
+      <div aria-hidden="true" style="position:absolute;left:-9999px"><label>Website <input type="text" id="cwebsite" tabindex="-1" autocomplete="off"></label></div>
+      <p class="note">Only to tell you when custom stories open, and now and then about StoryBook. Reply to any email to be removed.</p>
+      <p class="error hidden" id="cerror" role="alert"></p>
+    </form>
+    <div id="cdone" class="hidden" aria-live="polite">
+      <p class="marginalia" style="font-size:1.8rem">You're on the list ~</p>
+      <p>Thank you. We'll write as soon as custom stories are ready.</p>
     </div>
   </div>
 </section>

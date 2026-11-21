@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Your Recording — StoryBook</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/analytics.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+</svg>
+<div class="book">
+<header class="running-head">
+  <a class="wordmark" href="./">StoryBook</a>
+  <nav class="nav" aria-label="Main">
+    <a href="./">Listen</a><a href="./#tales">Library</a><a href="personal.html">For your child</a><a href="studio.html">Studio</a><a href="./#craft">How it's made</a>
+  </nav>
+</header>
+
+<section class="titlepage" style="padding-bottom:1rem">
+  <p class="chapter-no" id="kicker">your recording</p>
+  <h1 style="font-size:clamp(2.2rem,6vw,4rem);margin-top:.2rem" id="otitle">Thank you</h1>
+  <div class="ornament" aria-hidden="true">❦</div>
+  <p class="lede" id="olede">Looking up your order…</p>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="panel" aria-live="polite">
+    <div class="progress hidden" id="oprog"><div class="bar"><div class="ground paint"></div><div class="fill paint" id="ofill"></div></div></div>
+    <p class="status" id="ostatus"></p>
+    <p class="note" id="oeta"></p>
+    <p class="error hidden" id="oerror" role="alert"></p>
+    <div id="oresult" class="hidden">
+      <div id="oplayer"></div>
+      <div class="actions" style="margin-top:1.4rem"><a class="btn" id="odl" href="#" download>Download the MP3</a></div>
+    </div>
+    <p class="note" style="margin-top:1.6rem">This page is yours to keep: bookmark it to come back to your recording. The link is also in your Stripe receipt.
+      Questions or a problem? Reply to your receipt email and we'll put it right.</p>
+  </div>
+</section>
+
+<footer class="colophon">
+  <p class="finis">Finis.</p>
+  <p>Voices by Kokoro-82M. Every sound is synthesised.</p>
+</footer>
+</div>
+<script type="module" src="js/order.js"></script>
+</body>
+</html>

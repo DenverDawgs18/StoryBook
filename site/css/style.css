@@ -444,3 +444,13 @@ input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); b
 @media (prefers-reduced-motion: reduce) {
   *, *::before { animation: none !important; transition: none !important; }
 }
+
+/* ------------------------------------------------------------ prices and orders */
+.price-list { list-style: none; padding: 0; margin: 1.4rem auto 0; max-width: 34rem; text-align: left; }
+.price-list li { display: flex; align-items: baseline; gap: .6rem; padding: .5rem 0; border-bottom: 1px solid var(--rule); }
+.price-list .t { font-family: var(--display); font-size: 1.25rem; line-height: 1.2; }
+.price-list .t small { display: block; font-family: var(--serif); font-size: .85rem; color: var(--ink-faint); }
+.price-list .dots { flex: 1; border-bottom: 1px dotted var(--rule); transform: translateY(-.3rem); }
+.price-list b { font-family: var(--display); font-weight: 400; font-size: 1.4rem; }
+.quote .price b { font-style: normal; color: var(--ink); }
+.custom-story .grid2 { margin-top: .6rem; }
