@@ -172,7 +172,32 @@ and the parent can then reserve the full story with their email.
 * `GET /api/admin/signups` downloads the sign-ups as CSV (`?format=json` for JSON). It needs the
   `STORYBOOK_ADMIN_TOKEN` secret as `Authorization: Bearer <token>` and returns 404 without it.
 * `/admin/signups?token=<admin token>` is a private, bookmarkable page of every sign-up, with counts
-  by source and a CSV download link.
+  by source and a CSV download link. Once you're logged in at `/admin`, `/admin/signups` works without the token.
+* `/admin` is the analytics dashboard. Log in with the `STORYBOOK_ADMIN_TOKEN` value as the password
+  (a 30-day cookie keeps you logged in). It shows visitors, page views, story plays, sign-ups and the
+  visitor-to-sign-up rate for today / 7 / 30 / 90 days, a daily chart, where visitors came from
+  (UTM source or referrer), each TikTok post's visits by `utm_content`, pages, stories played and opened,
+  buttons clicked, and the period's sign-ups. Counting is first-party (`site/js/analytics.js` →
+  `POST /api/track` → `/data/events/YYYY-MM-DD.jsonl`): no cookies on visitors, no IPs, names or emails,
+  bots and Do Not Track skipped, and a visitor id that changes daily.
+* `GET /api/admin/digest` returns yesterday's numbers (UTC) as JSON, next to the day before, the last 7 days
+  and all-time sign-ups. Same token. The daily digest task reads this.
+* Each new sign-up (Studio waitlist or personalised story) sends you an email. Set these Fly secrets:
+
+```bash
+fly secrets set NOTIFY_EMAIL_TO=you@example.com RESEND_API_KEY=re_your_key
+# optional: NOTIFY_EMAIL_FROM="StoryBook <hello@yourdomain.com>"  (a sender on a domain verified in Resend)
+# optional: PUBLIC_URL=https://storybook-audio.fly.dev  (adds a link to the sign-ups page)
+```
+
+  [Resend](https://resend.com) has a free tier. Without a verified domain, its default sender
+  (`onboarding@resend.dev`) can only email the address you signed up to Resend with, so use that as
+  `NOTIFY_EMAIL_TO`. To use any mail server instead (Gmail with an app password, for example), set
+  `SMTP_URL` in place of `RESEND_API_KEY`:
+  `fly secrets set SMTP_URL='smtps://you%40gmail.com:app-password@smtp.gmail.com:465' NOTIFY_EMAIL_FROM=you@gmail.com`.
+  If nothing is set, or sending fails, the sign-up is written to the app log (`fly logs | grep "sign-up"`)
+  and is always saved to `/data/signups.jsonl` either way. Sending runs in the background, so it
+  never slows the form down.
 * `site/studio.html` is a waitlist for the Studio while it's not open to the public. It asks for an
   email, an optional "what would you make?" (`use`) and an optional note. `POST /api/subscribe` stores
   these in the same file with `source: studio`; personalised-story reservations are stored with
@@ -218,7 +243,8 @@ The repo ships a `Dockerfile` (voice model baked in, so cold starts are quick) a
 ```bash
 fly apps create storybook-audio      # or any free name; match `app` in fly.toml
 fly volumes create storybook_data --region iad --size 1   # sign-ups and recordings live here
-fly secrets set STORYBOOK_ADMIN_TOKEN=$(openssl rand -base64 24)
+fly secrets set STORYBOOK_ADMIN_TOKEN=$(openssl rand -hex 24)
+fly secrets set NOTIFY_EMAIL_TO=you@example.com RESEND_API_KEY=re_your_key   # sign-up emails (see above)
 fly deploy --ha=false                # keep to ONE machine: Studio jobs live in its memory
 ```
 
