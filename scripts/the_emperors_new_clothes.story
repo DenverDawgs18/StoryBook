@@ -16,12 +16,12 @@ cast:
   narrator:    {voice: "bm_george", speed: 0.94, room: room, wet: 0.07}
   emperor:     {voice: "am_fenrir", speed: 0.9, room: hall, wet: 0.18}
   minister:    {voice: "bm_fable", speed: 0.88, room: hall, wet: 0.15}
-  weaver:      {voice: "am_puck", speed: 1.05, room: room, wet: 0.1}
+  weaver:      {voice: "am_puck*0.6+am_michael*0.25+af_kore*0.15", speed: 1.05, room: room, wet: 0.1}
   officer:     {voice: "am_michael", speed: 1.0, room: hall, wet: 0.15}
   courtiers:   {voice: "af_bella", speed: 1.0, room: hall, wet: 0.3}
   chamberlain: {voice: "am_michael", speed: 0.92, room: hall, wet: 0.25}
   crowd:       {voice: "af_kore", speed: 1.02, room: hall, wet: 0.35}
-  child:       {voice: "af_heart", speed: 1.05, room: booth, wet: 0.1}
+  child:       {voice: "af_heart*0.5+af_kore*0.3+af_bella*0.2", speed: 1.05, room: booth, wet: 0.1}
   father:      {voice: "am_michael", speed: 0.95, room: room, wet: 0.1}
 ---
 [bed amb crowd voices=8 distance=0.85 vol=-18 fade=5]

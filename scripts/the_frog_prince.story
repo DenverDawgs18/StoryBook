@@ -14,8 +14,8 @@ labels: {host: the host, princess: the princess, frog: the frog, king: the king,
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bm_fable", speed: 0.93, room: room, wet: 0.07}
-  princess: {voice: "af_heart", speed: 1.0, room: booth, wet: 0.1}
-  frog:     {voice: "am_puck", speed: 0.94, room: chamber, wet: 0.2}
+  princess: {voice: "af_heart*0.6+af_aoede*0.4", speed: 1.0, room: booth, wet: 0.1}
+  frog:     {voice: "am_puck*0.6+am_michael*0.25+af_kore*0.15", speed: 0.94, room: chamber, wet: 0.2}
   king:     {voice: "bm_george", speed: 0.9, room: hall, wet: 0.18}
   prince:   {voice: "am_michael", speed: 0.96, room: room, wet: 0.1}
 ---
