@@ -1,5 +1,10 @@
-// StoryBook analytics (PostHog), privacy-first and off unless the server is configured.
+// StoryBook analytics, privacy-first.
 //
+// First-party: every page view and the named events below go to this site's own server (/api/track),
+// which keeps aggregate counts for the owner's dashboard at /admin. No cookies, no names or emails;
+// only the path, the referring site, UTM tags and which story is playing. See server/analytics.py.
+//
+// PostHog (optional), off unless the server is configured:
 // - The project key comes from the server (`/api/config`, set with the POSTHOG_KEY env var),
 //   so a static copy of the site, or a server without the key, sends nothing at all.
 // - No cookies or local storage ("memory" persistence), no session recordings, no autocapture.
@@ -13,10 +18,27 @@
 (function () {
   const queue = [];
   let ready = false;
+  const dnt = navigator.doNotTrack === "1" || window.doNotTrack === "1";
+  const local = location.protocol === "file:";
+  function beacon(data) {
+    if (dnt || local) return;
+    const body = JSON.stringify(data);
+    try {
+      if (navigator.sendBeacon && navigator.sendBeacon("/api/track", new Blob([body], { type: "text/plain" }))) return;
+    } catch (e) { /* fall through */ }
+    fetch("/api/track", { method: "POST", body, keepalive: true, headers: { "Content-Type": "text/plain" } }).catch(() => {});
+  }
   window.sbTrack = function (event, props) {
+    beacon({ ev: event, path: location.pathname, props: props || {} });
     if (ready) window.posthog.capture(event, props || {});
     else queue.push([event, props || {}]);
   };
+
+  // One first-party page view per page load, with where the visitor came from.
+  const q = new URLSearchParams(location.search);
+  const pv = { ev: "pageview", path: location.pathname, ref: document.referrer || "", story: q.get("ep") || "" };
+  for (const k of ["utm_source", "utm_medium", "utm_campaign", "utm_content"]) if (q.get(k)) pv[k] = q.get(k);
+  beacon(pv);
 
   document.addEventListener("click", (e) => {
     const el = e.target.closest?.("[data-track]");
@@ -28,7 +50,7 @@
     window.sbTrack(el.dataset.track, props);
   });
 
-  if (navigator.doNotTrack === "1" || window.doNotTrack === "1") return;
+  if (dnt) return;
 
   fetch("/api/config", { cache: "no-cache" })
     .then((r) => (r.ok ? r.json() : null))

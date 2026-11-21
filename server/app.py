@@ -18,7 +18,6 @@ from pathlib import Path
 
 import csv
 import hashlib
-import hmac
 
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
@@ -30,7 +29,7 @@ from storybook.render import render
 from storybook.script import parse
 from storybook.voices import VOICE_CATALOG, Character, speak
 
-from . import notify
+from . import analytics, notify
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
@@ -352,10 +351,12 @@ def _interest(r: dict) -> str:
 @app.get("/admin/signups")
 def admin_signups_page(request: Request):
     """A private, bookmarkable page of every sign-up. Same token as the CSV export."""
-    token = os.environ.get("STORYBOOK_ADMIN_TOKEN", "")
-    given = request.query_params.get("token", "")
-    if not token or not hmac.compare_digest(token, given):
+    if not analytics.authed(request):
+        if os.environ.get("STORYBOOK_ADMIN_TOKEN"):
+            from fastapi.responses import RedirectResponse
+            return RedirectResponse("/admin", status_code=303)  # log in there, then come back
         raise HTTPException(404)
+    given = request.query_params.get("token", "")
     import html as H
     from collections import Counter
     from fastapi.responses import HTMLResponse
@@ -377,7 +378,7 @@ def admin_signups_page(request: Request):
 th{{font-family:var(--caps);letter-spacing:.06em;color:var(--moss);font-weight:400}} .wrap{{overflow-x:auto}}</style></head>
 <body><div class="book"><header class="running-head"><a class="wordmark" href="/">StoryBook</a><span class="note">sign-ups</span></header>
 <section class="section"><h2>{len(rows)} sign-up{'' if len(rows) == 1 else 's'}</h2><p class="note">{unique} unique emails · {H.escape(counts)} ·
-<a href="/api/admin/signups?token={tok}">download CSV</a></p>
+<a href="/api/admin/signups{'?token=' + tok if tok else ''}">download CSV</a> · <a href="/admin">analytics</a></p>
 <div class="wrap"><table><thead><tr><th>When (UTC)</th><th>From</th><th>Email</th><th>Interest</th><th>Note</th></tr></thead>
 <tbody>{tr}</tbody></table></div></section></div></body></html>"""
     return HTMLResponse(page, headers={"Cache-Control": "no-store", "X-Robots-Tag": "noindex"})
@@ -386,9 +387,7 @@ th{{font-family:var(--caps);letter-spacing:.06em;color:var(--moss);font-weight:4
 @app.get("/api/admin/signups")
 def admin_signups(request: Request, format: str = "csv"):
     """Download sign-ups. Needs STORYBOOK_ADMIN_TOKEN, sent as `Authorization: Bearer <token>` or ?token=."""
-    token = os.environ.get("STORYBOOK_ADMIN_TOKEN", "")
-    given = request.headers.get("authorization", "").removeprefix("Bearer ").strip() or request.query_params.get("token", "")
-    if not token or not hmac.compare_digest(token, given):
+    if not analytics.authed(request):
         raise HTTPException(404)
     rows = _signup_rows()
     if format == "json":
@@ -401,6 +400,9 @@ def admin_signups(request: Request, format: str = "csv"):
     return PlainTextResponse(buf.getvalue(), media_type="text/csv",
                              headers={"Content-Disposition": "attachment; filename=storybook-signups.csv"})
 
+
+analytics.init(DATA, _signup_rows, _interest)
+app.include_router(analytics.router)
 
 app.mount("/media/jobs", StaticFiles(directory=JOBS_DIR), name="jobs")
 app.mount("/", StaticFiles(directory=SITE, html=True), name="site")

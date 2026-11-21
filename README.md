@@ -172,7 +172,16 @@ and the parent can then reserve the full story with their email.
 * `GET /api/admin/signups` downloads the sign-ups as CSV (`?format=json` for JSON). It needs the
   `STORYBOOK_ADMIN_TOKEN` secret as `Authorization: Bearer <token>` and returns 404 without it.
 * `/admin/signups?token=<admin token>` is a private, bookmarkable page of every sign-up, with counts
-  by source and a CSV download link.
+  by source and a CSV download link. Once you're logged in at `/admin`, `/admin/signups` works without the token.
+* `/admin` is the analytics dashboard. Log in with the `STORYBOOK_ADMIN_TOKEN` value as the password
+  (a 30-day cookie keeps you logged in). It shows visitors, page views, story plays, sign-ups and the
+  visitor-to-sign-up rate for today / 7 / 30 / 90 days, a daily chart, where visitors came from
+  (UTM source or referrer), each TikTok post's visits by `utm_content`, pages, stories played and opened,
+  buttons clicked, and the period's sign-ups. Counting is first-party (`site/js/analytics.js` →
+  `POST /api/track` → `/data/events/YYYY-MM-DD.jsonl`): no cookies on visitors, no IPs, names or emails,
+  bots and Do Not Track skipped, and a visitor id that changes daily.
+* `GET /api/admin/digest` returns yesterday's numbers (UTC) as JSON, next to the day before, the last 7 days
+  and all-time sign-ups. Same token. The daily digest task reads this.
 * Each new sign-up (Studio waitlist or personalised story) sends you an email. Set these Fly secrets:
 
 ```bash
