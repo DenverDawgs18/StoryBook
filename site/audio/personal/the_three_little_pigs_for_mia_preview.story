@@ -34,7 +34,7 @@ cast:
     room: booth
     wet: 0.1
   pig3:
-    voice: af_heart
+    voice: af_heart*0.5+af_kore*0.3+af_bella*0.2
     speed: 1.0
     room: booth
     wet: 0.1
