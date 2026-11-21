@@ -515,9 +515,83 @@ def pigs(fallen=False):
     p.save("land_pigs")
 
 
+def musicians():
+    """The Travelling Musicians: a wood at night, a great tree, and the robbers' lit house."""
+    p = Plate(1500, 1000, 141)
+    p.sky("indigo", "slate", 0.55)
+    p.stars(90, 0.4)
+    moon = p.disc(0.2, 0.17, 0.05, 1.5)
+    p.lift(moon, 1.0)
+    p.glow(0.2, 0.17, 0.12, "mist", 0.15)
+    r1 = p.ridge(0.5, 0.05, "slate", 0.6, base=2)
+    p.conifers(r1, "indigo", 40, (0.04, 0.08), 0.35, 0.7, (0.0, 1.0))
+    r2 = p.ridge(0.68, 0.03, "viridian", 0.75, base=2)
+    x = 0.68
+    y = float(r2[int(x * p.w)]) + 0.02
+    p.glow(x, y - 0.06, 0.2, "ochre", 0.25)
+    cottage(p, x, y, 0.15, color="umber", roof="night", lit=True)
+    w = 0.15 * p.h / p.w * 0.62
+    win = p.rect(x + w * 0.15, y - 0.15 * 0.5, x + w * 0.55, y - 0.15 * 0.22)
+    p.lift(win, 1.0)
+    p.add(win, "ochre", 0.55, blur=1.2)
+    p.path([(0.45, 1.02), (0.55, 0.85), (x - 0.02, y + 0.005)], 0.04, 0.008, 0.6)
+    r3 = p.ridge(0.86, 0.025, "forest", 0.82)
+    p.conifers(r3, "night", 5, (0.25, 0.4), 0.3, 0.9, (0.02, 0.16))
+    p.round_trees(r3, "forest", 4, (0.05, 0.08), 0.8, (0.85, 1.0))
+    p.save("land_musicians")
+
+
+def sea():
+    """The Fisherman and His Wife: a hovel on the dunes, a black sea rising under a red storm sky."""
+    p = Plate(1500, 1000, 151)
+    p.sky("slate", "madder", 0.6)
+    p.glow(0.82, 0.38, 0.22, "madder", 0.3)
+    band = np.clip((p.v - 0.5) * p.h / 3, 0, 1) * np.clip((0.82 - p.v) * p.h / 3, 0, 1)
+    p.add(band, "indigo", 0.85, blur=3)
+    swell = fbm(p.h, p.w, p.rng, 4, 5)
+    p.add(band * np.clip((swell - 0.4) * 2, 0, 1), "night", 0.6, blur=3)
+    # foam: long horizontal crests, thicker and whiter towards the shore
+    foam = fbm(p.h * 8, p.w, p.rng, 3, 24)[::8]
+    near = np.clip((p.v - 0.5) / 0.32, 0, 1)
+    p.lift(band * np.clip((foam - 0.66 + near * 0.06) * 6, 0, 1) * (0.4 + 0.6 * near), 0.85)
+    r1 = p.ridge(0.8, 0.03, "straw", 0.6, base=1.5)
+    x = 0.22
+    cottage(p, x, float(r1[int(x * p.w)]) + 0.02, 0.09, color="umber", roof="olive", lit=False)
+    p.ridge(0.92, 0.02, "olive", 0.7)
+    p.save("land_sea")
+
+
+def alesia():
+    """The Siege of Alesia: the hill-town at dusk, ringed by the Roman lines, camp-fires on the plain."""
+    p = Plate(1500, 1000, 161)
+    p.sky("slate", "ember", 0.55)
+    p.glow(0.75, 0.42, 0.25, "ember", 0.25)
+    p.ridge(0.42, 0.04, "mist", 0.5, base=2)
+    hill = np.clip(1 - ((p.u[0] - 0.5) / 0.3) ** 2, 0, 1)
+    top = 0.6 - 0.2 * hill ** 0.6 + 0.01 * noise1d(p.w, p.rng, 4, 4)
+    p.add(np.clip((p.v - top[None, :]) * p.h / 3, 0, 1), "olive", 0.75, occlude=0.92)
+    town(p, float(top[int(0.5 * p.w)]) + 0.03, 0.36, 0.64, color="umber", roof="slate", lit=0.4)
+    plain = 0.66
+    p.add(np.clip((p.v - plain) * p.h / 3, 0, 1), "moss", 0.7, occlude=0.9)
+    for yl, amp, col in [(0.68, 0.006, "night"), (0.74, 0.008, "umber")]:
+        line = yl + amp * noise1d(p.w, p.rng, 3, 5)
+        wall = np.clip(1 - np.abs(p.v - line[None, :]) * p.h / 2.2, 0, 1)
+        p.add(wall, col, 0.9, blur=0.8)
+        for tx in np.arange(0.04, 0.98, 0.06):
+            ty = float(line[int(tx * p.w)])
+            p.poly([(tx - 0.004, ty), (tx - 0.004, ty - 0.025), (tx + 0.004, ty - 0.025), (tx + 0.004, ty)], col, 0.9, blur=0.6)
+    fires = np.zeros((p.h, p.w), np.float32)
+    for _ in range(26):
+        fires = np.maximum(fires, p.disc(p.rng.uniform(0.03, 0.97), p.rng.uniform(0.78, 0.9), 0.0035, 1))
+    p.lift(fires, 1.0)
+    p.add(fires, "ember", 0.8, blur=1.0)
+    p.ridge(0.92, 0.02, "forest", 0.8)
+    p.save("land_alesia")
+
+
 PLATES = {"pigs": pigs, "pigs_fallen": lambda: pigs(fallen=True), "hero": hero, "cottage": cottage_night, "wood": wood, "forest": forest, "hills": hills_night,
           "spring": spring, "town": town_day, "castle": castle_storm, "snow": snow_street,
-          "abbey": abbey, "rome": rome}
+          "abbey": abbey, "rome": rome, "musicians": musicians, "sea": sea, "alesia": alesia}
 
 if __name__ == "__main__":
     for key in (sys.argv[1:] or PLATES):

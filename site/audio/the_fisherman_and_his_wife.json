@@ -1,0 +1,3260 @@
+{
+ "meta": {
+  "title": "The Fisherman and His Wife",
+  "author": "The Brothers Grimm",
+  "year": 1812,
+  "source": "https://www.gutenberg.org/ebooks/2591",
+  "blurb": "A poor fisherman catches a flounder that says it is an enchanted prince, and lets it go. His wife sends him back to ask for a cottage. Then a castle. Then a crown. And every time he goes down to the shore, the sea is a little darker.\n",
+  "mood": "A wish too many, and a rising sea",
+  "art": "land_sea",
+  "caption": "“O man of the sea! Hearken to me!”",
+  "order": 10,
+  "shelf": "fairy",
+  "labels": {
+   "host": "the host",
+   "fisherman": "the fisherman",
+   "wife": "his wife Ilsabill",
+   "fish": "the enchanted fish"
+  }
+ },
+ "duration": 801.71,
+ "chapters": [
+  {
+   "title": "The Fisherman and His Wife. By the Brothers Grimm.",
+   "start": 33.19
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Eighteen-oh-six. The painter Philipp Otto Runge sends a publisher in Heidelberg a story from the Baltic coast of Pomerania, written down in the fishermen's own dialect.",
+     "start": 5.0,
+     "end": 17.29,
+     "phrases": [
+      [
+       "Eighteen-oh-six. The painter Philipp Otto Runge sends a publisher in Heidelberg a story from the Baltic coast of Pomerania, written down in the fishermen's own dialect.",
+       5.0,
+       17.29
+      ]
+     ]
+    }
+   ],
+   "end": 17.29
+  },
+  {
+   "start": 18.14,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Six years later the Brothers Grimm print it, dialect and all, in their first collection of tales. Every time the fisherman walks down to the shore, listen to the sea.",
+     "start": 18.14,
+     "end": 29.34,
+     "phrases": [
+      [
+       "Six years later the Brothers Grimm print it, dialect and all, in their first collection of tales.",
+       18.14,
+       24.69
+      ],
+      [
+       "Every time the fisherman walks down to the shore, listen to the sea.",
+       25.16,
+       29.34
+      ]
+     ]
+    }
+   ],
+   "end": 29.34
+  },
+  {
+   "start": 33.19,
+   "end": 36.86,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Fisherman and His Wife. By the Brothers Grimm.",
+     "start": 33.19,
+     "end": 36.86,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 39.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "There was once a fisherman who lived with his wife in a pigsty, close by the seaside. The fisherman used to go out all day long a-fishing; and one day, as he sat on the shore with his rod, looking at the sparkling waves and watching his line, all on a sudden his float was dragged away deep into the water: and in drawing it up he pulled out a great fish.",
+     "start": 39.96,
+     "end": 60.02,
+     "phrases": [
+      [
+       "There was once a fisherman who lived with his wife in a pigsty, close by the seaside.",
+       39.96,
+       44.45
+      ],
+      [
+       "The fisherman used to go out all day long a-fishing;",
+       44.9,
+       47.63
+      ],
+      [
+       "and one day, as he sat on the shore with his rod, looking at the sparkling waves and watching his line, all on a sudden his float was dragged away deep into the water:",
+       47.93,
+       57.1
+      ],
+      [
+       "and in drawing it up he pulled out a great fish.",
+       57.4,
+       60.02
+      ]
+     ]
+    }
+   ],
+   "end": 60.02
+  },
+  {
+   "start": 63.01,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But the fish said",
+     "start": 63.01,
+     "end": 64.44,
+     "phrases": [
+      [
+       "But the fish said",
+       63.01,
+       64.44
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "Pray let me live! I am not a real fish; I am an enchanted prince: put me in the water again, and let me go!",
+     "start": 64.66,
+     "end": 73.38,
+     "phrases": [
+      [
+       "Pray let me live!",
+       64.66,
+       65.98
+      ],
+      [
+       "I am not a real fish;",
+       66.45,
+       68.25
+      ],
+      [
+       "I am an enchanted prince:",
+       68.57,
+       70.54
+      ],
+      [
+       "put me in the water again, and let me go!",
+       70.86,
+       73.38
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Oh, ho!",
+     "start": 73.6,
+     "end": 74.52,
+     "phrases": [
+      [
+       "Oh, ho!",
+       73.6,
+       74.52
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the man",
+     "start": 74.74,
+     "end": 75.6,
+     "phrases": [
+      [
+       "said the man",
+       74.74,
+       75.6
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "you need not make so many words about the matter; I will have nothing to do with a fish that can talk: so swim away, sir, as soon as you please!",
+     "start": 75.82,
+     "end": 84.39,
+     "phrases": [
+      [
+       "you need not make so many words about the matter;",
+       75.82,
+       78.54
+      ],
+      [
+       "I will have nothing to do with a fish that can talk:",
+       78.85,
+       81.6
+      ],
+      [
+       "so swim away, sir, as soon as you please!",
+       81.91,
+       84.39
+      ]
+     ]
+    }
+   ],
+   "end": 84.39
+  },
+  {
+   "start": 85.24,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then he put him back into the water, and the fish darted straight down to the bottom, and left a long streak of blood behind him on the wave.",
+     "start": 85.24,
+     "end": 92.82,
+     "phrases": [
+      [
+       "Then he put him back into the water, and the fish darted straight down to the bottom, and left a long streak of blood behind him on the wave.",
+       85.24,
+       92.82
+      ]
+     ]
+    }
+   ],
+   "end": 92.82
+  },
+  {
+   "start": 95.17,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "When the fisherman went home to his wife in the pigsty, he told her how he had caught a great fish, and how it had told him it was an enchanted prince, and how, on hearing it speak, he had let it go again.",
+     "start": 95.17,
+     "end": 106.18,
+     "phrases": [
+      [
+       "When the fisherman went home to his wife in the pigsty, he told her how he had caught a great fish, and how it had told him it was an enchanted prince, and how, on hearing it speak, he had let it go again.",
+       95.17,
+       106.18
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Did not you ask it for anything?",
+     "start": 106.4,
+     "end": 107.91,
+     "phrases": [
+      [
+       "Did not you ask it for anything?",
+       106.4,
+       107.91
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the wife",
+     "start": 108.13,
+     "end": 109.33,
+     "phrases": [
+      [
+       "said the wife",
+       108.13,
+       109.33
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "we live very wretchedly here, in this nasty dirty pigsty; do go back and tell the fish we want a snug little cottage.",
+     "start": 109.55,
+     "end": 116.57,
+     "phrases": [
+      [
+       "we live very wretchedly here, in this nasty dirty pigsty;",
+       109.55,
+       113.08
+      ],
+      [
+       "do go back and tell the fish we want a snug little cottage.",
+       113.37,
+       116.57
+      ]
+     ]
+    }
+   ],
+   "end": 116.57
+  },
+  {
+   "start": 118.42,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The fisherman did not much like the business: however, he went to the seashore; and when he came back there the water looked all yellow and green. And he stood at the water's edge, and said:",
+     "start": 118.42,
+     "end": 129.2,
+     "phrases": [
+      [
+       "The fisherman did not much like the business:",
+       118.42,
+       120.84
+      ],
+      [
+       "however, he went to the seashore;",
+       121.14,
+       123.03
+      ],
+      [
+       "and when he came back there the water looked all yellow and green.",
+       123.34,
+       126.49
+      ],
+      [
+       "And he stood at the water's edge, and said:",
+       126.95,
+       129.2
+      ]
+     ]
+    }
+   ],
+   "end": 129.2
+  },
+  {
+   "start": 130.55,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O man of the sea! Hearken to me! My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+     "start": 130.55,
+     "end": 137.94,
+     "phrases": [
+      [
+       "O man of the sea! Hearken to me!",
+       130.55,
+       132.64
+      ],
+      [
+       "My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+       133.09,
+       137.94
+      ]
+     ]
+    }
+   ],
+   "end": 137.94
+  },
+  {
+   "start": 139.59,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then the fish came swimming to him, and said",
+     "start": 139.59,
+     "end": 142.12,
+     "phrases": [
+      [
+       "Then the fish came swimming to him, and said",
+       139.59,
+       142.12
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "Well, what is her will? What does your wife want?",
+     "start": 142.34,
+     "end": 146.11,
+     "phrases": [
+      [
+       "Well, what is her will?",
+       142.34,
+       144.03
+      ],
+      [
+       "What does your wife want?",
+       144.51,
+       146.11
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 146.33,
+     "end": 146.98,
+     "phrases": [
+      [
+       "Ah!",
+       146.33,
+       146.98
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 147.2,
+     "end": 148.54,
+     "phrases": [
+      [
+       "said the fisherman",
+       147.2,
+       148.54
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "she says that when I had caught you, I ought to have asked you for something before I let you go; she does not like living any longer in the pigsty, and wants a snug little cottage.",
+     "start": 148.76,
+     "end": 159.21,
+     "phrases": [
+      [
+       "she says that when I had caught you, I ought to have asked you for something before I let you go;",
+       148.76,
+       153.99
+      ],
+      [
+       "she does not like living any longer in the pigsty, and wants a snug little cottage.",
+       154.29,
+       159.21
+      ]
+     ]
+    }
+   ],
+   "end": 159.21
+  },
+  {
+   "start": 160.06,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Go home, then,",
+     "start": 160.06,
+     "end": 161.38,
+     "phrases": [
+      [
+       "Go home, then,",
+       160.06,
+       161.38
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish;",
+     "start": 161.6,
+     "end": 162.7,
+     "phrases": [
+      [
+       "said the fish;",
+       161.6,
+       162.7
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "she is in the cottage already!",
+     "start": 162.92,
+     "end": 165.01,
+     "phrases": [
+      [
+       "she is in the cottage already!",
+       162.92,
+       165.01
+      ]
+     ]
+    }
+   ],
+   "end": 165.01
+  },
+  {
+   "start": 165.86,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So the man went home, and saw his wife standing at the door of a nice trim little cottage.",
+     "start": 165.86,
+     "end": 170.92,
+     "phrases": [
+      [
+       "So the man went home, and saw his wife standing at the door of a nice trim little cottage.",
+       165.86,
+       170.92
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Come in, come in!",
+     "start": 171.14,
+     "end": 172.09,
+     "phrases": [
+      [
+       "Come in, come in!",
+       171.14,
+       172.09
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she;",
+     "start": 172.31,
+     "end": 173.68,
+     "phrases": [
+      [
+       "said she;",
+       172.31,
+       173.68
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "is not this much better than the filthy pigsty we had?",
+     "start": 173.9,
+     "end": 176.88,
+     "phrases": [
+      [
+       "is not this much better than the filthy pigsty we had?",
+       173.9,
+       176.88
+      ]
+     ]
+    }
+   ],
+   "end": 176.88
+  },
+  {
+   "start": 177.73,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And there was a parlour, and a bedchamber, and a kitchen; and behind the cottage there was a little garden, planted with all sorts of flowers and fruits; and there was a courtyard behind, full of ducks and chickens.",
+     "start": 177.73,
+     "end": 189.66,
+     "phrases": [
+      [
+       "And there was a parlour, and a bedchamber, and a kitchen;",
+       177.73,
+       180.6
+      ],
+      [
+       "and behind the cottage there was a little garden, planted with all sorts of flowers and fruits;",
+       180.91,
+       185.93
+      ],
+      [
+       "and there was a courtyard behind, full of ducks and chickens.",
+       186.23,
+       189.66
+      ]
+     ]
+    }
+   ],
+   "end": 189.66
+  },
+  {
+   "start": 190.51,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 190.51,
+     "end": 191.16,
+     "phrases": [
+      [
+       "Ah!",
+       190.51,
+       191.16
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 191.38,
+     "end": 192.72,
+     "phrases": [
+      [
+       "said the fisherman",
+       191.38,
+       192.72
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "how happily we shall live now!",
+     "start": 192.94,
+     "end": 194.52,
+     "phrases": [
+      [
+       "how happily we shall live now!",
+       192.94,
+       194.52
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "We will try to do so, at least,",
+     "start": 194.74,
+     "end": 196.27,
+     "phrases": [
+      [
+       "We will try to do so, at least,",
+       194.74,
+       196.27
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said his wife.",
+     "start": 196.49,
+     "end": 197.64,
+     "phrases": [
+      [
+       "said his wife.",
+       196.49,
+       197.64
+      ]
+     ]
+    }
+   ],
+   "end": 197.64
+  },
+  {
+   "start": 199.99,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Everything went right for a week or two, and then Dame Ilsabill said",
+     "start": 199.99,
+     "end": 204.03,
+     "phrases": [
+      [
+       "Everything went right for a week or two, and then Dame Ilsabill said",
+       199.99,
+       204.03
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Husband, there is not near room enough for us in this cottage; the courtyard and the garden are a great deal too small; I should like to have a large stone castle to live in: go to the fish again and tell him to give us a castle.",
+     "start": 204.25,
+     "end": 216.78,
+     "phrases": [
+      [
+       "Husband, there is not near room enough for us in this cottage;",
+       204.25,
+       207.35
+      ],
+      [
+       "the courtyard and the garden are a great deal too small;",
+       207.64,
+       210.64
+      ],
+      [
+       "I should like to have a large stone castle to live in:",
+       210.93,
+       213.52
+      ],
+      [
+       "go to the fish again and tell him to give us a castle.",
+       213.81,
+       216.78
+      ]
+     ]
+    }
+   ],
+   "end": 216.78
+  },
+  {
+   "start": 217.63,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Wife,",
+     "start": 217.63,
+     "end": 218.31,
+     "phrases": [
+      [
+       "Wife,",
+       217.63,
+       218.31
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 218.53,
+     "end": 219.87,
+     "phrases": [
+      [
+       "said the fisherman",
+       218.53,
+       219.87
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I don't like to go to him again, for perhaps he will be angry; we ought to be easy with this pretty cottage to live in.",
+     "start": 220.09,
+     "end": 226.52,
+     "phrases": [
+      [
+       "I don't like to go to him again, for perhaps he will be angry;",
+       220.09,
+       223.35
+      ],
+      [
+       "we ought to be easy with this pretty cottage to live in.",
+       223.63,
+       226.52
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Nonsense!",
+     "start": 226.74,
+     "end": 227.5,
+     "phrases": [
+      [
+       "Nonsense!",
+       226.74,
+       227.5
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the wife;",
+     "start": 227.72,
+     "end": 228.91,
+     "phrases": [
+      [
+       "said the wife;",
+       227.72,
+       228.91
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "he will do it very willingly, I know; go along and try!",
+     "start": 229.13,
+     "end": 232.2,
+     "phrases": [
+      [
+       "he will do it very willingly, I know;",
+       229.13,
+       230.91
+      ],
+      [
+       "go along and try!",
+       231.2,
+       232.2
+      ]
+     ]
+    }
+   ],
+   "end": 232.2
+  },
+  {
+   "start": 234.05,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The fisherman went, but his heart was very heavy: and when he came to the sea, it looked blue and gloomy, though it was very calm; and he went close to the edge of the waves, and said:",
+     "start": 234.05,
+     "end": 244.06,
+     "phrases": [
+      [
+       "The fisherman went, but his heart was very heavy:",
+       234.05,
+       236.67
+      ],
+      [
+       "and when he came to the sea, it looked blue and gloomy, though it was very calm;",
+       236.98,
+       241.02
+      ],
+      [
+       "and he went close to the edge of the waves, and said:",
+       241.32,
+       244.06
+      ]
+     ]
+    }
+   ],
+   "end": 244.06
+  },
+  {
+   "start": 245.41,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O man of the sea! Hearken to me! My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+     "start": 245.41,
+     "end": 252.8,
+     "phrases": [
+      [
+       "O man of the sea! Hearken to me!",
+       245.41,
+       247.5
+      ],
+      [
+       "My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+       247.96,
+       252.8
+      ]
+     ]
+    }
+   ],
+   "end": 252.8
+  },
+  {
+   "start": 254.45,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Well, what does she want now?",
+     "start": 254.45,
+     "end": 256.09,
+     "phrases": [
+      [
+       "Well, what does she want now?",
+       254.45,
+       256.09
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish.",
+     "start": 256.31,
+     "end": 257.44,
+     "phrases": [
+      [
+       "said the fish.",
+       256.31,
+       257.44
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 257.66,
+     "end": 258.31,
+     "phrases": [
+      [
+       "Ah!",
+       257.66,
+       258.31
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the man, dolefully",
+     "start": 258.53,
+     "end": 260.12,
+     "phrases": [
+      [
+       "said the man, dolefully",
+       258.53,
+       260.12
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "my wife wants to live in a stone castle.",
+     "start": 260.34,
+     "end": 262.73,
+     "phrases": [
+      [
+       "my wife wants to live in a stone castle.",
+       260.34,
+       262.73
+      ]
+     ]
+    }
+   ],
+   "end": 262.73
+  },
+  {
+   "start": 263.58,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Go home, then,",
+     "start": 263.58,
+     "end": 264.89,
+     "phrases": [
+      [
+       "Go home, then,",
+       263.58,
+       264.89
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish;",
+     "start": 265.11,
+     "end": 266.22,
+     "phrases": [
+      [
+       "said the fish;",
+       265.11,
+       266.22
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "she is standing at the gate of it already.",
+     "start": 266.44,
+     "end": 268.88,
+     "phrases": [
+      [
+       "she is standing at the gate of it already.",
+       266.44,
+       268.88
+      ]
+     ]
+    }
+   ],
+   "end": 268.88
+  },
+  {
+   "start": 269.73,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So away went the fisherman, and found his wife standing before the gate of a great castle.",
+     "start": 269.73,
+     "end": 274.82,
+     "phrases": [
+      [
+       "So away went the fisherman, and found his wife standing before the gate of a great castle.",
+       269.73,
+       274.82
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "See,",
+     "start": 275.04,
+     "end": 275.59,
+     "phrases": [
+      [
+       "See,",
+       275.04,
+       275.59
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 275.81,
+     "end": 276.81,
+     "phrases": [
+      [
+       "said she",
+       275.81,
+       276.81
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "is not this grand?",
+     "start": 277.03,
+     "end": 278.1,
+     "phrases": [
+      [
+       "is not this grand?",
+       277.03,
+       278.1
+      ]
+     ]
+    }
+   ],
+   "end": 278.1
+  },
+  {
+   "start": 278.95,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "With that they went into the castle together, and found a great many servants there, and the rooms all richly furnished, and full of golden chairs and tables; and behind the castle was a garden, and around it was a park half a mile long, full of sheep, and goats, and hares, and deer; and in the courtyard were stables and cow-houses.",
+     "start": 278.95,
+     "end": 297.94,
+     "phrases": [
+      [
+       "With that they went into the castle together, and found a great many servants there, and the rooms all richly furnished, and full of golden chairs and tables;",
+       278.95,
+       287.63
+      ],
+      [
+       "and behind the castle was a garden, and around it was a park half a mile long, full of sheep, and goats, and hares, and deer;",
+       287.93,
+       294.87
+      ],
+      [
+       "and in the courtyard were stables and cow-houses.",
+       295.18,
+       297.94
+      ]
+     ]
+    }
+   ],
+   "end": 297.94
+  },
+  {
+   "start": 298.79,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Well,",
+     "start": 298.79,
+     "end": 299.44,
+     "phrases": [
+      [
+       "Well,",
+       298.79,
+       299.44
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the man",
+     "start": 299.66,
+     "end": 300.52,
+     "phrases": [
+      [
+       "said the man",
+       299.66,
+       300.52
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "now we will live cheerful and happy in this beautiful castle for the rest of our lives.",
+     "start": 300.74,
+     "end": 305.57,
+     "phrases": [
+      [
+       "now we will live cheerful and happy in this beautiful castle for the rest of our lives.",
+       300.74,
+       305.57
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Perhaps we may,",
+     "start": 305.79,
+     "end": 306.68,
+     "phrases": [
+      [
+       "Perhaps we may,",
+       305.79,
+       306.68
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the wife;",
+     "start": 306.9,
+     "end": 308.08,
+     "phrases": [
+      [
+       "said the wife;",
+       306.9,
+       308.08
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "but let us sleep upon it, before we make up our minds to that.",
+     "start": 308.3,
+     "end": 311.68,
+     "phrases": [
+      [
+       "but let us sleep upon it, before we make up our minds to that.",
+       308.3,
+       311.68
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "So they went to bed.",
+     "start": 311.9,
+     "end": 313.35,
+     "phrases": [
+      [
+       "So they went to bed.",
+       311.9,
+       313.35
+      ]
+     ]
+    }
+   ],
+   "end": 313.35
+  },
+  {
+   "start": 315.7,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The next morning when Dame Ilsabill awoke it was broad daylight, and she jogged the fisherman with her elbow, and said",
+     "start": 315.7,
+     "end": 321.98,
+     "phrases": [
+      [
+       "The next morning when Dame Ilsabill awoke it was broad daylight, and she jogged the fisherman with her elbow, and said",
+       315.7,
+       321.98
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Get up, husband, and bestir yourself, for we must be king of all the land.",
+     "start": 322.2,
+     "end": 326.49,
+     "phrases": [
+      [
+       "Get up, husband, and bestir yourself, for we must be king of all the land.",
+       322.2,
+       326.49
+      ]
+     ]
+    }
+   ],
+   "end": 326.49
+  },
+  {
+   "start": 327.34,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Wife, wife,",
+     "start": 327.34,
+     "end": 328.33,
+     "phrases": [
+      [
+       "Wife, wife,",
+       327.34,
+       328.33
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the man",
+     "start": 328.55,
+     "end": 329.41,
+     "phrases": [
+      [
+       "said the man",
+       328.55,
+       329.41
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "why should we wish to be the king? I will not be king.",
+     "start": 329.63,
+     "end": 332.49,
+     "phrases": [
+      [
+       "why should we wish to be the king?",
+       329.63,
+       331.09
+      ],
+      [
+       "I will not be king.",
+       331.52,
+       332.49
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Then I will,",
+     "start": 332.71,
+     "end": 333.49,
+     "phrases": [
+      [
+       "Then I will,",
+       332.71,
+       333.49
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she.",
+     "start": 333.71,
+     "end": 334.69,
+     "phrases": [
+      [
+       "said she.",
+       333.71,
+       334.69
+      ]
+     ]
+    }
+   ],
+   "end": 334.69
+  },
+  {
+   "start": 335.54,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "But, wife,",
+     "start": 335.54,
+     "end": 336.49,
+     "phrases": [
+      [
+       "But, wife,",
+       335.54,
+       336.49
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 336.71,
+     "end": 338.05,
+     "phrases": [
+      [
+       "said the fisherman",
+       336.71,
+       338.05
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "how can you be king? The fish cannot make you a king.",
+     "start": 338.27,
+     "end": 341.21,
+     "phrases": [
+      [
+       "how can you be king?",
+       338.27,
+       339.27
+      ],
+      [
+       "The fish cannot make you a king.",
+       339.7,
+       341.21
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Husband,",
+     "start": 341.43,
+     "end": 342.1,
+     "phrases": [
+      [
+       "Husband,",
+       341.43,
+       342.1
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 342.32,
+     "end": 343.32,
+     "phrases": [
+      [
+       "said she",
+       342.32,
+       343.32
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "say no more about it, but go and try! I will be king.",
+     "start": 343.54,
+     "end": 346.77,
+     "phrases": [
+      [
+       "say no more about it, but go and try!",
+       343.54,
+       345.48
+      ],
+      [
+       "I will be king.",
+       345.91,
+       346.77
+      ]
+     ]
+    }
+   ],
+   "end": 346.77
+  },
+  {
+   "start": 348.62,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So the man went away quite sorrowful to think that his wife should want to be king. This time the sea looked a dark grey colour, and was overspread with curling waves and the ridges of foam as he cried out:",
+     "start": 348.62,
+     "end": 359.74,
+     "phrases": [
+      [
+       "So the man went away quite sorrowful to think that his wife should want to be king.",
+       348.62,
+       352.61
+      ],
+      [
+       "This time the sea looked a dark grey colour, and was overspread with curling waves and the ridges of foam as he cried out:",
+       353.06,
+       359.74
+      ]
+     ]
+    }
+   ],
+   "end": 359.74
+  },
+  {
+   "start": 361.09,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O man of the sea! Hearken to me! My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+     "start": 361.09,
+     "end": 368.48,
+     "phrases": [
+      [
+       "O man of the sea! Hearken to me!",
+       361.09,
+       363.18
+      ],
+      [
+       "My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+       363.64,
+       368.48
+      ]
+     ]
+    }
+   ],
+   "end": 368.48
+  },
+  {
+   "start": 370.13,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Well, what would she have now?",
+     "start": 370.13,
+     "end": 371.94,
+     "phrases": [
+      [
+       "Well, what would she have now?",
+       370.13,
+       371.94
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish.",
+     "start": 372.16,
+     "end": 373.29,
+     "phrases": [
+      [
+       "said the fish.",
+       372.16,
+       373.29
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Alas!",
+     "start": 373.51,
+     "end": 374.32,
+     "phrases": [
+      [
+       "Alas!",
+       373.51,
+       374.32
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the poor man",
+     "start": 374.54,
+     "end": 375.93,
+     "phrases": [
+      [
+       "said the poor man",
+       374.54,
+       375.93
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "my wife wants to be king.",
+     "start": 376.15,
+     "end": 377.83,
+     "phrases": [
+      [
+       "my wife wants to be king.",
+       376.15,
+       377.83
+      ]
+     ]
+    }
+   ],
+   "end": 377.83
+  },
+  {
+   "start": 378.68,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Go home,",
+     "start": 378.68,
+     "end": 379.77,
+     "phrases": [
+      [
+       "Go home,",
+       378.68,
+       379.77
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish;",
+     "start": 379.99,
+     "end": 381.1,
+     "phrases": [
+      [
+       "said the fish;",
+       379.99,
+       381.1
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "she is king already.",
+     "start": 381.32,
+     "end": 382.95,
+     "phrases": [
+      [
+       "she is king already.",
+       381.32,
+       382.95
+      ]
+     ]
+    }
+   ],
+   "end": 382.95
+  },
+  {
+   "start": 387.8,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then the fisherman went home; and as he came close to the palace he saw a troop of soldiers, and heard the sound of drums and trumpets. And when he went in he saw his wife sitting on a throne of gold and diamonds, with a golden crown upon her head; and on each side of her stood six fair maidens, each a head taller than the other.",
+     "start": 387.8,
+     "end": 407.11,
+     "phrases": [
+      [
+       "Then the fisherman went home;",
+       387.8,
+       389.56
+      ],
+      [
+       "and as he came close to the palace he saw a troop of soldiers, and heard the sound of drums and trumpets.",
+       389.86,
+       395.63
+      ],
+      [
+       "And when he went in he saw his wife sitting on a throne of gold and diamonds, with a golden crown upon her head;",
+       396.09,
+       402.44
+      ],
+      [
+       "and on each side of her stood six fair maidens, each a head taller than the other.",
+       402.75,
+       407.11
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Well, wife,",
+     "start": 407.33,
+     "end": 408.24,
+     "phrases": [
+      [
+       "Well, wife,",
+       407.33,
+       408.24
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 408.46,
+     "end": 409.8,
+     "phrases": [
+      [
+       "said the fisherman",
+       408.46,
+       409.8
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "are you king?",
+     "start": 410.02,
+     "end": 411.07,
+     "phrases": [
+      [
+       "are you king?",
+       410.02,
+       411.07
+      ]
+     ]
+    }
+   ],
+   "end": 411.07
+  },
+  {
+   "start": 411.92,
+   "segments": [
+    {
+     "speaker": "wife",
+     "text": "Yes,",
+     "start": 411.92,
+     "end": 412.48,
+     "phrases": [
+      [
+       "Yes,",
+       411.92,
+       412.48
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 412.7,
+     "end": 413.71,
+     "phrases": [
+      [
+       "said she",
+       412.7,
+       413.71
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I am king.",
+     "start": 413.93,
+     "end": 414.67,
+     "phrases": [
+      [
+       "I am king.",
+       413.93,
+       414.67
+      ]
+     ]
+    }
+   ],
+   "end": 414.67
+  },
+  {
+   "start": 415.52,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And when he had looked at her for a long time, he said",
+     "start": 415.52,
+     "end": 418.42,
+     "phrases": [
+      [
+       "And when he had looked at her for a long time, he said",
+       415.52,
+       418.42
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah, wife! what a fine thing it is to be king! Now we shall never have anything more to wish for as long as we live.",
+     "start": 418.64,
+     "end": 425.59,
+     "phrases": [
+      [
+       "Ah, wife! what a fine thing it is to be king!",
+       418.64,
+       421.21
+      ],
+      [
+       "Now we shall never have anything more to wish for as long as we live.",
+       421.67,
+       425.59
+      ]
+     ]
+    }
+   ],
+   "end": 425.59
+  },
+  {
+   "start": 426.44,
+   "segments": [
+    {
+     "speaker": "wife",
+     "text": "I don't know how that may be,",
+     "start": 426.44,
+     "end": 427.84,
+     "phrases": [
+      [
+       "I don't know how that may be,",
+       426.44,
+       427.84
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she;",
+     "start": 428.06,
+     "end": 429.42,
+     "phrases": [
+      [
+       "said she;",
+       428.06,
+       429.42
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "never is a long time. I am king, it is true; but I begin to be tired of that, and I think I should like to be emperor.",
+     "start": 429.64,
+     "end": 437.75,
+     "phrases": [
+      [
+       "never is a long time.",
+       429.64,
+       431.28
+      ],
+      [
+       "I am king, it is true;",
+       431.74,
+       433.27
+      ],
+      [
+       "but I begin to be tired of that, and I think I should like to be emperor.",
+       433.57,
+       437.75
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Alas, wife! why should you wish to be emperor?",
+     "start": 437.97,
+     "end": 440.59,
+     "phrases": [
+      [
+       "Alas, wife! why should you wish to be emperor?",
+       437.97,
+       440.59
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman.",
+     "start": 440.81,
+     "end": 442.09,
+     "phrases": [
+      [
+       "said the fisherman.",
+       440.81,
+       442.09
+      ]
+     ]
+    }
+   ],
+   "end": 442.09
+  },
+  {
+   "start": 442.94,
+   "segments": [
+    {
+     "speaker": "wife",
+     "text": "Husband,",
+     "start": 442.94,
+     "end": 443.61,
+     "phrases": [
+      [
+       "Husband,",
+       442.94,
+       443.61
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 443.83,
+     "end": 444.83,
+     "phrases": [
+      [
+       "said she",
+       443.83,
+       444.83
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "go to the fish! I say I will be emperor.",
+     "start": 445.05,
+     "end": 448.49,
+     "phrases": [
+      [
+       "go to the fish!",
+       445.05,
+       446.22
+      ],
+      [
+       "I say I will be emperor.",
+       446.67,
+       448.49
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah, wife!",
+     "start": 448.71,
+     "end": 449.7,
+     "phrases": [
+      [
+       "Ah, wife!",
+       448.71,
+       449.7
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "replied the fisherman",
+     "start": 449.92,
+     "end": 451.54,
+     "phrases": [
+      [
+       "replied the fisherman",
+       449.92,
+       451.54
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "the fish cannot make an emperor, I am sure, and I should not like to ask him for such a thing.",
+     "start": 451.76,
+     "end": 457.23,
+     "phrases": [
+      [
+       "the fish cannot make an emperor, I am sure, and I should not like to ask him for such a thing.",
+       451.76,
+       457.23
+      ]
+     ]
+    }
+   ],
+   "end": 457.23
+  },
+  {
+   "start": 458.08,
+   "segments": [
+    {
+     "speaker": "wife",
+     "text": "I am king,",
+     "start": 458.08,
+     "end": 458.82,
+     "phrases": [
+      [
+       "I am king,",
+       458.08,
+       458.82
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said Ilsabill",
+     "start": 459.04,
+     "end": 460.3,
+     "phrases": [
+      [
+       "said Ilsabill",
+       459.04,
+       460.3
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "and you are my slave; so go at once!",
+     "start": 460.52,
+     "end": 462.87,
+     "phrases": [
+      [
+       "and you are my slave;",
+       460.52,
+       461.63
+      ],
+      [
+       "so go at once!",
+       461.91,
+       462.87
+      ]
+     ]
+    }
+   ],
+   "end": 462.87
+  },
+  {
+   "start": 464.72,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So the fisherman was forced to go; and he muttered as he went along",
+     "start": 464.72,
+     "end": 468.96,
+     "phrases": [
+      [
+       "So the fisherman was forced to go;",
+       464.72,
+       466.71
+      ],
+      [
+       "and he muttered as he went along",
+       467.01,
+       468.96
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "This will come to no good, it is too much to ask; the fish will be tired at last, and then we shall be sorry for what we have done.",
+     "start": 469.18,
+     "end": 476.85,
+     "phrases": [
+      [
+       "This will come to no good, it is too much to ask;",
+       469.18,
+       472.11
+      ],
+      [
+       "the fish will be tired at last, and then we shall be sorry for what we have done.",
+       472.42,
+       476.85
+      ]
+     ]
+    }
+   ],
+   "end": 476.85
+  },
+  {
+   "start": 477.7,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "He soon came to the seashore; and the water was quite black and muddy, and a mighty whirlwind blew over the waves and rolled them about, but he went as near as he could to the water's brink, and said:",
+     "start": 477.7,
+     "end": 488.46,
+     "phrases": [
+      [
+       "He soon came to the seashore;",
+       477.7,
+       479.5
+      ],
+      [
+       "and the water was quite black and muddy, and a mighty whirlwind blew over the waves and rolled them about, but he went as near as he could to the water's brink, and said:",
+       479.8,
+       488.46
+      ]
+     ]
+    }
+   ],
+   "end": 488.46
+  },
+  {
+   "start": 489.81,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O man of the sea! Hearken to me! My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+     "start": 489.81,
+     "end": 497.21,
+     "phrases": [
+      [
+       "O man of the sea! Hearken to me!",
+       489.81,
+       491.9
+      ],
+      [
+       "My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+       492.36,
+       497.21
+      ]
+     ]
+    }
+   ],
+   "end": 497.21
+  },
+  {
+   "start": 498.86,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "What would she have now?",
+     "start": 498.86,
+     "end": 500.41,
+     "phrases": [
+      [
+       "What would she have now?",
+       498.86,
+       500.41
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish.",
+     "start": 500.63,
+     "end": 501.76,
+     "phrases": [
+      [
+       "said the fish.",
+       500.63,
+       501.76
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 501.98,
+     "end": 502.63,
+     "phrases": [
+      [
+       "Ah!",
+       501.98,
+       502.63
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 502.85,
+     "end": 504.19,
+     "phrases": [
+      [
+       "said the fisherman",
+       502.85,
+       504.19
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "she wants to be emperor.",
+     "start": 504.41,
+     "end": 505.95,
+     "phrases": [
+      [
+       "she wants to be emperor.",
+       504.41,
+       505.95
+      ]
+     ]
+    }
+   ],
+   "end": 505.95
+  },
+  {
+   "start": 506.8,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Go home,",
+     "start": 506.8,
+     "end": 507.89,
+     "phrases": [
+      [
+       "Go home,",
+       506.8,
+       507.89
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish;",
+     "start": 508.11,
+     "end": 509.22,
+     "phrases": [
+      [
+       "said the fish;",
+       508.11,
+       509.22
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "she is emperor already.",
+     "start": 509.44,
+     "end": 511.15,
+     "phrases": [
+      [
+       "she is emperor already.",
+       509.44,
+       511.15
+      ]
+     ]
+    }
+   ],
+   "end": 511.15
+  },
+  {
+   "start": 515.0,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So he went home again; and as he came near he saw his wife Ilsabill sitting on a very lofty throne made of solid gold, with a great crown on her head full two yards high; and on each side of her stood her guards and attendants in a row, each one smaller than the other, from the tallest giant down to a little dwarf no bigger than my finger. And before her stood princes, and dukes, and earls.",
+     "start": 515.0,
+     "end": 538.3,
+     "phrases": [
+      [
+       "So he went home again;",
+       515.0,
+       516.49
+      ],
+      [
+       "and as he came near he saw his wife Ilsabill sitting on a very lofty throne made of solid gold, with a great crown on her head full two yards high;",
+       516.79,
+       525.42
+      ],
+      [
+       "and on each side of her stood her guards and attendants in a row, each one smaller than the other, from the tallest giant down to a little dwarf no bigger than my finger.",
+       525.73,
+       534.92
+      ],
+      [
+       "And before her stood princes, and dukes, and earls.",
+       535.37,
+       538.3
+      ]
+     ]
+    }
+   ],
+   "end": 538.3
+  },
+  {
+   "start": 539.15,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And the fisherman went up to her and said",
+     "start": 539.15,
+     "end": 541.48,
+     "phrases": [
+      [
+       "And the fisherman went up to her and said",
+       539.15,
+       541.48
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Wife, are you emperor?",
+     "start": 541.7,
+     "end": 543.15,
+     "phrases": [
+      [
+       "Wife, are you emperor?",
+       541.7,
+       543.15
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Yes,",
+     "start": 543.37,
+     "end": 543.93,
+     "phrases": [
+      [
+       "Yes,",
+       543.37,
+       543.93
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 544.15,
+     "end": 545.15,
+     "phrases": [
+      [
+       "said she",
+       544.15,
+       545.15
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I am emperor.",
+     "start": 545.37,
+     "end": 546.21,
+     "phrases": [
+      [
+       "I am emperor.",
+       545.37,
+       546.21
+      ]
+     ]
+    }
+   ],
+   "end": 546.21
+  },
+  {
+   "start": 547.06,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 547.06,
+     "end": 547.71,
+     "phrases": [
+      [
+       "Ah!",
+       547.06,
+       547.71
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the man, as he gazed upon her",
+     "start": 547.93,
+     "end": 550.09,
+     "phrases": [
+      [
+       "said the man, as he gazed upon her",
+       547.93,
+       550.09
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "what a fine thing it is to be emperor!",
+     "start": 550.31,
+     "end": 552.02,
+     "phrases": [
+      [
+       "what a fine thing it is to be emperor!",
+       550.31,
+       552.02
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Husband,",
+     "start": 552.24,
+     "end": 552.91,
+     "phrases": [
+      [
+       "Husband,",
+       552.24,
+       552.91
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 553.13,
+     "end": 554.14,
+     "phrases": [
+      [
+       "said she",
+       553.13,
+       554.14
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "why should we stop at being emperor? I will be pope next.",
+     "start": 554.36,
+     "end": 557.61,
+     "phrases": [
+      [
+       "why should we stop at being emperor?",
+       554.36,
+       556.03
+      ],
+      [
+       "I will be pope next.",
+       556.45,
+       557.61
+      ]
+     ]
+    }
+   ],
+   "end": 557.61
+  },
+  {
+   "start": 558.46,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O wife, wife!",
+     "start": 558.46,
+     "end": 559.7,
+     "phrases": [
+      [
+       "O wife, wife!",
+       558.46,
+       559.7
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said he",
+     "start": 559.92,
+     "end": 560.84,
+     "phrases": [
+      [
+       "said he",
+       559.92,
+       560.84
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "how can you be pope? there is but one pope at a time in Christendom.",
+     "start": 561.06,
+     "end": 564.73,
+     "phrases": [
+      [
+       "how can you be pope?",
+       561.06,
+       562.07
+      ],
+      [
+       "there is but one pope at a time in Christendom.",
+       562.49,
+       564.73
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Husband,",
+     "start": 564.95,
+     "end": 565.62,
+     "phrases": [
+      [
+       "Husband,",
+       564.95,
+       565.62
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 565.84,
+     "end": 566.85,
+     "phrases": [
+      [
+       "said she",
+       565.84,
+       566.85
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I will be pope this very day.",
+     "start": 567.07,
+     "end": 568.53,
+     "phrases": [
+      [
+       "I will be pope this very day.",
+       567.07,
+       568.53
+      ]
+     ]
+    }
+   ],
+   "end": 568.53
+  },
+  {
+   "start": 569.38,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "But,",
+     "start": 569.38,
+     "end": 569.98,
+     "phrases": [
+      [
+       "But,",
+       569.38,
+       569.98
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "replied the husband",
+     "start": 570.2,
+     "end": 571.82,
+     "phrases": [
+      [
+       "replied the husband",
+       570.2,
+       571.82
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "the fish cannot make you pope.",
+     "start": 572.04,
+     "end": 573.47,
+     "phrases": [
+      [
+       "the fish cannot make you pope.",
+       572.04,
+       573.47
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "What nonsense!",
+     "start": 573.69,
+     "end": 574.56,
+     "phrases": [
+      [
+       "What nonsense!",
+       573.69,
+       574.56
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she;",
+     "start": 574.78,
+     "end": 576.15,
+     "phrases": [
+      [
+       "said she;",
+       574.78,
+       576.15
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "if he can make an emperor, he can make a pope: go and try him.",
+     "start": 576.37,
+     "end": 580.03,
+     "phrases": [
+      [
+       "if he can make an emperor, he can make a pope:",
+       576.37,
+       578.81
+      ],
+      [
+       "go and try him.",
+       579.09,
+       580.03
+      ]
+     ]
+    }
+   ],
+   "end": 580.03
+  },
+  {
+   "start": 581.88,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "So the fisherman went. But when he came to the shore the wind was raging and the sea was tossed up and down in boiling waves, and the ships were in trouble, and rolled fearfully upon the tops of the billows. In the middle of the heavens there was a little piece of blue sky, but towards the south all was red, as if a dreadful storm was rising. At this sight the fisherman was dreadfully frightened, and he trembled so that his knees knocked together: but still he went down near to the shore, and said:",
+     "start": 581.88,
+     "end": 610.38,
+     "phrases": [
+      [
+       "So the fisherman went.",
+       581.88,
+       583.37
+      ],
+      [
+       "But when he came to the shore the wind was raging and the sea was tossed up and down in boiling waves, and the ships were in trouble, and rolled fearfully upon the tops of the billows.",
+       583.83,
+       593.48
+      ],
+      [
+       "In the middle of the heavens there was a little piece of blue sky, but towards the south all was red, as if a dreadful storm was rising.",
+       593.94,
+       601.57
+      ],
+      [
+       "At this sight the fisherman was dreadfully frightened, and he trembled so that his knees knocked together:",
+       602.02,
+       607.37
+      ],
+      [
+       "but still he went down near to the shore, and said:",
+       607.68,
+       610.38
+      ]
+     ]
+    }
+   ],
+   "end": 610.38
+  },
+  {
+   "start": 611.73,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O man of the sea! Hearken to me! My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+     "start": 611.73,
+     "end": 619.31,
+     "phrases": [
+      [
+       "O man of the sea! Hearken to me!",
+       611.73,
+       613.93
+      ],
+      [
+       "My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+       614.4,
+       619.31
+      ]
+     ]
+    }
+   ],
+   "end": 619.31
+  },
+  {
+   "start": 620.96,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "What does she want now?",
+     "start": 620.96,
+     "end": 622.3,
+     "phrases": [
+      [
+       "What does she want now?",
+       620.96,
+       622.3
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish.",
+     "start": 622.52,
+     "end": 623.65,
+     "phrases": [
+      [
+       "said the fish.",
+       622.52,
+       623.65
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 623.87,
+     "end": 624.54,
+     "phrases": [
+      [
+       "Ah!",
+       623.87,
+       624.54
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman",
+     "start": 624.76,
+     "end": 626.1,
+     "phrases": [
+      [
+       "said the fisherman",
+       624.76,
+       626.1
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "my wife wants to be pope.",
+     "start": 626.32,
+     "end": 628.12,
+     "phrases": [
+      [
+       "my wife wants to be pope.",
+       626.32,
+       628.12
+      ]
+     ]
+    }
+   ],
+   "end": 628.12
+  },
+  {
+   "start": 628.97,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Go home,",
+     "start": 628.97,
+     "end": 630.07,
+     "phrases": [
+      [
+       "Go home,",
+       628.97,
+       630.07
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish;",
+     "start": 630.29,
+     "end": 631.39,
+     "phrases": [
+      [
+       "said the fish;",
+       630.29,
+       631.39
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "she is pope already.",
+     "start": 631.61,
+     "end": 633.24,
+     "phrases": [
+      [
+       "she is pope already.",
+       631.61,
+       633.24
+      ]
+     ]
+    }
+   ],
+   "end": 633.24
+  },
+  {
+   "start": 634.09,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then the fisherman went home, and found Ilsabill sitting on a throne that was two miles high. And she had three great crowns on her head, and around her stood all the pomp and power of the Church. And on each side of her were two rows of burning lights, of all sizes, the greatest as large as the highest and biggest tower in the world, and the least no larger than a small rushlight.",
+     "start": 634.09,
+     "end": 655.82,
+     "phrases": [
+      [
+       "Then the fisherman went home, and found Ilsabill sitting on a throne that was two miles high.",
+       634.09,
+       639.03
+      ],
+      [
+       "And she had three great crowns on her head, and around her stood all the pomp and power of the Church.",
+       639.49,
+       644.81
+      ],
+      [
+       "And on each side of her were two rows of burning lights, of all sizes, the greatest as large as the highest and biggest tower in the world, and the least no larger than a small rushlight.",
+       645.27,
+       655.82
+      ]
+     ]
+    }
+   ],
+   "end": 655.82
+  },
+  {
+   "start": 656.67,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Wife,",
+     "start": 656.67,
+     "end": 657.39,
+     "phrases": [
+      [
+       "Wife,",
+       656.67,
+       657.39
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fisherman, as he looked at all this greatness",
+     "start": 657.61,
+     "end": 660.43,
+     "phrases": [
+      [
+       "said the fisherman, as he looked at all this greatness",
+       657.61,
+       660.43
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "are you pope?",
+     "start": 660.65,
+     "end": 661.39,
+     "phrases": [
+      [
+       "are you pope?",
+       660.65,
+       661.39
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Yes,",
+     "start": 661.61,
+     "end": 662.17,
+     "phrases": [
+      [
+       "Yes,",
+       661.61,
+       662.17
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 662.39,
+     "end": 663.39,
+     "phrases": [
+      [
+       "said she",
+       662.39,
+       663.39
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I am pope.",
+     "start": 663.61,
+     "end": 664.4,
+     "phrases": [
+      [
+       "I am pope.",
+       663.61,
+       664.4
+      ]
+     ]
+    }
+   ],
+   "end": 664.4
+  },
+  {
+   "start": 665.25,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "Well, wife,",
+     "start": 665.25,
+     "end": 666.21,
+     "phrases": [
+      [
+       "Well, wife,",
+       665.25,
+       666.21
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "replied he",
+     "start": 666.43,
+     "end": 667.62,
+     "phrases": [
+      [
+       "replied he",
+       666.43,
+       667.62
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "it is a grand thing to be pope; and now you must be easy, for you can be nothing greater.",
+     "start": 667.84,
+     "end": 672.62,
+     "phrases": [
+      [
+       "it is a grand thing to be pope;",
+       667.84,
+       669.32
+      ],
+      [
+       "and now you must be easy, for you can be nothing greater.",
+       669.6,
+       672.62
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I will think about that,",
+     "start": 672.84,
+     "end": 673.96,
+     "phrases": [
+      [
+       "I will think about that,",
+       672.84,
+       673.96
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the wife.",
+     "start": 674.18,
+     "end": 675.37,
+     "phrases": [
+      [
+       "said the wife.",
+       674.18,
+       675.37
+      ]
+     ]
+    }
+   ],
+   "end": 675.37
+  },
+  {
+   "start": 677.22,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then they went to bed: but Dame Ilsabill could not sleep all night for thinking what she should be next.",
+     "start": 677.22,
+     "end": 683.0,
+     "phrases": [
+      [
+       "Then they went to bed:",
+       677.22,
+       678.72
+      ],
+      [
+       "but Dame Ilsabill could not sleep all night for thinking what she should be next.",
+       679.04,
+       683.0
+      ]
+     ]
+    }
+   ],
+   "end": 683.0
+  },
+  {
+   "start": 685.05,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "At last, as she was dropping asleep, morning broke, and the sun rose.",
+     "start": 685.05,
+     "end": 688.74,
+     "phrases": [
+      [
+       "At last, as she was dropping asleep, morning broke, and the sun rose.",
+       685.05,
+       688.74
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Ha!",
+     "start": 688.96,
+     "end": 689.5,
+     "phrases": [
+      [
+       "Ha!",
+       688.96,
+       689.5
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "thought she, as she woke up and looked at it through the window",
+     "start": 689.72,
+     "end": 692.71,
+     "phrases": [
+      [
+       "thought she, as she woke up and looked at it through the window",
+       689.72,
+       692.71
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "after all I cannot prevent the sun rising.",
+     "start": 692.93,
+     "end": 695.24,
+     "phrases": [
+      [
+       "after all I cannot prevent the sun rising.",
+       692.93,
+       695.24
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "At this thought she was very angry, and wakened her husband, and said",
+     "start": 695.46,
+     "end": 699.3,
+     "phrases": [
+      [
+       "At this thought she was very angry, and wakened her husband, and said",
+       695.46,
+       699.3
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "Husband, go to the fish and tell him I must be lord of the sun and moon.",
+     "start": 699.52,
+     "end": 703.75,
+     "phrases": [
+      [
+       "Husband, go to the fish and tell him I must be lord of the sun and moon.",
+       699.52,
+       703.75
+      ]
+     ]
+    }
+   ],
+   "end": 703.75
+  },
+  {
+   "start": 704.6,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The fisherman was half asleep, but the thought frightened him so much that he started and fell out of bed.",
+     "start": 704.6,
+     "end": 710.17,
+     "phrases": [
+      [
+       "The fisherman was half asleep, but the thought frightened him so much that he started and fell out of bed.",
+       704.6,
+       710.17
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Alas, wife!",
+     "start": 710.39,
+     "end": 711.5,
+     "phrases": [
+      [
+       "Alas, wife!",
+       710.39,
+       711.5
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said he",
+     "start": 711.72,
+     "end": 712.65,
+     "phrases": [
+      [
+       "said he",
+       711.72,
+       712.65
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "cannot you be easy with being pope?",
+     "start": 712.87,
+     "end": 714.63,
+     "phrases": [
+      [
+       "cannot you be easy with being pope?",
+       712.87,
+       714.63
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "No,",
+     "start": 714.85,
+     "end": 715.39,
+     "phrases": [
+      [
+       "No,",
+       714.85,
+       715.39
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said she",
+     "start": 715.61,
+     "end": 716.62,
+     "phrases": [
+      [
+       "said she",
+       715.61,
+       716.62
+      ]
+     ]
+    },
+    {
+     "speaker": "wife",
+     "text": "I am very uneasy as long as the sun and moon rise without my leave. Go to the fish at once!",
+     "start": 716.84,
+     "end": 722.55,
+     "phrases": [
+      [
+       "I am very uneasy as long as the sun and moon rise without my leave.",
+       716.84,
+       720.96
+      ],
+      [
+       "Go to the fish at once!",
+       721.38,
+       722.55
+      ]
+     ]
+    }
+   ],
+   "end": 722.55
+  },
+  {
+   "start": 724.4,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Then the man went shivering with fear; and as he was going down to the shore a dreadful storm arose, so that the trees and the very rocks shook. And all the heavens became black with stormy clouds, and the lightnings played, and the thunders rolled;",
+     "start": 724.4,
+     "end": 738.1,
+     "phrases": [
+      [
+       "Then the man went shivering with fear;",
+       724.4,
+       726.45
+      ],
+      [
+       "and as he was going down to the shore a dreadful storm arose, so that the trees and the very rocks shook.",
+       726.75,
+       732.26
+      ],
+      [
+       "And all the heavens became black with stormy clouds, and the lightnings played, and the thunders rolled;",
+       732.72,
+       738.1
+      ]
+     ]
+    }
+   ],
+   "end": 738.1
+  },
+  {
+   "start": 740.95,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "and you might have seen in the sea great black waves, swelling up like mountains with crowns of white foam upon their heads. And the fisherman crept towards the sea, and cried out, as well as he could:",
+     "start": 740.95,
+     "end": 751.96,
+     "phrases": [
+      [
+       "and you might have seen in the sea great black waves, swelling up like mountains with crowns of white foam upon their heads.",
+       740.95,
+       747.61
+      ],
+      [
+       "And the fisherman crept towards the sea, and cried out, as well as he could:",
+       748.06,
+       751.96
+      ]
+     ]
+    }
+   ],
+   "end": 751.96
+  },
+  {
+   "start": 753.31,
+   "segments": [
+    {
+     "speaker": "fisherman",
+     "text": "O man of the sea! Hearken to me! My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+     "start": 753.31,
+     "end": 761.19,
+     "phrases": [
+      [
+       "O man of the sea! Hearken to me!",
+       753.31,
+       755.55
+      ],
+      [
+       "My wife Ilsabill will have her own will, and hath sent me to beg a boon of thee!",
+       756.05,
+       761.19
+      ]
+     ]
+    }
+   ],
+   "end": 761.19
+  },
+  {
+   "start": 763.04,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "What does she want now?",
+     "start": 763.04,
+     "end": 764.38,
+     "phrases": [
+      [
+       "What does she want now?",
+       763.04,
+       764.38
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish.",
+     "start": 764.6,
+     "end": 765.73,
+     "phrases": [
+      [
+       "said the fish.",
+       764.6,
+       765.73
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "Ah!",
+     "start": 765.95,
+     "end": 766.65,
+     "phrases": [
+      [
+       "Ah!",
+       765.95,
+       766.65
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said he",
+     "start": 766.87,
+     "end": 767.79,
+     "phrases": [
+      [
+       "said he",
+       766.87,
+       767.79
+      ]
+     ]
+    },
+    {
+     "speaker": "fisherman",
+     "text": "she wants to be lord of the sun and moon.",
+     "start": 768.01,
+     "end": 770.62,
+     "phrases": [
+      [
+       "she wants to be lord of the sun and moon.",
+       768.01,
+       770.62
+      ]
+     ]
+    }
+   ],
+   "end": 770.62
+  },
+  {
+   "start": 772.47,
+   "segments": [
+    {
+     "speaker": "fish",
+     "text": "Go home,",
+     "start": 772.47,
+     "end": 773.56,
+     "phrases": [
+      [
+       "Go home,",
+       772.47,
+       773.56
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the fish",
+     "start": 773.78,
+     "end": 774.94,
+     "phrases": [
+      [
+       "said the fish",
+       773.78,
+       774.94
+      ]
+     ]
+    },
+    {
+     "speaker": "fish",
+     "text": "to your pigsty again.",
+     "start": 775.16,
+     "end": 776.91,
+     "phrases": [
+      [
+       "to your pigsty again.",
+       775.16,
+       776.91
+      ]
+     ]
+    }
+   ],
+   "end": 776.91
+  },
+  {
+   "start": 783.76,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "And there they live to this very day.",
+     "start": 783.76,
+     "end": 785.86,
+     "phrases": [
+      [
+       "And there they live to this very day.",
+       783.76,
+       785.86
+      ]
+     ]
+    }
+   ],
+   "end": 785.86
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis*0.7+bm_george*0.3"
+  },
+  "narrator": {
+   "voice": "bf_isabella*0.65+bf_emma*0.35"
+  },
+  "fisherman": {
+   "voice": "am_michael*0.65+am_eric*0.35"
+  },
+  "wife": {
+   "voice": "af_bella*0.6+af_kore*0.4"
+  },
+  "fish": {
+   "voice": "bm_lewis*0.55+bm_fable*0.45"
+  }
+ }
+}
