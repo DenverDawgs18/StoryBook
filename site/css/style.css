@@ -422,6 +422,7 @@ input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); b
 .callout { text-align: center; max-width: 44rem; margin: 0 auto; }
 .callout .plate { max-width: 22rem; margin: 0 auto 1.4rem; }
 
+
 /* ------------------------------------------------------------ responsive */
 @media (max-width: 860px) {
   .spread { grid-template-columns: 1fr; background: none; }
