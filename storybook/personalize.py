@@ -27,8 +27,14 @@ PRONOUNS = {
     "he": {"he": "he", "him": "him", "his": "his", "He": "He", "His": "His", "was": "was"},
     "they": {"he": "they", "him": "them", "his": "their", "He": "They", "His": "Their", "was": "were"},
 }
-# the child's voice: Kokoro's two most natural young-sounding voices
-VOICES = {"lighter": "af_heart", "deeper": "am_puck"}
+# The child's voice. Never a bare stock voice: af_heart and am_puck are the voices every Kokoro
+# demo uses, so on their own they are instantly "the TTS voice". These blends are our own:
+# af_kore brings livelier intonation, and folding af_heart into the deeper voice lifts it from
+# a grown man's register towards a boy's.
+VOICES = {
+    "lighter": "af_heart*0.5+af_kore*0.3+af_bella*0.2",
+    "deeper": "am_puck*0.5+af_heart*0.3+af_kore*0.2",
+}
 DEFAULT_VOICE = {"she": "lighter", "he": "deeper", "they": "lighter"}
 
 TALES = {
@@ -196,7 +202,12 @@ def personalize(tale: str, name: str, pronouns: str = "she", voice: str | None =
 
     # --- cast: the child gets a natural young voice and their own name in the read-along
     cast = meta["cast"]
-    cast[spec["hero"]] = {"voice": VOICES[voice], "speed": 1.0, "room": "booth", "wet": 0.1}
+    # keep the role's own direction (pace, room) and only recast the voice itself
+    role = cast.get(spec["hero"]) or {"speed": 1.0, "room": "booth", "wet": 0.1}
+    role = dict(role) if isinstance(role, dict) else {"voice": role}
+    role["voice"] = VOICES[voice]
+    role.setdefault("speed", 1.0)
+    cast[spec["hero"]] = role
     for k, v in spec["cast_fix"].get(voice, {}).items():
         cast[k]["voice"] = v
     meta.setdefault("labels", {})[spec["hero"]] = display

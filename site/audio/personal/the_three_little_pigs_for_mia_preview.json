@@ -15,7 +15,7 @@
    "wolf": "the wolf"
   }
  },
- "duration": 86.87,
+ "duration": 86.72,
  "chapters": [
   {
    "title": "The Three Little Pigs. A story for Mia.",
@@ -106,151 +106,151 @@
      "speaker": "pig3",
      "text": "Please, man, give me those bricks to build a house with.",
      "start": 28.34,
-     "end": 31.25,
+     "end": 31.21,
      "phrases": [
       [
        "Please, man, give me those bricks to build a house with.",
        28.34,
-       31.25
+       31.21
       ]
      ]
     }
    ],
-   "end": 31.25
+   "end": 31.21
   },
   {
-   "start": 32.1,
+   "start": 32.06,
    "segments": [
     {
      "speaker": "narrator",
      "text": "So the man gave her the bricks, and Mia built her house with them, brick by brick. So the wolf came, as he did to the other little pigs, and said:",
-     "start": 32.1,
-     "end": 40.28,
+     "start": 32.06,
+     "end": 40.24,
      "phrases": [
       [
        "So the man gave her the bricks, and Mia built her house with them, brick by brick.",
-       32.1,
-       36.28
+       32.06,
+       36.24
       ],
       [
        "So the wolf came, as he did to the other little pigs, and said:",
-       36.73,
-       40.28
+       36.69,
+       40.24
       ]
      ]
     }
    ],
-   "end": 40.28
+   "end": 40.24
   },
   {
-   "start": 42.66,
+   "start": 42.62,
    "segments": [
     {
      "speaker": "wolf",
      "text": "Mia, Mia, let me come in.",
-     "start": 42.66,
-     "end": 44.07,
+     "start": 42.62,
+     "end": 44.03,
      "phrases": [
       [
        "Mia, Mia, let me come in.",
-       42.66,
-       44.07
+       42.62,
+       44.03
       ]
      ]
     }
    ],
-   "end": 44.07
+   "end": 44.03
   },
   {
-   "start": 44.92,
+   "start": 44.88,
    "segments": [
     {
      "speaker": "pig3",
      "text": "No, no, by the hair of my chinny chin chin.",
-     "start": 44.92,
-     "end": 47.38,
+     "start": 44.88,
+     "end": 47.22,
      "phrases": [
       [
        "No, no, by the hair of my chinny chin chin.",
-       44.92,
-       47.38
+       44.88,
+       47.22
       ]
      ]
     }
    ],
-   "end": 47.38
+   "end": 47.22
   },
   {
-   "start": 48.23,
+   "start": 48.07,
    "segments": [
     {
      "speaker": "wolf",
      "text": "Then I'll huff, and I'll puff, and I'll blow your house in.",
-     "start": 48.23,
-     "end": 51.09,
+     "start": 48.07,
+     "end": 50.93,
      "phrases": [
       [
        "Then I'll huff, and I'll puff, and I'll blow your house in.",
-       48.23,
-       51.09
+       48.07,
+       50.93
       ]
      ]
     }
    ],
-   "end": 51.09
+   "end": 50.93
   },
   {
-   "start": 59.85,
+   "start": 59.7,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Well, he huffed, and he puffed, and he huffed and he puffed, and he puffed and huffed; but he could not get the house down. When he found that he could not, with all his huffing and puffing, blow the house down, he said:",
-     "start": 59.85,
-     "end": 71.39,
+     "start": 59.7,
+     "end": 71.24,
      "phrases": [
       [
        "Well, he huffed, and he puffed, and he huffed and he puffed, and he puffed and huffed;",
-       59.85,
-       64.03
+       59.7,
+       63.88
       ],
       [
        "but he could not get the house down.",
-       64.33,
-       66.28
+       64.18,
+       66.12
       ],
       [
        "When he found that he could not, with all his huffing and puffing, blow the house down, he said:",
-       66.73,
-       71.39
+       66.58,
+       71.24
       ]
      ]
     }
    ],
-   "end": 71.39
+   "end": 71.24
   },
   {
-   "start": 73.44,
+   "start": 73.29,
    "segments": [
     {
      "speaker": "host",
      "text": "And what happens next? That's in Mia's story.",
-     "start": 73.44,
-     "end": 77.02,
+     "start": 73.29,
+     "end": 76.87,
      "phrases": [
       [
        "And what happens next?",
-       73.44,
-       75.12
+       73.29,
+       74.96
       ],
       [
        "That's in Mia's story.",
-       75.58,
-       77.02
+       75.43,
+       76.87
       ]
      ]
     }
    ],
-   "end": 77.02
+   "end": 76.87
   }
  ],
  "cast": {
@@ -267,7 +267,7 @@
    "voice": "af_kore"
   },
   "pig3": {
-   "voice": "af_heart"
+   "voice": "af_heart*0.5+af_kore*0.3+af_bella*0.2"
   },
   "wolf": {
    "voice": "am_fenrir"

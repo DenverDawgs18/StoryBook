@@ -155,7 +155,45 @@ def phrase_split(text: str, max_len: int = 280):
             merged[-1] = (merged[-1][0], max(merged[-1][1], p))
             continue
         merged.append((chunk, p))
-    return merged
+    return _absorb_short(merged, max_len)
+
+
+MIN_WORDS = 4  # Kokoro reads one- to three-word inputs with flat, stock "TTS" prosody
+
+
+def _words(s: str) -> int:
+    return len(re.findall(r"[^\W_]+(?:['’][^\W_]+)?", s))
+
+
+def _join(a: str, b: str) -> str:
+    # a split on a dash consumed the dash; keep a comma's worth of breath where it was
+    return f"{a} {b}" if re.search(r"[.!?;:,'\"”)]$", a) else f"{a}, {b}"
+
+
+def _absorb_short(units, max_len: int):
+    """Join phrases too short for natural prosody onto a neighbour, so the model always reads
+    them in context ("Goodnight, Mia. Sleep tight." as one breath, not two robotic stubs).
+    A text that is short as a whole is left alone: there is nothing to give it context."""
+    units = list(units)
+    i = 0
+    while len(units) > 1 and i < len(units):
+        chunk, pause = units[i]
+        if _words(chunk) >= MIN_WORDS:
+            i += 1
+            continue
+        prev_ok = i > 0 and len(units[i - 1][0]) + len(chunk) < max_len
+        next_ok = i + 1 < len(units) and len(units[i + 1][0]) + len(chunk) < max_len
+        # prefer the shorter neighbour, so the joined phrase stays well-proportioned
+        if prev_ok and (not next_ok or len(units[i - 1][0]) <= len(units[i + 1][0])):
+            units[i - 1] = (_join(units[i - 1][0], chunk), pause)
+            del units[i]
+            i = max(i - 1, 0)
+        elif next_ok:
+            units[i + 1] = (_join(chunk, units[i + 1][0]), units[i + 1][1])
+            del units[i]
+        else:
+            i += 1
+    return units
 
 
 # --------------------------------------------------------------------------

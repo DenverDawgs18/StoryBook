@@ -16,9 +16,9 @@ labels: {host: the host, pig1: the first little pig, pig2: the second little pig
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_isabella", speed: 0.93, room: room, wet: 0.07}
-  pig1:     {voice: "am_puck", speed: 1.08, room: booth, wet: 0.1}
+  pig1:     {voice: "am_puck*0.5+af_heart*0.3+af_kore*0.2", speed: 1.08, room: booth, wet: 0.1}
   pig2:     {voice: "af_kore", speed: 1.06, room: booth, wet: 0.1}
-  pig3:     {voice: "af_heart", speed: 1.0, room: booth, wet: 0.1}
+  pig3:     {voice: "af_heart*0.5+af_kore*0.3+af_bella*0.2", speed: 1.0, room: booth, wet: 0.1}
   wolf:     {voice: "am_fenrir", speed: 0.9, room: room, wet: 0.14}
 ---
 [bed amb birds density=0.5 vol=-12 fade=5]

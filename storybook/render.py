@@ -1,6 +1,7 @@
 """Turn a parsed Script into a finished, mastered audiobook episode."""
 from __future__ import annotations
 
+import dataclasses
 import json
 import subprocess
 import tempfile
@@ -70,7 +71,9 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
         if isinstance(ev, Line):
             ch = cast.get(ev.speaker)
             if ch is None:
-                ch = Character.from_dict(ev.speaker, {"voice": narrator.voice})
+                # an uncast speaker reads in the narrator's full voice (speed, pitch, room, tone),
+                # never a bare default
+                ch = dataclasses.replace(narrator, name=ev.speaker, extra=dict(narrator.extra))
                 cast[ev.speaker] = ch
             audio, marks = speak(ev.text, ch)
             lines_done += 1
