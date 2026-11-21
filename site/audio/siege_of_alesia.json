@@ -1,0 +1,1403 @@
+{
+ "meta": {
+  "title": "The Siege of Alesia",
+  "author": "Julius Caesar",
+  "year": "52 BC",
+  "source": "https://www.gutenberg.org/ebooks/10657",
+  "blurb": "Gaul, 52 BC. Vercingetorix and eighty thousand men are shut inside a hilltop town, and Caesar builds two walls around them: one to keep them in, one to keep the rest of Gaul out. Then the rest of Gaul arrives. Caesar's own account of the battle, with a documentary frame.\n",
+  "mood": "History, told in the dark",
+  "art": "land_alesia",
+  "caption": "“His arrival being known from the colour of his robe”",
+  "order": 21,
+  "labels": {
+   "host": "the host",
+   "critognatus": "Critognatus",
+   "of the Arverni": null
+  }
+ },
+ "duration": 1203.04,
+ "chapters": [
+  {
+   "title": "The Siege of Alesia. From the Commentaries on the Gallic War, by Julius Caesar. Book Seven.",
+   "start": 85.12
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 8.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "In the summer of the year fifty-two before Christ, Gaul rose against Rome.",
+     "start": 8.0,
+     "end": 13.35,
+     "phrases": [
+      [
+       "In the summer of the year fifty-two before Christ, Gaul rose against Rome.",
+       8.0,
+       13.35
+      ]
+     ]
+    }
+   ],
+   "end": 13.35
+  },
+  {
+   "start": 14.2,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "For six years Julius Caesar had been conquering it tribe by tribe. Now, for the first time, the tribes had one leader: a young nobleman of the Arverni named Vercingetorix. He burned his own country's towns and farms so that the Roman army would starve, and for a season it nearly did.",
+     "start": 14.2,
+     "end": 36.38,
+     "phrases": [
+      [
+       "For six years Julius Caesar had been conquering it tribe by tribe.",
+       14.2,
+       19.21
+      ],
+      [
+       "Now, for the first time, the tribes had one leader:",
+       19.69,
+       23.18
+      ],
+      [
+       "a young nobleman of the Arverni named Vercingetorix.",
+       23.5,
+       27.75
+      ],
+      [
+       "He burned his own country's towns and farms so that the Roman army would starve, and for a season it nearly did.",
+       28.23,
+       36.38
+      ]
+     ]
+    }
+   ],
+   "end": 36.38
+  },
+  {
+   "start": 37.23,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "By late summer he had fallen back, with eighty thousand men, to a walled town on a hilltop in what is now Burgundy. The town was called Alesia. Caesar followed him there, and did something no one in Gaul had seen before. He did not storm the hill. He walled it in.",
+     "start": 37.23,
+     "end": 57.24,
+     "phrases": [
+      [
+       "By late summer he had fallen back, with eighty thousand men, to a walled town on a hilltop in what is now Burgundy.",
+       37.23,
+       45.12
+      ],
+      [
+       "The town was called Alesia.",
+       45.6,
+       48.04
+      ],
+      [
+       "Caesar followed him there, and did something no one in Gaul had seen before.",
+       48.52,
+       53.27
+      ],
+      [
+       "He did not storm the hill.",
+       53.75,
+       55.46
+      ],
+      [
+       "He walled it in.",
+       55.95,
+       57.24
+      ]
+     ]
+    }
+   ],
+   "end": 57.24
+  },
+  {
+   "start": 65.09,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Caesar wrote his own account of the war, year by year, in plain, rapid Latin, and always of himself in the third person, as if he were someone else. This is that account, in the English translation of McDevitte and Bohn, eighteen sixty-nine.",
+     "start": 65.09,
+     "end": 82.77,
+     "phrases": [
+      [
+       "Caesar wrote his own account of the war, year by year, in plain, rapid Latin, and always of himself in the third person, as if he were someone else.",
+       65.09,
+       75.92
+      ],
+      [
+       "This is that account, in the English translation of McDevitte and Bohn, eighteen sixty-nine.",
+       76.4,
+       82.77
+      ]
+     ]
+    }
+   ],
+   "end": 82.77
+  },
+  {
+   "start": 85.12,
+   "end": 92.23,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Siege of Alesia. From the Commentaries on the Gallic War, by Julius Caesar. Book Seven.",
+     "start": 85.12,
+     "end": 92.23,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 95.33,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The town itself was situated on the top of a hill, in a very lofty position, so that it did not appear likely to be taken, except by a regular siege. Two rivers, on two different sides, washed the foot of the hill. Before the town lay a plain of about three miles in length; on every other side hills at a moderate distance, and of an equal degree of height, surrounded the town. The army of the Gauls had filled all the space under the wall, comprising the part of the hill which looked to the rising sun, and had drawn in front a trench and a stone wall six feet high. The circuit of that fortification, which was commenced by the Romans, comprised eleven miles.",
+     "start": 95.33,
+     "end": 139.5,
+     "phrases": [
+      [
+       "The town itself was situated on the top of a hill, in a very lofty position, so that it did not appear likely to be taken, except by a regular siege.",
+       95.33,
+       105.21
+      ],
+      [
+       "Two rivers, on two different sides, washed the foot of the hill.",
+       105.66,
+       109.58
+      ],
+      [
+       "Before the town lay a plain of about three miles in length;",
+       110.04,
+       113.93
+      ],
+      [
+       "on every other side hills at a moderate distance, and of an equal degree of height, surrounded the town.",
+       114.23,
+       120.75
+      ],
+      [
+       "The army of the Gauls had filled all the space under the wall, comprising the part of the hill which looked to the rising sun, and had drawn in front a trench and a stone wall six feet high.",
+       121.21,
+       132.81
+      ],
+      [
+       "The circuit of that fortification, which was commenced by the Romans, comprised eleven miles.",
+       133.27,
+       139.5
+      ]
+     ]
+    }
+   ],
+   "end": 139.5
+  },
+  {
+   "start": 140.35,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Caesar, on learning these proceedings from the deserters and captives, adopted the following system of fortification; he dug a trench twenty feet deep, with perpendicular sides. He raised all his other works at a distance of four hundred feet from that ditch. Having left this interval, he drew two trenches fifteen feet broad, and of the same depth; the innermost of them, being in low and level ground, he filled with water conveyed from the river. Behind these he raised a rampart and wall twelve feet high: to this he added a parapet and battlements, with large stakes cut like stags' horns, projecting from the junction of the parapet and battlements, to prevent the enemy from scaling it, and surrounded the entire work with turrets, which were eighty feet distant from one another.",
+     "start": 140.35,
+     "end": 192.13,
+     "phrases": [
+      [
+       "Caesar, on learning these proceedings from the deserters and captives, adopted the following system of fortification;",
+       140.35,
+       147.99
+      ],
+      [
+       "he dug a trench twenty feet deep, with perpendicular sides.",
+       148.29,
+       152.39
+      ],
+      [
+       "He raised all his other works at a distance of four hundred feet from that ditch.",
+       152.84,
+       158.05
+      ],
+      [
+       "Having left this interval, he drew two trenches fifteen feet broad, and of the same depth;",
+       158.5,
+       164.33
+      ],
+      [
+       "the innermost of them, being in low and level ground, he filled with water conveyed from the river.",
+       164.63,
+       170.75
+      ],
+      [
+       "Behind these he raised a rampart and wall twelve feet high:",
+       171.21,
+       175.29
+      ],
+      [
+       "to this he added a parapet and battlements, with large stakes cut like stags' horns, projecting from the junction of the parapet and battlements, to prevent the enemy from scaling it, and surrounded the entire work with turrets, which were eighty feet distant from one another.",
+       175.6,
+       192.13
+      ]
+     ]
+    }
+   ],
+   "end": 192.13
+  },
+  {
+   "start": 192.98,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Before these, pits three feet deep were dug, which gradually diminished in depth to the bottom. In these pits tapering stakes, of the thickness of a man's thigh, sharpened at the top and hardened in the fire, were sunk in such a manner as to project from the ground not more than four inches. The rest of the pit was covered over with osiers and twigs, to conceal the deceit. Eight rows of this kind were dug, and were three feet distant from each other. They called this a lily from its resemblance to that flower. Stakes a foot long, with iron hooks attached to them, were entirely sunk in the ground before these, and were planted in every place at small intervals; these they called spurs.",
+     "start": 192.98,
+     "end": 238.21,
+     "phrases": [
+      [
+       "Before these, pits three feet deep were dug, which gradually diminished in depth to the bottom.",
+       192.98,
+       198.81
+      ],
+      [
+       "In these pits tapering stakes, of the thickness of a man's thigh, sharpened at the top and hardened in the fire, were sunk in such a manner as to project from the ground not more than four inches.",
+       199.27,
+       211.42
+      ],
+      [
+       "The rest of the pit was covered over with osiers and twigs, to conceal the deceit.",
+       211.88,
+       217.29
+      ],
+      [
+       "Eight rows of this kind were dug, and were three feet distant from each other.",
+       217.75,
+       222.19
+      ],
+      [
+       "They called this a lily from its resemblance to that flower.",
+       222.65,
+       226.31
+      ],
+      [
+       "Stakes a foot long, with iron hooks attached to them, were entirely sunk in the ground before these, and were planted in every place at small intervals;",
+       226.77,
+       236.2
+      ],
+      [
+       "these they called spurs.",
+       236.5,
+       238.21
+      ]
+     ]
+    }
+   ],
+   "end": 238.21
+  },
+  {
+   "start": 239.06,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "After completing these works, having enclosed an area of fourteen miles, he constructed, against an external enemy, fortifications of the same kind in every respect, and separate from these, so that the guards of the fortifications could not be surrounded even by immense numbers.",
+     "start": 239.06,
+     "end": 257.27,
+     "phrases": [
+      [
+       "After completing these works, having enclosed an area of fourteen miles, he constructed, against an external enemy, fortifications of the same kind in every respect, and separate from these, so that the guards of the fortifications could not be surrounded even by immense numbers.",
+       239.06,
+       257.27
+      ]
+     ]
+    }
+   ],
+   "end": 257.27
+  },
+  {
+   "start": 262.62,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Before the walls were closed, Vercingetorix had sent his cavalry out by night, to ride to every tribe in Gaul and bring back an army. They brought back, by Caesar's count, eight thousand horse and two hundred and forty thousand foot.",
+     "start": 262.62,
+     "end": 278.84,
+     "phrases": [
+      [
+       "Before the walls were closed, Vercingetorix had sent his cavalry out by night, to ride to every tribe in Gaul and bring back an army.",
+       262.62,
+       271.98
+      ],
+      [
+       "They brought back, by Caesar's count, eight thousand horse and two hundred and forty thousand foot.",
+       272.47,
+       278.84
+      ]
+     ]
+    }
+   ],
+   "end": 278.84
+  },
+  {
+   "start": 279.69,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "But it took them weeks to gather. Inside Alesia, the grain ran out. The chiefs met in council. Some spoke for surrender, some for one last sally. Caesar records one speech, he says, for its singular and detestable cruelty.",
+     "start": 279.69,
+     "end": 297.62,
+     "phrases": [
+      [
+       "But it took them weeks to gather.",
+       279.69,
+       281.67
+      ],
+      [
+       "Inside Alesia, the grain ran out.",
+       282.15,
+       285.02
+      ],
+      [
+       "The chiefs met in council.",
+       285.5,
+       287.92
+      ],
+      [
+       "Some spoke for surrender, some for one last sally.",
+       288.4,
+       291.72
+      ],
+      [
+       "Caesar records one speech, he says, for its singular and detestable cruelty.",
+       292.2,
+       297.62
+      ]
+     ]
+    }
+   ],
+   "end": 297.62
+  },
+  {
+   "start": 299.97,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "He sprung from the noblest family among the Arverni, and possessing great influence, says",
+     "start": 299.97,
+     "end": 305.61,
+     "phrases": [
+      [
+       "He sprung from the noblest family among the Arverni, and possessing great influence, says",
+       299.97,
+       305.61
+      ]
+     ]
+    },
+    {
+     "speaker": "critognatus",
+     "text": "I shall pay no attention to the opinion of those who call a most disgraceful surrender by the name of a capitulation. My business is with those who approve of a sally. To be unable to bear privation for a short time is disgraceful cowardice, not true valour. Those who voluntarily offer themselves to death are more easily found than those who would calmly endure distress.",
+     "start": 305.83,
+     "end": 330.37,
+     "phrases": [
+      [
+       "I shall pay no attention to the opinion of those who call a most disgraceful surrender by the name of a capitulation.",
+       305.83,
+       313.02
+      ],
+      [
+       "My business is with those who approve of a sally.",
+       313.49,
+       316.42
+      ],
+      [
+       "To be unable to bear privation for a short time is disgraceful cowardice, not true valour.",
+       316.89,
+       322.87
+      ],
+      [
+       "Those who voluntarily offer themselves to death are more easily found than those who would calmly endure distress.",
+       323.33,
+       330.37
+      ]
+     ]
+    }
+   ],
+   "end": 330.37
+  },
+  {
+   "start": 331.62,
+   "segments": [
+    {
+     "speaker": "critognatus",
+     "text": "Do you doubt their fidelity and firmness because they have not come at the appointed day? What then? Do you suppose that the Romans are employed every day in the outer fortifications for mere amusement? Take the Romans as evidence that their approach is drawing near; since they, intimidated by alarm at this, labour night and day at their works.",
+     "start": 331.62,
+     "end": 352.98,
+     "phrases": [
+      [
+       "Do you doubt their fidelity and firmness because they have not come at the appointed day? What then?",
+       331.62,
+       337.29
+      ],
+      [
+       "Do you suppose that the Romans are employed every day in the outer fortifications for mere amusement?",
+       337.75,
+       343.6
+      ],
+      [
+       "Take the Romans as evidence that their approach is drawing near;",
+       344.07,
+       347.85
+      ],
+      [
+       "since they, intimidated by alarm at this, labour night and day at their works.",
+       348.17,
+       352.98
+      ]
+     ]
+    }
+   ],
+   "end": 352.98
+  },
+  {
+   "start": 354.43,
+   "segments": [
+    {
+     "speaker": "critognatus",
+     "text": "What, therefore, is my design? To do as our ancestors did in the war against the Cimbri and Teutones; who, when driven into their towns, and oppressed by similar privations, supported life by the corpses of those who appeared useless for war on account of their age, and did not surrender to the enemy.",
+     "start": 354.43,
+     "end": 374.06,
+     "phrases": [
+      [
+       "What, therefore, is my design?",
+       354.43,
+       356.37
+      ],
+      [
+       "To do as our ancestors did in the war against the Cimbri and Teutones;",
+       356.86,
+       361.38
+      ],
+      [
+       "who, when driven into their towns, and oppressed by similar privations, supported life by the corpses of those who appeared useless for war on account of their age, and did not surrender to the enemy.",
+       361.71,
+       374.06
+      ]
+     ]
+    }
+   ],
+   "end": 374.06
+  },
+  {
+   "start": 375.51,
+   "segments": [
+    {
+     "speaker": "critognatus",
+     "text": "But what other motive or wish have the Romans, than, induced by envy, to settle in the lands and states of those whom they have learned by fame to be noble and powerful in war, and impose on them perpetual slavery? For they never have carried on wars on any other terms.",
+     "start": 375.51,
+     "end": 392.22,
+     "phrases": [
+      [
+       "But what other motive or wish have the Romans, than, induced by envy, to settle in the lands and states of those whom they have learned by fame to be noble and powerful in war, and impose on them perpetual slavery?",
+       375.51,
+       388.74
+      ],
+      [
+       "For they never have carried on wars on any other terms.",
+       389.21,
+       392.22
+      ]
+     ]
+    }
+   ],
+   "end": 392.22
+  },
+  {
+   "start": 394.57,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "When different opinions were expressed, they determined that those who, owing to age or ill health, were unserviceable for war, should depart from the town, and that themselves should try every expedient before they had recourse to the advice of Critognatus. The Mandubii, who had admitted them into the town, are compelled to go forth with their wives and children. When these came to the Roman fortifications, weeping, they begged of the soldiers by every entreaty to receive them as slaves and relieve them with food. But Caesar, placing guards on the rampart, forbade them to be admitted.",
+     "start": 394.57,
+     "end": 433.23,
+     "phrases": [
+      [
+       "When different opinions were expressed, they determined that those who, owing to age or ill health, were unserviceable for war, should depart from the town, and that themselves should try every expedient before they had recourse to the advice of Critognatus.",
+       394.57,
+       410.73
+      ],
+      [
+       "The Mandubii, who had admitted them into the town, are compelled to go forth with their wives and children.",
+       411.18,
+       417.79
+      ],
+      [
+       "When these came to the Roman fortifications, weeping, they begged of the soldiers by every entreaty to receive them as slaves and relieve them with food.",
+       418.24,
+       428.14
+      ],
+      [
+       "But Caesar, placing guards on the rampart, forbade them to be admitted.",
+       428.59,
+       433.23
+      ]
+     ]
+    }
+   ],
+   "end": 433.23
+  },
+  {
+   "start": 440.08,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "In the meantime, Commius and the rest of the leaders, to whom the supreme command had been intrusted, came with all their forces to Alesia, and having occupied the entire hill, encamp not more than a mile from our fortifications. The following day, having led forth their cavalry from the camp, they fill all that plain, which, we have related, extended three miles in length, and draw out their infantry a little from that place, and post them on the higher ground. The town Alesia commanded a view of the whole plain. The besieged run together when these auxiliaries were seen; mutual congratulations ensue, and the minds of all are elated with joy.",
+     "start": 440.08,
+     "end": 483.2,
+     "phrases": [
+      [
+       "In the meantime, Commius and the rest of the leaders, to whom the supreme command had been intrusted, came with all their forces to Alesia, and having occupied the entire hill, encamp not more than a mile from our fortifications.",
+       440.08,
+       454.57
+      ],
+      [
+       "The following day, having led forth their cavalry from the camp, they fill all that plain, which, we have related, extended three miles in length, and draw out their infantry a little from that place, and post them on the higher ground.",
+       455.03,
+       469.43
+      ],
+      [
+       "The town Alesia commanded a view of the whole plain.",
+       469.89,
+       473.48
+      ],
+      [
+       "The besieged run together when these auxiliaries were seen;",
+       473.93,
+       477.6
+      ],
+      [
+       "mutual congratulations ensue, and the minds of all are elated with joy.",
+       477.9,
+       483.2
+      ]
+     ]
+    }
+   ],
+   "end": 483.2
+  },
+  {
+   "start": 484.05,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Caesar, having stationed his army on both sides of the fortifications, in order that, if occasion should arise, each should hold and know his own post, orders the cavalry to issue forth from the camp and commence action. There was a commanding view from the entire camp, which occupied a ridge of hills; and the minds of all the soldiers anxiously awaited the issue of the battle. When the Gauls were confident that their countrymen were the conquerors in the action, and beheld our men hard pressed by numbers, both those who were hemmed in by the line of circumvallation and those who had come to aid them, supported the spirits of their men by shouts and yells from every quarter. As the action was carried on in sight of all, neither a brave nor cowardly act could be concealed; both the desire of praise and the fear of ignominy, urged on each party to valour. After fighting from noon almost to sunset, without victory inclining in favour of either, the Germans, on one side, made a charge against the enemy in a compact body, and drove them back. But those who had come forth from Alesia returned into the town dejected and almost despairing of success.",
+     "start": 484.05,
+     "end": 559.94,
+     "phrases": [
+      [
+       "Caesar, having stationed his army on both sides of the fortifications, in order that, if occasion should arise, each should hold and know his own post, orders the cavalry to issue forth from the camp and commence action.",
+       484.05,
+       498.06
+      ],
+      [
+       "There was a commanding view from the entire camp, which occupied a ridge of hills;",
+       498.52,
+       503.21
+      ],
+      [
+       "and the minds of all the soldiers anxiously awaited the issue of the battle.",
+       503.51,
+       508.59
+      ],
+      [
+       "When the Gauls were confident that their countrymen were the conquerors in the action, and beheld our men hard pressed by numbers, both those who were hemmed in by the line of circumvallation and those who had come to aid them,",
+       509.04,
+       522.15
+      ],
+      [
+       "supported the spirits of their men by shouts and yells from every quarter.",
+       522.28,
+       527.16
+      ],
+      [
+       "As the action was carried on in sight of all, neither a brave nor cowardly act could be concealed;",
+       527.62,
+       533.74
+      ],
+      [
+       "both the desire of praise and the fear of ignominy, urged on each party to valour.",
+       534.04,
+       539.57
+      ],
+      [
+       "After fighting from noon almost to sunset, without victory inclining in favour of either, the Germans, on one side, made a charge against the enemy in a compact body, and drove them back.",
+       540.02,
+       552.51
+      ],
+      [
+       "But those who had come forth from Alesia returned into the town dejected and almost despairing of success.",
+       552.97,
+       559.94
+      ]
+     ]
+    }
+   ],
+   "end": 559.94
+  },
+  {
+   "start": 563.79,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Gauls, after the interval of a day, and after making, during that time, an immense number of hurdles, scaling ladders, and iron hooks, silently went forth from the camp at midnight and approached the fortifications in the plain.",
+     "start": 563.79,
+     "end": 578.22,
+     "phrases": [
+      [
+       "The Gauls, after the interval of a day, and after making, during that time, an immense number of hurdles, scaling ladders, and iron hooks, silently went forth from the camp at midnight and approached the fortifications in the plain.",
+       563.79,
+       578.22
+      ]
+     ]
+    }
+   ],
+   "end": 578.22
+  },
+  {
+   "start": 580.07,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Raising a shout suddenly, that by this intimation those who were besieged in the town might learn their arrival, they began to cast down hurdles and dislodge our men from the rampart by slings, arrows, and stones. At the same time, Vercingetorix having heard the shout, gives the signal to his troops by a trumpet, and leads them forth from the town.",
+     "start": 580.07,
+     "end": 603.0,
+     "phrases": [
+      [
+       "Raising a shout suddenly, that by this intimation those who were besieged in the town might learn their arrival, they began to cast down hurdles and dislodge our men from the rampart by slings, arrows, and stones.",
+       580.07,
+       593.94
+      ],
+      [
+       "At the same time, Vercingetorix having heard the shout, gives the signal to his troops by a trumpet, and leads them forth from the town.",
+       594.4,
+       603.0
+      ]
+     ]
+    }
+   ],
+   "end": 603.0
+  },
+  {
+   "start": 610.59,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Our troops, as each man's post had been assigned him some days before, man the fortifications; they intimidate the Gauls by slings, large stones, stakes which they had placed along the works, and bullets. All view being prevented by the darkness, many wounds are received on both sides; several missiles are thrown from the engines. Whilst the Gauls were at a distance from the fortification, they did more execution, owing to the immense number of their weapons: after they came nearer, they either unawares empaled themselves on the spurs, or were pierced by the mural darts from the ramparts and towers, and thus perished. After receiving many wounds on all sides, and having forced no part of the works, when day drew nigh, they retreated to their countrymen.",
+     "start": 610.59,
+     "end": 660.56,
+     "phrases": [
+      [
+       "Our troops, as each man's post had been assigned him some days before, man the fortifications;",
+       610.59,
+       616.69
+      ],
+      [
+       "they intimidate the Gauls by slings, large stones, stakes which they had placed along the works, and bullets.",
+       617.0,
+       624.0
+      ],
+      [
+       "All view being prevented by the darkness, many wounds are received on both sides;",
+       624.45,
+       629.62
+      ],
+      [
+       "several missiles are thrown from the engines.",
+       629.93,
+       632.98
+      ],
+      [
+       "Whilst the Gauls were at a distance from the fortification, they did more execution, owing to the immense number of their weapons:",
+       633.44,
+       641.05
+      ],
+      [
+       "after they came nearer, they either unawares empaled themselves on the spurs, or were pierced by the mural darts from the ramparts and towers, and thus perished.",
+       641.35,
+       651.5
+      ],
+      [
+       "After receiving many wounds on all sides, and having forced no part of the works, when day drew nigh, they retreated to their countrymen.",
+       651.96,
+       660.56
+      ]
+     ]
+    }
+   ],
+   "end": 660.56
+  },
+  {
+   "start": 664.41,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Twice the lines had held. The Gauls had one attack left in them, and this time they had found the weak point.",
+     "start": 664.41,
+     "end": 672.41,
+     "phrases": [
+      [
+       "Twice the lines had held.",
+       664.41,
+       666.37
+      ],
+      [
+       "The Gauls had one attack left in them, and this time they had found the weak point.",
+       666.86,
+       672.41
+      ]
+     ]
+    }
+   ],
+   "end": 672.41
+  },
+  {
+   "start": 673.26,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Gauls, having been twice repulsed with great loss, consult what they should do. There was, on the north side, a hill, which our men could not include in their works, on account of the extent of the circuit, and had necessarily made their camp in ground almost disadvantageous, and pretty steep. The leaders of the enemy, having reconnoitred the country by their scouts, select from the entire army sixty thousand men; belonging to those states which bear the highest character for courage. They appoint over their forces Vergasillaunus, the Arvernian, one of the four generals, and a near relative of Vercingetorix. He, having issued from the camp at the first watch, and having almost completed his march a little before the dawn, hid himself behind the mountain, and ordered his soldiers to refresh themselves after their labour during the night. When noon now seemed to draw nigh, he marched hastily against that camp which we have mentioned before.",
+     "start": 673.26,
+     "end": 735.08,
+     "phrases": [
+      [
+       "The Gauls, having been twice repulsed with great loss, consult what they should do.",
+       673.26,
+       678.66
+      ],
+      [
+       "There was, on the north side, a hill, which our men could not include in their works, on account of the extent of the circuit, and had necessarily made their camp in ground almost disadvantageous, and pretty steep.",
+       679.12,
+       692.68
+      ],
+      [
+       "The leaders of the enemy, having reconnoitred the country by their scouts, select from the entire army sixty thousand men;",
+       693.13,
+       701.05
+      ],
+      [
+       "belonging to those states which bear the highest character for courage.",
+       701.36,
+       705.47
+      ],
+      [
+       "They appoint over their forces Vergasillaunus, the Arvernian, one of the four generals, and a near relative of Vercingetorix.",
+       705.92,
+       714.17
+      ],
+      [
+       "He, having issued from the camp at the first watch, and having almost completed his march a little before the dawn, hid himself behind the mountain, and ordered his soldiers to refresh themselves after their labour during the night.",
+       714.62,
+       728.42
+      ],
+      [
+       "When noon now seemed to draw nigh, he marched hastily against that camp which we have mentioned before.",
+       728.87,
+       735.08
+      ]
+     ]
+    }
+   ],
+   "end": 735.08
+  },
+  {
+   "start": 737.93,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Vercingetorix, having beheld his countrymen from the citadel of Alesia, issues forth from the town. They engage on all sides at once, and every expedient is adopted. They flocked to whatever part of the works seemed weakest. The army of the Romans is distributed along their extensive lines, and with difficulty meets the enemy in every quarter. The shouts which were raised by the combatants in their rear, had a great tendency to intimidate our men, because they perceived that their danger rested on the valour of others: for generally all evils which are distant most powerfully alarm men's minds.",
+     "start": 737.93,
+     "end": 778.83,
+     "phrases": [
+      [
+       "Vercingetorix, having beheld his countrymen from the citadel of Alesia, issues forth from the town.",
+       737.93,
+       744.62
+      ],
+      [
+       "They engage on all sides at once, and every expedient is adopted.",
+       745.08,
+       749.54
+      ],
+      [
+       "They flocked to whatever part of the works seemed weakest.",
+       749.99,
+       753.44
+      ],
+      [
+       "The army of the Romans is distributed along their extensive lines, and with difficulty meets the enemy in every quarter.",
+       753.89,
+       762.35
+      ],
+      [
+       "The shouts which were raised by the combatants in their rear, had a great tendency to intimidate our men, because they perceived that their danger rested on the valour of others:",
+       762.8,
+       773.47
+      ],
+      [
+       "for generally all evils which are distant most powerfully alarm men's minds.",
+       773.77,
+       778.83
+      ]
+     ]
+    }
+   ],
+   "end": 778.83
+  },
+  {
+   "start": 779.68,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Caesar, having selected a commanding situation, sees distinctly whatever is going on in every quarter, and sends assistance to his troops when hard pressed. The idea uppermost in the minds of both parties is, that the present is the time in which they would have the fairest opportunity of making a struggle; the Gauls despairing of all safety, unless they should succeed in forcing the lines: the Romans expecting an end to all their labours if they should gain the day.",
+     "start": 779.68,
+     "end": 811.11,
+     "phrases": [
+      [
+       "Caesar, having selected a commanding situation, sees distinctly whatever is going on in every quarter, and sends assistance to his troops when hard pressed.",
+       779.68,
+       790.05
+      ],
+      [
+       "The idea uppermost in the minds of both parties is, that the present is the time in which they would have the fairest opportunity of making a struggle;",
+       790.51,
+       800.28
+      ],
+      [
+       "the Gauls despairing of all safety, unless they should succeed in forcing the lines:",
+       800.59,
+       805.92
+      ],
+      [
+       "the Romans expecting an end to all their labours if they should gain the day.",
+       806.22,
+       811.11
+      ]
+     ]
+    }
+   ],
+   "end": 811.11
+  },
+  {
+   "start": 811.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The principal struggle is at the upper lines, to which, we have said, Vergasillaunus was sent. The least elevation of ground, added to a declivity, exercises a momentous influence. Some are casting missiles, others, forming a testudo, advance to the attack; fresh men by turns relieve the wearied. The earth, heaped up by all against the fortifications, gives the means of ascent to the Gauls, and covers those works which the Romans had concealed in the ground.",
+     "start": 811.96,
+     "end": 842.61,
+     "phrases": [
+      [
+       "The principal struggle is at the upper lines, to which, we have said, Vergasillaunus was sent.",
+       811.96,
+       817.42
+      ],
+      [
+       "The least elevation of ground, added to a declivity, exercises a momentous influence.",
+       817.85,
+       823.95
+      ],
+      [
+       "Some are casting missiles, others, forming a testudo, advance to the attack;",
+       824.38,
+       829.27
+      ],
+      [
+       "fresh men by turns relieve the wearied.",
+       829.55,
+       832.42
+      ],
+      [
+       "The earth, heaped up by all against the fortifications, gives the means of ascent to the Gauls, and covers those works which the Romans had concealed in the ground.",
+       832.85,
+       842.61
+      ]
+     ]
+    }
+   ],
+   "end": 842.61
+  },
+  {
+   "start": 843.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Our men have no longer arms or strength.",
+     "start": 843.96,
+     "end": 846.73,
+     "phrases": [
+      [
+       "Our men have no longer arms or strength.",
+       843.96,
+       846.73
+      ]
+     ]
+    }
+   ],
+   "end": 846.73
+  },
+  {
+   "start": 848.58,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Caesar, on observing these movements, sends Labienus with six cohorts to relieve his distressed soldiers: he orders him, if he should be unable to withstand them, to draw off the cohorts and make a sally; but not to do this except through necessity. He himself goes to the rest, and exhorts them not to succumb to the toil; he shows them that the fruits of all former engagements depend on that day and hour.",
+     "start": 848.58,
+     "end": 875.62,
+     "phrases": [
+      [
+       "Caesar, on observing these movements, sends Labienus with six cohorts to relieve his distressed soldiers:",
+       848.58,
+       855.63
+      ],
+      [
+       "he orders him, if he should be unable to withstand them, to draw off the cohorts and make a sally;",
+       855.92,
+       861.74
+      ],
+      [
+       "but not to do this except through necessity.",
+       862.02,
+       864.92
+      ],
+      [
+       "He himself goes to the rest, and exhorts them not to succumb to the toil;",
+       865.35,
+       869.98
+      ],
+      [
+       "he shows them that the fruits of all former engagements depend on that day and hour.",
+       870.27,
+       875.62
+      ]
+     ]
+    }
+   ],
+   "end": 875.62
+  },
+  {
+   "start": 876.47,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Gauls within, despairing of forcing the fortifications in the plains on account of the greatness of the works, attempt the places precipitous in ascent: hither they bring the engines which they had prepared; by the immense number of their missiles they dislodge the defenders from the turrets: they fill the ditches with clay and hurdles, then clear the way; they tear down the rampart and breast-work with hooks.",
+     "start": 876.47,
+     "end": 902.35,
+     "phrases": [
+      [
+       "The Gauls within, despairing of forcing the fortifications in the plains on account of the greatness of the works, attempt the places precipitous in ascent:",
+       876.47,
+       886.3
+      ],
+      [
+       "hither they bring the engines which they had prepared;",
+       886.59,
+       889.64
+      ],
+      [
+       "by the immense number of their missiles they dislodge the defenders from the turrets:",
+       889.92,
+       894.84
+      ],
+      [
+       "they fill the ditches with clay and hurdles, then clear the way;",
+       895.13,
+       898.96
+      ],
+      [
+       "they tear down the rampart and breast-work with hooks.",
+       899.25,
+       902.35
+      ]
+     ]
+    }
+   ],
+   "end": 902.35
+  },
+  {
+   "start": 903.2,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Caesar sends at first young Brutus, with six cohorts, and afterwards Caius Fabius, his lieutenant, with seven others: finally, as they fought more obstinately, he leads up fresh men to the assistance of his soldiers. After renewing the action, and repulsing the enemy, he marches in the direction in which he had sent Labienus, drafts four cohorts from the nearest redoubt, and orders part of the cavalry to follow him, and part to make the circuit of the external fortifications and attack the enemy in the rear. Labienus, when neither the ramparts or ditches could check the onset of the enemy, informs Caesar by messengers of what he intended to do.",
+     "start": 903.2,
+     "end": 944.56,
+     "phrases": [
+      [
+       "Caesar sends at first young Brutus, with six cohorts, and afterwards Caius Fabius, his lieutenant, with seven others:",
+       903.2,
+       910.72
+      ],
+      [
+       "finally, as they fought more obstinately, he leads up fresh men to the assistance of his soldiers.",
+       911.0,
+       917.02
+      ],
+      [
+       "After renewing the action, and repulsing the enemy, he marches in the direction in which he had sent Labienus, drafts four cohorts from the nearest redoubt, and orders part of the cavalry to follow him,",
+       917.45,
+       929.47
+      ],
+      [
+       "and part to make the circuit of the external fortifications and attack the enemy in the rear.",
+       929.59,
+       935.15
+      ],
+      [
+       "Labienus, when neither the ramparts or ditches could check the onset of the enemy, informs Caesar by messengers of what he intended to do.",
+       935.58,
+       944.56
+      ]
+     ]
+    }
+   ],
+   "end": 944.56
+  },
+  {
+   "start": 946.01,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Caesar hastens to share in the action.",
+     "start": 946.01,
+     "end": 948.72,
+     "phrases": [
+      [
+       "Caesar hastens to share in the action.",
+       946.01,
+       948.72
+      ]
+     ]
+    }
+   ],
+   "end": 948.72
+  },
+  {
+   "start": 952.57,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "His arrival being known from the colour of his robe, and the troops of cavalry, and the cohorts which he had ordered to follow him being seen, as these low and sloping grounds were plainly visible from the eminences, the enemy join battle.",
+     "start": 952.57,
+     "end": 967.02,
+     "phrases": [
+      [
+       "His arrival being known from the colour of his robe, and the troops of cavalry, and the cohorts which he had ordered to follow him being seen, as these low and sloping grounds were plainly visible from the eminences, the enemy join battle.",
+       952.57,
+       967.02
+      ]
+     ]
+    }
+   ],
+   "end": 967.02
+  },
+  {
+   "start": 967.87,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "A shout being raised by both sides, it was succeeded by a general shout along the ramparts and whole line of fortifications. Our troops, laying aside their javelins, carry on the engagement with their swords.",
+     "start": 967.87,
+     "end": 981.62,
+     "phrases": [
+      [
+       "A shout being raised by both sides, it was succeeded by a general shout along the ramparts and whole line of fortifications.",
+       967.87,
+       976.08
+      ],
+      [
+       "Our troops, laying aside their javelins, carry on the engagement with their swords.",
+       976.52,
+       981.62
+      ]
+     ]
+    }
+   ],
+   "end": 981.62
+  },
+  {
+   "start": 990.1,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The cavalry is suddenly seen in the rear of the Gauls: the other cohorts advance rapidly; the enemy turn their backs; the cavalry intercept them in their flight, and a great slaughter ensues. Sedulius the general and chief of the Lemovices is slain; Vergasillaunus, the Arvernian, is taken alive in the flight, seventy-four military standards are brought to Caesar, and few out of so great a number return safe to their camp.",
+     "start": 990.1,
+     "end": 1019.89,
+     "phrases": [
+      [
+       "The cavalry is suddenly seen in the rear of the Gauls:",
+       990.1,
+       993.69
+      ],
+      [
+       "the other cohorts advance rapidly;",
+       993.98,
+       996.64
+      ],
+      [
+       "the enemy turn their backs;",
+       996.93,
+       998.85
+      ],
+      [
+       "the cavalry intercept them in their flight, and a great slaughter ensues.",
+       999.15,
+       1003.53
+      ],
+      [
+       "Sedulius the general and chief of the Lemovices is slain;",
+       1003.97,
+       1008.21
+      ],
+      [
+       "Vergasillaunus, the Arvernian, is taken alive in the flight, seventy-four military standards are brought to Caesar, and few out of so great a number return safe to their camp.",
+       1008.5,
+       1019.89
+      ]
+     ]
+    }
+   ],
+   "end": 1019.89
+  },
+  {
+   "start": 1020.74,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The besieged, beholding from the town the slaughter and flight of their countrymen, despairing of safety, lead back their troops from the fortifications. A flight of the Gauls from their camp immediately ensues on hearing of this disaster, and had not the soldiers been wearied by sending frequent reinforcements, and the labour of the entire day, all the enemy's forces could have been destroyed. Immediately after midnight, the cavalry are sent out and overtake the rear, a great number are taken or cut to pieces, the rest by flight escape in different directions to their respective states.",
+     "start": 1020.74,
+     "end": 1058.61,
+     "phrases": [
+      [
+       "The besieged, beholding from the town the slaughter and flight of their countrymen, despairing of safety, lead back their troops from the fortifications.",
+       1020.74,
+       1030.13
+      ],
+      [
+       "A flight of the Gauls from their camp immediately ensues on hearing of this disaster, and had not the soldiers been wearied by sending frequent reinforcements, and the labour of the entire day, all the enemy's forces could have been destroyed.",
+       1030.58,
+       1045.66
+      ],
+      [
+       "Immediately after midnight, the cavalry are sent out and overtake the rear, a great number are taken or cut to pieces, the rest by flight escape in different directions to their respective states.",
+       1046.11,
+       1058.61
+      ]
+     ]
+    }
+   ],
+   "end": 1058.61
+  },
+  {
+   "start": 1063.46,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Vercingetorix, having convened a council the following day, declares, that he had undertaken that war, not on account of his own exigencies, but on account of the general freedom; and since he must yield to fortune, he offered himself to them for either purpose, whether they should wish to atone to the Romans by his death, or surrender him alive.",
+     "start": 1063.46,
+     "end": 1086.48,
+     "phrases": [
+      [
+       "Vercingetorix, having convened a council the following day, declares, that he had undertaken that war, not on account of his own exigencies, but on account of the general freedom;",
+       1063.46,
+       1075.67
+      ],
+      [
+       "and since he must yield to fortune, he offered himself to them for either purpose, whether they should wish to atone to the Romans by his death, or surrender him alive.",
+       1075.99,
+       1086.48
+      ]
+     ]
+    }
+   ],
+   "end": 1086.48
+  },
+  {
+   "start": 1088.33,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Ambassadors are sent to Caesar on this subject. He orders their arms to be surrendered, and their chieftains delivered up. He seated himself at the head of the lines in front of the camp, the Gallic chieftains are brought before him.",
+     "start": 1088.33,
+     "end": 1103.92,
+     "phrases": [
+      [
+       "Ambassadors are sent to Caesar on this subject.",
+       1088.33,
+       1091.63
+      ],
+      [
+       "He orders their arms to be surrendered, and their chieftains delivered up.",
+       1092.11,
+       1096.93
+      ],
+      [
+       "He seated himself at the head of the lines in front of the camp, the Gallic chieftains are brought before him.",
+       1097.41,
+       1103.92
+      ]
+     ]
+    }
+   ],
+   "end": 1103.92
+  },
+  {
+   "start": 1105.57,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "They surrender Vercingetorix, and lay down their arms.",
+     "start": 1105.57,
+     "end": 1109.38,
+     "phrases": [
+      [
+       "They surrender Vercingetorix, and lay down their arms.",
+       1105.57,
+       1109.38
+      ]
+     ]
+    }
+   ],
+   "end": 1109.38
+  },
+  {
+   "start": 1119.23,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "That is all Caesar says of the moment. He does not describe the man.",
+     "start": 1119.23,
+     "end": 1124.33,
+     "phrases": [
+      [
+       "That is all Caesar says of the moment.",
+       1119.23,
+       1121.81
+      ],
+      [
+       "He does not describe the man.",
+       1122.29,
+       1124.33
+      ]
+     ]
+    }
+   ],
+   "end": 1124.33
+  },
+  {
+   "start": 1125.18,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Vercingetorix was taken to Rome in chains, and kept in a prison cell for six years. In forty-six before Christ he was led through the streets in Caesar's triumph, and then put to death.",
+     "start": 1125.18,
+     "end": 1138.95,
+     "phrases": [
+      [
+       "Vercingetorix was taken to Rome in chains, and kept in a prison cell for six years.",
+       1125.18,
+       1131.53
+      ],
+      [
+       "In forty-six before Christ he was led through the streets in Caesar's triumph, and then put to death.",
+       1132.01,
+       1138.95
+      ]
+     ]
+    }
+   ],
+   "end": 1138.95
+  },
+  {
+   "start": 1139.8,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "There was fighting for one more summer, but Gaul never again rose as one. Over the centuries that followed, its people came to speak Latin, and their Latin would become French.",
+     "start": 1139.8,
+     "end": 1151.75,
+     "phrases": [
+      [
+       "There was fighting for one more summer, but Gaul never again rose as one.",
+       1139.8,
+       1144.4
+      ],
+      [
+       "Over the centuries that followed, its people came to speak Latin, and their Latin would become French.",
+       1144.88,
+       1151.75
+      ]
+     ]
+    }
+   ],
+   "end": 1151.75
+  },
+  {
+   "start": 1152.6,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "In eighteen sixty-five, the emperor Napoleon the Third, who was writing his own life of Caesar, had a bronze statue of Vercingetorix raised on the hill above the village of Alise-Sainte-Reine, where the excavations had found the Roman ditches. He stands there still, looking out over the plain.",
+     "start": 1152.6,
+     "end": 1173.9,
+     "phrases": [
+      [
+       "In eighteen sixty-five, the emperor Napoleon the Third, who was writing his own life of Caesar, had a bronze statue of Vercingetorix raised on the hill above the village of Alise-Sainte-Reine, where the excavations had found the Roman ditches.",
+       1152.6,
+       1170.03
+      ],
+      [
+       "He stands there still, looking out over the plain.",
+       1170.51,
+       1173.9
+      ]
+     ]
+    }
+   ],
+   "end": 1173.9
+  },
+  {
+   "start": 1181.75,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "The Siege of Alesia. From the Commentaries on the Gallic War, by Julius Caesar.",
+     "start": 1181.75,
+     "end": 1188.19,
+     "phrases": [
+      [
+       "The Siege of Alesia.",
+       1181.75,
+       1183.8
+      ],
+      [
+       "From the Commentaries on the Gallic War, by Julius Caesar.",
+       1184.29,
+       1188.19
+      ]
+     ]
+    }
+   ],
+   "end": 1188.19
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis*0.7+bm_george*0.3"
+  },
+  "narrator": {
+   "voice": "bm_george*0.65+bm_fable*0.2+bm_lewis*0.15"
+  },
+  "critognatus": {
+   "voice": "am_fenrir*0.6+am_onyx*0.4"
+  }
+ }
+}

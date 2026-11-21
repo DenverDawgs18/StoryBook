@@ -30,6 +30,8 @@ python -m storybook serve      # → http://127.0.0.1:8000
 | **The Emperor's New Clothes** | Andersen, 1837 | Empty looms clattering, a procession with horns and drums, one small voice in the crowd |
 | **The Real Princess** | Andersen, 1835 | Thunder and rain at the city gate, then twenty feather beds and a pea |
 | **The Little Match Girl** | Andersen, 1845 | Snow wind, a match flaring, a carol on the music box, bells at New Year |
+| **The Travelling Musicians** | Grimm, 1819 | Four old animals on the road, crickets in a night wood, the robbers' house and one very loud concert |
+| **The Fisherman and His Wife** | Grimm, 1812 | A sea that gets rougher with every wish, from flat calm to a thunderstorm surf |
 
 ### Tales for After Dark
 
@@ -38,6 +40,7 @@ python -m storybook serve      # → http://127.0.0.1:8000
 | **The Tell-Tale Heart** | Poe, 1843 | A heartbeat that gets faster and louder until it fills the mix; the narrator speeds up with it |
 | **The Masque of the Red Death** | Poe, 1842 | A slightly detuned waltz behind iron gates, and an ebony clock that silences the revel |
 | **The Sack of Rome** | Gibbon, *Decline and Fall*, ch. XXXI | A documentary-style frame, Gothic war horns, a burning city, Alaric's river grave |
+| **The Siege of Alesia** | Caesar, *Gallic War*, Book VII | Caesar's own account of 52 BC: the double ring of siege works, Critognatus's speech, the night assault, and Caesar's red cloak arriving on the line |
 
 The finished MP3s (with chapter markers) and the read-along timings are in `site/audio/`.
 
@@ -79,8 +82,8 @@ Plain paragraphs are narration.
 @@host: A whole paragraph in one voice.
 ```
 
-Beds: `wind rain fire clock watch heartbeat roomtone crowd river crickets battle tinnitus
-birds spinning` plus music `dread elegy hearth waltz music_box carol_voice title_theme fairytale`
+Beds: `wind rain fire clock watch heartbeat roomtone crowd river sea crickets battle tinnitus
+birds spinning` (`sea rough=0..1` runs from a calm lap to storm surf) plus music `dread elegy hearth waltz music_box carol_voice title_theme fairytale`
 (`music_box tune=lullaby` plays Brahms's *Wiegenlied*; `fairytale key=F|G|D|Am` is harp over strings).
 Effects: `knock door creak footsteps bell chime house_bells chains wail boom swell sting
 thunder horn war_drums clash bolt quill lantern heartbeat_once tapping sparkle splash
