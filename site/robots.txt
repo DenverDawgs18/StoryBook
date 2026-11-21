@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /media/
+
+Sitemap: https://storybook-audio.fly.dev/sitemap.xml
