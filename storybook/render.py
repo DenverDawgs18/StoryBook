@@ -189,7 +189,13 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
             dsp.place(buf, st * ch.wet, samples(start))
     for room, buf in by_room.items():
         voice += dsp.reverb(buf, room, 1.0, 0.0, tail=False)
-    voice = dsp.compress(voice, -22, 2.5, 0.004, 0.15, makeup_db=1.5) + hot
+    voice = dsp.compress(voice, -22, 2.5, 0.004, 0.15, makeup_db=1.5)
+    if np.any(hot):
+        # loud lines keep their loudness, but their peaks may only rise ~7.5 dB above ordinary speech's,
+        # so mastering can stay linear (no pumping) and nothing crunches in the limiter
+        speech_peak = np.percentile(np.abs(voice[np.abs(voice) > 1e-4]), 99.9) if np.any(voice) else 0.3
+        hot = dsp.peak_limit(hot, speech_peak * dsp.db(7.5))
+    voice = voice + hot
     voice_env = dsp.envelope_follow(voice, 0.03, 0.7)
     activity = np.clip(voice_env / (dsp.db(-34)), 0, 1)
 
@@ -216,7 +222,10 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
 
     mix = voice + beds + fx
     mix = dsp.highpass(mix, 28)
-    mix = dsp.soft_limit(mix * dsp.db(-1), -0.5)
+    # headroom by plain gain (mastering sets the final level), never a tanh that would crunch loud lines
+    pk = float(np.abs(mix).max()) if len(mix) else 0.0
+    if pk > dsp.db(-1):
+        mix = (mix * (dsp.db(-1) / pk)).astype(np.float32)
 
     out_base = Path(out_base)
     out_base.parent.mkdir(parents=True, exist_ok=True)
@@ -238,14 +247,17 @@ def _master(mix: np.ndarray, out_base: Path, meta: dict, chapters: list, mp3: bo
     with tempfile.TemporaryDirectory() as td:
         wav = Path(td) / "mix.wav"
         sf.write(wav, mix, SR, subtype="FLOAT")
-        # measure, then apply two-pass EBU R128 loudness normalisation (-18 LUFS: spoken word, room for dynamics)
-        target = "I=-18:TP=-1.5:LRA=11"
-        r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af", f"loudnorm={target}:print_format=json",
+        # measure, then normalise to -18 LUFS (spoken word, room for dynamics) with ONE linear gain, and catch
+        # only the peaks that would then pass -1.5 dBFS with a clean limiter. (ffmpeg's loudnorm drops into
+        # dynamic mode when a peak won't fit, which flattened shouted lines back toward everything else.)
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af", "loudnorm=I=-18:TP=-1.5:LRA=11:print_format=json",
                             "-f", "null", "-"], capture_output=True, text=True)
         js = r.stderr[r.stderr.rfind("{"): r.stderr.rfind("}") + 1]
         m = json.loads(js)
-        af = (f"loudnorm={target}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
-              f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+        gain = dsp.db(-18.0 - float(m["input_i"]))
+        mix = dsp.peak_limit(mix * gain, dsp.db(-1.5), lookahead=0.004, release=0.06)
+        sf.write(wav, mix, SR, subtype="FLOAT")
+        af = "anull"
         metaf = Path(td) / "meta.txt"
         lines = [";FFMETADATA1", f"title={meta.get('title', '')}", f"artist={meta.get('author', '')}",
                  "album=StoryBook", "genre=Audiobook"]
