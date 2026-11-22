@@ -1,6 +1,7 @@
 """Neural narration (Kokoro-82M, run locally via ONNX) plus per-character voice treatment."""
 from __future__ import annotations
 
+import dataclasses
 import hashlib
 import json
 import os
@@ -256,28 +257,71 @@ def treat(x: np.ndarray, ch: Character) -> np.ndarray:
     return x
 
 
-def speak(text: str, ch: Character):
-    """Render a run of text in one character's voice.
+# --------------------------------------------------------------------------
+# delivery: per-line direction
+# --------------------------------------------------------------------------
+# Kokoro has no emotion control. Measured on Rumpelstiltskin's "Some witch told you that!": capitals,
+# extra "!!!", repeating the line, faster speed or exaggerated style vectors all leave the pitch where it
+# was (median ~118 Hz, the same as his calm "Now, lady, what is my name?"). And every line is then
+# levelled to the same loudness. So a shout has to be performed after synthesis, the way a real one sounds:
+# higher in pitch, faster, louder than the lines around it, brighter and strained, and rising with each
+# repeat. `gain` is dB above the character's usual level; the mix keeps it (see render: hot lines skip the
+# voice-bus compressor).
+DELIVERIES = {
+    # a short, sharp retort ("No, madam!")
+    "snap": {"pitch": 1.0, "step": 0.0, "speed": 1.06, "gain": 2.5, "drive": 0.2, "bright": 2.0, "gap": 1.0},
+    # raised voice
+    "shout": {"pitch": 3.0, "step": 1.0, "speed": 1.12, "gain": 6.0, "drive": 0.45, "bright": 4.0, "gap": 0.6},
+    # screaming, losing control: each phrase climbs higher than the last
+    "rage": {"pitch": 4.0, "step": 2.5, "speed": 1.2, "gain": 8.0, "drive": 0.7, "bright": 5.0, "gap": 0.35},
+}
+
+
+def _strain(x: np.ndarray, drive: float, bright: float) -> np.ndarray:
+    """A raised voice: thinner low end, more 1-4 kHz bite, and soft saturation for vocal strain."""
+    if len(x) == 0:
+        return x
+    x = dsp.eq(x, "lowshelf", 250, -2.0 * drive)
+    x = dsp.eq(x, "peak", 2600, bright, 0.9)
+    if drive > 0:
+        peak = max(np.abs(x).max(), 1e-6)
+        k = 1 + 4 * drive
+        x = np.tanh(x / peak * k) / np.tanh(k) * peak
+    return x.astype(np.float32)
+
+
+def speak(text: str, ch: Character, delivery: str | None = None):
+    """Render a run of text in one character's voice, optionally with a delivery (see DELIVERIES).
 
     Returns (mono audio, [(phrase, start_s, end_s), ...]).
     """
+    d = DELIVERIES.get(delivery or "")
+    if delivery and d is None:
+        raise ValueError(f"unknown delivery {delivery!r} (have {', '.join(DELIVERIES)})")
+    sch = dataclasses.replace(ch, speed=round(ch.speed * d["speed"], 3)) if d else ch
     pieces = []
     marks = []
     t = 0.0
-    for phrase, pause in phrase_split(text):
-        a = _raw_tts(phrase, ch)
+    for i, (phrase, pause) in enumerate(phrase_split(text)):
+        a = _raw_tts(phrase, sch)
         if len(a) == 0:
             continue
+        if d:
+            # pitch per phrase, so a repeated line climbs instead of coming out identical
+            a = _pitch_shift(a, d["pitch"] + d["step"] * i)
+            pause *= d["gap"]
         pieces.append(a)
         marks.append((phrase, t, t + len(a) / SR))
         t += len(a) / SR
         if pause:
-            pieces.append(np.zeros(dsp.samples(pause / max(ch.speed, 0.5)), dtype=np.float32))
-            t += pause / max(ch.speed, 0.5)
+            pieces.append(np.zeros(dsp.samples(pause / max(sch.speed, 0.5)), dtype=np.float32))
+            t += pause / max(sch.speed, 0.5)
     if not pieces:
         return np.zeros(0, dtype=np.float32), []
     y = np.concatenate(pieces)
     y = _pitch_shift(y, ch.pitch)
     y = treat(y, ch)
-    y = dsp.set_rms(y, -20 + ch.gain) if np.any(y) else y
+    if d:
+        y = _strain(y, d["drive"], d["bright"])
+    y = dsp.set_rms(y, -20 + ch.gain + (d["gain"] if d else 0.0)) if np.any(y) else y
     return y.astype(np.float32), marks

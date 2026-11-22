@@ -20,6 +20,8 @@ from .voices import Character, speak
 PARA_GAP = 0.85
 SEG_GAP = 0.22
 HEADING_GAP = 1.6
+# deliveries whose extra loudness must survive the mix: they skip the voice-bus compressor
+HOT = {"shout", "rage"}
 
 # default levels (dB relative to a bed's native ~-20 dBFS RMS) and sidechain depth
 LAYER_DEFAULTS = {
@@ -54,7 +56,7 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
     cast = {name: Character.from_dict(name, d) for name, d in script.cast.items()}
     narrator = cast["narrator"]
 
-    voice_clips = []  # (start_s, mono, character)
+    voice_clips = []  # (start_s, mono, character, hot)
     sfx_clips = []  # (start_s, stereo, gain_db)
     spans: list[BedSpan] = []
     active: dict[str, BedSpan] = {}
@@ -75,7 +77,7 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
                 # never a bare default
                 ch = dataclasses.replace(narrator, name=ev.speaker, extra=dict(narrator.extra))
                 cast[ev.speaker] = ch
-            audio, marks = speak(ev.text, ch)
+            audio, marks = speak(ev.text, ch, ev.delivery)
             lines_done += 1
             if progress:
                 progress(lines_done / lines_total, ev.text[:80])
@@ -83,7 +85,7 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
                 continue
             if last_was_speech:
                 cursor += SEG_GAP
-            voice_clips.append((cursor, audio, ch))
+            voice_clips.append((cursor, audio, ch, ev.delivery in HOT))
             if cur_para is None:
                 cur_para = {"start": round(cursor, 2), "segments": []}
             cur_para["segments"].append({
@@ -111,7 +113,7 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
             title = cue.args[0]
             chapters.append({"title": title, "start": round(cursor, 2)})
             audio, _ = speak(title, narrator)
-            voice_clips.append((cursor, audio, narrator))
+            voice_clips.append((cursor, audio, narrator, False))
             paragraphs.append({"start": round(cursor, 2), "end": round(cursor + len(audio) / SR, 2), "heading": True,
                                "segments": [{"speaker": "narrator", "text": title, "start": round(cursor, 2),
                                              "end": round(cursor + len(audio) / SR, 2), "phrases": []}]})
@@ -177,16 +179,17 @@ def render(script: Script, out_base: Path, seed: int = 7, progress=None, mp3=Tru
     if progress:
         progress(1.0, "Mixing voices")
     voice = np.zeros((total, 2), dtype=np.float32)
+    hot = np.zeros((total, 2), dtype=np.float32)
     by_room: dict = {}
-    for start, audio, ch in voice_clips:
+    for start, audio, ch, is_hot in voice_clips:
         st = dsp.pan(audio, ch.pan)
-        dsp.place(voice, st, samples(start))
+        dsp.place(hot if is_hot else voice, st, samples(start))
         if ch.room and ch.wet > 0:
             buf = by_room.setdefault(ch.room, np.zeros((total, 2), dtype=np.float32))
             dsp.place(buf, st * ch.wet, samples(start))
     for room, buf in by_room.items():
         voice += dsp.reverb(buf, room, 1.0, 0.0, tail=False)
-    voice = dsp.compress(voice, -22, 2.5, 0.004, 0.15, makeup_db=1.5)
+    voice = dsp.compress(voice, -22, 2.5, 0.004, 0.15, makeup_db=1.5) + hot
     voice_env = dsp.envelope_follow(voice, 0.03, 0.7)
     activity = np.clip(voice_env / (dsp.db(-34)), 0, 1)
 
