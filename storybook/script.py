@@ -19,6 +19,8 @@
     @officer: “Quoted words” go to officer; the rest, said the narrator, stays narration.
     @scrooge,fred: first quote to scrooge, second to fred, any further to fred.
     @@ghost: The entire paragraph is voiced by ghost, quotes or not.
+    @wolf,pig!snap,wolf!rage: a "!delivery" on a speaker directs that one line
+                              (see voices.DELIVERIES: snap, shout, rage).
 """
 from __future__ import annotations
 
@@ -34,6 +36,7 @@ class Line:
     speaker: str
     text: str
     para: int
+    delivery: str | None = None
 
 
 @dataclass
@@ -106,12 +109,14 @@ def parse(src: str) -> Script:
                 return
             paragraph = " ".join(l.strip() for l in text_lines)
             text_lines.clear()
-            m = re.match(r"^(@@?)([\w,\-]+):\s*(.*)$", paragraph, re.S)
+            m = re.match(r"^(@@?)([\w,!\-]+):\s*(.*)$", paragraph, re.S)
             if m and m.group(1) == "@@":
-                events.append(Line(m.group(2), m.group(3), para))
+                spk, _, how = m.group(2).partition("!")
+                events.append(Line(spk, m.group(3), para, how or None))
             elif m:
                 for spk, txt in split_dialogue(m.group(3), m.group(2).split(",")):
-                    events.append(Line(spk, txt, para))
+                    spk, _, how = spk.partition("!")
+                    events.append(Line(spk, txt, para, how or None))
             else:
                 for spk, txt in split_dialogue(paragraph, []):
                     events.append(Line(spk, txt, para))
