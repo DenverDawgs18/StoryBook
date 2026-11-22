@@ -22,11 +22,11 @@
    "father": "her father"
   }
  },
- "duration": 776.34,
+ "duration": 774.42,
  "chapters": [
   {
    "title": "The Emperor's New Clothes. By Hans Christian Andersen.",
-   "start": 33.17
+   "start": 33.18
   }
  ],
  "paragraphs": [
@@ -61,7 +61,7 @@
      "speaker": "host",
      "text": "At the last moment, at the proofs, he changed the ending. In his first draft, nobody speaks up. He gave the last word to a child.",
      "start": 19.71,
-     "end": 29.32,
+     "end": 29.33,
      "phrases": [
       [
        "At the last moment, at the proofs, he changed the ending.",
@@ -76,22 +76,22 @@
       [
        "He gave the last word to a child.",
        27.03,
-       29.32
+       29.33
       ]
      ]
     }
    ],
-   "end": 29.32
+   "end": 29.33
   },
   {
-   "start": 33.17,
+   "start": 33.18,
    "end": 38.2,
    "heading": true,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Emperor's New Clothes. By Hans Christian Andersen.",
-     "start": 33.17,
+     "start": 33.18,
      "end": 38.2,
      "phrases": []
     }
@@ -109,7 +109,7 @@
       [
        "Many years ago, there was an Emperor, who was so excessively fond of new clothes, that he spent all his money in dress.",
        41.3,
-       49.07
+       49.08
       ],
       [
        "He did not trouble himself in the least about his soldiers;",
@@ -119,12 +119,12 @@
       [
        "nor did he care to go either to the theatre or the chase, except for the opportunities then afforded him for displaying his new clothes.",
        53.74,
-       62.77
+       62.78
       ],
       [
        "He had a different suit for each hour of the day;",
        63.22,
-       66.19
+       66.2
       ],
       [
        "and as of any other king or emperor, one is accustomed to say",
@@ -163,46 +163,46 @@
      "speaker": "narrator",
      "text": "The Emperor is sitting in his wardrobe.",
      "start": 75.06,
-     "end": 78.04,
+     "end": 78.05,
      "phrases": [
       [
        "The Emperor is sitting in his wardrobe.",
        75.06,
-       78.04
+       78.05
       ]
      ]
     }
    ],
-   "end": 78.04
+   "end": 78.05
   },
   {
-   "start": 78.89,
+   "start": 78.9,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Time passed merrily in the large town which was his capital; strangers arrived every day at the court. One day, two rogues, calling themselves weavers, made their appearance. They gave out that they knew how to weave stuffs of the most beautiful colors and elaborate patterns, the clothes manufactured from which should have the wonderful property of remaining invisible to everyone who was unfit for the office he held, or who was extraordinarily simple in character.",
-     "start": 78.89,
+     "start": 78.9,
      "end": 110.73,
      "phrases": [
       [
        "Time passed merrily in the large town which was his capital;",
-       78.89,
-       83.05
+       78.9,
+       83.06
       ],
       [
        "strangers arrived every day at the court.",
        83.35,
-       86.41
+       86.42
       ],
       [
        "One day, two rogues, calling themselves weavers, made their appearance.",
        86.86,
-       91.48
+       91.49
       ],
       [
        "They gave out that they knew how to weave stuffs of the most beautiful colors and elaborate patterns, the clothes manufactured from which should have the wonderful property of remaining invisible to everyone who was unfit for the office he held,",
        91.93,
-       107.38
+       107.39
       ],
       [
        "or who was extraordinarily simple in character.",
@@ -336,7 +336,7 @@
       [
        "said the Emperor to himself, after some little time had elapsed;",
        162.68,
-       166.99
+       166.98
       ],
       [
        "he was, however, rather embarrassed, when he remembered that a simpleton, or one unfit for his office, would be unable to see the manufacture.",
@@ -425,24 +425,24 @@
      "speaker": "narrator",
      "text": "So the faithful old minister went into the hall, where the knaves were working with all their might, at their empty looms.",
      "start": 219.99,
-     "end": 227.51,
+     "end": 227.5,
      "phrases": [
       [
        "So the faithful old minister went into the hall, where the knaves were working with all their might, at their empty looms.",
        219.99,
-       227.51
+       227.5
       ]
      ]
     },
     {
      "speaker": "minister",
      "text": "What can be the meaning of this?",
-     "start": 227.73,
+     "start": 227.72,
      "end": 230.11,
      "phrases": [
       [
        "What can be the meaning of this?",
-       227.73,
+       227.72,
        230.11
       ]
      ]
@@ -516,7 +516,7 @@
       [
        "The poor old minister looked and looked, he could not discover anything on the looms, for a very good reason, viz:",
        258.88,
-       266.18
+       266.17
       ],
       [
        "there was nothing there.",
@@ -529,1258 +529,1258 @@
      "speaker": "minister",
      "text": "What!",
      "start": 268.28,
-     "end": 269.12,
+     "end": 269.02,
      "phrases": [
       [
        "What!",
        268.28,
-       269.12
+       269.02
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "thought he again.",
-     "start": 269.34,
-     "end": 270.61,
+     "start": 269.24,
+     "end": 270.51,
      "phrases": [
       [
        "thought he again.",
-       269.34,
-       270.61
+       269.24,
+       270.51
       ]
      ]
     },
     {
      "speaker": "minister",
      "text": "Is it possible that I am a simpleton? I have never thought so myself; and no one must know it now if I am so. Can it be, that I am unfit for my office? No, that must not be said either. I will never confess that I could not see the stuff.",
-     "start": 270.83,
-     "end": 291.99,
+     "start": 270.73,
+     "end": 291.89,
      "phrases": [
       [
        "Is it possible that I am a simpleton?",
-       270.83,
-       274.04
+       270.73,
+       273.95
       ],
       [
        "I have never thought so myself;",
-       274.52,
-       277.16
+       274.43,
+       277.07
       ],
       [
        "and no one must know it now if I am so.",
-       277.48,
-       280.78
+       277.38,
+       280.69
       ],
       [
        "Can it be, that I am unfit for my office?",
-       281.26,
-       284.63
+       281.17,
+       284.53
       ],
       [
        "No, that must not be said either.",
-       285.11,
-       287.93
+       285.01,
+       287.84
       ],
       [
        "I will never confess that I could not see the stuff.",
-       288.41,
-       291.99
+       288.31,
+       291.89
       ]
      ]
     }
    ],
-   "end": 291.99
+   "end": 291.89
   },
   {
-   "start": 292.84,
+   "start": 292.74,
    "segments": [
     {
      "speaker": "weaver",
      "text": "Well, Sir Minister!",
-     "start": 292.84,
-     "end": 293.83,
+     "start": 292.74,
+     "end": 293.74,
      "phrases": [
       [
        "Well, Sir Minister!",
-       292.84,
-       293.83
+       292.74,
+       293.74
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said one of the knaves, still pretending to work.",
-     "start": 294.05,
-     "end": 297.13,
+     "start": 293.96,
+     "end": 297.03,
      "phrases": [
       [
        "said one of the knaves, still pretending to work.",
-       294.05,
-       297.13
+       293.96,
+       297.03
       ]
      ]
     },
     {
      "speaker": "weaver",
      "text": "You do not say whether the stuff pleases you.",
-     "start": 297.35,
-     "end": 299.34,
+     "start": 297.25,
+     "end": 299.24,
      "phrases": [
       [
        "You do not say whether the stuff pleases you.",
-       297.35,
-       299.34
+       297.25,
+       299.24
       ]
      ]
     }
    ],
-   "end": 299.34
+   "end": 299.24
   },
   {
-   "start": 300.19,
+   "start": 300.09,
    "segments": [
     {
      "speaker": "minister",
      "text": "Oh, it is excellent!",
-     "start": 300.19,
-     "end": 302.35,
+     "start": 300.09,
+     "end": 302.26,
      "phrases": [
       [
        "Oh, it is excellent!",
-       300.19,
-       302.35
+       300.09,
+       302.26
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "replied the old minister, looking at the loom through his spectacles.",
-     "start": 302.57,
-     "end": 306.96,
+     "start": 302.48,
+     "end": 306.87,
      "phrases": [
       [
        "replied the old minister, looking at the loom through his spectacles.",
-       302.57,
-       306.96
+       302.48,
+       306.87
       ]
      ]
     },
     {
      "speaker": "minister",
      "text": "This pattern, and the colors, yes, I will tell the Emperor without delay, how very beautiful I think them.",
-     "start": 307.18,
-     "end": 314.03,
+     "start": 307.09,
+     "end": 313.94,
      "phrases": [
       [
        "This pattern, and the colors, yes, I will tell the Emperor without delay, how very beautiful I think them.",
-       307.18,
-       314.03
+       307.09,
+       313.94
       ]
      ]
     }
    ],
-   "end": 314.03
+   "end": 313.94
   },
   {
-   "start": 314.88,
+   "start": 314.79,
    "segments": [
     {
      "speaker": "weaver",
      "text": "We shall be much obliged to you,",
-     "start": 314.88,
-     "end": 316.32,
+     "start": 314.79,
+     "end": 316.22,
      "phrases": [
       [
        "We shall be much obliged to you,",
-       314.88,
-       316.32
+       314.79,
+       316.22
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the impostors, and then they named the different colors and described the pattern of the pretended stuff. The old minister listened attentively to their words, in order that he might repeat them to the Emperor; and then the knaves asked for more silk and gold, saying that it was necessary to complete what they had begun. However, they put all that was given them into their knapsacks; and continued to work with as much apparent diligence as before at their empty looms.",
-     "start": 316.54,
-     "end": 348.25,
+     "start": 316.44,
+     "end": 348.16,
      "phrases": [
       [
        "said the impostors, and then they named the different colors and described the pattern of the pretended stuff.",
-       316.54,
-       323.16
+       316.44,
+       323.07
       ],
       [
        "The old minister listened attentively to their words, in order that he might repeat them to the Emperor;",
-       323.61,
-       330.54
+       323.51,
+       330.44
       ],
       [
        "and then the knaves asked for more silk and gold, saying that it was necessary to complete what they had begun.",
-       330.84,
-       337.92
+       330.74,
+       337.82
       ],
       [
        "However, they put all that was given them into their knapsacks;",
-       338.36,
-       342.2
+       338.27,
+       342.11
       ],
       [
        "and continued to work with as much apparent diligence as before at their empty looms.",
-       342.5,
-       348.25
+       342.41,
+       348.16
       ]
      ]
     }
    ],
-   "end": 348.25
+   "end": 348.16
   },
   {
-   "start": 349.1,
+   "start": 349.01,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Emperor now sent another officer of his court to see how the men were getting on, and to ascertain whether the cloth would soon be ready. It was just the same with this gentleman as with the minister; he surveyed the looms on all sides, but could see nothing at all but the empty frames.",
-     "start": 349.1,
-     "end": 368.5,
+     "start": 349.01,
+     "end": 368.4,
      "phrases": [
       [
        "The Emperor now sent another officer of his court to see how the men were getting on, and to ascertain whether the cloth would soon be ready.",
-       349.1,
-       358.15
+       349.01,
+       358.05
       ],
       [
        "It was just the same with this gentleman as with the minister;",
-       358.6,
-       362.45
+       358.5,
+       362.36
       ],
       [
        "he surveyed the looms on all sides, but could see nothing at all but the empty frames.",
-       362.75,
-       368.5
+       362.65,
+       368.4
       ]
      ]
     }
    ],
-   "end": 368.5
+   "end": 368.4
   },
   {
-   "start": 369.35,
+   "start": 369.25,
    "segments": [
     {
      "speaker": "weaver",
      "text": "Does not the stuff appear as beautiful to you, as it did to my lord the minister?",
-     "start": 369.35,
-     "end": 373.57,
+     "start": 369.25,
+     "end": 373.47,
      "phrases": [
       [
        "Does not the stuff appear as beautiful to you, as it did to my lord the minister?",
-       369.35,
-       373.57
+       369.25,
+       373.47
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "asked the impostors of the Emperor's second ambassador; at the same time making the same gestures as before, and talking of the design and colors which were not there.",
-     "start": 373.79,
-     "end": 385.45,
+     "start": 373.69,
+     "end": 385.35,
      "phrases": [
       [
        "asked the impostors of the Emperor's second ambassador;",
-       373.79,
-       377.75
+       373.69,
+       377.65
       ],
       [
        "at the same time making the same gestures as before, and talking of the design and colors which were not there.",
-       378.05,
-       385.45
+       377.95,
+       385.35
       ]
      ]
     }
    ],
-   "end": 385.45
+   "end": 385.35
   },
   {
-   "start": 386.3,
+   "start": 386.2,
    "segments": [
     {
      "speaker": "officer",
      "text": "I certainly am not stupid!",
-     "start": 386.3,
-     "end": 388.07,
+     "start": 386.2,
+     "end": 387.97,
      "phrases": [
       [
        "I certainly am not stupid!",
-       386.3,
-       388.07
+       386.2,
+       387.97
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "thought the messenger.",
-     "start": 388.29,
-     "end": 389.71,
+     "start": 388.19,
+     "end": 389.62,
      "phrases": [
       [
        "thought the messenger.",
-       388.29,
-       389.71
+       388.19,
+       389.62
       ]
      ]
     },
     {
      "speaker": "officer",
      "text": "It must be, that I am not fit for my good, profitable office! That is very odd; however, no one shall know anything about it.",
-     "start": 389.93,
-     "end": 398.51,
+     "start": 389.84,
+     "end": 398.42,
      "phrases": [
       [
        "It must be, that I am not fit for my good, profitable office!",
-       389.93,
-       394.07
+       389.84,
+       393.97
       ],
       [
        "That is very odd;",
-       394.49,
-       395.76
+       394.39,
+       395.67
       ],
       [
        "however, no one shall know anything about it.",
-       396.04,
-       398.51
+       395.95,
+       398.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "And accordingly he praised the stuff he could not see, and declared that he was delighted with both colors and patterns.",
-     "start": 398.73,
-     "end": 406.52,
+     "start": 398.64,
+     "end": 406.42,
      "phrases": [
       [
        "And accordingly he praised the stuff he could not see, and declared that he was delighted with both colors and patterns.",
-       398.73,
-       406.52
+       398.64,
+       406.42
       ]
      ]
     },
     {
      "speaker": "officer",
      "text": "Indeed, please your Imperial Majesty,",
-     "start": 406.74,
-     "end": 409.06,
+     "start": 406.64,
+     "end": 408.97,
      "phrases": [
       [
        "Indeed, please your Imperial Majesty,",
-       406.74,
-       409.06
+       406.64,
+       408.97
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said he to his sovereign when he returned",
-     "start": 409.28,
-     "end": 412.06,
+     "start": 409.19,
+     "end": 411.96,
      "phrases": [
       [
        "said he to his sovereign when he returned",
-       409.28,
-       412.06
+       409.19,
+       411.96
       ]
      ]
     },
     {
      "speaker": "officer",
      "text": "the cloth which the weavers are preparing is extraordinarily magnificent.",
-     "start": 412.28,
-     "end": 416.88,
+     "start": 412.18,
+     "end": 416.79,
      "phrases": [
       [
        "the cloth which the weavers are preparing is extraordinarily magnificent.",
-       412.28,
-       416.88
+       412.18,
+       416.79
       ]
      ]
     }
    ],
-   "end": 416.88
+   "end": 416.79
   },
   {
-   "start": 417.73,
+   "start": 417.64,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The whole city was talking of the splendid cloth which the Emperor had ordered to be woven at his own expense.",
-     "start": 417.73,
-     "end": 424.9,
+     "start": 417.64,
+     "end": 424.8,
      "phrases": [
       [
        "The whole city was talking of the splendid cloth which the Emperor had ordered to be woven at his own expense.",
-       417.73,
-       424.9
+       417.64,
+       424.8
       ]
      ]
     }
    ],
-   "end": 424.9
+   "end": 424.8
   },
   {
-   "start": 425.75,
+   "start": 425.65,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And now the Emperor himself wished to see the costly manufacture, while it was still in the loom. Accompanied by a select number of officers of the court, among whom were the two honest men who had already admired the cloth, he went to the crafty impostors, who, as soon as they were aware of the Emperor's approach, went on working more diligently than ever; although they still did not pass a single thread through the looms.",
-     "start": 425.75,
-     "end": 452.86,
+     "start": 425.65,
+     "end": 452.77,
      "phrases": [
       [
        "And now the Emperor himself wished to see the costly manufacture, while it was still in the loom.",
-       425.75,
-       431.8
+       425.65,
+       431.7
       ],
       [
        "Accompanied by a select number of officers of the court, among whom were the two honest men who had already admired the cloth, he went to the crafty impostors, who, as soon as they were aware of the Emperor's approach, went on working more diligently than ever;",
-       432.25,
-       448.37
+       432.15,
+       448.27
       ],
       [
        "although they still did not pass a single thread through the looms.",
-       448.67,
-       452.86
+       448.57,
+       452.77
       ]
      ]
     }
    ],
-   "end": 452.86
+   "end": 452.77
   },
   {
-   "start": 453.71,
+   "start": 453.62,
    "segments": [
     {
      "speaker": "minister",
      "text": "Is not the work absolutely magnificent?",
-     "start": 453.71,
-     "end": 457.21,
+     "start": 453.62,
+     "end": 457.11,
      "phrases": [
       [
        "Is not the work absolutely magnificent?",
-       453.71,
-       457.21
+       453.62,
+       457.11
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the two officers of the crown, already mentioned.",
-     "start": 457.43,
-     "end": 460.98,
+     "start": 457.33,
+     "end": 460.88,
      "phrases": [
       [
        "said the two officers of the crown, already mentioned.",
-       457.43,
-       460.98
+       457.33,
+       460.88
       ]
      ]
     },
     {
      "speaker": "officer",
      "text": "If your Majesty will only be pleased to look at it! What a splendid design! What glorious colors!",
-     "start": 461.2,
-     "end": 467.53,
+     "start": 461.1,
+     "end": 467.43,
      "phrases": [
       [
        "If your Majesty will only be pleased to look at it!",
-       461.2,
-       464.08
+       461.1,
+       463.99
       ],
       [
        "What a splendid design! What glorious colors!",
-       464.5,
-       467.53
+       464.41,
+       467.43
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "and at the same time they pointed to the empty frames; for they imagined that everyone else could see this exquisite piece of workmanship.",
-     "start": 467.75,
-     "end": 476.79,
+     "start": 467.65,
+     "end": 476.69,
      "phrases": [
       [
        "and at the same time they pointed to the empty frames;",
-       467.75,
-       471.31
+       467.65,
+       471.21
       ],
       [
        "for they imagined that everyone else could see this exquisite piece of workmanship.",
-       471.61,
-       476.79
+       471.51,
+       476.69
       ]
      ]
     }
    ],
-   "end": 476.79
+   "end": 476.69
   },
   {
-   "start": 478.44,
+   "start": 478.34,
    "segments": [
     {
      "speaker": "emperor",
      "text": "How is this?",
-     "start": 478.44,
-     "end": 479.33,
+     "start": 478.34,
+     "end": 479.24,
      "phrases": [
       [
        "How is this?",
-       478.44,
-       479.33
+       478.34,
+       479.24
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the Emperor to himself.",
-     "start": 479.55,
-     "end": 481.81,
+     "start": 479.46,
+     "end": 481.71,
      "phrases": [
       [
        "said the Emperor to himself.",
-       479.55,
-       481.81
+       479.46,
+       481.71
       ]
      ]
     },
     {
      "speaker": "emperor",
      "text": "I can see nothing! This is indeed a terrible affair! Am I a simpleton, or am I unfit to be an Emperor? That would be the worst thing that could happen—Oh! the cloth is charming,",
-     "start": 482.03,
-     "end": 492.79,
+     "start": 481.93,
+     "end": 492.69,
      "phrases": [
       [
        "I can see nothing!",
-       482.03,
-       483.12
+       481.93,
+       483.02
       ],
       [
        "This is indeed a terrible affair!",
-       483.58,
-       485.38
+       483.49,
+       485.28
       ],
       [
        "Am I a simpleton, or am I unfit to be an Emperor?",
-       485.84,
-       488.81
+       485.75,
+       488.72
       ],
       [
        "That would be the worst thing that could happen",
-       489.28,
-       491.16
+       489.18,
+       491.06
       ],
       [
        "Oh! the cloth is charming,",
-       491.4,
-       492.79
+       491.31,
+       492.69
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said he, aloud.",
-     "start": 493.01,
-     "end": 494.49,
+     "start": 492.91,
+     "end": 494.39,
      "phrases": [
       [
        "said he, aloud.",
-       493.01,
-       494.49
+       492.91,
+       494.39
       ]
      ]
     },
     {
      "speaker": "emperor",
      "text": "It has my complete approbation.",
-     "start": 494.71,
-     "end": 496.52,
+     "start": 494.61,
+     "end": 496.42,
      "phrases": [
       [
        "It has my complete approbation.",
-       494.71,
-       496.52
+       494.61,
+       496.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "And he smiled most graciously, and looked closely at the empty looms; for on no account would he say that he could not see what two of the officers of his court had praised so much. All his retinue now strained their eyes, hoping to discover something on the looms, but they could see no more than the others; nevertheless, they all exclaimed",
-     "start": 496.74,
-     "end": 519.27,
+     "start": 496.64,
+     "end": 519.18,
      "phrases": [
       [
        "And he smiled most graciously, and looked closely at the empty looms;",
-       496.74,
-       501.23
+       496.64,
+       501.14
       ],
       [
        "for on no account would he say that he could not see what two of the officers of his court had praised so much.",
-       501.53,
-       508.11
+       501.44,
+       508.02
       ],
       [
        "All his retinue now strained their eyes, hoping to discover something on the looms, but they could see no more than the others;",
-       508.56,
-       516.59
+       508.47,
+       516.5
       ],
       [
        "nevertheless, they all exclaimed",
-       516.89,
-       519.27
+       516.8,
+       519.18
       ]
      ]
     },
     {
      "speaker": "courtiers",
      "text": "Oh, how beautiful!",
-     "start": 519.49,
-     "end": 520.63,
+     "start": 519.4,
+     "end": 520.47,
      "phrases": [
       [
        "Oh, how beautiful!",
-       519.49,
-       520.63
+       519.4,
+       520.47
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "and advised his majesty to have some new clothes made from this splendid material, for the approaching procession.",
-     "start": 520.85,
-     "end": 528.18,
+     "start": 520.69,
+     "end": 528.02,
      "phrases": [
       [
        "and advised his majesty to have some new clothes made from this splendid material, for the approaching procession.",
-       520.85,
-       528.18
+       520.69,
+       528.02
       ]
      ]
     },
     {
      "speaker": "courtiers",
      "text": "Magnificent! Charming! Excellent!",
-     "start": 528.4,
-     "end": 530.46,
+     "start": 528.24,
+     "end": 530.06,
      "phrases": [
       [
        "Magnificent! Charming! Excellent!",
-       528.4,
-       530.46
+       528.24,
+       530.06
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "resounded on all sides; and everyone was uncommonly gay. The Emperor shared in the general satisfaction; and presented the impostors with the riband of an order of knighthood, to be worn in their button-holes, and the title of",
-     "start": 530.68,
-     "end": 547.84,
+     "start": 530.28,
+     "end": 547.44,
      "phrases": [
       [
        "resounded on all sides;",
-       530.68,
-       532.89
+       530.28,
+       532.49
       ],
       [
        "and everyone was uncommonly gay.",
-       533.19,
-       535.92
+       532.79,
+       535.52
       ],
       [
        "The Emperor shared in the general satisfaction;",
-       536.37,
-       539.78
+       535.97,
+       539.38
       ],
       [
        "and presented the impostors with the riband of an order of knighthood, to be worn in their button-holes, and the title of",
-       540.08,
-       547.84
+       539.68,
+       547.44
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Gentlemen Weavers.",
-     "start": 548.06,
-     "end": 549.59,
+     "start": 547.66,
+     "end": 549.19,
      "phrases": [
       [
        "Gentlemen Weavers.",
-       548.06,
-       549.59
+       547.66,
+       549.19
       ]
      ]
     }
    ],
-   "end": 549.59
+   "end": 549.19
   },
   {
-   "start": 550.44,
+   "start": 550.04,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The rogues sat up the whole of the night before the day on which the procession was to take place, and had sixteen lights burning, so that everyone might see how anxious they were to finish the Emperor's new suit. They pretended to roll the cloth off the looms; cut the air with their scissors; and sewed with needles without any thread in them.",
-     "start": 550.44,
-     "end": 573.17,
+     "start": 550.04,
+     "end": 572.77,
      "phrases": [
       [
        "The rogues sat up the whole of the night before the day on which the procession was to take place, and had sixteen lights burning, so that everyone might see how anxious they were to finish the Emperor's new suit.",
-       550.44,
-       563.41
+       550.04,
+       563.01
       ],
       [
        "They pretended to roll the cloth off the looms;",
-       563.85,
-       567.03
+       563.45,
+       566.63
       ],
       [
        "cut the air with their scissors;",
-       567.33,
-       569.54
+       566.93,
+       569.14
       ],
       [
        "and sewed with needles without any thread in them.",
-       569.84,
-       573.17
+       569.44,
+       572.77
       ]
      ]
     },
     {
      "speaker": "weaver",
      "text": "See!",
-     "start": 573.39,
-     "end": 573.93,
+     "start": 572.99,
+     "end": 573.45,
      "phrases": [
       [
        "See!",
-       573.39,
-       573.93
+       572.99,
+       573.45
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "cried they, at last.",
-     "start": 574.15,
-     "end": 575.76,
+     "start": 573.67,
+     "end": 575.28,
      "phrases": [
       [
        "cried they, at last.",
-       574.15,
-       575.76
+       573.67,
+       575.28
       ]
      ]
     },
     {
      "speaker": "weaver",
      "text": "The Emperor's new clothes are ready!",
-     "start": 575.98,
-     "end": 577.65,
+     "start": 575.5,
+     "end": 577.16,
      "phrases": [
       [
        "The Emperor's new clothes are ready!",
-       575.98,
-       577.65
+       575.5,
+       577.16
       ]
      ]
     }
    ],
-   "end": 577.65
+   "end": 577.16
   },
   {
-   "start": 578.5,
+   "start": 578.01,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And now the Emperor, with all the grandees of his court, came to the weavers; and the rogues raised their arms, as if in the act of holding something up, saying",
-     "start": 578.5,
-     "end": 588.86,
+     "start": 578.01,
+     "end": 588.37,
      "phrases": [
       [
        "And now the Emperor, with all the grandees of his court, came to the weavers;",
-       578.5,
-       583.25
+       578.01,
+       582.77
       ],
       [
        "and the rogues raised their arms, as if in the act of holding something up, saying",
-       583.55,
-       588.86
+       583.07,
+       588.37
       ]
      ]
     },
     {
      "speaker": "weaver",
      "text": "Here are your Majesty's trousers! Here is the scarf! Here is the mantle! The whole suit is as light as a cobweb; one might fancy one has nothing at all on, when dressed in it; that, however, is the great virtue of this delicate cloth.",
-     "start": 589.08,
-     "end": 602.76,
+     "start": 588.59,
+     "end": 602.28,
      "phrases": [
       [
        "Here are your Majesty's trousers!",
-       589.08,
-       590.68
+       588.59,
+       590.2
       ],
       [
        "Here is the scarf!",
-       591.08,
-       592.09
+       590.6,
+       591.61
       ],
       [
        "Here is the mantle!",
-       592.49,
-       593.53
+       592.01,
+       593.05
       ],
       [
        "The whole suit is as light as a cobweb;",
-       593.93,
-       595.97
+       593.45,
+       595.49
       ],
       [
        "one might fancy one has nothing at all on, when dressed in it;",
-       596.24,
-       599.5
+       595.76,
+       599.01
       ],
       [
        "that, however, is the great virtue of this delicate cloth.",
-       599.76,
-       602.76
+       599.28,
+       602.28
       ]
      ]
     }
    ],
-   "end": 602.76
+   "end": 602.28
   },
   {
-   "start": 603.61,
+   "start": 603.13,
    "segments": [
     {
      "speaker": "courtiers",
      "text": "Yes indeed!",
-     "start": 603.61,
-     "end": 604.44,
+     "start": 603.13,
+     "end": 603.96,
      "phrases": [
       [
        "Yes indeed!",
-       603.61,
-       604.44
+       603.13,
+       603.96
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said all the courtiers, although not one of them could see anything of this exquisite manufacture.",
-     "start": 604.66,
-     "end": 610.89,
+     "start": 604.18,
+     "end": 610.42,
      "phrases": [
       [
        "said all the courtiers, although not one of them could see anything of this exquisite manufacture.",
-       604.66,
-       610.89
+       604.18,
+       610.42
       ]
      ]
     }
    ],
-   "end": 610.89
+   "end": 610.42
   },
   {
-   "start": 611.74,
+   "start": 611.27,
    "segments": [
     {
      "speaker": "weaver",
      "text": "If your Imperial Majesty will be graciously pleased to take off your clothes, we will fit on the new suit, in front of the looking glass.",
-     "start": 611.74,
-     "end": 619.2,
+     "start": 611.27,
+     "end": 618.73,
      "phrases": [
       [
        "If your Imperial Majesty will be graciously pleased to take off your clothes, we will fit on the new suit, in front of the looking glass.",
-       611.74,
-       619.2
+       611.27,
+       618.73
       ]
      ]
     }
    ],
-   "end": 619.2
+   "end": 618.73
   },
   {
-   "start": 620.05,
+   "start": 619.58,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Emperor was accordingly undressed, and the rogues pretended to array him in his new suit; the Emperor turning round, from side to side, before the looking glass.",
-     "start": 620.05,
-     "end": 630.96,
+     "start": 619.58,
+     "end": 630.49,
      "phrases": [
       [
        "The Emperor was accordingly undressed, and the rogues pretended to array him in his new suit;",
-       620.05,
-       626.15
+       619.58,
+       625.68
       ],
       [
        "the Emperor turning round, from side to side, before the looking glass.",
-       626.45,
-       630.96
+       625.97,
+       630.49
       ]
      ]
     }
    ],
-   "end": 630.96
+   "end": 630.49
   },
   {
-   "start": 631.81,
+   "start": 631.34,
    "segments": [
     {
      "speaker": "courtiers",
      "text": "How splendid his Majesty looks in his new clothes, and how well they fit!",
-     "start": 631.81,
-     "end": 635.98,
+     "start": 631.34,
+     "end": 635.33,
      "phrases": [
       [
        "How splendid his Majesty looks in his new clothes, and how well they fit!",
-       631.81,
-       635.98
+       631.34,
+       635.33
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "everyone cried out.",
-     "start": 636.2,
-     "end": 637.75,
+     "start": 635.55,
+     "end": 637.1,
      "phrases": [
       [
        "everyone cried out.",
-       636.2,
-       637.75
+       635.55,
+       637.1
       ]
      ]
     },
     {
      "speaker": "courtiers",
      "text": "What a design! What colors! These are indeed royal robes!",
-     "start": 637.97,
-     "end": 641.71,
+     "start": 637.32,
+     "end": 640.72,
      "phrases": [
       [
        "What a design! What colors!",
-       637.97,
-       639.63
+       637.32,
+       638.8
       ],
       [
        "These are indeed royal robes!",
-       640.05,
-       641.71
+       639.08,
+       640.72
       ]
      ]
     }
    ],
-   "end": 641.71
+   "end": 640.72
   },
   {
-   "start": 642.56,
+   "start": 641.57,
    "segments": [
     {
      "speaker": "chamberlain",
      "text": "The canopy which is to be borne over your Majesty, in the procession, is waiting,",
-     "start": 642.56,
-     "end": 648.03,
+     "start": 641.57,
+     "end": 647.04,
      "phrases": [
       [
        "The canopy which is to be borne over your Majesty, in the procession, is waiting,",
-       642.56,
-       648.03
+       641.57,
+       647.04
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "announced the chief master of the ceremonies.",
-     "start": 648.25,
-     "end": 651.43,
+     "start": 647.26,
+     "end": 650.45,
      "phrases": [
       [
        "announced the chief master of the ceremonies.",
-       648.25,
-       651.43
+       647.26,
+       650.45
       ]
      ]
     }
    ],
-   "end": 651.43
+   "end": 650.45
   },
   {
-   "start": 652.28,
+   "start": 651.3,
    "segments": [
     {
      "speaker": "emperor",
      "text": "I am quite ready,",
-     "start": 652.28,
-     "end": 653.38,
+     "start": 651.3,
+     "end": 652.39,
      "phrases": [
       [
        "I am quite ready,",
-       652.28,
-       653.38
+       651.3,
+       652.39
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "answered the Emperor.",
-     "start": 653.6,
-     "end": 655.15,
+     "start": 652.61,
+     "end": 654.17,
      "phrases": [
       [
        "answered the Emperor.",
-       653.6,
-       655.15
+       652.61,
+       654.17
       ]
      ]
     },
     {
      "speaker": "emperor",
      "text": "Do my new clothes fit well?",
-     "start": 655.37,
-     "end": 656.9,
+     "start": 654.39,
+     "end": 655.92,
      "phrases": [
       [
        "Do my new clothes fit well?",
-       655.37,
-       656.9
+       654.39,
+       655.92
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "asked he, turning himself round again before the looking glass, in order that he might appear to be examining his handsome suit.",
-     "start": 657.12,
-     "end": 665.18,
+     "start": 656.14,
+     "end": 664.2,
      "phrases": [
       [
        "asked he, turning himself round again before the looking glass, in order that he might appear to be examining his handsome suit.",
-       657.12,
-       665.18
+       656.14,
+       664.2
       ]
      ]
     }
    ],
-   "end": 665.18
+   "end": 664.2
   },
   {
-   "start": 666.03,
+   "start": 665.05,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The lords of the bedchamber, who were to carry his Majesty's train felt about on the ground, as if they were lifting up the ends of the mantle; and pretended to be carrying something; for they would by no means betray anything like simplicity, or unfitness for their office.",
-     "start": 666.03,
-     "end": 684.72,
+     "start": 665.05,
+     "end": 683.74,
      "phrases": [
       [
        "The lords of the bedchamber, who were to carry his Majesty's train felt about on the ground, as if they were lifting up the ends of the mantle;",
-       666.03,
-       675.23
+       665.05,
+       674.24
       ],
       [
        "and pretended to be carrying something;",
-       675.52,
-       678.16
+       674.54,
+       677.17
       ],
       [
        "for they would by no means betray anything like simplicity, or unfitness for their office.",
-       678.45,
-       684.72
+       677.47,
+       683.74
       ]
      ]
     }
    ],
-   "end": 684.72
+   "end": 683.74
   },
   {
-   "start": 685.57,
+   "start": 684.59,
    "segments": [
     {
      "speaker": "narrator",
      "text": "So now the Emperor walked under his high canopy in the midst of the procession, through the streets of his capital; and all the people standing by, and those at the windows, cried out",
-     "start": 685.57,
-     "end": 697.46,
+     "start": 684.59,
+     "end": 696.48,
      "phrases": [
       [
        "So now the Emperor walked under his high canopy in the midst of the procession, through the streets of his capital;",
-       685.57,
-       692.9
+       684.59,
+       691.92
       ],
       [
        "and all the people standing by, and those at the windows, cried out",
-       693.2,
-       697.46
+       692.21,
+       696.48
       ]
      ]
     },
     {
      "speaker": "crowd",
      "text": "Oh! How beautiful are our Emperor's new clothes! What a magnificent train there is to the mantle; and how gracefully the scarf hangs!",
-     "start": 697.68,
-     "end": 704.92,
+     "start": 696.7,
+     "end": 703.62,
      "phrases": [
       [
        "Oh! How beautiful are our Emperor's new clothes!",
-       697.68,
-       700.12
+       696.7,
+       699.09
       ],
       [
        "What a magnificent train there is to the mantle;",
-       700.54,
-       702.93
+       699.36,
+       701.71
       ],
       [
        "and how gracefully the scarf hangs!",
-       703.2,
-       704.92
+       701.89,
+       703.62
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "in short, no one would allow that he could not see these much-admired clothes; because, in doing so, he would have declared himself either a simpleton or unfit for his office. Certainly, none of the Emperor's various suits, had ever made so great an impression, as these invisible ones.",
-     "start": 705.14,
-     "end": 724.72,
+     "start": 703.84,
+     "end": 723.41,
      "phrases": [
       [
        "in short, no one would allow that he could not see these much-admired clothes;",
-       705.14,
-       710.13
+       703.84,
+       708.82
       ],
       [
        "because, in doing so, he would have declared himself either a simpleton or unfit for his office.",
-       710.42,
-       716.9
+       709.12,
+       715.6
       ],
       [
        "Certainly, none of the Emperor's various suits, had ever made so great an impression, as these invisible ones.",
-       717.35,
-       724.72
+       716.04,
+       723.41
       ]
      ]
     }
    ],
-   "end": 724.72
+   "end": 723.41
   },
   {
-   "start": 726.77,
+   "start": 725.46,
    "segments": [
     {
      "speaker": "child",
      "text": "But the Emperor has nothing at all on!",
-     "start": 726.77,
-     "end": 728.67,
+     "start": 725.46,
+     "end": 727.37,
      "phrases": [
       [
        "But the Emperor has nothing at all on!",
-       726.77,
-       728.67
+       725.46,
+       727.37
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said a little child.",
-     "start": 728.89,
-     "end": 730.35,
+     "start": 727.59,
+     "end": 729.05,
      "phrases": [
       [
        "said a little child.",
-       728.89,
-       730.35
+       727.59,
+       729.05
       ]
      ]
     }
    ],
-   "end": 730.35
+   "end": 729.05
   },
   {
-   "start": 731.2,
+   "start": 729.9,
    "segments": [
     {
      "speaker": "father",
      "text": "Listen to the voice of innocence!",
-     "start": 731.2,
-     "end": 733.26,
+     "start": 729.9,
+     "end": 731.37,
      "phrases": [
       [
        "Listen to the voice of innocence!",
-       731.2,
-       733.26
+       729.9,
+       731.37
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "exclaimed his father; and what the child had said was whispered from one to another.",
-     "start": 733.48,
-     "end": 738.79,
+     "start": 731.59,
+     "end": 736.9,
      "phrases": [
       [
        "exclaimed his father; and what the child had said was whispered from one to another.",
-       733.48,
-       738.79
+       731.59,
+       736.9
       ]
      ]
     }
    ],
-   "end": 738.79
+   "end": 736.9
   },
   {
-   "start": 739.64,
+   "start": 737.75,
    "segments": [
     {
      "speaker": "crowd",
      "text": "But he has nothing at all on!",
-     "start": 739.64,
-     "end": 741.11,
+     "start": 737.75,
+     "end": 739.18,
      "phrases": [
       [
        "But he has nothing at all on!",
-       739.64,
-       741.11
+       737.75,
+       739.18
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "at last cried out all the people. The Emperor was vexed, for he knew that the people were right; but he thought the procession must go on now! And the lords of the bedchamber took greater pains than ever, to appear holding up a train, although, in reality, there was no train to hold.",
-     "start": 741.33,
-     "end": 760.49,
+     "start": 739.4,
+     "end": 758.57,
      "phrases": [
       [
        "at last cried out all the people.",
-       741.33,
-       743.47
+       739.4,
+       741.55
       ],
       [
        "The Emperor was vexed, for he knew that the people were right;",
-       743.92,
-       747.6
+       741.99,
+       745.68
       ],
       [
        "but he thought the procession must go on now!",
-       747.9,
-       750.84
+       745.97,
+       748.91
       ],
       [
        "And the lords of the bedchamber took greater pains than ever, to appear holding up a train, although, in reality, there was no train to hold.",
-       751.28,
-       760.49
+       749.36,
+       758.57
       ]
      ]
     }
    ],
-   "end": 760.49
+   "end": 758.57
   }
  ],
  "cast": {
