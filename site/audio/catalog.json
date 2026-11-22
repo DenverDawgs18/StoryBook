@@ -1,6 +1,43 @@
 {
  "episodes": [
   {
+   "slug": "rumpelstiltskin",
+   "title": "Rumpelstiltskin",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "A miller boasts that his daughter can spin straw into gold, and the king locks her in with the straw. A little man appears. He can do it, for a price, and the price keeps rising.",
+   "mood": "A spinning wheel, a fire in the hills",
+   "caption": "“Some witch told you that!”",
+   "art": "land_hills",
+   "featured": true,
+   "order": 4,
+   "shelf": "fairy",
+   "duration": 399.66,
+   "audio": "audio/rumpelstiltskin.mp3",
+   "timings": "audio/rumpelstiltskin.json",
+   "voices": 7,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "king": {
+     "label": "the king"
+    },
+    "daughter": {
+     "label": "the miller's daughter"
+    },
+    "rumpel": {
+     "label": "the little man"
+    },
+    "messenger": {
+     "label": "the messenger"
+    },
+    "court": {
+     "label": "the court"
+    }
+   }
+  },
+  {
    "slug": "the_three_little_pigs",
    "title": "The Three Little Pigs",
    "author": "Joseph Jacobs",
@@ -9,7 +46,7 @@
    "mood": "Huffing, puffing, and a pot on the fire",
    "caption": "“he built his house with them”",
    "art": "land_pigs",
-   "featured": true,
+   "featured": false,
    "order": 0,
    "shelf": "fairy",
    "duration": 408.57,
@@ -133,43 +170,6 @@
     },
     "witch": {
      "label": "the old woman"
-    }
-   }
-  },
-  {
-   "slug": "rumpelstiltskin",
-   "title": "Rumpelstiltskin",
-   "author": "The Brothers Grimm",
-   "year": 1812,
-   "blurb": "A miller boasts that his daughter can spin straw into gold, and the king locks her in with the straw. A little man appears. He can do it, for a price, and the price keeps rising.",
-   "mood": "A spinning wheel, a fire in the hills",
-   "caption": "",
-   "art": "land_hills",
-   "featured": false,
-   "order": 4,
-   "shelf": "fairy",
-   "duration": 399.66,
-   "audio": "audio/rumpelstiltskin.mp3",
-   "timings": "audio/rumpelstiltskin.json",
-   "voices": 7,
-   "castLabels": {
-    "host": {
-     "label": "the host"
-    },
-    "king": {
-     "label": "the king"
-    },
-    "daughter": {
-     "label": "the miller's daughter"
-    },
-    "rumpel": {
-     "label": "the little man"
-    },
-    "messenger": {
-     "label": "the messenger"
-    },
-    "court": {
-     "label": "the court"
     }
    }
   },

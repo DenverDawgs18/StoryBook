@@ -478,3 +478,21 @@ input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); b
 .offerbar a:hover b { color: var(--viridian); }
 @media (max-width: 600px) { .offerbar { flex-direction: column; align-items: flex-start; gap: .45rem; font-size: .95rem; } }
 #pform .actions, .offer .actions { gap: 1.4rem 2rem; }
+
+/* ------------------------------------------------------------ the moment at the top of the home page */
+.moment {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(1.4rem, 4vw, 3rem);
+  align-items: start; max-width: 62rem; margin: 1.2rem auto 2rem; text-align: left;
+}
+.moment .plate { margin-top: .6rem; }
+.moment .chapter-no { margin: 0 0 .3rem; }
+.moment h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); line-height: 1.1; margin: 0 0 .7rem; }
+.moment-set { color: var(--ink-soft); margin: 0 0 1.2rem; max-width: var(--measure); }
+.moment .readalong { max-height: 15rem; padding-top: 1rem; }
+.moment.playing .plate img { animation: breathe 7s ease-in-out infinite; }
+.titlepage .lede { margin-top: 2rem; }
+@media (max-width: 760px) {
+  .moment { grid-template-columns: 1fr; }
+  .moment .plate { display: none; }
+  .moment { margin-top: .6rem; }
+}
