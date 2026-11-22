@@ -9,6 +9,8 @@ blurb: >
 mood: A spinning wheel, a fire in the hills
 art: land_hills
 order: 4
+featured: true
+caption: "“Some witch told you that!”"
 shelf: fairy
 labels: {host: the host, king: the king, daughter: the miller's daughter, rumpel: the little man, messenger: the messenger, court: the court}
 cast:

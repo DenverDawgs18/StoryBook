@@ -37,51 +37,73 @@
     <a href="#craft">How it's made</a>
   </nav>
 </header>
-<aside class="offerbar" aria-label="Made for you">
-  <a href="personal.html" data-track="cta_click" data-track-cta="bar_personal"><b>A fairy tale starring your child</b> <span class="ob-p">· <span data-price="personal">$6</span></span> <span class="ob-go">Free preview →</span></a>
-  <a href="studio.html" data-track="cta_click" data-track-cta="bar_studio"><b>Your own pages as an audiobook</b> <span class="ob-p">· from <span data-price="studio-from">$9</span></span> <span class="ob-go">Upload →</span></a>
-</aside>
-
-<!-- ───────────────────────────── title page -->
+<!-- ───────────────────────────── title page: a moment from a tale, free, first -->
 <section class="titlepage">
-  <figure class="frontispiece">
-    <img src="assets/land/hero.webp" alt="A watercolour of a green river valley: a road winds past a small cottage toward blue hills and dark fir woods.">
-    <figcaption>Frontispiece. The road through the greenwood.</figcaption>
-  </figure>
   <h1>StoryBook</h1>
   <p class="alt-title">or, Old Tales Read Aloud</p>
   <div class="ornament" aria-hidden="true">❦</div>
-  <p class="lede">Fairy tales and old stories performed by a full cast, each with a soundscape made for it alone: birdsong in the wood, rain on the castle roof, a fire in the hills. Pull the covers up and listen.</p>
-  <div class="actions">
-    <a class="btn" href="personal.html" data-track="cta_click" data-track-cta="hero_personal">A story starring your child · <span data-price="personal">$6</span></a>
-    <a class="btn ghost" href="#featured" data-track="cta_click" data-track-cta="hear_tonight">Hear tonight's tale free</a>
+  <div class="moment" id="moment">
+    <figure class="plate">
+      <div class="sheet"><img src="assets/land/land_hills.webp" alt="A watercolour of green hills under a wide sky."></div>
+      <figcaption><b>Press play</b>thirty-three seconds from Rumpelstiltskin</figcaption>
+    </figure>
+    <div class="moment-text">
+      <p class="chapter-no">the best moment in the tale</p>
+      <h2>“Now, lady, what is my name?”</h2>
+      <p class="moment-set">The little man has come to take the queen's baby, sure she will never guess his name. He doesn't know a messenger heard him singing it in the woods.</p>
+      <div id="m-player"><p class="note">The recording is being prepared.</p></div>
+    </div>
   </div>
+  <div class="actions">
+    <a class="btn" href="#featured" data-track="cta_click" data-track-cta="moment_full_story">Hear the whole story, free</a>
+  </div>
+  <p class="lede">Every tale here is performed by a full cast, each with a soundscape made for it alone: birdsong in the wood, rain on the castle roof, a fire in the hills. All of them are free. Pull the covers up and listen.</p>
   <p class="imprint">with tales from grimm · jacobs · andersen · poe · gibbon</p>
 </section>
 
-<!-- ───────────────────────────── what you can buy -->
-<section class="section" id="buy" style="padding-top:0">
+<!-- ───────────────────────────── I. the whole tale, free: a two-page spread -->
+<section class="spread featured" id="featured">
+  <div class="page verso">
+    <figure class="plate">
+      <div class="sheet" id="f-sheet"><img id="f-art" src="assets/land/land_hills.webp" alt=""></div>
+      <figcaption><b>Plate I</b><span id="f-caption">“Some witch told you that!”</span></figcaption>
+    </figure>
+  </div>
+  <div class="page recto">
+    <p class="running">Chapter the First · The Whole Tale, Free</p>
+    <h2 id="f-title">Rumpelstiltskin</h2>
+    <p class="byline" id="f-byline">The Brothers Grimm · 1812</p>
+    <p class="blurb dropcap" id="f-blurb">A miller boasts that his daughter can spin straw into gold, and the king locks her in with the straw. A little man appears. He can do it, for a price, and the price keeps rising.</p>
+    <ul class="facts" id="f-facts"></ul>
+    <div id="f-player"><p class="note">The recording is being prepared.</p></div>
+    <p class="folio">— 1 —</p>
+  </div>
+</section>
+
+<!-- ───────────────────────────── made for you (after the free tales have had their say) -->
+<section class="section" id="buy">
   <div class="chapter-head">
-    <p class="chapter-no">made for you</p>
-    <h2>Two ways to have your own</h2>
+    <p class="chapter-no">when you're ready</p>
+    <h2>A tale of your own</h2>
     <div class="ornament" aria-hidden="true">❦</div>
+    <p>Everything on this page is free to hear. If you'd like a story made just for you, there are two ways, and you can hear a free sample of each first.</p>
   </div>
   <div class="offers">
     <div class="panel offer">
       <figure class="plate"><div class="sheet"><img src="assets/land/land_pigs.webp" alt="A watercolour of three little houses on a green hillside."></div></figure>
       <p class="chapter-no">a story for your child</p>
       <h3>Your child, the hero</h3>
-      <p class="price"><b data-price="personal">$6</b> a story</p>
-      <p>A full-cast fairy tale with your child's name in it, their own voice in the cast, a dedication from you and a goodnight at the end. Hear a free preview first.</p>
-      <div class="actions"><a class="btn" href="personal.html#make" data-track="cta_click" data-track-cta="offer_personal">Start with their name</a></div>
+      <p>The clever third little pig, or the shoemaker's child who sees the elves: we write your child into the tale, give them a voice in the cast, add a dedication from you and end with a goodnight.</p>
+      <p class="price"><b data-price="personal">$6</b> a story, after a free preview</p>
+      <div class="actions"><a class="btn ghost" href="personal.html#make" data-track="cta_click" data-track-cta="offer_personal">Hear a preview with their name</a></div>
     </div>
     <div class="panel offer">
       <figure class="plate"><div class="sheet"><img src="assets/land/land_town.webp" alt="A watercolour of a walled town in the sun."></div></figure>
       <p class="chapter-no">the studio</p>
       <h3>Your pages, performed</h3>
-      <p class="price">from <b data-price="studio-from">$9</b>, priced by length</p>
-      <p>Upload your manuscript or a bedtime story you wrote. Every character gets a voice, with weather and music made for it. Hear the opening free, then buy the full audiobook.</p>
-      <div class="actions"><a class="btn" href="studio.html#studio" data-track="cta_click" data-track-cta="offer_studio">Upload your pages</a></div>
+      <p>Upload your manuscript or a bedtime story you wrote. Every character gets a voice, with weather and music made for it.</p>
+      <p class="price">from <b data-price="studio-from">$9</b>, priced by length, after a free opening</p>
+      <div class="actions"><a class="btn ghost" href="studio.html#studio" data-track="cta_click" data-track-cta="offer_studio">Hear your opening free</a></div>
     </div>
   </div>
 </section>
@@ -90,43 +112,14 @@
 <nav class="contents" aria-labelledby="contents-h">
   <h2 id="contents-h">Contents</h2>
   <ol class="toc">
-    <li><a href="#featured"><span class="n">I.</span><span class="t">Tonight's Tale<small id="toc-feat"></small></span><span class="dots"></span><span class="p">1</span></a></li>
+    <li><a href="#featured"><span class="n">I.</span><span class="t">The Whole Tale<small id="toc-feat">Rumpelstiltskin</small></span><span class="dots"></span><span class="p">1</span></a></li>
     <li><a href="#tales"><span class="n">II.</span><span class="t">The Fairy Tales<small>Grimm, Jacobs &amp; Andersen</small></span><span class="dots"></span><span class="p">5</span></a></li>
     <li><a href="#afterdark"><span class="n">III.</span><span class="t">Tales for After Dark<small>Poe &amp; Gibbon</small></span><span class="dots"></span><span class="p">31</span></a></li>
     <li><a href="personal.html"><span class="n">IV.</span><span class="t">A Story for Your Child<small>starring them</small></span><span class="dots"></span><span class="p">45</span></a></li>
-    <li><a href="studio.html"><span class="n">V.</span><span class="t">The Studio<small>your own pages, from $9</small></span><span class="dots"></span><span class="p">47</span></a></li>
+    <li><a href="studio.html"><span class="n">V.</span><span class="t">The Studio<small>your own pages</small></span><span class="dots"></span><span class="p">47</span></a></li>
     <li><a href="#craft"><span class="n">VI.</span><span class="t">Afterword<small>how it's made</small></span><span class="dots"></span><span class="p">53</span></a></li>
   </ol>
 </nav>
-
-<!-- ───────────────────────────── I. featured: a two-page spread -->
-<section class="spread featured" id="featured">
-  <div class="page verso">
-    <figure class="plate">
-      <div class="sheet" id="f-sheet"><img id="f-art" src="assets/land/land_pigs.webp" alt=""></div>
-      <figcaption><b>Plate I</b><span id="f-caption">“he built his house with them”</span></figcaption>
-    </figure>
-  </div>
-  <div class="page recto">
-    <p class="running">Chapter the First · Tonight's Tale</p>
-    <h2 id="f-title">The Three Little Pigs</h2>
-    <p class="byline" id="f-byline">Joseph Jacobs · 1890</p>
-    <p class="blurb dropcap" id="f-blurb">Three little pigs go out to seek their fortune and build three houses: one of straw, one of furze, one of brick. Then a wolf comes knocking, and he is very good at blowing.</p>
-    <ul class="facts" id="f-facts"></ul>
-    <div id="f-player"><p class="note">The recording is being prepared.</p></div>
-    <p class="folio">— 1 —</p>
-  </div>
-</section>
-
-<!-- ───────────────────────────── a story for your child -->
-<section class="section" id="yours" style="padding-bottom:0">
-  <div class="callout">
-    <p class="chapter-no">new · a story for your child</p>
-    <h2>What if the hero had their name?</h2>
-    <p class="blurb" style="margin:0 auto 1.4rem">The clever third little pig, or the shoemaker's child who sees the elves: we write your child into the tale, give them a voice in the cast, and end it with a goodnight. Hear a free preview with their name in it.</p>
-    <a class="btn" href="personal.html" data-track="cta_click" data-track-cta="home_personal">Make one for your child · <span data-price="personal">$6</span></a>
-  </div>
-</section>
 
 <!-- ───────────────────────────── II. the fairy tales -->
 <section class="section" id="tales">
@@ -179,7 +172,7 @@
       <p class="dropcap">Harp and strings, a music box playing Brahms, cello drones and a spectral waltz swell between scenes and duck under the voice whenever someone speaks. The finished mix is mastered to broadcast loudness.</p>
     </div>
   </div>
-  <p class="centre" style="margin-top:2.6rem"><a class="btn" href="studio.html" data-track="cta_click" data-track-cta="afterword_studio">Turn your own pages into an audiobook · from <span data-price="studio-from">$9</span></a></p>
+  <p class="centre" style="margin-top:2.6rem">The same craft can perform <a href="studio.html" data-track="cta_click" data-track-cta="afterword_studio">your own pages</a>.</p>
   <p class="folio">— 53 —</p>
 </section>
 
@@ -218,7 +211,17 @@ const card = (e) => {
 
 try {
   const cat = await loadCatalog();
-  const feat = cat.episodes.find((e) => e.featured) || cat.episodes[0];
+  const feat = cat.episodes.find((e) => e.slug === "rumpelstiltskin") || cat.episodes.find((e) => e.featured) || cat.episodes[0];
+  // the moment at the top: a short cut of the featured tale, with its own read-along
+  const moment = document.getElementById("moment");
+  mountPlayer(document.getElementById("m-player"), {
+    slug: "rumpelstiltskin_moment", title: "Rumpelstiltskin: the name", duration: 33.04,
+    audio: "audio/clips/rumpelstiltskin_name.mp3", timings: "audio/clips/rumpelstiltskin_name.json",
+    castLabels: cat.episodes.find((e) => e.slug === "rumpelstiltskin")?.castLabels || {},
+  }, {
+    track: { kind: "clip" },
+    onplay: () => moment.classList.add("playing"), onpause: () => moment.classList.remove("playing"),
+  });
   if (feat) {
     document.getElementById("f-title").textContent = feat.title;
     document.getElementById("f-byline").textContent = `${feat.author}${feat.year ? " · " + feat.year : ""}`;

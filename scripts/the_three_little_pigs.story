@@ -7,7 +7,7 @@ blurb: >
   Three little pigs go out to seek their fortune and build three houses: one of straw,
   one of furze, one of brick. Then a wolf comes knocking, and he is very good at blowing.
 mood: Huffing, puffing, and a pot on the fire
-featured: true
+featured: false
 art: land_pigs
 caption: “he built his house with them”
 order: 0
