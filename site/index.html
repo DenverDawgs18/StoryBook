@@ -207,7 +207,7 @@ const card = (e) => {
   plateNo += 1;
   const eye = e.art && !e.art.startsWith("land_");
   return `
-    <a class="card" href="listen.html?ep=${encodeURIComponent(e.slug)}" data-track="library_open" data-track-story="${esc(e.slug)}">
+    <a class="card" href="tales/${encodeURIComponent(e.slug)}.html" data-track="library_open" data-track-story="${esc(e.slug)}">
       <figure class="plate"><div class="sheet${eye ? " eye" : ""}"><img src="${artUrl(e.art)}" alt="" decoding="async"></div></figure>
       <h3>${esc(e.title)}</h3>
       <div class="meta">Plate ${ROMAN[plateNo - 1] || plateNo} · ${esc(e.author)}${e.year ? ", " + e.year : ""} · ${fmt(e.duration)}</div>
