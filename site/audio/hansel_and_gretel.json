@@ -18,7 +18,7 @@
    "witch": "the old woman"
   }
  },
- "duration": 1091.27,
+ "duration": 1091.1,
  "chapters": [
   {
    "title": "Hansel and Gretel. By the Brothers Grimm.",
@@ -753,24 +753,24 @@
      "speaker": "hansel",
      "text": "Just wait a little, until the moon has risen, and then we will soon find the way.",
      "start": 316.7,
-     "end": 320.76,
+     "end": 320.77,
      "phrases": [
       [
        "Just wait a little, until the moon has risen, and then we will soon find the way.",
        316.7,
-       320.76
+       320.77
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "And when the full moon had risen, Hansel took his little sister by the hand, and followed the pebbles which shone like newly-coined silver pieces, and showed them the way.",
-     "start": 320.98,
+     "start": 320.99,
      "end": 331.68,
      "phrases": [
       [
        "And when the full moon had risen, Hansel took his little sister by the hand, and followed the pebbles which shone like newly-coined silver pieces, and showed them the way.",
-       320.98,
+       320.99,
        331.68
       ]
      ]
@@ -808,11 +808,11 @@
       [
        "You naughty children, why have you slept so long in the forest?",
        346.52,
-       349.46
+       349.47
       ],
       [
        "we thought you were never coming back at all!",
-       349.68,
+       349.69,
        351.75
       ]
      ]
@@ -911,7 +911,7 @@
       ],
       [
        "He who says A must say B, likewise, and as he had yielded the first time, he had to do so a second time also.",
-       393.39,
+       393.4,
        401.03
       ]
      ]
@@ -991,24 +991,24 @@
      "speaker": "father",
      "text": "Hansel, why do you stop and look round?",
      "start": 445.89,
-     "end": 448.79,
+     "end": 448.8,
      "phrases": [
       [
        "Hansel, why do you stop and look round?",
        445.89,
-       448.79
+       448.8
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the father",
-     "start": 449.01,
+     "start": 449.02,
      "end": 450.2,
      "phrases": [
       [
        "said the father",
-       449.01,
+       449.02,
        450.2
       ]
      ]
@@ -1043,1380 +1043,1380 @@
      "speaker": "narrator",
      "text": "answered Hansel.",
      "start": 456.67,
-     "end": 458.14,
+     "end": 458.15,
      "phrases": [
       [
        "answered Hansel.",
        456.67,
-       458.14
+       458.15
       ]
      ]
     },
     {
      "speaker": "mother",
      "text": "Fool!",
-     "start": 458.36,
-     "end": 459.16,
+     "start": 458.37,
+     "end": 459.11,
      "phrases": [
       [
        "Fool!",
-       458.36,
-       459.16
+       458.37,
+       459.11
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the woman",
-     "start": 459.38,
-     "end": 460.54,
+     "start": 459.33,
+     "end": 460.49,
      "phrases": [
       [
        "said the woman",
-       459.38,
-       460.54
+       459.33,
+       460.49
       ]
      ]
     },
     {
      "speaker": "mother",
      "text": "that is not your little pigeon, that is the morning sun that is shining on the chimney.",
-     "start": 460.76,
-     "end": 465.18,
+     "start": 460.71,
+     "end": 465.12,
      "phrases": [
       [
        "that is not your little pigeon, that is the morning sun that is shining on the chimney.",
-       460.76,
-       465.18
+       460.71,
+       465.12
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Hansel, however little by little, threw all the crumbs on the path.",
-     "start": 465.4,
-     "end": 469.9,
+     "start": 465.34,
+     "end": 469.84,
      "phrases": [
       [
        "Hansel, however little by little, threw all the crumbs on the path.",
-       465.4,
-       469.9
+       465.34,
+       469.84
       ]
      ]
     }
    ],
-   "end": 469.9
+   "end": 469.84
   },
   {
-   "start": 471.75,
+   "start": 471.69,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The woman led the children still deeper into the forest, where they had never in their lives been before. Then a great fire was again made, and the mother said:",
-     "start": 471.75,
-     "end": 481.97,
+     "start": 471.69,
+     "end": 481.91,
      "phrases": [
       [
        "The woman led the children still deeper into the forest, where they had never in their lives been before.",
-       471.75,
-       478.11
+       471.69,
+       478.05
       ],
       [
        "Then a great fire was again made, and the mother said:",
-       478.56,
-       481.97
+       478.5,
+       481.91
       ]
      ]
     },
     {
      "speaker": "mother",
      "text": "Just sit there, you children, and when you are tired you may sleep a little; we are going into the forest to cut wood, and in the evening when we are done, we will come and fetch you away.",
-     "start": 482.19,
-     "end": 491.05,
+     "start": 482.13,
+     "end": 491.0,
      "phrases": [
       [
        "Just sit there, you children, and when you are tired you may sleep a little;",
-       482.19,
-       485.7
+       482.13,
+       485.64
       ],
       [
        "we are going into the forest to cut wood, and in the evening when we are done, we will come and fetch you away.",
-       485.98,
-       491.05
+       485.92,
+       491.0
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "When it was noon, Gretel shared her piece of bread with Hansel, who had scattered his by the way. Then they fell asleep and evening passed, but no one came to the poor children. They did not awake until it was dark night, and Hansel comforted his little sister and said:",
-     "start": 491.27,
-     "end": 509.19,
+     "start": 491.22,
+     "end": 509.14,
      "phrases": [
       [
        "When it was noon, Gretel shared her piece of bread with Hansel, who had scattered his by the way.",
-       491.27,
-       497.02
+       491.22,
+       496.96
       ],
       [
        "Then they fell asleep and evening passed, but no one came to the poor children.",
-       497.47,
-       502.72
+       497.41,
+       502.66
       ],
       [
        "They did not awake until it was dark night, and Hansel comforted his little sister and said:",
-       503.17,
-       509.19
+       503.11,
+       509.14
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "Just wait, Gretel, until the moon rises, and then we shall see the crumbs of bread which I have strewn about, they will show us our way home again.",
-     "start": 509.41,
-     "end": 516.97,
+     "start": 509.36,
+     "end": 516.91,
      "phrases": [
       [
        "Just wait, Gretel, until the moon rises, and then we shall see the crumbs of bread which I have strewn about, they will show us our way home again.",
-       509.41,
-       516.97
+       509.36,
+       516.91
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "When the moon came they set out, but they found no crumbs, for the many thousands of birds which fly about in the woods and fields had picked them all up. Hansel said to Gretel:",
-     "start": 517.19,
-     "end": 529.69,
+     "start": 517.13,
+     "end": 529.63,
      "phrases": [
       [
        "When the moon came they set out, but they found no crumbs, for the many thousands of birds which fly about in the woods and fields had picked them all up.",
-       517.19,
-       527.12
+       517.13,
+       527.07
       ],
       [
        "Hansel said to Gretel:",
-       527.58,
-       529.69
+       527.52,
+       529.63
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "We shall soon find the way,",
-     "start": 529.91,
-     "end": 531.19,
+     "start": 529.85,
+     "end": 531.13,
      "phrases": [
       [
        "We shall soon find the way,",
-       529.91,
-       531.19
+       529.85,
+       531.13
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "but they did not find it. They walked the whole night and all the next day too from morning till evening, but they did not get out of the forest, and were very hungry, for they had nothing to eat but two or three berries, which grew on the ground. And as they were so weary that their legs would carry them no longer, they lay down beneath a tree and fell asleep.",
-     "start": 531.41,
-     "end": 554.05,
+     "start": 531.35,
+     "end": 554.0,
      "phrases": [
       [
        "but they did not find it.",
-       531.41,
-       533.11
+       531.35,
+       533.05
       ],
       [
        "They walked the whole night and all the next day too from morning till evening, but they did not get out of the forest, and were very hungry, for they had nothing to eat but two or three berries, which grew on the ground.",
-       533.56,
-       546.25
+       533.5,
+       546.19
       ],
       [
        "And as they were so weary that their legs would carry them no longer, they lay down beneath a tree and fell asleep.",
-       546.7,
-       554.05
+       546.64,
+       554.0
       ]
      ]
     }
    ],
-   "end": 554.05
+   "end": 554.0
   },
   {
-   "start": 554.9,
+   "start": 554.85,
    "segments": [
     {
      "speaker": "narrator",
      "text": "It was now three mornings since they had left their father’s house. They began to walk again, but they always came deeper into the forest, and if help did not come soon, they must die of hunger and weariness. When it was mid-day, they saw a beautiful snow-white bird sitting on a bough, which sang so delightfully that they stood still and listened to it. And when its song was over, it spread its wings and flew away before them, and they followed it until they reached a little house, on the roof of which it alighted; and when they approached the little house they saw that it was built of bread and covered with cakes, but that the windows were of clear sugar.",
-     "start": 554.9,
-     "end": 597.86,
+     "start": 554.85,
+     "end": 597.81,
      "phrases": [
       [
        "It was now three mornings since they had left their father's house.",
-       554.9,
-       558.95
+       554.85,
+       558.89
       ],
       [
        "They began to walk again, but they always came deeper into the forest, and if help did not come soon, they must die of hunger and weariness.",
-       559.4,
-       568.66
+       559.35,
+       568.6
       ],
       [
        "When it was mid-day, they saw a beautiful snow-white bird sitting on a bough, which sang so delightfully that they stood still and listened to it.",
-       569.11,
-       578.34
+       569.05,
+       578.28
       ],
       [
        "And when its song was over, it spread its wings and flew away before them, and they followed it until they reached a little house, on the roof of which it alighted;",
-       578.79,
-       588.98
+       578.74,
+       588.93
       ],
       [
        "and when they approached the little house they saw that it was built of bread and covered with cakes, but that the windows were of clear sugar.",
-       589.28,
-       597.86
+       589.23,
+       597.81
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "We will set to work on that,",
-     "start": 598.08,
-     "end": 599.4,
+     "start": 598.03,
+     "end": 599.34,
      "phrases": [
       [
        "We will set to work on that,",
-       598.08,
-       599.4
+       598.03,
+       599.34
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said Hansel",
-     "start": 599.62,
-     "end": 600.83,
+     "start": 599.56,
+     "end": 600.78,
      "phrases": [
       [
        "said Hansel",
-       599.62,
-       600.83
+       599.56,
+       600.78
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "and have a good meal. I will eat a bit of the roof, and you Gretel, can eat some of the window, it will taste sweet.",
-     "start": 601.05,
-     "end": 606.82,
+     "start": 601.0,
+     "end": 606.77,
      "phrases": [
       [
        "and have a good meal.",
-       601.05,
-       602.06
+       601.0,
+       602.0
       ],
       [
        "I will eat a bit of the roof, and you Gretel, can eat some of the window, it will taste sweet.",
-       602.46,
-       606.82
+       602.4,
+       606.77
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Hansel reached up above, and broke off a little of the roof to try how it tasted, and Gretel leant against the window and nibbled at the panes. Then a soft voice cried from the parlour:",
-     "start": 607.04,
-     "end": 619.74,
+     "start": 606.99,
+     "end": 619.68,
      "phrases": [
       [
        "Hansel reached up above, and broke off a little of the roof to try how it tasted, and Gretel leant against the window and nibbled at the panes.",
-       607.04,
-       616.4
+       606.99,
+       616.34
       ],
       [
        "Then a soft voice cried from the parlour:",
-       616.85,
-       619.74
+       616.79,
+       619.68
       ]
      ]
     }
    ],
-   "end": 619.74
+   "end": 619.68
   },
   {
-   "start": 621.19,
+   "start": 621.13,
    "segments": [
     {
      "speaker": "witch",
      "text": "Nibble, nibble, gnaw, Who is nibbling at my little house?",
-     "start": 621.19,
-     "end": 625.68,
+     "start": 621.13,
+     "end": 625.63,
      "phrases": [
       [
        "Nibble, nibble, gnaw, Who is nibbling at my little house?",
-       621.19,
-       625.68
+       621.13,
+       625.63
       ]
      ]
     }
    ],
-   "end": 625.68
+   "end": 625.63
   },
   {
-   "start": 626.53,
+   "start": 626.48,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The children answered:",
-     "start": 626.53,
-     "end": 628.21,
+     "start": 626.48,
+     "end": 628.15,
      "phrases": [
       [
        "The children answered:",
-       626.53,
-       628.21
+       626.48,
+       628.15
       ]
      ]
     }
    ],
-   "end": 628.21
+   "end": 628.15
   },
   {
-   "start": 629.06,
+   "start": 629.0,
    "segments": [
     {
      "speaker": "gretel",
      "text": "The wind, the wind, The heaven-born wind,",
-     "start": 629.06,
-     "end": 631.29,
+     "start": 629.0,
+     "end": 631.23,
      "phrases": [
       [
        "The wind, the wind, The heaven-born wind,",
-       629.06,
-       631.29
+       629.0,
+       631.23
       ]
      ]
     }
    ],
-   "end": 631.29
+   "end": 631.23
   },
   {
-   "start": 632.14,
+   "start": 632.08,
    "segments": [
     {
      "speaker": "narrator",
      "text": "and went on eating without disturbing themselves. Hansel, who liked the taste of the roof, tore down a great piece of it, and Gretel pushed out the whole of one round window-pane, sat down, and enjoyed herself with it. Suddenly the door opened, and a woman as old as the hills, who supported herself on crutches, came creeping out. Hansel and Gretel were so terribly frightened that they let fall what they had in their hands. The old woman, however, nodded her head, and said:",
-     "start": 632.14,
-     "end": 665.22,
+     "start": 632.08,
+     "end": 665.16,
      "phrases": [
       [
        "and went on eating without disturbing themselves.",
-       632.14,
-       635.55
+       632.08,
+       635.49
       ],
       [
        "Hansel, who liked the taste of the roof, tore down a great piece of it, and Gretel pushed out the whole of one round window-pane, sat down, and enjoyed herself with it.",
-       636.0,
-       646.88
+       635.95,
+       646.83
       ],
       [
        "Suddenly the door opened, and a woman as old as the hills, who supported herself on crutches, came creeping out.",
-       647.33,
-       654.84
+       647.28,
+       654.79
       ],
       [
        "Hansel and Gretel were so terribly frightened that they let fall what they had in their hands.",
-       655.29,
-       661.43
+       655.24,
+       661.37
       ],
       [
        "The old woman, however, nodded her head, and said:",
-       661.88,
-       665.22
+       661.82,
+       665.16
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Oh, you dear children, who has brought you here? do come in, and stay with me. No harm shall happen to you.",
-     "start": 665.44,
-     "end": 674.47,
+     "start": 665.38,
+     "end": 674.41,
      "phrases": [
       [
        "Oh, you dear children, who has brought you here?",
-       665.44,
-       669.01
+       665.38,
+       668.96
       ],
       [
        "do come in, and stay with me.",
-       669.48,
-       671.94
+       669.42,
+       671.88
       ],
       [
        "No harm shall happen to you.",
-       672.41,
-       674.47
+       672.35,
+       674.41
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "She took them both by the hand, and led them into her little house. Then good food was set before them, milk and pancakes, with sugar, apples, and nuts. Afterwards two pretty little beds were covered with clean white linen, and Hansel and Gretel lay down in them, and thought they were in heaven.",
-     "start": 674.69,
-     "end": 694.76,
+     "start": 674.63,
+     "end": 694.7,
      "phrases": [
       [
        "She took them both by the hand, and led them into her little house.",
-       674.69,
-       679.12
+       674.63,
+       679.06
       ],
       [
        "Then good food was set before them, milk and pancakes, with sugar, apples, and nuts.",
-       679.57,
-       685.43
+       679.51,
+       685.38
       ],
       [
        "Afterwards two pretty little beds were covered with clean white linen, and Hansel and Gretel lay down in them, and thought they were in heaven.",
-       685.89,
-       694.76
+       685.83,
+       694.7
       ]
      ]
     }
    ],
-   "end": 694.76
+   "end": 694.7
   },
   {
-   "start": 695.61,
+   "start": 695.55,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The old woman had only pretended to be so kind; she was in reality a wicked witch, who lay in wait for children, and had only built the little house of bread in order to entice them there. When a child fell into her power, she killed it, cooked and ate it, and that was a feast day with her. Witches have red eyes, and cannot see far, but they have a keen scent like the beasts, and are aware when human beings draw near. When Hansel and Gretel came into her neighbourhood, she laughed with malice, and said mockingly:",
-     "start": 695.61,
-     "end": 730.37,
+     "start": 695.55,
+     "end": 730.31,
      "phrases": [
       [
        "The old woman had only pretended to be so kind;",
-       695.61,
-       699.37
+       695.55,
+       699.32
       ],
       [
        "she was in reality a wicked witch, who lay in wait for children, and had only built the little house of bread in order to entice them there.",
-       699.68,
-       708.66
+       699.62,
+       708.61
       ],
       [
        "When a child fell into her power, she killed it, cooked and ate it, and that was a feast day with her.",
-       709.12,
-       715.33
+       709.06,
+       715.27
       ],
       [
        "Witches have red eyes, and cannot see far, but they have a keen scent like the beasts, and are aware when human beings draw near.",
-       715.78,
-       724.23
+       715.73,
+       724.18
       ],
       [
        "When Hansel and Gretel came into her neighbourhood, she laughed with malice, and said mockingly:",
-       724.69,
-       730.37
+       724.63,
+       730.31
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "I have them, they shall not escape me again!",
-     "start": 730.59,
-     "end": 734.28,
+     "start": 730.53,
+     "end": 734.23,
      "phrases": [
       [
        "I have them, they shall not escape me again!",
-       730.59,
-       734.28
+       730.53,
+       734.23
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Early in the morning before the children were awake, she was already up, and when she saw both of them sleeping and looking so pretty, with their plump and rosy cheeks she muttered to herself:",
-     "start": 734.5,
-     "end": 746.42,
+     "start": 734.45,
+     "end": 746.36,
      "phrases": [
       [
        "Early in the morning before the children were awake, she was already up, and when she saw both of them sleeping and looking so pretty, with their plump and rosy cheeks she muttered to herself:",
-       734.5,
-       746.42
+       734.45,
+       746.36
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "That will be a dainty mouthful!",
-     "start": 746.64,
-     "end": 748.81,
+     "start": 746.58,
+     "end": 748.75,
      "phrases": [
       [
        "That will be a dainty mouthful!",
-       746.64,
-       748.81
+       746.58,
+       748.75
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Then she seized Hansel with her shrivelled hand, carried him into a little stable, and locked him in behind a grated door. Scream as he might, it would not help him. Then she went to Gretel, shook her till she awoke, and cried:",
-     "start": 749.03,
-     "end": 764.66,
+     "start": 748.97,
+     "end": 764.6,
      "phrases": [
       [
        "Then she seized Hansel with her shrivelled hand, carried him into a little stable, and locked him in behind a grated door.",
-       749.03,
-       757.09
+       748.97,
+       757.03
       ],
       [
        "Scream as he might, it would not help him.",
-       757.54,
-       760.43
+       757.49,
+       760.37
       ],
       [
        "Then she went to Gretel, shook her till she awoke, and cried:",
-       760.88,
-       764.66
+       760.82,
+       764.6
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Get up, lazy thing, fetch some water, and cook something good for your brother, he is in the stable outside, and is to be made fat. When he is fat, I will eat him.",
-     "start": 764.88,
-     "end": 780.23,
+     "start": 764.82,
+     "end": 780.17,
      "phrases": [
       [
        "Get up, lazy thing, fetch some water, and cook something good for your brother, he is in the stable outside, and is to be made fat.",
-       764.88,
-       777.05
+       764.82,
+       776.99
       ],
       [
        "When he is fat, I will eat him.",
-       777.52,
-       780.23
+       777.46,
+       780.17
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Gretel began to weep bitterly, but it was all in vain, for she was forced to do what the wicked witch commanded.",
-     "start": 780.45,
-     "end": 787.31,
+     "start": 780.39,
+     "end": 787.25,
      "phrases": [
       [
        "Gretel began to weep bitterly, but it was all in vain, for she was forced to do what the wicked witch commanded.",
-       780.45,
-       787.31
+       780.39,
+       787.25
       ]
      ]
     }
    ],
-   "end": 787.31
+   "end": 787.25
   },
   {
-   "start": 788.16,
+   "start": 788.1,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And now the best food was cooked for poor Hansel, but Gretel got nothing but crab-shells. Every morning the woman crept to the little stable, and cried:",
-     "start": 788.16,
-     "end": 798.29,
+     "start": 788.1,
+     "end": 798.23,
      "phrases": [
       [
        "And now the best food was cooked for poor Hansel, but Gretel got nothing but crab-shells.",
-       788.16,
-       793.92
+       788.1,
+       793.86
       ],
       [
        "Every morning the woman crept to the little stable, and cried:",
-       794.37,
-       798.29
+       794.31,
+       798.23
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Hansel, stretch out your finger that I may feel if you will soon be fat.",
-     "start": 798.51,
-     "end": 804.73,
+     "start": 798.45,
+     "end": 804.68,
      "phrases": [
       [
        "Hansel, stretch out your finger that I may feel if you will soon be fat.",
-       798.51,
-       804.73
+       798.45,
+       804.68
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Hansel, however, stretched out a little bone to her, and the old woman, who had dim eyes, could not see it, and thought it was Hansel’s finger, and was astonished that there was no way of fattening him. When four weeks had gone by, and Hansel still remained thin, she was seized with impatience and would not wait any longer.",
-     "start": 804.95,
-     "end": 825.48,
+     "start": 804.9,
+     "end": 825.42,
      "phrases": [
       [
        "Hansel, however, stretched out a little bone to her, and the old woman, who had dim eyes, could not see it, and thought it was Hansel's finger, and was astonished that there was no way of fattening him.",
-       804.95,
-       817.31
+       804.9,
+       817.25
       ],
       [
        "When four weeks had gone by, and Hansel still remained thin, she was seized with impatience and would not wait any longer.",
-       817.76,
-       825.48
+       817.7,
+       825.42
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Now, then, Gretel,",
-     "start": 825.7,
-     "end": 827.33,
+     "start": 825.64,
+     "end": 827.27,
      "phrases": [
       [
        "Now, then, Gretel,",
-       825.7,
-       827.33
+       825.64,
+       827.27
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "she cried to the girl",
-     "start": 827.55,
-     "end": 829.17,
+     "start": 827.49,
+     "end": 829.11,
      "phrases": [
       [
        "she cried to the girl",
-       827.55,
-       829.17
+       827.49,
+       829.11
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "stir yourself, and bring some water. Let Hansel be fat or lean, tomorrow I will kill him, and cook him.",
-     "start": 829.39,
-     "end": 839.48,
+     "start": 829.33,
+     "end": 839.42,
      "phrases": [
       [
        "stir yourself, and bring some water.",
-       829.39,
-       832.39
+       829.33,
+       832.33
       ],
       [
        "Let Hansel be fat or lean, tomorrow I will kill him, and cook him.",
-       832.86,
-       839.48
+       832.8,
+       839.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Ah, how the poor little sister did lament when she had to fetch the water, and how her tears did flow down her cheeks!",
-     "start": 839.7,
-     "end": 847.42,
+     "start": 839.64,
+     "end": 847.37,
      "phrases": [
       [
        "Ah, how the poor little sister did lament when she had to fetch the water, and how her tears did flow down her cheeks!",
-       839.7,
-       847.42
+       839.64,
+       847.37
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "Dear God, do help us,",
-     "start": 847.64,
-     "end": 848.97,
+     "start": 847.59,
+     "end": 848.91,
      "phrases": [
       [
        "Dear God, do help us,",
-       847.64,
-       848.97
+       847.59,
+       848.91
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "she cried.",
-     "start": 849.19,
-     "end": 850.23,
+     "start": 849.13,
+     "end": 850.17,
      "phrases": [
       [
        "she cried.",
-       849.19,
-       850.23
+       849.13,
+       850.17
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "If the wild beasts in the forest had but devoured us, we should at any rate have died together.",
-     "start": 850.45,
-     "end": 855.56,
+     "start": 850.39,
+     "end": 855.5,
      "phrases": [
       [
        "If the wild beasts in the forest had but devoured us, we should at any rate have died together.",
-       850.45,
-       855.56
+       850.39,
+       855.5
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Just keep your noise to yourself,",
-     "start": 855.78,
-     "end": 858.04,
+     "start": 855.72,
+     "end": 857.98,
      "phrases": [
       [
        "Just keep your noise to yourself,",
-       855.78,
-       858.04
+       855.72,
+       857.98
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the old woman",
-     "start": 858.26,
-     "end": 859.79,
+     "start": 858.2,
+     "end": 859.74,
      "phrases": [
       [
        "said the old woman",
-       858.26,
-       859.79
+       858.2,
+       859.74
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "it won’t help you at all.",
-     "start": 860.01,
-     "end": 861.85,
+     "start": 859.96,
+     "end": 861.79,
      "phrases": [
       [
        "it won't help you at all.",
-       860.01,
-       861.85
+       859.96,
+       861.79
       ]
      ]
     }
    ],
-   "end": 861.85
+   "end": 861.79
   },
   {
-   "start": 862.7,
+   "start": 862.64,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Early in the morning, Gretel had to go out and hang up the cauldron with the water, and light the fire.",
-     "start": 862.7,
-     "end": 869.01,
+     "start": 862.64,
+     "end": 868.95,
      "phrases": [
       [
        "Early in the morning, Gretel had to go out and hang up the cauldron with the water, and light the fire.",
-       862.7,
-       869.01
+       862.64,
+       868.95
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "We will bake first,",
-     "start": 869.23,
-     "end": 870.66,
+     "start": 869.17,
+     "end": 870.6,
      "phrases": [
       [
        "We will bake first,",
-       869.23,
-       870.66
+       869.17,
+       870.6
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the old woman",
-     "start": 870.88,
-     "end": 872.41,
+     "start": 870.82,
+     "end": 872.35,
      "phrases": [
       [
        "said the old woman",
-       870.88,
-       872.41
+       870.82,
+       872.35
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "I have already heated the oven, and kneaded the dough.",
-     "start": 872.63,
-     "end": 876.76,
+     "start": 872.57,
+     "end": 876.7,
      "phrases": [
       [
        "I have already heated the oven, and kneaded the dough.",
-       872.63,
-       876.76
+       872.57,
+       876.7
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "She pushed poor Gretel out to the oven, from which flames of fire were already darting.",
-     "start": 876.98,
-     "end": 882.28,
+     "start": 876.92,
+     "end": 882.22,
      "phrases": [
       [
        "She pushed poor Gretel out to the oven, from which flames of fire were already darting.",
-       876.98,
-       882.28
+       876.92,
+       882.22
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Creep in,",
-     "start": 882.5,
-     "end": 883.43,
+     "start": 882.44,
+     "end": 883.38,
      "phrases": [
       [
        "Creep in,",
-       882.5,
-       883.43
+       882.44,
+       883.38
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the witch",
-     "start": 883.65,
-     "end": 884.73,
+     "start": 883.6,
+     "end": 884.67,
      "phrases": [
       [
        "said the witch",
-       883.65,
-       884.73
+       883.6,
+       884.67
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "and see if it is properly heated, so that we can put the bread in.",
-     "start": 884.95,
-     "end": 890.36,
+     "start": 884.89,
+     "end": 890.31,
      "phrases": [
       [
        "and see if it is properly heated, so that we can put the bread in.",
-       884.95,
-       890.36
+       884.89,
+       890.31
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "And once Gretel was inside, she intended to shut the oven and let her bake in it, and then she would eat her, too. But Gretel saw what she had in mind, and said:",
-     "start": 890.58,
-     "end": 901.18,
+     "start": 890.53,
+     "end": 901.12,
      "phrases": [
       [
        "And once Gretel was inside, she intended to shut the oven and let her bake in it, and then she would eat her, too.",
-       890.58,
-       897.75
+       890.53,
+       897.69
       ],
       [
        "But Gretel saw what she had in mind, and said:",
-       898.2,
-       901.18
+       898.14,
+       901.12
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "I do not know how I am to do it; how do I get in?",
-     "start": 901.4,
-     "end": 904.37,
+     "start": 901.34,
+     "end": 904.31,
      "phrases": [
       [
        "I do not know how I am to do it;",
-       901.4,
-       903.11
+       901.34,
+       903.05
       ],
       [
        "how do I get in?",
-       903.38,
-       904.37
+       903.32,
+       904.31
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "Silly goose,",
-     "start": 904.59,
-     "end": 905.73,
+     "start": 904.53,
+     "end": 905.67,
      "phrases": [
       [
        "Silly goose,",
-       904.59,
-       905.73
+       904.53,
+       905.67
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the old woman.",
-     "start": 905.95,
-     "end": 907.39,
+     "start": 905.89,
+     "end": 907.34,
      "phrases": [
       [
        "said the old woman.",
-       905.95,
-       907.39
+       905.89,
+       907.34
       ]
      ]
     },
     {
      "speaker": "witch",
      "text": "The door is big enough; just look, I can get in myself!",
-     "start": 907.61,
-     "end": 912.58,
+     "start": 907.56,
+     "end": 912.53,
      "phrases": [
       [
        "The door is big enough;",
-       907.61,
-       909.39
+       907.56,
+       909.33
       ],
       [
        "just look, I can get in myself!",
-       909.7,
-       912.58
+       909.65,
+       912.53
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "and she crept up and thrust her head into the oven. Then Gretel gave her a push that drove her far into it, and shut the iron door, and fastened the bolt. Oh! then she began to howl quite horribly, but Gretel ran away and the godless witch was miserably burnt to death.",
-     "start": 912.8,
-     "end": 931.72,
+     "start": 912.75,
+     "end": 931.66,
      "phrases": [
       [
        "and she crept up and thrust her head into the oven.",
-       912.8,
-       916.33
+       912.75,
+       916.28
       ],
       [
        "Then Gretel gave her a push that drove her far into it, and shut the iron door, and fastened the bolt. Oh!",
-       916.79,
-       923.88
+       916.73,
+       923.83
       ],
       [
        "then she began to howl quite horribly, but Gretel ran away and the godless witch was miserably burnt to death.",
-       924.34,
-       931.72
+       924.28,
+       931.66
       ]
      ]
     }
    ],
-   "end": 931.72
+   "end": 931.66
   },
   {
-   "start": 934.07,
+   "start": 934.01,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Gretel, however, ran like lightning to Hansel, opened his little stable, and cried:",
-     "start": 934.07,
-     "end": 939.69,
+     "start": 934.01,
+     "end": 939.64,
      "phrases": [
       [
        "Gretel, however, ran like lightning to Hansel, opened his little stable, and cried:",
-       934.07,
-       939.69
+       934.01,
+       939.64
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "Hansel, we are saved! The old witch is dead!",
-     "start": 939.91,
-     "end": 942.78,
+     "start": 939.86,
+     "end": 942.61,
      "phrases": [
       [
        "Hansel, we are saved!",
-       939.91,
-       941.18
+       939.86,
+       941.16
       ],
       [
        "The old witch is dead!",
-       941.59,
-       942.78
+       941.42,
+       942.61
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Then Hansel sprang like a bird from its cage when the door is opened. How they did rejoice and embrace each other, and dance about and kiss each other! And as they had no longer any need to fear her, they went into the witch’s house, and in every corner there stood chests full of pearls and jewels.",
-     "start": 943.0,
-     "end": 962.79,
+     "start": 942.83,
+     "end": 962.62,
      "phrases": [
       [
        "Then Hansel sprang like a bird from its cage when the door is opened.",
-       943.0,
-       947.58
+       942.83,
+       947.41
       ],
       [
        "How they did rejoice and embrace each other, and dance about and kiss each other!",
-       948.03,
-       953.26
+       947.86,
+       953.09
       ],
       [
        "And as they had no longer any need to fear her, they went into the witch's house, and in every corner there stood chests full of pearls and jewels.",
-       953.71,
-       962.79
+       953.54,
+       962.62
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "These are far better than pebbles!",
-     "start": 963.01,
-     "end": 964.51,
+     "start": 962.84,
+     "end": 964.34,
      "phrases": [
       [
        "These are far better than pebbles!",
-       963.01,
-       964.51
+       962.84,
+       964.34
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said Hansel, and thrust into his pockets whatever could be got in, and Gretel said:",
-     "start": 964.73,
-     "end": 970.27,
+     "start": 964.56,
+     "end": 970.09,
      "phrases": [
       [
        "said Hansel, and thrust into his pockets whatever could be got in, and Gretel said:",
-       964.73,
-       970.27
+       964.56,
+       970.09
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "I, too, will take something home with me,",
-     "start": 970.49,
-     "end": 972.6,
+     "start": 970.31,
+     "end": 972.42,
      "phrases": [
       [
        "I, too, will take something home with me,",
-       970.49,
-       972.6
+       970.31,
+       972.42
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "and filled her pinafore full.",
-     "start": 972.82,
-     "end": 974.91,
+     "start": 972.64,
+     "end": 974.73,
      "phrases": [
       [
        "and filled her pinafore full.",
-       972.82,
-       974.91
+       972.64,
+       974.73
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "But now we must be off,",
-     "start": 975.13,
-     "end": 976.3,
+     "start": 974.95,
+     "end": 976.13,
      "phrases": [
       [
        "But now we must be off,",
-       975.13,
-       976.3
+       974.95,
+       976.13
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said Hansel",
-     "start": 976.52,
-     "end": 977.74,
+     "start": 976.35,
+     "end": 977.56,
      "phrases": [
       [
        "said Hansel",
-       976.52,
-       977.74
+       976.35,
+       977.56
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "that we may get out of the witch’s forest.",
-     "start": 977.96,
-     "end": 979.77,
+     "start": 977.78,
+     "end": 979.59,
      "phrases": [
       [
        "that we may get out of the witch's forest.",
-       977.96,
-       979.77
+       977.78,
+       979.59
       ]
      ]
     }
    ],
-   "end": 979.77
+   "end": 979.59
   },
   {
-   "start": 980.62,
+   "start": 980.44,
    "segments": [
     {
      "speaker": "narrator",
      "text": "When they had walked for two hours, they came to a great stretch of water.",
-     "start": 980.62,
-     "end": 984.83,
+     "start": 980.44,
+     "end": 984.65,
      "phrases": [
       [
        "When they had walked for two hours, they came to a great stretch of water.",
-       980.62,
-       984.83
+       980.44,
+       984.65
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "We cannot cross,",
-     "start": 985.05,
-     "end": 986.02,
+     "start": 984.87,
+     "end": 985.84,
      "phrases": [
       [
        "We cannot cross,",
-       985.05,
-       986.02
+       984.87,
+       985.84
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said Hansel",
-     "start": 986.24,
-     "end": 987.45,
+     "start": 986.06,
+     "end": 987.28,
      "phrases": [
       [
        "said Hansel",
-       986.24,
-       987.45
+       986.06,
+       987.28
       ]
      ]
     },
     {
      "speaker": "hansel",
      "text": "I see no foot-plank, and no bridge.",
-     "start": 987.67,
-     "end": 989.46,
+     "start": 987.5,
+     "end": 989.28,
      "phrases": [
       [
        "I see no foot-plank, and no bridge.",
-       987.67,
-       989.46
+       987.5,
+       989.28
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "And there is also no ferry,",
-     "start": 989.68,
-     "end": 991.14,
+     "start": 989.5,
+     "end": 990.97,
      "phrases": [
       [
        "And there is also no ferry,",
-       989.68,
-       991.14
+       989.5,
+       990.97
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "answered Gretel",
-     "start": 991.36,
-     "end": 992.79,
+     "start": 991.19,
+     "end": 992.62,
      "phrases": [
       [
        "answered Gretel",
-       991.36,
-       992.79
+       991.19,
+       992.62
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "but a white duck is swimming there: if I ask her, she will help us over.",
-     "start": 993.01,
-     "end": 996.82,
+     "start": 992.84,
+     "end": 996.65,
      "phrases": [
       [
        "but a white duck is swimming there:",
-       993.01,
-       994.55
+       992.84,
+       994.37
       ],
       [
        "if I ask her, she will help us over.",
-       994.82,
-       996.82
+       994.64,
+       996.65
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Then she cried:",
-     "start": 997.04,
-     "end": 998.37,
+     "start": 996.87,
+     "end": 998.2,
      "phrases": [
       [
        "Then she cried:",
-       997.04,
-       998.37
+       996.87,
+       998.2
       ]
      ]
     }
    ],
-   "end": 998.37
+   "end": 998.2
   },
   {
-   "start": 999.22,
+   "start": 999.05,
    "segments": [
     {
      "speaker": "gretel",
      "text": "Little duck, little duck, dost thou see, Hansel and Gretel are waiting for thee? There’s never a plank, or bridge in sight, Take us across on thy back so white.",
-     "start": 999.22,
-     "end": 1008.48,
+     "start": 999.05,
+     "end": 1008.31,
      "phrases": [
       [
        "Little duck, little duck, dost thou see, Hansel and Gretel are waiting for thee?",
-       999.22,
-       1003.63
+       999.05,
+       1003.45
       ],
       [
        "There's never a plank, or bridge in sight, Take us across on thy back so white.",
-       1004.04,
-       1008.48
+       1003.86,
+       1008.31
       ]
      ]
     }
    ],
-   "end": 1008.48
+   "end": 1008.31
   },
   {
-   "start": 1009.33,
+   "start": 1009.16,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The duck came to them, and Hansel seated himself on its back, and told his sister to sit by him.",
-     "start": 1009.33,
-     "end": 1015.58,
+     "start": 1009.16,
+     "end": 1015.4,
      "phrases": [
       [
        "The duck came to them, and Hansel seated himself on its back, and told his sister to sit by him.",
-       1009.33,
-       1015.58
+       1009.16,
+       1015.4
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "No,",
-     "start": 1015.8,
-     "end": 1016.35,
+     "start": 1015.62,
+     "end": 1016.17,
      "phrases": [
       [
        "No,",
-       1015.8,
-       1016.35
+       1015.62,
+       1016.17
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "replied Gretel",
-     "start": 1016.57,
-     "end": 1018.03,
+     "start": 1016.39,
+     "end": 1017.86,
      "phrases": [
       [
        "replied Gretel",
-       1016.57,
-       1018.03
+       1016.39,
+       1017.86
       ]
      ]
     },
     {
      "speaker": "gretel",
      "text": "that will be too heavy for the little duck; she shall take us across, one after the other.",
-     "start": 1018.25,
-     "end": 1022.83,
+     "start": 1018.08,
+     "end": 1022.66,
      "phrases": [
       [
        "that will be too heavy for the little duck;",
-       1018.25,
-       1020.05
+       1018.08,
+       1019.87
       ],
       [
        "she shall take us across, one after the other.",
-       1020.32,
-       1022.83
+       1020.15,
+       1022.66
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "The good little duck did so, and when they were once safely across and had walked for a short time, the forest seemed to be more and more familiar to them, and at length they saw from afar their father’s house. Then they began to run, rushed into the parlour, and threw themselves round their father’s neck. The man had not known one happy hour since he had left the children in the forest; the woman, however, was dead. Gretel emptied her pinafore until pearls and precious stones ran about the room, and Hansel threw one handful after another out of his pocket to add to them. Then all anxiety was at an end, and they lived together in perfect happiness. My tale is done, there runs a mouse; whosoever catches it, may make himself a big fur cap out of it.",
-     "start": 1023.05,
-     "end": 1075.42,
+     "start": 1022.88,
+     "end": 1075.25,
      "phrases": [
       [
        "The good little duck did so, and when they were once safely across and had walked for a short time, the forest seemed to be more and more familiar to them, and at length they saw from afar their father's house.",
-       1023.05,
-       1035.99
+       1022.88,
+       1035.82
       ],
       [
        "Then they began to run, rushed into the parlour, and threw themselves round their father's neck.",
-       1036.44,
-       1042.17
+       1036.27,
+       1042.0
       ],
       [
        "The man had not known one happy hour since he had left the children in the forest;",
-       1042.62,
-       1047.72
+       1042.45,
+       1047.55
       ],
       [
        "the woman, however, was dead.",
-       1048.02,
-       1050.3
+       1047.85,
+       1050.12
       ],
       [
        "Gretel emptied her pinafore until pearls and precious stones ran about the room, and Hansel threw one handful after another out of his pocket to add to them.",
-       1050.75,
-       1061.66
+       1050.57,
+       1061.49
       ],
       [
        "Then all anxiety was at an end, and they lived together in perfect happiness.",
-       1062.11,
-       1067.42
+       1061.94,
+       1067.24
       ],
       [
        "My tale is done, there runs a mouse;",
-       1067.87,
-       1070.59
+       1067.69,
+       1070.41
       ],
       [
        "whosoever catches it, may make himself a big fur cap out of it.",
-       1070.89,
-       1075.42
+       1070.71,
+       1075.25
       ]
      ]
     }
    ],
-   "end": 1075.42
+   "end": 1075.25
   }
  ],
  "cast": {

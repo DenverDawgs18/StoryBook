@@ -18,7 +18,7 @@
    "hunter": "the huntsman"
   }
  },
- "duration": 502.6,
+ "duration": 502.66,
  "chapters": [
   {
    "title": "Little Red-Cap. By the Brothers Grimm.",
@@ -95,7 +95,7 @@
      "speaker": "narrator",
      "text": "Once upon a time there was a dear little girl who was loved by everyone who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child. Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else; so she was always called",
      "start": 36.16,
-     "end": 54.29,
+     "end": 54.27,
      "phrases": [
       [
        "Once upon a time there was a dear little girl who was loved by everyone who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child.",
@@ -110,1321 +110,1321 @@
       [
        "so she was always called",
        52.71,
-       54.29
+       54.27
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Little Red-Cap.",
-     "start": 54.51,
-     "end": 55.78,
+     "start": 54.49,
+     "end": 55.77,
      "phrases": [
       [
        "Little Red-Cap.",
-       54.51,
-       55.78
+       54.49,
+       55.77
       ]
      ]
     }
    ],
-   "end": 55.78
+   "end": 55.77
   },
   {
-   "start": 56.63,
+   "start": 56.62,
    "segments": [
     {
      "speaker": "narrator",
      "text": "One day her mother said to her:",
-     "start": 56.63,
-     "end": 58.44,
+     "start": 56.62,
+     "end": 58.42,
      "phrases": [
       [
        "One day her mother said to her:",
-       56.63,
-       58.44
+       56.62,
+       58.42
       ]
      ]
     },
     {
      "speaker": "mother",
      "text": "Come, Little Red-Cap, here is a piece of cake and a bottle of wine; take them to your grandmother, she is ill and weak, and they will do her good. Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing; and when you go into her room, don’t forget to say, “Good morning",
-     "start": 58.66,
-     "end": 81.24,
+     "start": 58.64,
+     "end": 81.22,
      "phrases": [
       [
        "Come, Little Red-Cap, here is a piece of cake and a bottle of wine;",
-       58.66,
-       62.23
+       58.64,
+       62.21
       ],
       [
        "take them to your grandmother, she is ill and weak, and they will do her good.",
-       62.53,
-       66.45
+       62.51,
+       66.44
       ],
       [
        "Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing;",
-       66.9,
-       77.57
+       66.88,
+       77.55
       ],
       [
        "and when you go into her room, don't forget to say, “Good morning",
-       77.86,
-       81.24
+       77.84,
+       81.22
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "and don’t peep into every corner before you do it.”",
-     "start": 81.46,
-     "end": 84.07,
+     "start": 81.44,
+     "end": 84.06,
      "phrases": [
       [
        "and don't peep into every corner before you do it.”",
-       81.46,
-       84.07
+       81.44,
+       84.06
       ]
      ]
     }
    ],
-   "end": 84.07
+   "end": 84.06
   },
   {
-   "start": 84.92,
+   "start": 84.91,
    "segments": [
     {
      "speaker": "redcap",
      "text": "I will take great care,",
-     "start": 84.92,
-     "end": 86.12,
+     "start": 84.91,
+     "end": 86.1,
      "phrases": [
       [
        "I will take great care,",
-       84.92,
-       86.12
+       84.91,
+       86.1
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said Little Red-Cap to her mother, and gave her hand on it.",
-     "start": 86.34,
-     "end": 89.44,
+     "start": 86.32,
+     "end": 89.42,
      "phrases": [
       [
        "said Little Red-Cap to her mother, and gave her hand on it.",
-       86.34,
-       89.44
+       86.32,
+       89.42
       ]
      ]
     }
    ],
-   "end": 89.44
+   "end": 89.42
   },
   {
-   "start": 90.29,
+   "start": 90.27,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The grandmother lived out in the wood, half a league from the village, and just as Little Red-Cap entered the wood, a wolf met her. Red-Cap did not know what a wicked creature he was, and was not at all afraid of him.",
-     "start": 90.29,
-     "end": 102.22,
+     "start": 90.27,
+     "end": 102.2,
      "phrases": [
       [
        "The grandmother lived out in the wood, half a league from the village, and just as Little Red-Cap entered the wood, a wolf met her.",
-       90.29,
-       97.02
+       90.27,
+       97.0
       ],
       [
        "Red-Cap did not know what a wicked creature he was, and was not at all afraid of him.",
-       97.47,
-       102.22
+       97.46,
+       102.2
       ]
      ]
     }
    ],
-   "end": 102.22
+   "end": 102.2
   },
   {
-   "start": 103.07,
+   "start": 103.05,
    "segments": [
     {
      "speaker": "wolf",
      "text": "Good day, Little Red-Cap,",
-     "start": 103.07,
-     "end": 104.35,
+     "start": 103.05,
+     "end": 104.33,
      "phrases": [
       [
        "Good day, Little Red-Cap,",
-       103.07,
-       104.35
+       103.05,
+       104.33
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said he.",
-     "start": 104.57,
-     "end": 105.69,
+     "start": 104.55,
+     "end": 105.68,
      "phrases": [
       [
        "said he.",
-       104.57,
-       105.69
+       104.55,
+       105.68
       ]
      ]
     }
    ],
-   "end": 105.69
+   "end": 105.68
   },
   {
-   "start": 106.54,
+   "start": 106.53,
    "segments": [
     {
      "speaker": "redcap",
      "text": "Thank you kindly, wolf.",
-     "start": 106.54,
-     "end": 107.82,
+     "start": 106.53,
+     "end": 107.8,
      "phrases": [
       [
        "Thank you kindly, wolf.",
-       106.54,
-       107.82
+       106.53,
+       107.8
       ]
      ]
     }
    ],
-   "end": 107.82
+   "end": 107.8
   },
   {
-   "start": 108.67,
+   "start": 108.65,
    "segments": [
     {
      "speaker": "wolf",
      "text": "Whither away so early, Little Red-Cap?",
-     "start": 108.67,
-     "end": 110.63,
+     "start": 108.65,
+     "end": 110.62,
      "phrases": [
       [
        "Whither away so early, Little Red-Cap?",
-       108.67,
-       110.63
+       108.65,
+       110.62
       ]
      ]
     }
    ],
-   "end": 110.63
+   "end": 110.62
   },
   {
-   "start": 111.48,
+   "start": 111.47,
    "segments": [
     {
      "speaker": "redcap",
      "text": "To my grandmother’s.",
-     "start": 111.48,
-     "end": 112.65,
+     "start": 111.47,
+     "end": 112.63,
      "phrases": [
       [
        "To my grandmother's.",
-       111.48,
-       112.65
+       111.47,
+       112.63
       ]
      ]
     }
    ],
-   "end": 112.65
+   "end": 112.63
   },
   {
-   "start": 113.5,
+   "start": 113.48,
    "segments": [
     {
      "speaker": "wolf",
      "text": "What have you got in your apron?",
-     "start": 113.5,
-     "end": 114.93,
+     "start": 113.48,
+     "end": 114.92,
      "phrases": [
       [
        "What have you got in your apron?",
-       113.5,
-       114.93
+       113.48,
+       114.92
       ]
      ]
     }
    ],
-   "end": 114.93
+   "end": 114.92
   },
   {
-   "start": 115.78,
+   "start": 115.77,
    "segments": [
     {
      "speaker": "redcap",
      "text": "Cake and wine; yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger.",
-     "start": 115.78,
-     "end": 122.55,
+     "start": 115.77,
+     "end": 122.54,
      "phrases": [
       [
        "Cake and wine; yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger.",
-       115.78,
-       122.55
+       115.77,
+       122.54
       ]
      ]
     }
    ],
-   "end": 122.55
+   "end": 122.54
   },
   {
-   "start": 123.4,
+   "start": 123.39,
    "segments": [
     {
      "speaker": "wolf",
      "text": "Where does your grandmother live, Little Red-Cap?",
-     "start": 123.4,
-     "end": 125.64,
+     "start": 123.39,
+     "end": 125.63,
      "phrases": [
       [
        "Where does your grandmother live, Little Red-Cap?",
-       123.4,
-       125.64
+       123.39,
+       125.63
       ]
      ]
     }
    ],
-   "end": 125.64
+   "end": 125.63
   },
   {
-   "start": 126.49,
+   "start": 126.48,
    "segments": [
     {
      "speaker": "redcap",
      "text": "A good quarter of a league farther on in the wood; her house stands under the three large oak-trees, the nut-trees are just below; you surely must know it,",
-     "start": 126.49,
-     "end": 135.05,
+     "start": 126.48,
+     "end": 135.03,
      "phrases": [
       [
        "A good quarter of a league farther on in the wood;",
-       126.49,
-       128.81
+       126.48,
+       128.8
       ],
       [
        "her house stands under the three large oak-trees, the nut-trees are just below;",
-       129.09,
-       133.56
+       129.08,
+       133.55
       ],
       [
        "you surely must know it,",
-       133.84,
-       135.05
+       133.83,
+       135.03
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "replied Little Red-Cap.",
-     "start": 135.27,
-     "end": 137.01,
+     "start": 135.25,
+     "end": 137.0,
      "phrases": [
       [
        "replied Little Red-Cap.",
-       135.27,
-       137.01
+       135.25,
+       137.0
       ]
      ]
     }
    ],
-   "end": 137.01
+   "end": 137.0
   },
   {
-   "start": 137.86,
+   "start": 137.85,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The wolf thought to himself:",
-     "start": 137.86,
-     "end": 139.63,
+     "start": 137.85,
+     "end": 139.62,
      "phrases": [
       [
        "The wolf thought to himself:",
-       137.86,
-       139.63
+       137.85,
+       139.62
       ]
      ]
     },
     {
      "speaker": "wolf",
      "text": "What a tender young creature! what a nice plump mouthful—she will be better to eat than the old woman. I must act craftily, so as to catch both.",
-     "start": 139.85,
-     "end": 148.67,
+     "start": 139.84,
+     "end": 148.66,
      "phrases": [
       [
        "What a tender young creature!",
-       139.85,
-       141.33
+       139.84,
+       141.32
       ],
       [
        "what a nice plump mouthful",
-       141.8,
-       143.19
+       141.79,
+       143.17
       ],
       [
        "she will be better to eat than the old woman.",
-       143.43,
-       145.62
+       143.42,
+       145.61
       ],
       [
        "I must act craftily, so as to catch both.",
-       146.09,
-       148.67
+       146.08,
+       148.66
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "So he walked for a short time by the side of Little Red-Cap, and then he said:",
-     "start": 148.89,
-     "end": 153.12,
+     "start": 148.88,
+     "end": 153.11,
      "phrases": [
       [
        "So he walked for a short time by the side of Little Red-Cap, and then he said:",
-       148.89,
-       153.12
+       148.88,
+       153.11
       ]
      ]
     },
     {
      "speaker": "wolf",
      "text": "See, Little Red-Cap, how pretty the flowers are about here—why do you not look round? I believe, too, that you do not hear how sweetly the little birds are singing; you walk gravely along as if you were going to school, while everything else out here in the wood is merry.",
-     "start": 153.34,
-     "end": 168.85,
+     "start": 153.33,
+     "end": 168.84,
      "phrases": [
       [
        "See, Little Red-Cap, how pretty the flowers are about here",
-       153.34,
-       155.81
+       153.33,
+       155.8
       ],
       [
        "why do you not look round?",
-       156.06,
-       157.45
+       156.05,
+       157.44
       ],
       [
        "I believe, too, that you do not hear how sweetly the little birds are singing;",
-       157.91,
-       162.35
+       157.9,
+       162.34
       ],
       [
        "you walk gravely along as if you were going to school, while everything else out here in the wood is merry.",
-       162.66,
-       168.85
+       162.65,
+       168.84
       ]
      ]
     }
    ],
-   "end": 168.85
+   "end": 168.84
   },
   {
-   "start": 169.7,
+   "start": 169.69,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Little Red-Cap raised her eyes, and when she saw the sunbeams dancing here and there through the trees, and pretty flowers growing everywhere, she thought:",
-     "start": 169.7,
-     "end": 177.73,
+     "start": 169.69,
+     "end": 177.72,
      "phrases": [
       [
        "Little Red-Cap raised her eyes, and when she saw the sunbeams dancing here and there through the trees, and pretty flowers growing everywhere, she thought:",
-       169.7,
-       177.73
+       169.69,
+       177.72
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "Suppose I take grandmother a fresh nosegay; that would please her too. It is so early in the day that I shall still get there in good time",
-     "start": 177.95,
-     "end": 185.45,
+     "start": 177.94,
+     "end": 185.43,
      "phrases": [
       [
        "Suppose I take grandmother a fresh nosegay;",
-       177.95,
-       180.24
+       177.94,
+       180.23
       ],
       [
        "that would please her too.",
-       180.52,
-       181.68
+       180.51,
+       181.67
       ],
       [
        "It is so early in the day that I shall still get there in good time",
-       182.1,
-       185.45
+       182.09,
+       185.43
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "; and so she ran from the path into the wood to look for flowers. And whenever she had picked one, she fancied that she saw a still prettier one farther on, and ran after it, and so got deeper and deeper into the wood.",
-     "start": 185.67,
-     "end": 197.36,
+     "start": 185.65,
+     "end": 197.35,
      "phrases": [
       [
        "; and so she ran from the path into the wood to look for flowers.",
-       185.67,
-       188.88
+       185.65,
+       188.87
       ],
       [
        "And whenever she had picked one, she fancied that she saw a still prettier one farther on, and ran after it, and so got deeper and deeper into the wood.",
-       189.33,
-       197.36
+       189.32,
+       197.35
       ]
      ]
     }
    ],
-   "end": 197.36
+   "end": 197.35
   },
   {
-   "start": 199.74,
+   "start": 199.73,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Meanwhile the wolf ran straight to the grandmother’s house and knocked at the door.",
-     "start": 199.74,
-     "end": 203.76,
+     "start": 199.73,
+     "end": 203.75,
      "phrases": [
       [
        "Meanwhile the wolf ran straight to the grandmother's house and knocked at the door.",
-       199.74,
-       203.76
+       199.73,
+       203.75
       ]
      ]
     }
    ],
-   "end": 203.76
+   "end": 203.75
   },
   {
-   "start": 204.61,
+   "start": 204.6,
    "segments": [
     {
      "speaker": "granny",
      "text": "Who is there?",
-     "start": 204.61,
-     "end": 205.71,
+     "start": 204.6,
+     "end": 205.69,
      "phrases": [
       [
        "Who is there?",
-       204.61,
-       205.71
+       204.6,
+       205.69
       ]
      ]
     }
    ],
-   "end": 205.71
+   "end": 205.69
   },
   {
-   "start": 206.56,
+   "start": 206.54,
    "segments": [
     {
      "speaker": "wolf",
      "text": "Little Red-Cap,",
-     "start": 206.56,
-     "end": 207.52,
+     "start": 206.54,
+     "end": 207.51,
      "phrases": [
       [
        "Little Red-Cap,",
-       206.56,
-       207.52
+       206.54,
+       207.51
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "replied the wolf.",
-     "start": 207.74,
-     "end": 209.07,
+     "start": 207.73,
+     "end": 209.06,
      "phrases": [
       [
        "replied the wolf.",
-       207.74,
-       209.07
+       207.73,
+       209.06
       ]
      ]
     },
     {
      "speaker": "wolf",
      "text": "She is bringing cake and wine; open the door.",
-     "start": 209.29,
-     "end": 211.76,
+     "start": 209.28,
+     "end": 211.75,
      "phrases": [
       [
        "She is bringing cake and wine; open the door.",
-       209.29,
-       211.76
+       209.28,
+       211.75
       ]
      ]
     }
    ],
-   "end": 211.76
+   "end": 211.75
   },
   {
-   "start": 212.61,
+   "start": 212.6,
    "segments": [
     {
      "speaker": "granny",
      "text": "Lift the latch,",
-     "start": 212.61,
-     "end": 213.84,
+     "start": 212.6,
+     "end": 213.83,
      "phrases": [
       [
        "Lift the latch,",
-       212.61,
-       213.84
+       212.6,
+       213.83
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "called out the grandmother",
-     "start": 214.06,
-     "end": 215.63,
+     "start": 214.05,
+     "end": 215.62,
      "phrases": [
       [
        "called out the grandmother",
-       214.06,
-       215.63
+       214.05,
+       215.62
       ]
      ]
     },
     {
      "speaker": "granny",
      "text": "I am too weak, and cannot get up.",
-     "start": 215.85,
-     "end": 218.92,
+     "start": 215.84,
+     "end": 218.91,
      "phrases": [
       [
        "I am too weak, and cannot get up.",
-       215.85,
-       218.92
+       215.84,
+       218.91
       ]
      ]
     }
    ],
-   "end": 218.92
+   "end": 218.91
   },
   {
-   "start": 221.09,
+   "start": 221.07,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The wolf lifted the latch, the door sprang open, and without saying a word he went straight to the grandmother’s bed, and devoured her. Then he put on her clothes, dressed himself in her cap laid himself in bed and drew the curtains.",
-     "start": 221.09,
-     "end": 233.9,
+     "start": 221.07,
+     "end": 233.89,
      "phrases": [
       [
        "The wolf lifted the latch, the door sprang open, and without saying a word he went straight to the grandmother's bed, and devoured her.",
-       221.09,
-       228.11
+       221.07,
+       228.1
       ],
       [
        "Then he put on her clothes, dressed himself in her cap laid himself in bed and drew the curtains.",
-       228.57,
-       233.9
+       228.56,
+       233.89
       ]
      ]
     }
    ],
-   "end": 233.9
+   "end": 233.89
   },
   {
-   "start": 234.75,
+   "start": 234.74,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Little Red-Cap, however, had been running about picking flowers, and when she had gathered so many that she could carry no more, she remembered her grandmother, and set out on the way to her.",
-     "start": 234.75,
-     "end": 244.55,
+     "start": 234.74,
+     "end": 244.54,
      "phrases": [
       [
        "Little Red-Cap, however, had been running about picking flowers, and when she had gathered so many that she could carry no more, she remembered her grandmother, and set out on the way to her.",
-       234.75,
-       244.55
+       234.74,
+       244.54
       ]
      ]
     }
    ],
-   "end": 244.55
+   "end": 244.54
   },
   {
-   "start": 245.4,
+   "start": 245.39,
    "segments": [
     {
      "speaker": "narrator",
      "text": "She was surprised to find the cottage-door standing open, and when she went into the room, she had such a strange feeling that she said to herself:",
-     "start": 245.4,
-     "end": 252.94,
+     "start": 245.39,
+     "end": 252.93,
      "phrases": [
       [
        "She was surprised to find the cottage-door standing open, and when she went into the room, she had such a strange feeling that she said to herself:",
-       245.4,
-       252.94
+       245.39,
+       252.93
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "Oh dear! how uneasy I feel today, and at other times I like being with grandmother so much.",
-     "start": 253.16,
-     "end": 258.8,
+     "start": 253.15,
+     "end": 258.78,
      "phrases": [
       [
        "Oh dear! how uneasy I feel today, and at other times I like being with grandmother so much.",
-       253.16,
-       258.8
+       253.15,
+       258.78
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "She called out:",
-     "start": 259.02,
-     "end": 260.2,
+     "start": 259.0,
+     "end": 260.19,
      "phrases": [
       [
        "She called out:",
-       259.02,
-       260.2
+       259.0,
+       260.19
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "Good morning,",
-     "start": 260.42,
-     "end": 261.22,
+     "start": 260.41,
+     "end": 261.21,
      "phrases": [
       [
        "Good morning,",
-       260.42,
-       261.22
+       260.41,
+       261.21
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "but received no answer; so she went to the bed and drew back the curtains. There lay her grandmother with her cap pulled far over her face, and looking very strange.",
-     "start": 261.44,
-     "end": 271.38,
+     "start": 261.43,
+     "end": 271.37,
      "phrases": [
       [
        "but received no answer;",
-       261.44,
-       263.05
+       261.43,
+       263.04
       ],
       [
        "so she went to the bed and drew back the curtains.",
-       263.35,
-       265.95
+       263.34,
+       265.94
       ],
       [
        "There lay her grandmother with her cap pulled far over her face, and looking very strange.",
-       266.4,
-       271.38
+       266.39,
+       271.37
       ]
      ]
     }
    ],
-   "end": 271.38
+   "end": 271.37
   },
   {
-   "start": 272.23,
+   "start": 272.22,
    "segments": [
     {
      "speaker": "redcap",
      "text": "Oh! grandmother,",
-     "start": 272.23,
-     "end": 273.26,
+     "start": 272.22,
+     "end": 273.25,
      "phrases": [
       [
        "Oh! grandmother,",
-       272.23,
-       273.26
+       272.22,
+       273.25
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "she said",
-     "start": 273.48,
-     "end": 274.18,
+     "start": 273.47,
+     "end": 274.17,
      "phrases": [
       [
        "she said",
-       273.48,
-       274.18
+       273.47,
+       274.17
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "what big ears you have!",
-     "start": 274.4,
-     "end": 275.64,
+     "start": 274.39,
+     "end": 275.63,
      "phrases": [
       [
        "what big ears you have!",
-       274.4,
-       275.64
+       274.39,
+       275.63
       ]
      ]
     }
    ],
-   "end": 275.64
+   "end": 275.63
   },
   {
-   "start": 276.49,
+   "start": 276.48,
    "segments": [
     {
      "speaker": "wolf",
      "text": "The better to hear you with, my child,",
-     "start": 276.49,
-     "end": 278.32,
+     "start": 276.48,
+     "end": 278.31,
      "phrases": [
       [
        "The better to hear you with, my child,",
-       276.49,
-       278.32
+       276.48,
+       278.31
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "was the reply.",
-     "start": 278.54,
-     "end": 279.84,
+     "start": 278.53,
+     "end": 279.83,
      "phrases": [
       [
        "was the reply.",
-       278.54,
-       279.84
+       278.53,
+       279.83
       ]
      ]
     }
    ],
-   "end": 279.84
+   "end": 279.83
   },
   {
-   "start": 280.69,
+   "start": 280.68,
    "segments": [
     {
      "speaker": "redcap",
      "text": "But, grandmother, what big eyes you have!",
-     "start": 280.69,
-     "end": 282.9,
+     "start": 280.68,
+     "end": 282.89,
      "phrases": [
       [
        "But, grandmother, what big eyes you have!",
-       280.69,
-       282.9
+       280.68,
+       282.89
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "she said.",
-     "start": 283.12,
-     "end": 284.17,
+     "start": 283.11,
+     "end": 284.16,
      "phrases": [
       [
        "she said.",
-       283.12,
-       284.17
+       283.11,
+       284.16
       ]
      ]
     }
    ],
-   "end": 284.17
+   "end": 284.16
   },
   {
-   "start": 285.02,
+   "start": 285.01,
    "segments": [
     {
      "speaker": "wolf",
      "text": "The better to see you with, my dear.",
-     "start": 285.02,
-     "end": 286.72,
+     "start": 285.01,
+     "end": 286.71,
      "phrases": [
       [
        "The better to see you with, my dear.",
-       285.02,
-       286.72
+       285.01,
+       286.71
       ]
      ]
     }
    ],
-   "end": 286.72
+   "end": 286.71
   },
   {
-   "start": 287.57,
+   "start": 287.56,
    "segments": [
     {
      "speaker": "redcap",
      "text": "But, grandmother, what large hands you have!",
-     "start": 287.57,
-     "end": 289.87,
+     "start": 287.56,
+     "end": 289.86,
      "phrases": [
       [
        "But, grandmother, what large hands you have!",
-       287.57,
-       289.87
+       287.56,
+       289.86
       ]
      ]
     }
    ],
-   "end": 289.87
+   "end": 289.86
   },
   {
-   "start": 290.72,
+   "start": 290.71,
    "segments": [
     {
      "speaker": "wolf",
      "text": "The better to hug you with.",
-     "start": 290.72,
-     "end": 292.02,
+     "start": 290.71,
+     "end": 292.01,
      "phrases": [
       [
        "The better to hug you with.",
-       290.72,
-       292.02
+       290.71,
+       292.01
       ]
      ]
     }
    ],
-   "end": 292.02
+   "end": 292.01
   },
   {
-   "start": 292.87,
+   "start": 292.86,
    "segments": [
     {
      "speaker": "redcap",
      "text": "Oh! but, grandmother, what a terrible big mouth you have!",
-     "start": 292.87,
-     "end": 296.0,
+     "start": 292.86,
+     "end": 295.98,
      "phrases": [
       [
        "Oh! but, grandmother, what a terrible big mouth you have!",
-       292.87,
-       296.0
+       292.86,
+       295.98
       ]
      ]
     }
    ],
-   "end": 296.0
+   "end": 295.98
   },
   {
-   "start": 297.45,
+   "start": 297.43,
    "segments": [
     {
      "speaker": "wolf",
      "text": "The better to eat you with!",
-     "start": 297.45,
-     "end": 298.73,
+     "start": 297.43,
+     "end": 298.8,
      "phrases": [
       [
        "The better to eat you with!",
-       297.45,
-       298.73
+       297.43,
+       298.8
       ]
      ]
     }
    ],
-   "end": 298.73
+   "end": 298.8
   },
   {
-   "start": 299.58,
+   "start": 299.65,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And scarcely had the wolf said this, than with one bound he was out of bed and swallowed up Red-Cap.",
-     "start": 299.58,
-     "end": 305.21,
+     "start": 299.65,
+     "end": 305.28,
      "phrases": [
       [
        "And scarcely had the wolf said this, than with one bound he was out of bed and swallowed up Red-Cap.",
-       299.58,
-       305.21
+       299.65,
+       305.28
       ]
      ]
     }
    ],
-   "end": 305.21
+   "end": 305.28
   },
   {
-   "start": 308.06,
+   "start": 308.13,
    "segments": [
     {
      "speaker": "narrator",
      "text": "When the wolf had appeased his appetite, he lay down again in the bed, fell asleep and began to snore very loud. The huntsman was just passing the house, and thought to himself:",
-     "start": 308.06,
-     "end": 318.04,
+     "start": 308.13,
+     "end": 318.11,
      "phrases": [
       [
        "When the wolf had appeased his appetite, he lay down again in the bed, fell asleep and began to snore very loud.",
-       308.06,
-       314.46
+       308.13,
+       314.52
       ],
       [
        "The huntsman was just passing the house, and thought to himself:",
-       314.91,
-       318.04
+       314.98,
+       318.11
       ]
      ]
     },
     {
      "speaker": "hunter",
      "text": "How the old woman is snoring! I must just see if she wants anything.",
-     "start": 318.26,
-     "end": 322.41,
+     "start": 318.33,
+     "end": 322.48,
      "phrases": [
       [
        "How the old woman is snoring!",
-       318.26,
-       320.03
+       318.33,
+       320.09
       ],
       [
        "I must just see if she wants anything.",
-       320.46,
-       322.41
+       320.53,
+       322.48
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "So he went into the room, and when he came to the bed, he saw that the wolf was lying in it.",
-     "start": 322.63,
-     "end": 327.39,
+     "start": 322.7,
+     "end": 327.46,
      "phrases": [
       [
        "So he went into the room, and when he came to the bed, he saw that the wolf was lying in it.",
-       322.63,
-       327.39
+       322.7,
+       327.46
       ]
      ]
     },
     {
      "speaker": "hunter",
      "text": "Do I find you here, you old sinner!",
-     "start": 327.61,
-     "end": 329.73,
+     "start": 327.68,
+     "end": 329.8,
      "phrases": [
       [
        "Do I find you here, you old sinner!",
-       327.61,
-       329.73
+       327.68,
+       329.8
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said he.",
-     "start": 329.95,
-     "end": 331.08,
+     "start": 330.02,
+     "end": 331.15,
      "phrases": [
       [
        "said he.",
-       329.95,
-       331.08
+       330.02,
+       331.15
       ]
      ]
     },
     {
      "speaker": "hunter",
      "text": "I have long sought you!",
-     "start": 331.3,
-     "end": 332.63,
+     "start": 331.37,
+     "end": 332.7,
      "phrases": [
       [
        "I have long sought you!",
-       331.3,
-       332.63
+       331.37,
+       332.7
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Then just as he was going to fire at him, it occurred to him that the wolf might have devoured the grandmother, and that she might still be saved, so he did not fire, but took a pair of scissors, and began to cut open the stomach of the sleeping wolf. When he had made two snips, he saw the little Red-Cap shining, and then he made two snips more, and the little girl sprang out, crying:",
-     "start": 332.85,
-     "end": 353.4,
+     "start": 332.92,
+     "end": 353.47,
      "phrases": [
       [
        "Then just as he was going to fire at him, it occurred to him that the wolf might have devoured the grandmother, and that she might still be saved, so he did not fire, but took a pair of scissors, and began to cut open the stomach of the sleeping wolf.",
-       332.85,
-       345.88
+       332.92,
+       345.95
       ],
       [
        "When he had made two snips, he saw the little Red-Cap shining, and then he made two snips more, and the little girl sprang out, crying:",
-       346.34,
-       353.4
+       346.41,
+       353.47
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "Ah, how frightened I have been! How dark it was inside the wolf",
-     "start": 353.62,
-     "end": 357.19,
+     "start": 353.69,
+     "end": 357.26,
      "phrases": [
       [
        "Ah, how frightened I have been!",
-       353.62,
-       355.08
+       353.69,
+       355.15
       ],
       [
        "How dark it was inside the wolf",
-       355.5,
-       357.19
+       355.57,
+       357.26
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "; and after that the aged grandmother came out alive also, but scarcely able to breathe. Red-Cap, however, quickly fetched great stones with which they filled the wolf’s belly, and when he awoke, he wanted to run away, but the stones were so heavy that he collapsed at once, and fell dead.",
-     "start": 357.41,
-     "end": 373.22,
+     "start": 357.48,
+     "end": 373.29,
      "phrases": [
       [
        "; and after that the aged grandmother came out alive also, but scarcely able to breathe.",
-       357.41,
-       362.31
+       357.48,
+       362.38
       ],
       [
        "Red-Cap, however, quickly fetched great stones with which they filled the wolf's belly, and when he awoke, he wanted to run away, but the stones were so heavy that he collapsed at once, and fell dead.",
-       362.76,
-       373.22
+       362.83,
+       373.29
       ]
      ]
     }
    ],
-   "end": 373.22
+   "end": 373.29
   },
   {
-   "start": 374.07,
+   "start": 374.14,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Then all three were delighted. The huntsman drew off the wolf’s skin and went home with it; the grandmother ate the cake and drank the wine which Red-Cap had brought, and revived, but Red-Cap thought to herself:",
-     "start": 374.07,
-     "end": 386.36,
+     "start": 374.14,
+     "end": 386.43,
      "phrases": [
       [
        "Then all three were delighted.",
-       374.07,
-       375.92
+       374.14,
+       375.99
       ],
       [
        "The huntsman drew off the wolf's skin and went home with it;",
-       376.38,
-       379.57
+       376.45,
+       379.64
       ],
       [
        "the grandmother ate the cake and drank the wine which Red-Cap had brought, and revived, but Red-Cap thought to herself:",
-       379.87,
-       386.36
+       379.94,
+       386.43
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "As long as I live, I will never by myself leave the path, to run into the wood, when my mother has forbidden me to do so.",
-     "start": 386.58,
-     "end": 393.58,
+     "start": 386.65,
+     "end": 393.65,
      "phrases": [
       [
        "As long as I live, I will never by myself leave the path, to run into the wood, when my mother has forbidden me to do so.",
-       386.58,
-       393.58
+       386.65,
+       393.65
       ]
      ]
     }
    ],
-   "end": 393.58
+   "end": 393.65
   },
   {
-   "start": 394.43,
+   "start": 394.5,
    "segments": [
     {
      "speaker": "narrator",
      "text": "It also related that once when Red-Cap was again taking cakes to the old grandmother, another wolf spoke to her, and tried to entice her from the path. Red-Cap, however, was on her guard, and went straight forward on her way, and told her grandmother that she had met the wolf, and that he had said",
-     "start": 394.43,
-     "end": 410.85,
+     "start": 394.5,
+     "end": 410.91,
      "phrases": [
       [
        "It also related that once when Red-Cap was again taking cakes to the old grandmother, another wolf spoke to her, and tried to entice her from the path.",
-       394.43,
-       403.08
+       394.5,
+       403.15
       ],
       [
        "Red-Cap, however, was on her guard, and went straight forward on her way, and told her grandmother that she had met the wolf, and that he had said",
-       403.54,
-       410.85
+       403.61,
+       410.91
       ]
      ]
     },
     {
      "speaker": "redcap",
      "text": "good morning",
-     "start": 411.07,
-     "end": 411.84,
+     "start": 411.13,
+     "end": 411.91,
      "phrases": [
       [
        "good morning",
-       411.07,
-       411.84
+       411.13,
+       411.91
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "to her, but with such a wicked look in his eyes, that if they had not been on the public road she was certain he would have eaten her up.",
-     "start": 412.06,
-     "end": 418.8,
+     "start": 412.13,
+     "end": 418.87,
      "phrases": [
       [
        "to her, but with such a wicked look in his eyes, that if they had not been on the public road she was certain he would have eaten her up.",
-       412.06,
-       418.8
+       412.13,
+       418.87
       ]
      ]
     },
     {
      "speaker": "granny",
      "text": "Well,",
-     "start": 419.02,
-     "end": 419.77,
+     "start": 419.09,
+     "end": 419.84,
      "phrases": [
       [
        "Well,",
-       419.02,
-       419.77
+       419.09,
+       419.84
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the grandmother",
-     "start": 419.99,
-     "end": 421.31,
+     "start": 420.06,
+     "end": 421.38,
      "phrases": [
       [
        "said the grandmother",
-       419.99,
-       421.31
+       420.06,
+       421.38
       ]
      ]
     },
     {
      "speaker": "granny",
      "text": "we will shut the door, that he may not come in.",
-     "start": 421.53,
-     "end": 425.19,
+     "start": 421.6,
+     "end": 425.26,
      "phrases": [
       [
        "we will shut the door, that he may not come in.",
-       421.53,
-       425.19
+       421.6,
+       425.26
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Soon afterwards the wolf knocked, and cried:",
-     "start": 425.41,
-     "end": 427.78,
+     "start": 425.48,
+     "end": 427.85,
      "phrases": [
       [
        "Soon afterwards the wolf knocked, and cried:",
-       425.41,
-       427.78
+       425.48,
+       427.85
       ]
      ]
     },
     {
      "speaker": "wolf",
      "text": "Open the door, grandmother, I am Little Red-Cap, and am bringing you some cakes.",
-     "start": 428.0,
-     "end": 432.64,
+     "start": 428.07,
+     "end": 432.71,
      "phrases": [
       [
        "Open the door, grandmother, I am Little Red-Cap, and am bringing you some cakes.",
-       428.0,
-       432.64
+       428.07,
+       432.71
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "But they did not speak, or open the door, so the grey-beard stole twice or thrice round the house, and at last jumped on the roof, intending to wait until Red-Cap went home in the evening, and then to steal after her and devour her in the darkness. But the grandmother saw what was in his thoughts. In front of the house was a great stone trough, so she said to the child:",
-     "start": 432.86,
-     "end": 453.88,
+     "start": 432.93,
+     "end": 453.95,
      "phrases": [
       [
        "But they did not speak, or open the door, so the grey-beard stole twice or thrice round the house, and at last jumped on the roof, intending to wait until Red-Cap went home in the evening, and then to steal after her and devour her in the darkness.",
-       432.86,
-       446.8
+       432.93,
+       446.87
       ],
       [
        "But the grandmother saw what was in his thoughts.",
-       447.26,
-       449.62
+       447.33,
+       449.69
       ],
       [
        "In front of the house was a great stone trough, so she said to the child:",
-       450.08,
-       453.88
+       450.15,
+       453.95
       ]
      ]
     },
     {
      "speaker": "granny",
      "text": "Take the pail, Red-Cap; I made some sausages yesterday, so carry the water in which I boiled them to the trough.",
-     "start": 454.1,
-     "end": 464.67,
+     "start": 454.17,
+     "end": 464.74,
      "phrases": [
       [
        "Take the pail, Red-Cap;",
-       454.1,
-       455.99
+       454.17,
+       456.06
       ],
       [
        "I made some sausages yesterday, so carry the water in which I boiled them to the trough.",
-       456.3,
-       464.67
+       456.37,
+       464.74
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Red-Cap carried until the great trough was quite full. Then the smell of the sausages reached the wolf, and he sniffed and peeped down, and at last stretched out his neck so far that he could no longer keep his footing and began to slip, and slipped down from the roof straight into the great trough, and was drowned. But Red-Cap went joyously home, and no one ever did anything to harm her again.",
-     "start": 464.89,
-     "end": 486.75,
+     "start": 464.96,
+     "end": 486.81,
      "phrases": [
       [
        "Red-Cap carried until the great trough was quite full.",
-       464.89,
-       467.69
+       464.96,
+       467.76
       ],
       [
        "Then the smell of the sausages reached the wolf, and he sniffed and peeped down, and at last stretched out his neck so far that he could no longer keep his footing and began to slip, and slipped down from the roof straight into the great trough, and was drowned.",
-       468.15,
-       481.64
+       468.21,
+       481.71
       ],
       [
        "But Red-Cap went joyously home, and no one ever did anything to harm her again.",
-       482.1,
-       486.75
+       482.17,
+       486.81
       ]
      ]
     }
    ],
-   "end": 486.75
+   "end": 486.81
   }
  ],
  "cast": {
