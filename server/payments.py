@@ -17,6 +17,7 @@ Configured with environment variables (Fly secrets):
     PERSONAL_PRICE         dollars for a personalised story, default 6
     STUDIO_TIERS           "max_words:dollars,..." default "2000:9,7500:19,15000:29,25000:45";
                            the last tier also covers anything up to the Studio's length limit
+    STRIPE_TAX_CODE        product tax code for Stripe Tax, default txcd_10401100 (downloaded audio)
     PUBLIC_URL             the site's address for Stripe's return links (else taken from the request)
 
 The buy buttons always show. Without a key, checkout answers "opening shortly". With a test key
@@ -50,6 +51,9 @@ _job_status: Callable[[str], dict | None] | None = None
 DEFAULT_TIERS = "2000:9,7500:19,15000:29,25000:45"
 TIER_NAMES = ["A short story", "A long story", "A novelette", "A novella"]
 OID_RX = re.compile(r"^[0-9a-f]{24}$")
+# Stripe Tax needs a product tax code on each line: "Digital Audio Works - Downloaded - Non Subscription -
+# With Permanent Rights" (docs.stripe.com/tax/digital-products). Override with the STRIPE_TAX_CODE secret.
+TAX_CODE = lambda: os.environ.get("STRIPE_TAX_CODE", "").strip() or "txcd_10401100"
 
 
 # ------------------------------------------------------------------ prices
@@ -198,7 +202,8 @@ def create_checkout(request: Request, kind: str, payload: dict, cents: int, titl
             mode="payment",
             line_items=[{"quantity": 1, "price_data": {
                 "currency": "usd", "unit_amount": cents,
-                "product_data": {"name": title[:250], "description": summary[:500] or title[:250]}}}],
+                "product_data": {"name": title[:250], "description": summary[:500] or title[:250],
+                                 "tax_code": TAX_CODE()}}}],
             client_reference_id=oid, metadata={"order": oid, "kind": kind},
             payment_intent_data={"description": f"StoryBook: {title[:200]}. Listen and download at {link}",
                                  "metadata": {"order": oid}},

@@ -232,6 +232,7 @@ and while anything renders the server pings itself once a minute so Fly doesn't 
 | --- | --- |
 | `STRIPE_SECRET_KEY` | `sk_test_...` or `sk_live_...`. Without it, checkout says it is opening shortly. |
 | `STRIPE_WEBHOOK_SECRET` | `whsec_...` from a webhook endpoint at `https://<site>/api/stripe/webhook` sending `checkout.session.completed` and `checkout.session.async_payment_succeeded`. Recommended: it catches buyers who close the tab before returning. |
+| `STRIPE_TAX_CODE` | product tax code for Stripe Tax, default `txcd_10401100` (downloaded audio, permanent rights) |
 | `PERSONAL_PRICE` | dollars, default `6` |
 | `STUDIO_TIERS` | `max_words:dollars,...`, default `2000:9,7500:19,15000:29,25000:45`. The last tier covers anything up to the Studio's length limit. |
 
