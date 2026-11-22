@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Studio — StoryBook</title>
-<meta name="description" content="Coming soon: turn your own pages into a full-cast audiobook, with a voice for every character and a soundscape made for the story. Join the waitlist.">
+<meta name="description" content="Turn your own pages into a full-cast audiobook, with a voice for every character and a soundscape made for the story. From $9, priced by length; hear the opening free.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/analytics.js" defer></script>
@@ -23,41 +23,21 @@
 </header>
 
 <section class="titlepage" style="padding-bottom:1rem">
-  <figure class="frontispiece">
-    <img src="assets/land/land_town.webp" alt="A watercolour of a walled town in the sun, a road lined with people leading to its gate." style="aspect-ratio:3/1">
-    <figcaption>The road to the studio.</figcaption>
-  </figure>
-  <p class="chapter-no" style="margin-top:2rem" id="kicker">coming soon</p>
+  <p class="chapter-no" style="margin-top:1rem" id="kicker">now open</p>
   <h1 style="font-size:clamp(2.4rem,6vw,4.4rem);margin-top:.2rem">The Studio</h1>
   <p class="alt-title">or, Your Pages, Performed</p>
   <div class="ornament" aria-hidden="true">❦</div>
   <p class="lede">Bring your own story, a book you've written or a tale you tell at bedtime, and hear it the way the library sounds: a voice for every character, weather and music made for the story, and a finished audiobook at the end.</p>
+  <p class="price" style="font-size:1.3rem">From <b data-price="studio-from">$9</b>, priced by length. Hear the opening free before you pay.</p>
+  <p class="actions" style="justify-content:center"><a class="btn" href="#studio" data-track="cta_click" data-track-cta="studio_start">Start with your manuscript</a> <a class="btn ghost" href="#prices">See prices</a></p>
+  <figure class="frontispiece" style="margin-top:2rem">
+    <img src="assets/land/land_town.webp" alt="A watercolour of a walled town in the sun, a road lined with people leading to its gate." style="aspect-ratio:3/1">
+      </figure>
 </section>
 
-<section class="section" style="padding-top:1rem">
-  <div class="steps">
-    <div class="step">
-      <img class="paint dab" src="assets/paint/blob1.png" alt="">
-      <span class="num">the first</span>
-      <h3>Bring your pages</h3>
-      <p>Paste a story, or upload a manuscript. Chapters become chapters, and dialogue is found wherever someone speaks.</p>
-    </div>
-    <div class="step">
-      <img class="paint dab" src="assets/paint/blob2.png" alt="">
-      <span class="num">the second</span>
-      <h3>Meet your cast</h3>
-      <p>Every character gets a voice of their own. Hear each one, recast who you like, and choose the weather of the piece.</p>
-    </div>
-    <div class="step">
-      <img class="paint dab" src="assets/paint/blob6.png" alt="">
-      <span class="num">the third</span>
-      <h3>Hear it performed</h3>
-      <p>Rain where it rains, a knock where someone knocks, music under the quiet parts. A mastered audiobook you can keep.</p>
-    </div>
-  </div>
-</section>
 
-<main class="section studio hidden" id="studio" style="padding-top:1rem">
+
+<main class="section studio" id="studio" style="padding-top:1rem">
   <p id="offline" class="panel note hidden">The Studio needs the StoryBook server, which isn't reachable from this page. Run <code>python -m storybook serve</code> and open <code>http://127.0.0.1:8000/studio.html</code>.</p>
 
   <!-- 1 ─────────────────────────── manuscript -->
@@ -78,7 +58,7 @@
     <label class="field" for="text">Manuscript</label>
     <textarea id="text" placeholder="“Halloa! Below there!” When he heard a voice thus calling to him, he was standing at the door of his box…"></textarea>
     <p class="note">Put dialogue in quotation marks and the director will find who is speaking. Chapter headings such as <em>CHAPTER I</em> become chapter markers.</p>
-    <div class="actions"><button class="btn" type="submit" id="analyze">Read it through</button><span class="status" id="s1"></span></div>
+    <div class="actions"><button class="btn" type="submit" id="analyze">See my cast and price</button><span class="status" id="s1"></span></div>
   </form>
 
   <!-- 2 ─────────────────────────── casting -->
@@ -137,47 +117,46 @@
   </section>
 </main>
 
-<section class="section hidden" id="prices" style="padding-top:0">
+<section class="section" id="prices" style="padding-top:0">
   <div class="panel reserve">
     <p class="chapter-no">the price of a recording</p>
     <h2>Priced by the length of your pages</h2>
     <p class="blurb">Every recording has the full cast, the soundscape and the score, and is mastered, with chapter markers. Hear the opening free before you pay.</p>
-    <ul class="price-list" id="tiers"></ul>
+    <ul class="price-list" id="tiers">
+      <li><span class="t">A short story<small>up to 2,000 words, about 13 minutes of listening</small></span><span class="dots"></span><b>$9</b></li>
+      <li><span class="t">A long story<small>up to 7,500 words, about 50 minutes</small></span><span class="dots"></span><b>$19</b></li>
+      <li><span class="t">A novelette<small>up to 15,000 words, about 1 hour 40</small></span><span class="dots"></span><b>$29</b></li>
+      <li><span class="t">A novella<small>up to about 25,000 words</small></span><span class="dots"></span><b>$45</b></li>
+    </ul>
   </div>
 </section>
 
-<section class="section" id="join" style="padding-top:0">
-  <div class="panel reserve">
-    <p class="chapter-no">the waitlist</p>
-    <h2>Be the first in the Studio</h2>
-    <p class="blurb">We're opening the Studio to a small group first. Leave your email and we'll let you know when there's a place for you.</p>
-    <form id="wform" novalidate>
-      <span class="field" id="use-l">What would you make? <span class="note">(optional)</span></span>
-      <div class="choice-row" role="radiogroup" aria-labelledby="use-l" style="margin-bottom:1.2rem">
-        <label><input type="radio" name="use" value="my_book"> <span>my own book</span></label>
-        <label><input type="radio" name="use" value="kids_stories"> <span>stories for my kids</span></label>
-        <label><input type="radio" name="use" value="classroom"> <span>for a classroom</span></label>
-        <label><input type="radio" name="use" value="podcast_video"> <span>a podcast or video</span></label>
-        <label><input type="radio" name="use" value="other"> <span>something else</span></label>
-      </div>
-      <label class="field" for="note">Tell us about it <span class="note">(optional)</span></label>
-      <textarea id="note" maxlength="500" rows="3" style="min-height:5.5rem" placeholder="A fantasy novel with a dragon who only speaks in rhyme…"></textarea>
-      <label class="field" for="email" style="margin-top:1.2rem">Your email</label>
-      <div class="email-row">
-        <input type="email" id="email" autocomplete="email" placeholder="you@example.com" required>
-        <button class="btn" type="submit" id="wgo">Join the waitlist</button>
-      </div>
-      <!-- a field people never see; bots fill it in -->
-      <div aria-hidden="true" style="position:absolute;left:-9999px"><label>Website <input type="text" id="website" tabindex="-1" autocomplete="off"></label></div>
-      <p class="note">Only for news about the Studio and StoryBook, now and then. Reply to any email to be removed.</p>
-      <p class="error hidden" id="werror" role="alert"></p>
-    </form>
-    <div id="wdone" class="hidden" aria-live="polite">
-      <p class="marginalia" style="font-size:1.8rem">You're on the list ~</p>
-      <p>Thank you. We'll write as soon as there's a place in the Studio for you. In the meantime, the <a href="./#tales">library</a> is open.</p>
+<section class="section" style="padding-top:0">
+  <div class="steps">
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob1.png" alt="">
+      <span class="num">the first</span>
+      <h3>Bring your pages</h3>
+      <p>Paste a story, or upload a manuscript. Chapters become chapters, and dialogue is found wherever someone speaks.</p>
+    </div>
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob2.png" alt="">
+      <span class="num">the second</span>
+      <h3>Meet your cast</h3>
+      <p>Every character gets a voice of their own. Hear each one, recast who you like, and choose the weather of the piece.</p>
+    </div>
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob6.png" alt="">
+      <span class="num">the third</span>
+      <h3>Hear it performed</h3>
+      <p>Rain where it rains, a knock where someone knocks, music under the quiet parts. A mastered audiobook you can keep.</p>
     </div>
   </div>
 </section>
+
+
+
+
 
 <footer class="colophon">
   <p class="finis">Finis.</p>

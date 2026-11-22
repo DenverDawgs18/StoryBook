@@ -1,10 +1,9 @@
-// The Studio: a waitlist until checkout is open, then manuscript → cast → free opening → checkout.
+// The Studio: manuscript → cast → a free recording of the opening → checkout, priced by length.
 import { mountPlayer, esc, fmt } from "./player.js";
 
 const $ = (id) => document.getElementById(id);
 const ICON_PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5c0-.8.9-1.3 1.6-.9l11 7a1.1 1.1 0 0 1 0 1.8l-11 7c-.7.4-1.6-.1-1.6-.9z" fill="currentColor"/></svg>';
 const MOOD_WASH = { night: "blob4", storm: "blob2", hearth: "blob3", epic: "blob6", water: "blob2", pastoral: "blob1", quiet: "blob5" };
-const EMAIL_RX = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
 
 let voices = [];
 let analysis = null;
@@ -22,46 +21,24 @@ async function api(path, opts) {
 }
 const showError = (el, msg) => { $(el).textContent = msg; $(el).classList.toggle("hidden", !msg); };
 
-// ------------------------------------------------------------ the waitlist (while checkout isn't open)
-$("wform").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const email = $("email").value.trim();
-  if (!EMAIL_RX.test(email)) { showError("werror", "Please check your email address."); $("email").focus(); return; }
-  showError("werror", "");
-  $("wgo").disabled = true;
-  const use = (document.querySelector('input[name="use"]:checked') || {}).value || "";
-  try {
-    await api("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, source: "studio", use, note: $("note").value.trim(), website: $("website").value }) });
-    window.sbTrack?.("subscribe", { source: "studio", use: use || "none", has_note: !!$("note").value.trim() });
-    $("wform").classList.add("hidden");
-    $("wdone").classList.remove("hidden");
-  } catch (err) {
-    showError("werror", err instanceof TypeError ? "The waitlist needs the StoryBook server, which this copy of the site isn't connected to." : err.message);
-  } finally {
-    $("wgo").disabled = false;
-  }
-});
-
 // ------------------------------------------------------------ boot
+const listen = (w) => { const m = Math.round(w / 150); return m < 60 ? `${m} minutes` : `${Math.floor(m / 60)} hr ${m % 60 ? (m % 60) + " min" : ""}`.trim(); };
 let config = {};
-try { config = await api("/api/config"); } catch { /* static copy of the site: waitlist only */ }
-if (config.payments) {
-  $("kicker").textContent = config.payments_mode === "test" ? "open (test mode: only you can see this)" : "now open";
-  $("join").classList.add("hidden");
-  $("studio").classList.remove("hidden");
-  $("prices").classList.remove("hidden");
-  $("tiers").innerHTML = config.pricing.studio.map((t, i, all) => `
+try { config = await api("/api/config"); } catch { /* static copy of the site */ }
+if (config.pricing) {
+  const st = config.pricing.studio;
+  document.querySelectorAll('[data-price="studio-from"]').forEach((el) => (el.textContent = st[0].price));
+  $("tiers").innerHTML = st.map((t, i, all) => `
     <li><span class="t">${esc(t.name)}<small>${i === all.length - 1 ? `over ${(t.min_words - 1).toLocaleString()} words, up to about ${(Math.round(config.studio_max_chars / 6 / 1000) * 1000).toLocaleString()} words`
-      : `up to ${t.max_words.toLocaleString()} words, about ${fmt(t.max_words / 150 * 60)} of listening`}</small></span><span class="dots"></span><b>${esc(t.price)}</b></li>`).join("");
-  try {
-    voices = await api("/api/voices");
-    $("narrator").innerHTML = voiceOptions("bm_lewis");
-    wirePreview(document.querySelector('.preview[data-for="narrator"]'), () => $("narrator").value);
-  } catch {
-    $("offline").classList.remove("hidden");
-    $("analyze").disabled = true;
-  }
+      : `up to ${t.max_words.toLocaleString()} words, about ${listen(t.max_words)} of listening`}</small></span><span class="dots"></span><b>${esc(t.price)}</b></li>`).join("");
+}
+try {
+  voices = await api("/api/voices");
+  $("narrator").innerHTML = voiceOptions("bm_lewis");
+  wirePreview(document.querySelector('.preview[data-for="narrator"]'), () => $("narrator").value);
+} catch {
+  $("offline").classList.remove("hidden");
+  $("analyze").disabled = true;
 }
 
 function voiceOptions(selected) {
@@ -257,7 +234,7 @@ async function watch(id) {
 }
 $("again").addEventListener("click", () => location.assign("studio.html"));
 const m = location.hash.match(/job=([0-9a-f]{12})/);
-if (m && config.payments) {
+if (m) {
   $("step1").classList.add("hidden");
   $("step3").classList.remove("hidden");
   watch(m[1]);

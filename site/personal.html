@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A Story for Your Child — StoryBook</title>
-<meta name="description" content="A full-cast, soundscaped fairy tale with your child as the hero. Hear a free one-minute preview with their name in it.">
+<meta name="description" content="A full-cast, soundscaped fairy tale with your child as the hero, $6. Hear a free one-minute preview with their name in it first.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/analytics.js" defer></script>
@@ -27,7 +27,8 @@
   <h1 style="font-size:clamp(2.6rem,7vw,5.2rem);margin-top:.2rem">Starring<br><em style="color:var(--viridian)">someone very small</em></h1>
   <div class="ornament" aria-hidden="true">❦</div>
   <p class="lede">An old fairy tale, performed by a full cast with its own soundscape, and with your child written in as the hero. Their name in the story, their own voice in the cast, a dedication from you, and a goodnight at the end.</p>
-  <p class="actions"><a class="btn" href="#make" data-track="cta_click" data-track-cta="personal_top">Hear a free preview</a></p>
+  <p class="price" style="font-size:1.35rem">Free one-minute preview · the full story <b data-price="personal">$6</b></p>
+  <p class="actions" style="justify-content:center"><a class="btn" href="#make" data-track="cta_click" data-track-cta="personal_top">Start with their name</a></p>
 </section>
 
 <!-- ───────────────────────────── an example -->
@@ -55,7 +56,7 @@
     <p class="chapter-no">now, yours</p>
     <h2>Who is the story for?</h2>
     <div class="ornament" aria-hidden="true">❦</div>
-    <p>Tell us their name and choose a tale. In about a minute you'll hear the opening of their story, free.</p>
+    <p>Tell us their name and choose a tale. Hear a free one-minute preview with their name in it, then buy the full story for <b data-price="personal">$6</b>. Or skip straight to buying.</p>
   </div>
 
   <form class="panel personal-form" id="pform" novalidate>
@@ -113,7 +114,10 @@
     </details>
 
     <div class="actions" style="margin-top:1.8rem">
-      <button class="btn" type="submit" id="go">Hear their preview</button>
+      <button class="btn" type="submit" id="go">Hear their free preview</button>
+      <button class="btn ghost" type="button" id="go-buy">Skip the preview: buy now · $6</button>
+    </div>
+    <div>
       <span class="status" id="pstatus" aria-live="polite"></span>
     </div>
     <p class="error hidden" id="perror" role="alert"></p>
@@ -126,35 +130,23 @@
 <section class="section" id="reserve" style="padding-top:0">
   <div class="panel reserve">
     <p class="chapter-no">the whole story</p>
-    <h2 id="r-title">Reserve the full story</h2>
-    <p class="blurb" id="r-blurb">The full tale runs about five to seven minutes, from the dedication to the goodnight, with the whole cast and soundscape. Full stories are opening soon. Leave your email and you'll be among the first to get one.</p>
-    <p class="price" id="price"></p>
-    <div id="buy" class="hidden">
-      <div class="actions" style="justify-content:center"><button class="btn" type="button" id="bgo">Get the full story</button></div>
-      <p class="note">You'll pay on Stripe's secure checkout page, then come straight back here while the story is recorded. It takes a few minutes, and you can download the MP3 to keep.</p>
-      <p class="error hidden" id="berror" role="alert"></p>
-    </div>
-    <form id="rform" novalidate>
-      <label class="field" for="email">Your email</label>
-      <div class="email-row">
-        <input type="email" id="email" autocomplete="email" placeholder="you@example.com" required>
-        <button class="btn" type="submit" id="rgo">Reserve it</button>
-      </div>
-      <!-- a field people never see; bots fill it in -->
-      <div aria-hidden="true" style="position:absolute;left:-9999px"><label>Website <input type="text" id="website" tabindex="-1" autocomplete="off"></label></div>
-      <p class="note">We'll use your email only to send this story and tell you when full stories open. We keep the first name and choices above to make it. Reply to any email from us to have it all deleted.</p>
-      <p class="error hidden" id="rerror" role="alert"></p>
-    </form>
-    <div id="rdone" class="hidden" aria-live="polite">
-      <p class="marginalia" style="font-size:1.8rem">You're on the list ~</p>
-      <p id="rdone-text"></p>
-    </div>
+    <h2 id="r-title">Get the full story</h2>
+    <p class="blurb" id="r-blurb">Five to seven minutes, from the dedication to the goodnight, performed by the whole cast with its own soundscape, and your child the hero all the way through.</p>
+    <ul class="buy-points">
+      <li>Their name, spoken in the story, and their own voice in the cast</li>
+      <li>A dedication from you at the start, and a goodnight at the end</li>
+      <li>Ready in a few minutes. Play it here or download the MP3 to keep</li>
+    </ul>
+    <p class="price" style="font-size:1.6rem"><b data-price="personal">$6</b> a story</p>
+    <div class="actions" style="justify-content:center"><button class="btn" type="button" id="bgo">Buy the full story · $6</button></div>
+    <p class="note">Secure checkout by Stripe. Cards, Apple Pay and Google Pay.</p>
+    <p class="error hidden" id="berror" role="alert"></p>
   </div>
 </section>
 
 <!-- ───────────────────────────── custom stories: interest list -->
 <section class="section custom-story" id="custom" style="padding-top:0">
-  <div class="panel reserve">
+  <div class="panel reserve quiet">
     <p class="chapter-no">coming next</p>
     <h2>A brand-new story, written for your child</h2>
     <p class="blurb">Not an old tale with their name in it, but a new one: their dog, their best friend, the dragon they're sure lives under the stairs, all performed by the full cast with its own soundscape. Leave your email and we'll tell you when it's ready.</p>

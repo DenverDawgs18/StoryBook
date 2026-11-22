@@ -230,13 +230,13 @@ and while anything renders the server pings itself once a minute so Fly doesn't 
 
 | Fly secret | |
 | --- | --- |
-| `STRIPE_SECRET_KEY` | `sk_test_...` or `sk_live_...`. Without it, the Studio stays a waitlist and the personal page keeps "Reserve". |
+| `STRIPE_SECRET_KEY` | `sk_test_...` or `sk_live_...`. Without it, checkout says it is opening shortly. |
 | `STRIPE_WEBHOOK_SECRET` | `whsec_...` from a webhook endpoint at `https://<site>/api/stripe/webhook` sending `checkout.session.completed` and `checkout.session.async_payment_succeeded`. Recommended: it catches buyers who close the tab before returning. |
 | `PERSONAL_PRICE` | dollars, default `6` |
 | `STUDIO_TIERS` | `max_words:dollars,...`, default `2000:9,7500:19,15000:29,25000:45`. The last tier covers anything up to the Studio's length limit. |
 
-With a **test** key the buy buttons appear only for the owner, logged in at `/admin`, so nobody else can get a
-free recording with Stripe's test card `4242 4242 4242 4242`. Switching to a **live** key opens them to everyone.
+The buy buttons always show, with their prices. Without a key, checkout says it's opening shortly. With a **test**
+key, Stripe's page is in test mode and takes only test cards such as `4242 4242 4242 4242`; a **live** key takes real money.
 `POST /api/jobs` (render a whole manuscript without paying) is now owner-only.
 
 The personal page also collects emails from parents who want a brand-new story written for their child

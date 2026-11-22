@@ -1,8 +1,6 @@
 // "A story for your child": examples, a free personalised preview, and the reserve sign-up.
 import { mountPlayer, esc } from "./player.js";
 
-// The launch price shown on the page. Set to "" to hide it.
-const PRICE = "Planned launch price: $6 a story.";
 
 const $ = (id) => document.getElementById(id);
 const NAME_RX = /^[\p{L}]+(?:[ '’\-][\p{L}]+)*$/u;
@@ -79,7 +77,7 @@ function check(req) {
 const showError = (el, msg) => { $(el).textContent = msg; $(el).classList.toggle("hidden", !msg); };
 
 let previewId = "";
-let buying = false; // set once /api/config answers
+let fullPrice = "$6"; // updated from /api/config
 let previewAudio = null;
 
 $("pform").addEventListener("submit", async (e) => {
@@ -108,7 +106,9 @@ $("pform").addEventListener("submit", async (e) => {
     window.sbTrack?.("preview_ready", { ...choices(req), seconds: Math.round((Date.now() - startedAt) / 1000) });
     $("pstatus").textContent = `Here is ${req.name}'s story ~`;
     $("presult").insertAdjacentHTML("beforeend",
-      `<p class="note" style="margin-top:1rem">Like it? <a href="#reserve">${buying ? "Get" : "Reserve"} ${esc(req.name)}'s full story</a>.</p>`);
+      `<div class="after-preview"><p>Like it? The full story runs five to seven minutes, from the dedication to the goodnight.</p>
+       <button class="btn" type="button" id="pbuy">Buy ${esc(req.name)}'s full story · ${esc(fullPrice)}</button>
+       <p class="note">Secure checkout by Stripe. You'll come straight back here while it's recorded, then play it or download the MP3.</p></div>`);
     previewAudio.play().catch(() => { /* autoplay may be blocked; the play button is there */ });
   } catch (err) {
     const offline = err instanceof TypeError || /\(404\)|\(405\)/.test(err.message);
@@ -136,77 +136,53 @@ async function poll(id, name) {
   }
 }
 
-// ------------------------------------------------------------------ buy (when checkout is open) or reserve
-let config = {};
-try { config = await (await fetch("/api/config")).json(); } catch { /* static copy: reserve only */ }
-buying = !!config.payments;
-const fullPrice = config.pricing?.personal?.price || "";
-const reserveTitle = (n) => buying ? (n ? `Get ${n}'s full story` : "Get the full story") : (n ? `Reserve ${n}'s full story` : "Reserve the full story");
-if (buying) {
-  $("rform").classList.add("hidden");
-  $("buy").classList.remove("hidden");
-  $("r-blurb").textContent = "The full tale runs about five to seven minutes, from the dedication to the goodnight, with the whole cast and soundscape, and your child as the hero all the way through.";
-  $("price").textContent = `${fullPrice} a story${config.payments_mode === "test" ? " (test mode: only you can see this)" : ""}`;
-  $("bgo").textContent = `Get the full story · ${fullPrice}`;
-  $("r-title").textContent = reserveTitle("");
-} else if (PRICE) $("price").textContent = PRICE;
-$("name").addEventListener("input", () => {
-  const n = $("name").value.trim();
-  $("r-title").textContent = reserveTitle(n && NAME_RX.test(n) ? n : "");
-});
+// ------------------------------------------------------------------ buy
+const firstName = () => { const n = $("name").value.trim(); return n && NAME_RX.test(n) ? n : ""; };
+function labelButtons() {
+  const n = firstName();
+  const who = n ? `${n}'s` : "the";
+  $("r-title").textContent = n ? `Get ${n}'s full story` : "Get the full story";
+  $("bgo").textContent = `Buy ${who} full story · ${fullPrice}`;
+  $("go-buy").textContent = `Skip the preview: buy now · ${fullPrice}`;
+  document.querySelectorAll('[data-price="personal"]').forEach((el) => (el.textContent = fullPrice));
+  const after = $("pbuy"); if (after) after.textContent = `Buy ${who} full story · ${fullPrice}`;
+}
+try {
+  const config = await (await fetch("/api/config")).json();
+  if (config.pricing?.personal?.price) fullPrice = config.pricing.personal.price;
+} catch { /* static copy of the site */ }
+labelButtons();
+$("name").addEventListener("input", labelButtons);
 
-$("bgo").addEventListener("click", async () => {
+async function buy(errEl, btn, where) {
   const req = request();
   const problem = check(req);
   if (problem) {
-    showError("berror", "First, tell us who the story is for, above.");
+    showError("perror", problem);
+    if (errEl !== "perror") showError(errEl, "First, tell us who the story is for, above.");
     $("make").scrollIntoView({ behavior: "smooth" });
+    $("name").focus();
     return;
   }
-  showError("berror", "");
-  $("bgo").disabled = true;
+  showError(errEl, "");
+  btn.disabled = true;
+  const label = btn.textContent;
+  btn.textContent = "Opening the secure checkout…";
   try {
     const { url } = await api("/api/checkout/personal", {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(req),
     });
-    window.sbTrack?.("checkout_started", { kind: "personal", ...choices(req), had_preview: !!previewId });
+    window.sbTrack?.("checkout_started", { kind: "personal", where, ...choices(req), had_preview: !!previewId });
     location.assign(url);
   } catch (err) {
-    showError("berror", err.message);
-    $("bgo").disabled = false;
+    showError(errEl, err.message);
+    btn.disabled = false;
+    btn.textContent = label;
   }
-});
-$("rform").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const req = request();
-  const problem = check(req);
-  if (problem) {
-    showError("rerror", "First, tell us who the story is for, above.");
-    $("make").scrollIntoView({ behavior: "smooth" });
-    return;
-  }
-  const email = $("email").value.trim();
-  if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) { showError("rerror", "Please check your email address."); return; }
-  showError("rerror", "");
-  $("rgo").disabled = true;
-  try {
-    await api("/api/personal/signup", {
-      method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...req, email, preview_id: previewId, website: $("website").value }),
-    });
-    window.sbTrack?.("signup_submitted", { ...choices(req), had_preview: !!previewId });
-    $("rform").classList.add("hidden");
-    $("rdone").classList.remove("hidden");
-    const tale = document.querySelector('input[name="tale"]:checked').closest("label").querySelector("h3").textContent;
-    $("rdone-text").textContent = `We've saved ${req.name}'s place for ${tale}. We'll email ${email} as soon as full stories open.`;
-  } catch (err) {
-    const offline = err instanceof TypeError || /\(404\)|\(405\)/.test(err.message);
-    showError("rerror", offline ? "Sign-ups need the StoryBook server, which this copy of the site isn't connected to." : err.message);
-    window.sbTrack?.("signup_failed", { tale: req.tale, reason: offline ? "offline" : err.message.slice(0, 80) });
-  } finally {
-    $("rgo").disabled = false;
-  }
-});
+}
+$("bgo").addEventListener("click", () => buy("berror", $("bgo"), "panel"));
+$("go-buy").addEventListener("click", () => buy("perror", $("go-buy"), "form"));
+$("presult").addEventListener("click", (e) => { if (e.target.id === "pbuy") buy("perror", e.target, "after_preview"); });
 
 // ------------------------------------------------------------------ custom stories: interest list
 $("cform").addEventListener("submit", async (e) => {

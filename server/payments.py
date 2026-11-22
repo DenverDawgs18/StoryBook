@@ -18,8 +18,8 @@ Configured with environment variables (Fly secrets):
                            the last tier also covers anything up to the Studio's length limit
     PUBLIC_URL             the site's address for Stripe's return links (else taken from the request)
 
-With a test key (sk_test_), the buy buttons only appear for the owner, logged in at /admin, so
-nobody else can get a recording with Stripe's test card. With a live key, everyone sees them.
+The buy buttons always show. Without a key, checkout answers "opening shortly". With a test key
+(sk_test_) Stripe's page is in test mode and only takes test cards; a live key takes real money.
 """
 from __future__ import annotations
 
@@ -108,9 +108,8 @@ def mode() -> str:
 
 
 def enabled_for(request: Request) -> bool:
-    """Buy buttons show for everyone in live mode, and only for the logged-in owner in test mode."""
-    m = mode()
-    return m == "live" or (m == "test" and analytics.authed(request))
+    """Whether checkout can take an order right now (any Stripe key is set)."""
+    return mode() != "off"
 
 
 def _stripe():
@@ -176,7 +175,7 @@ def _needs_restart(o: dict) -> bool:
 def create_checkout(request: Request, kind: str, payload: dict, cents: int, title: str, summary: str,
                     cancel_path: str, words: int = 0) -> dict:
     if not enabled_for(request):
-        raise HTTPException(503, "Checkout isn't open yet.")
+        raise HTTPException(503, "Checkout is opening shortly. Please try again in a little while.")
     oid = uuid.uuid4().hex[:24]
     base = _base(request)
     link = f"{base}/order.html?o={oid}"
@@ -325,7 +324,7 @@ def admin_orders(request: Request):
     p = pricing()
     tiers = " · ".join(f'{t["name"]} (up to {t["max_words"]:,} words) {t["price"]}' for t in p["studio"])
     body = f"""<h2>Orders</h2>
-<p class="range note">Payments: <b>{mode()}</b>{" (only you see the buy buttons)" if mode() == "test" else ""} ·
+<p class="range note">Payments: <b>{mode()}</b>{" (Stripe only takes test cards; set a sk_live_ key to take real payments)" if mode() == "test" else " (no Stripe key: buy buttons say checkout is opening shortly)" if mode() == "off" else ""} ·
 {len(live)} paid live order{"" if len(live) == 1 else "s"} · {_money(revenue)} taken
 <span style="float:right"><a href="/admin">analytics</a> · <a href="/admin/signups">sign-ups</a></span></p>
 <p class="note">Personalised story {p["personal"]["price"]} · Studio: {H.escape(tiers)}</p>
