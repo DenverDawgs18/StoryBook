@@ -1,0 +1,1402 @@
+{
+ "meta": {
+  "title": "The Travelling Musicians",
+  "author": "The Brothers Grimm",
+  "year": 1819,
+  "source": "https://www.gutenberg.org/ebooks/2591",
+  "blurb": "An old donkey, a tired dog, a cat out of favour and a cockerel bound for the soup pot set off together to be musicians in the great city. They never get there. They find a house full of robbers instead.\n",
+  "mood": "Four old friends and one terrible concert",
+  "art": "land_musicians",
+  "caption": "“and there they are, I dare say, at this very day”",
+  "order": 9,
+  "shelf": "fairy",
+  "labels": {
+   "host": "the host",
+   "ass": "the donkey",
+   "dog": "the dog",
+   "cat": "the cat",
+   "cock": "Chanticleer the cockerel",
+   "robber": "the robber"
+  }
+ },
+ "duration": 570.11,
+ "chapters": [
+  {
+   "title": "The Travelling Musicians. By the Brothers Grimm.",
+   "start": 37.03
+  }
+ ],
+ "paragraphs": [
+  {
+   "start": 5.0,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "Kassel, eighteen-nineteen. The Brothers Grimm are preparing the second edition of their Household Tales, and they add a new story, gathered from tellings in the country around Paderborn.",
+     "start": 5.0,
+     "end": 16.98,
+     "phrases": [
+      [
+       "Kassel, eighteen-nineteen. The Brothers Grimm are preparing the second edition of their Household Tales, and they add a new story, gathered from tellings in the country around Paderborn.",
+       5.0,
+       16.98
+      ]
+     ]
+    }
+   ],
+   "end": 16.98
+  },
+  {
+   "start": 17.83,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "In German it is called the Town Musicians of Bremen. Its four heroes are all old, all out of work, and all, as far as their owners are concerned, finished. This is the English translation of eighteen twenty-three.",
+     "start": 17.83,
+     "end": 33.18,
+     "phrases": [
+      [
+       "In German it is called the Town Musicians of Bremen.",
+       17.83,
+       21.51
+      ],
+      [
+       "Its four heroes are all old, all out of work, and all, as far as their owners are concerned, finished.",
+       21.98,
+       28.82
+      ],
+      [
+       "This is the English translation of eighteen twenty-three.",
+       29.28,
+       33.18
+      ]
+     ]
+    }
+   ],
+   "end": 33.18
+  },
+  {
+   "start": 37.03,
+   "end": 40.1,
+   "heading": true,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The Travelling Musicians. By the Brothers Grimm.",
+     "start": 37.03,
+     "end": 40.1,
+     "phrases": []
+    }
+   ]
+  },
+  {
+   "start": 43.2,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "An honest farmer had once an ass that had been a faithful servant to him a great many years, but was now growing old and every day more and more unfit for work. His master therefore was tired of keeping him and began to think of putting an end to him; but the ass, who saw that some mischief was in the wind, took himself slyly off, and began his journey towards the great city",
+     "start": 43.2,
+     "end": 67.68,
+     "phrases": [
+      [
+       "An honest farmer had once an ass that had been a faithful servant to him a great many years, but was now growing old and every day more and more unfit for work.",
+       43.2,
+       53.61
+      ],
+      [
+       "His master therefore was tired of keeping him and began to think of putting an end to him;",
+       54.06,
+       59.49
+      ],
+      [
+       "but the ass, who saw that some mischief was in the wind, took himself slyly off, and began his journey towards the great city",
+       59.79,
+       67.68
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "For there,",
+     "start": 67.9,
+     "end": 68.94,
+     "phrases": [
+      [
+       "For there,",
+       67.9,
+       68.94
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "thought he",
+     "start": 69.16,
+     "end": 70.1,
+     "phrases": [
+      [
+       "thought he",
+       69.16,
+       70.1
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "I may turn musician.",
+     "start": 70.32,
+     "end": 72.22,
+     "phrases": [
+      [
+       "I may turn musician.",
+       70.32,
+       72.22
+      ]
+     ]
+    }
+   ],
+   "end": 72.22
+  },
+  {
+   "start": 73.07,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "After he had travelled a little way, he spied a dog lying by the roadside and panting as if he were tired.",
+     "start": 73.07,
+     "end": 79.4,
+     "phrases": [
+      [
+       "After he had travelled a little way, he spied a dog lying by the roadside and panting as if he were tired.",
+       73.07,
+       79.4
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "What makes you pant so, my friend?",
+     "start": 79.62,
+     "end": 82.11,
+     "phrases": [
+      [
+       "What makes you pant so, my friend?",
+       79.62,
+       82.11
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass.",
+     "start": 82.33,
+     "end": 83.51,
+     "phrases": [
+      [
+       "said the ass.",
+       82.33,
+       83.51
+      ]
+     ]
+    },
+    {
+     "speaker": "dog",
+     "text": "Alas!",
+     "start": 83.73,
+     "end": 84.54,
+     "phrases": [
+      [
+       "Alas!",
+       83.73,
+       84.54
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the dog",
+     "start": 84.76,
+     "end": 85.75,
+     "phrases": [
+      [
+       "said the dog",
+       84.76,
+       85.75
+      ]
+     ]
+    },
+    {
+     "speaker": "dog",
+     "text": "my master was going to knock me on the head, because I am old and weak, and can no longer make myself useful to him in hunting; so I ran away; but what can I do to earn my livelihood?",
+     "start": 85.97,
+     "end": 98.28,
+     "phrases": [
+      [
+       "my master was going to knock me on the head, because I am old and weak, and can no longer make myself useful to him in hunting;",
+       85.97,
+       94.13
+      ],
+      [
+       "so I ran away;",
+       94.45,
+       95.76
+      ],
+      [
+       "but what can I do to earn my livelihood?",
+       96.07,
+       98.28
+      ]
+     ]
+    }
+   ],
+   "end": 98.28
+  },
+  {
+   "start": 99.13,
+   "segments": [
+    {
+     "speaker": "ass",
+     "text": "Hark ye!",
+     "start": 99.13,
+     "end": 100.46,
+     "phrases": [
+      [
+       "Hark ye!",
+       99.13,
+       100.46
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass",
+     "start": 100.68,
+     "end": 101.89,
+     "phrases": [
+      [
+       "said the ass",
+       100.68,
+       101.89
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "I am going to the great city to turn musician: suppose you go with me, and try what you can do in the same way?",
+     "start": 102.11,
+     "end": 109.9,
+     "phrases": [
+      [
+       "I am going to the great city to turn musician:",
+       102.11,
+       105.54
+      ],
+      [
+       "suppose you go with me, and try what you can do in the same way?",
+       105.85,
+       109.9
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "The dog said he was willing, and they jogged on together.",
+     "start": 110.12,
+     "end": 113.54,
+     "phrases": [
+      [
+       "The dog said he was willing, and they jogged on together.",
+       110.12,
+       113.54
+      ]
+     ]
+    }
+   ],
+   "end": 113.54
+  },
+  {
+   "start": 115.39,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "They had not gone far before they saw a cat sitting in the middle of the road and making a most rueful face.",
+     "start": 115.39,
+     "end": 121.86,
+     "phrases": [
+      [
+       "They had not gone far before they saw a cat sitting in the middle of the road and making a most rueful face.",
+       115.39,
+       121.86
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "Pray, my good lady,",
+     "start": 122.08,
+     "end": 124.01,
+     "phrases": [
+      [
+       "Pray, my good lady,",
+       122.08,
+       124.01
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass",
+     "start": 124.23,
+     "end": 125.44,
+     "phrases": [
+      [
+       "said the ass",
+       124.23,
+       125.44
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "what's the matter with you? You look quite out of spirits!",
+     "start": 125.66,
+     "end": 130.12,
+     "phrases": [
+      [
+       "what's the matter with you?",
+       125.66,
+       127.52
+      ],
+      [
+       "You look quite out of spirits!",
+       127.98,
+       130.12
+      ]
+     ]
+    }
+   ],
+   "end": 130.12
+  },
+  {
+   "start": 130.97,
+   "segments": [
+    {
+     "speaker": "cat",
+     "text": "Ah, me!",
+     "start": 130.97,
+     "end": 131.78,
+     "phrases": [
+      [
+       "Ah, me!",
+       130.97,
+       131.78
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the cat",
+     "start": 132.0,
+     "end": 133.16,
+     "phrases": [
+      [
+       "said the cat",
+       132.0,
+       133.16
+      ]
+     ]
+    },
+    {
+     "speaker": "cat",
+     "text": "how can one be in good spirits when one's life is in danger? Because I am beginning to grow old, and had rather lie at my ease by the fire than run about the house after the mice, my mistress laid hold of me, and was going to drown me; and though I have been lucky enough to get away from her, I do not know what I am to live upon.",
+     "start": 133.38,
+     "end": 157.17,
+     "phrases": [
+      [
+       "how can one be in good spirits when one's life is in danger?",
+       133.38,
+       137.55
+      ],
+      [
+       "Because I am beginning to grow old, and had rather lie at my ease by the fire than run about the house after the mice, my mistress laid hold of me, and was going to drown me;",
+       138.0,
+       151.01
+      ],
+      [
+       "and though I have been lucky enough to get away from her, I do not know what I am to live upon.",
+       151.31,
+       157.17
+      ]
+     ]
+    }
+   ],
+   "end": 157.17
+  },
+  {
+   "start": 158.02,
+   "segments": [
+    {
+     "speaker": "ass",
+     "text": "Oh,",
+     "start": 158.02,
+     "end": 158.84,
+     "phrases": [
+      [
+       "Oh,",
+       158.02,
+       158.84
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass",
+     "start": 159.06,
+     "end": 160.27,
+     "phrases": [
+      [
+       "said the ass",
+       159.06,
+       160.27
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "by all means go with us to the great city; you are a good night singer, and may make your fortune as a musician.",
+     "start": 160.49,
+     "end": 167.89,
+     "phrases": [
+      [
+       "by all means go with us to the great city;",
+       160.49,
+       163.49
+      ],
+      [
+       "you are a good night singer, and may make your fortune as a musician.",
+       163.79,
+       167.89
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "The cat was pleased with the thought, and joined the party.",
+     "start": 168.11,
+     "end": 171.56,
+     "phrases": [
+      [
+       "The cat was pleased with the thought, and joined the party.",
+       168.11,
+       171.56
+      ]
+     ]
+    }
+   ],
+   "end": 171.56
+  },
+  {
+   "start": 173.41,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Soon afterwards, as they were passing by a farmyard, they saw a cock perched upon a gate, and screaming out with all his might and main.",
+     "start": 173.41,
+     "end": 181.56,
+     "phrases": [
+      [
+       "Soon afterwards, as they were passing by a farmyard, they saw a cock perched upon a gate, and screaming out with all his might and main.",
+       173.41,
+       181.56
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "Bravo!",
+     "start": 181.78,
+     "end": 182.89,
+     "phrases": [
+      [
+       "Bravo!",
+       181.78,
+       182.89
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass;",
+     "start": 183.11,
+     "end": 184.31,
+     "phrases": [
+      [
+       "said the ass;",
+       183.11,
+       184.31
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "upon my word, you make a famous noise; pray what is all this about?",
+     "start": 184.53,
+     "end": 190.0,
+     "phrases": [
+      [
+       "upon my word, you make a famous noise;",
+       184.53,
+       187.47
+      ],
+      [
+       "pray what is all this about?",
+       187.78,
+       190.0
+      ]
+     ]
+    }
+   ],
+   "end": 190.0
+  },
+  {
+   "start": 190.85,
+   "segments": [
+    {
+     "speaker": "cock",
+     "text": "Why,",
+     "start": 190.85,
+     "end": 191.44,
+     "phrases": [
+      [
+       "Why,",
+       190.85,
+       191.44
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the cock",
+     "start": 191.66,
+     "end": 192.79,
+     "phrases": [
+      [
+       "said the cock",
+       191.66,
+       192.79
+      ]
+     ]
+    },
+    {
+     "speaker": "cock",
+     "text": "I was just now saying that we should have fine weather for our washing-day, and yet my mistress and the cook don't thank me for my pains, but threaten to cut off my head tomorrow, and make broth of me for the guests that are coming on Sunday!",
+     "start": 193.01,
+     "end": 204.72,
+     "phrases": [
+      [
+       "I was just now saying that we should have fine weather for our washing-day, and yet my mistress and the cook don't thank me for my pains, but threaten to cut off my head tomorrow, and make broth of me for the guests that are coming on Sunday!",
+       193.01,
+       204.72
+      ]
+     ]
+    }
+   ],
+   "end": 204.72
+  },
+  {
+   "start": 205.57,
+   "segments": [
+    {
+     "speaker": "ass",
+     "text": "Heaven forbid!",
+     "start": 205.57,
+     "end": 207.19,
+     "phrases": [
+      [
+       "Heaven forbid!",
+       205.57,
+       207.19
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass",
+     "start": 207.41,
+     "end": 208.62,
+     "phrases": [
+      [
+       "said the ass",
+       207.41,
+       208.62
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "come with us Master Chanticleer; it will be better, at any rate, than staying here to have your head cut off! Besides, who knows? If we care to sing in tune, we may get up some kind of a concert; so come along with us.",
+     "start": 208.84,
+     "end": 224.41,
+     "phrases": [
+      [
+       "come with us Master Chanticleer;",
+       208.84,
+       211.56
+      ],
+      [
+       "it will be better, at any rate, than staying here to have your head cut off!",
+       211.87,
+       216.39
+      ],
+      [
+       "Besides, who knows? If we care to sing in tune, we may get up some kind of a concert;",
+       216.85,
+       222.16
+      ],
+      [
+       "so come along with us.",
+       222.47,
+       224.41
+      ]
+     ]
+    }
+   ],
+   "end": 224.41
+  },
+  {
+   "start": 225.26,
+   "segments": [
+    {
+     "speaker": "cock",
+     "text": "With all my heart,",
+     "start": 225.26,
+     "end": 226.28,
+     "phrases": [
+      [
+       "With all my heart,",
+       225.26,
+       226.28
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the cock: so they all four went on jollily together.",
+     "start": 226.5,
+     "end": 229.98,
+     "phrases": [
+      [
+       "said the cock: so they all four went on jollily together.",
+       226.5,
+       229.98
+      ]
+     ]
+    }
+   ],
+   "end": 229.98
+  },
+  {
+   "start": 232.33,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "They could not, however, reach the great city the first day; so when night came on, they went into a wood to sleep. The ass and the dog laid themselves down under a great tree, and the cat climbed up into the branches; while the cock, thinking that the higher he sat the safer he should be, flew up to the very top of the tree, and then, according to his custom, before he went to sleep, looked out on all sides of him to see that everything was well.",
+     "start": 232.33,
+     "end": 260.11,
+     "phrases": [
+      [
+       "They could not, however, reach the great city the first day;",
+       232.33,
+       235.99
+      ],
+      [
+       "so when night came on, they went into a wood to sleep.",
+       236.29,
+       239.65
+      ],
+      [
+       "The ass and the dog laid themselves down under a great tree, and the cat climbed up into the branches;",
+       240.1,
+       246.46
+      ],
+      [
+       "while the cock, thinking that the higher he sat the safer he should be, flew up to the very top of the tree, and then, according to his custom, before he went to sleep, looked out on all sides of him to see that everything was well.",
+       246.76,
+       260.11
+      ]
+     ]
+    }
+   ],
+   "end": 260.11
+  },
+  {
+   "start": 260.96,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "In doing this, he saw afar off something bright and shining and calling to his companions said",
+     "start": 260.96,
+     "end": 266.91,
+     "phrases": [
+      [
+       "In doing this, he saw afar off something bright and shining and calling to his companions said",
+       260.96,
+       266.91
+      ]
+     ]
+    },
+    {
+     "speaker": "cock",
+     "text": "There must be a house no great way off, for I see a light.",
+     "start": 267.13,
+     "end": 269.88,
+     "phrases": [
+      [
+       "There must be a house no great way off, for I see a light.",
+       267.13,
+       269.88
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "If that be the case,",
+     "start": 270.1,
+     "end": 271.83,
+     "phrases": [
+      [
+       "If that be the case,",
+       270.1,
+       271.83
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass",
+     "start": 272.05,
+     "end": 273.26,
+     "phrases": [
+      [
+       "said the ass",
+       272.05,
+       273.26
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "we had better change our quarters, for our lodging is not the best in the world!",
+     "start": 273.48,
+     "end": 278.15,
+     "phrases": [
+      [
+       "we had better change our quarters, for our lodging is not the best in the world!",
+       273.48,
+       278.15
+      ]
+     ]
+    }
+   ],
+   "end": 278.15
+  },
+  {
+   "start": 279.0,
+   "segments": [
+    {
+     "speaker": "dog",
+     "text": "Besides,",
+     "start": 279.0,
+     "end": 279.93,
+     "phrases": [
+      [
+       "Besides,",
+       279.0,
+       279.93
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "added the dog",
+     "start": 280.15,
+     "end": 281.32,
+     "phrases": [
+      [
+       "added the dog",
+       280.15,
+       281.32
+      ]
+     ]
+    },
+    {
+     "speaker": "dog",
+     "text": "I should not be the worse for a bone or two, or a bit of meat.",
+     "start": 281.54,
+     "end": 285.09,
+     "phrases": [
+      [
+       "I should not be the worse for a bone or two, or a bit of meat.",
+       281.54,
+       285.09
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "So they walked off together towards the spot where Chanticleer had seen the light, and as they drew near it became larger and brighter, till they at last came close to a house in which a gang of robbers lived.",
+     "start": 285.31,
+     "end": 297.57,
+     "phrases": [
+      [
+       "So they walked off together towards the spot where Chanticleer had seen the light, and as they drew near it became larger and brighter, till they at last came close to a house in which a gang of robbers lived.",
+       285.31,
+       297.57
+      ]
+     ]
+    }
+   ],
+   "end": 297.57
+  },
+  {
+   "start": 298.42,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The ass, being the tallest of the company, marched up to the window and peeped in.",
+     "start": 298.42,
+     "end": 303.16,
+     "phrases": [
+      [
+       "The ass, being the tallest of the company, marched up to the window and peeped in.",
+       298.42,
+       303.16
+      ]
+     ]
+    },
+    {
+     "speaker": "cock",
+     "text": "Well, Donkey,",
+     "start": 303.38,
+     "end": 304.3,
+     "phrases": [
+      [
+       "Well, Donkey,",
+       303.38,
+       304.3
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said Chanticleer",
+     "start": 304.52,
+     "end": 306.03,
+     "phrases": [
+      [
+       "said Chanticleer",
+       304.52,
+       306.03
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "what do you see?",
+     "start": 306.25,
+     "end": 307.66,
+     "phrases": [
+      [
+       "what do you see?",
+       306.25,
+       307.66
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "What do I see?",
+     "start": 307.88,
+     "end": 309.43,
+     "phrases": [
+      [
+       "What do I see?",
+       307.88,
+       309.43
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "replied the ass.",
+     "start": 309.65,
+     "end": 311.17,
+     "phrases": [
+      [
+       "replied the ass.",
+       309.65,
+       311.17
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "Why, I see a table spread with all kinds of good things, and robbers sitting round it making merry.",
+     "start": 311.39,
+     "end": 316.92,
+     "phrases": [
+      [
+       "Why, I see a table spread with all kinds of good things, and robbers sitting round it making merry.",
+       311.39,
+       316.92
+      ]
+     ]
+    }
+   ],
+   "end": 316.92
+  },
+  {
+   "start": 317.77,
+   "segments": [
+    {
+     "speaker": "cock",
+     "text": "That would be a noble lodging for us,",
+     "start": 317.77,
+     "end": 319.68,
+     "phrases": [
+      [
+       "That would be a noble lodging for us,",
+       317.77,
+       319.68
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the cock.",
+     "start": 319.9,
+     "end": 321.14,
+     "phrases": [
+      [
+       "said the cock.",
+       319.9,
+       321.14
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "Yes,",
+     "start": 321.36,
+     "end": 322.28,
+     "phrases": [
+      [
+       "Yes,",
+       321.36,
+       322.28
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "said the ass",
+     "start": 322.5,
+     "end": 323.71,
+     "phrases": [
+      [
+       "said the ass",
+       322.5,
+       323.71
+      ]
+     ]
+    },
+    {
+     "speaker": "ass",
+     "text": "if we could only get in",
+     "start": 323.93,
+     "end": 325.76,
+     "phrases": [
+      [
+       "if we could only get in",
+       323.93,
+       325.76
+      ]
+     ]
+    },
+    {
+     "speaker": "narrator",
+     "text": "; so they consulted together how they should contrive to get the robbers out; and at last they hit upon a plan.",
+     "start": 325.98,
+     "end": 333.18,
+     "phrases": [
+      [
+       "; so they consulted together how they should contrive to get the robbers out;",
+       325.98,
+       330.6
+      ],
+      [
+       "and at last they hit upon a plan.",
+       330.9,
+       333.18
+      ]
+     ]
+    }
+   ],
+   "end": 333.18
+  },
+  {
+   "start": 334.03,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The ass placed himself upright on his hind legs, with his forefeet resting against the window; the dog got upon his back; the cat scrambled up to the dog's shoulders, and the cock flew up and sat upon the cat's head.",
+     "start": 334.03,
+     "end": 347.89,
+     "phrases": [
+      [
+       "The ass placed himself upright on his hind legs, with his forefeet resting against the window;",
+       334.03,
+       339.81
+      ],
+      [
+       "the dog got upon his back;",
+       340.11,
+       342.08
+      ],
+      [
+       "the cat scrambled up to the dog's shoulders, and the cock flew up and sat upon the cat's head.",
+       342.38,
+       347.89
+      ]
+     ]
+    }
+   ],
+   "end": 347.89
+  },
+  {
+   "start": 349.34,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "When all was ready a signal was given, and they began their music.",
+     "start": 349.34,
+     "end": 353.48,
+     "phrases": [
+      [
+       "When all was ready a signal was given, and they began their music.",
+       349.34,
+       353.48
+      ]
+     ]
+    }
+   ],
+   "end": 353.48
+  },
+  {
+   "start": 354.83,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The ass brayed, the dog barked, the cat mewed, and the cock screamed; and then they all broke through the window at once, and came tumbling into the room",
+     "start": 354.83,
+     "end": 364.02,
+     "phrases": [
+      [
+       "The ass brayed, the dog barked, the cat mewed, and the cock screamed;",
+       354.83,
+       359.16
+      ],
+      [
+       "and then they all broke through the window at once, and came tumbling into the room",
+       359.47,
+       364.02
+      ]
+     ]
+    }
+   ],
+   "end": 364.02
+  },
+  {
+   "start": 368.53,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "amongst the broken glass, with a most hideous clatter!",
+     "start": 368.53,
+     "end": 371.82,
+     "phrases": [
+      [
+       "amongst the broken glass, with a most hideous clatter!",
+       368.53,
+       371.82
+      ]
+     ]
+    }
+   ],
+   "end": 371.82
+  },
+  {
+   "start": 375.14,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The robbers, who had been not a little frightened by the opening concert, had now no doubt that some frightful hobgoblin had broken in upon them, and scampered away as fast as they could.",
+     "start": 375.14,
+     "end": 386.47,
+     "phrases": [
+      [
+       "The robbers, who had been not a little frightened by the opening concert, had now no doubt that some frightful hobgoblin had broken in upon them, and scampered away as fast as they could.",
+       375.14,
+       386.47
+      ]
+     ]
+    }
+   ],
+   "end": 386.47
+  },
+  {
+   "start": 388.82,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "The coast once clear, our travellers soon sat down and dispatched what the robbers had left, with as much eagerness as if they had not expected to eat again for a month. As soon as they had satisfied themselves, they put out the lights, and each once more sought out a resting-place to his own liking. The donkey laid himself down upon a heap of straw in the yard, the dog stretched himself upon a mat behind the door, the cat rolled herself up on the hearth before the warm ashes, and the cock perched upon a beam on the top of the house; and, as they were all rather tired with their journey, they soon fell asleep.",
+     "start": 388.82,
+     "end": 426.44,
+     "phrases": [
+      [
+       "The coast once clear, our travellers soon sat down and dispatched what the robbers had left, with as much eagerness as if they had not expected to eat again for a month.",
+       388.82,
+       399.35
+      ],
+      [
+       "As soon as they had satisfied themselves, they put out the lights, and each once more sought out a resting-place to his own liking.",
+       399.81,
+       407.49
+      ],
+      [
+       "The donkey laid himself down upon a heap of straw in the yard, the dog stretched himself upon a mat behind the door, the cat rolled herself up on the hearth before the warm ashes, and the cock perched upon a beam on the top of the house;",
+       407.94,
+       421.57
+      ],
+      [
+       "and, as they were all rather tired with their journey, they soon fell asleep.",
+       421.87,
+       426.44
+      ]
+     ]
+    }
+   ],
+   "end": 426.44
+  },
+  {
+   "start": 429.29,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But about midnight, when the robbers saw from afar that the lights were out and that all seemed quiet, they began to think that they had been in too great a hurry to run away; and one of them, who was bolder than the rest, went to see what was going on.",
+     "start": 429.29,
+     "end": 444.44,
+     "phrases": [
+      [
+       "But about midnight, when the robbers saw from afar that the lights were out and that all seemed quiet, they began to think that they had been in too great a hurry to run away;",
+       429.29,
+       439.72
+      ],
+      [
+       "and one of them, who was bolder than the rest, went to see what was going on.",
+       440.03,
+       444.44
+      ]
+     ]
+    }
+   ],
+   "end": 444.44
+  },
+  {
+   "start": 449.37,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "Finding everything still, he marched into the kitchen, and groped about till he found a match in order to light a candle; and then, espying the glittering fiery eyes of the cat, he mistook them for live coals, and held the match to them to light it.",
+     "start": 449.37,
+     "end": 464.84,
+     "phrases": [
+      [
+       "Finding everything still, he marched into the kitchen, and groped about till he found a match in order to light a candle;",
+       449.37,
+       456.69
+      ],
+      [
+       "and then, espying the glittering fiery eyes of the cat, he mistook them for live coals, and held the match to them to light it.",
+       457.0,
+       464.84
+      ]
+     ]
+    }
+   ],
+   "end": 464.84
+  },
+  {
+   "start": 466.29,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "But the cat, not understanding this joke, sprang at his face, and spat, and scratched at him. This frightened him dreadfully, and away he ran to the back door; but there the dog jumped up and bit him in the leg; and as he was crossing over the yard the ass kicked him; and the cock, who had been awakened by the noise, crowed with all his might.",
+     "start": 466.29,
+     "end": 486.9,
+     "phrases": [
+      [
+       "But the cat, not understanding this joke, sprang at his face, and spat, and scratched at him.",
+       466.29,
+       471.7
+      ],
+      [
+       "This frightened him dreadfully, and away he ran to the back door;",
+       472.12,
+       476.01
+      ],
+      [
+       "but there the dog jumped up and bit him in the leg;",
+       476.29,
+       479.2
+      ],
+      [
+       "and as he was crossing over the yard the ass kicked him;",
+       479.48,
+       482.46
+      ],
+      [
+       "and the cock, who had been awakened by the noise, crowed with all his might.",
+       482.74,
+       486.9
+      ]
+     ]
+    }
+   ],
+   "end": 486.9
+  },
+  {
+   "start": 490.36,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "At this the robber ran back as fast as he could to his comrades, and told the captain how a horrid witch had got into the house, and had spat at him and scratched his face with her long bony fingers; how a man with a knife in his hand had hidden himself behind the door, and stabbed him in the leg; how a black monster stood in the yard and struck him with a club, and how the devil had sat upon the top of the house and cried out",
+     "start": 490.36,
+     "end": 516.38,
+     "phrases": [
+      [
+       "At this the robber ran back as fast as he could to his comrades, and told the captain how a horrid witch had got into the house, and had spat at him and scratched his face with her long bony fingers;",
+       490.36,
+       502.55
+      ],
+      [
+       "how a man with a knife in his hand had hidden himself behind the door, and stabbed him in the leg;",
+       502.85,
+       508.54
+      ],
+      [
+       "how a black monster stood in the yard and struck him with a club, and how the devil had sat upon the top of the house and cried out",
+       508.84,
+       516.38
+      ]
+     ]
+    },
+    {
+     "speaker": "robber",
+     "text": "Throw the rascal up here!",
+     "start": 516.6,
+     "end": 518.03,
+     "phrases": [
+      [
+       "Throw the rascal up here!",
+       516.6,
+       518.03
+      ]
+     ]
+    }
+   ],
+   "end": 518.03
+  },
+  {
+   "start": 520.38,
+   "segments": [
+    {
+     "speaker": "narrator",
+     "text": "After this the robbers never dared to go back to the house; but the musicians were so pleased with their quarters that they took up their abode there; and there they are, I dare say, at this very day.",
+     "start": 520.38,
+     "end": 532.86,
+     "phrases": [
+      [
+       "After this the robbers never dared to go back to the house;",
+       520.38,
+       524.08
+      ],
+      [
+       "but the musicians were so pleased with their quarters that they took up their abode there;",
+       524.38,
+       529.37
+      ],
+      [
+       "and there they are, I dare say, at this very day.",
+       529.67,
+       532.86
+      ]
+     ]
+    }
+   ],
+   "end": 532.86
+  },
+  {
+   "start": 536.71,
+   "segments": [
+    {
+     "speaker": "host",
+     "text": "The Grimms never let their four musicians reach Bremen. But the city adopted them anyway. A bronze of the donkey, the dog, the cat and the cockerel, standing on one another's backs, stands beside the town hall, and visitors hold the donkey's front legs for luck.",
+     "start": 536.71,
+     "end": 555.26,
+     "phrases": [
+      [
+       "The Grimms never let their four musicians reach Bremen.",
+       536.71,
+       540.5
+      ],
+      [
+       "But the city adopted them anyway.",
+       540.97,
+       543.36
+      ],
+      [
+       "A bronze of the donkey, the dog, the cat and the cockerel, standing on one another's backs, stands beside the town hall, and visitors hold the donkey's front legs for luck.",
+       543.83,
+       555.26
+      ]
+     ]
+    }
+   ],
+   "end": 555.26
+  }
+ ],
+ "cast": {
+  "host": {
+   "voice": "bm_lewis*0.7+bm_george*0.3"
+  },
+  "narrator": {
+   "voice": "bm_george*0.7+bm_fable*0.3"
+  },
+  "ass": {
+   "voice": "bm_fable*0.6+bm_george*0.4"
+  },
+  "dog": {
+   "voice": "am_michael*0.6+am_eric*0.4"
+  },
+  "cat": {
+   "voice": "af_nicole*0.55+af_bella*0.45"
+  },
+  "cock": {
+   "voice": "am_puck*0.5+am_liam*0.3+am_echo*0.2"
+  },
+  "robber": {
+   "voice": "am_onyx*0.5+am_fenrir*0.5"
+  }
+ }
+}

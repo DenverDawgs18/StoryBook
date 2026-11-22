@@ -377,6 +377,46 @@ def river(duration, rng, flow=0.6):
     return chunked(_river_chunk, duration, rng, chunk=30, flow=float(flow))
 
 
+def _sea_chunk(duration, rng, t0=0.0, rough=0.3):
+    """Waves on a shore. rough=0 is a flat calm lapping; rough=1 is a storm surf."""
+    n = samples(duration)
+    t = np.arange(n) / SR
+    rough = float(np.clip(rough, 0, 1))
+    st = np.zeros((n, 2), np.float32)
+    # the wash: the sea's steady hiss and rumble between the waves
+    for c in range(2):
+        hiss = dsp.bandpass(dsp.colored(n, rng, 0.8), 600, 7000 + 4000 * rough)
+        rumble = dsp.lowpass(dsp.colored(n, rng, 1.6), 180 + 220 * rough)
+        st[:, c] = hiss * (0.25 + 0.2 * rough) + rumble * (0.25 + 0.9 * rough)
+    st *= dsp.smooth_random(n, rng, 0.25, 0.6, 1.0)[:, None]
+    # the waves: a swell drawing in, a break, then a long seething run up the shingle
+    gap = 9.0 - 5.0 * rough
+    at = rng.uniform(0, gap)
+    while at < duration:
+        size = rng.uniform(0.5, 1.0) * (0.55 + 0.8 * rough)
+        rise, fall = rng.uniform(1.2, 2.2), rng.uniform(2.5, 4.5) * (0.8 + 0.6 * rough)
+        L = samples(rise + fall)
+        tt = np.arange(L) / SR
+        env = np.where(tt < rise, (tt / rise) ** 2.5, np.exp(-(tt - rise) / (fall * 0.45)))
+        bright = np.where(tt < rise, 0.2 + 0.4 * tt / rise, 1.0 - 0.6 * np.minimum((tt - rise) / fall, 1))
+        p = rng.uniform(-0.6, 0.6)
+        for c, g in enumerate(((1 - p) / 2 + 0.25, (1 + p) / 2 + 0.25)):
+            body = dsp.lowpass(dsp.colored(L, rng, 1.2), 900 + 1600 * rough)
+            spray = dsp.highpass(dsp.white(L, rng), 2500) * (0.15 + 0.35 * rough)
+            w = (body * (1 - bright * 0.5) + spray * bright) * env * size * g
+            a0 = samples(at)
+            m = min(L, n - a0)
+            if m > 0:
+                st[a0:a0 + m, c] += w[:m]
+        at += gap * rng.uniform(0.7, 1.3)
+    return dsp.set_rms(st, -20)
+
+
+@bed("sea")
+def sea(duration, rng, rough=0.3):
+    return chunked(_sea_chunk, duration, rng, chunk=40, xfade=5, rough=float(rough))
+
+
 @bed("crickets")
 def crickets(duration, rng, density=0.5):
     n = samples(duration)

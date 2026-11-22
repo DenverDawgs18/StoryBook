@@ -14,7 +14,7 @@ labels: {host: the host, redcap: Little Red-Cap, mother: her mother, wolf: the w
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_emma", speed: 0.92, room: room, wet: 0.07}
-  redcap:   {voice: "af_heart", speed: 1.0, room: booth, wet: 0.1}
+  redcap:   {voice: "af_heart*0.5+af_kore*0.3+af_bella*0.2", speed: 1.0, room: booth, wet: 0.1}
   mother:   {voice: "af_sarah", speed: 0.95, room: room, wet: 0.1}
   wolf:     {voice: "am_fenrir", speed: 0.9, room: room, wet: 0.12}
   granny:   {voice: "af_nicole", speed: 0.9, room: room, wet: 0.15}

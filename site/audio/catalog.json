@@ -12,7 +12,7 @@
    "featured": true,
    "order": 0,
    "shelf": "fairy",
-   "duration": 411.82,
+   "duration": 408.57,
    "audio": "audio/the_three_little_pigs.mp3",
    "timings": "audio/the_three_little_pigs.json",
    "voices": 6,
@@ -74,7 +74,7 @@
    "featured": false,
    "order": 2,
    "shelf": "fairy",
-   "duration": 507.25,
+   "duration": 502.6,
    "audio": "audio/little_red_cap.mp3",
    "timings": "audio/little_red_cap.json",
    "voices": 7,
@@ -111,7 +111,7 @@
    "featured": false,
    "order": 3,
    "shelf": "fairy",
-   "duration": 1093.27,
+   "duration": 1091.27,
    "audio": "audio/hansel_and_gretel.mp3",
    "timings": "audio/hansel_and_gretel.json",
    "voices": 7,
@@ -148,7 +148,7 @@
    "featured": false,
    "order": 4,
    "shelf": "fairy",
-   "duration": 401.64,
+   "duration": 399.66,
    "audio": "audio/rumpelstiltskin.mp3",
    "timings": "audio/rumpelstiltskin.json",
    "voices": 7,
@@ -185,7 +185,7 @@
    "featured": false,
    "order": 5,
    "shelf": "fairy",
-   "duration": 444.76,
+   "duration": 441.43,
    "audio": "audio/the_frog_prince.mp3",
    "timings": "audio/the_frog_prince.json",
    "voices": 6,
@@ -219,7 +219,7 @@
    "featured": false,
    "order": 6,
    "shelf": "fairy",
-   "duration": 778.95,
+   "duration": 776.34,
    "audio": "audio/the_emperors_new_clothes.mp3",
    "timings": "audio/the_emperors_new_clothes.json",
    "voices": 9,
@@ -268,7 +268,7 @@
    "featured": false,
    "order": 7,
    "shelf": "fairy",
-   "duration": 186.22,
+   "duration": 184.75,
    "audio": "audio/the_real_princess.mp3",
    "timings": "audio/the_real_princess.json",
    "voices": 4,
@@ -296,7 +296,7 @@
    "featured": false,
    "order": 8,
    "shelf": "fairy",
-   "duration": 408.79,
+   "duration": 405.81,
    "audio": "audio/the_little_match_girl.mp3",
    "timings": "audio/the_little_match_girl.json",
    "voices": 4,
@@ -309,6 +309,74 @@
     },
     "passers": {
      "label": "the people"
+    }
+   }
+  },
+  {
+   "slug": "the_travelling_musicians",
+   "title": "The Travelling Musicians",
+   "author": "The Brothers Grimm",
+   "year": 1819,
+   "blurb": "An old donkey, a tired dog, a cat out of favour and a cockerel bound for the soup pot set off together to be musicians in the great city. They never get there. They find a house full of robbers instead.",
+   "mood": "Four old friends and one terrible concert",
+   "caption": "“and there they are, I dare say, at this very day”",
+   "art": "land_musicians",
+   "featured": false,
+   "order": 9,
+   "shelf": "fairy",
+   "duration": 570.11,
+   "audio": "audio/the_travelling_musicians.mp3",
+   "timings": "audio/the_travelling_musicians.json",
+   "voices": 7,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "ass": {
+     "label": "the donkey"
+    },
+    "dog": {
+     "label": "the dog"
+    },
+    "cat": {
+     "label": "the cat"
+    },
+    "cock": {
+     "label": "Chanticleer the cockerel"
+    },
+    "robber": {
+     "label": "the robber"
+    }
+   }
+  },
+  {
+   "slug": "the_fisherman_and_his_wife",
+   "title": "The Fisherman and His Wife",
+   "author": "The Brothers Grimm",
+   "year": 1812,
+   "blurb": "A poor fisherman catches a flounder that says it is an enchanted prince, and lets it go. His wife sends him back to ask for a cottage. Then a castle. Then a crown. And every time he goes down to the shore, the sea is a little darker.",
+   "mood": "A wish too many, and a rising sea",
+   "caption": "“O man of the sea! Hearken to me!”",
+   "art": "land_sea",
+   "featured": false,
+   "order": 10,
+   "shelf": "fairy",
+   "duration": 801.71,
+   "audio": "audio/the_fisherman_and_his_wife.mp3",
+   "timings": "audio/the_fisherman_and_his_wife.json",
+   "voices": 5,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "fisherman": {
+     "label": "the fisherman"
+    },
+    "wife": {
+     "label": "his wife Ilsabill"
+    },
+    "fish": {
+     "label": "the enchanted fish"
     }
    }
   },
@@ -365,6 +433,34 @@
     },
     "virgin": {
      "label": "an aged virgin"
+    }
+   }
+  },
+  {
+   "slug": "siege_of_alesia",
+   "title": "The Siege of Alesia",
+   "author": "Julius Caesar",
+   "year": "52 BC",
+   "blurb": "Gaul, 52 BC. Vercingetorix and eighty thousand men are shut inside a hilltop town, and Caesar builds two walls around them: one to keep them in, one to keep the rest of Gaul out. Then the rest of Gaul arrives. Caesar's own account of the battle, with a documentary frame.",
+   "mood": "History, told in the dark",
+   "caption": "“His arrival being known from the colour of his robe”",
+   "art": "land_alesia",
+   "featured": false,
+   "order": 21,
+   "shelf": "dark",
+   "duration": 1203.04,
+   "audio": "audio/siege_of_alesia.mp3",
+   "timings": "audio/siege_of_alesia.json",
+   "voices": 3,
+   "castLabels": {
+    "host": {
+     "label": "the host"
+    },
+    "critognatus": {
+     "label": "Critognatus"
+    },
+    "of the Arverni": {
+     "label": null
     }
    }
   },

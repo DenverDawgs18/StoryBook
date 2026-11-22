@@ -231,7 +231,7 @@
    "voice": "bf_emma"
   },
   "child": {
-   "voice": "am_puck"
+   "voice": "am_puck*0.5+af_heart*0.3+af_kore*0.2"
   }
  }
 }

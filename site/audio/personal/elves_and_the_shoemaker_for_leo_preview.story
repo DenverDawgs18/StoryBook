@@ -33,10 +33,10 @@ cast:
     room: room
     wet: 0.1
   child:
-    voice: am_puck
     speed: 1.0
     room: booth
     wet: 0.1
+    voice: am_puck*0.5+af_heart*0.3+af_kore*0.2
 ---
 [bed amb fire size=0.35 vol=-12 fade=5]
 [bed music fairytale key=F tempo=60 vol=-12 fade=6]

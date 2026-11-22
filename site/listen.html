@@ -31,6 +31,10 @@
     <a href="./">Listen</a><a href="./#tales" aria-current="page">Library</a><a href="personal.html">For your child</a><a href="studio.html">Studio</a><a href="./#craft">How it's made</a>
   </nav>
 </header>
+<aside class="offerbar" aria-label="Made for you">
+  <a href="personal.html" data-track="cta_click" data-track-cta="bar_personal"><b>A fairy tale starring your child</b> <span class="ob-p">· <span data-price="personal">$6</span></span> <span class="ob-go">Free preview →</span></a>
+  <a href="studio.html" data-track="cta_click" data-track-cta="bar_studio"><b>Your own pages as an audiobook</b> <span class="ob-p">· from <span data-price="studio-from">$9</span></span> <span class="ob-go">Upload →</span></a>
+</aside>
 <section class="spread featured" id="root">
   <div class="page verso">
     <figure class="plate">
@@ -66,6 +70,12 @@ art.alt = `A watercolour plate for ${ep.title}`;
 if (ep.art && !ep.art.startsWith("land_")) document.getElementById("sheet").classList.add("eye");
 const root = document.getElementById("root");
 mountPlayer(document.getElementById("player"), ep, { onplay: () => root.classList.add("playing"), onpause: () => root.classList.remove("playing") });
+</script>
+<script>
+fetch("/api/config").then((r) => r.json()).then((c) => {
+  const set = (k, v) => v && document.querySelectorAll(`[data-price="${k}"]`).forEach((el) => (el.textContent = v));
+  set("personal", c.pricing?.personal?.price); set("studio-from", c.pricing?.studio?.[0]?.price);
+}).catch(() => {});
 </script>
 </body>
 </html>

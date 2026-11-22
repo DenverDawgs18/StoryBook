@@ -16,8 +16,8 @@ cast:
   narrator: {voice: "bm_george", speed: 0.93, room: room, wet: 0.07}
   father:   {voice: "bm_fable", speed: 0.9, room: room, wet: 0.1}
   mother:   {voice: "bf_emma", speed: 1.0, room: room, wet: 0.1}
-  hansel:   {voice: "am_puck", speed: 1.05, room: booth, wet: 0.1}
-  gretel:   {voice: "af_heart", speed: 1.02, room: booth, wet: 0.1}
+  hansel:   {voice: "am_puck*0.5+af_heart*0.3+af_kore*0.2", speed: 1.05, room: booth, wet: 0.1}
+  gretel:   {voice: "af_heart*0.5+af_kore*0.3+af_bella*0.2", speed: 1.02, room: booth, wet: 0.1}
   witch:    {voice: "af_nicole", speed: 0.9, room: chamber, wet: 0.18}
 ---
 [bed amb wind intensity=0.25 howl=0.15 vol=-14 fade=6]

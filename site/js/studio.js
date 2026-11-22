@@ -1,3 +1,4 @@
+// The Studio: manuscript → cast → a free recording of the opening → checkout, priced by length.
 import { mountPlayer, esc, fmt } from "./player.js";
 
 const $ = (id) => document.getElementById(id);
@@ -12,30 +13,25 @@ const sample = new Audio();
 async function api(path, opts) {
   const r = await fetch(path, opts);
   if (!r.ok) {
-    let msg = `${r.status}`;
+    let msg = `Something went wrong (${r.status}).`;
     try { msg = (await r.json()).detail || msg; } catch {}
     throw new Error(msg);
   }
   return r.json();
 }
-
-function voiceOptions(selected) {
-  return voices.map((v) => `<option value="${v.id}" ${v.id === selected ? "selected" : ""}>${esc(v.description)}</option>`).join("");
-}
-
-function wirePreview(btn, getVoice) {
-  btn.innerHTML = ICON_PLAY;
-  btn.addEventListener("click", () => {
-    const v = getVoice();
-    btn.classList.add("busy");
-    sample.src = `/api/voices/${v}/sample`;
-    sample.oncanplay = () => btn.classList.remove("busy");
-    sample.onerror = () => btn.classList.remove("busy");
-    sample.play().catch(() => btn.classList.remove("busy"));
-  });
-}
+const showError = (el, msg) => { $(el).textContent = msg; $(el).classList.toggle("hidden", !msg); };
 
 // ------------------------------------------------------------ boot
+const listen = (w) => { const m = Math.round(w / 150); return m < 60 ? `${m} minutes` : `${Math.floor(m / 60)} hr ${m % 60 ? (m % 60) + " min" : ""}`.trim(); };
+let config = {};
+try { config = await api("/api/config"); } catch { /* static copy of the site */ }
+if (config.pricing) {
+  const st = config.pricing.studio;
+  document.querySelectorAll('[data-price="studio-from"]').forEach((el) => (el.textContent = st[0].price));
+  $("tiers").innerHTML = st.map((t, i, all) => `
+    <li><span class="t">${esc(t.name)}<small>${i === all.length - 1 ? `over ${(t.min_words - 1).toLocaleString()} words, up to about ${(Math.round(config.studio_max_chars / 6 / 1000) * 1000).toLocaleString()} words`
+      : `up to ${t.max_words.toLocaleString()} words, about ${listen(t.max_words)} of listening`}</small></span><span class="dots"></span><b>${esc(t.price)}</b></li>`).join("");
+}
 try {
   voices = await api("/api/voices");
   $("narrator").innerHTML = voiceOptions("bm_lewis");
@@ -45,7 +41,22 @@ try {
   $("analyze").disabled = true;
 }
 
-// ------------------------------------------------------------ step 1
+function voiceOptions(selected) {
+  return voices.map((v) => `<option value="${v.id}" ${v.id === selected ? "selected" : ""}>${esc(v.description)}</option>`).join("");
+}
+
+function wirePreview(btn, getVoice) {
+  btn.innerHTML = ICON_PLAY;
+  btn.addEventListener("click", () => {
+    btn.classList.add("busy");
+    sample.src = `/api/voices/${getVoice()}/sample`;
+    sample.oncanplay = () => btn.classList.remove("busy");
+    sample.onerror = () => btn.classList.remove("busy");
+    sample.play().catch(() => btn.classList.remove("busy"));
+  });
+}
+
+// ------------------------------------------------------------ step 1: the manuscript
 const drop = $("drop");
 ["dragenter", "dragover"].forEach((e) => drop.addEventListener(e, (ev) => { ev.preventDefault(); drop.classList.add("over"); }));
 ["dragleave", "drop"].forEach((e) => drop.addEventListener(e, () => drop.classList.remove("over")));
@@ -72,7 +83,7 @@ $("step1").addEventListener("submit", async (ev) => {
   $("analyze").disabled = true;
   try {
     analysis = await api("/api/analyze", { method: "POST", body: fd });
-    window.sbTrack?.("studio_analyzed", { source: f ? "file" : "paste", words: analysis.words, characters: analysis.cast?.length || 0, mood: analysis.mood });
+    window.sbTrack?.("studio_analyzed", { source: f ? "file" : "paste", words: analysis.words, characters: analysis.cast?.length || 0, mood: analysis.mood, tier: analysis.quote?.tier });
     fileText = analysis.text;
     if (f && !$("text").value) $("text").value = analysis.text.slice(0, 20000);
     showCast();
@@ -86,7 +97,7 @@ $("step1").addEventListener("submit", async (ev) => {
   }
 });
 
-// ------------------------------------------------------------ step 2
+// ------------------------------------------------------------ step 2: the cast, the opening and the price
 function showCast() {
   const a = analysis;
   $("stats").innerHTML = `
@@ -110,6 +121,10 @@ function showCast() {
       <input type="radio" name="mood" value="${k}" ${k === a.mood ? "checked" : ""}>
       <span>${esc(label)}${k === a.mood ? '<span class="suggested">suggested</span>' : ""}</span>
     </label>`).join("");
+  const q = a.quote;
+  $("quote").innerHTML = `<p class="price">${esc(q.tier)} of ${q.words.toLocaleString()} words: <b>${esc(q.price)}</b> for the whole recording.</p>`;
+  $("go").textContent = `Record it all · ${q.price}`;
+  $("pvresult").classList.add("hidden");
   $("step1").classList.add("hidden");
   $("step2").classList.remove("hidden");
   $("step2").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -118,11 +133,10 @@ const sp = () => ($("speedv").textContent = `${Math.round($("speed").value * 100
 $("speed").addEventListener("input", sp); sp();
 $("back1").addEventListener("click", () => { $("step2").classList.add("hidden"); $("step1").classList.remove("hidden"); });
 
-$("step2").addEventListener("submit", async (ev) => {
-  ev.preventDefault();
+function jobBody() {
   const cast = {};
   $("cast").querySelectorAll("select").forEach((s) => (cast[s.dataset.key] = s.value));
-  const body = {
+  return {
     text: fileText || $("text").value,
     title: $("title").value.trim() || "Untitled",
     author: $("author").value.trim() || "Anonymous",
@@ -132,26 +146,68 @@ $("step2").addEventListener("submit", async (ev) => {
     effects: $("fx").checked,
     speed: parseFloat($("speed").value),
   };
-  $("go").disabled = true;
+}
+
+// the free opening
+let pvAudio = null;
+$("pv").addEventListener("click", async () => {
+  const body = jobBody();
+  showError("e2", "");
+  $("pv").disabled = true;
+  $("pvresult").classList.add("hidden");
+  pvAudio?.pause();
+  $("pvprog").classList.remove("hidden");
+  $("pvfill").style.setProperty("--p", "2%");
+  $("s2").textContent = "Recording the opening…";
+  window.sbTrack?.("studio_preview_requested", { mood: body.mood || "", tier: analysis.quote?.tier });
   try {
-    const { id } = await api("/api/jobs", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    window.sbTrack?.("studio_record_started", { mood: body.mood || "", effects: body.effects, speed: body.speed });
-    $("step2").classList.add("hidden");
-    $("step3").classList.remove("hidden");
-    $("recTitle").textContent = body.title;
-    history.replaceState(null, "", `#job=${id}`);
-    watch(id, body);
+    const { id } = await api("/api/studio/preview", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    let j;
+    for (;;) {
+      j = await api(`/api/jobs/${id}`);
+      $("pvfill").style.setProperty("--p", `${Math.max(2, j.progress * 100).toFixed(1)}%`);
+      if (j.status === "done") break;
+      if (j.status === "error") throw new Error("Sorry, the opening didn't record. Please try again.");
+      $("s2").textContent = j.status === "queued" ? `Waiting for a storyteller (${j.message.toLowerCase()})…` : "Recording the opening…";
+      await new Promise((r) => setTimeout(r, 1500));
+    }
+    $("pvresult").classList.remove("hidden");
+    pvAudio = mountPlayer($("pvresult"), {
+      title: `${body.title}: the opening`, audio: j.audio, timings: j.timings, duration: j.duration,
+      castLabels: Object.fromEntries((analysis?.cast || []).map((c) => [c.key, { label: c.name }])),
+    }, { track: { kind: "studio_preview", story: "studio" } });
+    $("s2").textContent = `Here is the opening. Like it? Record it all for ${analysis.quote.price}.`;
+    window.sbTrack?.("studio_preview_ready", { tier: analysis.quote?.tier });
+    pvAudio.play().catch(() => {});
   } catch (e) {
-    alert(e.message);
+    $("s2").textContent = "";
+    showError("e2", e.message);
   } finally {
+    $("pv").disabled = false;
+    $("pvprog").classList.add("hidden");
+  }
+});
+
+// checkout
+$("step2").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const body = jobBody();
+  showError("e2", "");
+  $("go").disabled = true;
+  $("s2").textContent = "Opening the checkout…";
+  try {
+    const { url } = await api("/api/checkout/studio", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    window.sbTrack?.("checkout_started", { kind: "studio", tier: analysis.quote?.tier });
+    location.assign(url);
+  } catch (e) {
+    $("s2").textContent = "";
+    showError("e2", e.message);
     $("go").disabled = false;
   }
 });
 
-// ------------------------------------------------------------ step 3
-const LINES = ["Tuning the voices…", "Mixing the pigments…", "Letting the wash settle…", "Listening for footsteps…"];
-async function watch(id, body) {
-  let i = 0;
+// ------------------------------------------------------------ step 3: an owner's direct recording (#job=…)
+async function watch(id) {
   const t0 = Date.now();
   for (;;) {
     let j;
@@ -159,40 +215,27 @@ async function watch(id, body) {
     $("pfill").style.setProperty("--p", `${(j.progress * 100).toFixed(1)}%`);
     if (j.status === "queued") $("s3").textContent = j.message;
     if (j.status === "running") {
-      $("s3").textContent = !j.message ? LINES[i++ % LINES.length]
-        : j.progress < 0.92 ? `Voicing: “${j.message.slice(0, 70)}…”` : j.message;
-      if (j.progress > 0.04) {
-        const el = (Date.now() - t0) / 1000;
-        const left = (el / j.progress) * (1 - j.progress);
-        $("eta").textContent = `about ${fmt(left)} to go`;
-      }
+      $("s3").textContent = j.progress < 0.92 && j.message ? `Voicing: “${j.message.slice(0, 70)}…”` : j.message;
+      if (j.progress > 0.04) $("eta").textContent = `about ${fmt(((Date.now() - t0) / 1000 / j.progress) * (1 - j.progress))} to go`;
     }
     if (j.status === "done") {
       $("s3").textContent = "Ready. Put the lights out.";
       $("eta").textContent = "";
       $("result").classList.remove("hidden");
       $("dlScript").href = `/api/jobs/${id}/script`;
-      window.sbTrack?.("studio_record_done", { seconds: Math.round(j.duration || 0) });
-      mountPlayer($("resPlayer"), {
-        title: j.title, audio: j.audio, timings: j.timings, duration: j.duration,
-        castLabels: Object.fromEntries((analysis?.cast || []).map((c) => [c.key, { label: c.name }])),
-      }, { track: { kind: "studio", story: "studio" } });
+      $("dlAudio").href = j.audio;
+      mountPlayer($("resPlayer"), { title: j.title, audio: j.audio, timings: j.timings, duration: j.duration, castLabels: {} },
+        { track: { kind: "studio", story: "studio" } });
       return;
     }
-    if (j.status === "error") {
-      $("s3").innerHTML = `<span class="error">Something went wrong: ${esc(j.message)}</span>`;
-      window.sbTrack?.("studio_record_failed", { reason: String(j.message).slice(0, 80) });
-      return;
-    }
+    if (j.status === "error") { $("s3").innerHTML = `<span class="error">Something went wrong: ${esc(j.message)}</span>`; return; }
     await new Promise((r) => setTimeout(r, 1500));
   }
 }
 $("again").addEventListener("click", () => location.assign("studio.html"));
-
-// resume a job if the page was reloaded
 const m = location.hash.match(/job=([0-9a-f]{12})/);
 if (m) {
   $("step1").classList.add("hidden");
   $("step3").classList.remove("hidden");
-  watch(m[1], {});
+  watch(m[1]);
 }

@@ -18,7 +18,6 @@ from pathlib import Path
 
 import csv
 import hashlib
-import hmac
 
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
@@ -29,6 +28,8 @@ from storybook import director, personalize
 from storybook.render import render
 from storybook.script import parse
 from storybook.voices import VOICE_CATALOG, Character, speak
+
+from . import analytics, notify, payments
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
@@ -110,10 +111,13 @@ threading.Thread(target=_worker, daemon=True).start()
 
 # ------------------------------------------------------------------ API
 @app.get("/api/config")
-def public_config():
+def public_config(request: Request):
     """Settings the pages need. The PostHog project key is a public client key by design."""
-    return {"posthog_key": os.environ.get("POSTHOG_KEY", ""),
-            "posthog_host": os.environ.get("POSTHOG_HOST", "https://us.i.posthog.com")}
+    return JSONResponse({"posthog_key": os.environ.get("POSTHOG_KEY", ""),
+                         "posthog_host": os.environ.get("POSTHOG_HOST", "https://us.i.posthog.com"),
+                         "payments": payments.enabled_for(request), "payments_mode": payments.mode(),
+                         "pricing": payments.pricing(), "studio_max_chars": MAX_CHARS},
+                        headers={"Cache-Control": "no-store"})
 
 
 @app.get("/api/voices")
@@ -148,6 +152,7 @@ async def analyze(text: str = Form(""), file: UploadFile | None = File(None)):
     out["text"] = text  # echo back the extracted text so the browser can submit it
     first = next((p for p in info["_paras"] if len(p) > 40), "")
     out["preview"] = first[:400]
+    out["quote"] = payments.studio_quote(len(text.split()))
     return out
 
 
@@ -162,8 +167,7 @@ class JobRequest(BaseModel):
     speed: float = 0.95
 
 
-@app.post("/api/jobs")
-def create_job(req: JobRequest):
+def _studio_source(req: JobRequest) -> str:
     if not req.text.strip():
         raise HTTPException(400, "No manuscript text.")
     if len(req.text) > MAX_CHARS:
@@ -176,14 +180,69 @@ def create_job(req: JobRequest):
         source = director.build_script(req.text, req.title[:120] or "Untitled", req.author[:120] or "Anonymous",
                                        req.narrator, {k: v for k, v in req.cast.items() if v in VOICE_CATALOG},
                                        req.mood, req.effects, max(0.7, min(req.speed, 1.3)))
-    jid = uuid.uuid4().hex[:12]
-    (JOBS_DIR / f"{jid}.story").write_text(source)
+    return source
+
+
+@app.post("/api/jobs")
+def create_job(req: JobRequest, request: Request):
+    """Render a whole manuscript straight away. Owner only: everyone else pays through /api/checkout/studio."""
+    if not analytics.authed(request):
+        raise HTTPException(403, "Full recordings are made after checkout.")
+    return {"id": _enqueue(_studio_source(req), req.title, "studio")}
+
+
+STUDIO_PREVIEW_WORDS = 220
+
+
+def _opening(source: str, words: int = STUDIO_PREVIEW_WORDS) -> str:
+    """The first minute or two of a production script, then a gentle close."""
+    _, front, body = source.split("---", 2)
+    keep, n = [], 0
+    for block in re.split(r"\n\s*\n", body.strip()):
+        keep.append(block)
+        n += sum(len(l.split()) for l in block.splitlines() if l.strip() and not l.lstrip().startswith(("[", "//")))
+        if n >= words:
+            break
+    keep += ["[pause 1.2]", "[stop fade=4]", "[pause 1]",
+             "That is the opening of your recording. The rest is waiting in the Studio.", "[pause 3]"]
+    return "---" + front + "---\n" + "\n\n".join(keep) + "\n"
+
+
+def _rate_limited(request: Request) -> None:
+    who, now = _visitor(request), time.time()
+    times = [t for t in RECENT.get(who, []) if now - t < 3600]
+    if len(times) >= PREVIEWS_PER_HOUR:
+        raise HTTPException(429, "That's a lot of previews! Please try again in a little while.")
     with LOCK:
-        ahead = sum(1 for j in JOBS.values() if j["status"] in ("queued", "running"))
-        JOBS[jid] = {"id": jid, "status": "queued", "progress": 0.0, "message": f"Queued ({ahead} ahead)",
-                     "title": req.title, "author": req.author, "created": time.time(), "_source": source}
-    WORK.put(jid)
+        waiting = sum(1 for j in JOBS.values() if j.get("kind") in ("preview", "studio_preview") and j["status"] in ("queued", "running"))
+    if waiting >= MAX_QUEUED_PREVIEWS:
+        raise HTTPException(503, "The storytellers are busy right now. Please try again in a few minutes.")
+    RECENT[who] = times + [now]
+
+
+@app.post("/api/studio/preview")
+def studio_preview(req: JobRequest, request: Request):
+    """A free recording of the manuscript's opening, with the cast and weather the visitor chose."""
+    src = _opening(_studio_source(req))
+    key = hashlib.sha256(src.encode()).hexdigest()
+    cached = PREVIEW_CACHE.get(key)
+    if cached and JOBS.get(cached, {}).get("status") in ("queued", "running", "done"):
+        return {"id": cached}
+    _rate_limited(request)
+    jid = _enqueue(src, f"{req.title[:120] or 'Untitled'} (opening)", "studio_preview")
+    PREVIEW_CACHE[key] = jid
     return {"id": jid}
+
+
+@app.post("/api/checkout/studio")
+def checkout_studio(req: JobRequest, request: Request):
+    source = _studio_source(req)
+    words = len(req.text.split())
+    q = payments.studio_quote(words)
+    title = (req.title or "Untitled").strip()[:120]
+    return payments.create_checkout(
+        request, "studio", {"source": source, "title": title}, q["cents"],
+        f"Studio recording: {title}", f"{q['tier']}, {words:,} words, full cast and soundscape", "/studio.html", words)
 
 
 @app.get("/api/jobs/{jid}")
@@ -256,18 +315,45 @@ def personal_preview(req: PersonalRequest, request: Request):
     cached = PREVIEW_CACHE.get(key)
     if cached and JOBS.get(cached, {}).get("status") in ("queued", "running", "done"):
         return {"id": cached}
-    who, now = _visitor(request), time.time()
-    times = [t for t in RECENT.get(who, []) if now - t < 3600]
-    if len(times) >= PREVIEWS_PER_HOUR:
-        raise HTTPException(429, "That's a lot of previews! Please try again in a little while.")
-    with LOCK:
-        waiting = sum(1 for j in JOBS.values() if j.get("kind") == "preview" and j["status"] in ("queued", "running"))
-    if waiting >= MAX_QUEUED_PREVIEWS:
-        raise HTTPException(503, "The storytellers are busy right now. Please try again in a few minutes.")
-    RECENT[who] = times + [now]
+    _rate_limited(request)
     jid = _enqueue(src, f"{personalize.TALES[req.tale]['title']}, for {personalize.clean_name(req.name)}", "preview")
     PREVIEW_CACHE[key] = jid
     return {"id": jid}
+
+
+@app.post("/api/checkout/personal")
+def checkout_personal(req: PersonalRequest, request: Request):
+    try:
+        personalize.personalize(req.tale, req.name, req.pronouns, req.voice, req.gift_from, req.say_as)
+        name = personalize.clean_name(req.name)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    tale = personalize.TALES[req.tale]["title"]
+    payload = req.model_dump()
+    cents = payments.personal_price_cents()
+    return payments.create_checkout(
+        request, "personal", payload, cents, f"{tale}, for {name}",
+        "A full-cast fairy tale with your child as the hero, from the dedication to the goodnight", "/personal.html#make")
+
+
+def _render_order(o: dict) -> str:
+    """Start the recording a paid order bought. Returns the job id."""
+    p = o["payload"]
+    if o["kind"] == "personal":
+        src = personalize.personalize(p["tale"], p["name"], p.get("pronouns", "she"), p.get("voice"),
+                                      p.get("gift_from", ""), p.get("say_as", ""))
+        return _enqueue(src, o["title"], "personal")
+    return _enqueue(p["source"], p.get("title", o["title"]), "studio")
+
+
+def _job_status(jid: str) -> dict | None:
+    if not re.fullmatch(r"[0-9a-f]{12}", jid or ""):
+        return None
+    job = JOBS.get(jid)
+    if job is not None:
+        return {k: v for k, v in job.items() if not k.startswith("_")}
+    p = JOBS_DIR / f"{jid}.state.json"
+    return json.loads(p.read_text()) if p.exists() else None
 
 
 class SignupRequest(PersonalRequest):
@@ -291,33 +377,127 @@ def personal_signup(req: SignupRequest, request: Request):
         raise HTTPException(400, str(e))
     if req.tale not in personalize.TALES or req.pronouns not in personalize.PRONOUNS:
         raise HTTPException(400, "Please choose a tale and pronouns.")
-    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "email": email, "name": name, "say_as": say_as,
+    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "source": "personal", "email": email, "name": name, "say_as": say_as,
            "pronouns": req.pronouns, "voice": req.voice or "", "tale": req.tale, "gift_from": gift_from,
            "preview_id": req.preview_id if re.fullmatch(r"[0-9a-f]{12}", req.preview_id or "") else "",
            "visitor": _visitor(request)}
     with LOCK, SIGNUPS.open("a") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    notify.signup(row, _interest(row))
     return {"ok": True}
+
+
+class SubscribeRequest(BaseModel):
+    email: str
+    source: str = "studio"
+    use: str = ""      # the Studio waitlist's "what would you make?"
+    age: str = ""      # custom stories: the child's age band
+    note: str = ""     # and its optional free text
+    job_id: str = ""
+    website: str = ""  # honeypot
+
+
+AGES = {"0-2": "ages 0–2", "3-5": "ages 3–5", "6-8": "ages 6–8", "9-12": "ages 9–12"}
+USES = {"my_book": "my own book", "kids_stories": "stories for my kids", "classroom": "for a classroom",
+        "podcast_video": "a podcast or video", "other": "something else"}
+
+
+@app.post("/api/subscribe")
+def subscribe(req: SubscribeRequest, request: Request):
+    """Email sign-ups from anywhere other than the personalised-story page (the Studio waitlist)."""
+    if req.website:
+        return {"ok": True}
+    email = req.email.strip()
+    if not EMAIL_RX.match(email) or len(email) > 254:
+        raise HTTPException(400, "Please check the email address.")
+    source = req.source if req.source in ("studio", "home", "listen", "custom_story") else "other"
+    note = " ".join((req.note or "").split())[:500]
+    row = {"at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "source": source, "email": email,
+           "use": req.use if req.use in USES else "", "note": note,
+           "job_id": req.job_id if re.fullmatch(r"[0-9a-f]{12}", req.job_id or "") else "", "visitor": _visitor(request)}
+    if source == "custom_story":
+        row["age"] = req.age if req.age in AGES else ""
+    with LOCK, SIGNUPS.open("a") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    if source != "custom_story":  # the owner reads these on /admin/signups; no email for them
+        notify.signup(row, _interest(row))
+    return {"ok": True}
+
+
+def _signup_rows():
+    rows = [json.loads(l) for l in SIGNUPS.read_text().splitlines() if l.strip()] if SIGNUPS.exists() else []
+    for r in rows:
+        r.setdefault("source", "personal")  # rows from before sources were recorded
+    return rows
+
+
+def _interest(r: dict) -> str:
+    if r["source"] == "personal":
+        bits = [r.get("name", ""), r.get("tale", "").replace("_", " "), f"from {r['gift_from']}" if r.get("gift_from") else ""]
+        return " · ".join(b for b in bits if b)
+    if r["source"] == "custom_story":
+        return "a custom story" + (f" ({AGES[r['age']]})" if r.get("age") in AGES else "")
+    return USES.get(r.get("use", ""), "")
+
+
+@app.get("/admin/signups")
+def admin_signups_page(request: Request):
+    """A private, bookmarkable page of every sign-up. Same token as the CSV export."""
+    if not analytics.authed(request):
+        if os.environ.get("STORYBOOK_ADMIN_TOKEN"):
+            from fastapi.responses import RedirectResponse
+            return RedirectResponse("/admin", status_code=303)  # log in there, then come back
+        raise HTTPException(404)
+    given = request.query_params.get("token", "")
+    import html as H
+    from collections import Counter
+    from fastapi.responses import HTMLResponse
+    rows = sorted(_signup_rows(), key=lambda r: r["at"], reverse=True)
+    by_src = Counter(r["source"] for r in rows)
+    unique = len({r["email"].lower() for r in rows})
+    tr = "".join(
+        f"<tr><td>{H.escape(r['at'][:16].replace('T', ' '))}</td><td>{H.escape(r['source'])}</td>"
+        f"<td><a href=\"mailto:{H.escape(r['email'])}\">{H.escape(r['email'])}</a></td>"
+        f"<td>{H.escape(_interest(r))}</td><td>{H.escape(r.get('note', ''))}</td></tr>" for r in rows) or '<tr><td colspan="5">No sign-ups yet.</td></tr>'
+    counts = " · ".join(f"{k}: {v}" for k, v in sorted(by_src.items())) or "none yet"
+    uses = Counter(USES.get(r.get("use", ""), "no answer") for r in rows if r["source"] == "studio")
+    if uses:
+        counts += " · studio waitlist: " + ", ".join(f"{k} {v}" for k, v in uses.most_common())
+    tok = H.escape(given)
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Sign-ups · StoryBook</title><link rel="stylesheet" href="/css/style.css">
+<style>table{{width:100%;border-collapse:collapse;font-size:.95rem}} th,td{{text-align:left;padding:.45rem .5rem;border-bottom:1px solid var(--rule);vertical-align:top}}
+th{{font-family:var(--caps);letter-spacing:.06em;color:var(--moss);font-weight:400}} .wrap{{overflow-x:auto}}</style></head>
+<body><div class="book"><header class="running-head"><a class="wordmark" href="/">StoryBook</a><span class="note">sign-ups</span></header>
+<section class="section"><h2>{len(rows)} sign-up{'' if len(rows) == 1 else 's'}</h2><p class="note">{unique} unique emails · {H.escape(counts)} ·
+<a href="/api/admin/signups{'?token=' + tok if tok else ''}">download CSV</a> · <a href="/admin">analytics</a> · <a href="/admin/orders">orders</a></p>
+<div class="wrap"><table><thead><tr><th>When (UTC)</th><th>From</th><th>Email</th><th>Interest</th><th>Note</th></tr></thead>
+<tbody>{tr}</tbody></table></div></section></div></body></html>"""
+    return HTMLResponse(page, headers={"Cache-Control": "no-store", "X-Robots-Tag": "noindex"})
 
 
 @app.get("/api/admin/signups")
 def admin_signups(request: Request, format: str = "csv"):
     """Download sign-ups. Needs STORYBOOK_ADMIN_TOKEN, sent as `Authorization: Bearer <token>` or ?token=."""
-    token = os.environ.get("STORYBOOK_ADMIN_TOKEN", "")
-    given = request.headers.get("authorization", "").removeprefix("Bearer ").strip() or request.query_params.get("token", "")
-    if not token or not hmac.compare_digest(token, given):
+    if not analytics.authed(request):
         raise HTTPException(404)
-    rows = [json.loads(l) for l in SIGNUPS.read_text().splitlines() if l.strip()] if SIGNUPS.exists() else []
+    rows = _signup_rows()
     if format == "json":
         return rows
     buf = io.StringIO()
-    cols = ["at", "email", "name", "say_as", "pronouns", "voice", "tale", "gift_from", "preview_id", "visitor"]
+    cols = ["at", "source", "email", "use", "age", "note", "name", "say_as", "pronouns", "voice", "tale", "gift_from", "preview_id", "job_id", "visitor"]
     w = csv.DictWriter(buf, cols, extrasaction="ignore")
     w.writeheader()
     w.writerows(rows)
     return PlainTextResponse(buf.getvalue(), media_type="text/csv",
                              headers={"Content-Disposition": "attachment; filename=storybook-signups.csv"})
 
+
+analytics.init(DATA, _signup_rows, _interest)
+app.include_router(analytics.router)
+payments.init(DATA, _render_order, _job_status)
+payments.keep_awake(lambda: any(j["status"] in ("queued", "running") for j in list(JOBS.values())))
+app.include_router(payments.router)
 
 app.mount("/media/jobs", StaticFiles(directory=JOBS_DIR), name="jobs")
 app.mount("/", StaticFiles(directory=SITE, html=True), name="site")

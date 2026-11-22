@@ -17,7 +17,7 @@
    "prince": "the prince"
   }
  },
- "duration": 444.76,
+ "duration": 441.43,
  "chapters": [
   {
    "title": "The Frog-Prince. By the Brothers Grimm.",
@@ -75,951 +75,931 @@
   },
   {
    "start": 25.06,
-   "end": 28.95,
+   "end": 27.87,
    "heading": true,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The Frog-Prince. By the Brothers Grimm.",
      "start": 25.06,
-     "end": 28.95,
+     "end": 27.87,
      "phrases": []
     }
    ]
   },
   {
-   "start": 32.05,
+   "start": 30.97,
    "segments": [
     {
      "speaker": "narrator",
      "text": "One fine evening a young princess put on her bonnet and clogs, and went out to take a walk by herself in a wood; and when she came to a cool spring of water, that rose in the midst of it, she sat herself down to rest a while. Now she had a golden ball in her hand, which was her favourite plaything; and she was always tossing it up into the air, and catching it again as it fell. After a time she threw it up so high that she missed catching it as it fell; and the ball bounded away, and rolled along upon the ground, till at last it fell down into the spring. The princess looked into the spring after her ball, but it was very deep, so deep that she could not see the bottom of it. Then she began to bewail her loss, and said",
-     "start": 32.05,
-     "end": 77.36,
+     "start": 30.97,
+     "end": 76.28,
      "phrases": [
       [
        "One fine evening a young princess put on her bonnet and clogs, and went out to take a walk by herself in a wood;",
-       32.05,
-       38.7
+       30.97,
+       37.62
       ],
       [
        "and when she came to a cool spring of water, that rose in the midst of it, she sat herself down to rest a while.",
-       39.0,
-       45.45
+       37.92,
+       44.37
       ],
       [
        "Now she had a golden ball in her hand, which was her favourite plaything;",
-       45.9,
-       50.38
+       44.82,
+       49.3
       ],
       [
        "and she was always tossing it up into the air, and catching it again as it fell.",
-       50.68,
-       55.29
+       49.6,
+       54.21
       ],
       [
        "After a time she threw it up so high that she missed catching it as it fell;",
-       55.74,
-       60.48
+       54.67,
+       59.4
       ],
       [
        "and the ball bounded away, and rolled along upon the ground, till at last it fell down into the spring.",
-       60.78,
-       66.68
+       59.7,
+       65.61
       ],
       [
        "The princess looked into the spring after her ball, but it was very deep, so deep that she could not see the bottom of it.",
-       67.14,
-       73.71
+       66.06,
+       72.63
       ],
       [
        "Then she began to bewail her loss, and said",
-       74.16,
-       77.36
+       73.08,
+       76.28
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "Alas! if I could only get my ball again, I would give all my fine clothes and jewels, and everything that I have in the world.",
-     "start": 77.58,
-     "end": 85.32,
+     "start": 76.5,
+     "end": 83.63,
      "phrases": [
       [
-       "Alas!",
-       77.58,
-       78.23
-      ],
-      [
-       "if I could only get my ball again, I would give all my fine clothes and jewels, and everything that I have in the world.",
-       78.65,
-       85.32
+       "Alas! if I could only get my ball again, I would give all my fine clothes and jewels, and everything that I have in the world.",
+       76.5,
+       83.63
       ]
      ]
     }
    ],
-   "end": 85.32
+   "end": 83.63
   },
   {
-   "start": 88.3,
+   "start": 86.61,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Whilst she was speaking, a frog put its head out of the water, and said",
-     "start": 88.3,
-     "end": 92.61,
+     "start": 86.61,
+     "end": 90.92,
      "phrases": [
       [
        "Whilst she was speaking, a frog put its head out of the water, and said",
-       88.3,
-       92.61
+       86.61,
+       90.92
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "Princess, why do you weep so bitterly?",
-     "start": 92.83,
-     "end": 94.66,
+     "start": 91.14,
+     "end": 93.05,
      "phrases": [
       [
        "Princess, why do you weep so bitterly?",
-       92.83,
-       94.66
+       91.14,
+       93.05
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "Alas!",
-     "start": 94.88,
-     "end": 95.53,
+     "start": 93.27,
+     "end": 93.92,
      "phrases": [
       [
        "Alas!",
-       94.88,
-       95.53
+       93.27,
+       93.92
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said she",
-     "start": 95.75,
-     "end": 96.67,
+     "start": 94.14,
+     "end": 95.06,
      "phrases": [
       [
        "said she",
-       95.75,
-       96.67
+       94.14,
+       95.06
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "what can you do for me, you nasty frog? My golden ball has fallen into the spring.",
-     "start": 96.89,
-     "end": 101.71,
+     "start": 95.28,
+     "end": 99.97,
      "phrases": [
       [
        "what can you do for me, you nasty frog?",
-       96.89,
-       99.04
+       95.28,
+       97.37
       ],
       [
        "My golden ball has fallen into the spring.",
-       99.46,
-       101.71
+       97.79,
+       99.97
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "The frog said",
-     "start": 101.93,
-     "end": 103.28,
+     "start": 100.19,
+     "end": 101.53,
      "phrases": [
       [
        "The frog said",
-       101.93,
-       103.28
+       100.19,
+       101.53
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "I want not your pearls, and jewels, and fine clothes; but if you will love me, and let me live with you and eat from off your golden plate, and sleep upon your bed, I will bring you your ball again.",
-     "start": 103.5,
-     "end": 113.87,
+     "start": 101.75,
+     "end": 112.44,
      "phrases": [
       [
        "I want not your pearls, and jewels, and fine clothes;",
-       103.5,
-       106.21
+       101.75,
+       104.57
       ],
       [
        "but if you will love me, and let me live with you and eat from off your golden plate, and sleep upon your bed, I will bring you your ball again.",
-       106.51,
-       113.87
+       104.87,
+       112.44
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "What nonsense,",
-     "start": 114.09,
-     "end": 115.03,
+     "start": 112.66,
+     "end": 113.57,
      "phrases": [
       [
        "What nonsense,",
-       114.09,
-       115.03
+       112.66,
+       113.57
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "thought the princess",
-     "start": 115.25,
-     "end": 116.72,
+     "start": 113.79,
+     "end": 115.26,
      "phrases": [
       [
        "thought the princess",
-       115.25,
-       116.72
+       113.79,
+       115.26
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "this silly frog is talking! He can never even get out of the spring to visit me, though he may be able to get my ball for me, and therefore I will tell him he shall have what he asks.",
-     "start": 116.94,
-     "end": 126.62,
+     "start": 115.48,
+     "end": 125.3,
      "phrases": [
       [
        "this silly frog is talking!",
-       116.94,
-       118.46
+       115.48,
+       116.99
       ],
       [
        "He can never even get out of the spring to visit me, though he may be able to get my ball for me, and therefore I will tell him he shall have what he asks.",
-       118.88,
-       126.62
+       117.41,
+       125.3
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "So she said to the frog",
-     "start": 126.84,
-     "end": 128.86,
+     "start": 125.52,
+     "end": 127.54,
      "phrases": [
       [
        "So she said to the frog",
-       126.84,
-       128.86
+       125.52,
+       127.54
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "Well, if you will bring me my ball, I will do all you ask.",
-     "start": 129.08,
-     "end": 132.09,
+     "start": 127.76,
+     "end": 130.69,
      "phrases": [
       [
        "Well, if you will bring me my ball, I will do all you ask.",
-       129.08,
-       132.09
+       127.76,
+       130.69
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "Then the frog put his head down, and dived deep under the water; and after a little while he came up again, with the ball in his mouth, and threw it on the edge of the spring. As soon as the young princess saw her ball, she ran to pick it up; and she was so overjoyed to have it in her hand again, that she never thought of the frog, but ran home with it as fast as she could. The frog called after her",
-     "start": 132.31,
-     "end": 157.42,
+     "start": 130.91,
+     "end": 156.02,
      "phrases": [
       [
        "Then the frog put his head down, and dived deep under the water;",
-       132.31,
-       136.44
+       130.91,
+       135.05
       ],
       [
        "and after a little while he came up again, with the ball in his mouth, and threw it on the edge of the spring.",
-       136.74,
-       142.67
+       135.35,
+       141.28
       ],
       [
        "As soon as the young princess saw her ball, she ran to pick it up;",
-       143.13,
-       147.33
+       141.73,
+       145.94
       ],
       [
        "and she was so overjoyed to have it in her hand again, that she never thought of the frog, but ran home with it as fast as she could.",
-       147.63,
-       154.86
+       146.24,
+       153.46
       ],
       [
        "The frog called after her",
-       155.31,
-       157.42
+       153.92,
+       156.02
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "Stay, princess, and take me with you as you said,",
-     "start": 157.64,
-     "end": 160.09,
+     "start": 156.24,
+     "end": 158.81,
      "phrases": [
       [
        "Stay, princess, and take me with you as you said,",
-       157.64,
-       160.09
+       156.24,
+       158.81
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "But she did not stop to hear a word.",
-     "start": 160.31,
-     "end": 162.95,
+     "start": 159.03,
+     "end": 161.67,
      "phrases": [
       [
        "But she did not stop to hear a word.",
-       160.31,
-       162.95
+       159.03,
+       161.67
       ]
      ]
     }
    ],
-   "end": 162.95
+   "end": 161.67
   },
   {
-   "start": 164.8,
+   "start": 163.52,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The next day, just as the princess had sat down to dinner, she heard a strange noise—tap, tap—plash, plash—as if something was coming up the marble staircase: and soon afterwards there was a gentle knock at the door, and a little voice cried out and said:",
-     "start": 164.8,
-     "end": 182.26,
+     "start": 163.52,
+     "end": 180.78,
      "phrases": [
       [
        "The next day, just as the princess had sat down to dinner, she heard a strange noise",
-       164.8,
-       170.18
+       163.52,
+       168.9
       ],
       [
-       "tap, tap",
-       170.42,
-       171.54
-      ],
-      [
-       "plash, plash",
-       171.78,
-       173.02
+       "tap, tap, plash, plash",
+       169.14,
+       171.53
       ],
       [
        "as if something was coming up the marble staircase:",
-       173.26,
-       176.63
+       171.77,
+       175.14
       ],
       [
        "and soon afterwards there was a gentle knock at the door, and a little voice cried out and said:",
-       176.93,
-       182.26
+       175.45,
+       180.78
       ]
      ]
     }
    ],
-   "end": 182.26
+   "end": 180.78
   },
   {
-   "start": 185.94,
+   "start": 184.45,
    "segments": [
     {
      "speaker": "frog",
      "text": "Open the door, my princess dear, Open the door to thy true love here! And mind the words that thou and I said By the fountain cool, in the greenwood shade.",
-     "start": 185.94,
-     "end": 195.52,
+     "start": 184.45,
+     "end": 193.76,
      "phrases": [
       [
        "Open the door, my princess dear, Open the door to thy true love here!",
-       185.94,
-       190.2
+       184.45,
+       188.61
       ],
       [
        "And mind the words that thou and I said By the fountain cool, in the greenwood shade.",
-       190.65,
-       195.52
+       189.06,
+       193.76
       ]
      ]
     }
    ],
-   "end": 195.52
+   "end": 193.76
   },
   {
-   "start": 196.37,
+   "start": 194.61,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Then the princess ran to the door and opened it, and there she saw the frog, whom she had quite forgotten. At this sight she was sadly frightened, and shutting the door as fast as she could came back to her seat. The king, her father, seeing that something had frightened her, asked her what was the matter.",
-     "start": 196.37,
-     "end": 214.44,
+     "start": 194.61,
+     "end": 212.68,
      "phrases": [
       [
        "Then the princess ran to the door and opened it, and there she saw the frog, whom she had quite forgotten.",
-       196.37,
-       202.3
+       194.61,
+       200.53
       ],
       [
        "At this sight she was sadly frightened, and shutting the door as fast as she could came back to her seat.",
-       202.75,
-       208.75
+       200.99,
+       206.98
       ],
       [
        "The king, her father, seeing that something had frightened her, asked her what was the matter.",
-       209.2,
-       214.44
+       207.43,
+       212.68
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "There is a nasty frog,",
-     "start": 214.66,
-     "end": 216.01,
+     "start": 212.9,
+     "end": 214.22,
      "phrases": [
       [
        "There is a nasty frog,",
-       214.66,
-       216.01
+       212.9,
+       214.22
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said she",
-     "start": 216.23,
-     "end": 217.15,
+     "start": 214.44,
+     "end": 215.36,
      "phrases": [
       [
        "said she",
-       216.23,
-       217.15
+       214.44,
+       215.36
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "at the door, that lifted my ball for me out of the spring this morning: I told him that he should live with me here, thinking that he could never get out of the spring; but there he is at the door, and he wants to come in.",
-     "start": 217.37,
-     "end": 228.52,
+     "start": 215.58,
+     "end": 226.79,
      "phrases": [
       [
        "at the door, that lifted my ball for me out of the spring this morning:",
-       217.37,
-       220.76
+       215.58,
+       219.0
       ],
       [
        "I told him that he should live with me here, thinking that he could never get out of the spring;",
-       221.04,
-       225.48
+       219.28,
+       223.87
       ],
       [
        "but there he is at the door, and he wants to come in.",
-       225.76,
-       228.52
+       224.15,
+       226.79
       ]
      ]
     }
    ],
-   "end": 228.52
+   "end": 226.79
   },
   {
-   "start": 232.2,
+   "start": 230.47,
    "segments": [
     {
      "speaker": "narrator",
      "text": "While she was speaking the frog knocked again at the door, and said:",
-     "start": 232.2,
-     "end": 235.85,
+     "start": 230.47,
+     "end": 234.12,
      "phrases": [
       [
        "While she was speaking the frog knocked again at the door, and said:",
-       232.2,
-       235.85
+       230.47,
+       234.12
       ]
      ]
     }
    ],
-   "end": 235.85
+   "end": 234.12
   },
   {
-   "start": 236.7,
+   "start": 234.97,
    "segments": [
     {
      "speaker": "frog",
      "text": "Open the door, my princess dear, Open the door to thy true love here! And mind the words that thou and I said By the fountain cool, in the greenwood shade.",
-     "start": 236.7,
-     "end": 246.28,
+     "start": 234.97,
+     "end": 244.27,
      "phrases": [
       [
        "Open the door, my princess dear, Open the door to thy true love here!",
-       236.7,
-       240.96
+       234.97,
+       239.12
       ],
       [
        "And mind the words that thou and I said By the fountain cool, in the greenwood shade.",
-       241.41,
-       246.28
+       239.57,
+       244.27
       ]
      ]
     }
    ],
-   "end": 246.28
+   "end": 244.27
   },
   {
-   "start": 247.13,
+   "start": 245.12,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Then the king said to the young princess",
-     "start": 247.13,
-     "end": 249.94,
+     "start": 245.12,
+     "end": 247.93,
      "phrases": [
       [
        "Then the king said to the young princess",
-       247.13,
-       249.94
+       245.12,
+       247.93
       ]
      ]
     },
     {
      "speaker": "king",
      "text": "As you have given your word you must keep it; so go and let him in.",
-     "start": 250.16,
-     "end": 255.32,
+     "start": 248.15,
+     "end": 253.31,
      "phrases": [
       [
        "As you have given your word you must keep it;",
-       250.16,
-       253.08
+       248.15,
+       251.07
       ],
       [
        "so go and let him in.",
-       253.39,
-       255.32
+       251.38,
+       253.31
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "She did so, and the frog hopped into the room, and then straight on—tap, tap—plash, plash—from the bottom of the room to the top, till he came up close to the table where the princess sat.",
-     "start": 255.54,
-     "end": 267.95,
+     "start": 253.53,
+     "end": 265.73,
      "phrases": [
       [
        "She did so, and the frog hopped into the room, and then straight on",
-       255.54,
-       259.54
+       253.53,
+       257.53
       ],
       [
-       "tap, tap",
-       259.78,
-       260.91
-      ],
-      [
-       "plash, plash",
-       261.14,
-       262.38
+       "tap, tap, plash, plash",
+       257.77,
+       260.16
       ],
       [
        "from the bottom of the room to the top, till he came up close to the table where the princess sat.",
-       262.62,
-       267.95
+       260.4,
+       265.73
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "Pray lift me upon chair,",
-     "start": 268.17,
-     "end": 269.59,
+     "start": 265.95,
+     "end": 267.32,
      "phrases": [
       [
        "Pray lift me upon chair,",
-       268.17,
-       269.59
+       265.95,
+       267.32
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said he to the princess",
-     "start": 269.81,
-     "end": 271.72,
+     "start": 267.54,
+     "end": 269.45,
      "phrases": [
       [
        "said he to the princess",
-       269.81,
-       271.72
+       267.54,
+       269.45
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "and let me sit next to you.",
-     "start": 271.94,
-     "end": 273.37,
+     "start": 269.67,
+     "end": 271.09,
      "phrases": [
       [
        "and let me sit next to you.",
-       271.94,
-       273.37
+       269.67,
+       271.09
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "As soon as she had done this, the frog said",
-     "start": 273.59,
-     "end": 276.59,
+     "start": 271.31,
+     "end": 274.3,
      "phrases": [
       [
        "As soon as she had done this, the frog said",
-       273.59,
-       276.59
+       271.31,
+       274.3
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "Put your plate nearer to me, that I may eat out of it.",
-     "start": 276.81,
-     "end": 279.49,
+     "start": 274.52,
+     "end": 277.3,
      "phrases": [
       [
        "Put your plate nearer to me, that I may eat out of it.",
-       276.81,
-       279.49
+       274.52,
+       277.3
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "This she did, and when he had eaten as much as he could, he said",
-     "start": 279.71,
-     "end": 283.87,
+     "start": 277.52,
+     "end": 281.69,
      "phrases": [
       [
        "This she did, and when he had eaten as much as he could, he said",
-       279.71,
-       283.87
+       277.52,
+       281.69
       ]
      ]
     },
     {
      "speaker": "frog",
      "text": "Now I am tired; carry me upstairs, and put me into your bed.",
-     "start": 284.09,
-     "end": 287.73,
+     "start": 281.91,
+     "end": 285.52,
      "phrases": [
       [
        "Now I am tired;",
-       284.09,
-       285.16
+       281.91,
+       283.0
       ],
       [
        "carry me upstairs, and put me into your bed.",
-       285.46,
-       287.73
+       283.3,
+       285.52
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "And the princess, though very unwilling, took him up in her hand, and put him upon the pillow of her own bed, where he slept all night long. As soon as it was light he jumped up, hopped downstairs, and went out of the house.",
-     "start": 287.95,
-     "end": 300.81,
+     "start": 285.74,
+     "end": 298.61,
      "phrases": [
       [
        "And the princess, though very unwilling, took him up in her hand, and put him upon the pillow of her own bed, where he slept all night long.",
-       287.95,
-       295.56
+       285.74,
+       293.36
       ],
       [
        "As soon as it was light he jumped up, hopped downstairs, and went out of the house.",
-       296.01,
-       300.81
+       293.81,
+       298.61
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "Now, then,",
-     "start": 301.03,
-     "end": 301.79,
+     "start": 298.83,
+     "end": 299.56,
      "phrases": [
       [
        "Now, then,",
-       301.03,
-       301.79
+       298.83,
+       299.56
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "thought the princess",
-     "start": 302.01,
-     "end": 303.47,
+     "start": 299.78,
+     "end": 301.25,
      "phrases": [
       [
        "thought the princess",
-       302.01,
-       303.47
+       299.78,
+       301.25
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "at last he is gone, and I shall be troubled with him no more.",
-     "start": 303.69,
-     "end": 306.96,
+     "start": 301.47,
+     "end": 304.7,
      "phrases": [
       [
        "at last he is gone, and I shall be troubled with him no more.",
-       303.69,
-       306.96
+       301.47,
+       304.7
       ]
      ]
     }
    ],
-   "end": 306.96
+   "end": 304.7
   },
   {
-   "start": 310.64,
+   "start": 308.38,
    "segments": [
     {
      "speaker": "narrator",
      "text": "But she was mistaken; for when night came again she heard the same tapping at the door; and the frog came once more, and said:",
-     "start": 310.64,
-     "end": 319.59,
+     "start": 308.38,
+     "end": 317.33,
      "phrases": [
       [
        "But she was mistaken;",
-       310.64,
-       312.48
+       308.38,
+       310.22
       ],
       [
        "for when night came again she heard the same tapping at the door;",
-       312.78,
-       316.58
+       310.52,
+       314.32
       ],
       [
        "and the frog came once more, and said:",
-       316.88,
-       319.59
+       314.62,
+       317.33
       ]
      ]
     }
    ],
-   "end": 319.59
+   "end": 317.33
   },
   {
-   "start": 320.44,
+   "start": 318.18,
    "segments": [
     {
      "speaker": "frog",
      "text": "Open the door, my princess dear, Open the door to thy true love here! And mind the words that thou and I said By the fountain cool, in the greenwood shade.",
-     "start": 320.44,
-     "end": 330.02,
+     "start": 318.18,
+     "end": 327.48,
      "phrases": [
       [
        "Open the door, my princess dear, Open the door to thy true love here!",
-       320.44,
-       324.7
+       318.18,
+       322.33
       ],
       [
        "And mind the words that thou and I said By the fountain cool, in the greenwood shade.",
-       325.15,
-       330.02
+       322.78,
+       327.48
       ]
      ]
     }
    ],
-   "end": 330.02
+   "end": 327.48
   },
   {
-   "start": 332.28,
+   "start": 329.74,
    "segments": [
     {
      "speaker": "narrator",
      "text": "And when the princess opened the door the frog came in, and slept upon her pillow as before, till the morning broke. And the third night he did the same. But when the princess awoke on the following morning she was astonished to see, instead of the frog, a handsome prince, gazing on her with the most beautiful eyes she had ever seen, and standing at the head of her bed.",
-     "start": 332.28,
-     "end": 353.74,
+     "start": 329.74,
+     "end": 351.2,
      "phrases": [
       [
        "And when the princess opened the door the frog came in, and slept upon her pillow as before, till the morning broke.",
-       332.28,
-       338.65
+       329.74,
+       336.11
       ],
       [
        "And the third night he did the same.",
-       339.11,
-       341.9
+       336.57,
+       339.36
       ],
       [
        "But when the princess awoke on the following morning she was astonished to see, instead of the frog, a handsome prince, gazing on her with the most beautiful eyes she had ever seen, and standing at the head of her bed.",
-       342.35,
-       353.74
+       339.81,
+       351.2
       ]
      ]
     }
    ],
-   "end": 353.74
+   "end": 351.2
   },
   {
-   "start": 360.82,
+   "start": 358.28,
    "segments": [
     {
      "speaker": "narrator",
      "text": "He told her that he had been enchanted by a spiteful fairy, who had changed him into a frog; and that he had been fated so to abide till some princess should take him out of the spring, and let him eat from her plate, and sleep upon her bed for three nights.",
-     "start": 360.82,
-     "end": 375.24,
+     "start": 358.28,
+     "end": 372.7,
      "phrases": [
       [
        "He told her that he had been enchanted by a spiteful fairy, who had changed him into a frog;",
-       360.82,
-       366.32
+       358.28,
+       363.78
       ],
       [
        "and that he had been fated so to abide till some princess should take him out of the spring, and let him eat from her plate, and sleep upon her bed for three nights.",
-       366.62,
-       375.24
+       364.09,
+       372.7
       ]
      ]
     },
     {
      "speaker": "prince",
      "text": "You,",
-     "start": 375.46,
-     "end": 376.06,
+     "start": 372.92,
+     "end": 373.53,
      "phrases": [
       [
        "You,",
-       375.46,
-       376.06
+       372.92,
+       373.53
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the prince",
-     "start": 376.28,
-     "end": 377.47,
+     "start": 373.75,
+     "end": 374.93,
      "phrases": [
       [
        "said the prince",
-       376.28,
-       377.47
+       373.75,
+       374.93
       ]
      ]
     },
     {
      "speaker": "prince",
      "text": "have broken his cruel charm, and now I have nothing to wish for but that you should go with me into my father’s kingdom, where I will marry you, and love you as long as you live.",
-     "start": 377.69,
-     "end": 389.21,
+     "start": 375.15,
+     "end": 386.67,
      "phrases": [
       [
        "have broken his cruel charm, and now I have nothing to wish for but that you should go with me into my father's kingdom, where I will marry you, and love you as long as you live.",
-       377.69,
-       389.21
+       375.15,
+       386.67
       ]
      ]
     }
    ],
-   "end": 389.21
+   "end": 386.67
   },
   {
-   "start": 390.06,
+   "start": 387.52,
    "segments": [
     {
      "speaker": "narrator",
      "text": "The young princess, you may be sure, was not long in saying",
-     "start": 390.06,
-     "end": 394.09,
+     "start": 387.52,
+     "end": 391.55,
      "phrases": [
       [
        "The young princess, you may be sure, was not long in saying",
-       390.06,
-       394.09
+       387.52,
+       391.55
       ]
      ]
     },
     {
      "speaker": "princess",
      "text": "Yes",
-     "start": 394.31,
-     "end": 394.87,
+     "start": 391.77,
+     "end": 392.33,
      "phrases": [
       [
        "Yes",
-       394.31,
-       394.87
+       391.77,
+       392.33
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "to all this; and as they spoke a gay coach drove up, with eight beautiful horses, decked with plumes of feathers and a golden harness; and behind the coach rode the prince’s servant, faithful Heinrich, who had bewailed the misfortunes of his dear master during his enchantment so long and so bitterly, that his heart had well-nigh burst.",
-     "start": 395.09,
-     "end": 415.34,
+     "start": 392.55,
+     "end": 412.01,
      "phrases": [
       [
-       "to all this;",
-       395.09,
-       396.38
-      ],
-      [
-       "and as they spoke a gay coach drove up, with eight beautiful horses, decked with plumes of feathers and a golden harness;",
-       396.68,
-       403.62
+       "to all this; and as they spoke a gay coach drove up, with eight beautiful horses, decked with plumes of feathers and a golden harness;",
+       392.55,
+       400.29
       ],
       [
        "and behind the coach rode the prince's servant, faithful Heinrich, who had bewailed the misfortunes of his dear master during his enchantment so long and so bitterly, that his heart had well-nigh burst.",
-       403.92,
-       415.34
+       400.6,
+       412.01
       ]
      ]
     }
    ],
-   "end": 415.34
+   "end": 412.01
   },
   {
-   "start": 416.19,
+   "start": 412.86,
    "segments": [
     {
      "speaker": "narrator",
      "text": "They then took leave of the king, and got into the coach with eight horses, and all set out, full of joy and merriment, for the prince’s kingdom, which they reached safely; and there they lived happily a great many years.",
-     "start": 416.19,
-     "end": 428.91,
+     "start": 412.86,
+     "end": 425.58,
      "phrases": [
       [
        "They then took leave of the king, and got into the coach with eight horses, and all set out, full of joy and merriment, for the prince's kingdom, which they reached safely;",
-       416.19,
-       425.38
+       412.86,
+       422.05
       ],
       [
        "and there they lived happily a great many years.",
-       425.68,
-       428.91
+       422.35,
+       425.58
       ]
      ]
     }
    ],
-   "end": 428.91
+   "end": 425.58
   }
  ],
  "cast": {
@@ -1030,10 +1010,10 @@
    "voice": "bm_fable"
   },
   "princess": {
-   "voice": "af_heart"
+   "voice": "af_heart*0.6+af_aoede*0.4"
   },
   "frog": {
-   "voice": "am_puck"
+   "voice": "am_puck*0.6+am_michael*0.25+af_kore*0.15"
   },
   "king": {
    "voice": "bm_george"

@@ -422,6 +422,7 @@ input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); b
 .callout { text-align: center; max-width: 44rem; margin: 0 auto; }
 .callout .plate { max-width: 22rem; margin: 0 auto 1.4rem; }
 
+
 /* ------------------------------------------------------------ responsive */
 @media (max-width: 860px) {
   .spread { grid-template-columns: 1fr; background: none; }
@@ -443,3 +444,37 @@ input[type=email]:focus { outline: none; border-bottom-color: var(--viridian); b
 @media (prefers-reduced-motion: reduce) {
   *, *::before { animation: none !important; transition: none !important; }
 }
+
+/* ------------------------------------------------------------ prices and orders */
+.price-list { list-style: none; padding: 0; margin: 1.4rem auto 0; max-width: 34rem; text-align: left; }
+.price-list li { display: flex; align-items: baseline; gap: .6rem; padding: .5rem 0; border-bottom: 1px solid var(--rule); }
+.price-list .t { font-family: var(--display); font-size: 1.25rem; line-height: 1.2; }
+.price-list .t small { display: block; font-family: var(--serif); font-size: .85rem; color: var(--ink-faint); }
+.price-list .dots { flex: 1; border-bottom: 1px dotted var(--rule); transform: translateY(-.3rem); }
+.price-list b { font-family: var(--display); font-weight: 400; font-size: 1.4rem; }
+.quote .price b { font-style: normal; color: var(--ink); }
+.custom-story .grid2 { margin-top: .6rem; }
+.buy-points { list-style: none; padding: 0; margin: 1rem auto 1.2rem; max-width: 30rem; text-align: left; }
+.buy-points li { padding: .3rem 0 .3rem 1.6rem; position: relative; }
+.buy-points li::before { content: "❦"; position: absolute; left: 0; color: var(--viridian); }
+.after-preview { margin-top: 1.4rem; padding: 1.2rem 1.3rem; border: 1.5px solid var(--sage); border-radius: 10px; text-align: center; }
+.after-preview p { margin: 0 0 .9rem; }
+.after-preview .note { margin: .9rem 0 0; }
+.panel.quiet { background: transparent; box-shadow: none; }
+.offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1.6rem; }
+.offer { display: flex; flex-direction: column; text-align: center; }
+.offer .plate { max-width: 18rem; margin: 0 auto 1rem; }
+.offer h3 { font-family: var(--display); font-weight: 400; font-size: 1.7rem; margin: .2rem 0 .4rem; }
+.offer .price { font-size: 1.3rem; margin: .2rem 0 .8rem; }
+.offer .price b { font-style: normal; color: var(--ink); font-size: 1.6rem; }
+.offer p { margin: 0 0 .9rem; }
+.offer .actions { margin-top: auto; justify-content: center; }
+.offerbar { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 2.2rem; padding: .75rem 1rem; margin: 0 0 .5rem;
+  border-bottom: 1px solid var(--rule); background: rgba(181, 203, 176, .22); font-size: 1rem; }
+.offerbar a { text-decoration: none; color: var(--ink); }
+.offerbar a b { font-weight: 500; }
+.offerbar .ob-p { color: var(--moss); }
+.offerbar .ob-go { display: inline-block; color: var(--viridian); text-decoration: underline; text-underline-offset: 3px; margin-left: .3rem; white-space: nowrap; }
+.offerbar a:hover b { color: var(--viridian); }
+@media (max-width: 600px) { .offerbar { flex-direction: column; align-items: flex-start; gap: .45rem; font-size: .95rem; } }
+#pform .actions, .offer .actions { gap: 1.4rem 2rem; }

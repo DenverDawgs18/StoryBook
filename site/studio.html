@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Studio — StoryBook</title>
-<meta name="description" content="Paste or upload a manuscript; StoryBook casts the voices, paints the soundscape and renders your audiobook.">
+<title>The Studio — StoryBook</title>
+<meta name="description" content="Turn your own pages into a full-cast audiobook, with a voice for every character and a soundscape made for the story. From $9, priced by length; hear the opening free.">
 <link rel="canonical" href="https://storybook-audio.fly.dev/studio.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="StoryBook">
 <meta property="og:url" content="https://storybook-audio.fly.dev/studio.html">
-<meta property="og:title" content="The Studio · StoryBook">
-<meta property="og:description" content="Turn your own pages into a full-cast audiobook, with a voice for every character and a soundscape for the story.">
+<meta property="og:title" content="The Studio: your pages, performed · StoryBook">
+<meta property="og:description" content="Turn your manuscript into a full-cast audiobook with a soundscape made for it. Hear the opening free; from $9, priced by length.">
 <meta property="og:image" content="https://storybook-audio.fly.dev/assets/og/og-studio.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Studio · StoryBook">
-<meta name="twitter:description" content="Turn your own pages into a full-cast audiobook, with a voice for every character and a soundscape for the story.">
+<meta name="twitter:title" content="The Studio: your pages, performed · StoryBook">
+<meta name="twitter:description" content="Turn your manuscript into a full-cast audiobook with a soundscape made for it. Hear the opening free; from $9, priced by length.">
 <meta name="twitter:image" content="https://storybook-audio.fly.dev/assets/og/og-studio.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -36,18 +36,21 @@
 </header>
 
 <section class="titlepage" style="padding-bottom:1rem">
-  <figure class="frontispiece">
-    <img src="assets/land/land_town.webp" alt="A watercolour of a walled town in the sun, a road lined with people leading to its gate." style="aspect-ratio:3/1">
-    <figcaption>The road to the studio.</figcaption>
-  </figure>
-  <p class="chapter-no" style="margin-top:2rem">chapter the fourth</p>
+  <p class="chapter-no" style="margin-top:1rem" id="kicker">now open</p>
   <h1 style="font-size:clamp(2.4rem,6vw,4.4rem);margin-top:.2rem">The Studio</h1>
   <p class="alt-title">or, Your Pages, Performed</p>
   <div class="ornament" aria-hidden="true">❦</div>
-  <p class="lede">Paste a story or upload a manuscript. StoryBook finds the speakers and gives each one a voice. It chooses weather and music to suit the mood, and writes a sound effect wherever the prose names one. You get a mastered MP3.</p>
+  <p class="lede">Bring your own story, a book you've written or a tale you tell at bedtime, and hear it the way the library sounds: a voice for every character, weather and music made for the story, and a finished audiobook at the end.</p>
+  <p class="price" style="font-size:1.3rem">From <b data-price="studio-from">$9</b>, priced by length. Hear the opening free before you pay.</p>
+  <p class="actions" style="justify-content:center"><a class="btn" href="#studio" data-track="cta_click" data-track-cta="studio_start">Start with your manuscript</a> <a class="btn ghost" href="#prices">See prices</a></p>
+  <figure class="frontispiece" style="margin-top:2rem">
+    <img src="assets/land/land_town.webp" alt="A watercolour of a walled town in the sun, a road lined with people leading to its gate." style="aspect-ratio:3/1">
+      </figure>
 </section>
 
-<main class="section studio" style="padding-top:1rem">
+
+
+<main class="section studio" id="studio" style="padding-top:1rem">
   <p id="offline" class="panel note hidden">The Studio needs the StoryBook server, which isn't reachable from this page. Run <code>python -m storybook serve</code> and open <code>http://127.0.0.1:8000/studio.html</code>.</p>
 
   <!-- 1 ─────────────────────────── manuscript -->
@@ -68,7 +71,7 @@
     <label class="field" for="text">Manuscript</label>
     <textarea id="text" placeholder="“Halloa! Below there!” When he heard a voice thus calling to him, he was standing at the door of his box…"></textarea>
     <p class="note">Put dialogue in quotation marks and the director will find who is speaking. Chapter headings such as <em>CHAPTER I</em> become chapter markers.</p>
-    <div class="actions"><button class="btn" type="submit" id="analyze">Read it through</button><span class="status" id="s1"></span></div>
+    <div class="actions"><button class="btn" type="submit" id="analyze">See my cast and price</button><span class="status" id="s1"></span></div>
   </form>
 
   <!-- 2 ─────────────────────────── casting -->
@@ -100,7 +103,16 @@
         <label for="fx">Sound effects where the prose names a sound: knocks, bells, thunder, footsteps…</label>
       </div>
     </div>
-    <div class="actions" style="margin-top:2rem"><button class="btn" type="submit" id="go">Record it</button><button type="button" class="linkish" id="back1">edit the text</button></div>
+    <div class="quote" id="quote" style="margin-top:2rem"></div>
+    <div class="actions" style="margin-top:1rem">
+      <button class="btn" type="submit" id="go">Record it all</button>
+      <button class="btn ghost" type="button" id="pv">Hear the opening, free</button>
+      <button type="button" class="linkish" id="back1">edit the text</button>
+    </div>
+    <p class="status" id="s2" aria-live="polite"></p>
+    <p class="error hidden" id="e2" role="alert"></p>
+    <div class="progress hidden" id="pvprog"><div class="bar"><div class="ground paint"></div><div class="fill paint" id="pvfill"></div></div></div>
+    <div id="pvresult" class="hidden" style="margin-top:1rem"></div>
   </form>
 
   <!-- 3 ─────────────────────────── recording -->
@@ -110,17 +122,58 @@
     <div class="progress"><div class="bar"><div class="ground paint"></div><div class="fill paint" id="pfill"></div></div></div>
     <p class="status" id="s3">Setting out the brushes…</p>
     <p class="note" id="eta"></p>
-    <div id="result" class="hidden">
+<div id="result" class="hidden">
       <div id="resPlayer"></div>
       <p class="note"><a id="dlScript" href="#">Download the production script</a> to fine-tune every cue and render it yourself with <code>python -m storybook render</code>.</p>
-      <div class="actions"><button class="btn ghost" type="button" id="again">Record another</button></div>
+      <div class="actions"><a class="btn" id="dlAudio" href="#" download>Download the MP3</a><button class="btn ghost" type="button" id="again">Record another</button></div>
     </div>
   </section>
 </main>
 
+<section class="section" id="prices" style="padding-top:0">
+  <div class="panel reserve">
+    <p class="chapter-no">the price of a recording</p>
+    <h2>Priced by the length of your pages</h2>
+    <p class="blurb">Every recording has the full cast, the soundscape and the score, and is mastered, with chapter markers. Hear the opening free before you pay.</p>
+    <ul class="price-list" id="tiers">
+      <li><span class="t">A short story<small>up to 2,000 words, about 13 minutes of listening</small></span><span class="dots"></span><b>$9</b></li>
+      <li><span class="t">A long story<small>up to 7,500 words, about 50 minutes</small></span><span class="dots"></span><b>$19</b></li>
+      <li><span class="t">A novelette<small>up to 15,000 words, about 1 hour 40</small></span><span class="dots"></span><b>$29</b></li>
+      <li><span class="t">A novella<small>up to about 25,000 words</small></span><span class="dots"></span><b>$45</b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="steps">
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob1.png" alt="">
+      <span class="num">the first</span>
+      <h3>Bring your pages</h3>
+      <p>Paste a story, or upload a manuscript. Chapters become chapters, and dialogue is found wherever someone speaks.</p>
+    </div>
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob2.png" alt="">
+      <span class="num">the second</span>
+      <h3>Meet your cast</h3>
+      <p>Every character gets a voice of their own. Hear each one, recast who you like, and choose the weather of the piece.</p>
+    </div>
+    <div class="step">
+      <img class="paint dab" src="assets/paint/blob6.png" alt="">
+      <span class="num">the third</span>
+      <h3>Hear it performed</h3>
+      <p>Rain where it rains, a knock where someone knocks, music under the quiet parts. A mastered audiobook you can keep.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 <footer class="colophon">
   <p class="finis">Finis.</p>
-  <p>Your text is used only to make your recording.</p>
+  <p>Texts from <a href="https://www.gutenberg.org">Project Gutenberg</a>. Voices by Kokoro-82M. Every sound is synthesised.</p>
 </footer>
 </div>
 

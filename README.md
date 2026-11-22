@@ -30,6 +30,8 @@ python -m storybook serve      # → http://127.0.0.1:8000
 | **The Emperor's New Clothes** | Andersen, 1837 | Empty looms clattering, a procession with horns and drums, one small voice in the crowd |
 | **The Real Princess** | Andersen, 1835 | Thunder and rain at the city gate, then twenty feather beds and a pea |
 | **The Little Match Girl** | Andersen, 1845 | Snow wind, a match flaring, a carol on the music box, bells at New Year |
+| **The Travelling Musicians** | Grimm, 1819 | Four old animals on the road, crickets in a night wood, the robbers' house and one very loud concert |
+| **The Fisherman and His Wife** | Grimm, 1812 | A sea that gets rougher with every wish, from flat calm to a thunderstorm surf |
 
 ### Tales for After Dark
 
@@ -38,6 +40,7 @@ python -m storybook serve      # → http://127.0.0.1:8000
 | **The Tell-Tale Heart** | Poe, 1843 | A heartbeat that gets faster and louder until it fills the mix; the narrator speeds up with it |
 | **The Masque of the Red Death** | Poe, 1842 | A slightly detuned waltz behind iron gates, and an ebony clock that silences the revel |
 | **The Sack of Rome** | Gibbon, *Decline and Fall*, ch. XXXI | A documentary-style frame, Gothic war horns, a burning city, Alaric's river grave |
+| **The Siege of Alesia** | Caesar, *Gallic War*, Book VII | Caesar's own account of 52 BC: the double ring of siege works, Critognatus's speech, the night assault, and Caesar's red cloak arriving on the line |
 
 The finished MP3s (with chapter markers) and the read-along timings are in `site/audio/`.
 
@@ -79,8 +82,8 @@ Plain paragraphs are narration.
 @@host: A whole paragraph in one voice.
 ```
 
-Beds: `wind rain fire clock watch heartbeat roomtone crowd river crickets battle tinnitus
-birds spinning` plus music `dread elegy hearth waltz music_box carol_voice title_theme fairytale`
+Beds: `wind rain fire clock watch heartbeat roomtone crowd river sea crickets battle tinnitus
+birds spinning` (`sea rough=0..1` runs from a calm lap to storm surf) plus music `dread elegy hearth waltz music_box carol_voice title_theme fairytale`
 (`music_box tune=lullaby` plays Brahms's *Wiegenlied*; `fairytale key=F|G|D|Am` is harp over strings).
 Effects: `knock door creak footsteps bell chime house_bells chains wail boom swell sting
 thunder horn war_drums clash bolt quill lantern heartbeat_once tapping sparkle splash
@@ -171,6 +174,38 @@ and the parent can then reserve the full story with their email.
   `POST /api/personal/signup` appends to `/data/signups.jsonl`.
 * `GET /api/admin/signups` downloads the sign-ups as CSV (`?format=json` for JSON). It needs the
   `STORYBOOK_ADMIN_TOKEN` secret as `Authorization: Bearer <token>` and returns 404 without it.
+* `/admin/signups?token=<admin token>` is a private, bookmarkable page of every sign-up, with counts
+  by source and a CSV download link. Once you're logged in at `/admin`, `/admin/signups` works without the token.
+* `/admin` is the analytics dashboard. Log in with the `STORYBOOK_ADMIN_TOKEN` value as the password
+  (a 30-day cookie keeps you logged in). It shows visitors, page views, story plays, sign-ups and the
+  visitor-to-sign-up rate for today / 7 / 30 / 90 days, a daily chart, where visitors came from
+  (UTM source or referrer), each TikTok post's visits by `utm_content`, pages, stories played and opened,
+  buttons clicked, and the period's sign-ups. Counting is first-party (`site/js/analytics.js` →
+  `POST /api/track` → `/data/events/YYYY-MM-DD.jsonl`): no cookies on visitors, no IPs, names or emails,
+  bots and Do Not Track skipped, and a visitor id that changes daily.
+* `GET /api/admin/digest` returns yesterday's numbers (UTC) as JSON, next to the day before, the last 7 days
+  and all-time sign-ups. Same token. The daily digest task reads this.
+* Each new sign-up (Studio waitlist or personalised story) sends you an email. Set these Fly secrets:
+
+```bash
+fly secrets set NOTIFY_EMAIL_TO=you@example.com RESEND_API_KEY=re_your_key
+# optional: NOTIFY_EMAIL_FROM="StoryBook <hello@yourdomain.com>"  (a sender on a domain verified in Resend)
+# optional: PUBLIC_URL=https://storybook-audio.fly.dev  (adds a link to the sign-ups page)
+```
+
+  [Resend](https://resend.com) has a free tier. Without a verified domain, its default sender
+  (`onboarding@resend.dev`) can only email the address you signed up to Resend with, so use that as
+  `NOTIFY_EMAIL_TO`. To use any mail server instead (Gmail with an app password, for example), set
+  `SMTP_URL` in place of `RESEND_API_KEY`:
+  `fly secrets set SMTP_URL='smtps://you%40gmail.com:app-password@smtp.gmail.com:465' NOTIFY_EMAIL_FROM=you@gmail.com`.
+  If nothing is set, or sending fails, the sign-up is written to the app log (`fly logs | grep "sign-up"`)
+  and is always saved to `/data/signups.jsonl` either way. Sending runs in the background, so it
+  never slows the form down.
+* `site/studio.html` is a waitlist for the Studio while it's not open to the public. It asks for an
+  email, an optional "what would you make?" (`use`) and an optional note. `POST /api/subscribe` stores
+  these in the same file with `source: studio`; personalised-story reservations are stored with
+  `source: personal`. The Studio's API (`/api/analyze`, `/api/jobs`) is unchanged, and
+  `python -m storybook` still renders manuscripts from the command line.
 * To fulfil a sign-up, render the full story and email it:
 
 ```bash
@@ -178,6 +213,35 @@ python -m storybook personal --tale the_three_little_pigs --name Mia --pronouns 
 ```
 
 The planned price shown on the page is one constant at the top of `site/js/personal.js`.
+
+## Payments (Stripe Checkout)
+
+`server/payments.py` sells two things, and both keep their free previews:
+
+* **The Studio**, priced by the manuscript's length in tiers. Visitors paste or upload a manuscript, cast it,
+  hear the opening free (`POST /api/studio/preview`, about 220 words), then pay to record it all.
+* **A story for your child**, one fixed price for the full personalised fairy tale.
+
+The buyer pays on Stripe's hosted Checkout page and comes back to `/order.html?o=<order>`, which waits for the
+payment, then for the recording, then plays it with a download button. That link is also in the Stripe receipt.
+Orders are files in `/data/orders/`; a paid order whose render was cut off by a restart is picked up again on boot,
+and while anything renders the server pings itself once a minute so Fly doesn't put the machine to sleep.
+`/admin/orders` lists every order with its buyer, status and the takings.
+
+| Fly secret | |
+| --- | --- |
+| `STRIPE_SECRET_KEY` | `sk_test_...` or `sk_live_...`. Without it, checkout says it is opening shortly. |
+| `STRIPE_WEBHOOK_SECRET` | `whsec_...` from a webhook endpoint at `https://<site>/api/stripe/webhook` sending `checkout.session.completed` and `checkout.session.async_payment_succeeded`. Recommended: it catches buyers who close the tab before returning. |
+| `STRIPE_TAX_CODE` | product tax code for Stripe Tax, default `txcd_10401100` (downloaded audio, permanent rights) |
+| `PERSONAL_PRICE` | dollars, default `6` |
+| `STUDIO_TIERS` | `max_words:dollars,...`, default `2000:9,7500:19,15000:29,25000:45`. The last tier covers anything up to the Studio's length limit. |
+
+The buy buttons always show, with their prices. Without a key, checkout says it's opening shortly. With a **test**
+key, checkout works only for the owner logged in at `/admin` (test card `4242 4242 4242 4242`); a **live** key opens it to everyone.
+`POST /api/jobs` (render a whole manuscript without paying) is now owner-only.
+
+The personal page also collects emails from parents who want a brand-new story written for their child
+(`source: custom_story`, with an optional age band and note). They show on `/admin/signups` and send no email.
 
 ## Analytics
 
@@ -200,6 +264,7 @@ Pages send named events only, and none carry a child's name, a dedication or an 
 | `example_switch`, `preview_requested`, `preview_ready`, `preview_failed`, `preview_invalid` | `tale`, `pronouns`, `voice`, `has_dedication`, `has_say_as`, `seconds` |
 | `signup_submitted`, `signup_failed` | the same choices, plus `had_preview` |
 | `studio_analyzed`, `studio_record_started`, `studio_record_done`, `studio_record_failed` | words, characters, mood, seconds |
+| `subscribe` | `source` (studio), `use`, `has_note` |
 
 Any element with `data-track="event"` and optional `data-track-*` attributes reports a click.
 
@@ -210,7 +275,8 @@ The repo ships a `Dockerfile` (voice model baked in, so cold starts are quick) a
 ```bash
 fly apps create storybook-audio      # or any free name; match `app` in fly.toml
 fly volumes create storybook_data --region iad --size 1   # sign-ups and recordings live here
-fly secrets set STORYBOOK_ADMIN_TOKEN=$(openssl rand -base64 24)
+fly secrets set STORYBOOK_ADMIN_TOKEN=$(openssl rand -hex 24)
+fly secrets set NOTIFY_EMAIL_TO=you@example.com RESEND_API_KEY=re_your_key   # sign-up emails (see above)
 fly deploy --ha=false                # keep to ONE machine: Studio jobs live in its memory
 ```
 

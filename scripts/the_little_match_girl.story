@@ -14,7 +14,7 @@ labels: {host: the host, girl: the little girl, passers: the people}
 cast:
   host:     {voice: "bm_lewis", speed: 0.9, room: chamber, wet: 0.06}
   narrator: {voice: "bf_isabella", speed: 0.88, room: room, wet: 0.08}
-  girl:     {voice: "af_heart", speed: 0.95, room: booth, wet: 0.12}
+  girl:     {voice: "af_heart*0.5+af_kore*0.3+af_bella*0.2", speed: 0.95, room: booth, wet: 0.12}
   passers:  {voice: "am_michael", speed: 0.92, room: hall, wet: 0.25}
 ---
 [bed amb wind intensity=0.5 howl=0.45 vol=-13 fade=6]
