@@ -20,7 +20,8 @@ Configured with environment variables (Fly secrets):
     PUBLIC_URL             the site's address for Stripe's return links (else taken from the request)
 
 The buy buttons always show. Without a key, checkout answers "opening shortly". With a test key
-(sk_test_) Stripe's page is in test mode and only takes test cards; a live key takes real money.
+(sk_test_) checkout works only for the owner logged in at /admin (everyone else gets "opening
+shortly"), so nobody gets a free recording with a test card. A live key opens it to everyone.
 """
 from __future__ import annotations
 
@@ -114,8 +115,11 @@ def mode() -> str:
 
 
 def enabled_for(request: Request) -> bool:
-    """Whether checkout can take an order right now (any Stripe key is set)."""
-    return mode() != "off"
+    """Whether checkout takes an order from this visitor: everyone with a live key, only the
+    owner (logged in at /admin) with a test key, so nobody gets a free recording with a test card.
+    The Buy buttons show either way."""
+    m = mode()
+    return m == "live" or (m == "test" and analytics.authed(request))
 
 
 def _stripe():
@@ -330,7 +334,7 @@ def admin_orders(request: Request):
     p = pricing()
     tiers = " · ".join(f'{t["name"]} (up to {t["max_words"]:,} words) {t["price"]}' for t in p["studio"])
     body = f"""<h2>Orders</h2>
-<p class="range note">Payments: <b>{mode()}</b>{" (Stripe only takes test cards; set a sk_live_ key to take real payments)" if mode() == "test" else " (no Stripe key: buy buttons say checkout is opening shortly)" if mode() == "off" else ""} ·
+<p class="range note">Payments: <b>{mode()}</b>{" (checkout works only for you while logged in; set a sk_live_ key to take real payments)" if mode() == "test" else " (no Stripe key: buy buttons say checkout is opening shortly)" if mode() == "off" else ""} ·
 {len(live)} paid live order{"" if len(live) == 1 else "s"} · {_money(revenue)} taken
 <span style="float:right"><a href="/admin">analytics</a> · <a href="/admin/signups">sign-ups</a></span></p>
 <p class="note">Personalised story {p["personal"]["price"]} · Studio: {H.escape(tiers)}</p>

@@ -236,7 +236,7 @@ and while anything renders the server pings itself once a minute so Fly doesn't 
 | `STUDIO_TIERS` | `max_words:dollars,...`, default `2000:9,7500:19,15000:29,25000:45`. The last tier covers anything up to the Studio's length limit. |
 
 The buy buttons always show, with their prices. Without a key, checkout says it's opening shortly. With a **test**
-key, Stripe's page is in test mode and takes only test cards such as `4242 4242 4242 4242`; a **live** key takes real money.
+key, checkout works only for the owner logged in at `/admin` (test card `4242 4242 4242 4242`); a **live** key opens it to everyone.
 `POST /api/jobs` (render a whole manuscript without paying) is now owner-only.
 
 The personal page also collects emails from parents who want a brand-new story written for their child
