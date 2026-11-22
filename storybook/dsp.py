@@ -291,6 +291,22 @@ def compress(x: np.ndarray, threshold_db: float = -18, ratio: float = 3.0, attac
     return (x * (gain[:, None] if x.ndim == 2 else gain)).astype(np.float32)
 
 
+def peak_limit(x: np.ndarray, ceiling: float, lookahead: float = 0.005, release: float = 0.08) -> np.ndarray:
+    """Clean look-ahead peak limiter: gain only comes down ahead of a peak and recovers smoothly,
+    so a loud line keeps its body without the tanh crunch of soft_limit."""
+    from scipy.ndimage import maximum_filter1d, minimum_filter1d, uniform_filter1d
+    if len(x) == 0:
+        return x
+    mono = np.abs(x).max(axis=1) if x.ndim == 2 else np.abs(x)
+    la = max(samples(lookahead), 1)
+    env = maximum_filter1d(mono, 2 * la + 1)
+    g = np.minimum(1.0, ceiling / np.maximum(env, 1e-9))
+    g = minimum_filter1d(g, samples(release) + 1)
+    g = uniform_filter1d(g, la * 2 + 1)
+    g = np.minimum(g, np.minimum(1.0, ceiling / np.maximum(mono, 1e-9)))
+    return (x * (g[:, None] if x.ndim == 2 else g)).astype(np.float32)
+
+
 def soft_limit(x: np.ndarray, ceiling_db: float = -1.0) -> np.ndarray:
     c = db(ceiling_db)
     return (np.tanh(x / c) * c).astype(np.float32)

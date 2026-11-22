@@ -62,7 +62,7 @@ To which the pig answered:
 
 The wolf then answered to that:
 
-@wolf: “Then I'll huff, and I'll puff, and I'll blow your house in.”
+@wolf!shout: “Then I'll huff, and I'll puff, and I'll blow your house in.”
 
 [sfx huff puffs=2 strength=1 vol=-9 wait=1]
 [sfx collapse material=straw vol=-10 wait=1]
@@ -89,7 +89,7 @@ Which the man did, and the pig built his house. Then along came the wolf, and sa
 
 @pig2: “No, no, by the hair of my chinny chin chin.”
 
-@wolf: “Then I'll puff, and I'll huff, and I'll blow your house in.”
+@wolf!shout: “Then I'll puff, and I'll huff, and I'll blow your house in.”
 
 [sfx huff puffs=3 strength=1.2 vol=-8 wait=1]
 [sfx collapse material=sticks vol=-9 wait=1]
@@ -116,7 +116,7 @@ So the man gave him the bricks, and he built his house with them. So the wolf ca
 
 @pig3: “No, no, by the hair of my chinny chin chin.”
 
-@wolf: “Then I'll huff, and I'll puff, and I'll blow your house in.”
+@wolf!rage: “Then I'll huff, and I'll puff, and I'll blow your house in.”
 
 [sfx huff puffs=4 strength=1.4 vol=-7 wait=1]
 [pause 0.8]

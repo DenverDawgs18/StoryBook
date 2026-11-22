@@ -20,7 +20,7 @@
    "court": "the court"
   }
  },
- "duration": 399.04,
+ "duration": 399.41,
  "chapters": [
   {
    "title": "Rumpelstiltskin. By the Brothers Grimm.",
@@ -960,163 +960,163 @@
      "speaker": "rumpel",
      "text": "No, madam!",
      "start": 349.0,
-     "end": 349.81,
+     "end": 349.75,
      "phrases": [
       [
        "No, madam!",
        349.0,
-       349.81
+       349.75
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Is it Tom?",
-     "start": 350.03,
-     "end": 350.86,
+     "start": 349.97,
+     "end": 350.8,
      "phrases": [
       [
        "Is it Tom?",
-       350.03,
-       350.86
+       349.97,
+       350.8
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "No, madam!",
-     "start": 351.08,
-     "end": 351.85,
+     "start": 351.02,
+     "end": 351.77,
      "phrases": [
       [
        "No, madam!",
-       351.08,
-       351.85
+       351.02,
+       351.77
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Is it Jemmy?",
-     "start": 352.07,
-     "end": 352.96,
+     "start": 351.99,
+     "end": 352.88,
      "phrases": [
       [
        "Is it Jemmy?",
-       352.07,
-       352.96
+       351.99,
+       352.88
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "It is not.",
-     "start": 353.18,
-     "end": 353.92,
+     "start": 353.1,
+     "end": 353.85,
      "phrases": [
       [
        "It is not.",
-       353.18,
-       353.92
+       353.1,
+       353.85
       ]
      ]
     },
     {
      "speaker": "daughter",
      "text": "Can your name be Rumpelstiltskin?",
-     "start": 354.14,
-     "end": 355.82,
+     "start": 354.07,
+     "end": 355.75,
      "phrases": [
       [
        "Can your name be Rumpelstiltskin?",
-       354.14,
-       355.82
+       354.07,
+       355.75
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "said the lady slyly.",
-     "start": 356.04,
-     "end": 357.65,
+     "start": 355.97,
+     "end": 357.59,
      "phrases": [
       [
        "said the lady slyly.",
-       356.04,
-       357.65
+       355.97,
+       357.59
       ]
      ]
     },
     {
      "speaker": "rumpel",
      "text": "Some witch told you that!—some witch told you that!",
-     "start": 357.87,
-     "end": 359.82,
+     "start": 357.81,
+     "end": 360.19,
      "phrases": [
       [
        "Some witch told you that!",
-       357.87,
-       358.82
+       357.81,
+       358.95
       ],
       [
        "some witch told you that!",
-       358.88,
-       359.82
+       359.03,
+       360.19
       ]
      ]
     },
     {
      "speaker": "narrator",
      "text": "cried the little man, and dashed his right foot in a rage so deep into the floor, that he was forced to lay hold of it with both hands to pull it out.",
-     "start": 360.04,
-     "end": 368.16,
+     "start": 360.41,
+     "end": 368.54,
      "phrases": [
       [
        "cried the little man, and dashed his right foot in a rage so deep into the floor, that he was forced to lay hold of it with both hands to pull it out.",
-       360.04,
-       368.16
+       360.41,
+       368.54
       ]
      ]
     }
    ],
-   "end": 368.16
+   "end": 368.54
   },
   {
-   "start": 369.01,
+   "start": 369.39,
    "segments": [
     {
      "speaker": "narrator",
      "text": "Then he made the best of his way off, while the nurse laughed and the baby crowed; and all the court jeered at him for having had so much trouble for nothing, and said",
-     "start": 369.01,
-     "end": 378.31,
+     "start": 369.39,
+     "end": 378.68,
      "phrases": [
       [
        "Then he made the best of his way off, while the nurse laughed and the baby crowed;",
-       369.01,
-       373.35
+       369.39,
+       373.72
       ],
       [
        "and all the court jeered at him for having had so much trouble for nothing, and said",
-       373.65,
-       378.31
+       374.02,
+       378.68
       ]
      ]
     },
     {
      "speaker": "court",
      "text": "We wish you a very good morning, and a merry feast, Mister Rumpelstiltskin!",
-     "start": 378.53,
-     "end": 383.19,
+     "start": 378.9,
+     "end": 383.56,
      "phrases": [
       [
        "We wish you a very good morning, and a merry feast, Mister Rumpelstiltskin!",
-       378.53,
-       383.19
+       378.9,
+       383.56
       ]
      ]
     }
    ],
-   "end": 383.19
+   "end": 383.56
   }
  ],
  "cast": {

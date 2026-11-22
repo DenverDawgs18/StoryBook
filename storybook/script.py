@@ -21,6 +21,8 @@
     @@ghost: The entire paragraph is voiced by ghost, quotes or not.
     @wolf,pig!snap,wolf!rage: a "!delivery" on a speaker directs that one line
                               (see voices.DELIVERIES: snap, shout, rage).
+                              Undirected lines are directed automatically (see `direct`);
+                              "!plain" turns that off for one line.
 """
 from __future__ import annotations
 
@@ -88,6 +90,57 @@ def split_dialogue(text: str, speakers: list[str], narrator: str = "narrator"):
     return out
 
 
+# --------------------------------------------------------------------------
+# automatic direction: read the cues a human reader would act on
+# --------------------------------------------------------------------------
+_RAGE = re.compile(r"\b(in a (?:rage|fury|passion)|furious(?:ly)?|scream(?:ed|ing)|shriek(?:ed|ing)|howl(?:ed|ing)|"
+                   r"bellow(?:ed|ing)|roar(?:ed|ing)|with all (?:his|her|their) might)\b", re.I)
+_SHOUT = re.compile(r"\b(cried|cries|cry(?:ing)?|shout(?:ed|ing)?|call(?:ed|ing) out|exclaim(?:ed|ing)?|yell(?:ed|ing)?)\b", re.I)
+# exclamations that are sighs or wonder, not raised voices
+_SIGH = re.compile(r"^(?:o|oh|ah|alas|ha|well)\b(?:[\s,!]*$|,)", re.I)
+
+
+def _words(t: str) -> int:
+    return len(re.findall(r"[^\W_]+(?:['’][^\W_]+)?", t))
+
+
+def direct(events: list) -> list:
+    """Give each undirected line of dialogue a delivery from its own text and the narration around it.
+
+    rage   the narration says the speaker screams, roars, is in a rage...  ("...cried the little man, in a rage")
+    shout  the narration says they cried out, shouted, exclaimed, and the line is an exclamation;
+           or the narration uses a rage word but the line is calm; or several short exclamations in a row
+    snap   a short exclamation on its own ("No, madam!", "Nonsense!") that isn't a sigh ("Alas!", "Ah!")
+    Only the narration that tags the line counts: the bit just after it, or a lead-in that runs into it
+    ("...and cried:"), never the end of an earlier sentence.
+    """
+    for i, e in enumerate(events):
+        if not isinstance(e, Line) or e.speaker == "narrator" or e.delivery:
+            if isinstance(e, Line) and e.delivery == "plain":
+                e.delivery = None
+            continue
+        tag = ""
+        nxt = events[i + 1] if i + 1 < len(events) else None
+        if isinstance(nxt, Line) and nxt.speaker == "narrator" and nxt.para == e.para:
+            tag += " " + " ".join(nxt.text.split()[:12])
+        prv = events[i - 1] if i > 0 else None
+        if isinstance(prv, Line) and prv.speaker == "narrator" and prv.para == e.para:
+            tail = prv.text.rstrip()
+            if not tail.endswith((".", "?", "!", ";")):
+                tag += " " + " ".join(tail.split()[-8:])
+        text = e.text.strip()
+        excl = text.endswith("!") or text.count("!") >= 2
+        if _RAGE.search(tag):
+            e.delivery = "rage" if excl else "shout"
+        elif _SHOUT.search(tag) and excl:
+            e.delivery = "shout"
+        elif excl and text.count("!") >= 3 and _words(text) <= 14:
+            e.delivery = "shout"
+        elif excl and _words(text) <= 3 and not _SIGH.match(text):
+            e.delivery = "snap"
+    return events
+
+
 def parse(src: str) -> Script:
     meta, cast = {}, {}
     body = src
@@ -141,4 +194,6 @@ def parse(src: str) -> Script:
     for name, d in cast.items():
         if isinstance(d, str):
             cast[name] = {"voice": d}
+    if meta.get("direct", True):
+        direct(events)
     return Script(meta, cast, events)

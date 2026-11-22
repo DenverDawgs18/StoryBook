@@ -112,7 +112,7 @@ Little Red-Cap, however, had been running about picking flowers, and when she ha
 
 [pause 0.6]
 
-@wolf: “The better to eat you with!”
+@wolf!rage: “The better to eat you with!”
 
 [sfx boom pitch=40 length=3 vol=-12]
 [stop music fade=0.5]

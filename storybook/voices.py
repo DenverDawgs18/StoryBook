@@ -69,9 +69,28 @@ def kokoro():
 
 
 def resolve_voice(spec: str):
-    """'bm_lewis' or a blend like 'bm_lewis*0.7+am_onyx*0.3'."""
+    """'bm_lewis', a blend like 'bm_lewis*0.7+am_onyx*0.3', or 'TIMBRE|PROSODY@amount'.
+
+    A Kokoro style vector is two halves: the first 128 values colour the voice (timbre), the last 128
+    drive the prosody predictor (pitch contour, energy, timing). 'TIMBRE|PROSODY@0.8' keeps the
+    speaker's own timbre and moves 80% of the way to another voice's prosody, so the model itself
+    performs a livelier, higher, wider-ranging line, with no pitch-shifting afterwards.
+    """
+    if "|" in spec:
+        timbre, _, rest = spec.partition("|")
+        pros, _, amt = rest.partition("@")
+        a = float(amt or 1.0)
+        base = _style(timbre)
+        other = _style(pros)
+        out = base.copy()
+        out[..., 128:] = (1 - a) * base[..., 128:] + a * other[..., 128:]
+        return out.astype(np.float32)
     if "+" not in spec and "*" not in spec:
         return spec
+    return _style(spec)
+
+
+def _style(spec: str):
     k = kokoro()
     style = None
     for term in spec.split("+"):
@@ -260,34 +279,31 @@ def treat(x: np.ndarray, ch: Character) -> np.ndarray:
 # --------------------------------------------------------------------------
 # delivery: per-line direction
 # --------------------------------------------------------------------------
-# Kokoro has no emotion control. Measured on Rumpelstiltskin's "Some witch told you that!": capitals,
-# extra "!!!", repeating the line, faster speed or exaggerated style vectors all leave the pitch where it
-# was (median ~118 Hz, the same as his calm "Now, lady, what is my name?"). And every line is then
-# levelled to the same loudness. So a shout has to be performed after synthesis, the way a real one sounds:
-# higher in pitch, faster, louder than the lines around it, brighter and strained, and rising with each
-# repeat. `gain` is dB above the character's usual level; the mix keeps it (see render: hot lines skip the
-# voice-bus compressor).
+# Kokoro has no emotion control: capitals, "!!!", repeats and speed leave the pitch flat. Pitch-shifting
+# and saturating the result afterwards (the first attempt) sounded synthetic. What does work is the
+# prosody half of the style vector (see resolve_voice): borrowing it from a livelier voice makes the model
+# itself speak higher, wider and more urgently while the character keeps their own timbre.
+# Measured on Rumpelstiltskin's "Some witch told you that!": own prosody 119 Hz median / 96 Hz range;
+# am_santa's prosody 192 Hz / 193 Hz range; am_fenrir's 138 Hz / 121 Hz.
+# `amount` is how far to move toward that prosody; `climb` adds to it on each later phrase, so a repeated
+# line escalates. `gain` is dB above the character's usual level: a shout is much louder, not just
+# more forceful (Paul, Nov 22). The mix limits the peaks of these lines cleanly so they don't distort.
 DELIVERIES = {
-    # a short, sharp retort ("No, madam!")
-    "snap": {"pitch": 1.0, "step": 0.0, "speed": 1.06, "gain": 2.5, "drive": 0.2, "bright": 2.0, "gap": 1.0},
-    # raised voice
-    "shout": {"pitch": 3.0, "step": 1.0, "speed": 1.12, "gain": 6.0, "drive": 0.45, "bright": 4.0, "gap": 0.6},
-    # screaming, losing control: each phrase climbs higher than the last
-    "rage": {"pitch": 4.0, "step": 2.5, "speed": 1.2, "gain": 8.0, "drive": 0.7, "bright": 5.0, "gap": 0.35},
+    "snap": {"male": "am_fenrir", "female": "af_sarah", "amount": 0.5, "climb": 0.0, "speed": 1.04, "gain": 3.0, "gap": 1.0},
+    "shout": {"male": "am_fenrir", "female": "af_sarah", "amount": 0.9, "climb": 0.1, "speed": 1.08, "gain": 7.0, "gap": 0.7},
+    "rage": {"male": "am_santa", "female": "af_bella", "amount": 0.5, "climb": 0.4, "speed": 1.12, "gain": 14.0, "gap": 0.45},
 }
+if os.environ.get("STORYBOOK_RAGE"):  # experiments: "voice:amount:climb"
+    _v, _a, _c = os.environ["STORYBOOK_RAGE"].split(":")
+    DELIVERIES["rage"].update(male=_v, amount=float(_a), climb=float(_c))
 
 
-def _strain(x: np.ndarray, drive: float, bright: float) -> np.ndarray:
-    """A raised voice: thinner low end, more 1-4 kHz bite, and soft saturation for vocal strain."""
-    if len(x) == 0:
-        return x
-    x = dsp.eq(x, "lowshelf", 250, -2.0 * drive)
-    x = dsp.eq(x, "peak", 2600, bright, 0.9)
-    if drive > 0:
-        peak = max(np.abs(x).max(), 1e-6)
-        k = 1 + 4 * drive
-        x = np.tanh(x / peak * k) / np.tanh(k) * peak
-    return x.astype(np.float32)
+def _female(spec: str) -> bool:
+    w = {}
+    for term in spec.split("|")[0].split("+"):
+        name, _, x = term.strip().partition("*")
+        w[name.strip()[1:2] == "f"] = w.get(name.strip()[1:2] == "f", 0) + float(x or 1)
+    return w.get(True, 0) > w.get(False, 0)
 
 
 def speak(text: str, ch: Character, delivery: str | None = None):
@@ -298,30 +314,33 @@ def speak(text: str, ch: Character, delivery: str | None = None):
     d = DELIVERIES.get(delivery or "")
     if delivery and d is None:
         raise ValueError(f"unknown delivery {delivery!r} (have {', '.join(DELIVERIES)})")
-    sch = dataclasses.replace(ch, speed=round(ch.speed * d["speed"], 3)) if d else ch
     pieces = []
     marks = []
     t = 0.0
+    speed = ch.speed * (d["speed"] if d else 1.0)
     for i, (phrase, pause) in enumerate(phrase_split(text)):
-        a = _raw_tts(phrase, sch)
+        pch = ch
+        if d:
+            src = d["female" if _female(ch.voice) else "male"]
+            amt = min(d["amount"] + d["climb"] * i, 1.0)
+            pch = dataclasses.replace(ch, voice=f"{ch.voice}|{src}@{amt:.2f}", speed=round(speed, 3))
+            pause *= d["gap"]
+        a = _raw_tts(phrase, pch)
         if len(a) == 0:
             continue
-        if d:
-            # pitch per phrase, so a repeated line climbs instead of coming out identical
-            a = _pitch_shift(a, d["pitch"] + d["step"] * i)
-            pause *= d["gap"]
         pieces.append(a)
         marks.append((phrase, t, t + len(a) / SR))
         t += len(a) / SR
         if pause:
-            pieces.append(np.zeros(dsp.samples(pause / max(sch.speed, 0.5)), dtype=np.float32))
-            t += pause / max(sch.speed, 0.5)
+            pieces.append(np.zeros(dsp.samples(pause / max(speed, 0.5)), dtype=np.float32))
+            t += pause / max(speed, 0.5)
     if not pieces:
         return np.zeros(0, dtype=np.float32), []
     y = np.concatenate(pieces)
     y = _pitch_shift(y, ch.pitch)
     y = treat(y, ch)
-    if d:
-        y = _strain(y, d["drive"], d["bright"])
+    if d and d["gain"] >= 6 and np.any(y):
+        # a shouted voice is dense: tame its peaks relative to its body, like a voice at full stretch
+        y = dsp.compress(y, dsp.rms_db(y) + 2, 4.0, 0.002, 0.06)
     y = dsp.set_rms(y, -20 + ch.gain + (d["gain"] if d else 0.0)) if np.any(y) else y
     return y.astype(np.float32), marks
