@@ -11,8 +11,7 @@ repository, and don't change the live site.
 ## 0. Setup (the first run does this; later runs just check it)
 
 - Repository: `~/StoryBook`. If it's missing, run `git clone https://github.com/DenverDawgs18/StoryBook ~/StoryBook`.
-  Each run, `git fetch` and check out `claude/quirky-dirac-mnkwas` (or the default branch if that branch is
-  gone or merged), then `git pull`.
+  Each run, `git fetch` and check out the repository's default branch, then `git pull`.
 - Python: `python3 -m venv ~/StoryBook/.venv && ~/StoryBook/.venv/bin/pip install -q numpy scipy pillow pyyaml soundfile`.
   Use `~/StoryBook/.venv/bin/python` for everything below.
 - ffmpeg must be on PATH. On a Mac use `brew install ffmpeg`; on Windows use `winget install ffmpeg`.
@@ -38,30 +37,39 @@ and append a line to it when you finish (step 5). Before the task existed, these
 
 ## 2. Pick today's story
 
-Let `n` be the number of days from 2026-11-15 to today's date in America/New_York. Then
-`slot = n mod 12` (floor modulo, always 0–11) and `cycle = n // 12` (floor division).
+Let `n` be the number of days from 2026-11-23 to today's date in America/New_York. Then
+`slot = n mod 16` (floor modulo, always 0–15) and `cycle = n // 16` (floor division).
 Today's story is `ROTATION[slot]`:
 
-0. little_red_cap
-1. the_frog_prince
-2. rumpelstiltskin
-3. the_little_match_girl
-4. the_emperors_new_clothes
-5. hansel_and_gretel
-6. the_real_princess
-7. the_three_little_pigs
-8. elves_and_the_shoemaker
-9. personal: the personalised-story offer. Use `site/audio/personal/the_three_little_pigs_for_mia_preview`
-   when `cycle` is even and `site/audio/personal/elves_and_the_shoemaker_for_leo_preview` when it's odd.
-   The end card is about putting your own child in the story, with the sub-line
-   "free preview at storybook-audio.fly.dev/personal.html".
-10. tell_tale_heart
-11. masque_of_the_red_death
+0. the_travelling_musicians
+1. little_red_cap
+2. the_frog_prince
+3. personal (see below)
+4. rumpelstiltskin
+5. the_fisherman_and_his_wife
+6. the_little_match_girl
+7. the_emperors_new_clothes
+8. siege_of_alesia
+9. hansel_and_gretel
+10. personal (see below)
+11. the_real_princess
+12. the_three_little_pigs
+13. elves_and_the_shoemaker
+14. tell_tale_heart
+15. masque_of_the_red_death
 
-Choose which part of the story to use from `cycle mod 3`:
-- **0:** the most famous scene.
-- **1:** the build-up and setup from the first half.
-- **2:** the climax and ending.
+**personal** is the $6 personalised-story offer, twice per rotation because it is what sells. Use
+`site/audio/personal/the_three_little_pigs_for_mia_preview` on slot 3 and
+`site/audio/personal/elves_and_the_shoemaker_for_leo_preview` on slot 10 (if a preview has no unused scene
+left, use the other one). The end card is about putting your own child in the story, for example
+"Put your child / in the story." with the sub-line "free preview · $6 · link in bio". From Nov 27 to Dec 24,
+hooks may lean on the gift angle (a story with a dedication from Grandma), but must stay true to the preview.
+
+Choose which part of the story to use: the first of these that the log and section 1 don't already show
+for this story.
+- **The most famous scene.**
+- **The build-up and setup from the first half.**
+- **The climax and ending.**
 
 Never reuse a hook or scene listed in section 1 or in the log. If today's natural choice was already
 used, pick another scene from the same story. The only exception is in section 6: if today's story truly
@@ -120,7 +128,7 @@ The format is documented at the top of `tools/tiktok_story.py`, and
    - **Do not click Post, Schedule, or anything that publishes.** Leave the tab open on the finished draft.
 4. Tell the owner the video is ready to review and post. Include the story, the hook, the caption, and a
    suggested bio link:
-   `https://storybook-audio.fly.dev/?utm_source=tiktok&utm_content=<story>-<YYYY-MM-DD>`. For the
+   `https://storybook-audio.fly.dev/tales/<story>.html?utm_source=tiktok&utm_content=<YYYY-MM-DD>`. For the
    personal slot, use `/personal.html?utm_source=tiktok&utm_content=personal-<YYYY-MM-DD>` instead.
 
 ## 6. Look ahead: warn before the stories run out
@@ -130,8 +138,6 @@ Every run, after staging the video, check the next 3 days of the rotation (slots
 1. For each of those stories, read its timings JSON. List the scenes that would make a good 30–48 s
    video: dialogue plus a sound moment, at least 3 phrases, and not the same scene as anything in
    section 1 or in `dist/tiktok_log.md`.
-2. Also note when the coming days reach `cycle` 3 or higher (`n` ≥ 36, from 2026-12-21). By then every
-   story will have used its famous scene, its build-up and its climax.
 
 Flag a story as **running low** if it has no unused good scene left, or only one. Then end your message
 with a clearly marked heads-up, for example:
