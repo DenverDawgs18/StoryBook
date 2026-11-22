@@ -43,6 +43,9 @@ python -m storybook serve      # → http://127.0.0.1:8000
 | **The Siege of Alesia** | Caesar, *Gallic War*, Book VII | Caesar's own account of 52 BC: the double ring of siege works, Critognatus's speech, the night assault, and Caesar's red cloak arriving on the line |
 
 The finished MP3s (with chapter markers) and the read-along timings are in `site/audio/`.
+After adding an episode, run `python tools/build_catalog.py` and then `python tools/build_tale_pages.py`,
+which writes a shareable, indexable page per story (`site/tales/<slug>.html`), its link-preview card
+and `site/sitemap.xml`.
 
 ## How it works
 
