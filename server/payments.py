@@ -11,7 +11,8 @@ webhook, or by asking Stripe when the buyer lands back on the site, whichever ha
 
 Configured with environment variables (Fly secrets):
 
-    STRIPE_SECRET_KEY      sk_test_... or sk_live_...  (payments are off without it)
+    STRIPE_SECRET_KEY      sk_test_... or sk_live_...  (payments are off without it;
+                           STRIPE_TEST_KEY or STRIPE_LIVE_KEY also work)
     STRIPE_WEBHOOK_SECRET  whsec_...  for /api/stripe/webhook (recommended, not required)
     PERSONAL_PRICE         dollars for a personalised story, default 6
     STUDIO_TIERS           "max_words:dollars,..." default "2000:9,7500:19,15000:29,25000:45";
@@ -99,7 +100,12 @@ def pricing() -> dict:
 
 # ------------------------------------------------------------------ stripe
 def _key() -> str:
-    return os.environ.get("STRIPE_SECRET_KEY", "").strip()
+    # STRIPE_SECRET_KEY wins; STRIPE_TEST_KEY / STRIPE_LIVE_KEY are accepted too. A publishable pk_ key never works here.
+    for name in ("STRIPE_SECRET_KEY", "STRIPE_LIVE_KEY", "STRIPE_TEST_KEY"):
+        k = os.environ.get(name, "").strip()
+        if k.startswith(("sk_", "rk_")):
+            return k
+    return ""
 
 
 def mode() -> str:
