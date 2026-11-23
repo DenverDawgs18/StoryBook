@@ -255,8 +255,13 @@ fly secrets set POSTHOG_KEY=phc_your_project_key        # add POSTHOG_HOST=https
 ```
 
 `site/js/analytics.js` gets the key from `/api/config`, so a static copy of the site sends nothing.
-It uses no cookies or local storage, so no consent banner is needed; the trade-off is that each visit
-counts as a new visitor. Session recording and autocapture are off, and Do Not Track is respected.
+It uses no cookies or local storage (only sessionStorage, cleared when the tab closes), so each visit
+counts as a new visitor. Autocapture is off and Do Not Track is respected.
+
+Session replay is on, with masking: every form field is masked, audio is left out, all text is masked on
+`/personal` and `/order` (they show the child's name), and the Studio's file name, cast and stats are masked.
+Add `class="ph-mask"` to hide more text, or `class="ph-no-capture"` to leave an element out entirely.
+Replays also need **Record user sessions** switched on in PostHog under Project settings → Replay.
 Pages send named events only, and none carry a child's name, a dedication or an email:
 
 | Event | Properties |
